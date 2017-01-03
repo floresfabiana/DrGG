@@ -1,0 +1,127 @@
+
+\begin{tikzpicture}
+
+%El mesoporoso
+ \node at (0,1.5) {
+	\begin{tikzpicture}
+	\begin{scope}[on background layer]
+	   \begin{tikzpicture}
+	   \fill[darkgray,draw=none] rectangle (4,1.3);
+	   \end{tikzpicture}
+	\end{scope}
+	\end{tikzpicture}
+	};
+
+%Poros
+ \node at (0,1.75) {
+	\begin{tikzpicture}
+	\foreach \x in {0,8,...,104}{
+	\fill[white] circle (0.1);
+	\fill[white, yshift=0,xshift=\x] circle (0.1);
+	\fill[white, yshift=8,xshift=\x] circle (0.1);
+	\fill[white, yshift=16,xshift=\x] circle (0.1);
+	\fill[white, yshift=24,xshift=\x] circle (0.1);
+	}; 
+	\end{tikzpicture}
+	};
+
+%Despegue
+    \draw[draw=white,fill=white] (-0,1.32) -- (-2,1.32) -- (-2,1.48) to[out=290,in=220] (-1.7,1.38) to[out=340,in=180] cycle;
+
+%Cracking condensacion
+ \draw[draw=white,line width=0.6] (0.7,1.6) to[out=110,in=90] (0.9,1.7) to[out=270,in=20] (1.11,1.9) to[out=190,in=0] (1,1.9);
+ \draw[draw=white,line width=0.4] (0.745,1.7) to[out=120,in=97] (0.85,1.8) to[out=240,in=280] (1,1.9);
+ \draw[draw=white,line width=0.5] (0.65,1.65) to[out=110,in=310] (0.67,2.1) to[out=20,in=170] (1.3,1.90);
+ \draw[draw=white,line width=0.3] (0.75,2.1) to[out=0,in=190] (0.90,1.9) to[out=0,in=190] (0.95,1.85);
+  
+%Superficie de Silciio
+ \node at (0,0.5) {
+	\begin{tikzpicture}
+	\fill[darkgray,path fading=south,draw=none] rectangle (4,1);
+	\end{tikzpicture}
+	};
+
+%Electrodos
+ \node at (0,1.1) {
+	\begin{tikzpicture}
+	\fill[yellow,draw=none] rectangle (4,0.5);
+	\end{tikzpicture}
+ };
+
+%Miscelas
+ \node at (-0.141,1.61) {
+ \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.08pt}}]
+    %\foreach \z in {0,2.8,5.6}{%
+    %\foreach \y in {0,2.8,5.6}{%
+    \begin{scope}[scale=0.75]
+        \foreach \x in {0,18,...,342}
+        {\draw [brown,thin,projectile,line width=0.02pt] (0,0) to (\x:0.1cm)%(\x+rand*2:1cm+rand*2)
+         node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=0.5pt,fill,inner color=brown,outer color=white, opacity=0.9] {};}
+        %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+        \end{scope}
+        %}
+        %}
+ \end{tikzpicture}
+ };
+ \node at (0.140,1.61) {
+ \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.08pt}}]
+    %\foreach \z in {0,2.8,5.6}{%
+    %\foreach \y in {0,2.8,5.6}{%
+    \begin{scope}[scale=0.75]
+        \foreach \x in {0,18,...,342}
+        {\draw [brown,thin,projectile,line width=0.02pt] (0,0) to (\x:0.1cm)%(\x+rand*2:1cm+rand*2)
+         node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=0.5pt,fill,inner color=brown,outer color=white, opacity=0.9] {};}
+        %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+        \end{scope}
+        %}
+        %}
+ \end{tikzpicture}
+ };
+ \node at (-0.141,1.893) {
+ \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.08pt}}]
+    %\foreach \z in {0,2.8,5.6}{%
+    %\foreach \y in {0,2.8,5.6}{%
+    \begin{scope}[scale=0.75]
+        \foreach \x in {0,18,...,342}
+        {\draw [brown,thin,projectile,line width=0.02pt] (0,0) to (\x:0.1cm)%(\x+rand*2:1cm+rand*2)
+         node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=0.5pt,fill,inner color=brown,outer color=white, opacity=0.9] {};}
+        %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+        \end{scope}
+        %}
+        %}
+ \end{tikzpicture}
+ };
+
+%Flechas, circulos de colores indicado cada uno de los problemas
+    \node[circle,fill=red!80,text=white,minimum size=1pt,inner sep=1] at (-2.4,1.38) {\tiny{1}};
+    \draw[-latex',draw=red!80] (-2.3,1.38) to (-1.98,1.38);
+    \node[circle,fill=orange!70,text=white,minimum size=1pt,inner sep=1] at (0.04,2.3) {\tiny{4}};
+    \draw[-latex',draw=orange!70] (-0.141,1.9) to (-0.141,2.5);
+    \node[circle,fill=yellow,text=white,minimum size=1pt,inner sep=1] at (1.02,2.3) {\tiny{3}};
+    \draw[-latex',draw=yellow] (0.842,1.9) to (0.842,2.5);
+    \node[circle,fill=violet!80,text=white,minimum size=1pt,inner sep=1] at (1.8,1) {\tiny{2}};
+    \draw[-latex',draw=violet!80] (1.6,0.87) to (1.6,1.35);
+
+%Leyenda con los elementos de cada capa
+ \node at (-1.6,1.1) {\tiny{Cr\textbar Au}};
+ \node at (-1.5,0.5) {\tiny{Si\textbar SiO\textsubscript{2}}};
+
+%Difusion
+    \filldraw[violet] (1.40,1.35)circle (0.3pt);
+    \filldraw[violet] (1.35,1.35)circle (0.25pt);
+    \filldraw[violet] (1.32,1.35)circle (0.20pt);
+    \filldraw[violet] (1.43,1.35) circle (0.3pt);
+    \filldraw[violet] (1.46,1.35) circle (0.3pt);
+    \filldraw[violet] (1.50,1.35) circle (0.3pt);
+    \filldraw[violet] (1.52,1.35) circle (0.3pt);
+    \filldraw[violet] (1.53,1.35) circle (0.31pt);
+    \filldraw[violet] (1.42,1.28) circle (0.25pt);
+    \filldraw[violet] (1.42,1.20) circle (0.15pt);
+    \filldraw[violet] (1.45,1.27) circle (0.21pt);
+    \filldraw[violet] (1.45,1.30) circle (0.15pt);
+    \filldraw[violet] (1.52,1.25) circle (0.1pt);
+    \filldraw[violet] (1.45,1.15) circle (0.2pt);
+    \filldraw[violet] (1.43,1.05) circle (0.15pt); 
+
+%Leyenda
+\end{tikzpicture}

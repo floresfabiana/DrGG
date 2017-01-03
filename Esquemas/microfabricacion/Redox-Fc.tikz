@@ -1,0 +1,90 @@
+\begin{tikzpicture}
+%Anillo superior
+\node at (0.78,2.95) {\chemfig{
+        <[:-25,1.176]
+        (   
+            -[0,0.01,,,line width=6.1pt,shorten <=-1.5pt,shorten >=-1.5pt]           
+            >[:25,1.176] 
+            -[:135,0.8] (
+                    %Metanol
+                    -[:30,1]-[:-35,1]OH
+                    )
+            -[180,1]
+            -[:-135,0.8]
+        )}};
+
+%Anillo Inferior
+\node at (0,0.3){\chemfig{
+            -[:25,1.176]
+        (            
+            -[:-25,1.176]
+            <[:-135,0.8]
+            -[180,,,,line width=4.8pt,shorten <=-2.2pt,shorten >=-2.2pt]
+            >[:135,0.8]            
+        )}};
+
+\draw [dashed]  (0,1.75) -- (0,2.9);
+\draw [dashed]  (0,0.3) -- (0,1.3);
+\draw (0,0.3) ellipse (0.75cm and 0.35cm);
+\draw (0,2.85) ellipse (0.75cm and 0.35cm);
+\node at (0,1.5) {\Large Fe};
+\node at (0.78,2.95) {\chemfig{
+        <[:-25,1.176]
+        (   
+            -[0,0.01,,,line width=6.1pt,shorten <=-1.5pt,shorten >=-1.5pt]           
+            >[:25,1.176] 
+            -[:135,0.8] (
+                    %Metanol
+                    -[:30,1]-[:-35,1]OH
+                    )
+            -[180,1]
+            -[:-135,0.8]
+        )}};
+
+%Anillo Inferior
+\node at (0,0.3){\chemfig{
+            -[:25,1.176]
+        (            
+            -[:-25,1.176]
+            <[:-135,0.8]
+            -[180,,,,line width=4.8pt,shorten <=-2.2pt,shorten >=-2.2pt]
+            >[:135,0.8]            
+        )}};
+
+\draw [dashed]  (0,1.75) -- (0,2.9);
+\draw [dashed]  (0,0.3) -- (0,1.3);
+\draw (0,0.3) ellipse (0.75cm and 0.35cm);
+\draw (0,2.85) ellipse (0.75cm and 0.35cm);
+\node at (0,1.5) {\Large Fe};
+\node at (3,1.5) {\schemestart \arrow{<=>[oxidación][reducción]}[0,1.5] \schemestop};
+
+\node at (5.78,2.95) {\chemfig{
+        <[:-25,1.176]
+        (   
+            -[0,0.01,,,line width=6.1pt,shorten <=-1.5pt,shorten >=-1.5pt]           
+            >[:25,1.176] 
+            -[:135,0.8] (
+                    %Metanol
+                    -[:30,1]-[:-35,1]OH
+                    )
+            -[180,1]
+            -[:-135,0.8]
+        )}};
+
+%Anillo Inferior
+\node at (5,0.3){\chemfig{
+            -[:25,1.176]
+        (            
+            -[:-25,1.176]
+            <[:-135,0.8]
+            -[180,,,,line width=4.8pt,shorten <=-2.2pt,shorten >=-2.2pt]
+            >[:135,0.8]            
+        )}};
+
+\draw [dashed]  (5,1.75) -- (5,2.9);
+\draw [dashed]  (5,0.3) -- (5,1.3);
+\draw (5,0.3) ellipse (0.75cm and 0.35cm);
+\draw (5,2.85) ellipse (0.75cm and 0.35cm);
+\node at (5,1.5) {\Large Fe$^+$};
+\node at (6.5,1.5) {\Large + \hspace{0.3cm}e$^-$};
+\end{tikzpicture}

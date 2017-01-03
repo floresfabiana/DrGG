@@ -1,0 +1,83 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[paperwidth=9.8cm,paperheight=2.2cm,hmargin=-0.5cm,vmargin=1.4cm,bottom=-1cm]{geometry}
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,english,activeacute,es-tabla]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+
+
+   %Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{shapes.symbols}
+
+   %Para hacer quimica
+   \usepackage{chemfig}
+
+       % %Este comando los exporta como pdf, si se comenta se compila entero el codigo tikz
+       %  \usetikzlibrary{external}
+       %  \tikzsetnextfilename{\jobname}
+       %  \tikzexternalize
+       %  \newcommand{\includetikz}[1]{%
+       %  \tikzsetnextfilename{#1}%
+       %  \input{#1.tikz}%
+       %  }
+
+
+
+\begin{document}
+ \thispagestyle{empty}
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+
+\def\makebraces(#1,#2)#3#4#5{%
+  \edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+  \edef\delimvshift{\the\dimexpr(#1-#2)/2}%
+  \chemmove{
+    \node[at=(#4),yshift=(\delimvshift)]
+      {$
+       \left\delimleft
+         \vrule height\delimhalfdim depth\delimhalfdim width0pt
+       \right.
+      $};
+    \node[at=(#5),yshift=(\delimvshift)]
+      {$
+        \left.
+          \vrule height\delimhalfdim depth\delimhalfdim width0pt
+        \right\delimright_{\rlap{#3}}
+      $};
+  }%
+}
+
+%\includetikz{f127}
+
+\begin{tikzpicture}
+ \setpolymerdelim()
+ \chemfig{
+   OH-[@{op1,0.65}:30]-[:-30]-[:30]O-[@{cl1,0.1}:-30]-[@{op2,-0.22}:30](-[:90])-[@{cl2,1.60}:-30]O-[@{op3,0.75}:30]-[:-30]-[:30]O-[@{cl3,0.05}:-30]H
+ }
+ \makebraces(20pt,20pt){$\!\!\!\scriptstyle 106$}{op1}{cl1}
+ \makebraces(45pt,5pt){$\!\!\!\scriptstyle 70$}{op2}{cl2}
+ \makebraces(20pt,20pt){$\!\!\!\scriptstyle 106$}{op3}{cl3}
+\end{tikzpicture}
+
+\end{document}

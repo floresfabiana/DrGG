@@ -1,0 +1,66 @@
+\begin{tikzpicture}
+
+%El mesoporoso
+\node at (0,1.25) {
+	\begin{tikzpicture}
+	\node (A) at (0,0) {};
+	\node (C) at (10,0.4) {};
+	\node (B) at (0,0.4) {};
+	\node (D) at (10,0) {};
+
+	\node (Au1) at (1,0.4) {};
+	\node (Au2) at (1.2,0.5) {};
+	\node (Au3) at (2.8,0.5) {};
+	\node (Au4) at (3,0.4) {};
+	\node (Au5) at (1.2,0.35) {};
+	\node (Au6) at (2.8,0.35) {};
+
+	\begin{scope}[on background layer]
+	    
+	    \draw[draw=none,fill=red!80] (A.center) -- ([yshift=.5cm]A.center) -- ([yshift=.5cm,xshift=1cm]A.center) -- ([xshift=0.8cm]A.center)  -- (A.center);
+	   	
+	  %   \draw[draw=none,fill=white] ([xshift=-1cm]Au1.center) -- ([xshift=-1.2cm]Au5.center) -- ([xshift=-2cm]Au6.center) to [bend right=20] ([xshift=-2cm]Au4.center) -- cycle;
+
+	  %  	\draw[draw=none,fill=gray!40] ([yshift=-0.001cm]Au1.center) to [bend left=20] (Au2.center) -- (Au3.center) to [bend left=20] ([yshift=-0.001cm]Au4.center) -- cycle;
+	  %   \draw[draw=none,fill=white] ([xshift=2cm]Au1.center) to [bend right=20] ([xshift=2cm]Au5.center) -- ([xshift=1cm]Au6.center) to [bend right=20] ([xshift=1cm]Au4.center) -- cycle;
+
+	  %   \draw[draw=none,fill=gray!40] ([xshift=3cm,yshift=-0.001cm]Au1.center) to [bend left=20] ([xshift=3cm]Au2.center) -- ([xshift=3cm]Au3.center) to [bend left=20] ([xshift=3cm,yshift=-0.001cm]Au4.center) -- cycle;
+	 	% \draw[draw=none,fill=white] ([xshift=5cm]Au1.center) to [bend right=20] ([xshift=5cm]Au5.center) -- ([xshift=4cm]Au6.center) to [bend right=20] ([xshift=4cm]Au4.center) -- cycle;
+	   
+	 	% \draw[draw=none,fill=gray!40] ([xshift=6cm,yshift=-0.001cm,yshift=-0.001cm]Au1.center) to [bend left=20] ([xshift=6cm]Au2.center) -- ([xshift=6cm]Au3.center) to [bend left=20] ([xshift=6cm,yshift=-0.001cm]Au4.center) -- cycle;
+	 	% \draw[draw=none,fill=white] ([xshift=8cm]Au1.center) to [bend right=20] ([xshift=8cm]Au5.center) -- ([xshift=7.2cm]Au6.center) -- ([xshift=7cm]Au4.center) -- cycle;
+
+	\end{scope}
+	\end{tikzpicture}
+	};
+
+
+%Superficie de Silciio
+\node at (0,0.5) {
+	\begin{tikzpicture}
+	\fill[darkgray,path fading=south] rectangle (10,1);
+	\end{tikzpicture}
+	};
+
+%Electrodos
+\node at (0,0.95) {
+	\begin{tikzpicture}
+	\fill[yellow] rectangle (1.6,0.05);
+	\fill[yellow,xshift=3cm] rectangle (1.6,0.05);
+	\fill[yellow,xshift=6cm] rectangle (1.6,0.05);
+	\end{tikzpicture}
+};
+
+%Flechas
+\tikzstyle{flecha} = [draw,latex'-,color=darkgray, thick]
+%\draw[flecha] ([yshift=0.8cm]B.center) -- ([yshift=2cm,xshift=-1.4cm]B.center);
+%\draw[flecha] ([yshift=0.8cm,xshift=-3cm]B.center) -- ([yshift=2cm,xshift=-1.6cm]B.center);
+%\draw[flecha] ([yshift=0.6cm,xshift=4.5cm]B.center) -- ([yshift=2cm,xshift=3.1cm]B.center);
+%\draw[flecha] ([yshift=0.6cm,xshift=1.5cm]B.center) -- ([yshift=2cm,xshift=2.9cm]B.center);
+
+%\node at ([yshift=2.2cm,xshift=-1.5cm]B.center) {\scriptsize{Zonas de baja adherencia}};
+%\node at ([yshift=2.2cm,xshift=3cm]B.center) {\scriptsize{Zonas de alta adherencia}};
+
+
+
+\end{tikzpicture}

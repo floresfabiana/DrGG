@@ -1,0 +1,175 @@
+\documentclass[10pt,border={0pt 0pt 20pt 0pt}]{standalone}
+%\usepackage[paperwidth=9.8cm,paperheight=2.2cm,hmargin=-0.5cm,vmargin=1.4cm,bottom=-1cm]{geometry}
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,english,activeacute,es-tabla]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+
+
+   %Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{shapes.symbols}
+   \usetikzlibrary{intersections}
+
+   %Para hacer quimica
+   \usepackage{chemfig}
+
+       % %Este comando los exporta como pdf, si se comenta se compila entero el codigo tikz
+       %  \usetikzlibrary{external}
+       %  \tikzsetnextfilename{\jobname}
+       %  \tikzexternalize
+       %  \newcommand{\includetikz}[1]{%
+       %  \tikzsetnextfilename{#1}%
+       %  \input{#1.tikz}%
+       %  }
+
+\tikzset{
+  pics/.cd,
+  disc/.style = {
+    code = {
+      \fill [white] ellipse [x radius = 2, y radius = 2/3];
+      \path [left color = black!50, right color = black!50,
+        middle color = black!25] 
+        (-2+.05,-1.1) arc (180:360:2-.05 and 2/3-.05*2/3) -- cycle;
+      \path [top color = black!25, bottom color = white] 
+        (0,.05*2/3) ellipse [x radius = 2-.05, y radius = 2/3-.05*2/3];
+      \path [left color = black!25, right color = black!25,
+        middle color = white] (-2,0) -- (-2,-1) arc (180:360:2 and 2/3)
+        -- (2,0) arc (360:180:2 and 2/3);
+      \foreach \r in {225,315}
+        \foreach \i [evaluate = {\s=30;}] in {0,2,...,30}
+          \fill [black, fill opacity = 1/50] 
+            (0,0) -- (\r+\s-\i:2 and 2/3) -- ++(0,-1) 
+            arc (\r+\s-\i:\r-\s+\i:2 and 2/3) -- ++(0,1) -- cycle;
+      \foreach \r in {45,135}
+        \foreach \i [evaluate = {\s=30;}] in {0,2,...,30}
+          \fill [black, fill opacity = 1/50] 
+            (0,0) -- (\r+\s-\i:2 and 2/3) 
+            arc (\r+\s-\i:\r-\s+\i:2 and 2/3)  -- cycle;
+    }
+  },
+  disc bottom/.style = {
+    code = {
+      \foreach \i in {0,2,...,30}
+        \fill [black, fill opacity = 1/60] (0,-1.1)
+          ellipse [x radius = 2+\i/40, y radius = 2/3+\i/60];
+      \path pic {disc};
+    }
+  }
+}
+
+\begin{document}
+
+%Estilo de las flechas textos y lineas
+\tikzstyle{flecha} = [draw,-latex',color=black, thick]
+\tikzstyle{flecharoja} = [draw,-latex',color=red]
+\tikzstyle{ejes} = [draw,dashed,color=gray]
+\tikzstyle{luzdetector} = [draw,thick=1cm,color=gray]
+\tikzstyle{textos}=[rectangle,anchor=west, minimum height=0.1cm,text width=3cm]
+\tikzstyle{textos2}=[rectangle,anchor=west, minimum height=0.1cm]
+
+\begin{tikzpicture}
+
+%grilla
+%\draw[help lines,red] (-10,-10) grid[step=1cm] (10,10);
+
+%Nodos de de la fuente y el detector
+\node (centro) at (0,0) {};
+\node (luz-detector1) at (-8,2) {};
+\node (luz-detector2) at (-8,3) {};
+\node (luz-fuente1) at (8,2) {};
+\node (luz-fuente2) at (8,3) {};
+
+%Nodos de los vertices de la celda de humedad
+\node (celda1) at (0,0.5) {};
+\node (celda2) at (0,-0.5) {};
+\node (celda3) at (-0.995,-0.37) {};
+\node (celda4) at (0.995,0.37) {};
+
+%Nodos de la elipse
+\node (elipseluz) at (5,1.5) {};
+\node (elipsedetector) at (-5,1.5) {};
+
+%portamuestras
+\fill [white] ellipse [x radius = 2, y radius = 2/3];
+\path [left color = black!50, right color = black!50,middle color = black!25] (-2+.05,-1.1) arc (180:360:2-.05 and 2/3-.05*2/3) -- cycle;
+\path [top color = black!25, bottom color = white] (0,.05*2/3) ellipse [x radius = 2-.05, y radius = 2/3-.05*2/3];
+\path [left color = black!25, right color = black!25, middle color = white] (-2,0) -- (-2,-1) arc (180:360:2 and 2/3)-- (2,0) arc (360:180:2 and 2/3);
+\foreach \r in {225,315}
+   \foreach \i [evaluate = {\s=30;}] in {0,2,...,30}
+   \fill [black, fill opacity = 1/50] (0,0) -- (\r+\s-\i:2 and 2/3) -- ++(0,-1) arc (\r+\s-\i:\r-\s+\i:2 and 2/3) -- ++(0,1) -- cycle;
+      \foreach \r in {45,135}
+        \foreach \i [evaluate = {\s=30;}] in {0,2,...,30}
+          \fill [black, fill opacity = 1/50] (0,0) -- (\r+\s-\i:2 and 2/3) arc (\r+\s-\i:\r-\s+\i:2 and 2/3)  -- cycle;
+
+%Haces de luz
+\fill[red,path fading=east] (centro.center) -- (luz-fuente1.center) -- (luz-fuente2.center) -- cycle;
+\fill[red,path fading=west] (centro.center) -- (luz-detector1.center) -- (luz-detector2.center) -- cycle;
+
+%Detector y fuente
+\draw [line width=0.2cm, red ] (luz-fuente1.east) -- (luz-fuente2.east);
+\draw [line width=0.2cm, red ] (luz-detector1.west) -- (luz-detector2.west);
+
+
+%Celda  
+\draw[blue, fill=blue,opacity=0.25] (celda1.center) arc(180:-15:0.5);
+\draw[blue, fill=blue,opacity=0.25]  (celda1.center) -- (celda3.center) -- (celda2.center) -- (celda4.center) -- cycle;
+\draw[blue,opacity=0.25] (celda2.center) arc(-15:180:0.5);
+\fill[fill=blue,opacity=0.25]  (celda3.center) arc(180:81:0.5);
+\fill[fill=blue,opacity=0.25]  (celda1.center) arc(180:130:0.5) -- (-.78,0.03) arc(128:83:0.5);
+
+%Flujo de Humedad
+\draw [flecha] (-2.25,-2) -- (2.25,2);
+
+%Ejes
+\draw [ejes] (-3,0) -- (3,0);
+\draw [ejes] (0,-3) -- (0,3);
+
+%Luz polarizada
+\draw [red] (elipseluz.center) ellipse (0.2cm and 0.8cm);
+\draw [flecharoja] (elipseluz.center) -- ++(0.1cm,-0.7cm);
+\draw [flecharoja] (elipseluz.center) -- ++(-0.1cm,0.7cm);
+
+%Luz poarizada
+\draw [red] (elipsedetector.center) ellipse (0.2cm and 0.8cm);
+\draw [flecharoja] (elipsedetector.center) -- ++(0.2cm,0);
+\draw [flecharoja] (elipsedetector.center) -- ++(-0.2cm,0);
+
+%Textos
+\node [textos2] (text1) at (-7.9,2.5) {\scriptsize{Fuente de luz}};
+\node [textos2] (text1) at (6.5,2.5) {\scriptsize{Detector}};
+\node [textos2] (text1) at (4.2,0.5) {\scriptsize{Analizador}};
+\node [textos2] (text1) at (-5.8,0.5) {\scriptsize{Polarizador}};
+\node [textos2] (text1) at (0,1.2) {\scriptsize{Celda}};
+\node [textos] (text1) at (-4,-2.5) {\scriptsize{Flujo de aire/vapor control de HR}};
+%\node (centro) at (-7.7,1.3) {\scriptsize{de luz polarizada}};
+
+%Angulo
+\draw[<->,>=stealth',gray] (0,2) arc(90:163:2);
+\draw [ejes] (-1.9,0.6) -- (0,0);
+\node [textos] (text1) at (-1.65,1.65) {\normalsize{$\varphi$}};
+
+
+\end{tikzpicture}
+\end{document}

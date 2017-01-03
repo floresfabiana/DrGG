@@ -1,0 +1,134 @@
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,activeacute,es-tabla,es-lcroman]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+   
+   %Paquete para adaptar la Bibliografia al Español
+   \usepackage[datename]{babelbib}
+
+   %Para manejar la forma en que se presentan las citas
+   \usepackage[superscript]{cite}
+       
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   % Paquete para hacer cuadros
+   \usepackage{boxedminipage} 
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel,esint}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+
+   %Para la justificación, formato y texto de los caption de las figuritas y tablas
+   \usepackage{caption}
+
+   %Paquete para poder poner imagenes una al lado de la otra
+   \usepackage{subcaption}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+       \usepackage{tikz}
+       \usepackage{tikzpagenodes}
+     
+           %Librerias Tikz Extra
+             \usetikzlibrary{shapes,arrows}
+             \usetikzlibrary{shapes.arrows, fadings}
+             \usetikzlibrary{shadows.blur}
+             \usetikzlibrary{shapes.symbols}
+             \usetikzlibrary{decorations.pathreplacing}
+             \usetikzlibrary{fit}
+             \usetikzlibrary{calc}
+             \usetikzlibrary{positioning}
+             \usetikzlibrary{matrix}
+
+   %Para hacer lineas gruesa y tablas lindas
+   \usepackage{booktabs}
+
+   %Para Formatear los capitulos
+   \usepackage{titlesec}
+
+   %Herramientas para parches
+   %Yo lo use para Cambiar el nombre de la Bibliografia
+   \usepackage{etoolbox}
+   
+   %Para Tablas multicolumnas, multifilas
+   \usepackage{multirow,multicol,array} 
+
+   %Para rota Texto
+   \usepackage{rotating} 
+
+   %Para los Indices parciales en las portadas de los capitulos
+   \usepackage[nohints]{minitoc}
+
+   %Paquete para personalizar encabezados y notas al pie
+   \usepackage{fancyhdr}   
+
+   %Para que no numere las paginas en blanco (borrar los header y footnotes)
+   \usepackage{emptypage}
+
+   %Para carga Atributos, Propiedades y Titulos al PDF
+   \usepackage[hidelinks,colorlinks]{hyperref}
+
+   %Para hacer un indice alfabetico
+   \usepackage{imakeidx}
+   \makeindex[columns=2, options= -s Tesis.ist]
+   \indexsetup{othercode=\footnotesize}
+
+   %Muestra el indexado en el costado
+   %\usepackage{showidx}
+
+   %Para Imprimir el LayOut del documento
+   \usepackage{layout}
+
+   %Para hacer quimica
+   \usepackage{chemfig}
+
+   %para meter text de relleno
+   \usepackage{blindtext}
+
+   %Paquete gestor de unidades
+   \usepackage[version-1-compatibility]{siunitx}
+   \sisetup{output-decimal-marker = {,}}
+
+   %Para Colocar objetos en el fondo, en mi caso los indicadores laterales
+   \usepackage[contents={},opacity=1,scale=1,color=black]{background}
+   %--------------------------------------------------------------------------
+
+%SUprimir log de Overfull y UNdelfull
+%--------------------------------------------------------------------------
+    \newcommand{\NoBadBoxesLog}{
+      \hfuzz=\maxdimen \vfuzz=\maxdimen 
+      \newdimen\hfuzz  \let\vfuzz=\hfuzz
+      \hbadness=10000    \vbadness=10000 
+      \newcount\hbadness \let\vbadness=\hbadness 
+      }
+
+%Propiedades del Documento
+%--------------------------------------------------------------------------
+   \hypersetup{
+   pdftitle={Tesis Gustavo Giménez},
+   pdfauthor={Gustavo Giménez},
+   pdfsubject={Tesis Doctoral}, %subject of the document
+   pdfcreator={Tex},
+   pdfproducer={PDFLatex},
+   pdfkeywords={UBA,nanomateriales,MEMS,NEMS,INTI},
+   % %pdftoolbar=false, % toolbar hidden
+   pdfmenubar=true, %menubar shown
+   pdfhighlight=/O, %effect of clicking on a link
+   % pdfpagemode=UseOutlines,%UseNone, %aucun mode de page
+   % pdfpagelayout=TwoPageRight,%SinglePage, %ouverture en simple page
+   % pdffitwindow=true, %pages ouvertes entierement dans toute la fenetre
+   % bookmarksopenlevel=2,
+   %    colorlinks=false,       % false: boxed links; true: colored links
+   linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+   citecolor=grisoscuro,        % color of links to bibliography
+   urlcolor=grisoscuro,          % color of external link
+   %backref=true
+   }
+   %--------------------------------------------------------------------------

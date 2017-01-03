@@ -1,0 +1,171 @@
+\begin{tikzpicture}[gnuplot]
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% mar 15 nov 2016 15:06:10 ART
+\path (0.000,0.000) rectangle (12.500,8.750);
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (2.056,1.601)--(11.947,1.601);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (2.056,1.601)--(2.236,1.601);
+\node[gp node right] at (1.872,1.601) {$-4000$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (2.056,2.957)--(11.947,2.957);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (2.056,2.957)--(2.236,2.957);
+\node[gp node right] at (1.872,2.957) {$-2000$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (2.056,4.313)--(11.947,4.313);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (2.056,4.313)--(2.236,4.313);
+\node[gp node right] at (1.872,4.313) {$0$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (2.056,5.669)--(11.947,5.669);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (2.056,5.669)--(2.236,5.669);
+\node[gp node right] at (1.872,5.669) {$2000$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (2.056,7.025)--(11.947,7.025);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (2.056,7.025)--(2.236,7.025);
+\node[gp node right] at (1.872,7.025) {$4000$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (2.056,8.381)--(11.947,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (2.056,8.381)--(2.236,8.381);
+\node[gp node right] at (1.872,8.381) {$6000$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (2.056,1.601)--(2.056,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (2.056,1.601)--(2.056,1.781);
+\node[gp node center] at (2.056,1.293) {$0$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (4.034,1.601)--(4.034,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (4.034,1.601)--(4.034,1.781);
+\node[gp node center] at (4.034,1.293) {$2$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (6.012,1.601)--(6.012,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (6.012,1.601)--(6.012,1.781);
+\node[gp node center] at (6.012,1.293) {$4$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (7.991,1.601)--(7.991,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (7.991,1.601)--(7.991,1.781);
+\node[gp node center] at (7.991,1.293) {$6$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (9.969,1.601)--(9.969,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (9.969,1.601)--(9.969,1.781);
+\node[gp node center] at (9.969,1.293) {$8$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (11.947,1.601)--(11.947,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (11.947,1.601)--(11.947,1.781);
+\node[gp node center] at (11.947,1.293) {$10$};
+\draw[gp path] (2.056,8.381)--(2.056,1.601)--(11.947,1.601);
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.254,7.839) {y=457.443+243.151};
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.254,7.364) {R=0.9991};
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.254,2.550) {y=-318.096-521.994};
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.254,2.076) {R=-0.9967};
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$j/ \mu \text{A.cm}^{-2}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.001,0.215) {$\text{Velocidad de barrido/mV}^{1/2}\text{s}^{1/2}$};
+\gpsetlinewidth{1.00}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.268,5.192)}
+\gppoint{gp mark 7}{(5.184,5.471)}
+\gppoint{gp mark 7}{(6.479,5.856)}
+\gppoint{gp mark 7}{(9.050,6.605)}
+\gppoint{gp mark 7}{(11.947,7.622)}
+\gppoint{gp mark 7}{(4.268,3.445)}
+\gppoint{gp mark 7}{(5.184,3.348)}
+\gppoint{gp mark 7}{(6.479,2.990)}
+\gppoint{gp mark 7}{(9.050,2.363)}
+\gppoint{gp mark 7}{(11.947,1.840)}
+\gpcolor{rgb color={1.000,0.000,0.000}}
+\draw[gp path] (2.056,4.478)--(2.156,4.509)--(2.256,4.541)--(2.356,4.572)--(2.456,4.603)%
+  --(2.556,4.634)--(2.655,4.666)--(2.755,4.697)--(2.855,4.728)--(2.955,4.760)--(3.055,4.791)%
+  --(3.155,4.822)--(3.255,4.854)--(3.355,4.885)--(3.455,4.916)--(3.555,4.948)--(3.655,4.979)%
+  --(3.754,5.010)--(3.854,5.042)--(3.954,5.073)--(4.054,5.104)--(4.154,5.136)--(4.254,5.167)%
+  --(4.354,5.198)--(4.454,5.230)--(4.554,5.261)--(4.654,5.292)--(4.754,5.324)--(4.853,5.355)%
+  --(4.953,5.386)--(5.053,5.418)--(5.153,5.449)--(5.253,5.480)--(5.353,5.512)--(5.453,5.543)%
+  --(5.553,5.574)--(5.653,5.606)--(5.753,5.637)--(5.853,5.668)--(5.952,5.700)--(6.052,5.731)%
+  --(6.152,5.762)--(6.252,5.794)--(6.352,5.825)--(6.452,5.856)--(6.552,5.888)--(6.652,5.919)%
+  --(6.752,5.950)--(6.852,5.982)--(6.952,6.013)--(7.051,6.044)--(7.151,6.076)--(7.251,6.107)%
+  --(7.351,6.138)--(7.451,6.170)--(7.551,6.201)--(7.651,6.232)--(7.751,6.264)--(7.851,6.295)%
+  --(7.951,6.326)--(8.051,6.358)--(8.150,6.389)--(8.250,6.420)--(8.350,6.452)--(8.450,6.483)%
+  --(8.550,6.514)--(8.650,6.545)--(8.750,6.577)--(8.850,6.608)--(8.950,6.639)--(9.050,6.671)%
+  --(9.150,6.702)--(9.249,6.733)--(9.349,6.765)--(9.449,6.796)--(9.549,6.827)--(9.649,6.859)%
+  --(9.749,6.890)--(9.849,6.921)--(9.949,6.953)--(10.049,6.984)--(10.149,7.015)--(10.249,7.047)%
+  --(10.348,7.078)--(10.448,7.109)--(10.548,7.141)--(10.648,7.172)--(10.748,7.203)--(10.848,7.235)%
+  --(10.948,7.266)--(11.048,7.297)--(11.148,7.329)--(11.248,7.360)--(11.348,7.391)--(11.447,7.423)%
+  --(11.547,7.454)--(11.647,7.485)--(11.747,7.517)--(11.847,7.548)--(11.947,7.579);
+\draw[gp path] (2.056,3.959)--(2.156,3.937)--(2.256,3.916)--(2.356,3.894)--(2.456,3.872)%
+  --(2.556,3.850)--(2.655,3.828)--(2.755,3.807)--(2.855,3.785)--(2.955,3.763)--(3.055,3.741)%
+  --(3.155,3.719)--(3.255,3.698)--(3.355,3.676)--(3.455,3.654)--(3.555,3.632)--(3.655,3.611)%
+  --(3.754,3.589)--(3.854,3.567)--(3.954,3.545)--(4.054,3.523)--(4.154,3.502)--(4.254,3.480)%
+  --(4.354,3.458)--(4.454,3.436)--(4.554,3.414)--(4.654,3.393)--(4.754,3.371)--(4.853,3.349)%
+  --(4.953,3.327)--(5.053,3.306)--(5.153,3.284)--(5.253,3.262)--(5.353,3.240)--(5.453,3.218)%
+  --(5.553,3.197)--(5.653,3.175)--(5.753,3.153)--(5.853,3.131)--(5.952,3.109)--(6.052,3.088)%
+  --(6.152,3.066)--(6.252,3.044)--(6.352,3.022)--(6.452,3.001)--(6.552,2.979)--(6.652,2.957)%
+  --(6.752,2.935)--(6.852,2.913)--(6.952,2.892)--(7.051,2.870)--(7.151,2.848)--(7.251,2.826)%
+  --(7.351,2.804)--(7.451,2.783)--(7.551,2.761)--(7.651,2.739)--(7.751,2.717)--(7.851,2.696)%
+  --(7.951,2.674)--(8.051,2.652)--(8.150,2.630)--(8.250,2.608)--(8.350,2.587)--(8.450,2.565)%
+  --(8.550,2.543)--(8.650,2.521)--(8.750,2.500)--(8.850,2.478)--(8.950,2.456)--(9.050,2.434)%
+  --(9.150,2.412)--(9.249,2.391)--(9.349,2.369)--(9.449,2.347)--(9.549,2.325)--(9.649,2.303)%
+  --(9.749,2.282)--(9.849,2.260)--(9.949,2.238)--(10.049,2.216)--(10.149,2.195)--(10.249,2.173)%
+  --(10.348,2.151)--(10.448,2.129)--(10.548,2.107)--(10.648,2.086)--(10.748,2.064)--(10.848,2.042)%
+  --(10.948,2.020)--(11.048,1.998)--(11.148,1.977)--(11.248,1.955)--(11.348,1.933)--(11.447,1.911)%
+  --(11.547,1.890)--(11.647,1.868)--(11.747,1.846)--(11.847,1.824)--(11.947,1.802);
+%% coordinates of the plot area
+\gpdefrectangularnode{gp plot 1}{\pgfpoint{2.056cm}{1.601cm}}{\pgfpoint{11.947cm}{8.381cm}}
+\end{tikzpicture}
+%% gnuplot variables

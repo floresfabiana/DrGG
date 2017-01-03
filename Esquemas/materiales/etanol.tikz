@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+
+
+\schemestart
+\chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-OH}
+\schemestop
+
+
+\end{tikzpicture}

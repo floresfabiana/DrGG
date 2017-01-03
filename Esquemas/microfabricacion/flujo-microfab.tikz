@@ -1,0 +1,84 @@
+%Estilos Bloques auxiliares
+\tikzstyle{vacio} = [text centered, align=center,anchor=south]
+\tikzstyle{margen_derecha} = [node distance=2.1cm]
+\tikzstyle{margen_abajo} = [node distance=1.1cm]
+
+%Estilos bloques posta
+\tikzstyle{fabri} = [rectangle, blur shadow, draw=gray, top color=orange!80, bottom color=white, text width=4cm, minimum height=2cm, text centered, rounded corners,align=center, node distance=3cm and 1cm]
+\tikzstyle{transporte} = [rectangle, blur shadow, draw=gray, top color=violet!40, bottom color=white, text width=4cm, minimum height=2cm, text centered, rounded corners,align=center, node distance=3cm and 1cm]
+\tikzstyle{hipo} = [diamond, blur shadow, draw=gray, top color=orange!80, bottom color=white, text centered, rounded corners,align=center,node distance=3cm and 1cm,minimum height=3.4cm,minimum width=3.4cm]
+\tikzstyle{circulito_bien} = [circle,fill=green,text=white,minimum size=1pt,inner sep=1]
+\tikzstyle{circulito_mal} = [circle,fill=red,text=white,minimum size=1pt,inner sep=1]
+
+
+%Estilo de las flechas y lineas
+\tikzstyle{line} = [draw,-latex',color=gray,ultra thick]
+\tikzstyle{line2} = [draw,color=gray,ultra thick]
+
+
+\begin{tikzpicture}[every node/.append style={color=darkgray!85,thick}]
+
+%Cuadrado gris que abarca la fabricacion
+\draw [draw=none,fill=darkgray,opacity=0.1] (3.8,-22) rectangle (11.3,1);
+\draw [draw=black,dashed]                   (3.8,-22) rectangle (11.3,1);
+
+% Ubico los nodos de fabricacion
+\node [vacio] (sensores) {\textbf{\Large Fabricación de los Sensores}};
+\node [vacio,right of=sensores,xshift=6.5cm,yshift=-0.08cm] (EQ) {\textbf{\Large Desempeño Electroquímico}};
+\node [fabri, below of=sensores,yshift=1.3cm] (fab1) {Depósito de los electrodos Au};
+\node [vacio, below of=fab1,yshift=-0.5cm,xshift=0.2cm] (vacio0) {};
+\node [fabri, below of=fab1] (fab2) {Depósito de películas mesoporosas de SiO$_2$};
+\node [vacio, below of=fab2,yshift=-1.6cm,xshift=0.2cm] (vacio1) {};
+\node [fabri, below of=fab2,yshift=-2cm] (fab3) {Cambio de reactivos en la síntesis del sol. Cambio de sondas y reactivos para EQ};
+\node [vacio, below of=fab3,yshift=-1.5cm,xshift=0.2cm] (vacio2) {};
+\node [fabri, below of=fab3,yshift=-2cm] (fab4) {Tratamiento térmico aplicado solamente a los microelectrodos};
+\node [vacio, below of=fab4,yshift=-0.9cm,xshift=0.2cm] (vacio3) {};
+\node [vacio, below of=fab4,yshift=-1.7cm,xshift=0cm] (vacio4) {};
+
+\node [fabri, below of=vacio3,yshift=-2cm,xshift=-1.5cm] (fab5) {Desarrollo de películas mesoporosas de SiO$_2$ $<$\SI{130}{\celsius}};
+\node [fabri, below of=vacio3,yshift=0.5cm,xshift=1cm] (fab6) {Electrodos con Au de alta pureza};
+
+%Ubico los nodos de los circulitos de EQ
+\node [circulito_bien, right of=fab1,xshift=6.5cm] (EQ1) {\huge\cmark};
+\node [circulito_mal, right of=fab2,xshift=9cm] (EQ2) {\huge\xmark};
+\node [circulito_mal, right of=fab3,xshift=9cm] (EQ3) {\huge\xmark};
+\node [circulito_mal, right of=fab4,xshift=9cm] (EQ4) {\huge\xmark};
+\node [circulito_bien, right of=fab5,xshift=7.8cm] (EQ5) {\huge\cmark};
+\node [circulito_bien, right of=fab6,xshift=5.3cm] (EQ6) {\huge\cmark};
+
+%Nodos de Caracterizaciones 
+\node [fabri,right of=EQ4,xshift=3.2cm] (caract) {Corrobora Hipótesis\\Caracterizaciones SEM, EQ, XPS};    
+\node [transporte,right of=EQ5,xshift=5.7cm] (transporte) {Estudio como sensores\\Fenómenos de transporte.};  
+
+%Conecto los nodos
+\path [line] (fab1) -- (fab2);
+\path [line] (fab2) -- (fab3);
+\path [line] (fab3) -- (fab4);
+\path [line2] (fab4) -- (vacio4.center);
+\path [line] (vacio4.center) -| (fab6);
+\path [line] (vacio4.center) -| (fab5);
+\path [line] (fab1) -- (EQ1);
+\path [line] (fab2) -- (EQ2);
+\path [line] (fab3) -- (EQ3);
+\path [line] (fab4) -- (EQ4);
+\path [line] (fab5) -- (EQ5);
+\path [line] (fab6) -- (EQ6);
+\path [line] (EQ4)  -- (caract.west);
+\path [line] (EQ5)  -- (transporte.west);
+
+\path[line] (EQ1.south) |- (vacio0.west);
+\path[line] (EQ2.south) |- (vacio1.west);
+\path[line] (EQ3.south) |- (vacio2.west);
+\path[line] (EQ4.south) |- (vacio3.west);
+
+%Nodos de las hipotesis, tienen que ir al final para que este sobre las flechas
+\node [hipo,right of=vacio1,xshift=2.7cm] (hipo1) {Hipótesis:\\Contaminantes};
+\node [hipo,right of=vacio2,xshift=2.7cm] (hipo2) {Hipótesis:\\Tratamiento\\térmico};
+\node [hipo,right of=vacio3,xshift=2.7cm] (solu) {Posibles\\Soluciones};
+
+%Para que aumente el margen y pueda aparecer la sombra
+\node [margen_derecha,right of=caract] (bloque_margen_derecho) {};
+\node [margen_abajo, below of=transporte] (bloque_margen_inferior) {};
+
+
+\end{tikzpicture}

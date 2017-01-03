@@ -1,0 +1,44 @@
+\documentclass[a4paper,10pt]{book}
+
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,activeacute,es-tabla]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+   
+      %Este comando los exporta como pdf, si se comenta se compila entero el codigo tikz
+      \usetikzlibrary{external}
+      %\tikzsetnextfilename{\jobname}
+      \tikzexternalize
+
+    \newcommand{\includetikz}[1]{%
+    \tikzsetnextfilename{#1}%
+    \input{#1.tikz}%
+
+}
+
+\begin{document}
+	
+	\input{grafico_tmp}
+ 
+
+\end{document}
+

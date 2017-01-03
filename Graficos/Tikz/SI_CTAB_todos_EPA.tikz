@@ -1,0 +1,596 @@
+\begin{tikzpicture}[gnuplot]
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% mié 21 dic 2016 11:45:13 ART
+\path (0.000,0.000) rectangle (12.500,8.750);
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,1.601)--(11.947,1.601);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,1.601)--(2.052,1.601);
+\node[gp node right] at (1.688,1.601) {$1.2$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,2.354)--(11.947,2.354);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,2.354)--(2.052,2.354);
+\node[gp node right] at (1.688,2.354) {$1.22$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,3.108)--(11.947,3.108);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,3.108)--(2.052,3.108);
+\node[gp node right] at (1.688,3.108) {$1.24$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,3.861)--(11.947,3.861);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,3.861)--(2.052,3.861);
+\node[gp node right] at (1.688,3.861) {$1.26$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,4.614)--(11.947,4.614);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,4.614)--(2.052,4.614);
+\node[gp node right] at (1.688,4.614) {$1.28$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,5.368)--(11.947,5.368);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,5.368)--(2.052,5.368);
+\node[gp node right] at (1.688,5.368) {$1.3$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,6.121)--(11.947,6.121);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,6.121)--(2.052,6.121);
+\node[gp node right] at (1.688,6.121) {$1.32$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,6.874)--(2.056,6.874);
+\draw[gp path] (5.364,6.874)--(11.947,6.874);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,6.874)--(2.052,6.874);
+\node[gp node right] at (1.688,6.874) {$1.34$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,7.628)--(2.056,7.628);
+\draw[gp path] (5.364,7.628)--(11.947,7.628);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,7.628)--(2.052,7.628);
+\node[gp node right] at (1.688,7.628) {$1.36$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,8.381)--(11.947,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,8.381)--(2.052,8.381);
+\node[gp node right] at (1.688,8.381) {$1.38$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.872,1.601)--(1.872,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.872,1.601)--(1.872,1.781);
+\node[gp node center] at (1.872,1.293) {$0$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (2.880,1.601)--(2.880,6.353);
+\draw[gp path] (2.880,8.201)--(2.880,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (2.880,1.601)--(2.880,1.781);
+\node[gp node center] at (2.880,1.293) {$0.1$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (3.887,1.601)--(3.887,6.353);
+\draw[gp path] (3.887,8.201)--(3.887,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (3.887,1.601)--(3.887,1.781);
+\node[gp node center] at (3.887,1.293) {$0.2$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (4.895,1.601)--(4.895,6.353);
+\draw[gp path] (4.895,8.201)--(4.895,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (4.895,1.601)--(4.895,1.781);
+\node[gp node center] at (4.895,1.293) {$0.3$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (5.902,1.601)--(5.902,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (5.902,1.601)--(5.902,1.781);
+\node[gp node center] at (5.902,1.293) {$0.4$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (6.910,1.601)--(6.910,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (6.910,1.601)--(6.910,1.781);
+\node[gp node center] at (6.910,1.293) {$0.5$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (7.917,1.601)--(7.917,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (7.917,1.601)--(7.917,1.781);
+\node[gp node center] at (7.917,1.293) {$0.6$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (8.925,1.601)--(8.925,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (8.925,1.601)--(8.925,1.781);
+\node[gp node center] at (8.925,1.293) {$0.7$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (9.932,1.601)--(9.932,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (9.932,1.601)--(9.932,1.781);
+\node[gp node center] at (9.932,1.293) {$0.8$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (10.940,1.601)--(10.940,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (10.940,1.601)--(10.940,1.781);
+\node[gp node center] at (10.940,1.293) {$0.9$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (11.947,1.601)--(11.947,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (11.947,1.601)--(11.947,1.781);
+\node[gp node center] at (11.947,1.293) {$1$};
+\draw[gp path] (1.872,8.381)--(1.872,1.601)--(11.947,1.601)--(11.947,8.381);
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {'Indice de refracci'on};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {Humedad Relativa / \%HR};
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,8.047) {Calcinado};
+\gpcolor{rgb color={0.502,0.000,0.000}}
+\gpsetlinewidth{1.00}
+\draw[gp path] (2.240,8.047)--(2.972,8.047);
+\draw[gp path] (1.889,2.023)--(1.888,2.113)--(2.070,2.343)--(2.723,2.531)--(3.371,2.690)%
+  --(3.953,2.859)--(4.453,3.002)--(4.885,3.198)--(5.279,3.556)--(5.664,4.400)--(6.064,6.095)%
+  --(6.438,7.383)--(6.814,7.560)--(7.192,7.616)--(7.559,7.654)--(7.921,7.692)--(8.302,7.711)%
+  --(8.685,7.733)--(9.078,7.771)--(9.442,7.786)--(9.818,7.801)--(10.208,7.820)--(10.665,7.846)%
+  --(11.080,7.842)--(11.109,7.842);
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(1.889,2.023)}
+\gppoint{gp mark 7}{(1.888,2.113)}
+\gppoint{gp mark 7}{(2.070,2.343)}
+\gppoint{gp mark 7}{(2.723,2.531)}
+\gppoint{gp mark 7}{(3.371,2.690)}
+\gppoint{gp mark 7}{(3.953,2.859)}
+\gppoint{gp mark 7}{(4.453,3.002)}
+\gppoint{gp mark 7}{(4.885,3.198)}
+\gppoint{gp mark 7}{(5.279,3.556)}
+\gppoint{gp mark 7}{(5.664,4.400)}
+\gppoint{gp mark 7}{(6.064,6.095)}
+\gppoint{gp mark 7}{(6.438,7.383)}
+\gppoint{gp mark 7}{(6.814,7.560)}
+\gppoint{gp mark 7}{(7.192,7.616)}
+\gppoint{gp mark 7}{(7.559,7.654)}
+\gppoint{gp mark 7}{(7.921,7.692)}
+\gppoint{gp mark 7}{(8.302,7.711)}
+\gppoint{gp mark 7}{(8.685,7.733)}
+\gppoint{gp mark 7}{(9.078,7.771)}
+\gppoint{gp mark 7}{(9.442,7.786)}
+\gppoint{gp mark 7}{(9.818,7.801)}
+\gppoint{gp mark 7}{(10.208,7.820)}
+\gppoint{gp mark 7}{(10.665,7.846)}
+\gppoint{gp mark 7}{(11.080,7.842)}
+\gppoint{gp mark 7}{(11.109,7.842)}
+\gppoint{gp mark 7}{(2.606,8.047)}
+\draw[gp path] (11.109,7.842)--(10.683,7.831)--(10.219,7.797)--(9.788,7.786)--(9.376,7.763)%
+  --(8.985,7.744)--(8.579,7.707)--(8.185,7.692)--(7.825,7.658)--(7.446,7.616)--(7.073,7.582)%
+  --(6.657,7.541)--(6.250,7.477)--(5.857,7.243)--(5.449,6.294)--(5.046,3.684)--(4.628,3.029)%
+  --(4.207,2.867)--(3.766,2.735)--(3.304,2.592)--(2.824,2.464)--(2.292,2.305)--(1.889,2.106)%
+  --(1.888,1.970)--(1.888,1.966);
+\gppoint{gp mark 7}{(11.109,7.842)}
+\gppoint{gp mark 7}{(10.683,7.831)}
+\gppoint{gp mark 7}{(10.219,7.797)}
+\gppoint{gp mark 7}{(9.788,7.786)}
+\gppoint{gp mark 7}{(9.376,7.763)}
+\gppoint{gp mark 7}{(8.985,7.744)}
+\gppoint{gp mark 7}{(8.579,7.707)}
+\gppoint{gp mark 7}{(8.185,7.692)}
+\gppoint{gp mark 7}{(7.825,7.658)}
+\gppoint{gp mark 7}{(7.446,7.616)}
+\gppoint{gp mark 7}{(7.073,7.582)}
+\gppoint{gp mark 7}{(6.657,7.541)}
+\gppoint{gp mark 7}{(6.250,7.477)}
+\gppoint{gp mark 7}{(5.857,7.243)}
+\gppoint{gp mark 7}{(5.449,6.294)}
+\gppoint{gp mark 7}{(5.046,3.684)}
+\gppoint{gp mark 7}{(4.628,3.029)}
+\gppoint{gp mark 7}{(4.207,2.867)}
+\gppoint{gp mark 7}{(3.766,2.735)}
+\gppoint{gp mark 7}{(3.304,2.592)}
+\gppoint{gp mark 7}{(2.824,2.464)}
+\gppoint{gp mark 7}{(2.292,2.305)}
+\gppoint{gp mark 7}{(1.889,2.106)}
+\gppoint{gp mark 7}{(1.888,1.970)}
+\gppoint{gp mark 7}{(1.888,1.966)}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.739) {Simplificado};
+\gpcolor{rgb color={1.000,0.271,0.000}}
+\draw[gp path] (2.240,7.739)--(2.972,7.739);
+\draw[gp path] (1.888,4.177)--(1.888,4.283)--(2.086,4.501)--(2.721,4.667)--(3.338,4.821)%
+  --(3.908,4.976)--(4.388,5.164)--(4.833,5.439)--(5.236,5.786)--(5.634,6.539)--(6.004,7.454)%
+  --(6.373,7.876)--(6.761,7.974)--(7.110,8.031)--(7.485,8.065)--(7.866,8.098)--(8.234,8.121)%
+  --(8.594,8.163)--(8.964,8.181)--(9.319,8.189)--(9.702,8.223)--(10.101,8.234)--(10.538,8.249)%
+  --(10.951,8.272)--(11.006,8.272);
+\gppoint{gp mark 7}{(1.888,4.177)}
+\gppoint{gp mark 7}{(1.888,4.283)}
+\gppoint{gp mark 7}{(2.086,4.501)}
+\gppoint{gp mark 7}{(2.721,4.667)}
+\gppoint{gp mark 7}{(3.338,4.821)}
+\gppoint{gp mark 7}{(3.908,4.976)}
+\gppoint{gp mark 7}{(4.388,5.164)}
+\gppoint{gp mark 7}{(4.833,5.439)}
+\gppoint{gp mark 7}{(5.236,5.786)}
+\gppoint{gp mark 7}{(5.634,6.539)}
+\gppoint{gp mark 7}{(6.004,7.454)}
+\gppoint{gp mark 7}{(6.373,7.876)}
+\gppoint{gp mark 7}{(6.761,7.974)}
+\gppoint{gp mark 7}{(7.110,8.031)}
+\gppoint{gp mark 7}{(7.485,8.065)}
+\gppoint{gp mark 7}{(7.866,8.098)}
+\gppoint{gp mark 7}{(8.234,8.121)}
+\gppoint{gp mark 7}{(8.594,8.163)}
+\gppoint{gp mark 7}{(8.964,8.181)}
+\gppoint{gp mark 7}{(9.319,8.189)}
+\gppoint{gp mark 7}{(9.702,8.223)}
+\gppoint{gp mark 7}{(10.101,8.234)}
+\gppoint{gp mark 7}{(10.538,8.249)}
+\gppoint{gp mark 7}{(10.951,8.272)}
+\gppoint{gp mark 7}{(11.006,8.272)}
+\gppoint{gp mark 7}{(2.606,7.739)}
+\draw[gp path] (11.006,8.272)--(10.583,8.257)--(10.125,8.249)--(9.700,8.223)--(9.291,8.193)%
+  --(8.913,8.174)--(8.504,8.147)--(8.118,8.117)--(7.746,8.095)--(7.367,8.050)--(6.976,8.012)%
+  --(6.590,7.982)--(6.194,7.872)--(5.816,7.507)--(5.394,6.445)--(5.003,5.556)--(4.587,5.232)%
+  --(4.168,5.036)--(3.737,4.893)--(3.281,4.776)--(2.813,4.644)--(2.295,4.494)--(1.888,4.294)%
+  --(1.888,4.143)--(1.888,4.136);
+\gppoint{gp mark 7}{(11.006,8.272)}
+\gppoint{gp mark 7}{(10.583,8.257)}
+\gppoint{gp mark 7}{(10.125,8.249)}
+\gppoint{gp mark 7}{(9.700,8.223)}
+\gppoint{gp mark 7}{(9.291,8.193)}
+\gppoint{gp mark 7}{(8.913,8.174)}
+\gppoint{gp mark 7}{(8.504,8.147)}
+\gppoint{gp mark 7}{(8.118,8.117)}
+\gppoint{gp mark 7}{(7.746,8.095)}
+\gppoint{gp mark 7}{(7.367,8.050)}
+\gppoint{gp mark 7}{(6.976,8.012)}
+\gppoint{gp mark 7}{(6.590,7.982)}
+\gppoint{gp mark 7}{(6.194,7.872)}
+\gppoint{gp mark 7}{(5.816,7.507)}
+\gppoint{gp mark 7}{(5.394,6.445)}
+\gppoint{gp mark 7}{(5.003,5.556)}
+\gppoint{gp mark 7}{(4.587,5.232)}
+\gppoint{gp mark 7}{(4.168,5.036)}
+\gppoint{gp mark 7}{(3.737,4.893)}
+\gppoint{gp mark 7}{(3.281,4.776)}
+\gppoint{gp mark 7}{(2.813,4.644)}
+\gppoint{gp mark 7}{(2.295,4.494)}
+\gppoint{gp mark 7}{(1.888,4.294)}
+\gppoint{gp mark 7}{(1.888,4.143)}
+\gppoint{gp mark 7}{(1.888,4.136)}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.431) {Prolongado};
+\gpcolor{rgb color={0.000,0.000,0.000}}
+\draw[gp path] (2.240,7.431)--(2.972,7.431);
+\draw[gp path] (1.888,2.309)--(1.888,2.392)--(2.159,2.584)--(2.780,2.723)--(3.346,2.867)%
+  --(3.878,2.983)--(4.355,3.093)--(4.777,3.221)--(5.177,3.368)--(5.560,3.560)--(5.931,4.034)%
+  --(6.319,5.767)--(6.683,7.164)--(7.056,7.409)--(7.414,7.454)--(7.766,7.492)--(8.130,7.518)%
+  --(8.483,7.560)--(8.895,7.594)--(9.276,7.616)--(9.639,7.646)--(10.080,7.665)--(10.497,7.680)%
+  --(10.907,7.711)--(10.906,7.699);
+\gppoint{gp mark 7}{(1.888,2.309)}
+\gppoint{gp mark 7}{(1.888,2.392)}
+\gppoint{gp mark 7}{(2.159,2.584)}
+\gppoint{gp mark 7}{(2.780,2.723)}
+\gppoint{gp mark 7}{(3.346,2.867)}
+\gppoint{gp mark 7}{(3.878,2.983)}
+\gppoint{gp mark 7}{(4.355,3.093)}
+\gppoint{gp mark 7}{(4.777,3.221)}
+\gppoint{gp mark 7}{(5.177,3.368)}
+\gppoint{gp mark 7}{(5.560,3.560)}
+\gppoint{gp mark 7}{(5.931,4.034)}
+\gppoint{gp mark 7}{(6.319,5.767)}
+\gppoint{gp mark 7}{(6.683,7.164)}
+\gppoint{gp mark 7}{(7.056,7.409)}
+\gppoint{gp mark 7}{(7.414,7.454)}
+\gppoint{gp mark 7}{(7.766,7.492)}
+\gppoint{gp mark 7}{(8.130,7.518)}
+\gppoint{gp mark 7}{(8.483,7.560)}
+\gppoint{gp mark 7}{(8.895,7.594)}
+\gppoint{gp mark 7}{(9.276,7.616)}
+\gppoint{gp mark 7}{(9.639,7.646)}
+\gppoint{gp mark 7}{(10.080,7.665)}
+\gppoint{gp mark 7}{(10.497,7.680)}
+\gppoint{gp mark 7}{(10.907,7.711)}
+\gppoint{gp mark 7}{(10.906,7.699)}
+\gppoint{gp mark 7}{(2.606,7.431)}
+\draw[gp path] (10.906,7.699)--(10.536,7.688)--(10.116,7.669)--(9.688,7.650)--(9.272,7.616)%
+  --(8.871,7.586)--(8.479,7.564)--(8.109,7.526)--(7.738,7.481)--(7.352,7.451)--(6.970,7.417)%
+  --(6.586,7.338)--(6.182,7.066)--(5.802,6.189)--(5.379,4.125)--(4.990,3.304)--(4.570,3.168)%
+  --(4.176,3.047)--(3.740,2.934)--(3.287,2.821)--(2.824,2.708)--(2.310,2.554)--(1.888,2.388)%
+  --(1.888,2.260);
+\gppoint{gp mark 7}{(10.906,7.699)}
+\gppoint{gp mark 7}{(10.536,7.688)}
+\gppoint{gp mark 7}{(10.116,7.669)}
+\gppoint{gp mark 7}{(9.688,7.650)}
+\gppoint{gp mark 7}{(9.272,7.616)}
+\gppoint{gp mark 7}{(8.871,7.586)}
+\gppoint{gp mark 7}{(8.479,7.564)}
+\gppoint{gp mark 7}{(8.109,7.526)}
+\gppoint{gp mark 7}{(7.738,7.481)}
+\gppoint{gp mark 7}{(7.352,7.451)}
+\gppoint{gp mark 7}{(6.970,7.417)}
+\gppoint{gp mark 7}{(6.586,7.338)}
+\gppoint{gp mark 7}{(6.182,7.066)}
+\gppoint{gp mark 7}{(5.802,6.189)}
+\gppoint{gp mark 7}{(5.379,4.125)}
+\gppoint{gp mark 7}{(4.990,3.304)}
+\gppoint{gp mark 7}{(4.570,3.168)}
+\gppoint{gp mark 7}{(4.176,3.047)}
+\gppoint{gp mark 7}{(3.740,2.934)}
+\gppoint{gp mark 7}{(3.287,2.821)}
+\gppoint{gp mark 7}{(2.824,2.708)}
+\gppoint{gp mark 7}{(2.310,2.554)}
+\gppoint{gp mark 7}{(1.888,2.388)}
+\gppoint{gp mark 7}{(1.888,2.260)}
+\gppoint{gp mark 7}{(1.888,2.260)}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.123) {Basico};
+\gpcolor{rgb color={1.000,0.000,0.000}}
+\draw[gp path] (2.240,7.123)--(2.972,7.123);
+\draw[gp path] (1.889,2.155)--(1.888,2.268)--(2.080,2.561)--(2.717,2.806)--(3.327,3.055)%
+  --(3.887,3.262)--(4.387,3.469)--(4.809,3.710)--(5.212,3.966)--(5.600,4.418)--(5.979,5.492)%
+  --(6.340,7.006)--(6.721,7.726)--(7.119,7.827)--(7.521,7.869)--(7.845,7.903)--(8.221,7.933)%
+  --(8.593,7.955)--(9.017,7.974)--(9.359,7.997)--(9.726,8.027)--(10.147,8.038)--(10.555,8.057)%
+  --(10.954,8.065)--(10.984,8.076);
+\gppoint{gp mark 7}{(1.889,2.155)}
+\gppoint{gp mark 7}{(1.888,2.268)}
+\gppoint{gp mark 7}{(2.080,2.561)}
+\gppoint{gp mark 7}{(2.717,2.806)}
+\gppoint{gp mark 7}{(3.327,3.055)}
+\gppoint{gp mark 7}{(3.887,3.262)}
+\gppoint{gp mark 7}{(4.387,3.469)}
+\gppoint{gp mark 7}{(4.809,3.710)}
+\gppoint{gp mark 7}{(5.212,3.966)}
+\gppoint{gp mark 7}{(5.600,4.418)}
+\gppoint{gp mark 7}{(5.979,5.492)}
+\gppoint{gp mark 7}{(6.340,7.006)}
+\gppoint{gp mark 7}{(6.721,7.726)}
+\gppoint{gp mark 7}{(7.119,7.827)}
+\gppoint{gp mark 7}{(7.521,7.869)}
+\gppoint{gp mark 7}{(7.845,7.903)}
+\gppoint{gp mark 7}{(8.221,7.933)}
+\gppoint{gp mark 7}{(8.593,7.955)}
+\gppoint{gp mark 7}{(9.017,7.974)}
+\gppoint{gp mark 7}{(9.359,7.997)}
+\gppoint{gp mark 7}{(9.726,8.027)}
+\gppoint{gp mark 7}{(10.147,8.038)}
+\gppoint{gp mark 7}{(10.555,8.057)}
+\gppoint{gp mark 7}{(10.954,8.065)}
+\gppoint{gp mark 7}{(10.984,8.076)}
+\gppoint{gp mark 7}{(2.606,7.123)}
+\draw[gp path] (10.984,8.076)--(10.607,8.050)--(10.163,8.034)--(9.754,8.019)--(9.344,8.001)%
+  --(8.969,7.974)--(8.543,7.948)--(8.163,7.925)--(7.788,7.895)--(7.412,7.861)--(7.017,7.824)%
+  --(6.625,7.782)--(6.228,7.695)--(5.844,7.481)--(5.442,6.829)--(5.031,4.897)--(4.619,3.590)%
+  --(4.199,3.368)--(3.759,3.160)--(3.307,2.946)--(2.829,2.720)--(2.304,2.482)--(1.889,2.151)%
+  --(1.889,1.959)--(1.888,1.951);
+\gppoint{gp mark 7}{(10.984,8.076)}
+\gppoint{gp mark 7}{(10.607,8.050)}
+\gppoint{gp mark 7}{(10.163,8.034)}
+\gppoint{gp mark 7}{(9.754,8.019)}
+\gppoint{gp mark 7}{(9.344,8.001)}
+\gppoint{gp mark 7}{(8.969,7.974)}
+\gppoint{gp mark 7}{(8.543,7.948)}
+\gppoint{gp mark 7}{(8.163,7.925)}
+\gppoint{gp mark 7}{(7.788,7.895)}
+\gppoint{gp mark 7}{(7.412,7.861)}
+\gppoint{gp mark 7}{(7.017,7.824)}
+\gppoint{gp mark 7}{(6.625,7.782)}
+\gppoint{gp mark 7}{(6.228,7.695)}
+\gppoint{gp mark 7}{(5.844,7.481)}
+\gppoint{gp mark 7}{(5.442,6.829)}
+\gppoint{gp mark 7}{(5.031,4.897)}
+\gppoint{gp mark 7}{(4.619,3.590)}
+\gppoint{gp mark 7}{(4.199,3.368)}
+\gppoint{gp mark 7}{(3.759,3.160)}
+\gppoint{gp mark 7}{(3.307,2.946)}
+\gppoint{gp mark 7}{(2.829,2.720)}
+\gppoint{gp mark 7}{(2.304,2.482)}
+\gppoint{gp mark 7}{(1.889,2.151)}
+\gppoint{gp mark 7}{(1.889,1.959)}
+\gppoint{gp mark 7}{(1.888,1.951)}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,6.815) {Acido};
+\gpcolor{rgb color={0.000,0.000,1.000}}
+\draw[gp path] (2.240,6.815)--(2.972,6.815);
+\draw[gp path] (1.888,2.806)--(1.888,2.927)--(2.084,3.187)--(2.714,3.379)--(3.320,3.578)%
+  --(3.886,3.835)--(4.368,4.102)--(4.792,4.528)--(5.198,5.338)--(5.618,6.532)--(5.983,7.409)%
+  --(6.348,7.684)--(6.716,7.737)--(7.077,7.763)--(7.478,7.797)--(7.850,7.842)--(8.206,7.872)%
+  --(8.574,7.888)--(8.956,7.914)--(9.321,7.937)--(9.705,7.952)--(10.108,7.974)--(10.572,7.985)%
+  --(11.040,8.004)--(11.053,8.004);
+\gppoint{gp mark 7}{(1.888,2.806)}
+\gppoint{gp mark 7}{(1.888,2.927)}
+\gppoint{gp mark 7}{(2.084,3.187)}
+\gppoint{gp mark 7}{(2.714,3.379)}
+\gppoint{gp mark 7}{(3.320,3.578)}
+\gppoint{gp mark 7}{(3.886,3.835)}
+\gppoint{gp mark 7}{(4.368,4.102)}
+\gppoint{gp mark 7}{(4.792,4.528)}
+\gppoint{gp mark 7}{(5.198,5.338)}
+\gppoint{gp mark 7}{(5.618,6.532)}
+\gppoint{gp mark 7}{(5.983,7.409)}
+\gppoint{gp mark 7}{(6.348,7.684)}
+\gppoint{gp mark 7}{(6.716,7.737)}
+\gppoint{gp mark 7}{(7.077,7.763)}
+\gppoint{gp mark 7}{(7.478,7.797)}
+\gppoint{gp mark 7}{(7.850,7.842)}
+\gppoint{gp mark 7}{(8.206,7.872)}
+\gppoint{gp mark 7}{(8.574,7.888)}
+\gppoint{gp mark 7}{(8.956,7.914)}
+\gppoint{gp mark 7}{(9.321,7.937)}
+\gppoint{gp mark 7}{(9.705,7.952)}
+\gppoint{gp mark 7}{(10.108,7.974)}
+\gppoint{gp mark 7}{(10.572,7.985)}
+\gppoint{gp mark 7}{(11.040,8.004)}
+\gppoint{gp mark 7}{(11.053,8.004)}
+\gppoint{gp mark 7}{(2.606,6.815)}
+\draw[gp path] (11.053,8.004)--(10.642,8.001)--(10.207,7.963)--(9.773,7.963)--(9.354,7.933)%
+  --(8.959,7.903)--(8.539,7.891)--(8.153,7.854)--(7.762,7.824)--(7.353,7.801)--(7.008,7.759)%
+  --(6.585,7.711)--(6.198,7.673)--(5.798,7.613)--(5.396,7.394)--(4.995,6.403)--(4.591,4.298)%
+  --(4.174,3.963)--(3.752,3.722)--(3.298,3.514)--(2.820,3.337)--(2.298,3.172)--(1.888,2.900)%
+  --(1.888,2.720)--(1.888,2.716);
+\gppoint{gp mark 7}{(11.053,8.004)}
+\gppoint{gp mark 7}{(10.642,8.001)}
+\gppoint{gp mark 7}{(10.207,7.963)}
+\gppoint{gp mark 7}{(9.773,7.963)}
+\gppoint{gp mark 7}{(9.354,7.933)}
+\gppoint{gp mark 7}{(8.959,7.903)}
+\gppoint{gp mark 7}{(8.539,7.891)}
+\gppoint{gp mark 7}{(8.153,7.854)}
+\gppoint{gp mark 7}{(7.762,7.824)}
+\gppoint{gp mark 7}{(7.353,7.801)}
+\gppoint{gp mark 7}{(7.008,7.759)}
+\gppoint{gp mark 7}{(6.585,7.711)}
+\gppoint{gp mark 7}{(6.198,7.673)}
+\gppoint{gp mark 7}{(5.798,7.613)}
+\gppoint{gp mark 7}{(5.396,7.394)}
+\gppoint{gp mark 7}{(4.995,6.403)}
+\gppoint{gp mark 7}{(4.591,4.298)}
+\gppoint{gp mark 7}{(4.174,3.963)}
+\gppoint{gp mark 7}{(3.752,3.722)}
+\gppoint{gp mark 7}{(3.298,3.514)}
+\gppoint{gp mark 7}{(2.820,3.337)}
+\gppoint{gp mark 7}{(2.298,3.172)}
+\gppoint{gp mark 7}{(1.888,2.900)}
+\gppoint{gp mark 7}{(1.888,2.720)}
+\gppoint{gp mark 7}{(1.888,2.716)}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,6.507) {Vacio};
+\draw[gp path] (2.240,6.507)--(2.972,6.507);
+\draw[gp path] (1.889,2.256)--(1.888,2.366)--(2.080,2.607)--(2.720,2.829)--(3.337,3.066)%
+  --(3.908,3.296)--(4.404,3.503)--(4.837,3.725)--(5.249,3.966)--(5.646,4.321)--(6.028,5.262)%
+  --(6.400,6.901)--(6.766,7.699)--(7.145,7.790)--(7.522,7.827)--(7.887,7.865)--(8.249,7.888)%
+  --(8.675,7.925)--(9.044,7.944)--(9.423,7.970)--(9.783,7.985)--(10.160,8.008)--(10.546,8.027)%
+  --(10.981,8.034)--(11.005,8.038);
+\gppoint{gp mark 7}{(1.889,2.256)}
+\gppoint{gp mark 7}{(1.888,2.366)}
+\gppoint{gp mark 7}{(2.080,2.607)}
+\gppoint{gp mark 7}{(2.720,2.829)}
+\gppoint{gp mark 7}{(3.337,3.066)}
+\gppoint{gp mark 7}{(3.908,3.296)}
+\gppoint{gp mark 7}{(4.404,3.503)}
+\gppoint{gp mark 7}{(4.837,3.725)}
+\gppoint{gp mark 7}{(5.249,3.966)}
+\gppoint{gp mark 7}{(5.646,4.321)}
+\gppoint{gp mark 7}{(6.028,5.262)}
+\gppoint{gp mark 7}{(6.400,6.901)}
+\gppoint{gp mark 7}{(6.766,7.699)}
+\gppoint{gp mark 7}{(7.145,7.790)}
+\gppoint{gp mark 7}{(7.522,7.827)}
+\gppoint{gp mark 7}{(7.887,7.865)}
+\gppoint{gp mark 7}{(8.249,7.888)}
+\gppoint{gp mark 7}{(8.675,7.925)}
+\gppoint{gp mark 7}{(9.044,7.944)}
+\gppoint{gp mark 7}{(9.423,7.970)}
+\gppoint{gp mark 7}{(9.783,7.985)}
+\gppoint{gp mark 7}{(10.160,8.008)}
+\gppoint{gp mark 7}{(10.546,8.027)}
+\gppoint{gp mark 7}{(10.981,8.034)}
+\gppoint{gp mark 7}{(11.005,8.038)}
+\gppoint{gp mark 7}{(2.606,6.507)}
+\draw[gp path] (11.005,8.038)--(10.607,8.019)--(10.157,8.001)--(9.724,7.978)--(9.332,7.955)%
+  --(8.935,7.937)--(8.542,7.906)--(8.157,7.884)--(7.781,7.850)--(7.407,7.812)--(7.004,7.778)%
+  --(6.606,7.729)--(6.208,7.579)--(5.825,7.183)--(5.424,6.091)--(5.029,3.963)--(4.620,3.575)%
+  --(4.198,3.371)--(3.760,3.172)--(3.303,2.991)--(2.827,2.780)--(2.298,2.569)--(1.888,2.294)%
+  --(1.889,2.117)--(1.888,2.113);
+\gppoint{gp mark 7}{(11.005,8.038)}
+\gppoint{gp mark 7}{(10.607,8.019)}
+\gppoint{gp mark 7}{(10.157,8.001)}
+\gppoint{gp mark 7}{(9.724,7.978)}
+\gppoint{gp mark 7}{(9.332,7.955)}
+\gppoint{gp mark 7}{(8.935,7.937)}
+\gppoint{gp mark 7}{(8.542,7.906)}
+\gppoint{gp mark 7}{(8.157,7.884)}
+\gppoint{gp mark 7}{(7.781,7.850)}
+\gppoint{gp mark 7}{(7.407,7.812)}
+\gppoint{gp mark 7}{(7.004,7.778)}
+\gppoint{gp mark 7}{(6.606,7.729)}
+\gppoint{gp mark 7}{(6.208,7.579)}
+\gppoint{gp mark 7}{(5.825,7.183)}
+\gppoint{gp mark 7}{(5.424,6.091)}
+\gppoint{gp mark 7}{(5.029,3.963)}
+\gppoint{gp mark 7}{(4.620,3.575)}
+\gppoint{gp mark 7}{(4.198,3.371)}
+\gppoint{gp mark 7}{(3.760,3.172)}
+\gppoint{gp mark 7}{(3.303,2.991)}
+\gppoint{gp mark 7}{(2.827,2.780)}
+\gppoint{gp mark 7}{(2.298,2.569)}
+\gppoint{gp mark 7}{(1.888,2.294)}
+\gppoint{gp mark 7}{(1.889,2.117)}
+\gppoint{gp mark 7}{(1.888,2.113)}
+%% coordinates of the plot area
+\gpdefrectangularnode{gp plot 1}{\pgfpoint{1.872cm}{1.601cm}}{\pgfpoint{11.947cm}{8.381cm}}
+\end{tikzpicture}
+%% gnuplot variables

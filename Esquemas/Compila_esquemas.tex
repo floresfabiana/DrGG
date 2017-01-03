@@ -1,0 +1,73 @@
+\documentclass[a4paper,10pt]{book}
+
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,english,activeacute,es-tabla]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+
+   \usepackage{amssymb}% http://ctan.org/pkg/amssymb
+   \usepackage{pifont}% http://ctan.org/pkg/pifont
+   \newcommand{\cmark}{\ding{51}}%
+   \newcommand{\xmark}{\ding{55}}%
+   
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel,marvosym}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+ 
+   %Paquete gestor de unidades
+   \usepackage[version-1-compatibility]{siunitx}
+   \sisetup{output-decimal-marker = {,}}
+
+    \usepackage{pgfplots}
+
+   %Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows,arrows.meta}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{shapes.symbols}
+   \usetikzlibrary{decorations.pathreplacing}
+   \usetikzlibrary{fit}
+   \usetikzlibrary{calc}
+   \usetikzlibrary{positioning}
+   \usetikzlibrary{matrix}
+   \usetikzlibrary{decorations.pathmorphing}
+   \usetikzlibrary{fadings}
+   \usetikzlibrary{shadings}
+   \usetikzlibrary{decorations}
+
+     %Para hacer quimica
+   \usepackage{chemfig}
+
+      %Este comando los exporta como pdf, si se comenta se compila entero el codigo tikz
+       \usetikzlibrary{external}
+       \tikzsetnextfilename{\jobname}
+       \tikzexternalize
+
+       \newcommand{\includetikz}[1]{%
+       \tikzsetnextfilename{#1}%
+       \input{#1.tikz}%
+       }
+
+
+
+\begin{document}
+
+\input{esquema_tmp.tex}
+
+\end{document}
+

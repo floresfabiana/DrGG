@@ -1,0 +1,7 @@
+\begin{tikzpicture}
+
+\node at (0,0) {
+\chemfig{H-Cl}
+};
+
+\end{tikzpicture}

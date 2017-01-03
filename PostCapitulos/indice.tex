@@ -1,0 +1,21 @@
+\cleardoublepage\phantomsection
+\phantomsection\mtcaddchapter[Índice alfabético]
+\FormatoIndice
+
+%Saco marcas laterales de las Referencias
+\RemoveLabelsBib
+
+%Agrego las marcas laterales corresponedientes
+\AddLabelsAlf
+%Palabras especiales para el indice
+
+%Problemas con el tema del fancystyle
+\let\originalstyle=\thispagestyle            % Store the command for later reuse.
+\def\thispagestyle#1{\fancyfoot[C]{}}       % This clears footer in the center if fancyhdr is in use.
+\def\thispagestyle#1{\originalstyle{empty}} % Use this to get blank header+footer, TeXnically it is only \thispagestyle{empty}.
+\def\thispagestyle#1{}                       % This line completely ignores the content of the \thispagestyle command.
+
+%Imprimo el índice
+\printindex                                  % Typeset the actual Index.
+
+\let\thispagestyle=\originalstyle 

@@ -1,0 +1,120 @@
+\documentclass[border={0cm -0.8cm 0cm -0.8cm}]{standalone}
+
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,english,activeacute,es-tabla]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+ 
+   %Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{shapes.symbols}
+   \usetikzlibrary{intersections}
+   \usetikzlibrary{decorations.text}
+
+\begin{document}
+
+\begin{tikzpicture}[every node/.append style={color=darkgray!85,thick}]
+
+%Estilo de los bloques
+\tikzstyle{no-block} = [circle,minimum size=2.4cm,text width=2.4cm, minimum height=1.2cm, text centered]
+\tikzstyle{margen_abajo} = [node distance=0cm]
+\tikzstyle{margen_derecha} = [node distance=1.2cm]
+
+%Gradiente de grises para cada bloque y entre los bloques
+\tikzstyle{block1} = [rectangle, blur shadow, draw=darkgray, top color=orange, bottom color=white, text width=2.4cm, minimum height=1.2cm, text centered, rounded corners, node distance=4cm,font=\bfseries]
+\tikzstyle{block2} = [circle, blur shadow, draw=darkgray, top color=orange!80, bottom color=white, text width=2cm, text centered,font=\bfseries]
+\tikzstyle{block3} = [circle, blur shadow, draw=darkgray, top color=orange!70, bottom color=white, text width=2cm, text centered,font=\bfseries]
+\tikzstyle{block4} = [circle, blur shadow, draw=darkgray, top color=orange!60, bottom color=white, text width=2cm, text centered,font=\bfseries]
+\tikzstyle{block5} = [circle, blur shadow, draw=darkgray, top color=orange!50, bottom color=white, text width=2cm, text centered,font=\bfseries]
+\tikzstyle{block6} = [circle, blur shadow, draw=darkgray, top color=orange!40, bottom color=white, text width=2cm, text centered,font=\bfseries]
+\tikzstyle{block7} = [rectangle, blur shadow, draw=darkgray, top color=orange!30, bottom color=white, text width=2.4cm, minimum height=1.2cm, text centered,rounded corners, node distance=4cm,font=\bfseries]
+
+%Estilo de las flechas
+\tikzstyle{line} = [draw,latex'-,color=gray,ultra thick]
+\tikzstyle{iline} = [draw,-latex',color=gray,ultra thick]
+
+%grilla
+%\draw[help lines,red] (-10,-10) grid[step=1cm] (10,10);
+
+%Definiciones para los Loops
+\def \m {5}            %Elementos circulo grande
+\def \n {5}            %Elementos circulo chico 
+\def \radiuss {6.5cm}  %Radio circulo Grande
+\def \radius {3.5cm}   %Radio circulo chico
+\def \marginn{30}
+\def \margin{20}
+
+%Circulo de afuera, define las posiciones de afuero
+\foreach \t in {\m,...,7}
+{\node[no-block] (B\t) at (({160/\m * (\t - 1))-160}:\radiuss) {};}
+
+%Circulo de adentro definne las posiciones de adentro
+\foreach \s in {1,...,\n}
+{\node[no-block] (A\s) at ({360/\n * (\s - 1)}:\radius) {};}
+
+%Ubicacio de todos los nodos relativo a las posiciones de los circulos
+\node [block1, left of=A3] (bloque1)         {Diseño de las máscaras};
+\node [block2]             (bloque2) at (A3) {Limpieza sustrato};
+\node [block3]             (bloque3) at (A2) {Litografía máscara $n$};
+\node [block4]             (bloque4) at (A1) {Depósito capa $n$};
+\node [block5]             (bloque5) at (A5) {lift-off capa $n$};
+\node [block3]             (bloque6) at (B7) {Depósito capa $n$};
+\node [block4]             (bloque7) at (B6) {Litografía máscara $n$};
+\node [block5]             (bloque8) at (B5) {Grabado capa $n$};
+\node [block6]             (bloque9) at (A4) {Capa $n$ Finalizada};
+\node [block7, left of=A4] (bloque10)        {Encapsulado y Corte};
+
+%Textos externos
+%\node [no-block] at (0,0) (texto-lift-off) {\Large{\bfseries{lift-off}}}; 
+%\node [no-block] at (4.6,1.7) (texto-lift-off) {\Large{\bfseries{grabado}}}; 
+%\node [no-block] at (-1.3,4.8) (texto-lift-off) {\Large{\bfseries{grabado}}}; 
+
+%Flechas conectoras Circulo grande
+\draw[line] ([shift=(10.7:\radiuss)]0,0) arc (10.7:21:\radiuss);
+\draw[iline] ([shift=(-10.7:\radiuss)]0,0) arc (-10.7:-21:\radiuss);
+
+%Flechas conectoras Circulo chico
+\draw[line] ({360/5 * (1 - 1)+\margin}:\radius) arc ({360/5 * (1-1)+\margin}:{360/5 * (1)-\margin}:\radius);
+\draw[line] ({360/5 * (2 - 1)+\margin}:\radius) arc ({360/5 * (2-1)+\margin}:{360/5 * (2)-\margin}:\radius);
+\draw[line] ({360/5 * (3 - 1)+\margin}:\radius) arc ({360/5 * (3-1)+\margin}:{360/5 * (3)-\margin}:\radius);
+\draw[line] ({360/5 * (4 - 1)+\margin}:\radius) arc ({360/5 * (4-1)+\margin}:{360/5 * (4)-\margin}:\radius);
+\draw[line] ({360/5 * (5 - 1)+\margin}:\radius) arc ({360/5 * (5-1)+\margin}:{360/5 * (5)-\margin}:\radius);
+
+%Flechas para conectar circulo chico con circulo grande
+\path [line,out=135,in=50,sloped,anchor=south,near end,]   (B7) edge (A3);
+\path [line,in=-135,out=-50]   (A4) edge (B5);
+
+%Flechas conectoras Afuera con los bloques de entrada y salida
+\path[line] (bloque10) -- (A4);
+\path[line] (A3) -- (bloque1);
+
+%Bloques al final para que me entren las sombras
+   %Colocar abajo del bloque mas inferior
+   \node [margen_abajo, below of=bloque8] (bloque_margen_inferior) {};
+
+   %Colocar a la derecha del bloque que este mas a la derecha
+    \node [margen_derecha, right of=bloque7] (bloque_margen_derecho) {};
+
+\end{tikzpicture}
+\end{document}

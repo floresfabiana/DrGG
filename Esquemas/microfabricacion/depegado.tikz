@@ -1,0 +1,62 @@
+\begin{tikzpicture}
+	\node (A) at (0,0) {};
+	\node (AA) at (-0.2,0.5) {};
+	\node (B) at (0,0.5) {};
+	\node (C) at (1.5,0.5) {};
+	\node (D) at (1.3,0) {};
+	\node (E) at (1.3,0.5) {};
+	\node (F) at (1.3,0) {};
+    
+
+%La Resina
+	\node at (-2.9,1.25) {
+		\begin{tikzpicture}
+		\draw[draw=none,fill=red!60] (A.center) -- (B.center) -- (C.center) -- (D.center) -- (A.center);
+		\end{tikzpicture}
+		};   	
+	\node at (0,1.25) {
+		\begin{tikzpicture}
+		\draw[draw=none,fill=red!60] (A.center) -- (AA.center) -- (C.center) -- (D.center) -- (A.center);
+		\end{tikzpicture}
+		};
+	\node at (2.9,1.25) {
+		\begin{tikzpicture}
+		\draw[draw=none,fill=red!60] (A.center) -- (AA.center) -- (E.center) -- (F.center) -- (A.center);
+		\end{tikzpicture}
+		};  	  	
+
+%Superficie de Silciio
+\node at (0,0.5)[on background layer] {
+	\begin{tikzpicture}
+	\fill[darkgray,path fading=south] rectangle (7.3,1);
+	\end{tikzpicture}
+	};
+
+%Electrodos
+	\node at (0,1.04) {
+		\begin{tikzpicture}
+		\fill[yellow] rectangle (1.3,0.08);
+		\fill[yellow,xshift=3cm] rectangle (1.3,0.08);
+		\end{tikzpicture}
+	};
+
+	\node at (0,1.54) {
+		\begin{tikzpicture}
+		\fill[yellow,xshift=-0.1cm] rectangle (1.7,0.08);
+		\fill[yellow,xshift=-2.9cm] rectangle (1.5,0.08);
+		\fill[yellow,xshift=2.9cm] rectangle (1.5,0.08);
+		\end{tikzpicture}
+	};
+
+%Flechas
+\tikzstyle{flecha} = [draw,latex'-,color=darkgray, thick]
+\draw[flecha] ([yshift=0.55cm,xshift=-0.73cm]B.center) -- ([yshift=1.7cm,xshift=-1.5cm]B.center);
+\draw[flecha] ([yshift=0.55cm,xshift=-2.27cm]B.center) -- ([yshift=1.7cm,xshift=-1.5cm]B.center);
+%\draw[flecha] ([yshift=0.8cm,xshift=-3cm]B.center) -- ([yshift=2cm,xshift=-1.6cm]B.center);
+%\draw[flecha] ([yshift=0.6cm,xshift=4.5cm]B.center) -- ([yshift=2cm,xshift=3.1cm]B.center);
+%\draw[flecha] ([yshift=0.6cm,xshift=1.5cm]B.center) -- ([yshift=2cm,xshift=2.9cm]B.center);
+
+%\node at ([yshift=2.2cm,xshift=-1.5cm]B.center) {\scriptsize{Zonas de baja adherencia}};
+%\node at ([yshift=2.2cm,xshift=3cm]B.center) {\scriptsize{Zonas de alta adherencia}};
+
+\end{tikzpicture}

@@ -1,0 +1,44 @@
+\begin{tikzpicture}
+
+%Molecula de MPTMS Suelta
+\node at (-1,0.5) {
+\chemfig[scale=1.20][scale=1.20]{Si([:-40]-OCH_3)
+		   ([:50]-OCH_3)
+		   (-[:140,,1,3]CH_3O)
+		   (-[:230]-[:320]-[:230]-[:320]SH)
+		   }
+};
+
+%Superficie del Au
+\node at (6,-1.82) {
+\begin{tikzpicture}
+\fill[yellow,path fading=south] rectangle (5,1.5);
+\end{tikzpicture}
+};,,,,,,dash pattern=on 2pt off 1pt
+
+%Molecula de MPTMS ligada
+\node at (6,1) {
+\chemfig[scale=0.6][scale=0.6]{Si
+		   ([:50]-O-[:50]Si(-[:140,,,,,,dash pattern=on 2pt off 1pt])(-[:50,,,,,,dash pattern=on 2pt off 1pt])(-[:-40]O-[:20]Si(-[:140,,,,,,dash pattern=on 2pt off 1pt])(-[:50,,,,,,dash pattern=on 2pt off 1pt])(-[:-60]O^{-})))
+		   ([:90]-O-[:90]Si(-[:140,,,,,,dash pattern=on 2pt off 1pt])(-[:50,,,,,,dash pattern=on 2pt off 1pt]))
+		   (-[:130]O-[:130]Si(-[:140,,,,,,dash pattern=on 2pt off 1pt])(-[:50,,,,,,dash pattern=on 2pt off 1pt])(-[:230]O-[:160]Si(-[:140,,,,,,dash pattern=on 2pt off 1pt])(-[:50,,,,,,dash pattern=on 2pt off 1pt])(-[:225]O^{-})))
+		   (-[:230]-[:320]-[:230]-[:320]S-[:270])
+		   }
+};
+
+%El mesoporoso
+\node at (6,2.3) {
+\begin{tikzpicture}
+\node (A) at (0,0) {};
+\node (B) at (5,0) {};
+\node (C) at (0,1.2) {};
+\node (D) at (5,1.2) {};
+\begin{scope}[on background layer]
+    \draw[draw=none,fill=gray!40,path fading=south] (A.center) -- (C.center) -- (D.center) -- (B.center) to [bend left=15] (A.center);
+    \end{scope}
+
+\end{tikzpicture}
+};
+
+
+\end{tikzpicture}

@@ -1,0 +1,78 @@
+\begin{tikzpicture}
+	\node (A) at (0,0) {};
+	\node (AA) at (-0.2,0.5) {};
+	\node (B) at (0,0.5) {};
+	\node (C) at (1.5,0.5) {};
+	\node (D) at (1.3,0) {};
+	\node (E) at (1.3,0.5) {};
+	\node (F) at (1.3,0) {};
+    
+
+%La Resina
+	\node at (-2.9,1.25) {
+		\begin{tikzpicture}
+		\draw[draw=none,fill=red!60] (A.center) -- (B.center) -- (C.center) -- (D.center) -- (A.center);
+		\end{tikzpicture}
+		};   	
+	\node at (0,1.25) {
+		\begin{tikzpicture}
+		\draw[draw=none,fill=red!60] (A.center) -- (AA.center) -- (C.center) -- (D.center) -- (A.center);
+		\end{tikzpicture}
+		};
+	\node at (2.9,1.25) {
+		\begin{tikzpicture}
+		\draw[draw=none,fill=red!60] (A.center) -- (AA.center) -- (E.center) -- (F.center) -- (A.center);
+		\end{tikzpicture}
+		};  	  	
+
+%Superficie de Silciio
+\node at (0,0.5)[on background layer] {
+	\begin{tikzpicture}
+	\fill[darkgray,path fading=south] rectangle (7.3,1);
+	\end{tikzpicture}
+	};
+
+ %Electrodos
+ 	\node at (0,1.02) {
+ 		\begin{tikzpicture}
+ 		\fill[yellow] rectangle (1.3,0.04);
+ 		\fill[yellow,xshift=3cm] rectangle (1.3,0.04);
+ 		\end{tikzpicture}
+ 	};
+ 	\node at (0,1.52) {
+ 		\begin{tikzpicture}
+ 		\fill[yellow,xshift=-0.1cm] rectangle (1.7,0.04);
+ 		\fill[yellow,xshift=-2.9cm] rectangle (1.5,0.04);
+ 		\fill[yellow,xshift=2.9cm] rectangle (1.5,0.04);
+ 		\end{tikzpicture}
+ 	};
+
+%Flechas
+\tikzstyle{flecha} = [draw,latex'-,color=darkgray, thick]
+\draw[flecha] ([yshift=0.55cm,xshift=-0.73cm]B.center) -- ([yshift=1.7cm,xshift=-1.5cm]B.center);
+\draw[flecha] ([yshift=0.55cm,xshift=-2.27cm]B.center) -- ([yshift=1.7cm,xshift=-1.5cm]B.center);
+
+%Medidas
+\tikzstyle{medida} = [densely dashed,color=black,ultra thin]
+\draw[medida] (3,1) -- (4.4,1);
+\draw[medida] (3,1.5) -- (4.4,1.5);
+
+\draw[medida] (2.35,1) -- (2.35,2.2);
+\draw[medida] (2.15,1) -- (2.15,2.2);
+\draw[medida] (0.85,1) -- (0.85,2.2);
+
+\node at ([yshift=1.85cm,xshift=-1.5cm]B.center) {\scriptsize{sobrerevelado}};
+\node at ([yshift=0.7cm,xshift=-3cm]B.center) {\scriptsize{fotoresina}};
+\node at ([yshift=0cm,xshift=-3.1cm]B.center) {\scriptsize{sustrato}};
+\node at (4.45,1.25) {\scriptsize{$h$}};
+\node at (1.6,2.23) {\scriptsize{$L$}};
+\node  at (2.25,2.23) {\scriptsize{$\beta$}};
+
+\tikzstyle{dimen} = [<->,>={Stealth[scale=0.5]},very thin]
+\draw[dimen] (0.85,2.1) -- (2.15,2.1); %L
+\draw[dimen] (4.3,1) -- (4.3,1.5); %h
+\draw[dimen] (2.15,2.1) -- (2.35,2.1); %beta
+%\draw[-{Stealth[scale=5]}] (0,0) -- (1,0);
+
+
+\end{tikzpicture}

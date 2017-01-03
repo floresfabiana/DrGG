@@ -1,0 +1,67 @@
+%Linea Para poder completar automaticamente las citas con el Sublime
+%No hace el documento, se puede borrar esta linea si no se usa el Sublime
+%------------------------------------------------------------------------------
+ \newcommand{\NoBiblioIntro}[1]{
+ \ifthenelse{\equal{#1}{verdadero}}{}{\bibliography{Referencias/base_bibliografica}}
+ \NoBiblioIntro{verdadero}}
+ %-----------------------------------------------------------------------------
+
+%Formato (Nombre de capitulo largo o corto), nombre del capitulo y estilo de la
+%Portada del Capitulo
+%------------------------------------------------------------------------------
+
+ %Formato en si, titulo en un solo renglon
+ \FormatoCapituloUnaLinea
+
+ %Nombre y etiquete para referir
+ \chapter{Introducción}\label{chap:Introduccion}
+ %\label{chap:Introduccion}
+
+ %Para que no salga el numero de pagina en la portada del capitulo
+ \thispagestyle{empty}
+	
+ %Resumen del Capitulo en Italica
+ \noindent\textit{la Intro}
+
+ 
+ %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
+ \vfill
+ \minitoc
+ \newpage
+ %-------------------------------------------------------------------------------
+
+
+\section{Materiales Mesoporososos}\label{sec:mesoporosos}
+
+				EL porque se elijio oxido de silicio, porque F127.... muy importante!
+				
+				Esta etapa del trabajo involucró la síntesis por sol-gel de películas delgadas de óxido de silicio mesoporoso. La película de oxido es la base de cual partimos para construir la <<palicula activa>>, es por ello que es de suma importancia escoger los elementos fundacionales de esta película.
+				\begin{enumerate}
+					\item El óxido que define las propiedades estructurales (Morfología, cristalinidad, espesor), ópticas y eléctricas.
+					\item El tamaño, estructura y caracteristicas de los poros.
+				\end{enumerate}
+
+				Vamos a repasar porque elegimos el óxido de silicio, y no otros oxido de metales tales como Ti, Zr, Al, los cuales se han demostrado que son propicios para hacer estructuras mesoporoosas. El SiO$_2$ es aislante eléctrico y no absorbe en el rango UV/VIS. Estas dos características son fundamentales para los sensores, si bien la primera es común a la mayoritaria de los óxidos de transición, algunos de ellos presentan propiedades de semiconductores, 
+
+				Descripcion de como se sintetizan las peliculas, preparacion de los soles, porque no se usa CTAB ni brij, ni Titanio oxido (quimica del silicio mas rica, mas economica, no absorbe en el UV/VSI)
+
+				Descripcion de Spin - Coating (una sola cara, facilmente escalable, integrable a la industria microelectronica, ventajas de utilizar spin en lugar de dip, (pero tambien se puede utilizar dip, sobre todo para piezas no planas y de mayor volumen)
+
+				Proceso de calcinacion. Despoito sobre Au, Vidrio y Solicio.
+
+				Porque: gran area superficial, escablables, bajos costos, tuneable como filtro por tamaño de poro, quimicamente facil de modicar la superfie, optica adsocion en el UV (por esto no se puede de Ti02, pero si de ZrO4) despoitable por inkjet, spin (microelectronica), dip (superficies de dificil geometria.)
+
+\section{Microfabricacion}\label{sec:microfabricacion}
+
+Porque se elijio Au, Electroquimica, etc.
+
+Sputt: explicar sputt, fotolito porque microelectronica, MEMS, sensores.
+En los casos que se depositó la capa dieléctrica de SiO$_2$ se hizo con la fuente de radiofrecuencia (RF), mientras que los depósitos de las películas metálicas se realizaron con la fuente de corriente directa (DC), ambas configuradass a potencia constante, a P=\SI{400}{\watt}.  De esta forma se deja libre la tensión y la corriente, parámeros que dependen a su vez del vacío en la cámara, de la distancia entre el cátodo y el ánodo y el caudal de argón.\cite{sigmund1968}. 
+
+\section{implementacion tecnologica}
+
+Integracion, todo en argentina, valor agregado del proceso sol-gel.
+
+\section{Aplicaciones}
+
+\section{Objetivos}

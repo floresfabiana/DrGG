@@ -1,0 +1,488 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Aca van los Formatos Personalizados de todo el documento	  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Formato General del Documento
+%------------------------------------------------------------
+ 
+ %Intercambio los margenes derechos e izquierdos
+ %------------------------------------------------------------
+ \let\tmp\oddsidemargin
+ \let\oddsidemargin\evensidemargin
+ \let\evensidemargin\tmp
+ \reversemarginpar
+
+ %La class book por default pone un espacio para notas marginales en el lado derecho para las paginas 
+ %impares y en el izquierdo para las pares, yo lo invertí para que me quede mas amplio el espacio para 
+ %la unión de las paginas en el lomo del libro, la costura.
+ 
+
+    % Defino los margenes bien personalizados.
+    % Zona de la pagina ocupada por el texto
+    % Información detallada: http://en.wikibooks.org/wiki/LaTeX/Page_Layout
+    % O descomentar la linea  \layout 
+	% \layout
+ 	%------------------------------------------------------------------------------------------------------------------ 
+ 		% 	    \hoffset = 2 cm                          % OffSet desde el borde izquierdo de la pagina
+ 		% 		\voffset = 2 cm                          % OffSet desde el borde Superior de la pagina
+ 		% 		\topmargin = -2.54 cm                    % Desde el borde superior de la pagina hasta el texto + 1 inch
+		% 		\oddsidemargin = -2.54 cm                % Desde el borde izquierdo de la pagina hasta el texto + 1 inc
+		% 		\headsep =  0 cm                         % Separación entre el encabezado y el texto	
+ 		% 		\textwidth = 17 cm                       % Ancho del texto y define margen derecho - margen - offset
+ 		% 		\textheight = 23.5 cm                    % Largo del texto y margen inferior - margen - offset
+ 		% 		\headheight = 0.1 cm                     % Espacio del cuadro de texto del Encabezado
+		% 		\footskip = 1.5 cm                       %Espacio para el pie de pagina 
+ 		%    	\marginparwidth = 95pt					 %Ancho de las notas al margen
+ 		% 	    \marginparsep = 25pt					 %Separación margen-texto
+ 	%------------------------------------------------------------------------------------------------------------------
+
+%Formato de las Cabeceras, los Pie de Pagina y la numeracion
+%------------------------------------------------------------
+	%Cambio el Header para que no salga la palabra "Capitulo"
+	\addto{\captionsspanish}{\def\chaptername{}}
+
+	%Cambio el Color de la Headrule
+	\let\headruleORIG\headrule
+	\renewcommand{\headrule}{\color{grisoscuro}\headruleORIG}
+	
+	%Estilo de las Cabeceras y Pie de pagina para los precapitulos
+	\fancypagestyle{frontmatter}{
+		\fancyhead{}   							%Borro Cabeceras
+		\renewcommand{\headrulewidth}{0pt} 		%Borro Headrule							
+		\fancyfoot[C]{\thepage}    				%Numero de pagina centrado
+		}
+	
+	%Estilo de las Cabeceras y Pie de pagina para el cuerpo principal
+	\fancypagestyle{mainmatter}{
+		\fancyfoot{}													   % Borro las paginas al pie
+		\renewcommand{\headrulewidth}{1pt}  							   % Borro la Linea del encabecera		
+		\fancyfoot[LE,RO]{\color{grisoscuro}\bfseries\thepage}             % Pongo el numero de pagina en todas la paginas en el lado exterior
+	 	\fancyhead[LE]{\color{grisoscuro}\bfseries\nouppercase{\leftmark}} % Pongo el capitulo arriba a la derecha en las paginas pares 
+	    \fancyhead[RO]{\color{grisoscuro}\bfseries\nouppercase{\rightmark}}% Pongo la sección arriba a la izquierda en las impares
+	    }
+	
+	%Estilo de las Cabeceras y Pie de pagina para los postcapitulos
+	\fancypagestyle{backmatter}{
+		\fancyhead{}
+		\fancyfoot{}										    %Borro Cabeceras
+		\renewcommand{\headrulewidth}{0pt} 				        %Borro Headrule							
+		\fancyfoot[LE,RO]{\color{grisoscuro}\bfseries\thepage}  % Pongo el numero de pagina en todas la paginas en el lado exterior
+		}
+ %--------------------------------------------------------------
+
+%Formato de las Etiquetas (Referencias, Capitulos, etc)
+%------------------------------------------------------------
+ %Cambiar el nombre de Bibliografia por Referencias
+ \patchcmd{\thebibliography}{\chapter*{\bibname}}{\chapter*{Referencias}}{}{}
+ %-------------------------------------------------------------
+
+%Formato de los Titulos de los capitulos
+%------------------------------------------------------------
+    %Ubicación Espacial del conjunto "Titulo" de Capitulos
+      \titlespacing*{\chapter}  %Seccion a modificar
+ 			 {-3cm}             %Indentación Izquierda
+ 			 {-1cm}            %Espacio Anterior
+ 			 {50pt} 	        %Espacio Posterior
+ 			 [0cm]	           %Indentación Derecha
+    
+    %Formato para Todos los Capitulos, solo lo uso para el Indice General
+	 \titleformat{\chapter}[display]
+			{\Huge\filleft\scshape\color{grisoscuro}}      	 %Formato para etiqueta y texto
+	 		{}	
+	 		{20pt}  	     %Separación Etiqueta/Texto                
+	 		{}               %Codigo anterior
+	 		[]   %Codigo Posteior  \titlerule\vspace{2ex}\filright\vspace{2ex}]
+	
+	%Variables para ubicar el numero de capitulo	
+	 \newlength\NumCapX
+	 \setlength\NumCapX{-1cm}  %Aumentar es mas para arriba
+	 \newlength\NumCapY	
+	 \setlength\NumCapY{-2cm}  %Aumentar es mas para el exterior		
+
+	%Formato para el titulo de los Indices
+	 \newcommand{\FormatoIndice}{
+	 		\titleformat{name=\chapter,numberless}[display]						 %Sin Numerar
+			{\Huge\filleft\scshape\color{grisoscuro}}      	 %Formato para etiqueta y texto
+	 		{\begin{tikzpicture}[remember picture,overlay] 						 %Cuadrado con el numero
+				\node[at={($(\NumCapX,\NumCapY)$)},anchor=center,font=\rmfamily\fontsize{300pt}{0pt}\bf\selectfont\color{grisoscuro},opacity=0.2] (texto) {\textit{I}};
+				\node at (-12.16,-2) {\rule{25cm}{0.5mm}};
+				\end{tikzpicture}
+			}		
+	 		{20pt}  	    				 %Separación Etiqueta/Texto                
+	 		{\vspace*{-0.15cm}}              %Codigo anterior
+	 		[]   				 %Codigo Posteior
+	 } 
+
+	%Formato Para los Capitulos Numerados y que el título ocupa una sola linea
+ 	 \newcommand{\FormatoCapituloUnaLinea}{
+ 		\titleformat{\chapter}     						     %Seccion a modificar
+			[display]					 			 		 %Formato separado en dos renglones separados
+			{\Huge\filleft\scshape\color{grisoscuro}}      	 %Cuadrado con el numero
+			{\begin{tikzpicture}[remember picture,overlay]
+				\node[at={($(\NumCapX,\NumCapY)$)},anchor=center,font=\rmfamily\fontsize{300pt}{0pt}\bf\selectfont\color{grisoscuro},opacity=0.2] (texto) {\textit{\thechapter}};
+				\node at (-12.16,-2) {\rule{25cm}{0.5mm}};
+			    \end{tikzpicture}
+			}
+	 		{20pt}  	     %Separación Etiqueta/Texto                
+	 		{}               %Codigo anterior
+	 		[]   %Codigo Posteior 
+	 		}	
+ 	 		
+	%Formato Para los Capitulos Numerados y que el título ocupa dos lineas
+ 	 \newcommand{\FormatoCapituloDosLineas}{
+ 		\titleformat{\chapter}     						     %Seccion a modificar
+			[display]					 			 		 %Formato separado en dos renglones separados
+			{\Huge\filleft\scshape\color{grisoscuro}}      	 %Cuadrado con el numero
+			{\begin{tikzpicture}[remember picture,overlay]
+				\node[at={($(\NumCapX,\NumCapY)$)},anchor=center,font=\rmfamily\fontsize{300pt}{0pt}\bf\selectfont\color{grisoscuro},opacity=0.2] (texto) {\textit{\thechapter}};
+				\node at (-12.16,-2) {\rule{25cm}{0.5mm}};
+				\end{tikzpicture}
+			}
+	 		{20pt}  	     		 %Separación Etiqueta/Texto                
+	 		{\vspace*{-1.05cm}}      %Codigo anterior
+	 		[]  		 %Codigo Posteior  
+	 		}	
+	
+	%Formato para el titulo de los Anexos
+	 \newcommand{\FormatoAnexo}{
+	 		\titleformat{name=\chapter,numberless}[display]						 %Sin Numerar
+			{\Huge\filleft\scshape\color{grisoscuro}}      	 %Formato para etiqueta y texto
+	 		{\begin{tikzpicture}[remember picture,overlay] 						 %Cuadrado con el numero
+				\node[at={($(\NumCapX,\NumCapY)$)},anchor=center,font=\rmfamily\fontsize{300pt}{0pt}\bf\selectfont\color{grisoscuro},opacity=0.2] (texto) {\textit{A}};
+				\node at (-12.16,-2) {\rule{25cm}{0.5mm}};
+				\end{tikzpicture}
+			}		
+	 		{20pt}  	    				 %Separación Etiqueta/Texto                
+	 		{\vspace*{-0.15cm}}              %Codigo anterior
+	 		[]   				 %Codigo Posteior
+	 }
+
+	%Formato para el titulo del Capitulo Referencias
+	  \newcommand{\FormatoReferencias}{
+	  		\titleformat{name=\chapter,numberless}[display]  %Sin Numerar
+		 	{\Huge\filleft\scshape\color{grisoscuro}}      	 %Formato para etiqueta y texto
+	  	 	{\begin{tikzpicture}[remember picture,overlay]   %Cuadrado con el numero
+		 		\node[at={($(\NumCapX,\NumCapY)$)},anchor=center,font=\rmfamily\fontsize{300pt}{0pt}\bf\selectfont\color{grisoscuro},opacity=0.2] (texto) {\textit{R}};
+		 		\node at (-12.16,-2) {\rule{25cm}{0.5mm}};
+		 		\end{tikzpicture}
+		 	}
+	  		{20pt}  	     %Separación Etiqueta/Texto                
+	  		{}               %Codigo anterior
+	  		[]   %Codigo Posteior  
+	  }
+
+	%-------------------------------------------------------------
+
+%Indicador lateral de capitulos
+%------------------------------------------------------------
+	
+	%Definiciones Generales de variables para los loops if
+	 \newif\ifMaterialInd
+	 \newif\ifMaterialCap
+	 \newif\ifMaterialAxUno
+	 \newif\ifMaterialAxDos
+	 \newif\ifMaterialBib
+	 \newif\ifMaterialAlf
+
+	%Posiciones Iniciales de los indicadores laterales
+	 \newlength\PosVertical
+	 \setlength\PosVertical{6.56cm}       %Aumentar es mas para arriba
+	 \newlength\PosHorizontal	
+	 \setlength\PosHorizontal{10.2cm}  %Aumentar es mas para el exterior
+
+	%Con \AddLabelsInd se agregan los indicadores laterales de los indices
+	 \newcommand\AddLabelsInd{
+	 \MaterialIndtrue
+	 \AddEverypageHook{
+	 	\ifMaterialInd
+	 		\ifodd\value{page} 
+  				\backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				  \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={($(\PosVertical,-\PosHorizontal)$)}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 					\node[at={($(cuadrado.center)+(0,0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Índice};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\else
+	 				 \backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				    \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={($(\PosVertical,\PosHorizontal)$)}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 					\node[at={($(cuadrado.center)+(0,-0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Índice};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\fi
+	 	\BgMaterial
+	 	\else\relax\fi}
+	 	}	 
+
+	%Con \AddLabelsCap se agregan los indicadores laterales de los capitulos
+	 \newcommand\AddLabelsCap{
+	 \MaterialCaptrue
+	 \AddEverypageHook{
+	 	\ifMaterialCap
+	 		\ifodd\value{page} 
+  				\backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				  \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={($(\PosVertical,-\PosHorizontal)-(\thechapter,0)$)}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 					\node[at={($(cuadrado.center)+(0,0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Capítulo \thechapter};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\else
+	 				 \backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				    \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={{($(\PosVertical,\PosHorizontal)-(\thechapter,0)$)}}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 					\node[at={($(cuadrado.center)+(0,-0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Capítulo \thechapter};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\fi
+	 	\BgMaterial
+	 	\else\relax\fi}
+	 	}
+
+	%Con \AddLabelsAxUno se agregan los indicaroes laterales Anexo A
+     \newcommand\AddLabelsAxUno{
+	 \MaterialAxUnotrue
+	 \AddEverypageHook{
+	 	\ifMaterialAxUno
+	 		\ifodd\value{page}
+  				\backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				  \begin{tikzpicture}[remember picture,overlay] 
+	 					\node[at={($(\PosVertical,-\PosHorizontal)-(\thechapter+1,0)$)}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 					\node[at={($(cuadrado.center)+(0,0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Anexo A};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\else
+	 				 \backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				    \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={($(\PosVertical,\PosHorizontal)-(\thechapter+1,0)$)}]  % Las coordenadas son (y,-x)
+	 				    (cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 				    \node[at={($(cuadrado.center)+(0,-0.2)$)},anchor=center,font=\large\filleft\scshape,text=white] (texto) {Anexo A};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\fi
+	 	\BgMaterial
+	 	\else\relax\fi}
+	 	}
+
+	%Con \AddLabelsAxDos se agregan los indicaroes laterales Anexo B
+	 \newcommand\AddLabelsAxDos{
+	 \MaterialAxDostrue
+	 \AddEverypageHook{
+	 	\ifMaterialAxDos
+	 		\ifodd\value{page}
+  				\backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				  \begin{tikzpicture}[remember picture,overlay] 
+	 					\node[at={($(\PosVertical,-\PosHorizontal)-(\thechapter+2,0)$)}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 					\node[at={($(cuadrado.center)+(0,0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Anexo B};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\else
+	 				 \backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				    \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={($(\PosVertical,\PosHorizontal)-(\thechapter+2,0)$)}]  % Las coordenadas son (y,-x)
+	 				    (cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 				    \node[at={($(cuadrado.center)+(0,-0.2)$)},anchor=center,font=\large\filleft\scshape,text=white] (texto) {Anexo B};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\fi
+	 	\BgMaterial
+	 	\else\relax\fi}
+	 	}
+	
+	%Con \AddLabelsBib se agregan los indicaroes laterales para la bibliografia
+	 \newcommand\AddLabelsBib{
+	 \MaterialBibtrue
+	 \AddEverypageHook{
+	 	\ifMaterialBib
+	 		\ifodd\value{page}
+  				\backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				  \begin{tikzpicture}[remember picture,overlay] 
+	 					\node[at={($(\PosVertical,-\PosHorizontal)-(\thechapter+3,0)$)}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 					\node[at={($(cuadrado.center)+(0,0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Referencias};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\else
+	 				 \backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				    \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={($(\PosVertical,\PosHorizontal)-(\thechapter+3,0)$)}]  % Las coordenadas son (y,-x)
+	 				    (cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 				    \node[at={($(cuadrado.center)+(0,-0.2)$)},anchor=center,font=\large\filleft\scshape,text=white] (texto) {Referencias};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\fi
+	 	\BgMaterial
+	 	\else\relax\fi}
+	 	}
+
+	%Con \AddLabelsAlf se agregan los indicadores laterales del indice alfabetico
+	 \newcommand\AddLabelsAlf{
+	 \MaterialAlftrue
+	 \AddEverypageHook{
+	 	\ifMaterialAlf
+	 		\ifodd\value{page} 
+  				\backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				  \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={($(\PosVertical,-\PosHorizontal)-(\thechapter+5,0)$)}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(4,1);} };
+	 					\node[at={($(cuadrado.center)+(0,0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Índice Alfabético};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\else
+	 				 \backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				    \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={($(\PosVertical,\PosHorizontal)-(\thechapter+5,0)$)}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(4,1);} };
+	 					\node[at={($(cuadrado.center)+(0,-0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Índice Alfabético};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\fi
+	 	\BgMaterial
+	 	\else\relax\fi}
+	 	}	 	
+	
+	%Con estos comandos se borran los indicadores laterales	
+	 \newcommand\RemoveLabelsInd{\MaterialIndfalse}
+	 \newcommand\RemoveLabelsCap{\MaterialCapfalse}
+	 \newcommand\RemoveLabelsAxUno{\MaterialAxUnofalse}
+	 \newcommand\RemoveLabelsAxDos{\MaterialAxDosfalse}
+	 \newcommand\RemoveLabelsBib{\MaterialBibfalse}
+	 \newcommand\RemoveLabelsAlf{\MaterialAlffalse}
+
+%Formato de los mini-indices de los capitulos 
+%------------------------------------------------------------
+  \mtcindent=0pt  %indentacion de los Indices de los capitulos
+  \def\mtctitle{Contenido}  %Cambio el Nombre del indice de los capitulos
+
+  \setcounter{tocdepth}{3}
+  \setcounter{minitocdepth}{3} 
+  \setcounter{secnumdepth}{3}
+  \renewcommand{\thesubsubsection}{\thesubsection.\roman{subsubsection}}
+ %-------------------------------------------------------------
+
+%Formato de la Bibliografia
+%------------------------------------------------------------
+ %links externos con misma fuente que el texto
+ \urlstyle{same}
+
+%Formato de las notas al margen
+%------------------------------------------------------------
+ \let\oldmarginpar\marginpar
+ \renewcommand{\marginpar}[1]{\oldmarginpar{\itshape{\textcolor{red}{#1}}}}
+ %-----------------------------------------------------------
+
+%Colores Personalizados
+%------------------------------------------------------------
+  \definecolor{grisoscuro}{gray}{0.3}          %El gris oscuro de los Capitulos
+  \definecolor{marron}{rgb}{0.647,0.165,0.165} %Los use en los graficos de VC del Au INTI contra Au CNEA
+  \definecolor{rojo}{rgb}{1,0,0} 			   %Los use en los graficos de VC del Au INTI contra Au CNEA	
+  \definecolor{oliva}{rgb}{0.627,0.502,0.125}  %Los use en los graficos de VC del Au INTI contra Au CNEA 
+ %------------------------------------------------------------
+
+%Formato de los caption para las tablas y figuras y ecuaciones
+%------------------------------------------------------------
+ \captionsetup[table]{singlelinecheck=false,justification=justified ,labelfont=bf,font=footnotesize,position=top,skip=0pt}
+ \captionsetup[figure]{singlelinecheck=false,justification=justified,labelfont=bf,font=footnotesize,position=bottom,aboveskip=10pt,belowskip=-10pt}
+ \captionsetup[subfigure]{singlelinecheck=false,justification=justified,labelfont=bf,font=scriptsize,position=top,aboveskip=0pt,belowskip=10pt,labelsep=period,labelformat = simple,width=.95\textwidth}
+
+%Formato de las viñetas
+%------------------------------------------------------------
+	\renewcommand{\labelitemi}{$\bullet$}
+ %-----------------------------------------------------------
+
+%Abreviaturas para cosas qe voy a usar mucho
+%------------------------------------------------------------
+   
+   %Sondas electroquimcias
+   \newcommand{\hq}{HQ\index{hidroquinona}}
+   \newcommand{\fe}{FeCN\index{ferrocianuro de potasio}\index{ferricianuro de potasio}}
+   \newcommand{\ru}{AR\index{aminorutenio}}
+   \newcommand{\fc}{Fc\index{ferroceno metanol}}  
+
+   %Formula Aminorutenio desarrollada
+   \newcommand{\aminorutenio}{Ru(NH$_3$)$_6^{3+}$\index{aminorutenio}}
+   \newcommand{\aminorutenioCompleto}{Ru(NH$_3$)$_6$Cl{$_3$}\index{aminorutenio}}
+
+   %Formula desarrollada para la cupla Ferro/Ferri
+   \newcommand{\ferroferri}{Fe(CN)$_6^{4-}$\textsuperscript{/}$^{3-}$\index{ferrocianuro de potasio}\index{ferricianuro de potasio}}
+   \newcommand{\ferro}{Fe(CN)$_6^{4-}$\index{ferrocianuro de potasio}}
+   \newcommand{\ferri}{Fe(CN)$_6^{3-}$\index{ferricianuro de potasio}}
+   \newcommand{\Ferro}{K$_4$Fe(CN)$_6$\index{ferrocianuro de potasio}}
+   \newcommand{\Ferri}{K$_3$Fe(CN)$_6$\index{ferricianuro de potasio}}
+   \newcommand{\ferroCompleto}{K$_4$Fe(CN)$_6$.3H$_2$O\index{ferrocianuro de potasio}}
+   \newcommand{\ferriCompleto}{K$_3$Fe(CN)$_6$.3H$_2$O\index{ferricianuro de potasio}}
+  
+   %Formula desarrollada para la Ferroceno
+   \newcommand{\ferroceno}{C$_{11}$H$_{12}$OFe\index{ferroceno metanol}}
+
+   %Formula desarrollada para el Hidroquinona
+   \newcommand{\hidroquinona}{C$_6$H$_4$O$_2$\index{hidroquinona}}
+
+   %Peliculas Delgadas Mesoporosas de oxido de SIlicio
+   \newcommand{\pdm}{PDM@Si\index{película!mesoporosa}}
+   \newcommand{\pdmF}{PDM@Si-F127\index{película!mesoporosa(F127)}}
+   \newcommand{\pdmC}{PDM@Si-CTAB\index{película!mesoporosa(CTAB)}}
+
+%Leyendas para los graficos
+%------------------------------------------------------------
+	%Para los graficos de los problemas tecnologicos Circulitos con Colores
+	\newcommand{\unorojo}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=red!80,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{1}};\end{tikzpicture}\space}
+	\newcommand{\dosvioleta}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=violet!70,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{2}};\end{tikzpicture}\space}
+	\newcommand{\tresamarillo}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=yellow,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{3}};\end{tikzpicture}\space}
+	\newcommand{\cuatronaranja}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=orange!80,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{4}};\end{tikzpicture}\space}
+
+  %Las rayas con los colores mas comunes
+   	  \newbox{\negro}
+  	  	\savebox{\negro}{\raisebox{2pt}{\tikz{\draw[black,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
+	  \newbox{\marron} 
+	  	\savebox{\marron}{\raisebox{2pt}{\tikz{\draw[marron,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
+	  \newbox{\rojo} 
+	  	\savebox{\rojo}{\raisebox{2pt}{\tikz{\draw[rojo,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
+	  \newbox{\oliva} 
+	  	\savebox{\oliva}{\raisebox{2pt}{\tikz{\draw[oliva,solid,line width=0.8pt](0,0) -- (4mm,0);}}}	
+	
+%Separación de las sílabas
+%------------------------------------------------------------
+	\hyphenation{Pasteur Kelvin PMMA Biopack sonda-electrodo hexadeciltrimetilamonio}
+ %-----------------------------------------------------------
