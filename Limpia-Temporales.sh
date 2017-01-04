@@ -1,6 +1,6 @@
 #!/bin/bash
 
-EXTENSIONES=( aux log auxlock dpth mtc mtc[0-9] mtc[0-9][0-9] synctex synctex.gz toc dvi out maf fls fdb_latexmk temp make out makefile md5 bak M[0-9] lot lof bbl blg)
+EXTENSIONES=( aux log auxlock dpth mtc mtc[0-9] mtc[0-9][0-9] synctex synctex.gz toc dvi out maf fls fdb_latexmk temp make out makefile md5 bak M[0-9] lot lof bbl blg acn acr alg glg glo gls glsdefs idx ilg ind)
 
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")

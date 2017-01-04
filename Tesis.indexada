@@ -50,6 +50,9 @@
   %Incluyo el Resumen en Ingles
   \input{PreCapitulos/abstract.tex}
 
+  %Incluyo una lista de siglas y abreviaturas para usar luego
+  %<\input{PreCapitulos/siglas.tex}
+
   %Indices
    \FormatoIndice
  
@@ -132,6 +135,8 @@
  %----------------------------------------------------------------------------------------------
  
 \end{document}
+
+%Digitalizacion de graficos: http://arohatgi.info/WebPlotDigitizer/
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Cosas que me gustarian y Faltan:    %

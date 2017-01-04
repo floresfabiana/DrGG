@@ -4,9 +4,6 @@
    \usepackage[spanish,activeacute,es-tabla,es-lcroman]{babel}
    \usepackage[utf8]{inputenc}
    \usepackage{lmodern}
-
-   %Suprime el Warning de multiples PDF por pagina
-   \pdfsuppresswarningpagegroup=1
    
    %Paquete para adaptar la Bibliografia al Español
    \usepackage[datename]{babelbib}
@@ -78,14 +75,14 @@
    %Para carga Atributos, Propiedades y Titulos al PDF
    \usepackage[hidelinks,colorlinks]{hyperref}
 
-   %Para la lista de abreviaturas
-   \usepackage[acronym,nonumberlist,nomain]{glossaries}
-   \makeglossaries
-   
+   %Para personalisar listas de items, yo lo use para la lista de siglas.
+   \usepackage{enumitem}
+
+   %Para crear lista de abreviaturas
+   \usepackage{acro}
+
    %Para hacer un indice alfabetico
    \usepackage{imakeidx}
-   \makeindex[columns=2, options= -s Tesis.ist]
-   \indexsetup{othercode=\footnotesize}
    %Muestra el indexado en el costado
    %\usepackage{showidx}
    
@@ -106,14 +103,20 @@
    \usepackage[contents={},opacity=1,scale=1,color=black]{background}
    %--------------------------------------------------------------------------
 
-%SUprimir log de Overfull y UNdelfull
+%Comandos para suprimir parte de los logs
 %--------------------------------------------------------------------------
+    
+    %SUprimir log de Overfull y UNdelfull
     \newcommand{\NoBadBoxesLog}{
       \hfuzz=\maxdimen \vfuzz=\maxdimen 
       \newdimen\hfuzz  \let\vfuzz=\hfuzz
       \hbadness=10000    \vbadness=10000 
       \newcount\hbadness \let\vbadness=\hbadness 
       }
+    %\NoBadBoxesLog  
+      
+   %Suprime el Warning de multiples PDF por pagina
+   \pdfsuppresswarningpagegroup=1
 
 %Propiedades del Documento
 %--------------------------------------------------------------------------

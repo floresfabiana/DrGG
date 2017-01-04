@@ -406,6 +406,34 @@
  %links externos con misma fuente que el texto
  \urlstyle{same}
 
+%Formato de la lista de siglas, abreviaturas y nomenclaturas
+%------------------------------------------------------------
+ 	\newlength\myitemwidth
+
+ 	%Declara el formato de la lista de items
+	\setlength\myitemwidth{3cm}
+	\newlist{listasiglas}{description}{1}
+	\setlist[listasiglas]{
+  		labelindent = 0pt ,
+  		labelsep    = 0pt ,
+ 		leftmargin  = \myitemwidth ,
+ 		labelwidth  = \myitemwidth ,
+ 		itemindent  = 0pt ,
+ 		format      = \bfseries ,
+ 		parsep      = -2pt
+		}
+
+	%Ledigo al paquete de acronimos que use la lista formateada	
+	\DeclareAcroListStyle{estilosiglas}{list}{list = listasiglas}
+  	\acsetup{ list-style = estilosiglas,only-used=false }	
+
+%Formato de del indice alfabetico
+%------------------------------------------------------------
+	
+	%Dos Columnas y tamaño mas pequeño
+	\makeindex[columns=2, options= -s Tesis.ist]
+	\indexsetup{othercode=\footnotesize}
+
 %Formato de las notas al margen
 %------------------------------------------------------------
  \let\oldmarginpar\marginpar
