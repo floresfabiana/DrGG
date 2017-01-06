@@ -38,11 +38,11 @@
  voltametría; voltametría\index{voltametría}
  espectroscopia; espectroscopia\index{espectroscopia}
  fotolitografía; fotolitografía\index{fotolitografía}
+ litografía ; litografía\index{litografía} 
  calcinación; calcinación\index{calcinación}
  alto vacío; alto vacio\index{alto@alto vacío}
  básico ; básico\index{básico} 
  ácido ; ácido\index{acido@ácido} 
- elipsoporosimetria; elipsoporosimetria\index{elipsoporosimetria}
  infrarojo; infrarojo\index{infrarojo}
  depósito ; depósito\index{depósito} 
  fotoresina; fotoresina\index{fotoresina}
@@ -200,3 +200,18 @@ INIFTA;INIFTA\index{INIFTA}
 \label{fig:ultrasonido};\label{fig:ultrasonido}\index{lift@\textit{lift-off}}
 \label{fig:modelo-problemas};\label{fig:modelo-problemas}\index{bottom-up@\textit{bottom-up}}\index{top-down@\textit{top-down}}
 ultrasonido ;ultrasonido\index{ultrasonido}
+espectro electromagnético; espectro electromagnético\index{espectro electromagnético}
+longitud de onda;longitud de onda\index{longitud de onda}
+\lambda;\lambda\index{longitud de onda}
+coeficiente de absorción;coeficiente de absorción\index{coeficiente de absorción}
+polarización;polarización\index{polarización}
+polarización de la luz;polarización de la luz\index{polarización!de la luz}
+poroelipsometría;poroelipsometría\index{poroelipsometría ambiental}
+elipsoporosimetría;elipsoporosimetría\index{elipsoporosimetría ambiental}
+constante dieléctrica;constante dieléctrica\index{constante dieléctrica}
+constantes dieléctricas;constantes dieléctricas\index{constante dieléctrica}
+piraña;piraña\index{piraña}
+resina positiva;resina positiva\index{resina!positiva}
+resina negativa;resina negativa\index{resina!negativa}
+resina de doble exposición;resina de doble exposición\index{resina!de doble exposición}
+resina epoxi;resina expoxi\index{resina!expoxi}

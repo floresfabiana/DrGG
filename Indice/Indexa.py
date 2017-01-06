@@ -6,6 +6,7 @@ import csv
 from shutil import copyfile
 import sys
 import codecs
+import os
 
 #Varibles Principales
 Tesis='../Tesis.tex'
@@ -36,9 +37,28 @@ with open(Tesis, 'r') as tesis:
 reemplazos = dict(zip(ArchViejos, ArchNuevos))
 #print reemplazos
 
+
+
+#Recupera los registros del ultimo logfile
+cantidadvieja=0
+numerosreemplazos=0
+
+if os.path.isfile('../Tesis.indice.log'):
+  with open('../Tesis.indice.log', 'r') as loginfile:
+    lector2 = csv.reader(loginfile,delimiter=';')
+    registro = {}
+    for row in lector2:
+       i, j = row
+       registro[i] = j
+  for key, value in registro.iteritems() :
+      cantidadvieja = key
+      numerosreemplazos = value
+
+
 #Buscar y reemplza
 total=0
-print '   Palabras en el Indice:', '\033[1;32m',len(palabras),'\033[1;m'
+print '   Palabras en el Indice Anterior:',cantidadvieja
+print '   Palabras en el Indice Actual:', '\033[1;32m',len(palabras),'\033[1;m'
 for viejo, nuevo in reemplazos.iteritems():
   copyfile('../'+viejo , '../'+nuevo)
   print '   Procesando Archivo:',nuevo,
@@ -52,7 +72,13 @@ for viejo, nuevo in reemplazos.iteritems():
         outfile.write(line)      
   print '--> Entradas:\033[1;32m',count,'\033[1;m'
   total=total+count
-print '   Total de Entradas:\033[1;32m',total,'\033[1;m' 
+print '   Total de Entradas Indice anterior:',numerosreemplazos
+print '   Total de Entradas Indice actual:\033[1;32m',total,'\033[1;m' 
+
+#Escribe las registros de numeros en el logfile
+with open('../Tesis.indice.log', 'w+') as logfile:
+  linea1 = str(len(palabras))+';'+str(total)
+  logfile.write(linea1)
 
 
 #Hago el reemplazo

@@ -156,6 +156,17 @@ case "$1:$2:$3" in
         abre
     ;;
 
+    -d:"":"")
+        controla_dependencias
+        solounavez
+        abre
+    ;;
+
+     -s:"":"")
+        solounavez
+        abre
+    ;;
+
     -mail:"":"")
         echo -n "Reduciendo tamaño:"
             gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4  -dAutoRotatePages=/None -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=Tesis-reducida.pdf Tesis.pdf
@@ -239,15 +250,21 @@ case "$1:$2:$3" in
         ;;
 
     -bib:*:*|*)
+        echo "El archivo a compilar se tiene que llamar <Tesis.tex>."
+        echo " "
         echo "Opción incorrecta!"
         echo " "
-        echo "Uso: $0 {-bib|-mail|-ind} [-b] [-l]"
+        echo "Uso: $0 {-bib|-mail|-ind|-d|-s} [-b] [-l]"
+        echo " "
+        echo "Sin ninguna opción compila los plots, los graficos en tikz, los esquemas, conotrola las depencias dentro de los distintos <tex> y luego compila el documento <Tesis.tex> solo una vez. No compila Indice ni Bibliografia.  "
         echo " "
         echo "-bib   Compila una vez, compila con bibtex y compila dos veces mas para las referencias cruzadas"
         echo "-b     Limpia todos los auxilires y archivos temporales antes de compilar"
         echo "-l     Limpia todos los auxilires y archivos temporales luego de compilar"
         echo "-mail  Reduce el tamaño de las imagenes (tambien PDF) para mandar por mail"
         echo "-ind   Busca y reemplaza las palabras para el índice alfabético"
+        echo "-d     Controla las dependencias, luego compila una vez"
+        echo "-s     Compila solo una vez, sin control de dependencias"
         echo " "
         exit 1 
         ;;

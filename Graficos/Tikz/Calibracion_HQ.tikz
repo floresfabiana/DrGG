@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mar 15 nov 2016 15:06:11 ART
+%% vie 06 ene 2017 13:57:16 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -106,7 +106,7 @@
 \node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.254,8.042) {y=295.223 -124.121};
 \node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.254,7.534) {R=0.9996};
 \node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$j/ \mu \text{A.cm}^{-2}$};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.001,0.215) {$\text{Concentración/mV}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.001,0.215) {$\text{Concentración/mM}$};
 \gpsetlinewidth{1.00}
 \gpsetpointsize{4.00}
 \gppoint{gp mark 7}{(3.045,3.546)}
