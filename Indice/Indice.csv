@@ -48,8 +48,8 @@
  fotoresina; fotoresina\index{fotoresina}
  alineadora; alineadora\index{alineadora}
  máscara; máscara\index{máscara}
- FIB;FIB\index{FIB}
- SEM;SEM\index{SEM}
+ FIB; FIB\index{FIB}
+ SEM; SEM\index{SEM}
  ángulo de contacto; ángulo de contacto\index{angulo@ángulo de contacto}
  condensación; condensación\index{condensación}
  extracción; extracción\index{extracción}
@@ -64,7 +64,7 @@
  microscopía de barrido; microscopía\index{microscopía!de barrido}
  microscopía óptica; microscopía\index{microscopía!óptica}
  electrónica de transmisión; electrónica de transmisión\index{microscopía!de transmisión}
- XPS;XPS\index{XPS}
+ XPS; XPS\index{XPS}
  nitrogeno ; nitrogeno\index{nitrogeno} 
  oxigeno ; oxigeno\index{oxigeno} 
  sustrato ; sustrato\index{sustrato} 
@@ -215,3 +215,5 @@ resina positiva;resina positiva\index{resina!positiva}
 resina negativa;resina negativa\index{resina!negativa}
 resina de doble exposición;resina de doble exposición\index{resina!de doble exposición}
 resina epoxi;resina expoxi\index{resina!expoxi}
+silice;silice\index{silicio!oxido de}
+punto isoeléctrico;punto isoeléctrico\index{punto isoeléctrico}

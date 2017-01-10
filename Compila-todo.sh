@@ -156,10 +156,21 @@ case "$1:$2:$3" in
         abre
     ;;
 
-    -d:"":"")
-        controla_dependencias
-        solounavez
-        abre
+    -dind:"":"")
+        echo -n "$(tput setaf 4)Creando el Índice:$(tput setaf 0)"  
+        echo " "
+            cd Indice
+              python Indexa.py
+            cd ..
+            if [ $? = 0 ];then     
+              echo " "
+              controla_dependencias
+              solounavez
+                  else
+              echo "$(tput setaf 1)  Error, no se crear el indicer!"
+            fi
+            cp Tesis.tex.backup Tesis.tex
+            abre
     ;;
 
      -s:"":"")
@@ -262,9 +273,9 @@ case "$1:$2:$3" in
         echo "-b     Limpia todos los auxilires y archivos temporales antes de compilar"
         echo "-l     Limpia todos los auxilires y archivos temporales luego de compilar"
         echo "-mail  Reduce el tamaño de las imagenes (tambien PDF) para mandar por mail"
-        echo "-ind   Busca y reemplaza las palabras para el índice alfabético"
-        echo "-d     Controla las dependencias, luego compila una vez"
-        echo "-s     Compila solo una vez, sin control de dependencias"
+        echo "-ind   Compila una vez, compila con bibtex, indexa y compila dos veces"
+        echo "-dind  Controla las dependencias, indexa, luego compila una vez"
+        echo "-s     Compila solo una vez, sin nigún otro extra"
         echo " "
         exit 1 
         ;;
