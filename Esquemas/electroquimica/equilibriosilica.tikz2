@@ -1,5 +1,5 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[paperwidth=13.94cm,paperheight=1.9cm,hmargin=-0.5cm,vmargin=0.1cm,bottom=-1cm]{geometry}
+\usepackage[paperwidth=14cm,paperheight=2cm,hmargin=-0.7cm,vmargin=0cm,bottom=-1cm]{geometry}
 %Sección de Plugins
 %--------------------------------------------------------------------------
    %Idioma, fuentes y entrada de teclado
@@ -48,6 +48,8 @@
 \begin{document}
 
 \begin{tikzpicture}
+
+  \node at (0,0) {
    \schemestart
     \chemfig{Si(-[8]OH_2^+)(-[5]O-[4,0.8,,,dash pattern=on 2pt off 2pt])(-[4]O-[4,0.55,,,dash pattern=on 2pt off 2pt])(-[3]O-[4,0.8,,,dash pattern=on 2pt off 2pt])}
     \arrow{<=>[$\mathrm{\scriptstyle -H^+}$][$\mathrm{\scriptstyle +H^+}$]}[0,1.3]
@@ -55,6 +57,12 @@
     \arrow{<=>[$\mathrm{\scriptstyle -H^+}$][$\mathrm{\scriptstyle +H^+}$]}[0,1.3]
     \chemfig{Si(-[8]O^{-})(-[5]O-[4,0.8,,,dash pattern=on 2pt off 2pt])(-[4]O-[4,0.55,,,dash pattern=on 2pt off 2pt])(-[3]O-[4,0.8,,,dash pattern=on 2pt off 2pt])}  \\[2cm]
     \schemestop
+  };
+  
+  
+
+
+
 \end{tikzpicture}
 
 \end{document}

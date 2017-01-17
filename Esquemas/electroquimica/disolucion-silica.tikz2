@@ -1,0 +1,100 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[paperwidth=17cm,paperheight=6.6cm,hmargin=-0.5cm,vmargin=0.1cm,bottom=-1cm]{geometry}
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,english,activeacute,es-tabla]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+
+
+   %Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{shapes.symbols}
+
+   %Para hacer quimica
+   \usepackage{chemfig}
+
+       % %Este comando los exporta como pdf, si se comenta se compila entero el codigo tikz
+       %  \usetikzlibrary{external}
+       %  \tikzsetnextfilename{\jobname}
+       %  \tikzexternalize
+       %  \newcommand{\includetikz}[1]{%
+       %  \tikzsetnextfilename{#1}%
+       %  \input{#1.tikz}%
+       %  }
+
+
+
+\begin{document}
+
+\begin{tikzpicture}
+
+  \node at (-5,0) {
+   \schemestart
+   \chemfig{Si(-[8]OH)(-[4]O-[4]Si)(-[3]O)(-[5]O(-[7]Si(-[8]OH)(-[4]O-[4]Si)(-[5]O(-[7]Si(-[4]O-[4]Si)(-[8]OH)(-[5]O(-[7]Si(-[4]O-[4]Si)(-[8]OH)(-[5]O)))))))}
+   \schemestop
+  };
+
+  \draw [dashed]  (-4,3.1) -- (-4,-3.1);
+
+  \node at (-2.3,0) {
+  \schemestart
+   \chemfig{+OH^{-}}
+   \schemestop
+  };
+
+  \node at (1,0) {
+   \schemestart
+   \chemfig{Si(-[8]OH)(-[4]O-[4]Si)(-[3]O)(-[5]O(-[7]Si(-[8]OH)(-[4]O-[4]Si)(-[5]O(-[7]Si(-[4]O-[4]Si)(-[8]OH)(-[5]O(-[7]Si(-[4]O-[4]Si)(-[8]OH)(-[5]O)))))))}
+   \schemestop
+  };
+
+  \draw [dashed]  (2,3.1) -- (2,-3.1);
+  \draw [dashed]  (1.65,0.55) -- (2.3,0.1);
+  \draw [dashed]  (1.65,-0.55) -- (2.3,-0.1);
+
+   \node at (3.35,0) {
+  \schemestart
+   \chemfig{OH^{-}+3H_2O}
+   \schemestop
+  };
+
+ \node at (7,0) {
+   \schemestart
+   \chemfig{Si(-[8]OH)(-[4]O-[4]Si)(-[3]O)(-[5]O(-[7]Si(-[8]OH)(-[4]O-[4]Si)(-[:255]HO(-[6,0.47,,,dash pattern=on 0pt off 1pt](-[4,0.25,,,dash pattern=on 0pt off 1pt]OH-[4]Si)(-[6,0.47,,,dash pattern=on 0pt off 1pt]HO(-[:285]Si(-[4]O-[4]Si)(-[8]OH)(-[5]O)))))))}
+   \schemestop
+  };
+
+  \draw [dashed,line join=round]  (8,3.1) -- (8,0.4) arc (0:-80:1mm) -- (6,0) arc (110:180:1mm) -- (5.94,-1.4) arc (180:250:1mm)  -- (7.94,-1.8) arc (80:0:1mm) -- (8,-3.1);
+
+  \node at (9,-0.75) {
+  \schemestart
+   \chemfig{+Si|{(OH)}_5^{-}}
+   \schemestop
+  };
+
+\end{tikzpicture}
+
+\end{document}
+
+
