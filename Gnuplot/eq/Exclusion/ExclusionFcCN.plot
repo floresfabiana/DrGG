@@ -4,7 +4,7 @@
 
 #Para exportar como latex
 set terminal tikz
-set output "Exclusion_FcCN.tikz" 
+set output "ExclusionFcCN.tikz" 
 
 #Saco la leyenda
 	unset key
@@ -65,7 +65,7 @@ red_100 = "#ff0000"
 
 #Fuerza a establecer un rango
 	 
-	#set xrange [20:70]
+	set xrange [:600]
 	#set yrange [10:60]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
@@ -96,4 +96,4 @@ red_100 = "#ff0000"
  
 
 #Ploteo todas las funciones que les digamos
-plot "Fc1mM-amplio.txt" using ($1):($2/0.0314) with lines ls 3, "Fc5mM-amplio.txt" using ($1):($2/0.0314) with lines ls 2, "Fc10mM-amplio.txt" using ($1):($2/0.0314) with lines ls 1
+plot "FcCN_exlusion_Au.txt" using ($1):($2/0.0314) every ::1400::2800 with lines ls 5,"FcCN_exlusion_Au.txt" using ($3):($4/0.0314) with lines ls 2
