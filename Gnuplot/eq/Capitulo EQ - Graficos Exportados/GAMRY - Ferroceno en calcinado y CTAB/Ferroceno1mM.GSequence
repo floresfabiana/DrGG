@@ -1,0 +1,204 @@
+<?xml version="1.0" standalone="yes"?>
+<GamrySequence>
+  <name>Gamry Sequence</name>
+  <element>
+    <name>Cyclic Voltammetry</name>
+    <classname>CV</classname>
+    <type>normal</type>
+    <description>Performs a cyclic voltammetry scan</description>
+    <parameters>
+      <explain_label tag="TITLE" desc="Test Identifier" value="Cyclic Voltammetry" />
+      <explain_output tag="OUTPUT" desc="Output File" value="FeOH-1mM-50.DTA" />
+      <explain_notes tag="NOTES" desc="Notes..." value="FeOH 1mM 50mv/s" />
+      <explain_poten tag="VINIT" desc="Initial E (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT1" desc="Scan Limit 1 (V)" value="0.4" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT2" desc="Scan Limit 2 (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VFINAL" desc="Final E (V)" value="0.4" versus="0" variable="None" />
+      <explain_quant tag="SCANRATE" desc="Scan Rate (mV/s)" value="50" variable="None" />
+      <explain_quant tag="STEPSIZE" desc="Step Size (mV)" value="2" variable="None" />
+      <explain_iquant tag="CYCLES" desc="Cycles (#)" value="2" variable="None" />
+      <explain_quant tag="AREA" desc="Sample Area (cm^2)" value="1" variable="None" />
+      <explain_selector tag="IMODE" desc="I/E Range Mode" item0="Auto" item1="Fixed" index="1" />
+      <explain_selector tag="SAMPLINGMODE" desc="Sampling Mode" item0="Fast" item1="Noise Reject" item2="Surface" index="1" />
+      <explain_quant tag="IRANGE" desc="Max Current (mA)" value="0.5" variable="None" />
+      <explain_quant tag="EQDELAY" desc="Equil. Time (s)" value="5" variable="None" />
+      <explain_selector tag="IRCOMP" desc="IRComp" item0="None" item1="PF" item2="CI" index="0" />
+      <explain_quant tag="PFCOR" desc="PF Corr. (ohm)" value="50" variable="None" />
+    </parameters>
+  </element>
+  <element>
+    <name>Cyclic Voltammetry</name>
+    <classname>CV</classname>
+    <type>normal</type>
+    <description>Performs a cyclic voltammetry scan</description>
+    <parameters>
+      <explain_label tag="TITLE" desc="Test Identifier" value="Cyclic Voltammetry" />
+      <explain_output tag="OUTPUT" desc="Output File" value="FeOH-1mM-100.DTA" />
+      <explain_notes tag="NOTES" desc="Notes..." value="FeOH 1mM 100mv/s" />
+      <explain_poten tag="VINIT" desc="Initial E (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT1" desc="Scan Limit 1 (V)" value="0.4" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT2" desc="Scan Limit 2 (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VFINAL" desc="Final E (V)" value="0.4" versus="0" variable="None" />
+      <explain_quant tag="SCANRATE" desc="Scan Rate (mV/s)" value="100" variable="None" />
+      <explain_quant tag="STEPSIZE" desc="Step Size (mV)" value="2" variable="None" />
+      <explain_iquant tag="CYCLES" desc="Cycles (#)" value="1" variable="None" />
+      <explain_quant tag="AREA" desc="Sample Area (cm^2)" value="1" variable="None" />
+      <explain_selector tag="IMODE" desc="I/E Range Mode" item0="Auto" item1="Fixed" index="1" />
+      <explain_selector tag="SAMPLINGMODE" desc="Sampling Mode" item0="Fast" item1="Noise Reject" item2="Surface" index="1" />
+      <explain_quant tag="IRANGE" desc="Max Current (mA)" value="0.5" variable="None" />
+      <explain_quant tag="EQDELAY" desc="Equil. Time (s)" value="5" variable="None" />
+      <explain_selector tag="IRCOMP" desc="IRComp" item0="None" item1="PF" item2="CI" index="0" />
+      <explain_quant tag="PFCOR" desc="PF Corr. (ohm)" value="50" variable="None" />
+    </parameters>
+  </element>
+  <element>
+    <name>Cyclic Voltammetry</name>
+    <classname>CV</classname>
+    <type>normal</type>
+    <description>Performs a cyclic voltammetry scan</description>
+    <parameters>
+      <explain_label tag="TITLE" desc="Test Identifier" value="Cyclic Voltammetry" />
+      <explain_output tag="OUTPUT" desc="Output File" value="FeOH-1mM-200.DTA" />
+      <explain_notes tag="NOTES" desc="Notes..." value="FeOH 1mM 200mv/s" />
+      <explain_poten tag="VINIT" desc="Initial E (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT1" desc="Scan Limit 1 (V)" value="0.4" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT2" desc="Scan Limit 2 (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VFINAL" desc="Final E (V)" value="0.4" versus="0" variable="None" />
+      <explain_quant tag="SCANRATE" desc="Scan Rate (mV/s)" value="200" variable="None" />
+      <explain_quant tag="STEPSIZE" desc="Step Size (mV)" value="2" variable="None" />
+      <explain_iquant tag="CYCLES" desc="Cycles (#)" value="1" variable="None" />
+      <explain_quant tag="AREA" desc="Sample Area (cm^2)" value="1" variable="None" />
+      <explain_selector tag="IMODE" desc="I/E Range Mode" item0="Auto" item1="Fixed" index="1" />
+      <explain_selector tag="SAMPLINGMODE" desc="Sampling Mode" item0="Fast" item1="Noise Reject" item2="Surface" index="1" />
+      <explain_quant tag="IRANGE" desc="Max Current (mA)" value="0.5" variable="None" />
+      <explain_quant tag="EQDELAY" desc="Equil. Time (s)" value="5" variable="None" />
+      <explain_selector tag="IRCOMP" desc="IRComp" item0="None" item1="PF" item2="CI" index="0" />
+      <explain_quant tag="PFCOR" desc="PF Corr. (ohm)" value="50" variable="None" />
+    </parameters>
+  </element>
+  <element>
+    <name>Cyclic Voltammetry</name>
+    <classname>CV</classname>
+    <type>normal</type>
+    <description>Performs a cyclic voltammetry scan</description>
+    <parameters>
+      <explain_label tag="TITLE" desc="Test Identifier" value="Cyclic Voltammetry" />
+      <explain_output tag="OUTPUT" desc="Output File" value="FeOH-1mM-500.DTA" />
+      <explain_notes tag="NOTES" desc="Notes..." value="FeOH 1mM 500mv/s" />
+      <explain_poten tag="VINIT" desc="Initial E (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT1" desc="Scan Limit 1 (V)" value="0.4" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT2" desc="Scan Limit 2 (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VFINAL" desc="Final E (V)" value="0.4" versus="0" variable="None" />
+      <explain_quant tag="SCANRATE" desc="Scan Rate (mV/s)" value="500" variable="None" />
+      <explain_quant tag="STEPSIZE" desc="Step Size (mV)" value="2" variable="None" />
+      <explain_iquant tag="CYCLES" desc="Cycles (#)" value="1" variable="None" />
+      <explain_quant tag="AREA" desc="Sample Area (cm^2)" value="1" variable="None" />
+      <explain_selector tag="IMODE" desc="I/E Range Mode" item0="Auto" item1="Fixed" index="1" />
+      <explain_selector tag="SAMPLINGMODE" desc="Sampling Mode" item0="Fast" item1="Noise Reject" item2="Surface" index="1" />
+      <explain_quant tag="IRANGE" desc="Max Current (mA)" value="0.5" variable="None" />
+      <explain_quant tag="EQDELAY" desc="Equil. Time (s)" value="5" variable="None" />
+      <explain_selector tag="IRCOMP" desc="IRComp" item0="None" item1="PF" item2="CI" index="0" />
+      <explain_quant tag="PFCOR" desc="PF Corr. (ohm)" value="50" variable="None" />
+    </parameters>
+  </element>
+  <element>
+    <name>Cyclic Voltammetry</name>
+    <classname>CV</classname>
+    <type>normal</type>
+    <description>Performs a cyclic voltammetry scan</description>
+    <parameters>
+      <explain_label tag="TITLE" desc="Test Identifier" value="Cyclic Voltammetry" />
+      <explain_output tag="OUTPUT" desc="Output File" value="FeOH-1mM-1000.DTA" />
+      <explain_notes tag="NOTES" desc="Notes..." value="FeOH 1mM 1000mv/s" />
+      <explain_poten tag="VINIT" desc="Initial E (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT1" desc="Scan Limit 1 (V)" value="0.4" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT2" desc="Scan Limit 2 (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VFINAL" desc="Final E (V)" value="0.4" versus="0" variable="None" />
+      <explain_quant tag="SCANRATE" desc="Scan Rate (mV/s)" value="1000" variable="None" />
+      <explain_quant tag="STEPSIZE" desc="Step Size (mV)" value="2" variable="None" />
+      <explain_iquant tag="CYCLES" desc="Cycles (#)" value="1" variable="None" />
+      <explain_quant tag="AREA" desc="Sample Area (cm^2)" value="1" variable="None" />
+      <explain_selector tag="IMODE" desc="I/E Range Mode" item0="Auto" item1="Fixed" index="1" />
+      <explain_selector tag="SAMPLINGMODE" desc="Sampling Mode" item0="Fast" item1="Noise Reject" item2="Surface" index="1" />
+      <explain_quant tag="IRANGE" desc="Max Current (mA)" value="0.5" variable="None" />
+      <explain_quant tag="EQDELAY" desc="Equil. Time (s)" value="5" variable="None" />
+      <explain_selector tag="IRCOMP" desc="IRComp" item0="None" item1="PF" item2="CI" index="0" />
+      <explain_quant tag="PFCOR" desc="PF Corr. (ohm)" value="50" variable="None" />
+    </parameters>
+  </element>
+  <element>
+    <name>Cyclic Voltammetry</name>
+    <classname>CV</classname>
+    <type>normal</type>
+    <description>Performs a cyclic voltammetry scan</description>
+    <parameters>
+      <explain_label tag="TITLE" desc="Test Identifier" value="Cyclic Voltammetry" />
+      <explain_output tag="OUTPUT" desc="Output File" value="FeOH-1mM-2000.DTA" />
+      <explain_notes tag="NOTES" desc="Notes..." value="FeOH 1mM 2000mv/s" />
+      <explain_poten tag="VINIT" desc="Initial E (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT1" desc="Scan Limit 1 (V)" value="0.4" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT2" desc="Scan Limit 2 (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VFINAL" desc="Final E (V)" value="0.4" versus="0" variable="None" />
+      <explain_quant tag="SCANRATE" desc="Scan Rate (mV/s)" value="2000" variable="None" />
+      <explain_quant tag="STEPSIZE" desc="Step Size (mV)" value="2" variable="None" />
+      <explain_iquant tag="CYCLES" desc="Cycles (#)" value="1" variable="None" />
+      <explain_quant tag="AREA" desc="Sample Area (cm^2)" value="1" variable="None" />
+      <explain_selector tag="IMODE" desc="I/E Range Mode" item0="Auto" item1="Fixed" index="1" />
+      <explain_selector tag="SAMPLINGMODE" desc="Sampling Mode" item0="Fast" item1="Noise Reject" item2="Surface" index="1" />
+      <explain_quant tag="IRANGE" desc="Max Current (mA)" value="0.5" variable="None" />
+      <explain_quant tag="EQDELAY" desc="Equil. Time (s)" value="5" variable="None" />
+      <explain_selector tag="IRCOMP" desc="IRComp" item0="None" item1="PF" item2="CI" index="0" />
+      <explain_quant tag="PFCOR" desc="PF Corr. (ohm)" value="50" variable="None" />
+    </parameters>
+  </element>
+  <element>
+    <name>Cyclic Voltammetry</name>
+    <classname>CV</classname>
+    <type>normal</type>
+    <description>Performs a cyclic voltammetry scan</description>
+    <parameters>
+      <explain_label tag="TITLE" desc="Test Identifier" value="Cyclic Voltammetry" />
+      <explain_output tag="OUTPUT" desc="Output File" value="FeOH-1mM-20.DTA" />
+      <explain_notes tag="NOTES" desc="Notes..." value="FeOH 1mM 20mv/s" />
+      <explain_poten tag="VINIT" desc="Initial E (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT1" desc="Scan Limit 1 (V)" value="0.4" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT2" desc="Scan Limit 2 (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VFINAL" desc="Final E (V)" value="0.4" versus="0" variable="None" />
+      <explain_quant tag="SCANRATE" desc="Scan Rate (mV/s)" value="20" variable="None" />
+      <explain_quant tag="STEPSIZE" desc="Step Size (mV)" value="2" variable="None" />
+      <explain_iquant tag="CYCLES" desc="Cycles (#)" value="1" variable="None" />
+      <explain_quant tag="AREA" desc="Sample Area (cm^2)" value="1" variable="None" />
+      <explain_selector tag="IMODE" desc="I/E Range Mode" item0="Auto" item1="Fixed" index="1" />
+      <explain_selector tag="SAMPLINGMODE" desc="Sampling Mode" item0="Fast" item1="Noise Reject" item2="Surface" index="1" />
+      <explain_quant tag="IRANGE" desc="Max Current (mA)" value="0.5" variable="None" />
+      <explain_quant tag="EQDELAY" desc="Equil. Time (s)" value="5" variable="None" />
+      <explain_selector tag="IRCOMP" desc="IRComp" item0="None" item1="PF" item2="CI" index="0" />
+      <explain_quant tag="PFCOR" desc="PF Corr. (ohm)" value="50" variable="None" />
+    </parameters>
+  </element>
+  <element>
+    <name>Cyclic Voltammetry</name>
+    <classname>CV</classname>
+    <type>normal</type>
+    <description>Performs a cyclic voltammetry scan</description>
+    <parameters>
+      <explain_label tag="TITLE" desc="Test Identifier" value="Cyclic Voltammetry" />
+      <explain_output tag="OUTPUT" desc="Output File" value="FeOH-1mM-50.DTA" />
+      <explain_notes tag="NOTES" desc="Notes..." value="FeOH 1mM 50mv/s" />
+      <explain_poten tag="VINIT" desc="Initial E (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT1" desc="Scan Limit 1 (V)" value="0.4" versus="0" variable="None" />
+      <explain_poten tag="VLIMIT2" desc="Scan Limit 2 (V)" value="-0.2" versus="0" variable="None" />
+      <explain_poten tag="VFINAL" desc="Final E (V)" value="0.4" versus="0" variable="None" />
+      <explain_quant tag="SCANRATE" desc="Scan Rate (mV/s)" value="50" variable="None" />
+      <explain_quant tag="STEPSIZE" desc="Step Size (mV)" value="2" variable="None" />
+      <explain_iquant tag="CYCLES" desc="Cycles (#)" value="1" variable="None" />
+      <explain_quant tag="AREA" desc="Sample Area (cm^2)" value="1" variable="None" />
+      <explain_selector tag="IMODE" desc="I/E Range Mode" item0="Auto" item1="Fixed" index="1" />
+      <explain_selector tag="SAMPLINGMODE" desc="Sampling Mode" item0="Fast" item1="Noise Reject" item2="Surface" index="1" />
+      <explain_quant tag="IRANGE" desc="Max Current (mA)" value="0.5" variable="None" />
+      <explain_quant tag="EQDELAY" desc="Equil. Time (s)" value="5" variable="None" />
+      <explain_selector tag="IRCOMP" desc="IRComp" item0="None" item1="PF" item2="CI" index="0" />
+      <explain_quant tag="PFCOR" desc="PF Corr. (ohm)" value="50" variable="None" />
+    </parameters>
+  </element>
+</GamrySequence>
