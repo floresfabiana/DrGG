@@ -3,11 +3,10 @@
 \FormatoReferencias
 
 %Saco las marcas de capitulo anterior
- \RemoveLabelsAxDos
+\RemoveLabelsAxDos
 
 %Agrego marcas laterales de las Referencias
- \AddLabelsBib
-
+\AddLabelsBib
 
 %Problemas con el tema del fancystyle
 \let\originalstyle=\thispagestyle            % Store the command for later reuse.
@@ -15,14 +14,12 @@
 \def\thispagestyle#1{\originalstyle{empty}} % Use this to get blank header+footer, TeXnically it is only \thispagestyle{empty}.
 \def\thispagestyle#1{}                       % This line completely ignores the content of the \thispagestyle command.
 
-
 %Archivo con la Base Bibliografica
- \bibliography{Referencias/base_bibliografica}
+\bibliography{Referencias/base_bibliografica}
  
 %Estilo de la Bibliografica ==> babaunsrt en español a traves del paquete babelbib
 %							==> unsrt estilo en ingles el original, numeración secuencial
 \bibliographystyle{babunsrt}
 %\bibliographystyle{unsrt}                           % Typeset the actual Index.
 
-\let\thispagestyle=\originalstyle 
-\thispagestyle{backmatter}
+\let\thispagestyle=\originalstyle

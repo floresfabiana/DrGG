@@ -1,12 +1,18 @@
 \cleardoublepage\phantomsection
 \phantomsection\mtcaddchapter[Anexo B: publicaciones]
-\FormatoAnexo
+\FormatoAnexoB
 
 %Saco marcas laterales del cap anterior
 \RemoveLabelsAxUno
 
 %Agrego las marcas laterales
 \AddLabelsAxDos
+
+%Problemas con el tema del fancystyle
+\let\originalstyle=\thispagestyle            % Store the command for later reuse.
+\def\thispagestyle#1{\fancyfoot[C]{}}       % This clears footer in the center if fancyhdr is in use.
+\def\thispagestyle#1{\originalstyle{empty}} % Use this to get blank header+footer, TeXnically it is only \thispagestyle{empty}.
+\def\thispagestyle#1{}                       % This line completely ignores the content of the \thispagestyle command.
 
 \chapter*{Anexo B: publicaciones}
 
@@ -16,20 +22,23 @@
   	
   	\item Premio innovar 2011
     
+    \item \textit{Building memristive and radiation hardness TiO$_2$-based junctions.}\linebreak Ghenzi, N., D. Rubi, E. Mangano, G. Giménez, J. Lell, A. Zelcer, P. Stoliar y P. Levy. Thin Solid Films, 550:683–688, Enero 2014, ISSN 00406090.\url{http://linkinghub.elsevier.com/retrieve/pii/S0040609013018294.}
+
     \item Congreso cafqui 2015
     
     \item Congreso Alemania Smart Systems Integration 2016
-    
-    \item Paper nestor - revisar fecha
 
     \item Congreso Ibersensor en CHILE 2016
     
     \item SAM en 2016
 
-    \item Cristales Fotónicos:  10.1039/C6TC05195B
+    \item  \textit{The radiation response of mesoporous nanocrystalline zirconia thin films.} Manzini, Ayelén M., Martín A Alurralde, Gustavo Giménez y Vittorio Luca. J. Nucl. Mater., 482:175–186, Diciembre 2016, ISSN 00223115. \url{http://linkinghub.elsevier.com/retrieve/pii/S0022311516308911.}
+
+    \item \textit{Designed nanoparticle–mesoporous multilayer nanocomposites as tunable
+    plasmonic–photonic architectures for electromagnetic field enhancement.}  Gazoni, Rodrigo Martínez, Martín G. Bellino, M. Cecilia Fuertes, Gustavo Giménez, Galo J. A. A. Soler-Illia y María Luz Martínez Ricci. J. Mater. Chem. C, 2017, ISSN 2050-7526. \url{http://xlink.rsc.org/?DOI=C6TC05195B.}
     
-    \item .... EN suspenso, paper Lea, paper Vitorino
+    \item .... EN suspenso, paper Lea, 
 
   \end{itemize}	
 
-\thispagestyle{backmatter}
+  \let\thispagestyle=\originalstyle

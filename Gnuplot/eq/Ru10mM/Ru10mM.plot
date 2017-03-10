@@ -1,6 +1,7 @@
 #Para ver en pantalla
 #reset
 #set terminal x11
+#set terminal aqua
 
 #Para exportar como latex
 set terminal tikz gparrows tikzarrows
@@ -27,7 +28,7 @@ red_100 = "#ff0000"
 
 #Flecha
 set style line 100  lc rgbcolor 'gray40' lw 1.5
-set style arrow 1 head filled size screen 0.03,15 ls 100
+set style arrow 200 head filled size screen 0.03,15 ls 100
 
 #Lo saque de http://www.perbang.dk/rgbgradient/
 set style line 1  lc rgb '#88f051' lt 1 lw 3 # --- Verde
@@ -58,13 +59,13 @@ set style line 49 lc rgb '#0088bf' lt 1 lw 3 # --- Azul
 
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
-set border 3 back ls 10 lw 1.5 
+set style line 300 lc rgb 'gray40' lt 1 lw 5 
+set border 3 back ls 300 lw 1.5 
 set tics nomirror
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
-set grid back ls 11
+set style line 400 lc rgb 'gray40' lt 0 lw 1 
+set grid back ls 400
 
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
@@ -99,11 +100,20 @@ set grid back ls 11
 #Curva 3 --> Adsorbido
 #Curva 27 --> desubicada 
 #Curva 55 --> desubicada
-
+#Texto
+#set label 1 at  50, 250 '\hl{\small $t_\textrm{Nc}$}' center rotate by 45 front
+set label at -310,755 "t" font ",8" rotate by 62 textcolor rgb "gray40" front
+set label at -307,830 "i" font ",8" rotate by 50 textcolor rgb "gray40" front
+set label at -304,870 "e" font ",8" rotate by 45 textcolor rgb "gray40" front
+set label at -297,930 "m" font ",8" rotate by 41 textcolor rgb "gray40" front
+set label at -284,1020 "p" font ",8" rotate by 34 textcolor rgb "gray40" front
+set label at -275,1090 "o" font ",8" rotate by 16 textcolor rgb "gray40" front
 
 #Para graficar todas
 plot for [i=7:25:2] 'Ru10mM.txt' using i:(column(i+1)/0.0314) w lines ls i-4, \
 for [i=29:51:2] 'Ru10mM.txt' using i:(column(i+1)/0.0314) w lines ls i-6, \
 'Ru10mM.txt' u 5:($6/0.0314) with lines ls 1, \
-'Ru10mM.txt' u 53:($54/0.0314) with lines ls 49,  "flecha.txt" u 1:2 smooth bezier ls 100, "flecha.txt" u 3:4:($5*3):($6*3) w vectors arrowstyle 1#"flecha.txt" with points
+'Ru10mM.txt' u 53:($54/0.0314) with lines ls 49,  "flecha.txt" u 1:2 smooth bezier ls 100, "flecha.txt" u 3:4:($5*3):($6*3) w vectors arrowstyle 200 #"flecha.txt" with points
+
+
 

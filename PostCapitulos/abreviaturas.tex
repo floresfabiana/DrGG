@@ -1,8 +1,18 @@
+\cleardoublepage\phantomsection
 \phantomsection\mtcaddchapter[Anexo A: siglas y abreviaturas]
-\FormatoAnexo
+\FormatoAnexoA
+
+
+
 
 %Agrego las marcas laterales
 \AddLabelsAxUno
+
+%Problemas con el tema del fancystyle
+\let\originalstyle=\thispagestyle            % Store the command for later reuse.
+\def\thispagestyle#1{\fancyfoot[C]{}}       % This clears footer in the center if fancyhdr is in use.
+\def\thispagestyle#1{\originalstyle{empty}} % Use this to get blank header+footer, TeXnically it is only \thispagestyle{empty}.
+\def\thispagestyle#1{}                       % This line completely ignores the content of the \thispagestyle command.
 
 \chapter*{Anexo A: siglas y abreviaturas}
 
@@ -11,4 +21,5 @@
 \begin{normalsize}  		 %Por si quiero poner otro tipo de fuente mas pequeña
 \printacronyms[heading=none]
 \end{normalsize}
-\thispagestyle{backmatter}
+
+\let\thispagestyle=\originalstyle 

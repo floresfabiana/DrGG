@@ -1,3 +1,11 @@
+%Correcciones menores Gabriel:
+
+%Figura 3.12 ---->> Sacar H2O adsorbida cambiar x Vapor de H2O
+%Figura 4.1  ---->> Confusa..... destacar mejor con alguna figura inset u otra cosa
+%Figura 3.12 ---->> Cambiar pulverizado x denso (óxido de silicio denso)
+%Citar lo de la doble distribuciones con figura incluida
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 											                       	%
 %   TESIS PARA DOCTORADO DE GUSTAVO GIMENEZ     %
@@ -8,7 +16,7 @@
 \documentclass[a4paper,10pt,twoside,openright,titlepage]{book}
 
 %Compila como borrador
-%\documentclass[draft,a4paper,10pt,twoside,openright,titlepage]{book}
+%\adocumentclass[draft,a4paper,10pt,twoside,openright,titlepage]{book}
 
 %Muestra marco para ver encabezados, cuerpo del texto, etc.
 %\usepackage{showframe}
@@ -147,7 +155,7 @@
     % c. En la version final incorporar los tikz de esquemas porque algunos lectores de PDF no las visualizar correctamente si inclutyen el PDF pero lo toman bien si esta  el codigo tikz en el cuerpo del docuemnto. ---> Adobe Ok! Skim mal (quien lo conoce???) Texwork ok, Texshop ok. sharelatex ok, vista previa 5.0 mal, vista previa 8.0 bien. z
     %3. Optimizar peso de las imagenes
     %4. Fijarse bien el tema del espacio entre las figuras y la leyenda y las subfiguras con la leyenda, parece que no es el mismo.
-    %5. Revisar indexacion (paginas y dulicados) y bibliografia (links) y siglas.
+    %5. Revisar indexacion (paginas y dulicados) y bibliografia, estilos, nombres, caracteres raros, links y siglas.
     %6. Revisar todos los warning y bad blocks! 
     
 

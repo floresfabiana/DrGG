@@ -46,15 +46,37 @@
 
 
 \begin{document}
+ \thispagestyle{empty}
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+
+\def\makebraces(#1,#2)#3#4#5{%
+  \edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+  \edef\delimvshift{\the\dimexpr(#1-#2)/2}%
+  \chemmove{
+    \node[at=(#4),yshift=(\delimvshift)]
+      {$
+       \left\delimleft
+         \vrule height\delimhalfdim depth\delimhalfdim width0pt
+       \right.
+      $};
+    \node[at=(#5),yshift=(\delimvshift)]
+      {$
+        \left.
+          \vrule height\delimhalfdim depth\delimhalfdim width0pt
+        \right\delimright_{\rlap{#3}}
+      $};
+  }%
+}
+
+%\includetikz{f127}
 
 \begin{tikzpicture}
-\schemestart
-\chemfig{Si(-[8]O^{-})(-[5]O)(-[4]O)(-[3]O)}
-\arrow{<=>[$\mathrm{\scriptstyle +H^+}$][$\mathrm{\scriptstyle -H^+}$]}[0,1.3]
-\chemfig{Si(-[8]OH)(-[5]O)(-[4]O)(-[3]O)}
-\arrow{<=>[$\mathrm{\scriptstyle +H^+}$][$\mathrm{\scriptstyle -H^+}$]}[0,1.3]
-\chemfig{Si(-[8]OH_2^+)(-[5]O)(-[4]O)(-[3]O)}
-\schemestop
+ \setpolymerdelim[]
+ \schemestart
+  \chemfig{
+  -[@{op1,0.35}:30]-[@{cl1,0.75}:-30]-[:30]\chemabove{N}{\scriptstyle +}\rlap{\quad \chemabove{Br}{\scriptstyle \quad-}}([:130]-CH_3)([:295]-CH_3)([:50]-CH_3)}
+   \makebraces(10pt,10pt){$\scriptstyle 14$}{op1}{cl1}
+  \schemestop
 \end{tikzpicture}
 
 \end{document}

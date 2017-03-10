@@ -144,11 +144,23 @@
 	 		}	
 	
 	%Formato para el titulo de los Anexos
-	 \newcommand{\FormatoAnexo}{
+	 \newcommand{\FormatoAnexoA}{
 	 		\titleformat{name=\chapter,numberless}[display]						 %Sin Numerar
 			{\Huge\filleft\scshape\color{grisoscuro}}      	 %Formato para etiqueta y texto
 	 		{\begin{tikzpicture}[remember picture,overlay] 						 %Cuadrado con el numero
 				\node[at={($(\NumCapX,\NumCapY)$)},anchor=center,font=\rmfamily\fontsize{300pt}{0pt}\bf\selectfont\color{grisoscuro},opacity=0.2] (texto) {\textit{A}};
+				\node at (-12.16,-2) {\rule{25cm}{0.5mm}};
+				\end{tikzpicture}
+			}		
+	 		{20pt}  	    				 %Separación Etiqueta/Texto                
+	 		{\vspace*{-0.15cm}}              %Codigo anterior
+	 		[]   				 %Codigo Posteior
+	 }
+	 \newcommand{\FormatoAnexoB}{
+	 		\titleformat{name=\chapter,numberless}[display]						 %Sin Numerar
+			{\Huge\filleft\scshape\color{grisoscuro}}      	 %Formato para etiqueta y texto
+	 		{\begin{tikzpicture}[remember picture,overlay] 						 %Cuadrado con el numero
+				\node[at={($(\NumCapX,\NumCapY)$)},anchor=center,font=\rmfamily\fontsize{300pt}{0pt}\bf\selectfont\color{grisoscuro},opacity=0.2] (texto) {\textit{B}};
 				\node at (-12.16,-2) {\rule{25cm}{0.5mm}};
 				\end{tikzpicture}
 			}		
@@ -459,7 +471,7 @@
 	\renewcommand{\labelitemi}{$\bullet$}
  %-----------------------------------------------------------
 
-%Abreviaturas para cosas qe voy a usar mucho
+%Abreviaturas para cosas que voy a usar mucho
 %------------------------------------------------------------
    
    %Sondas electroquimcias
