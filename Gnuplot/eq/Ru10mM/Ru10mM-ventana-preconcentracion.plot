@@ -14,16 +14,11 @@ set output "Ru10mM-ventana-preconcentracion.tikz"
 
 #Saco las marcas
   	unset tics
+set style rect fc lt -1 fs solid 0.15 noborder
+set obj rect from 30, graph 0 to 70, graph 1
 
-#Para colocar flechas de tal posicion a tal otra
-  	#set arrow from 0,0 to 0,62
-  	#set arrow from 0,0 to 85,0
-
-red_000 = "#670106"
-red_025 = "#8d0000"
-red_050 = "#bf0000"
-red_075 = "#e30101"
-red_100 = "#ff0000"
+set label at 45,0.2 "ventana de" font ",12" rotate by 90 textcolor rgb "gray20" front
+set label at 55,0.2 "trabajo" font ",12" rotate by 90 textcolor rgb "gray20" front
 
 
 #Defino estilos para cada tipo de linea
@@ -34,12 +29,12 @@ set style line 4 lc rgb 'red' lt -1 pt -1
 
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 
-set border 3 back ls 10 lw 1.5 
+set border 3 front ls 10 lw 1.5
 set tics nomirror
 
 #Estilo de la grilla
 set style line 11 lc rgb 'gray40' lt 0 lw 1 
-set grid back ls 11
+set grid front ls 11
 
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
@@ -68,6 +63,7 @@ set grid back ls 11
 
 
 #Ploteo todas las funciones que les digamos
+
 
 plot "Ru10mM-ventana-preconcentracion.txt" using ($1):($2) with points ls 1, \
 "Ru10mM-ventana-preconcentracion.txt" using ($3):($4) with lines ls 3
