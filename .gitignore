@@ -18,6 +18,9 @@
 *.DTA
 *.DTA-Ciclo-[0-9][0-9]
 *.DTA-Ciclo-[0-9]
+*.opj
+*.qti
+*.xlsx
 tmp/
 Imagenes/
 *.png
