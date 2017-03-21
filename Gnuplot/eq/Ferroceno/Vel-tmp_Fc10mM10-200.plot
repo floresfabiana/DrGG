@@ -3,8 +3,8 @@
 #set terminal qt
 
 #Para exportar como latex
-set terminal tikz
-set output "Vel-tmp_Fc10mM10-200.tikz" 
+#set terminal tikz
+#set output "Vel-tmp_Fc10mM10-200.tikz" 
 
 #Saco la leyenda
 set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"

@@ -42,4 +42,4 @@ set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gr
 set xrange [-600:100]
 
 #Para graficar todas
-plot for [i=1:15:2] "Barrido-Ru1mM-100a10000mVs-GAMRY.txt" using (column(i)*1000):(column(i+1)/0.0314) w lines ls i
+plot for [i=1:15:2] "Barrido-Ru1mM-100a10000mVs-GAMRY.txt" using (column(i)*1000):(column(i+1)*1e6/0.0314) w lines ls i

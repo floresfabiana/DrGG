@@ -1,10 +1,10 @@
 #Para ver en pantalla
-reset
-set terminal X11
+#reset
+#set terminal qt
 
 #Para exportar como latex
 #set terminal tikz
-#set output "Vel-tmp_Fc10.tikz" 
+#set output "Vel-tmp_Fc500.tikz" 
 
 #Saco la leyenda
 set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
@@ -92,12 +92,13 @@ red_100 = "#ff0000"
 #Ploteo todas las funciones que les digamos
 
 #plot "Concentraciones_Fc.txt" using ($1):($2/0.0314) with lines ls 1,"Concentraciones_Fc.txt" using ($1):($3/0.0314) with  lines ls 2, "Concentraciones_Fc.txt" using ($1):($4/0.0314) with lines ls 3
-plot "fc-1mM/FC_1mM_F127_10.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 1 title "Fc 1mM, 10 mV/s",\
-"fc-1mM/FC_1mM_F127_20.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 2 title "Fc 1mM, 20 mV/s",\
-"fc-1mM/FC_1mM_F127_50.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 3 title "Fc 1mM, 50 mV/s",\
-"fc-1mM/FC_1mM_F127_100.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 4 title "Fc 1mM, 100 mV/s",\
-"fc-1mM/FC_1mM_F127_200.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 5 title "Fc 1mM, 200 mV/s",\
-"fc-1mM/FC_1mM_F127_500.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 1 title "Fc 1mM, 500 mV/s",\
+#"fc-1mM/FC_1mM_F127_10.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 1 title "Fc 1mM, 10 mV/s",\
+#"fc-1mM/FC_1mM_F127_20.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 2 title "Fc 1mM, 20 mV/s",\
+#"fc-1mM/FC_1mM_F127_50.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 3 title "Fc 1mM, 50 mV/s",\
+#"fc-1mM/FC_1mM_F127_100.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 4 title "Fc 1mM, 100 mV/s",\
+#"fc-1mM/FC_1mM_F127_200.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 5 title "Fc 1mM, 200 mV/s",\
+
+plot "fc-1mM/FC_1mM_F127_500.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 1 title "Fc 1mM, 500 mV/s",\
 "fc-1mM/FC_1mM_F127_1000.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 2 title "Fc 1mM, 1000 mV/s",\
 "fc-1mM/FC_1mM_F127_2000.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 3 title "Fc 1mM, 2000 mV/s",\
 "fc-1mM/FC_1mM_F127_5000.DTA-Ciclo-1" using ($1):($2/0.0314) with lines ls 4 title "Fc 1mM, 5000 mV/s",\
