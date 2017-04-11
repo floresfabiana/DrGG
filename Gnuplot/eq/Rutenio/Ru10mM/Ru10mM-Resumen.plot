@@ -33,9 +33,13 @@ red_100 = "#ff0000"
 	# set style line 4 lc rgbcolor red_075 pt 1 ps 2 lw 2
 	# set style line 5 lc rgbcolor red_100 pt 1 ps 2 lw 2
 	# set style line 6 lc rgbcolor 'red' lt -1 pt -1
-	set style line 1 lc rgb '#800000' lt 1 lw 2 #Marron
-	set style line 2 lc rgb '#ff0000' lt 1 lw 2 #ROjo
-	set style line 3 lc rgb '#ff4500' lt 1 lw 2 #Naranja
+	set style line 1 lc rgb 'gray70' lt 1 lw 0.5 #Gris
+	set style line 2 lc rgb 'red' lt 1 lw 2.5 #ROjo
+	set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
+	
+	#set style line 1 lc rgb '#800000' lt 1 lw 2 #Marron
+	#set style line 2 lc rgb '#ff0000' lt 1 lw 2 #ROjo
+	#set style line 3 lc rgb '#ff4500' lt 1 lw 2 #Naranja
 	set style line 4 lc rgb '#ffa500' lt 1 lw 2 #Amarillo
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
@@ -79,6 +83,6 @@ set grid back ls 11
 #Ploteo todas las funciones que les digamos
 
 plot 'Ru10mM-Resumen.txt' using 1:($2/0.0314) w lines ls 5, \
-'Ru10mM-Resumen.txt' using 3:($4/0.0314) w lines ls 7, \
-'Ru10mM-Resumen.txt' using 5:($6/0.0314) w lines ls 3
+'Ru10mM-Resumen.txt' using 3:($4/0.0314) w lines ls 3, \
+'Ru10mM-Resumen.txt' using 5:($6/0.0314) w lines ls 2
 #plot for [i=1:5:2] 'Ru10mM-Resumen.txt' using i:i+1 w lines title sprintf("column %d", i)

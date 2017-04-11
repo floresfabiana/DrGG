@@ -63,7 +63,7 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 
 #Coloca los nombre de los ejes
 	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$j/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -91,6 +91,10 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
  
 
 #Ploteo todas las funciones que les digamos
-
-plot "Concentraciones_Fe.txt" using ($1*1000+183):($2*1e6/0.0025) with lines ls 5,"Concentraciones_Fe.txt" using ($1*1000+183):($3*1e6/0.0025) with lines ls 4,"Concentraciones_Fe.txt" using ($1*1000+183):($4*1e6/0.0025) with lines ls 3,	 "Concentraciones_Fe.txt" using ($1*1000+183):($5*1e6/0.0025) with lines ls 2,"Concentraciones_Fe.txt" using ($1*1000+183):($6*1e6/0.0025) with lines ls 1
+i=183
+plot "Concentraciones_Fe.txt" using ($1*1000+i):($2*1e6/0.0025) with lines ls 5,\
+"Concentraciones_Fe.txt" using ($1*1000+i):($3*1e6/0.0025) with lines ls 4,\
+"Concentraciones_Fe.txt" using ($1*1000+i):($4*1e6/0.0025) with lines ls 3,\
+"Concentraciones_Fe.txt" using ($1*1000+i):($5*1e6/0.0025) with lines ls 2,\
+"Concentraciones_Fe.txt" using ($1*1000+i):($6*1e6/0.0025) with lines ls 1
 

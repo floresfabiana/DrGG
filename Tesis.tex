@@ -1,4 +1,4 @@
-%Correcciones menores Gabriel:
+%%Correcciones menores Gabriel:
 
 %Figura 3.12 ---->> Sacar H2O adsorbida cambiar x Vapor de H2O
 %Figura 4.1  ---->> Confusa..... destacar mejor con alguna figura inset u otra cosa
@@ -48,7 +48,10 @@
   %Estilo de las cabeceras y notas al pie para esta partez	
   \frontmatter 
   \pagestyle{frontmatter}
-   
+  
+  %Incluyo los Creditos de Tex y la firma con Runas
+  \input{PreCapitulos/firma-creditos.tex} 
+
   %Incluyo los Agradecimientos
   \input{PreCapitulos/agradecimientos.tex}
  
@@ -102,7 +105,7 @@
 
 	%Incluyo Los capitulos
 	\input{Capitulos/01_introduccion.tex}
-  \input{Capitulos/02_materiales.tex}    %Corregido por Gabriel Marzo 2016 / Visto Ok por Galo  21/4
+  \input{Capitulos/02_materiales.tex}%Corregido por Gabriel Marzo 2016 / Visto Ok por Galo  21/4
   \input{Capitulos/03_mesoporosos.tex}
 	\input{Capitulos/04_optimizacion.tex}
   \input{Capitulos/05_electroquimica.tex}
@@ -146,17 +149,18 @@
 
 %Digitalizacion de graficos: http://arohatgi.info/WebPlotDigitizer/
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Cosas que me gustarian y Faltan:    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %1. Seccion de nomenclatura para los sistemas utilizados???
-    %2a. Sacar o dejar sombra en los cuadros de los esquemas? o cambiar color??
+    %1a. Sacar o dejar sombra en los cuadros de los esquemas? o cambiar color??
     % b. Compilar los esquemas con sombras en el documento principal para no tener problemas con las sombras.
     % c. En la version final incorporar los tikz de esquemas porque algunos lectores de PDF no las visualizar correctamente si inclutyen el PDF pero lo toman bien si esta  el codigo tikz en el cuerpo del docuemnto. ---> Adobe Ok! Skim mal (quien lo conoce???) Texwork ok, Texshop ok. sharelatex ok, vista previa 5.0 mal, vista previa 8.0 bien. z
-    %3. Optimizar peso de las imagenes
-    %4. Fijarse bien el tema del espacio entre las figuras y la leyenda y las subfiguras con la leyenda, parece que no es el mismo.
-    %5. Revisar indexacion (paginas y dulicados) y bibliografia, estilos, nombres, caracteres raros, links y siglas.
-    %6. Revisar todos los warning y bad blocks! 
+    %2. Optimizar peso de las imagenes
+    %3. Fijarse bien el tema del espacio entre las figuras y la leyenda y las subfiguras con la leyenda, parece que no es el mismo.
+    %4. Revisar indexacion (paginas y dulicados) y bibliografia, estilos, nombres, caracteres raros, links y siglas.
+    %5. Revisar todos los warning y bad blocks! 
+    %6. Unificar el gradiente de colores en las Voltametrias, y elejir un color para el Au, otro para el mesoporoso y otro para el adsorvido.
     
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

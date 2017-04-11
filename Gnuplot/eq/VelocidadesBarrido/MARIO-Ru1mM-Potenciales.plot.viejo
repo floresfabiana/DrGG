@@ -1,10 +1,10 @@
 #Para ver en pantalla
-#reset
-#set terminal x11
+reset
+set terminal x11
 
 #Para exportar como latex
-set terminal tikz
-set output "Barrido-Ru1mM-Max-Min-GAMRY.tikz"
+#set terminal tikz
+#set output "Ru-1mM-Barrido-Max-Min-EQMARIO-Potenciales.tikz"
 
 #Leyenda
 	set key top left Left reverse samplen -2 font ",10" textcolor rgb "gray40"
@@ -14,7 +14,7 @@ set output "Barrido-Ru1mM-Max-Min-GAMRY.tikz"
 
 #Saco las marcas
   	unset tics
-
+ set logscale x
 #Defino estilos para cada tipo de linea
 set style line 1 lc rgb 'black' pt 7 ps 1 lw 1#Circulos Negros
 set style line 2 lc rgb 'red' pt 7 ps 1  #Circulo
@@ -31,25 +31,25 @@ set style line 11 lc rgb 'gray40' lt 0 lw 1
 set grid front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "log(v) [mv/s]"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "log(i) [uA]"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "v / mV.s$^{-1}$"  font ",14" textcolor rgb "gray40" offset  0,-2
+	set ylabel "Potencial vs ESC / mV"	font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
 	#set xrange [0:180]
 #	set yrange [-1000:1000]
 #FITEO
-	 f(x) = a*x + b
-	 fit f(x) "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($3)) via a,b
-	 stat "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($3))
-	 set label 1 sprintf("y=%3.3fX + %3.3f",a,b) at 4,2.13 font ",6" textcolor rgb "gray40"
-	 set label 2 sprintf("R=%3.4f",STATS_correlation) at 4,2.05 font ",6" textcolor rgb "gray40"
+	 # f(x) = a*x + b
+	 # fit f(x) "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($3)) via a,b
+	 # stat "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($3))
+	 # set label 1 sprintf("y=%3.3fX + %3.3f",a,b) at 4,2.13 font ",6" textcolor rgb "gray40"
+	 # set label 2 sprintf("R=%3.4f",STATS_correlation) at 4,2.05 font ",6" textcolor rgb "gray40"
 
-	 g(x) = c*x + d
-	 fit g(x) "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5)) via c,d
-	 stat "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5))
-	 set label 5 sprintf("y=%3.3fX + %3.3f",c,d) at 4,1.57 font ",6" textcolor rgb "gray40"
-	 set label 6 sprintf("R=%3.4f",STATS_correlation) at 4,1.5 font ",6" textcolor rgb "gray40"	
+	 # g(x) = c*x + d
+	 # fit g(x) "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5)) via c,d
+	 # stat "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5))
+	 # set label 5 sprintf("y=%3.3fX + %3.3f",c,d) at 4,1.57 font ",6" textcolor rgb "gray40"
+	 # set label 6 sprintf("R=%3.4f",STATS_correlation) at 4,1.5 font ",6" textcolor rgb "gray40"	
 
 	 # h(x) = e*x + f
 	 # fit h(x) "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5)) every ::5::8 via e,f
@@ -63,5 +63,5 @@ set grid front ls 11
 #EL valor 4.01 corresponde al pico maximo en la oxidación.
 #
 #plot "Barrido-Ru1mM-Max-Min.txt" using (log10($1)):(log10($3)) with points ls 1, f(x) with lines ls 2
-plot "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($3)) with points ls 1 title "Corriente \'anodica", f(x) with lines ls 1 notitle, \
-"Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5)) with points ls 2 title "Corriente cat\'odica", g(x) with lines ls 2 notitle #h(x) with lines ls 2 notitle
+plot "Ru-1mM-Barrido-Max-Min-EQMARIO.txt" using 1:2 with points ls 1 title "Potencial \'anodico", \
+"Ru-1mM-Barrido-Max-Min-EQMARIO.txt" using 1:4 with points ls 2 title "Potencial cat\'odico"

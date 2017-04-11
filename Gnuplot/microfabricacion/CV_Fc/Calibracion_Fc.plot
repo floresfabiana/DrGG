@@ -50,7 +50,7 @@ red_100 = "#ff0000"
 
 #Coloca los nombre de los ejes
 	set xlabel "$\\text{Concentración/mM}$"	font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$j/ \\mu \\text{A.cm}^{-2}$" font ",14" textcolor rgb "gray40" offset -2,0
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$" font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 

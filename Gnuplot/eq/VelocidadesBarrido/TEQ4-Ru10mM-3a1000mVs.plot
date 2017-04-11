@@ -4,7 +4,7 @@
 
 #Para exportar como latex
 set terminal tikz
-set output "Ru10mM-Barrido-3a1000mVs-TEQ4.tikz"
+set output "TEQ4-Ru10mM-3a1000mVs.tikz"
 
 #Saco la leyenda
 	unset key
@@ -60,5 +60,5 @@ set grid back ls 400
 
 
 #Para graficar todas
-plot for [i=1:21:2] "Ru10mM-Barrido-3a1000mVs-TEQ4.txt" using i:(column(i+1)/0.0314) w lines ls i
+plot for [i=1:21:2] "TEQ4-Ru10mM-3a1000mVs.txt" using i:(column(i+1)/0.0314) w lines ls i
 #plot for [i=1:1:2] "Ru10mM-Barrido-3a1000mVs.txt" u i:(column(i+1/0.0314)) w lines

@@ -299,7 +299,7 @@
 				  \begin{figure}[t!]
 				  \begin{center}
 				  \includegraphics[width=\textwidth]{Imagenes/sputt.jpg}
-				  \caption[Equipo para depósito de películas delgadas, \textit{sputtering}]{Foto del instrumental utilizado para realizar los depositos bicapa Ti|Au o Cr|Au. A)El equipo \textit{BOC Edwards} completo donde se ve el gabinete de control y la cámara de vacío, B)Foto a través de la ventana al momento de realizar un deposito de Cr y C)Foto a través de la ventana al momento de realizar un deposito de Au.}
+				  \caption[Equipo para depósito de películas delgadas, \textit{sputtering}]{Foto del instrumental utilizado para realizar los depositos bicapa Ti\textbar Au o Cr\textbar Au. A)El equipo \textit{BOC Edwards} completo donde se ve el gabinete de control y la cámara de vacío, B)Foto a través de la ventana al momento de realizar un deposito de Cr y C)Foto a través de la ventana al momento de realizar un deposito de Au.}
 				  \label{fig:sputt}
 				  \end{center}
 				  \end{figure}	
@@ -314,7 +314,6 @@
 			Las condiciones de depósito de cada una de las sucesivas capas se detallan en la tabla \ref{tabla:sputt1} para las películas metálicas y en la tabla  \ref{tabla:sputt2} para el SiO$_2$ y el plasma previo al deposito.
 
 			%Tabla con los parámetros de deposito de la películas
-		  		%\marginpar{\color{red} Falta establecer los parámetros del Cr y Ti, un deposito FIB y tasa.}
 		  		\begin{table}[ht]
 		  		\caption[Parámetros de depósito películas metálicas]{Parámetros de depósito de las distintas películas delgadas metálicas para su uso como electrodos de trabajo.}
 		  		\begin{tabular}{lcccccc} 
@@ -360,8 +359,8 @@
 
 	\subsection{Modificación superficial}\label{sec:silanizacion}
 		
-	Se realizó sobre los electrodos una modificación superficial para establecer puntos de anclaje, de forma de promover la adherencia del óxido de silicio sobre la superficie de los electrodos.
-	El proceso consistió en adsorber 3-mercaptopropil trimetoxisilano (MPTMS) sobre la superficie de Au. Se preparó una solución \SI{10}{\milli\Molar} de MPTMS en tolueno (se eligió tolueno de forma de minimizar la hidrólisis y condensación del MPTMS) y se dejo adsorber durante 2 horas, luego se realizó un enjuague con acetona y se secó en flujo de N$_2$.
+		Se realizó sobre los electrodos una modificación superficial para establecer puntos de anclaje, de forma de promover la adherencia del óxido de silicio sobre la superficie de los electrodos.
+		El proceso consistió en adsorber 3-mercaptopropil trimetoxisilano (MPTMS) sobre la superficie de Au. Se preparó una solución \SI{10}{\milli\Molar} de MPTMS en tolueno (se eligió tolueno de forma de minimizar la hidrólisis y condensación del MPTMS) y se dejo adsorber durante 2 horas en cristalizador, luego se realizó un enjuague con acetona y se secó en flujo de N$_2$.
 
 	\subsection{Encapsulado y corte}\label{sec:corte}
 
@@ -463,7 +462,9 @@
 			 		  \end{figure}		
 	
 	 Los parámetros importantes en una voltametría cíclico son las magnitudes de la corriente anódica en el pico anódico $i_{pa}$, de la corriente catódica en el pico catódico $i_{pc}$, el potencial del pico catódico $E_{pc}$, el potencial del pico anódico $E_{pa}$, y el área bajo la curva que representa la carga ($Q$) total. 
-	 En sistemas idealmente reversibles los picos ánodicos y catódicos son simétricos ($i_{pa}=i_{pc}$) y directamente proporcional a la velocidad de barrido ($i_p \propto \sqrt{\nu}$); la diferencia de potencial entre ellos es de \SI{59}{\milli\volt} por electrón intercambiado ($E_{pa}-E_{pc}=\SI{59}{\milli\volt\per n}$) e independiente de la velocidad de barrido. En este tipo de procesos las concentraciones de las distintas especies en la superficie del electrodo cumplen la ley de Nernst.\cite{Wi2000,Villullas2000,Gosser} Para ello la velocidad de transferencia electrónica, entre analitos y electrodo, tiene que ser mucho mayor que la velocidad de transferencia de masa, es decir, que la difusión de las especies hacia el electrodo. Ádemás, si consideramos un electrodo semi-infinito y completamente plano, la corriente de pico para es directamente proporcional a la concentración de la especie que transfiere o toma electrones y, bajo estas condiciones de contorno, la relación queda establecida por la ecuación de Randles-Sevcik:
+	 En sistemas idealmente reversibles los picos ánodicos y catódicos son simétricos ($i_{pa}=i_{pc}$) y directamente proporcional a la velocidad de barrido ($i_p \propto \sqrt{\nu}$); la diferencia de potencial entre ellos es de \SI{59}{\milli\volt} por electrón intercambiado ($E_{pa}-E_{pc}=\SI{59}{\milli\volt\per n}$) e independiente de la velocidad de barrido. En este tipo de procesos las concentraciones de las distintas especies en la superficie del electrodo cumplen la ley de Nernst.\cite{Wi2000,Villullas2000,Gosser}
+	 \marginpar{\color{red} Falta agregar la tecnica de ACV si la voy a incorporar, nomabrar el Gamry y el AutoLab de Mario o como se llame}
+	 Para ello la velocidad de transferencia electrónica, entre analitos y electrodo, tiene que ser mucho mayor que la velocidad de transferencia de masa, es decir, que la difusión de las especies hacia el electrodo. Ádemás, si consideramos un electrodo semi-infinito y completamente plano, la corriente de pico para es directamente proporcional a la concentración de la especie que transfiere o toma electrones y, bajo estas condiciones de contorno, la relación queda establecida por la ecuación de Randles-Sevcik:
 				%ecuacion de Randles-sevnic
 				\begin{equation}
 					i_p=0.4463\: nFAC \left(\frac{nF\upsilon D}{RT}\right)^{\frac{1}{2}}

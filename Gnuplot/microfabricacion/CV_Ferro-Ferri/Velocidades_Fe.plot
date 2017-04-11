@@ -1,13 +1,13 @@
 #Para ver en pantalla
 #reset
-#set terminal qt
+#set terminal x11
 
 #Para exportar como latex
 set terminal tikz
 set output "Velocidades_Fe.tikz" 
 
-#Saco la leyenda
-	unset key
+#Leyenda
+set key top left Left reverse samplen 3 font ",6" textcolor rgb "gray40"
 
 #Saco el Borde
 	unset border
@@ -61,8 +61,8 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
 	#set title "Grafico 1"
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/}mV$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$j/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -90,6 +90,10 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
  
 
 #Ploteo todas las funciones que les digamos
-
-plot "Velocidades_Fe.txt" using ($1*1000+183):($2*1e6/0.0025) with lines ls 5,"Velocidades_Fe.txt" using ($1*1000+183):($3*1e6/0.0025) with lines ls 4,"Velocidades_Fe.txt" using ($1*1000+183):($4*1e6/0.0025) with lines ls 3,	 "Velocidades_Fe.txt" using ($1*1000+183):($5*1e6/0.0025) with lines ls 2,"Velocidades_Fe.txt" using ($1*1000+183):($6*1e6/0.0025) with lines ls 1
+i=260 #
+plot "Velocidades_Fe.txt" using ($1*1000+183):($2*1e6/0.0025-i) with lines ls 5 title "FCN 10mM, 5 mV/s",\
+"Velocidades_Fe.txt" using ($1*1000+183):($3*1e6/0.0025-i) with lines ls 4 title "FCN 10mM, 10 mV/s",\
+"Velocidades_Fe.txt" using ($1*1000+183):($4*1e6/0.0025-i) with lines ls 3 title "FCN 10mM, 20 mV/s",\
+"Velocidades_Fe.txt" using ($1*1000+183):($5*1e6/0.0025-i) with lines ls 2 title "FCN 10mM, 50 mV/s",\
+"Velocidades_Fe.txt" using ($1*1000+183):($6*1e6/0.0025-i) with lines ls 1title "FCN 10mM, 100 mV/s"
 

@@ -4,7 +4,7 @@
 
 #Para exportar como latex
 set terminal tikz
-set output "Langmuir.tikz"
+set output "langmuir.tikz"
 
 #Saco la leyenda
 	unset key
@@ -68,18 +68,18 @@ set grid back ls 11
 
 #FITEO
 	f(x) = x*c/(x+a)+b
-	fit f(x) "Langmuir.txt" using ($1):($2) via a,b,c
+	fit f(x) "langmuir.txt" using ($1):($2) via a,b,c
 	
 	#f(x) = x/(c*x+a)+b
 	#fit f(x) "Ru Lagmuir.txt" using ($1):($2) via a,b,c
-	stat "Langmuir.txt" using 1:2
+	stat "langmuir.txt" using 1:2
 
 	g(x) = x/(x+d)+e
-	fit g(x) "Langmuir.txt" using ($1):($3) via d,e
+	fit g(x) "langmuir.txt" using ($1):($3) via d,e
 	
 	#g(x) = x/(f*x+d)+e
 	#fit g(x) "Ru Lagmuir.txt" using ($1):($3) via d,e,f
-	stat "Langmuir.txt" using 1:3
+	stat "langmuir.txt" using 1:3
 
 	# set label 1 sprintf("y=%3.3f+%3.3f",a,b) at 0.2,925 font ",10" textcolor rgb "gray40"
 	# set label 2 sprintf("R=%3.4f",STATS_correlation) at 0.2,800 font ",10" textcolor rgb "gray40"
@@ -94,6 +94,6 @@ set grid back ls 11
 
 #Ploteo todas las funciones que les digamos
 
-plot "Langmuir.txt" using ($1):($2) with points ls 1,f(x) with lines ls 3, \
-"Langmuir.txt" using ($1):($3) with points ls 2,g(x) with lines ls 4
+plot "langmuir.txt" using ($1):($2) with points ls 1,f(x) with lines ls 3, \
+"langmuir.txt" using ($1):($3) with points ls 2,g(x) with lines ls 4
 #"Calibracion_Fc.txt" using ($1):($3) with  points ls 1, f(x) with lines ls 4, g(x) with lines ls 4
