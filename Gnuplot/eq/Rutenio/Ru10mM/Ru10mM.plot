@@ -46,6 +46,8 @@ set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
 	set xrange [-600:100]
 	#set yrange [10:60]
 
+#set label at -570,1100 "A" font ",14" textcolor rgb "black" front
+
 #Para graficar todas
 plot for [i=7:25:2] 'Ru10mM.txt' using i:(column(i+1)/0.0314) w lines ls 1, \
 for [i=29:51:2] 'Ru10mM.txt' using i:(column(i+1)/0.0314) w lines ls 1, \

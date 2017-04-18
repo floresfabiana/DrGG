@@ -1,11 +1,11 @@
 #Para ver en pantalla
-reset
-set terminal X11
+#reset
+#set terminal X11
 
 #Para exportar como latex
-#set terminal tikz
-#set output "Ru1mM-secuencia-continua-hasta-disolucion.tikz" 
-load '../../gnuplot-palettes-master/plasma.pal'
+set terminal tikz
+set output "Ru1mM-secuencia-continua-hasta-disolucion.tikz" 
+#load '../../gnuplot-palettes-master/plasma.pal'
 
 #Saco la leyenda
 	unset key
@@ -18,6 +18,7 @@ load '../../gnuplot-palettes-master/plasma.pal'
 set style line 1 lc rgb 'gray70' lt 1 lw 0.5 #Marron
 set style line 2 lc rgb 'red' lt 1 lw 1 #ROjo
 set style line 3 lc rgb 'blue' lt 1 lw 1 #Azul
+set style arrow 200 head filled size screen 0.03,15 ls 100
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
@@ -30,7 +31,7 @@ set style line 3 lc rgb 'blue' lt 1 lw 1 #Azul
 
 #Coloca los nombre de los ejes
 	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$j/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set ylabel "$\\text{j/}\\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
