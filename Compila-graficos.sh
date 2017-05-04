@@ -64,7 +64,7 @@ if  [ $? = 1 ]; then
       echo -n "   Procesando $i: Exportando a PDF..."
       #Ejecuto PDFLatex
       cd $CD_GRAFICOS
-      pdflatex -shell-escape $CD_ACTUAL/$CD_GRAFICOS/Compila_graficos.tex >> $salida 
+      pdflatex -shell-escape  $CD_ACTUAL/$CD_GRAFICOS/Compila_graficos.tex >> $salida 
       if [ $? = 0 ];then
         resultado="$(tput setaf 2) Listo!$(tput setaf 0)"
         echo $resultado

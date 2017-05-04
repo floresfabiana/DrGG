@@ -451,7 +451,7 @@
  \let\oldmarginpar\marginpar
  \renewcommand{\marginpar}[1]{\oldmarginpar{\itshape{\textcolor{red}{#1}}}}
  %-----------------------------------------------------------
-
+ 
 %Colores Personalizados
 %------------------------------------------------------------
   \definecolor{grisoscuro}{gray}{0.3}          %El gris oscuro de los Capitulos
@@ -477,17 +477,17 @@
    %Sondas electroquimcias
    \newcommand{\hq}{HQ\index{hidroquinona}}
    \newcommand{\fe}{FeCN\index{ferrocianuro de potasio}\index{ferricianuro de potasio}}
-   \newcommand{\ru}{AR\index{aminorutenio}}
-   \newcommand{\fc}{Fc\index{ferroceno metanol}}  
+   \newcommand{\ru}{ARu\index{aminorutenio}}
+   \newcommand{\fc}{FeOH\index{ferroceno metanol}}  
 
    %Formula Aminorutenio desarrollada
-   \newcommand{\aminorutenio}{Ru(NH$_3$)$_6^{3+}$\index{aminorutenio}}
+   \newcommand{\aminorutenio}{[Ru(NH$_3$)$_6]^{3+}$\index{aminorutenio}}
    \newcommand{\aminorutenioCompleto}{Ru(NH$_3$)$_6$Cl{$_3$}\index{aminorutenio}}
 
    %Formula desarrollada para la cupla Ferro/Ferri
-   \newcommand{\ferroferri}{Fe(CN)$_6^{4-}$\textsuperscript{/}$^{3-}$\index{ferrocianuro de potasio}\index{ferricianuro de potasio}}
-   \newcommand{\ferro}{Fe(CN)$_6^{4-}$\index{ferrocianuro de potasio}}
-   \newcommand{\ferri}{Fe(CN)$_6^{3-}$\index{ferricianuro de potasio}}
+   \newcommand{\ferroferri}{[Fe(CN)$_6]^{4-}$\textsuperscript{/}$^{3-}$\index{ferrocianuro de potasio}\index{ferricianuro de potasio}}
+   \newcommand{\ferro}{[Fe(CN)$_6]^{4-}$\index{ferrocianuro de potasio}}
+   \newcommand{\ferri}{[Fe(CN)$_6]^{3-}$\index{ferricianuro de potasio}}
    \newcommand{\Ferro}{K$_4$Fe(CN)$_6$\index{ferrocianuro de potasio}}
    \newcommand{\Ferri}{K$_3$Fe(CN)$_6$\index{ferricianuro de potasio}}
    \newcommand{\ferroCompleto}{K$_4$Fe(CN)$_6$.3H$_2$O\index{ferrocianuro de potasio}}
@@ -512,17 +512,20 @@
 	\newcommand{\tresamarillo}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=yellow,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{3}};\end{tikzpicture}\space}
 	\newcommand{\cuatronaranja}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=orange!80,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{4}};\end{tikzpicture}\space}
 
-  %Las rayas con los colores mas comunes
-   	  \newbox{\negro}
-  	  	\savebox{\negro}{\raisebox{2pt}{\tikz{\draw[black,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
-	  \newbox{\marron} 
+	%Las rayas con los colores mas comunes
+   	\newbox{\negro}
+  		\savebox{\negro}{\raisebox{2pt}{\tikz{\draw[black,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
+	\newbox{\marron} 
 	  	\savebox{\marron}{\raisebox{2pt}{\tikz{\draw[marron,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
-	  \newbox{\rojo} 
+	\newbox{\rojo} 
 	  	\savebox{\rojo}{\raisebox{2pt}{\tikz{\draw[rojo,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
-	  \newbox{\oliva} 
+	\newbox{\oliva} 
 	  	\savebox{\oliva}{\raisebox{2pt}{\tikz{\draw[oliva,solid,line width=0.8pt](0,0) -- (4mm,0);}}}	
-	  \newbox{\azul} 
+	\newbox{\azul} 
 	  	\savebox{\azul}{\raisebox{2pt}{\tikz{\draw[blue,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
+	\newbox{\gris} 
+	  	\savebox{\gris}{\raisebox{2pt}{\tikz{\draw[gray,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
+	  	  	
 %Separación de las sílabas
 %------------------------------------------------------------
 	\hyphenation{Pasteur Kelvin PMMA Biopack sonda-electrodo hexadeciltrimetilamonio}

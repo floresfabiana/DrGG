@@ -35,7 +35,7 @@
  óxido de silicio; óxido de silicio\index{silicio!oxido de}
  poro ; poro\index{poro} 
  transporte ; transporte\index{transporte} 
- voltametría; voltametría\index{voltametría}
+ voltametría de corriente alterna; voltametría de corriente alterna\index{voltametría!de corriente alterna}
  espectroscopia; espectroscopia\index{espectroscopia}
  fotolitografía; fotolitografía\index{fotolitografía}
  litografía ; litografía\index{litografía} 
@@ -221,3 +221,9 @@ punto isoeléctrico;punto isoeléctrico\index{punto isoeléctrico}
 Wu ;Wu\index{Wu} 
 Iler;Iler\index{Iler}
 Langmuir;Langmuir\index{Langmuir}
+ Etienne; Etienne\index{Etienne}
+\textit{electron hopping};\textit{electron hopping}\index{electron hopping}
+ Avogadro; Avogrado\index{Avogadro}
+silanolato;\index{silanolato}
+sitio redox;\index{sitio redox}
+sitios redox;\index{sitio redox}
