@@ -37,7 +37,7 @@ set grid xtics ytics mxtics mytics front ls 11
 
 
 #Coloca los nombre de los ejes
-	set xlabel "v / mV.s$^{-1}$"  font ",14" textcolor rgb "gray40" offset  0,-2
+	set xlabel "$\\nu$ / mV.s$^{-1}$"  font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "(i$_{p}$/v)/(i$_{p}$/v)$_{\\text{v}\\rightarrow 0}$"	font ",14" textcolor rgb "gray40" offset -2,0
 
 #Rango 

@@ -105,7 +105,7 @@
 
 	%Incluyo Los capitulos
 	\input{Capitulos.indexados/01_introduccion.tex}
-  \input{Capitulos.indexados/02_materiales.tex}%Corregido por Gabriel Marzo 2016 / Visto Ok por Galo  21/4
+  \input{Capitulos.indexados/02_materiales.tex}
   \input{Capitulos.indexados/03_mesoporosos.tex}
 	\input{Capitulos.indexados/04_optimizacion.tex}
   \input{Capitulos.indexados/05_electroquimica.tex}
@@ -160,7 +160,7 @@
     %3. Fijarse bien el tema del espacio entre las figuras y la leyenda y las subfiguras con la leyenda, parece que no es el mismo.
     %4. Revisar indexacion (paginas y dulicados) y bibliografia, estilos, nombres, caracteres raros, links y siglas.
     %5. Revisar todos los warning y bad blocks! 
-    %6. Unificar el gradiente de colores en las Voltametrias, y elejir un color para el Au, otro para el mesoporoso y otro para el adsorvido.
+    %6. Unificar el gradiente de colores en las Voltametrias, y elejir un color para el Au, otro para el mesoporoso y otro para el adsorbido.
     
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

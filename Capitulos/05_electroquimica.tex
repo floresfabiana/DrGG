@@ -225,33 +225,63 @@
 	\subsection{Mecanismo de transporte de carga}
 
 	 Como ya se demostró anteriormente, el sistema adsorbe la sonda sobre las paredes de la película delgada formando una monocapa. Se genera entonces, un par iónico entre el \ru, de carga positiva (+2 o +3 dependiendo del estado de oxidación), y los silanolatos de las paredes del mesoporoso, cuya carga es negativa. Los sitios redox ($\phi^{e}$) están parcial o totalmente inmovilizados, sugiriendo que el mecanismo de transferencia de carga es el que se produce a través de saltos electrónicos entre los sitios redox, o como se lo conoce mas comúnmente en ingles, \textit{electron hopping}. %Una cita por aca. 
-	 Si se considera que los nanoporos son esféricos, monodispersos y distribuidos uniformemente en la película (consultar capítulo \ref{chap:Mesoporosos}), se puede calcular la cantidad \ru\space por poro. Para ello se multiplica la concentración de \ru\space adsorbido ($C$) por el volumen de poro ($V_{poro}$ y el número de Avogadro ($N_{A}$) Y, a su vez, como se encuentran adsorbidos, se puede dividir por la superficie del poro ($S_{poro}$) de forma de obtener el numero de sitios redox por unidad de volumen, o, tomando la raiz cuadrada de la inversa, la distancia promedio entre dos sitios redox ($d_H$), según la ecuación \ref{eq:distancia_redox}. 
+	 Si se considera que los nanoporos son esféricos, monodispersos y distribuidos uniformemente en la película (consultar capítulo \ref{chap:Mesoporosos}), se puede calcular la cantidad \ru\space por poro. Para ello se multiplica la concentración de \ru\space adsorbido ($C$) por el volumen de poro ($V_{poro}$ y el número de Avogadro ($N_{A}$) Y, a su vez, como se encuentran adsorbidos, se puede dividir por la superficie del poro ($S_{poro}$) de forma de obtener el numero de sitios redox por unidad de volumen, o, tomando la raiz cuadrada de la inversa, la distancia promedio entre dos sitios redox ($d_{\phi^{e}}$), según la ecuación \ref{eq:distancia_redox}. 
 	 	\begin{equation}
-					d_H=2\sqrt{\frac{S_{poro}}{\pi\, V_{poro}\, N_A\, C}}
+					d_{\phi^{e}}=2\sqrt{\frac{S_{poro}}{\pi\, V_{poro}\, N_A\, C}}
 					\label{eq:distancia_redox}
 			\end{equation}
-	 Teniendo en cuenta una concentración de saturación de \SI{1}{\Molar} en una película de \SI{200}{nm}, la distancia entre sitios redox es de $d_H=$\SI{1.25}{nm}. Este valor es compatible con el modelo de \textit{eletron hopping} propuestos y con la concentración calculada. Un valor de $d_H$ muy grande seria un indicador de que, o bien la película no esta saturada o bien los sitios redox están muy lejos para permitir el salto entre sitios, mientas que un valor de $d_H$ muy pequeño, seria absurdo, ya que se estarían solapando los sitios redox (para $d_H < \phi^{e}$). 
-	 	\begin{figure}[ht]
+	 Teniendo en cuenta una concentración de saturación de \SI{1}{\Molar} en una película de \SI{200}{nm}, la distancia entre sitios redox es de $d_{\phi^{e}}=$\SI{1.25}{nm}. Este valor es compatible con el modelo de \textit{eletron hopping} propuestos y con la concentración calculada. Un valor de $d_{\phi^{e}}$ muy grande seria un indicador de que, o bien la película no esta saturada o bien los sitios redox están muy lejos para permitir el salto entre sitios, mientas que un valor de $d_{\phi^{e}}$ muy pequeño, seria comparable con el radio de la sonda y se solaparían los sitios redox (para $d_{\phi^{e}} < r_{\phi^{e}}$). 
+	 		\begin{figure}[ht!]
 					\centering
-			 	    \includegraphics[width=0.70\textwidth]{Graficos/langmuir.pdf}
-			        \caption[Isoterma de Langmuir]{Isoterma de Langmuir a T=\SI{25}{\celsius}donde se gráfica la concentración de \aminorutenio\space adsorbido en función de la concentración en solución colocada inicialmente.}
-			        \label{fig:langmuir}
-			      	\end{figure} 
-
-	 En el esquema de la figura \ref{fig:sitios_redox} se ejemplifica el mecanismo propuesto. Se puede entonces, calcular el coeficiente de difusión $D_H$ para la transferencia de electrones. Se abarcó el calculo de este parámetro desde dos enfoques diferentes, uno utilizando la técnica de voltametría de corriente alterna (VCA) y otra utilizando voltametrías cíclicas (CV) a distintas velocidades de barrido. Los detalles experimentales para ambas técnicas fueron explicados en la sección \ref{sec:medidas_eq}, pág. \pageref{sec:medidas_eq}.
-	 		\begin{figure}[ht]
-					\centering
-			 	    \includegraphics[width=0.70\textwidth]{Esquemas/sitios_redox.pdf}
-			        \caption[Mecanismo de transferencia de electrones]{Pictograma .....Mecanismo por el cual.........}
+			 	    \includegraphics[width=0.60\textwidth]{Esquemas/sitios_redox.pdf}
+			        \caption[Mecanismo de transferencia de electrones]{Diagrama en el cual se ejemplifica el mecanismo de trasnferencia y transporte de carga mediante saltos electrónicos o \textit{electron hopping}.}
 			        \label{fig:sitios_redox}
 			      	\end{figure} 
- 
-	 \subsubsection*{Calculo de DH mediante VCA}	
-	 
-	 Tomando como base el trabajo de Tagliazucchi y col.\cite{Tagliazucchi2010a} (donde calcula el coeficiente de difusión para un complejo de osmio adsorbido en un polímero), se tomaron VC en de una película mesoporosa saturada con \ru\space a distintas velocidades de barrido, desde \SI{50}{\milli\volt\per\second} a \SI{50}{\volt\per\second}. Luego se graficó, el desplazamiento del potencial de pico por un lado y la intensidad de pico por otro, ambas variables en función de la velocidades de barrido (gráficos \ref{} y \ref{} respectivamente).
 
+	 En el esquema de la figura \ref{fig:sitios_redox} se ejemplifica el mecanismo propuesto. Se puede entonces, calcular el coeficiente de difusión $D_{\scriptscriptstyle{H}}$ para la transferencia de electrones. Se abarcó el calculo de este parámetro desde dos enfoques diferentes, uno utilizando la técnica de voltametría de corriente alterna (VCA) y otra utilizando voltametrías cíclicas (CV) a distintas velocidades de barrido. Los detalles experimentales para ambas técnicas fueron explicados en la sección \ref{sec:medidas_eq}, pág. \pageref{sec:medidas_eq}.
+	  
+	 \subsubsection*{Calculo de $D_{\scriptscriptstyle{H}}$ mediante VC}	
 	 
-	 \subsubsection*{Calculo de DH mediante VC}
+	   	 Para calcular el $D_{\scriptscriptstyle{H}}$ se tomaron VCs de una películas mesoporosas saturadas con \ru\space a distintas velocidades de barrido, desde \SI{50}{\milli\volt\per\second} a \SI{50}{\volt\per\second}. Luego se graficó el desplazamiento del potencial de pico por un lado y la intensidad de pico por otro, ambas variables en función de la velocidades de barrido (gráficos \ref{fig:corrimiento-potenciales} y \ref{fig:ip-vel} respectivamente). De acuerdo al trabajo de Tagliazucchi y Calvo\cite{Tagliazucchi2010a} (donde calcula el coeficiente de difusión para un complejo de osmio adsorbido en un polímero), es posible, a partir del tiempo de difusión característico (ec. \ref{eq:tao_caracteristico}),\hfill
+	   		\begin{equation}
+					\tau_{\scriptscriptstyle{D}}=\frac{d^2}{2\ D_{\scriptscriptstyle{H}}}
+					\label{eq:tao_caracteristico}
+			 \end{equation}
+	   	 determinar la velocidad de barrido característica (ec. \ref{eq:v_caracteristica}) para la cual la capa de difusión alcanza la interfase de la solución.  
+ 		   	 \begin{equation}
+					\nu_{\scriptscriptstyle{D}}=\frac{RT}{\tau_{\scriptscriptstyle{D}}F}
+					\label{eq:v_caracteristica}
+			 \end{equation}
+		 Es en esta velocidad característica donde la respuesta del potencial cambia entonces de un comportamiento de capa delgada a un comportamiento controlado por difusión. La figura \ref{fig:corrimiento-potenciales} muestran con flechas rojas la velocidad característica donde aparentemente la transferencia de carga es mas rápido que el transporte de carga, sin embargo el procesos de transferencia de carga enmascara la separación de picos y, por lo tanto, es difícil establecer $\nu_{\scriptscriptstyle{D}}$ de este gráfico.
+			 \begin{figure}[ht]
+					\centering
+			 	    \includegraphics[width=0.70\textwidth]{Graficos/MARIO-Ru1mM-Potenciales.pdf}
+			        \caption[Desplazamiento de potenciales]{Desplazamiento de los potenciales en función de la velocidad de barrido, las flechas rojas indican la velocidad característica para el cambio de regimen, de capa delgada a control difusional.}
+			        \label{fig:corrimiento-potenciales}
+			      	\end{figure}
+         La figura \ref{fig:ip-vel} muestra la corriente de pico en función de la velocidad de barrido. Para una velocidad $\nu \approx \nu_{\scriptscriptstyle{D}}$ se observa una transición de régimen en capa delgada ($\text{i}_{p} \propto \nu$) a régimen controlado por difusión ($\text{i}_{p} \propto \nu^{1/2}$).	Este gráfico permite estimar con menor interferencia el cambio de regimen y por lo tanto la $\nu_{\scriptscriptstyle{D}}$, la cual se ha identificado en el gráfico con flechas rojas. En la figura \ref{fig:ip-vel2} donde se graficó log{i$_p$} vs log{$\nu$} se hace evidente el cambio de régimen de capa delgada (pendiente=1) a controlado por difusión (pendiente=0.5).
+
+		 Una vez que obtenemos el valor de  $\nu_{\scriptscriptstyle{D}}$ se combinan las ecuaciones \ref{eq:tao_caracteristico} y \ref{eq:v_caracteristica} para obtener finalmente el valor del coeficiente de difusión de saltos electrónicos entre sitios redox,  $D_{\scriptscriptstyle{H}}$ (ecuación \ref{eq:dh}. Para nuestro sistema resultó $D_{\scriptscriptstyle{H}}=$\SI{1.6e-9}{\cm^{2}\per\second}.  
+			\begin{equation}
+					D_{\scriptscriptstyle{H}}= \frac{d^2\nu_{\scriptscriptstyle{D}}F}{2RT}
+					\label{eq:dh}
+			\end{equation}
+            \begin{figure}[ht]
+			  \begin{subfigure}[t]{0.495\textwidth}
+			  \includegraphics[width=1\textwidth]{Graficos/MARIO-Ru1mM-ip-vel.pdf}
+			  \caption{Intensidad de pico  en función de la velocidad de barrido, las flechas rojas indican la velocidad característica para el cambio de régimen.}
+			  \label{fig:ip-vel}
+		  	 \end{subfigure}	
+			 \begin{subfigure}[t]{0.495\textwidth}
+			  \includegraphics[width=1\textwidth]{Graficos/MARIO-Ru1mM-Max-Min.pdf}
+			  \caption{Log(i$p$) vs log($\nu$) para determinar el cambio de régimen.}
+			  \label{fig:logj-logv}
+		  	 \end{subfigure}
+			  \caption[Calculo de velocidad de barrido caracteristica]{Graficos para determinar $\nu_{\scriptscriptstyle{D}}$. En a) marcada con flechas rojas. Al independizarse del valor de potencial es mas sencillo de determinar que en el caso de E vs $\nu$. b) Cambio en la pendiente de  régimen en capa delgada ($\text{i}_{p} \propto \nu$) a régimen controlado por difusión ($\text{i}_{p} \propto \nu^{1/2}$)}
+			  \label{fig:ip-vel2}
+			  \end{figure}
+	 
+	 \subsubsection*{Calculo de $D_{\scriptscriptstyle{H}}$ mediante AVC}
 
 
 
@@ -261,43 +291,25 @@
 	 %Temgo que explicar qque se trata de sitios redox anclados, Hoppinks.
 
 	 %Tambien 
-	  \begin{figure}[ht]
-					\centering
-			 	    \includegraphics[width=0.70\textwidth]{Graficos/MARIO-Ru1mM-50a50000mVs.pdf}
-			        \caption[asdddd]{asdasdddd}
-			        \label{fig:corrimiento-potenciales}
-			      	\end{figure}
+	
+	  
+
+	 Con las distintas velocidades de barrido y con las voltametrias ACV, dos tecnicas bien distintas, una se vale de la concentracion dentro del film y la otra no.		
 
 	 \begin{figure}[ht]
-					\centering
-			 	    \includegraphics[width=0.70\textwidth]{Graficos/MARIO-Ru1mM-Potenciales.pdf}
-			        \caption[asdddd]{asdasdddd}
-			        \label{fig:corrimiento-potenciales}
-			      	\end{figure}
-
-	 \begin{figure}[ht]
-					\centering
-			 	    \includegraphics[width=0.70\textwidth]{Graficos/MARIO-Ru1mM-ip-vel.pdf}
-			        \caption[asdddd]{asdasdddd}
-			        \label{fig:ip-vel}
-			      	\end{figure}
-	  \begin{figure}[ht]
 					\centering
 			 	    \includegraphics[width=0.70\textwidth]{Graficos/ACV-1-2Hz.pdf}
 			        \caption[asdddd]{asdasdddd}
 			        \label{fig:ip-vel}
 			      	\end{figure}
-
-
-	 Con las distintas velocidades de barrido y con las voltametrias ACV, dos tecnicas bien distintas, una se vale de la concentracion dentro del film y la otra no.		
 			
 	\subsection{Mediación redox y simulaciones}	
 
-	Si bien se ha demostrado la adsorción del \aminorutenio\space en las \pdm, se deben establecer las condiciones de contorno para las cuales estos resultados tienen validez. Ya que, al ciclar el sistema (tal como se explico en el apartado anterior) sucesivamente la \pdm se disuelven. Este comportamiento, es, cuanto menos llamativo. Al pH de trabajo 
+	 Si bien se ha demostrado la adsorción del \aminorutenio\space en las \pdm, se deben establecer las condiciones de contorno para las cuales estos resultados tienen validez. Ya que, al ciclar el sistema (tal como se explico en el apartado anterior) sucesivamente la \pdm se disuelven. Este comportamiento, es, cuanto menos llamativo. Al pH de trabajo 
 
 
 
-	se basaron en trabajos que utilizan, o esta misma sonda\cite{} o sondas de rutenio bipiridina. Losresultados fue el gráfico  que se encuentra en la la fig \ref{fig:primera_adsorcion} dondes.... se muestra la evolacu¡on sucesivas CVs......... ingresa.... maximos..... disolcuion... tal como indican el hombro.
+	 se basaron en trabajos que utilizan, o esta misma sonda\cite{} o sondas de rutenio bipiridina. Losresultados fue el gráfico  que se encuentra en la la fig \ref{fig:primera_adsorcion} dondes.... se muestra la evolacu¡on sucesivas CVs......... ingresa.... maximos..... disolcuion... tal como indican el hombro.
 
 			\begin{figure}[ht]
 				\centering
@@ -361,7 +373,7 @@
 
 	%\subsection{comparacion calcinado} Dejar esta comparacion para establecer diferencias y similitudes entre los distintos mesoporosos.
 
-	\section{disolucion y ventana de trabajo}
+	\subsection{disolucion y ventana de trabajo}
 
 	\section{Caso de estudio: Ferroceno}
 

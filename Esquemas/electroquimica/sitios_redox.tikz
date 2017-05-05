@@ -1,9 +1,9 @@
 \begin{tikzpicture}
 
 %Superficie del Au
-\node at (6,-1.82) {
+\node at (6,-1.32) {
 \begin{tikzpicture}
-\fill[yellow,path fading=south] rectangle (5,1.5);
+\fill[yellow,path fading=south] rectangle (5,0.5);
 \end{tikzpicture}
 };
 
@@ -44,8 +44,8 @@
 \draw[<-,bend right,very thin]  (Sitio4) edge node[right=-0.7mm] {\tiny{e\textsuperscript{-}}} (Sitio5);
 \draw[<-,bend right,very thin]  (Oro) edge node[right=-0.7mm] {\tiny{e\textsuperscript{-}}} (Sitio1);
 
-\draw[|-|,bend right,very thin]  (6.5,2.3) -- node[right=-0.7mm] {$\scriptscriptstyle d_H=1.25$} (6.5,1.5);
-\draw[|-latex,bend right]  (6.7,0.7) -- node[right=-0.7mm] {$\scriptscriptstyle D_H=\num{1e-10}$} (6.7,-0.2);
+\draw[|-|,bend right,very thin]  (6.5,2.3) -- node[right=-0.7mm] {$\scriptscriptstyle d{_{_{\phi^{e}}}}=1.25$} (6.5,1.5);
+\draw[|-latex,bend right]  (6.7,0.7) -- node[right=-0.7mm] {$\scriptscriptstyle D{_{_H}}=\num{1e-10}$} (6.7,-0.2);
 
 \end{tikzpicture}
 %\SI{1e-10}{\cm^{2}\per\second}

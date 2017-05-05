@@ -33,7 +33,7 @@ set style line 11 lc rgb 'gray40' lt 0 lw 1
 set grid front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "log(v) $[\\text{mV.s}^{-1}]$"  font ",14" textcolor rgb "gray40" offset  0,-2
+	set xlabel "log($\\nu$) $[\\text{mV.s}^{-1}]$"  font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "log(j) $[\\mu \\text{A.cm}^{-2}]$"	font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
@@ -67,11 +67,13 @@ set grid front ls 11
 	  #set label 4 sprintf("R=%3.4f",STATS_correlation) at 4,1.65 font ",6" textcolor rgb "gray40"	
  
 	  z(x)=x+0.3
-	  zz(x)=0.5*x+1.45
-
+	  zz(x)=0.5*x+1.45 
+	  set label 100 sprintf("$\\measuredangle = 1$") at 2.05,2.2 font ",12" textcolor rgb "black"
+	  set label 101 sprintf("$\\measuredangle = 0,5$") at 4,3.3 font ",12" textcolor rgb "black"
+	  
 #plot "MARIO-Ru1mM-Max-Min-Corregido.csv" using (log10($1)):(log10($4)) title "Corriente \'anodica" ls 1, [1.6:2.15] f(x) with lines ls 1 notitle, [1.9:4.9] i(x) with lines ls 1 notitle, \
 #"MARIO-Ru1mM-Max-Min-Corregido.csv" using (log10($1)):(log10($6)) title "Corriente cat\'odica" ls 2, [1.6:2.13] g(x) with lines ls 2 notitle, [1.9:4.9]h(x) with lines ls 2 notitle
 
 plot "MARIO-Ru1mM-Max-Min-Corregido.csv" using (log10($1)):(log10($4/0.0314)) title "Corriente \'anodica" ls 1, \
 "MARIO-Ru1mM-Max-Min-Corregido.csv" using (log10($1)):(log10($6/0.0314)) title "Corriente cat\'odica" ls 2, \
- [1.5:2.5] z(x) w l ls 4 notitle,[2:6] zz(x) w l ls 4 notitle
+ [1.5:2.5] z(x) w l ls 4 notitle,[2:6] zz(x) w l ls 4 notitle 
