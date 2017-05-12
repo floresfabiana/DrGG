@@ -36,6 +36,10 @@ set style line 3 lc rgb 'blue' lt 1 lw 1 #Azul
 	set xrange [-600:100]
 	set yrange [0:250]
 
+#Etiquetas
+ 
+	  set label 100 sprintf("1\\,Hz") at -300,90 font ",8" textcolor rgb "black" 
+	  set label 101 sprintf("2\\,Hz") at -300,230 font ",8" textcolor rgb "black" 
 
 #Para graficar todas
 plot "ACV-Filtrados.txt" using 1:(($2+0.1)/0.0314) every ::3::349 with lines ls 3, "ACV-Filtrados.txt" every ::5::700 using 3:(($4-0.6)/0.0314) with lines ls 2

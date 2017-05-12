@@ -4,10 +4,10 @@
 
 #Para exportar como latex
 set terminal tikz
-set output "Barrido_Vel_F127-CNEA-Calcinado-Fc1mM.tikz" 
+set output "FcOH-Simulacion-deltaE.tikz" 
 
 #Saco la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+set key top right Left reverse sample 2 font ",10" textcolor rgb "gray40" 
 
 #Saco el Borde
 	unset border
@@ -15,7 +15,6 @@ set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
 #Saco las marcas
   	unset tics
 #Defino estilos paset style line 2ra cada tipo de linea
-
 	set style line 1 lc rgb '#E5BC00' pt 1 ps 2 lw 2
 	set style line 2 lc rgb '#DE9C05' pt 1 ps 2 lw 2
 	set style line 3 lc rgb '#D87D0B' pt 1 ps 2 lw 2
@@ -40,15 +39,22 @@ set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
 	#set mytics 2 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/}mV$" font ",14" textcolor rgb "gray40" offset  0,-2
+	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
-	set xrange [-200:400]
+	set xrange [-600:600]
 	#set yrange [-100:100]
 
-#Ploteo todas las funciones que les digamos
-FILES = system("ls -1 fc-1mM-F127-AuCNEA-Calcinado/*.DTA")
+#plot "fc-10mM-F127-AuCNEA-Calcinado/1-FeOH-1mM-20.DTA" u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader,\
+#"fc-10mM-F127-AuCNEA-Calcinado/2-FeOH-1mM-50.DTA" u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader,\
 
-plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader
+#Ploteo todas las funciones que les digamos
+
+plot "FcOH-Simulacion-deltaE.txt" u ($1*1000):2 with lines ls 1 title "a",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000):3 with lines ls 2 title "2",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000):4 with lines ls 3 title "2",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000):5 with lines ls 4 title "2",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000):6 with lines ls 5 title "2",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000):6 with lines ls 6 title "2"

@@ -63,7 +63,7 @@ echo "Tesis.tex" > ./dependencias.log
 						echo -n "  |  |------$j"
 						echo ":Modificado $fecha => $(tput setaf 2)Ok!$(tput setaf 0)"
 						else
-	    				echo -n "  |  |------"
+	    				echo -n "  |  |------$j"
 	    				echo "$(tput setaf 1) => Falta archivo!$(tput setaf 0)"
 	    				salida_error=1
 	    				fi

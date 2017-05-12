@@ -9,9 +9,6 @@ set output "MARIO-Ru1mM-50a50000mVs.tikz"
 #Archivo separado por comas
 set datafile sep','
 
-#Para hacer los inset
-set multiplot
-
 #Saco la leyenda
 unset key
 
@@ -81,16 +78,16 @@ set grid back ls 400
 
 
 #Para graficar todas
-plot "MARIO-Ru1mM-50a50000mVs.csv" u ($3*1000):($4*1e6/0.0314/39) every 5::5::9700 smooth bezier  ls 1, \
-"MARIO-Ru1mM-50a50000mVs.csv" u ($5*1000):($6*1e6/0.0314) every 2::5::9400 smooth bezier ls 3,\
-"MARIO-Ru1mM-50a50000mVs.csv" u ($7*1000):($8*1e6/0.0314) every 2::5::9300 smooth bezier ls 5,\
+plot "MARIO-Ru1mM-50a50000mVs.csv" u ($3*1000):($4*1e6/0.0314/39) every ::5::9700 smooth bezier  ls 1, \
+"MARIO-Ru1mM-50a50000mVs.csv" u ($5*1000):($6*1e6/0.0314) every ::5::9400 smooth bezier ls 3,\
+"MARIO-Ru1mM-50a50000mVs.csv" u ($7*1000):($8*1e6/0.0314) every ::5::9300 smooth bezier ls 5,\
 "MARIO-Ru1mM-50a50000mVs.csv" u ($9*1000):($10*1e6/0.0314/108) every ::5::9200 smooth bezier ls 7,\
-"MARIO-Ru1mM-50a50000mVs.csv" u ($11*1000):($12*1e6/0.0314) every 2::5::2900 with lines ls 7,\
-"MARIO-Ru1mM-50a50000mVs.csv" u ($13*1000):($14*1e6/0.0314)  every 2::5::2950 with lines ls 9,\
-"MARIO-Ru1mM-50a50000mVs.csv" u ($15*1000):($16*1e6/0.0314)  every 2::5::2950 with lines ls 11,\
-"MARIO-Ru1mM-50a50000mVs.csv" u ($17*1000):($18*1e6/0.0314)  every 2::5::3450 with lines ls 11,\
-"MARIO-Ru1mM-50a50000mVs.csv" u ($19*1000):($20*1e6/0.0314)  every 2::5::3400 with lines ls 13,\
-"MARIO-Ru1mM-50a50000mVs.csv" u ($21*1000):($22*1e6/0.0314)  every 2::5::3300 with lines ls 13,\
+"MARIO-Ru1mM-50a50000mVs.csv" u ($11*1000):($12*1e6/0.0314) every ::5::2900 with lines ls 7,\
+"MARIO-Ru1mM-50a50000mVs.csv" u ($13*1000):($14*1e6/0.0314)  every ::5::2950 with lines ls 9,\
+"MARIO-Ru1mM-50a50000mVs.csv" u ($15*1000):($16*1e6/0.0314)  every ::5::2950 with lines ls 11,\
+"MARIO-Ru1mM-50a50000mVs.csv" u ($17*1000):($18*1e6/0.0314)  every ::5::3450 with lines ls 11,\
+"MARIO-Ru1mM-50a50000mVs.csv" u ($19*1000):($20*1e6/0.0314)  every ::5::3400 with lines ls 13,\
+"MARIO-Ru1mM-50a50000mVs.csv" u ($21*1000):($22*1e6/0.0314)  every ::5::3300 with lines ls 13,\
 "MARIO-Ru1mM-50a50000mVs.csv" u ($23*1000):($24*1e6/0.0314)  every 5::5::3400 with lines ls 15,\
 "MARIO-Ru1mM-50a50000mVs.csv" u ($25*1000):($26*1e6/0.0314)  every 5::5::4200 with lines ls 15,\
 "MARIO-Ru1mM-50a50000mVs.csv" u ($27*1000):($28*1e6/0.0314)  every 5::5::4000 with lines ls 17,\
@@ -109,7 +106,8 @@ plot "MARIO-Ru1mM-50a50000mVs.csv" u ($3*1000):($4*1e6/0.0314/39) every 5::5::97
 "MARIO-Ru1mM-50a50000mVs.csv" u ($53*1000):($54*1e6/0.0314)   every 5::5::9400 with lines ls 43,\
 "MARIO-Ru1mM-50a50000mVs.csv" u ($55*1000):($56*1e6/0.0314)   every 5::5::10000 with lines ls 45,\
 "MARIO-Ru1mM-50a50000mVs.csv" u ($57*1000):($58*1e6/0.0314)   every 5::5::10720 with lines ls 47,\
-"MARIO-Ru1mM-50a50000mVs.csv" u ($59*1000):($60*1e6/0.0314)   every 5::5::10900 with lines ls 49
+"MARIO-Ru1mM-50a50000mVs.csv" u ($59*1000):($60*1e6/0.0314)   every 5::5::10900 with lines ls 49,\
+
 
 
 # "MARIO-Ru1mM-50a50000mVs.csv" u 51:($52*1e6/0.0314)  every ::5::5400 with lines ls 1000,\
@@ -123,44 +121,4 @@ plot "MARIO-Ru1mM-50a50000mVs.csv" u ($3*1000):($4*1e6/0.0314/39) every 5::5::97
 
 #plot for [i=3:59:2] "MARIO-Ru1mM-50a50000mVs.csv" using (column(i)*1000):(column(i+1)*1e6/0.0314) w lines ls i
 #plot for [i=1:1:2] "Ru10mM-Barrido-3a1000mVs.csv" u i:(column(i+1/0.0314)) w lines   | bezier | sbezier}
-
-# Now we set the options for the smaller plot
-  set size 0.4,0.4
-  set origin 0.15,0.55
-  set object 1 rectangle from graph 0,0 to graph 1,1 behind fc rgb "white"
-  #set title 'velociades de barrido lentas' font ",8" textcolor rgb "gray40"
-  set xrange [-600:0]
-  set xtics 200
-  set yrange [-800:800]
-  set border 15
-  #unset grid
-  set xlabel ""
-  set xtics font ", 6"
-  set ytics font ", 6"
-  set ylabel ""
-  set ytics 400
-  unset label
-  unset arrow
-  unset key
-  #set label "\\tiny{LO}$_3$" at 1280,0.55 font ",8" textcolor rgb "gray40"
-  #set label "\\tiny{LO}$_4$" at 1210,0.525 font ",8" textcolor rgb "gray40"
-
-
-# And finally let's plot the same set of data, but in the smaller plot
-#Ploteo todas las funciones que les digamos
-plot "MARIO-Ru1mM-50a50000mVs.csv" u ($3*1000):($4*1e6/0.0314/39) every 5::5::9700 smooth bezier  ls 1,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($5*1000):($6*1e6/0.0314) every 5::5::9400 smooth bezier ls 3,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($7*1000):($8*1e6/0.0314) every 5::5::9300 smooth bezier ls 5,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($9*1000):($10*1e6/0.0314/108) every 5::5::9200 smooth bezier ls 7,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($11*1000):($12*1e6/0.0314) every 5::5::2900 with lines ls 7,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($13*1000):($14*1e6/0.0314)  every 5::5::2950 with lines ls 9,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($15*1000):($16*1e6/0.0314)  every 5::5::2950 with lines ls 11,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($17*1000):($18*1e6/0.0314)  every 5::5::3450 with lines ls 11,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($19*1000):($20*1e6/0.0314)  every 5::5::3400 with lines ls 13,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($21*1000):($22*1e6/0.0314)  every 5::5::3300 with lines ls 13,\
- "MARIO-Ru1mM-50a50000mVs.csv" u ($23*1000):($24*1e6/0.0314)  every 5::5::3400 with lines ls 15 
  
- #set label "LO$_4$" at 2500,0.3 font ",8" textcolor rgb "gray40"
- #set label "LO$_3$" at 1300,0.19 font ",8" textcolor rgb "gray40"
-
-unset multiplot

@@ -1,4 +1,4 @@
-#!/bin/bash
+t#!/bin/bash
 
 #Defino algunas varibles utiles
 SAVEIFS=$IFS
