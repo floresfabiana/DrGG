@@ -12,8 +12,8 @@
 *.cb2
 
 #Agregados por mi
+#*.txt
 *.teq4
-*.txt
 *.seq
 *.DTA
 *.DTA-Ciclo-[0-9][0-9]
@@ -21,6 +21,7 @@
 *.opj
 *.qti
 *.xlsx
+*.xls
 tmp/
 Imagenes/
 *.png
@@ -33,8 +34,8 @@ Imagenes/
 *.SVG
 *.BMP
 *.bmp
-*.csv
-*.CSV
+#*.csv
+#*.CSV
 !Indice/Indice.csv
 Thumbs.db:encryptable
 *humbs.db
