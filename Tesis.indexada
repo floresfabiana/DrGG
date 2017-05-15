@@ -13,10 +13,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Compila Versión Final
-%\documentclass[a4paper,10pt,twoside,openright,titlepage]{book}
+\documentclass[a4paper,10pt,twoside,openright,titlepage]{book}
 
 %Compila como borrador
-\adocumentclass[draft,a4paper,10pt,twoside,openright,titlepage]{book}
+%\documentclass[draft,a4paper,10pt,twoside,openright,titlepage]{book}
 
 %Muestra marco para ver encabezados, cuerpo del texto, etc.
 %\usepackage{showframe}
