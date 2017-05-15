@@ -6,8 +6,11 @@
 set terminal tikz
 set output "FcOH-F127-Calcinado.tikz" 
 
+#Para hacer los inset
+set multiplot
+
 #Saco la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray40" at 370,-700
 
 #Saco el Borde
 	unset border
@@ -39,7 +42,7 @@ set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
 	#set mytics 2 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/}mV$" font ",14" textcolor rgb "gray40" offset  0,-2
+	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
@@ -54,3 +57,27 @@ set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
 FILES = system("ls -1 fc-10mM-F127-AuCNEA-Calcinado/*.DTA")
 
 plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader
+
+# Now we set the options for the smaller plot
+  set size 0.4,0.4
+  set origin 0.12,0.58
+  set object 1 rectangle from graph 0,0 to graph 1,1 behind fc rgb "white"
+  #set object 1 rectangle from screen 0.2,0.6 to screen 0.5,0.9 fillcolor rgb "green"
+  set xrange [-200:400]
+  #set xtics 100
+  set yrange [-200:200]
+  set border 15
+  unset grid
+  set xlabel ""
+  set xtics font ", 6"
+  set ytics font ", 6"
+  set ylabel ""
+  set xtics 200
+  set ytics 100
+  unset label
+  unset arrow
+  unset key
+  #set label "\\tiny{LO}$_3$" at 1280,0.55 font ",8" textcolor rgb "gray40"
+  #set label "\\tiny{LO}$_4$" at 1210,0.525 font ",8" textcolor rgb "gray40"
+  plot "fc-10mM-F127-AuCNEA-Calcinado/1-FeOH-1mM-20.DTA" using ($3*1000):($4/0.0314*1e6) every ::1::655 with lines ls 1 
+unset multiplot
