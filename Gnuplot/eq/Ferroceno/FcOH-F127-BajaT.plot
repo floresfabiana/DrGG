@@ -71,9 +71,9 @@ red_100 = "#ff0000"
 
 #Leyendas
 set label 100 sprintf("\\SI{1}{\\milli\\Molar}") at 405,20 font ",10" textcolor rgb "black"
-set label 101 sprintf("\\SI{5}{\\milli\\Molar}") at 405,68 font ",10" textcolor rgb "black"
-set label 102 sprintf("\\SI{10}{\\milli\\Molar}") at 405,130 font ",10" textcolor rgb "black"
+set label 101 sprintf("\\SI{5}{\\milli\\Molar}") at 405,44 font ",10" textcolor rgb "black"
+set label 102 sprintf("\\SI{10}{\\milli\\Molar}") at 405,86 font ",10" textcolor rgb "black"
 	  
 plot "fc-1mM/FC_1mM_F127_20.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314) with lines ls 1 title "Fc 1mM, 20 mV/s",\
-"fc-5mM/FC_5mM_F127_20.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314*1.5) with lines ls 3 title "Fc 5mM, 20 mV/s",\
-"fc-10mM/FC_10mM_F127_20.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314) with lines ls 5 title "Fc 10mM, 20 mV/s",\
+"fc-5mM/FC_5mM_F127_20.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314) with lines ls 3 title "Fc 5mM, 20 mV/s",\
+"fc-10mM/FC_10mM_F127_20.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314/1.5) with lines ls 5 title "Fc 10mM, 20 mV/s",\

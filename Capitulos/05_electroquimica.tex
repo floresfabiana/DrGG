@@ -79,7 +79,7 @@
 
 \section{Transporte de sondas: exclusión, permeación y preconcentración}
 
-	Durante las próximas secciones se analizan e interpretan los resultados obtenidos al colocar soluciones con sondas electroquímicas, de diferente naturaleza, sobre los sensores. Al ser, la fabricación de los sensores, una parte estructural de este trabajo, cabe aclarar sobre que sistemas que se realizaron los resultados de los experimentos que se mostrarán de este capitulo; se utilizó, indistintamente, películas de Au sobre sustratos varios (silicio, vidrio, flexible), con diseño ya transferido o sin transferir. Salvo que se aclare lo contrario, se trabajó siempre sistemas con películas delgadas mesoporosas estructuradaras con Pluronic F127 y sintetizada con el método de alto vacío (consultar sección \ref{sec:trat-vacio}, pág. \pageref{sec:trat-vacio}); todas las medidas fueron normalizadas por el área geométrica, de forma de facilitar la comparación de resultados cuando se trata de sensores con distinto diseño. Todas las medidas fueron llevadas a cabo a $\text{pH}\approx5,5$ en solución de KCl \SI{100}{\milli\Molar}, elegido con el propósito de mantener una fuerte carga neta negativa dentro de la películas, porque es un pH interesante para aplicaciones en aguas naturales, y a su vez, no está comprometida la disolución de la sílice.
+	 Durante las próximas secciones se analizan e interpretan los resultados obtenidos al colocar soluciones con sondas electroquímicas, de diferente naturaleza, sobre los sensores. Al ser, la fabricación de los sensores, una parte estructural de este trabajo, cabe aclarar sobre que sistemas que se realizaron los resultados de los experimentos que se mostrarán de este capitulo; se utilizó, indistintamente, películas de Au sobre sustratos varios (silicio, vidrio, flexible), con diseño ya transferido o sin transferir. Salvo que se aclare lo contrario, se trabajó siempre sistemas con películas delgadas mesoporosas estructuradaras con Pluronic F127 y sintetizada con el método de alto vacío (consultar sección \ref{sec:trat-vacio}, pág. \pageref{sec:trat-vacio}); todas las medidas fueron normalizadas por el área geométrica, de forma de facilitar la comparación de resultados cuando se trata de sensores con distinto diseño. Todas las medidas fueron llevadas a cabo a $\text{pH}\approx5,5$ en solución de KCl \SI{100}{\milli\Molar}, elegido con el propósito de mantener una fuerte carga neta negativa dentro de la películas, porque es un pH interesante para aplicaciones en aguas naturales, y a su vez, no está comprometida la disolución de la sílice.
 
 	\subsection{Caso 1: sonda de carga negativa}
 
@@ -136,49 +136,56 @@
 
 \section{Caso de estudio: \texorpdfstring{\ferroceno}{FeOH}}
 
-	Los resultados de introducir ferroceno metanol (\ferroceno,\fc) en las \pdmF\space ya fueron presentados en la sección \ref{}, pág \pageref{key} del capitulo \ref{chap:Mesoporosos}. Sin embargo, en dicha sección, la discusión se centró en el análisis de la de películas delgadas mesoporosas y como cambia la accesibilidad en función de los distintos tratamientos de condensación posdeposito.
-	En esta sección se presentan los resultados de la respuesta electroquímica del \fc\space en \pdm\space. Se discuten estos resultados en términos de fenómenos de transporte y modelos válidos aplicables al calculo de coeficientes de difusión del \fc\space en cada sistema.
+	Los resultados de la respuesta electroquimica del ferroceno metanol \linebreak (\ferroceno,\fc) en las \pdmF\space ya fueron presentados en la sección \ref{}, pág \pageref{key} del capitulo \ref{chap:Mesoporosos}. Sin embargo, en dicha sección, la discusión se centró en el análisis de la de películas delgadas mesoporosas y como cambia la accesibilidad en función de los distintos tratamientos de condensación posdeposito.
+	En esta sección vuelven a discutir estos resultados pero ahora en términos de fenómenos de transporte y modelos válidos aplicables al calculo de coeficientes de difusión del \fc\space en cada sistema.
 
 	\subsection{En sistemas mesoporosos calcinados}
 
-	En los sistemas calcinados, aquellos en los que se eliminó el surfactante sometiendo las peliculas a 350C, la red nanoporosa está mas accesible y mejor interconectada que aquellos que no fueron calcinados (ver capitulo \ref{chap:Mesoporosos}). Por lo tanto, se espera que la respuesta electroquimica de la sonda neutra sea similar a la respuesta en un un electrodo de Au desnudo. En el voltagrama de la figura .... se muestra que, efectivamente, se comporta de esta forma. Se colocó una solucino de ferrroceno 10mM y se hicieron una serie de voltametrias a diferentes velocidaddes de barrido, con el proposito de calcular el coeficiente de difusion. En el grafico .... se observa la tendencia de ip prop v1/2, lo que indica que se trata de un proceso controlado por difusion. Ahora bien, esta difusion tiene dos contribuciones, una de la sonda en solucion y otra de la sonda dentro de los poros. Nostroso calculamos a partir de la ecuacion.... un coeficiente aparente que es una combinacion de ambos, sin embargo este da 2.5e-5 el cual es segun la biliografia un tipo valor para moleculas en solucion.
+	En los sistemas calcinados, aquellos en los que se eliminó el surfactante sometiendo las películas a \SI{350}{\celsius}, la red nanoporosa está mas accesible y mejor interconectada que aquellos que no fueron calcinados (ver capitulo \ref{chap:Mesoporosos}). Por lo tanto, se espera que la respuesta electroquímica de la sonda neutra, sea similar a la respuesta en un un electrodo de Au desnudo. En el voltagrama de la figura \ref{fig:fc_calciando} se muestra que, efectivamente, se comporta de esta forma. Se colocó una solución de \fc\space \SI{1}{\milli\Molar} y se hicieron una serie de voltametrías a diferentes velocidades de barrido, con el propósito de calcular el coeficiente de difusión. En el gráfico \ref{fig:difusion_calcinado}, donde se gráfico la intensidad de pico (i$_p$) en función de la velocidad de barrido ($\nu$) se observa que $\text{i}_p \propto \nu^{1/2}$, lo que indica que se trata de un proceso controlado por difusión. Ahora bien, esta difusión tiene dos contribuciones, una de la sonda en solución y otra de la sonda dentro de los poros. 
+		 \begin{equation}
+					D=\frac{RT}{nF\nu}\left(\frac{\text{i}_p}{0.4463FAC}\right)^2
+					\label{eq:dapp_bajaT}
+			\end{equation}  
+	Se calculó, despejando de la ecuación de Randles-Sevcik (ec. \ref{eq:dapp_bajaT}), el coeficiente de difusión aparente ($D_{ap}$), el cual dió como valor $D_{app}$=\SI{6,1e-6}{\square\cm\per\second}, el cual es según la bibliografía un típico valor para moléculas en solución. \cite{otal}
 
 	%Hacer un inset con un voltagrama a una velocidad de 50mV/s donde se aprecie bien la voltametria
 			\begin{figure}[ht]
 				\centering
 		 	    \includegraphics[width=0.70\textwidth]{Graficos/FcOH-F127-Calcinado.pdf}
-		        \caption[asdasd]{asdasdasdasd}
-		        \label{fig:asdasdasd}
+		        \caption[Voltagrama para \fc\space en \pdm\space calcinadas]{Voltagramas a diferentes velocidades de barrido para \fc\space \SI{1}{\milli\Molar} en solucion de KCl \SI{100}{\milli\Molar}. En el recuadro se amplia la VC para una velocidad de barrido de \SI{20}{\milli\volt\per\second}.}
+		        \label{fig:fc_calcinado}
 		      	\end{figure}
 
 		    \begin{figure}[ht]
 				\centering
 		 	    \includegraphics[width=0.70\textwidth]{Graficos/FcOH-F127-Calcinado-difusion.pdf}
-		        \caption[asdasd]{asdasdasdasd}
-		        \label{fig:asdasdasd}
+		        \caption[i$_p$ en función de $\nu$ para \fc\space]{Intensidad e pico en función de la velocidad de barrido. Se observa que $\text{i}_p$ es proporcional a $\nu ^{1/2}$, indicando que se trata de un transporte controlado por difusión.}
+		        \label{fig:difusion_calcinado}
 		      	\end{figure}
 		      	  	
-		    \begin{equation}
-					D=\frac{RT}{nF\nu}\left(\frac{\text{i}_p}{0.4463FAC}\right)^2
-					\label{eq:de-ferroceno-bajaT}
-			\end{equation}  	
+		   	
 		      	
 	\subsection{En sistemas mesoporoso sintetizados a baja temperatura}
 
-		Se exponen  de la figura .... en el voltagrama resultado de colocar \fc\space utillizando como electrodo \pdmF\space condensada y extraida a bajas temperaturas (130ºC) por el metdo de alto vacio. En este caso se observa la respueta bien diferente que en el calcinado para las mismas condicinoes. Lo que se presupone que ocurre aqui es que la difucion a traves de la pelkicual esta muy impedida, se forma entonces un gardiente de concentracion a lo largo del espesor de la pelicula alcanndo el equilinrio, responde de la misma manera que un electrodo de disco rotatorio alcanzando una coerirnte limite, ... se observa para 1 5 y 10mM La forma de calcula el coeficiente de difusion en estos sistemas es mediante la ecuacion... donde ....... Como era de esperar el coeficiente en este caso es de 10-10, como esperabamos la difusino se encuentra muy impedida en estos sistemas mas <<cerrados>>.
-
+		Se exponen en la figura \ref{fig:fcoh_bajaT} los voltagramas resultado de colocar \fc\space (1, 5 y \SI{10}{\milli\Molar}) utilizando como electrodo \pdmF\space condensada y extraída a bajas temperaturas (\SI{130}{\celsius}) por el método de alto vacío. 
 			\begin{figure}[ht]
 				\centering
 		 	    \includegraphics[width=0.70\textwidth]{Graficos/FcOH-F127-BajaT.pdf}
-		        \caption[asdasd]{asdasdasdasd}
-		        \label{fig:asdasdasd}
+		        \caption[Voltagrama para \fc\space en \pdm\space de baja temperatura]{Voltagramas de \fc\space 1, 5 y \SI{10}{\milli\Molar} en solución de KCl \SI{100}{\milli\Molar} tomados a una velocidad de barrido de \SI{20}{\milli\volt\per\second}.}
+		        \label{fig:fcoh_bajaT}
 		      	\end{figure}
+		  
+		En este caso se observa una respeta bien diferente que para el caso del calcinado, bajo las las mismas condiciones. Lo que sugieren estos resultados es que la difusión a través de la película está disminuida respecto de los sistemas calcinados. Estos son típicos voltagramas en respuesta a sistemas donde se llega a un equilibrio formando un gradiente de concentración a lo largo de la sección de la película, alcanzando una corriente límite $\text{i}_l$. 
+		La forma de calcular el coeficiente de difusión en estos sistemas es mediante la ecuación \ref{eq:de-ferroceno-bajaT} donde se calcula el coeficiente de difusión $D$ a partir de $\text{i}_l$, de la diferencia de concentración entre las cercanías del electrodo ($C_{x=0}$) y el seno de la solución $C_s$, el aŕea ($A$) y el espesor de la película (L).
 
-		    \begin{equation}
-					\text{i}_p = \frac{nFAD(C_{s}-C_{x=0})}{L}
+			\begin{equation}
+					\text{i}_l = \frac{nFAD(C_{s}-C_{x=0})}{L}
 					\label{eq:de-ferroceno-bajaT}
 			\end{equation}
 			  	
+
+		Para una película de \SI{200}{nm} el $D$ resultó ser de \SI{2.5e-9}{\square\cm\per\second}, un valor esperado, ya que la difusión se encuentra muy impedida en estos sistemas mas <<cerrados>>. El orden de magnitud de este valor es comparable con los reportados para polímeros electroactivos.\cite{Kolb1993}
+			
 \section{Caso de estudio: \texorpdfstring{\aminorutenioCompleto}{Ru(NH3)CL3}}
 	
 	\subsection{Capacidad de preconcentración}
@@ -346,7 +353,7 @@
 
 		Resulta interesante remarcar las diferencias de ambos métodos. El primero se basa en calcular la velocidad de barrido característica para el espesor de una película delgada. El segundo utiliza el dato de la concentración de adsorbato para estimar el coeficiente de difusión mediante la técnica de ACV. Ambos métodos, estiman el valor de $D_e$ desde diferentes aproximaciones, dando un valor de $D_e$ comparable y dentro del mismo orden de magnitud (\SI{e-9}{\square\cm\per\second}) validando el modelo que se propuso para el sistema estudiado.
 			
-	\subsection{Mediación redox y simulaciones}	
+	\subsection{Simulaciones por elementos finitos}	
 
 		A partir de la experiencia acumulada, y en base al modelo propuesto sobre el trasporte de carga para estos sistemas preconcetradores, se planteó la posibilidad de utilizarlos como mediadores electroquímicos. 
     	La mediación en sistemas análogos basados en polímeros con complejos electroactivos es bien conocida.\cite{Kolb1993,Ybarra2005}. Por lo tanto, para determinar si son sistemas con la capacidad de transportar la carga de una sonda electroquímica (ya sea neutra, positiva o negativa) desde la interfase mesoporoso-solución hasta el electrodo, se diseño un experimento de mediación electroquímica. El mismo consintió en cargar una \pdmF\space completamente de \ru, retirar la solución y colocar una solución con \fc. El voltagrama de la figura \ref{fig:mediacion} muestra la respuesta que se obtuvo de este experimento (\usebox{\oliva}) comparada con un voltagrama de \fc\space en una \pdmF\space no cargada (\usebox{\azul}) y en un electrodo de Au desnudo (\usebox{\rojo}).  
