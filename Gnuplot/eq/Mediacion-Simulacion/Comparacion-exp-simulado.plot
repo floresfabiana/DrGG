@@ -4,7 +4,7 @@
 
 #Para exportar como latex
 set terminal tikz
-set output "mediacion.tikz" 
+set output "Comparacion-exp-simulado.tikz" 
 
 #Saco la leyenda
 	unset key
@@ -37,6 +37,5 @@ set style line 3 lc rgb 'blue' lt 1 lw 1.5 #Azul
 	#set yrange [10:60]
 
 #Para graficar todas
-plot 'MediacionFC-1.txt' using 1:($2/0.0314*0.80) w lines ls 2, \
-'MediacionFC-2.txt' using 1:($2/0.0314) w lines ls 3, \
-'MediacionFC-4.txt' using 1:($2/0.0314) w lines ls 1, \
+plot "../Simulaciones/simulacion-K0-Dfc.txt" u ($1*1000*1.10+20):3 with lines,\
+"MediacionFC-4.txt" using 1:($2/0.0314) w lines

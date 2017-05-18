@@ -65,7 +65,7 @@ plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with li
   #set object 1 rectangle from screen 0.2,0.6 to screen 0.5,0.9 fillcolor rgb "green"
   set xrange [-200:400]
   #set xtics 100
-  set yrange [-200:200]
+  set yrange [-150:150]
   set border 15
   unset grid
   set xlabel ""
@@ -73,7 +73,7 @@ plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with li
   set ytics font ", 6"
   set ylabel ""
   set xtics 200
-  set ytics 100
+  set ytics 150
   unset label
   unset arrow
   unset key
