@@ -66,6 +66,7 @@ CD_BIB="Referencias"
       sed -i.tmp 's/month = {dec}/month = dec/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/TiO2/TiO$_2$/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/SiO2/SiO$_2$/g' $CD_BIB/base_bibliografica.bib
+      sed -i.tmp 's/Jiri//g' $CD_BIB/base_bibliografica.bib
 
       #Verifico que todo salió bien
       if [ $? = 0 ];then

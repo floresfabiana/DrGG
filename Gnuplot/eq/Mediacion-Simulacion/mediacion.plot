@@ -14,7 +14,7 @@ set output "mediacion.tikz"
 
 #Saco las marcas
   	unset tics
-set style line 1 lc rgb 'brown' lt 1 lw 1.5 #Marron
+set style line 1 lc rgb '#006400' lt 1 lw 1.5 #Verde
 set style line 2 lc rgb 'red' lt 1 lw 1.5 #ROjo
 set style line 3 lc rgb 'blue' lt 1 lw 1.5 #Azul
 

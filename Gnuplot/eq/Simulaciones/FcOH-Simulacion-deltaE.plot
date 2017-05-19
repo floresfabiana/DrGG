@@ -49,12 +49,12 @@ set key top right Left reverse sample 2 font ",10" textcolor rgb "gray40"
 	#set mytics 2 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial}$" font ",14" textcolor rgb "gray40" offset  0,-2
+	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
-	set xrange [-400:400]
+	set xrange [-600:400]
 	#set yrange [-100:100]
 
 
@@ -77,9 +77,9 @@ set key top right Left reverse sample 2 font ",10" textcolor rgb "gray40"
 
 #Ploteo todas las funciones que les digamos
 
-plot "FcOH-Simulacion-deltaE.txt" u ($1*1000):($2*24) with lines ls 1 title "$\\Delta E$ \\SI{0}{\\milli\\volt}",\
-"FcOH-Simulacion-deltaE.txt" u ($1*1000):($3*24) with lines ls 2 title "$\\Delta E =$\\SI{100}{\\milli\\volt}",\
-"FcOH-Simulacion-deltaE.txt" u ($1*1000):($4*24) with lines ls 3 title "$\\Delta E =$\\SI{200}{\\milli\\volt}",\
-"FcOH-Simulacion-deltaE.txt" u ($1*1000):($5*24) with lines ls 4 title "$\\Delta E =$\\SI{300}{\\milli\\volt}",\
-"FcOH-Simulacion-deltaE.txt" u ($1*1000):($6*24) with lines ls 5 title "$\\Delta E =$\\SI{400}{\\milli\\volt}",\
-"FcOH-Simulacion-deltaE.txt" u ($1*1000):($7*24) with lines ls 6 title "$\\Delta E =$\\SI{500}{\\milli\\volt}"
+plot "FcOH-Simulacion-deltaE.txt" u ($1*1000-100):($2*24) with lines ls 1 title "$\\Delta E$ \\SI{0}{\\milli\\volt}",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000-100):($3*24) with lines ls 2 title "$\\Delta E =$\\SI{100}{\\milli\\volt}",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000-100):($4*24) with lines ls 3 title "$\\Delta E =$\\SI{200}{\\milli\\volt}",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000-100):($5*24) with lines ls 4 title "$\\Delta E =$\\SI{300}{\\milli\\volt}",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000-100):($6*24) with lines ls 5 title "$\\Delta E =$\\SI{400}{\\milli\\volt}",\
+"FcOH-Simulacion-deltaE.txt" u ($1*1000-100):($7*24) with lines ls 6 title "$\\Delta E =$\\SI{500}{\\milli\\volt}"

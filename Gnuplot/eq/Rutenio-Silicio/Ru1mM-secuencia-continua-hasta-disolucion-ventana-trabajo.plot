@@ -49,6 +49,3 @@ set grid front ls 11
 #EL valor 4.01 corresponde al pico maximo en la oxidación.
 plot "Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($3/4.01) with points ls 1, \
 "Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($5/4.01) with lines ls 3, \
-
-#"Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using 1:2 with points ls 1, \
-#"Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($5) with lines ls 1, \
