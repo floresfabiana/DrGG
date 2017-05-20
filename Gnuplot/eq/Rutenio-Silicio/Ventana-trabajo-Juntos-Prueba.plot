@@ -51,6 +51,7 @@ plot "Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 1:2 with points ls 
 "Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($3/4.01) with points ls 1, \
 "Ru10mM/Ru10mM-ventana-preconcentracion.txt" using ($1):($2) with points ls 1, \
 "Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 3:4 with lines ls 3, \
+"Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 1:2 with points ls 1, \
 
 #"Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using 1:2 with points ls 1, \
 #"Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($5) with lines ls 1, \

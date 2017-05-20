@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mié 22 mar 2017 10:47:54 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Sat May 20 09:22:45 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -79,7 +79,7 @@
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (2.056,7.628)--(2.240,7.628);
-\draw[gp path] (4.950,7.628)--(11.947,7.628);
+\draw[gp path] (2.420,7.628)--(11.947,7.628);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -106,8 +106,7 @@
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (3.045,1.601)--(3.045,7.076);
-\draw[gp path] (3.045,8.201)--(3.045,8.381);
+\draw[gp path] (3.045,1.601)--(3.045,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -116,8 +115,7 @@
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (4.034,1.601)--(4.034,7.076);
-\draw[gp path] (4.034,8.201)--(4.034,8.381);
+\draw[gp path] (4.034,1.601)--(4.034,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -196,12 +194,12 @@
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
 \node[gp node center] at (11.947,1.293) {$700$};
 \draw[gp path] (2.056,8.381)--(2.056,1.601)--(11.947,1.601);
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.001,0.215) {$\text{Potencial\; vs\; ESC/mV}$};
-\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (2.970,8.088) {FCN 10mM, 5 mV/s};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (7.001,0.215) {$\text{Potencial\; vs\; ESC/mV}$};
+\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (2.420,8.088) {FCN 10mM, 5 mV/s};
 \gpcolor{rgb color={0.000,0.392,0.000}}
 \gpsetlinewidth{2.00}
-\draw[gp path] (2.350,8.088)--(2.860,8.088);
+\draw[gp path] (2.240,8.088)--(2.420,8.088);
 \draw[gp path] (2.056,3.624)--(2.063,3.629)--(2.083,3.641)--(2.100,3.647)--(2.120,3.656)%
   --(2.140,3.677)--(2.159,3.686)--(2.179,3.692)--(2.199,3.698)--(2.219,3.707)--(2.236,3.722)%
   --(2.256,3.725)--(2.276,3.728)--(2.295,3.734)--(2.315,3.743)--(2.335,3.753)--(2.355,3.762)%
@@ -371,9 +369,9 @@
   --(2.180,3.927)--(2.160,3.933)--(2.141,3.933)--(2.121,3.930)--(2.101,3.927)--(2.084,3.930)%
   --(2.064,3.933)--(2.056,3.935);
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (2.970,7.863) {FCN 10mM, 10 mV/s};
+\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (2.420,7.863) {FCN 10mM, 10 mV/s};
 \gpcolor{rgb color={1.000,0.647,0.000}}
-\draw[gp path] (2.350,7.863)--(2.860,7.863);
+\draw[gp path] (2.240,7.863)--(2.420,7.863);
 \draw[gp path] (2.056,3.525)--(2.063,3.527)--(2.083,3.548)--(2.100,3.554)--(2.120,3.560)%
   --(2.140,3.578)--(2.159,3.575)--(2.179,3.593)--(2.199,3.593)--(2.219,3.608)--(2.236,3.617)%
   --(2.256,3.611)--(2.276,3.632)--(2.295,3.629)--(2.315,3.644)--(2.335,3.650)--(2.355,3.641)%
@@ -543,9 +541,9 @@
   --(2.180,3.840)--(2.160,3.837)--(2.141,3.840)--(2.121,3.843)--(2.101,3.834)--(2.084,3.840)%
   --(2.064,3.837)--(2.056,3.841);
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (2.970,7.638) {FCN 10mM, 20 mV/s};
+\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (2.420,7.638) {FCN 10mM, 20 mV/s};
 \gpcolor{rgb color={1.000,0.271,0.000}}
-\draw[gp path] (2.350,7.638)--(2.860,7.638);
+\draw[gp path] (2.240,7.638)--(2.420,7.638);
 \draw[gp path] (2.056,3.405)--(2.063,3.406)--(2.083,3.418)--(2.100,3.427)--(2.120,3.430)%
   --(2.140,3.439)--(2.159,3.445)--(2.179,3.454)--(2.199,3.457)--(2.219,3.469)--(2.236,3.472)%
   --(2.256,3.481)--(2.276,3.484)--(2.295,3.493)--(2.315,3.499)--(2.335,3.502)--(2.355,3.508)%
@@ -715,9 +713,9 @@
   --(2.180,3.650)--(2.160,3.650)--(2.141,3.647)--(2.121,3.656)--(2.101,3.659)--(2.084,3.656)%
   --(2.064,3.656)--(2.056,3.656);
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (2.970,7.413) {FCN 10mM, 50 mV/s};
+\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (2.420,7.413) {FCN 10mM, 50 mV/s};
 \gpcolor{rgb color={1.000,0.000,0.000}}
-\draw[gp path] (2.350,7.413)--(2.860,7.413);
+\draw[gp path] (2.240,7.413)--(2.420,7.413);
 \draw[gp path] (2.056,3.329)--(2.063,3.328)--(2.083,3.319)--(2.100,3.328)--(2.120,3.346)%
   --(2.140,3.343)--(2.159,3.331)--(2.179,3.352)--(2.199,3.364)--(2.219,3.355)--(2.236,3.352)%
   --(2.256,3.376)--(2.276,3.373)--(2.295,3.367)--(2.315,3.382)--(2.335,3.391)--(2.355,3.385)%
@@ -887,9 +885,9 @@
   --(2.180,3.288)--(2.160,3.285)--(2.141,3.298)--(2.121,3.304)--(2.101,3.294)--(2.084,3.291)%
   --(2.064,3.310)--(2.056,3.307);
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (2.970,7.188) {FCN 10mM, 100 mV/s};
+\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (2.420,7.188) {FCN 10mM, 100 mV/s};
 \gpcolor{rgb color={0.502,0.000,0.000}}
-\draw[gp path] (2.350,7.188)--(2.860,7.188);
+\draw[gp path] (2.240,7.188)--(2.420,7.188);
 \draw[gp path] (2.056,3.481)--(2.063,3.481)--(2.083,3.484)--(2.100,3.487)--(2.120,3.490)%
   --(2.140,3.493)--(2.159,3.493)--(2.179,3.499)--(2.199,3.496)--(2.219,3.499)--(2.236,3.502)%
   --(2.256,3.505)--(2.276,3.511)--(2.295,3.511)--(2.315,3.511)--(2.335,3.514)--(2.355,3.517)%

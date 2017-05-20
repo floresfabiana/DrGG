@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 20 mar 2017 09:22:42 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Sat May 20 09:22:54 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -198,9 +198,9 @@
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
 \node[gp node center] at (11.947,1.293) {$1$};
 \draw[gp path] (1.872,8.381)--(1.872,1.601)--(11.947,1.601)--(11.947,8.381);
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {'Indice de refracci'on};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {Humedad Relativa / \%HR};
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,8.047) {Calcinado};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {'Indice de refracci'on};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.909,0.215) {Humedad Relativa / \%HR};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,8.047) {Calcinado};
 \gpcolor{rgb color={0.502,0.000,0.000}}
 \gpsetlinewidth{1.00}
 \draw[gp path] (2.240,8.047)--(2.972,8.047);
@@ -267,7 +267,7 @@
 \gppoint{gp mark 7}{(1.888,2.226)}
 \gppoint{gp mark 7}{(1.888,2.222)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.739) {Simplificado};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,7.739) {Simplificado};
 \gpcolor{rgb color={1.000,0.271,0.000}}
 \draw[gp path] (2.240,7.739)--(2.972,7.739);
 \draw[gp path] (1.889,3.462)--(1.888,3.601)--(2.104,3.959)--(2.761,4.256)--(3.404,4.513)%
@@ -332,7 +332,7 @@
 \gppoint{gp mark 7}{(1.888,3.484)}
 \gppoint{gp mark 7}{(1.888,3.473)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.431) {Prolongado};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,7.431) {Prolongado};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \draw[gp path] (2.240,7.431)--(2.972,7.431);
 \draw[gp path] (1.888,1.929)--(1.888,2.057)--(2.139,2.433)--(2.766,2.742)--(3.391,2.995)%
@@ -397,7 +397,7 @@
 \gppoint{gp mark 7}{(1.888,1.891)}
 \gppoint{gp mark 7}{(1.889,1.883)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.123) {Basico};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,7.123) {Basico};
 \gpcolor{rgb color={1.000,0.000,0.000}}
 \draw[gp path] (2.240,7.123)--(2.972,7.123);
 \draw[gp path] (1.888,2.592)--(1.889,2.690)--(2.214,2.957)--(2.831,3.172)--(3.447,3.371)%
@@ -462,7 +462,7 @@
 \gppoint{gp mark 7}{(1.888,2.535)}
 \gppoint{gp mark 7}{(1.888,2.528)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,6.815) {Acido};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,6.815) {Acido};
 \gpcolor{rgb color={0.000,0.000,1.000}}
 \draw[gp path] (2.240,6.815)--(2.972,6.815);
 \draw[gp path] (1.888,3.842)--(1.888,3.985)--(2.219,4.358)--(2.838,4.663)--(3.453,4.916)%
@@ -527,7 +527,7 @@
 \gppoint{gp mark 7}{(1.888,3.808)}
 \gppoint{gp mark 7}{(1.888,3.801)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,6.507) {Vacio};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,6.507) {Vacio};
 \draw[gp path] (2.240,6.507)--(2.972,6.507);
 \draw[gp path] (1.889,2.780)--(1.889,2.803)--(2.138,2.927)--(2.811,3.036)--(3.455,3.104)%
   --(4.052,3.194)--(4.553,3.273)--(4.996,3.337)--(5.403,3.405)--(5.798,3.465)--(6.203,3.522)%

@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 20 mar 2017 09:22:21 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Sat May 20 09:22:42 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -135,10 +135,10 @@
 \draw[gp path] (1.136,1.748)--(1.136,1.928);
 \node[gp node center] at (1.136,1.440) {$4000$};
 \draw[gp path] (1.136,8.234)--(1.136,1.748)--(11.947,1.748);
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (4.225,3.526) {$\nu_{\text{\tiny{C-H}}}$};
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {Absorbancia / u. a.};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.541,0.362) {N'umero de ondas / cm$^{-1}$};
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.420,7.900) {PDM@Si-CTAB calcinada};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (4.225,3.526) {$\nu_{\text{\tiny{C-H}}}$};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {Absorbancia / u. a.};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.541,0.362) {N'umero de ondas / cm$^{-1}$};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (2.420,7.900) {PDM@Si-CTAB calcinada};
 \gpcolor{rgb color={1.000,0.271,0.000}}
 \gpsetlinewidth{1.20}
 \draw[gp path] (1.504,7.900)--(2.236,7.900);
@@ -295,7 +295,7 @@
   --(1.244,3.872)--(1.232,3.869)--(1.220,3.864)--(1.208,3.862)--(1.196,3.863)--(1.185,3.863)%
   --(1.173,3.863)--(1.161,3.860)--(1.149,3.858)--(1.137,3.859)--(1.136,3.922);
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.420,7.592) {PDM@Si-CTAB  sin calcinar};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (2.420,7.592) {PDM@Si-CTAB  sin calcinar};
 \gpcolor{rgb color={0.502,0.000,0.000}}
 \draw[gp path] (1.504,7.592)--(2.236,7.592);
 \draw[gp path] (11.947,3.068)--(11.943,3.050)--(11.931,3.105)--(11.919,3.143)--(11.907,3.106)%
@@ -459,14 +459,14 @@
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinewidth{1.50}
 \draw[gp path] (5.751,5.691)--(5.751,5.781);
-\node[gp node center,font={\fontsize{6pt}{7.2pt}\selectfont}] at (5.751,5.383) {$2800$};
+\node[gp node center,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (5.751,5.383) {$2800$};
 \draw[gp path] (4.531,5.691)--(4.531,5.781);
-\node[gp node center,font={\fontsize{6pt}{7.2pt}\selectfont}] at (4.531,5.383) {$2900$};
+\node[gp node center,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (4.531,5.383) {$2900$};
 \draw[gp path] (3.310,5.691)--(3.310,5.781);
-\node[gp node center,font={\fontsize{6pt}{7.2pt}\selectfont}] at (3.310,5.383) {$3000$};
+\node[gp node center,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (3.310,5.383) {$3000$};
 \draw[gp path] (3.310,7.156)--(3.310,5.691)--(5.751,5.691)--(5.751,7.156)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (2.942,6.423) {};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (4.530,4.982) {};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (2.942,6.423) {};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (4.530,4.982) {};
 \gpcolor{rgb color={1.000,0.271,0.000}}
 \gpsetlinewidth{1.20}
 \draw[gp path] (5.751,5.839)--(5.749,5.839)--(5.702,5.839)--(5.655,5.840)--(5.608,5.841)%

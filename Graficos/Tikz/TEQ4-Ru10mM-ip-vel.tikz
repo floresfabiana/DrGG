@@ -1,15 +1,15 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% jue 30 mar 2017 14:11:34 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Sat May 20 09:22:37 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,8.381)--(1.872,1.601)--(11.947,1.601);
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {(i$_{p}$/v)/(i$_{p}$/v)$_{\text{v}\rightarrow 0}$};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {v / mv.s$^{-1}$};
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (9.187,8.047) {Pico 'anodico};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {(i$_{p}$/v)/(i$_{p}$/v)$_{\text{v}\rightarrow 0}$};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.909,0.215) {v / mv.s$^{-1}$};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (9.187,8.047) {Pico 'anodico};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{1.00}
 \gpsetpointsize{4.00}
@@ -26,7 +26,7 @@
 \gppoint{gp mark 7}{(11.947,4.405)}
 \gppoint{gp mark 7}{(9.003,8.047)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (9.187,7.739) {Pico cat'odico};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (9.187,7.739) {Pico cat'odico};
 \gpcolor{rgb color={1.000,0.000,0.000}}
 \gppoint{gp mark 7}{(3.474,8.381)}
 \gppoint{gp mark 7}{(4.219,7.503)}

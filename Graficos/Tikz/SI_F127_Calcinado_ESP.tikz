@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 20 mar 2017 09:22:20 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Sat May 20 09:22:43 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -169,9 +169,9 @@
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
 \node[gp node center] at (11.947,1.293) {$1$};
 \draw[gp path] (2.056,8.381)--(2.056,1.601)--(11.947,1.601);
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {Espesor / nm};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.001,0.215) {Humedad Relativa / \%HR};
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.340,2.243) {Adsorci'on};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {Espesor / nm};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (7.001,0.215) {Humedad Relativa / \%HR};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.340,2.243) {Adsorci'on};
 \gpcolor{rgb color={0.502,0.000,0.000}}
 \gpsetlinewidth{2.00}
 \draw[gp path] (2.424,2.243)--(3.156,2.243);
@@ -208,7 +208,7 @@
 \gppoint{gp mark 7}{(11.748,8.067)}
 \gppoint{gp mark 7}{(2.790,2.243)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.340,1.935) {Desorci'on};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.340,1.935) {Desorci'on};
 \gpcolor{rgb color={1.000,0.271,0.000}}
 \draw[gp path] (2.424,1.935)--(3.156,1.935);
 \draw[gp path] (11.748,8.067)--(11.388,7.477)--(10.816,6.528)--(10.313,5.791)--(9.857,5.217)%
