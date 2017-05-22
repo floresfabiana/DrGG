@@ -1,65 +1,153 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Sat May 20 09:22:22 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% lun 22 may 2017 15:45:34 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.504,8.381)--(1.504,1.601)--(11.947,1.601);
-\gpfill{color=gp lt color border,color=.!15} (9.909,1.601)--(11.692,1.601)--(11.692,8.380)--(9.909,8.380)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{I}_p^{np}/\text{I}_p^{\text{Au}}$};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.725,0.215) {N'umero de ciclos};
+\gpfill{color=gp lt color border,color=.!15} (3.462,1.601)--(4.767,1.601)--(4.767,8.380)--(3.462,8.380)--cycle;
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{I}_p^{np}/\text{I}_p^{\text{Au}}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.725,0.215) {N'umero de ciclos};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{1.00}
-\gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(1.759,1.715)}
-\gppoint{gp mark 7}{(2.013,1.771)}
-\gppoint{gp mark 7}{(2.268,1.851)}
-\gppoint{gp mark 7}{(2.523,1.953)}
-\gppoint{gp mark 7}{(2.778,2.067)}
-\gppoint{gp mark 7}{(3.032,2.237)}
-\gppoint{gp mark 7}{(3.287,2.389)}
-\gppoint{gp mark 7}{(3.542,2.576)}
-\gppoint{gp mark 7}{(3.796,2.788)}
-\gppoint{gp mark 7}{(4.051,3.004)}
-\gppoint{gp mark 7}{(4.306,3.232)}
-\gppoint{gp mark 7}{(4.560,3.466)}
-\gppoint{gp mark 7}{(4.815,3.703)}
-\gppoint{gp mark 7}{(5.070,3.949)}
-\gppoint{gp mark 7}{(5.325,4.177)}
-\gppoint{gp mark 7}{(5.579,4.410)}
-\gppoint{gp mark 7}{(5.834,4.635)}
-\gppoint{gp mark 7}{(6.089,4.864)}
-\gppoint{gp mark 7}{(6.343,5.114)}
-\gppoint{gp mark 7}{(6.598,5.360)}
-\gppoint{gp mark 7}{(6.853,5.584)}
-\gppoint{gp mark 7}{(7.108,5.775)}
-\gppoint{gp mark 7}{(7.362,5.966)}
-\gppoint{gp mark 7}{(7.617,6.135)}
-\gppoint{gp mark 7}{(7.872,6.283)}
-\gppoint{gp mark 7}{(8.126,6.444)}
-\gppoint{gp mark 7}{(8.381,6.589)}
-\gppoint{gp mark 7}{(8.636,6.733)}
-\gppoint{gp mark 7}{(8.891,6.856)}
-\gppoint{gp mark 7}{(9.145,6.974)}
-\gppoint{gp mark 7}{(9.400,7.076)}
-\gppoint{gp mark 7}{(9.655,7.195)}
-\gppoint{gp mark 7}{(9.909,7.279)}
-\gppoint{gp mark 7}{(10.164,7.377)}
-\gppoint{gp mark 7}{(10.419,7.466)}
-\gppoint{gp mark 7}{(10.673,7.534)}
-\gppoint{gp mark 7}{(10.928,7.618)}
-\gppoint{gp mark 7}{(11.183,7.627)}
-\gppoint{gp mark 7}{(11.438,7.635)}
-\gppoint{gp mark 7}{(11.692,7.627)}
+\gpsetpointsize{2.00}
+\gppoint{gp mark 7}{(4.245,7.669)}
+\gppoint{gp mark 7}{(4.376,7.638)}
+\gppoint{gp mark 7}{(4.441,7.551)}
+\gppoint{gp mark 7}{(4.506,7.454)}
+\gppoint{gp mark 7}{(4.572,7.356)}
+\gppoint{gp mark 7}{(4.637,7.266)}
+\gppoint{gp mark 7}{(4.637,7.162)}
+\gppoint{gp mark 7}{(4.702,7.057)}
+\gppoint{gp mark 7}{(4.767,6.957)}
+\gppoint{gp mark 7}{(4.767,6.850)}
+\gppoint{gp mark 7}{(4.833,6.742)}
+\gppoint{gp mark 7}{(4.833,6.641)}
+\gppoint{gp mark 7}{(4.898,6.534)}
+\gppoint{gp mark 7}{(4.898,6.426)}
+\gppoint{gp mark 7}{(4.963,6.317)}
+\gppoint{gp mark 7}{(4.963,6.206)}
+\gppoint{gp mark 7}{(4.963,6.098)}
+\gppoint{gp mark 7}{(5.029,6.001)}
+\gppoint{gp mark 7}{(5.029,5.891)}
+\gppoint{gp mark 7}{(5.094,5.793)}
+\gppoint{gp mark 7}{(5.159,5.685)}
+\gppoint{gp mark 7}{(5.159,5.574)}
+\gppoint{gp mark 7}{(5.159,5.477)}
+\gppoint{gp mark 7}{(5.224,5.370)}
+\gppoint{gp mark 7}{(5.224,5.266)}
+\gppoint{gp mark 7}{(5.290,5.169)}
+\gppoint{gp mark 7}{(5.355,5.066)}
+\gppoint{gp mark 7}{(5.420,4.963)}
+\gppoint{gp mark 7}{(5.485,4.866)}
+\gppoint{gp mark 7}{(5.485,4.770)}
+\gppoint{gp mark 7}{(5.616,4.681)}
+\gppoint{gp mark 7}{(5.681,4.597)}
+\gppoint{gp mark 7}{(5.746,4.506)}
+\gppoint{gp mark 7}{(5.812,4.413)}
+\gppoint{gp mark 7}{(5.877,4.339)}
+\gppoint{gp mark 7}{(5.942,4.244)}
+\gppoint{gp mark 7}{(6.008,4.165)}
+\gppoint{gp mark 7}{(6.073,4.070)}
+\gppoint{gp mark 7}{(6.138,3.975)}
+\gppoint{gp mark 7}{(6.203,3.885)}
+\gppoint{gp mark 7}{(6.269,3.798)}
+\gppoint{gp mark 7}{(6.334,3.714)}
+\gppoint{gp mark 7}{(6.399,3.621)}
+\gppoint{gp mark 7}{(6.530,3.542)}
+\gppoint{gp mark 7}{(6.595,3.489)}
+\gppoint{gp mark 7}{(6.726,3.432)}
+\gppoint{gp mark 7}{(6.856,3.381)}
+\gppoint{gp mark 7}{(6.921,3.323)}
+\gppoint{gp mark 7}{(7.052,3.290)}
+\gppoint{gp mark 7}{(7.182,3.248)}
+\gppoint{gp mark 7}{(7.248,3.187)}
+\gppoint{gp mark 7}{(7.378,3.118)}
+\gppoint{gp mark 7}{(7.443,3.053)}
+\gppoint{gp mark 7}{(7.574,2.982)}
+\gppoint{gp mark 7}{(7.705,2.926)}
+\gppoint{gp mark 7}{(7.770,2.878)}
+\gppoint{gp mark 7}{(7.900,2.829)}
+\gppoint{gp mark 7}{(8.031,2.796)}
+\gppoint{gp mark 7}{(8.161,2.763)}
+\gppoint{gp mark 7}{(8.227,2.714)}
+\gppoint{gp mark 7}{(8.357,2.689)}
+\gppoint{gp mark 7}{(8.488,2.637)}
+\gppoint{gp mark 7}{(8.618,2.617)}
+\gppoint{gp mark 7}{(8.749,2.575)}
+\gppoint{gp mark 7}{(8.814,2.554)}
+\gppoint{gp mark 7}{(8.945,2.539)}
+\gppoint{gp mark 7}{(9.075,2.533)}
+\gppoint{gp mark 7}{(9.206,2.505)}
+\gppoint{gp mark 7}{(9.336,2.491)}
+\gppoint{gp mark 7}{(9.467,2.491)}
+\gppoint{gp mark 7}{(9.597,2.463)}
+\gppoint{gp mark 7}{(9.728,2.463)}
+\gppoint{gp mark 7}{(9.858,2.462)}
+\gppoint{gp mark 7}{(9.989,2.462)}
+\gppoint{gp mark 7}{(10.119,2.451)}
+\gppoint{gp mark 7}{(10.185,2.448)}
+\gppoint{gp mark 7}{(10.315,2.416)}
+\gppoint{gp mark 7}{(10.446,2.405)}
+\gppoint{gp mark 7}{(10.576,2.386)}
+\gppoint{gp mark 7}{(10.707,2.368)}
+\gppoint{gp mark 7}{(10.837,2.335)}
+\gppoint{gp mark 7}{(10.968,2.321)}
+\gppoint{gp mark 7}{(11.099,2.321)}
+\gppoint{gp mark 7}{(11.164,2.293)}
+\gppoint{gp mark 7}{(11.294,2.293)}
+\gppoint{gp mark 7}{(11.425,2.305)}
+\gppoint{gp mark 7}{(11.555,2.325)}
+\gppoint{gp mark 7}{(11.686,2.334)}
+\gppoint{gp mark 7}{(11.816,2.334)}
+\gppoint{gp mark 7}{(11.947,2.346)}
 \gpcolor{rgb color={1.000,0.000,0.000}}
 \gpsetlinewidth{2.00}
-\draw[gp path] (1.504,2.025)--(11.947,2.025);
+\draw[gp path] (1.504,2.166)--(11.947,2.166);
+\gpcolor{rgb color={0.000,0.000,0.000}}
+\gpsetlinewidth{1.00}
+\gppoint{gp mark 7}{(1.765,1.609)}
+\gppoint{gp mark 7}{(1.830,1.731)}
+\gppoint{gp mark 7}{(1.896,1.912)}
+\gppoint{gp mark 7}{(1.961,2.074)}
+\gppoint{gp mark 7}{(2.026,2.273)}
+\gppoint{gp mark 7}{(2.091,2.499)}
+\gppoint{gp mark 7}{(2.157,2.730)}
+\gppoint{gp mark 7}{(2.222,2.974)}
+\gppoint{gp mark 7}{(2.287,3.223)}
+\gppoint{gp mark 7}{(2.352,3.476)}
+\gppoint{gp mark 7}{(2.418,3.738)}
+\gppoint{gp mark 7}{(2.483,3.981)}
+\gppoint{gp mark 7}{(2.548,4.231)}
+\gppoint{gp mark 7}{(2.614,4.470)}
+\gppoint{gp mark 7}{(2.679,4.714)}
+\gppoint{gp mark 7}{(2.744,4.981)}
+\gppoint{gp mark 7}{(2.809,5.243)}
+\gppoint{gp mark 7}{(2.875,5.483)}
+\gppoint{gp mark 7}{(2.940,5.686)}
+\gppoint{gp mark 7}{(3.005,5.889)}
+\gppoint{gp mark 7}{(3.070,6.070)}
+\gppoint{gp mark 7}{(3.136,6.228)}
+\gppoint{gp mark 7}{(3.201,6.400)}
+\gppoint{gp mark 7}{(3.266,6.554)}
+\gppoint{gp mark 7}{(3.332,6.707)}
+\gppoint{gp mark 7}{(3.397,6.839)}
+\gppoint{gp mark 7}{(3.462,6.965)}
+\gppoint{gp mark 7}{(3.527,7.074)}
+\gppoint{gp mark 7}{(3.593,7.200)}
+\gppoint{gp mark 7}{(3.658,7.291)}
+\gppoint{gp mark 7}{(3.723,7.395)}
+\gppoint{gp mark 7}{(3.788,7.489)}
+\gppoint{gp mark 7}{(3.854,7.562)}
+\gppoint{gp mark 7}{(3.919,7.652)}
+\gppoint{gp mark 7}{(3.984,7.661)}
+\gppoint{gp mark 7}{(4.049,7.670)}
+\gppoint{gp mark 7}{(4.115,7.661)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
-\gpsetlinewidth{1.00}
 \draw[gp path] (1.504,1.601)--(11.947,1.601);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
@@ -69,30 +157,21 @@
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.504,2.449)--(11.947,2.449);
+\draw[gp path] (1.504,2.731)--(11.947,2.731);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.504,2.449)--(1.684,2.449);
-\node[gp node right] at (1.320,2.449) {$2$};
+\draw[gp path] (1.504,2.731)--(1.684,2.731);
+\node[gp node right] at (1.320,2.731) {$2$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.504,3.296)--(11.947,3.296);
+\draw[gp path] (1.504,3.861)--(11.947,3.861);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.504,3.296)--(1.684,3.296);
-\node[gp node right] at (1.320,3.296) {$4$};
-\gpsetlinetype{gp lt axes}
-\gpsetdashtype{gp dt axes}
-\gpsetlinewidth{1.00}
-\draw[gp path] (1.504,4.144)--(11.947,4.144);
-\gpsetlinetype{gp lt border}
-\gpsetdashtype{gp dt solid}
-\gpsetlinewidth{1.50}
-\draw[gp path] (1.504,4.144)--(1.684,4.144);
-\node[gp node right] at (1.320,4.144) {$6$};
+\draw[gp path] (1.504,3.861)--(1.684,3.861);
+\node[gp node right] at (1.320,3.861) {$4$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -101,34 +180,25 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.504,4.991)--(1.684,4.991);
-\node[gp node right] at (1.320,4.991) {$8$};
+\node[gp node right] at (1.320,4.991) {$6$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.504,5.839)--(11.947,5.839);
+\draw[gp path] (1.504,6.121)--(11.947,6.121);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.504,5.839)--(1.684,5.839);
-\node[gp node right] at (1.320,5.839) {$10$};
+\draw[gp path] (1.504,6.121)--(1.684,6.121);
+\node[gp node right] at (1.320,6.121) {$8$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.504,6.686)--(11.947,6.686);
+\draw[gp path] (1.504,7.251)--(11.947,7.251);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.504,6.686)--(1.684,6.686);
-\node[gp node right] at (1.320,6.686) {$12$};
-\gpsetlinetype{gp lt axes}
-\gpsetdashtype{gp dt axes}
-\gpsetlinewidth{1.00}
-\draw[gp path] (1.504,7.534)--(11.947,7.534);
-\gpsetlinetype{gp lt border}
-\gpsetdashtype{gp dt solid}
-\gpsetlinewidth{1.50}
-\draw[gp path] (1.504,7.534)--(1.684,7.534);
-\node[gp node right] at (1.320,7.534) {$14$};
+\draw[gp path] (1.504,7.251)--(1.684,7.251);
+\node[gp node right] at (1.320,7.251) {$10$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -137,7 +207,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.504,8.381)--(1.684,8.381);
-\node[gp node right] at (1.320,8.381) {$16$};
+\node[gp node right] at (1.320,8.381) {$12$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -150,79 +220,80 @@
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (2.778,1.601)--(2.778,8.381);
+\draw[gp path] (2.809,1.601)--(2.809,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (2.778,1.601)--(2.778,1.781);
-\node[gp node center] at (2.778,1.293) {$5$};
+\draw[gp path] (2.809,1.601)--(2.809,1.781);
+\node[gp node center] at (2.809,1.293) {$20$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (4.051,1.601)--(4.051,8.381);
+\draw[gp path] (4.115,1.601)--(4.115,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (4.051,1.601)--(4.051,1.781);
-\node[gp node center] at (4.051,1.293) {$10$};
+\draw[gp path] (4.115,1.601)--(4.115,1.781);
+\node[gp node center] at (4.115,1.293) {$40$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (5.325,1.601)--(5.325,8.381);
+\draw[gp path] (5.420,1.601)--(5.420,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (5.325,1.601)--(5.325,1.781);
-\node[gp node center] at (5.325,1.293) {$15$};
+\draw[gp path] (5.420,1.601)--(5.420,1.781);
+\node[gp node center] at (5.420,1.293) {$60$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (6.598,1.601)--(6.598,8.381);
+\draw[gp path] (6.726,1.601)--(6.726,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (6.598,1.601)--(6.598,1.781);
-\node[gp node center] at (6.598,1.293) {$20$};
+\draw[gp path] (6.726,1.601)--(6.726,1.781);
+\node[gp node center] at (6.726,1.293) {$80$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (7.872,1.601)--(7.872,8.381);
+\draw[gp path] (8.031,1.601)--(8.031,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (7.872,1.601)--(7.872,1.781);
-\node[gp node center] at (7.872,1.293) {$25$};
+\draw[gp path] (8.031,1.601)--(8.031,1.781);
+\node[gp node center] at (8.031,1.293) {$100$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (9.145,1.601)--(9.145,8.381);
+\draw[gp path] (9.336,1.601)--(9.336,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (9.145,1.601)--(9.145,1.781);
-\node[gp node center] at (9.145,1.293) {$30$};
+\draw[gp path] (9.336,1.601)--(9.336,1.781);
+\node[gp node center] at (9.336,1.293) {$120$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (10.419,1.601)--(10.419,8.381);
+\draw[gp path] (10.642,1.601)--(10.642,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (10.419,1.601)--(10.419,1.781);
-\node[gp node center] at (10.419,1.293) {$35$};
+\draw[gp path] (10.642,1.601)--(10.642,1.781);
+\node[gp node center] at (10.642,1.293) {$140$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (11.692,1.601)--(11.692,8.381);
+\draw[gp path] (11.947,1.601)--(11.947,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (11.692,1.601)--(11.692,1.781);
-\node[gp node center] at (11.692,1.293) {$40$};
+\draw[gp path] (11.947,1.601)--(11.947,1.781);
+\node[gp node center] at (11.947,1.293) {$160$};
 \draw[gp path] (1.504,8.381)--(1.504,1.601)--(11.947,1.601);
-\gpcolor{rgb color={0.200,0.200,0.200}}
-\node[gp node left,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.419,2.449) {zona de m'axima};
-\node[gp node left,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (11.183,2.449) {preconcentraci'on};
+\gpcolor{rgb color={0.000,0.000,0.000}}
+\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (2.157,6.686) {I};
+\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (3.788,6.686) {II};
+\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (8.684,6.686) {III};
 %% coordinates of the plot area
 \gpdefrectangularnode{gp plot 1}{\pgfpoint{1.504cm}{1.601cm}}{\pgfpoint{11.947cm}{8.381cm}}
 \end{tikzpicture}

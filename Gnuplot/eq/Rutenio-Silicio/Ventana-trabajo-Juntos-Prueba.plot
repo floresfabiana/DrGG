@@ -47,11 +47,21 @@ set grid front ls 11
 #	set yrange [-1000:1000]
 
 #EL valor 4.01 corresponde al pico maximo en la oxidación.
-plot "Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 1:2 with points ls 1, \
+plot "Ru0315mM-secuencia-continua-ventana-trabajo2.txt" using 2:($3*1.10-0.85) every ::66::199 with points ls 1, \
+"Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 3:4 with lines ls 3,\
+"Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 1:($2*0.8-0.65) with points ls 1,\
+"Ru10mM/Ru10mM-ventana-preconcentracion3.txt" using ($1):($3) every ::1::110 with points ls 1,\
 "Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($3/4.01) with points ls 1, \
-"Ru10mM/Ru10mM-ventana-preconcentracion.txt" using ($1):($2) with points ls 1, \
-"Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 3:4 with lines ls 3, \
-"Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 1:2 with points ls 1, \
+
+#plot "Ru0315mM-secuencia-continua-ventana-trabajo2.txt" using 2:($3*1.10-0.85) every ::66::199 with points ls 1, \
+#"Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 3:4 with lines ls 3, \
+
+
+# "Ru0315mM-secuencia-continua-ventana-trabajo.txt" using 1:2 with points ls 1, \
+
+#plot "Ru10mM/Ru10mM-ventana-preconcentracion3.txt" using ($1):($3) with points ls 1, \
+
+#plot "Ru10mM/Ru10mM-ventana-preconcentracion3.txt" using ($2):($3) with points ls 1, \
 
 #"Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using 1:2 with points ls 1, \
 #"Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($5) with lines ls 1, \

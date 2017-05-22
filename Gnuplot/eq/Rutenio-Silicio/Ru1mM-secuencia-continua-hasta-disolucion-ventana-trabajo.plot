@@ -15,15 +15,15 @@ set output "Ru1mM-secuencia-continua-hasta-disolucion-ventana-trabajo.tikz"
 #Saco las marcas
   	unset tics
 
-#Rectangulo, ventana de trabajo
-set style rect fc lt -1 fs solid 0.15 noborder
-set obj rect from 50, graph 0 to 80, graph 1
-set label at 60,0.2 "ventana de" font ",12" rotate by 90 textcolor rgb "gray20" front
-set label at 70,0.2 "trabajo" font ",12" rotate by 90 textcolor rgb "gray20" front
-
+# #Rectangulo, ventana de trabajo
+ set style rect fc lt -1 fs solid 0.15 noborder
+ set obj rect from 50, graph 0 to 80, graph 1
+ set label at 20,1.5 "I" font ",14" textcolor rgb "black" front
+ set label at 61,1.5 "II" font ",14" textcolor rgb "black" front
+ set label at 140,1.5 "III" font ",14" textcolor rgb "black" front
 
 #Defino estilos para cada tipo de linea
-set style line 1 lc rgb 'black' pt 7 ps 1 lw 1#Cuadrado
+set style line 1 lc rgb 'black' pt 7 ps 0.5 lw 1#Cuadrado
 set style line 2 lc rgb 'red' pt 7 ps 1  #Circulo
 set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo 
 set style line 4 lc rgb 'red' lt -1 pt -1
@@ -46,6 +46,6 @@ set grid front ls 11
 	set xrange [0:180]
 #	set yrange [-1000:1000]
 
-#EL valor 4.01 corresponde al pico maximo en la oxidación.
-plot "Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($3/4.01) with points ls 1, \
+#EL valor 4.01 corresponde al pico maximo en la oxidación. #4.21 mas apropoiado
+plot "Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($3/4.21) with points ls 1, \
 "Ru1mM-secuencia-continua-hasta disolucion-ventana-trabajo.txt" using ($1):($5/4.01) with lines ls 3, \

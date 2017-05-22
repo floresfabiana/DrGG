@@ -47,7 +47,14 @@ set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
 	#set yrange [10:60]
 
 #Para graficar todas
-plot for [i=1:15:2] 'Ru0315mM.txt' using i:(column(i+1)/0.0314) every 2 w lines ls 1, \
+
+# plot for [i=1:15:2] 'Ru0315mM.txt' using i:(column(i+1)/0.0314) every 2 w lines ls 1, \
+# 'Ru0315mM.txt' using 5:($6/0.0314) w lines ls 3, \
+# 'Ru0315mM.txt' using 13:($14/0.0314) w lines ls 2
+
+plot for [i=1:5:2] 'Ru0315mM.txt' using i:(column(i+1)/0.0314) every 2 w lines ls 1, \
 'Ru0315mM.txt' using 5:($6/0.0314) w lines ls 3, \
 'Ru0315mM.txt' using 13:($14/0.0314) w lines ls 2
+
+
 #"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every ::61633::63033  with lines ls 2, \

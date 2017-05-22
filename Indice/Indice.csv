@@ -222,7 +222,7 @@ Wu ;Wu\index{Wu}
 Iler;Iler\index{Iler}
 Langmuir;Langmuir\index{Langmuir}
  Etienne; Etienne\index{Etienne}
-\textit{electron hopping};\textit{electron hopping}\index{electron hopping}
+\textit{electron hopping};\textit{electron hopping}\index{electron hopping@\textit{electron hopping}}
  Avogadro; Avogrado\index{Avogadro}
 silanolato;\index{silanolato}
 sitio redox;sitio redox\index{sitio redox}
@@ -233,4 +233,6 @@ INQUIMAE;INQUIMAE\index{INQUIMAE}
  permeación ; permeación\index{permeacion} 
  mediación ; mediación\index{mediacion} 
  simulación ; simulación\index{simulacion} 
- dummy;dummy
+\textit{swelling};\textit{swelling}\index{swelling@\textit{swelling}}
+ dummy;dummy}
+}

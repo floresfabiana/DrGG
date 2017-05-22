@@ -14,15 +14,16 @@ set output "Ru10mM-ventana-preconcentracion.tikz"
 
 #Saco las marcas
   	unset tics
-set style rect fc lt -1 fs solid 0.15 noborder
-set obj rect from 30, graph 0 to 70, graph 1
-
-set label at 45,0.2 "ventana de" font ",12" rotate by 90 textcolor rgb "gray20" front
-set label at 55,0.2 "trabajo" font ",12" rotate by 90 textcolor rgb "gray20" front
+# #Rectangulo, ventana de trabajo
+ set style rect fc lt -1 fs solid 0.15 noborder
+ set obj rect from 30, graph 0 to 80, graph 1
+ set label at 10,1.1 "I" font ",14" textcolor rgb "black" front
+ set label at 50,1.1 "II" font ",14" textcolor rgb "black" front
+ set label at 125,1.1 "III" font ",14" textcolor rgb "black" front
 
 
 #Defino estilos para cada tipo de linea
-set style line 1 lc rgb 'black' pt 7 ps 1 lw 1#Cuadrado
+set style line 1 lc rgb 'black' pt 7 ps 0.5 lw 1#Cuadrado
 set style line 2 lc rgb 'red' pt 7 ps 1  #Circulo
 set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo 
 set style line 4 lc rgb 'red' lt -1 pt -1
@@ -34,6 +35,7 @@ set tics nomirror
 
 #Estilo de la grilla
 set style line 11 lc rgb 'gray40' lt 0 lw 1 
+#unset grid
 set grid front ls 11
 
 
@@ -50,7 +52,7 @@ set grid front ls 11
 
 #Fuerza a establecer un rango
 	 
-	set xrange [0:]
+	set xrange [0:140]
 #	set yrange [-1000:1000]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
@@ -65,6 +67,6 @@ set grid front ls 11
 #Ploteo todas las funciones que les digamos
 
 
-plot "Ru10mM-ventana-preconcentracion.txt" using ($1):($2) with points ls 1, \
+plot "Ru10mM-ventana-preconcentracion3.txt" using ($1):($3) every ::1::110 with points ls 1, \
 "Ru10mM-ventana-preconcentracion.txt" using ($3):($4) with lines ls 3
 #"Calibracion_Fc.txt" using ($1):($3) with  points ls 1, f(x) with lines ls 4, g(x) with lines ls 4
