@@ -3,8 +3,8 @@
 #set terminal X11
 
 #Para exportar como latex
-set terminal tikz
-set output "Ze-Ru1mM-181-246Ciclos.tikz" 
+#set terminal tikz
+#set output "Zr-Ru1mM-181-246Ciclos.tikz" 
 
 #Saco la leyenda
 	unset key
