@@ -6,7 +6,7 @@ set size ratio 0.5
 
 #Para exportar como latex
 set terminal tikz
-set output "Zr-numero-de-ciclo-01mM.tikz" 
+set output "Zr-numero-de-ciclo-1mM.tikz" 
 
 #Saco la leyenda
 	set key top right Left reverse sample -2 font ",10" textcolor rgb "gray40" 
@@ -17,9 +17,9 @@ set output "Zr-numero-de-ciclo-01mM.tikz"
 
 # #Rectangulo, ventana de trabajo
  set style rect fc lt -1 fs solid 0.15 noborder
- set obj rect from 0, graph 0 to 50, graph 1
- set label at 15,4.5 "I" font ",14" textcolor rgb "black" front
- set label at 165,4.5 "II" font ",14" textcolor rgb "black" front
+ set obj rect from 0, graph 0 to 60, graph 1
+ set label at 20,1.6 "I" font ",14" textcolor rgb "black" front
+ set label at 300,1.6 "II" font ",14" textcolor rgb "black" front
  
 
 #Defino estilos para cada tipo de linea
@@ -37,13 +37,15 @@ set tics nomirror
 set style line 11 lc rgb 'gray40' lt 0 lw 1 
 set grid front ls 11
 
+set ytics 0.5
+
 #Coloca los nombre de los ejes
 	set xlabel "N\'umero de ciclos"  font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "$\\text{I}_p^{np}/\\text{I}_p^{\\text{Au}}$"	font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
-	set xrange [0:400]
+	#set xrange [0:400]
 	#set yrange [10:60]
 
 
@@ -59,8 +61,8 @@ set grid front ls 11
 
 
 #plot for [i=1:90:2] "Ru 1mM  en Zr 13x45 Rango Corto  (20_04_2017-16_44_14)/primero.txt" using i:(column(i+1)/0.0314) w l ls 2,\
-#0.6 es la intensidad en uA de 0.1 de ru en AU
-plot "Zr-Ru01mM-IvsCiclos.txt" u ($1-226):($5*1000/0.6) w p ls 1 title "ZSF - Ru \\SI{0.1}{\\milli\\Molar}", f(x) w l ls 2 notitle#
+
+plot "Zr-Ru1mM-IvsCiclos.txt" u ($1):($5/6.05) w p ls 1 title "ZSF - Ru \\SI{1}{\\milli\\Molar}", f(x) w l ls 2 notitle#
 #[0:600] f(x) w l ls 2
 
 #plot for [i=89:93:2] "MAXIMOS-TODOS.txt" using i:(column(i+1)) w l ls 2,\

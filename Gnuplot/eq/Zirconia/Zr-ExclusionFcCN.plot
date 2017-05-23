@@ -66,7 +66,7 @@ red_100 = "#ff0000"
 #Fuerza a establecer un rango
 	 
 	set xrange [-100:500]
-	set yrange [-800:800]
+	#set yrange [-800:800]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
 	#set xtics 10
@@ -96,5 +96,6 @@ red_100 = "#ff0000"
  
 
 #Ploteo todas las funciones que les digamos
+#Divido por 2.95 para llevarlo a 1mM de FeCN6
 plot "Exclusion_FeCN/Zr 2 FeCN 2.5mM.txt" using ($1):($2/0.0314) every ::1200::2400 with lines ls 5,\
-"Control_Au/FeCN 2.5mM.txt" using ($1):($2/0.0314*0.98) every ::1200::2400 with lines ls 2
+"Control_Au/FeCN 2.5mM.txt" using ($1):($2/0.0314/2.9) every ::1200::2400 with lines ls 2

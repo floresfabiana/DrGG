@@ -3,8 +3,8 @@
 #set terminal X11
 
 #Para exportar como latex
-#set terminal tikz
-#set output "Zr-Ru0.1mM.tikz" 
+set terminal tikz
+set output "Zr-Ru001mM.tikz" 
 
 #Saco la leyenda
 	unset key
@@ -34,11 +34,13 @@ set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
 #Fuerza a establecer un rango
 	 
 	set xrange [-500:0]
-	set yrange [-150:150]
+	#set yrange [-50:50]
 
 
 #Para graficar todas
-filename(n) = sprintf("Zr 5 Ru 0.1 mM 13x45 Rango Corto  (19_04_2017-15_26_43)/Zr 5 Ru 0.1 mM 13x45 Rango Corto S0%d-2-VC.txt", n)
-plot for [i=2:2:1] filename(i) using 1:($2*1000/0.0314) every 2::1200::36000 w l ls 1,\
-for [j=1:1:1] filename(j) using 1:($2/0.0314) every 2 w l ls 1,\
-"../Control_Au/Ru 0.1mM Au Rango Cort.txt" u 1:($2/0.0314) every 2::4800::6000 w l ls 2,\
+filename(n) = sprintf("Zr 6 Ru 0.01 mM 12x45 Rango Corto  (20_04_2017-09_36_04)/Zr 6 Ru 0.01 mM 12x45 Rango Corto S%d  2-VC    .txt", n)
+#plot for [i=2:2:1] filename(i) using 1:($2*1000/0.0314) every ::1::12000 w l ls 1,\
+
+plot for [i=1:1:1] filename(i) using 1:($2/0.0314*1000) w l ls 1,\
+for [i=1:1:1] filename(i) using 1:($2/0.0314*1000) every ::52600::54000 w l ls 3,\
+"../Control_Au/Ru 0.01mM Au Rango Cort.txt" u 1:($2/70*1000) every ::4800::6000 w l ls 2,\
