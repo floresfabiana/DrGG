@@ -14,14 +14,14 @@
  \FormatoCapituloDosLineas
  
  %Nombre y etiquete para referir
- \chapter{Electroquímica y transporte\index{transporte} en los sensores}
+ \chapter{Electroquímica en películas delgadas mesoporosas}
  \label{chap:Electroquimica}
 
  %Para que no salga el numero de pagina en la portada del capitulo
  \thispagestyle{empty}
 	
  %Resumen del Capitulo en Italica
- \noindent\textit{Aca va todo el desarrollo de la fisicoquimica de los mesospororos, fenomenos de  transporte, adsorcion, Langmuir\index{Langmuir}, propiedades de mediacion redox, catalisis, etc, etc.}
+ \noindent\textit{En este capitulo se estudia exhaustivamente los fenómenos de transporte\index{transporte} de sonda\index{sonda}s a través de las películas delgadas mesoporosas y su respuesta electroquímica\index{electroquimico}. Analizando los resultados obtenidos por voltametría cíclica, voltatametría cíclica\index{voltametria!cíclica} de corriente alterna y simulaciones por elementos finitos, se sugiere un modelo de transporte\index{transporte} para cada caso y se calculan parámetros para los distintos sistemas como coeficiente de difusión\index{difusión}, constante de Langmuir\index{Langmuir} y estabilidad química entre otros.}
 
  %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
  \vfill
@@ -43,7 +43,7 @@
 				\end{equation}
 
 	La reacción \ref{eq:equilibriosilica} ejemplifica el equilibrio ácido-base que se establece en la superficie\index{superficie} de la sílice. El pKa del $\text{SiO}_2$ es menor a 4 y la mayoría de los autores coinciden en que el punto isoeléctrico\index{punto isoeléctrico} (PI) varía de $1$ a $4$ dependiendo de  las distintas forma alotrópicas del óxido de silicio\index{silicio!oxido de}, en particular para el SiO$_2$ sintetizado vía sol-gel\index{sol-gel} el $\text{PI}\approx 2$ \cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013}.
-	Wu\index{Wu} y colaboradores\cite{Si-HanWu2013} analizaron, por un lado, el estado de carga superficial de nanoparticula\index{nanoparticula}s\index{nanoparticula} de sílice mesoporosa\index{película!mesoporosa} y, por otro, la tasa de condensación\index{condensación}. El gráfico de la figura \ref{fig:silica_ph} muestra como varían las razones  $\text{SiO}^{-}/\text{SiOH}$ y $\text{SiOH}_2^{+}/\text{SiOH}$ en función del pH\index{pH}; se puede apreciar que solo por encima de $\text{pH}\geq7$ se obtiene una superficie\index{superficie} de carga negativa donde todos los silanoles reaccionaron, cediendo su $\text{H}^{+}$, para convertirse en iones silanoatos; mientras que para pH\index{pH} bajos ($\text{pH}\leq1$), la sílice se vuelve inestable antes de llegar a un estado de carga completamente positivo y, solo queda, parcialmente positiva. En el mismo trabajo\cite{Si-HanWu2013} también plantean que la tasa de condensación\index{condensación} decrece por encima de $\text{pH}\geq7.5$ debido a entra en una zona de inestabilidad donde el óxido se disuelve, catalizado por el medio básico.
+	Wu\index{Wu} y colaboradores\cite{Si-HanWu2013} analizaron, por un lado, el estado de carga superficial de nanoparticula\index{nanoparticula}s\index{nanoparticula} de sílice mesoporosa\index{película!mesoporosa} y, por otro, la tasa de condensación\index{condensación}. El gráfico de la figura \ref{fig:silica_ph} muestra como varían las razones  $\text{SiO}^{-}/\text{SiOH}$ y $\text{SiOH}_2^{+}/\text{SiOH}$ en función del pH\index{pH}; se puede apreciar que solo por encima de $\text{pH}\geq7$ se obtiene una superficie\index{superficie} de carga negativa donde todos los silanoles reaccionaron, cediendo su $\text{H}^{+}$, para convertirse en iones silanoatos; mientras que para pH\index{pH} bajos ($\text{pH}\leq1$), la sílice se vuelve inestable antes de llegar a un estado de carga completamente positivo y, solo queda, parcialmente positiva. En el mismo trabajo\cite{Si-HanWu2013} también plantean que la tasa de condensación\index{condensación} decrece por encima de $\text{pH}\geq7.5$ debido a que entra en una zona de inestabilidad donde el óxido se disuelve, catalizado por el medio básico.
 			\begin{figure}[th!]
 			\centering
  	       	\includegraphics[width=0.70\textwidth]{Graficos/Silica-PH-Stability.pdf}
@@ -52,7 +52,7 @@
 	     		\end{figure}
 			
 	%Del equilibrio se desprende que al incrementar el pH\index{pH} por encima de $2$ la película presentará una carga neta negativa, y, consecuentemente al disminuir el pH\index{pH} por debajo de $2$ la película será neutra o levemente positiva. 
-	De hecho, Iler\index{Iler}, en su libro \textit{<<The Chemistry of Silica>>}, explica que la tasa de disolución de la sílice en medio acuoso depende de muchos factores y, que además, salvando el tipo de sílice, el proceso de disolución requiere de un catalizador. Presenta un gráfico de la tasa de disolución en función del pH\index{pH} (figura \ref{fig:disolucion_ph}) y postula que la tasa de disolución depende de la forma alotropica de la sílice, mientras que para formas mas porosas como el SiO$_2$ amorfo la cinética de disolución es mas rápida, para otras como el cuarzo se hace mucho mas lenta; por último aclara que se trata de un proceso de despolimerización vía hidrólisis, y la solubilidad es la concentración de Si(OH)$_4$ cuando alcanza un estado estacionario en el equilibrio despolimerazación-polimerización.\cite{iler1979}. 
+	De hecho, Iler\index{Iler}, en su libro \textit{<<The Chemistry of Silica>>}, explica que la tasa de disolución de la sílice en medio acuoso depende de muchos factores y, que además, salvando el tipo de sílice, el proceso de disolución requiere de un catalizador. Presenta un gráfico de la tasa de disolución en función del pH\index{pH} (figura \ref{fig:disolucion_ph}) y postula que la misma depende de la forma alotropica de la sílice. Para formas mas porosas como el SiO$_2$ amorfo la cinética de disolución es mas rápida, mientras que para otras, mas cristalinas, como el cuarzo se hace mucho mas lenta. Por último aclara que se trata de un proceso de despolimerización vía hidrólisis, y que la solubilidad es la concentración de Si(OH)$_4$ cuando alcanza un estado estacionario en el equilibrio despolimerazación-polimerización.\cite{iler1979}. 
 
 			\begin{figure}[th!]
 			\centering

@@ -96,4 +96,5 @@ red_100 = "#ff0000"
  
 
 #Ploteo todas las funciones que les digamos
-plot "FcCN_exlusion_Au.txt" using ($1):($2/0.0314) every ::1400::2800 with lines ls 5,"FcCN_exlusion_Au.txt" using ($3):($4/0.0314) with lines ls 2
+plot "FcCN_exlusion_Au.txt" using ($1):($2/0.0314) every ::1400::2800 with lines ls 5,\
+"FcCN_exlusion_Au.txt" using ($3):($4/0.0314) with lines ls 2

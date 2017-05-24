@@ -14,14 +14,14 @@
  \FormatoCapituloDosLineas
  
  %Nombre y etiquete para referir
- \chapter{Electroquímica y transporte en los sensores}
+ \chapter{Electroquímica en películas delgadas mesoporosas}
  \label{chap:Electroquimica}
 
  %Para que no salga el numero de pagina en la portada del capitulo
  \thispagestyle{empty}
 	
  %Resumen del Capitulo en Italica
- \noindent\textit{Aca va todo el desarrollo de la fisicoquimica de los mesospororos, fenomenos de  transporte, adsorcion, Langmuir, propiedades de mediacion redox, catalisis, etc, etc.}
+ \noindent\textit{En este capitulo se estudia exhaustivamente los fenómenos de transporte de sondas a través de las películas delgadas mesoporosas y su respuesta electroquímica. Analizando los resultados obtenidos por voltametría cíclica, voltametría cíclica de corriente alterna y simulaciones por elementos finitos, se sugiere un modelo de transporte para cada caso y se calculan parámetros para los distintos sistemas como coeficiente de difusión, constante de Langmuir y estabilidad química entre otros.}
 
  %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
  \vfill
@@ -32,7 +32,7 @@
 \section{Introducción}
 
 	Una vez estudiados los distintos tratamientos de síntesis y realizada la fabricación de los sensores se dedicará, en este capitulo, a estudiar las propiedades de los mismos para detectar y cuantificar una serie de sondas electroquímicas elegidas, precisamente, para poder evaluar distintos aspectos de transporte a través de los sistemas nanoporosos. 
-	Los sensores están compuestos básicamente de una película delgada de oro y una película delgada nanoporosa de SiO$_2$. 
+	Los sensores están compuestos básicamente de una película delgada de oro y una película delgada nanoporosa.
 
 	La superficie de las paredes dejan expuestos, hacia el interior de los poros, grupos silanoles los cuales pueden estar o no protonados.\cite{Brinker1990,Soler-Illia2011} 
 			\begin{equation}
@@ -43,16 +43,14 @@
 				\end{equation}
 
 	La reacción \ref{eq:equilibriosilica} ejemplifica el equilibrio ácido-base que se establece en la superficie de la sílice. El pKa del $\text{SiO}_2$ es menor a 4 y la mayoría de los autores coinciden en que el punto isoeléctrico (PI) varía de $1$ a $4$ dependiendo de  las distintas forma alotrópicas del óxido de silicio, en particular para el SiO$_2$ sintetizado vía sol-gel el $\text{PI}\approx 2$ \cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013}.
-	Wu y colaboradores\cite{Si-HanWu2013} analizaron, por un lado, el estado de carga superficial de nanoparticulas de sílice mesoporosa y, por otro, la tasa de condensación. El gráfico de la figura \ref{fig:silica_ph} muestra como varían las razones  $\text{SiO}^{-}/\text{SiOH}$ y $\text{SiOH}_2^{+}/\text{SiOH}$ en función del pH; se puede apreciar que solo por encima de $\text{pH}\geq7$ se obtiene una superficie de carga negativa donde todos los silanoles reaccionaron, cediendo su $\text{H}^{+}$, para convertirse en iones silanoatos; mientras que para pH bajos ($\text{pH}\leq1$), la sílice se vuelve inestable antes de llegar a un estado de carga completamente positivo y, solo queda, parcialmente positiva. En el mismo trabajo\cite{Si-HanWu2013} también plantean que la tasa de condensación decrece por encima de $\text{pH}\geq7.5$ debido a entra en una zona de inestabilidad donde el óxido se disuelve, catalizado por el medio básico.
-			\begin{figure}[th!]
+	Wu y colaboradores\cite{Si-HanWu2013} analizaron, por un lado, el estado de carga superficial de nanoparticulas de sílice mesoporosa y, por otro, la tasa de condensación. El gráfico de la figura \ref{fig:silica_ph} muestra como varían las razones  $\text{SiO}^{-}/\text{SiOH}$ y $\text{SiOH}_2^{+}/\text{SiOH}$ en función del pH; se puede apreciar que solo por encima de $\text{pH}\geq7$ se obtiene una superficie de carga negativa donde todos los silanoles reaccionaron, cediendo su $\text{H}^{+}$, para convertirse en iones silanoatos; mientras que para pH bajos ($\text{pH}\leq1$), la sílice se vuelve inestable antes de llegar a un estado de carga completamente positivo y, solo queda, parcialmente positiva. En el mismo trabajo\cite{Si-HanWu2013} también plantean que la tasa de condensación decrece por encima de $\text{pH}\geq7.5$ debido a que entra en una zona de inestabilidad donde el óxido se disuelve, catalizado por el medio básico.
+		\begin{figure}[th!]
 			\centering
  	       	\includegraphics[width=0.70\textwidth]{Graficos/Silica-PH-Stability.pdf}
-	       		\caption[Tasa de condensación y estado de carga superficial]{Tasa de condensación y estado de carga superficial para nanoparticulas de sílice en función de pH. Gráfico extraído de \textit{Synthesis of mesoporous silica nanoparticles} Chem. Soc. Rev., 42(9):3862, 2013.\cite{Si-HanWu2013}}
-	         	\label{fig:silica_ph}
-	     		\end{figure}
-			
-	%Del equilibrio se desprende que al incrementar el pH por encima de $2$ la película presentará una carga neta negativa, y, consecuentemente al disminuir el pH por debajo de $2$ la película será neutra o levemente positiva. 
-	De hecho, Iler, en su libro \textit{<<The Chemistry of Silica>>}, explica que la tasa de disolución de la sílice en medio acuoso depende de muchos factores y, que además, salvando el tipo de sílice, el proceso de disolución requiere de un catalizador. Presenta un gráfico de la tasa de disolución en función del pH (figura \ref{fig:disolucion_ph}) y postula que la tasa de disolución depende de la forma alotropica de la sílice, mientras que para formas mas porosas como el SiO$_2$ amorfo la cinética de disolución es mas rápida, para otras como el cuarzo se hace mucho mas lenta; por último aclara que se trata de un proceso de despolimerización vía hidrólisis, y la solubilidad es la concentración de Si(OH)$_4$ cuando alcanza un estado estacionario en el equilibrio despolimerazación-polimerización.\cite{iler1979}. 
+	    	\caption[Tasa de condensación y estado de carga superficial]{Tasa de condensación y estado de carga superficial para nanoparticulas de sílice en función de pH. Gráfico extraído de \textit{Synthesis of mesoporous silica nanoparticles} Chem. Soc. Rev., 42(9):3862, 2013.\cite{Si-HanWu2013}}
+	       	\label{fig:silica_ph}
+	    	\end{figure}
+	De hecho, Iler, en su libro \textit{<<The Chemistry of Silica>>}, explica que la tasa de disolución de la sílice en medio acuoso depende de muchos factores y, que además, salvando el tipo de sílice, el proceso de disolución requiere de un catalizador. Presenta un gráfico de la tasa de disolución en función del pH (figura \ref{fig:disolucion_ph}) y postula que la misma depende de la forma alotrópica de la sílice. Para formas mas porosas, como el SiO$_2$ amorfo, la cinética de disolución es mas rápida, mientras que para otras, mas cristalinas, como el cuarzo, se hace mucho mas lenta. Por último aclara que se trata de un proceso de despolimerización vía hidrólisis, y que la solubilidad es la concentración de Si(OH)$_4$ cuando alcanza un estado estacionario en el equilibrio despolimerazación-polimerización.\cite{iler1979}. 
 
 			\begin{figure}[th!]
 			\centering
@@ -69,7 +67,7 @@
 				\end{aligned}
 				\end{equation} 
 	
-	El mecanismo de \ref{eq:disolucionsilica} no está completamente consensuado en la literatura especializada, sin embargo todos los autores coinciden en que el óxido se vuelve inestable en cualquiera de sus forma alotrópicas a partir de un $\text{pH}\geq7$ y que, a partir de $\text{pH}\geq10$ el proceso de disolución se acelera considerablemente varios ordenes de magnitud.\cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013,iler1979}
+	El mecanismo de \ref{eq:disolucionsilica} no está completamente consensuado en la literatura especializada, sin embargo todos los autores coinciden en que el óxido se vuelve inestable en cualquiera de sus forma alotrópicas a partir de un $\text{pH}\geq7$ y que, a partir de $\text{pH}\geq10$ el proceso de disolución se acelera varios ordenes de magnitud.\cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013,iler1979}
 
 	%Dependencia de la constante de K con el PH.... poner aqui el grafico, ecuacion y grafico de Wu2013 donde propone estado de carga y donde se muestra que recien a PH=5 se llega a un estado de carga copmpeltamente negativo.
 	
@@ -79,11 +77,11 @@
 
 \section{Transporte de sondas: exclusión, permeación y preconcentración}
 
-	 Durante las próximas secciones se analizan e interpretan los resultados obtenidos al colocar soluciones con sondas electroquímicas, de diferente naturaleza, sobre los sensores. Al ser, la fabricación de los sensores, una parte estructural de este trabajo, cabe aclarar sobre que sistemas que se realizaron los resultados de los experimentos que se mostrarán de este capitulo; se utilizó, indistintamente, películas de Au sobre sustratos varios (silicio, vidrio, flexible), con diseño ya transferido o sin transferir. Salvo que se aclare lo contrario, se trabajó siempre sistemas con películas delgadas mesoporosas estructuradaras con Pluronic F127 y sintetizada con el método de alto vacío (consultar sección \ref{sec:trat-vacio}, pág. \pageref{sec:trat-vacio}); todas las medidas fueron normalizadas por el área geométrica, de forma de facilitar la comparación de resultados cuando se trata de sensores con distinto diseño. Todas las medidas fueron llevadas a cabo a $\text{pH}\approx5,5$ en solución de KCl \SI{100}{\milli\Molar}, elegido con el propósito de mantener una fuerte carga neta negativa dentro de la películas, porque es un pH interesante para aplicaciones en aguas naturales, y a su vez, no está comprometida la disolución de la sílice.
+	 Durante las próximas secciones se analizan e interpretan los resultados obtenidos al colocar soluciones con sondas electroquímicas, de diferente naturaleza, sobre los sensores. Al ser, la fabricación de los sensores, una parte estructural de este trabajo, cabe aclarar sobre que sistemas se realizaron los experimentos mostrados en este capitulo. Se utilizó, indistintamente, películas de Au sobre sustratos varios (silicio, vidrio, flexible), con diseño ya transferido o sin transferir. En este capitulo se trabajó exclusivamente en sistemas con películas delgadas mesoporosas (\pdm), de óxido de silicio (\pdmF) o de óxidos mixtos silicio/zirconio (\pdmZ), estructuradaras con Pluronic F127, y sintetizada con el método de alto vacío (consultar sección \ref{sec:trat-vacio}, pág. \pageref{sec:trat-vacio}). Todas las medidas electroquímicas (EQ) usaron como referencia un electrodo saturado de calomel (ESC) y fueron normalizadas por el área geométrica del electrodo, de forma de facilitar la comparación de resultados cuando se trata de sensores con distinto diseño. Todas los experimentos fueron llevadas a cabo a $\text{pH}\approx5,5$ en solución de KCl \SI{100}{\milli\Molar}. Esta elección se basa en el doble propósito de elegir un pH que podemos encontrar en sumideros de aguas naturales, y conservar dentro de las películas delgadas mesoporosas una fuerte carga negativa sin comprometer disolución de la sílice.
 
 	\subsection{Caso 1: sonda de carga negativa}
 
-	 El voltagrama de la figura \ref{fig:exclusion_vs_Au} muestra la respuesta de los sensores cuando se colocan en una solución con una sonda negativa. Como sonda de carga negativa se utilizó ferro/ferriciunuro de potasio (\ferroferri, \SI{1}{\milli\Molar}) en proporciones equimolares. El voltagrama rojo corresponde a la respuesta en un electrodo de Au desnudo, mientras que la verde a un electrodo recubierto de \pdm.
+	 El voltagrama de la figura \ref{fig:exclusion_vs_Au} muestra la respuesta de los sensores cuando se colocan en una solución con una sonda negativa. Para este fin se utilizó una solución de ferrocianuro de potasio (\ferroCompleto) y ferricianuro de potasio (\ferriCompleto) en proporciones equimolares, que de ahora en mas llamaremos \fe. El voltagrama rojo corresponde a la respuesta en un electrodo de Au desnudo, mientras que la verde a un electrodo recubierto de con una \pdm.
 	
 			\begin{figure}[ht]
 				\centering
@@ -94,18 +92,18 @@
 	
 	 Al ser la sonda de carga negativa, no es capaz de ingresar a la película (la cual está cargada negativamente), y, por lo tanto tampoco puede difundir hacia el electrodo, eso se refleja en el voltagrama donde no se observa ni reducción ni oxidación de la sonda. La repulsión se debe a un efecto de exclusión electrostática. Este fenómeno de exclusión ya fue reportado por varios autores\cite{alberti2015,schmuhl2005,Andrieu-Brunsen2015,brunsen2011}. Al pH de trabajo, $\text{pH}=5,5$, los silinanoles están como silanolatos, como ya se explicó anteriormente, estableciendo una carga negativa en todo el espesor de la película.
 
-	 Desde el punto del estudio de fenómenos de  transporte esta sonda no es especialmente útil, porque, como ya se demostró, no puede ingresar en la \pdm. Sin embargo, nos ofrece información importante sobre la integridad estructural de las películas delgadas, dicho de otro modo, al no obtener señal electroquímica significa que, la sonda no percola a través de la \pdm, que la \pdm\space se encuentra sin fisuras, agujeros o rajaduras y que recubre por completo el área del electrodo.
+	 Desde el punto del estudio de fenómenos de  transporte esta sonda no es especialmente útil, porque, como ya se demostró, no puede ingresar en la \pdm. Sin embargo, nos ofrece información importante sobre la integridad estructural de las películas delgadas, dicho de otro modo, al no obtener señal electroquímica significa que la sonda no percola a través de la \pdm, que la \pdm\space se encuentra sin fisuras, agujeros o rajaduras y que recubre por completo el área del electrodo.
 
-	 Por ende fue muy importante para corroborar (si no hay señal la película esta intacta, si hay señal esta el Au expuesto) el estado de las \pdm\space al finalizar experimentos donde se dudaba del estado de la película, de esta forma se utilizó esta sonda a modo de <<experimento control>>, realizando una voltametría cíclica para comprobar que las películas no tuviera sitios de percolación.
+	 Por ende fue muy importante para corroborar (si no hay señal la \pdm está intacta, si hay señal el Au quedó expuesto) el estado de las \pdm\space al finalizar experimentos donde se dudaba del estado de la película.  De esta forma esta sonda se utilizó a modo de <<experimento control>> para comprobar que las películas no tuviera sitios de percolación debido a daños estructurales.
 
 	\subsection{Caso 2: sonda de carga neutra}
 
-		Al ser el ferroceno metanol (\fc) una molécula que, en su estado reducido, no presenta carga, es de esperar que no se vea afectada por la carga que presentan las paredes de los poros. En la figura \ref{fig:permeacion} se comparan los voltagramas resultantes de colocar una solución de ferroceno matanol sobre un electrodo de Au desnudo (voltagrama rojo) y uno recubierto con la \pdm.  Si bien el gráfico  requiere mas análisis, está claro que el ferroceno permea a través de la película nanoporosa, para dar una señal electroquímica. En las próximas secciones se discutirá la forma, intensidad y otras variables de los voltagramas, y se analizarán experimentos complementarios, por ahora basta con haber demostrado que una sonda neutra es sensible de permear a través de la \pdm\space para dar una señal electroquímica.
+		Al ser el ferroceno metanol (\ferroceno, \fc) una molécula que, en su estado reducido, no presenta carga, es de esperar que no se vea afectada por la carga de las paredes de los poros. En la figura \ref{fig:permeacion} se comparan los voltagramas resultantes de colocar una solución de ferroceno matanol sobre un electrodo de Au desnudo (voltagrama rojo) y uno recubierto con la \pdm.  Si bien el gráfico  requiere mas análisis, está claro que el ferroceno permea a través de la película nanoporosa, para dar una señal electroquímica. En las próximas secciones se discutirá la forma, intensidad y otras variables de los voltagramas, y se analizarán experimentos complementarios, por ahora basta con haber demostrado que una sonda neutra es sensible de permear a través de la \pdm\space para dar una señal electroquímica.
 
 		\begin{figure}[ht]
 				\centering
 		 	    \includegraphics[width=0.70\textwidth]{Graficos/FeOH-permeacion-1mM.pdf}
-		        \caption[Permeación ferroceno metanol en \pdmF]{Respuesta compartiva de un electrodo de Au recubierto con \pdmF\space y sin recubrir frente a una sonda \fc \SI{1}{\milli\Molar} en \SI{0.1}{\Molar} de KCl contra ESC.}
+		        \caption[Permeación ferroceno metanol en \pdmF]{Respuesta comparativa de un electrodo de Au recubierto con \pdmF\space y sin recubrir frente a \fc\space \SI{1}{\milli\Molar} en \SI{0.1}{\Molar} de KCl contra un ESC.}
 		        \label{fig:permeacion}
 		      	\end{figure}
 		%Ferroceno y todos los datos de permeacion. Calcinado vs Bajas Tcd 

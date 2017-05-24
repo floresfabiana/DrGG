@@ -54,7 +54,7 @@ set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray40" at
 #"fc-10mM-F127-AuCNEA-Calcinado/2-FeOH-1mM-50.DTA" u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader,\
 
 #Ploteo todas las funciones que les digamos
-FILES = system("ls -1 fc-1mM-F127-AuCNEA-Calcinado/*.DTA")
+FILES = system("ls -1 fc-1mM-F127-AuCNEA-Calcinado/*.txt")
 
 plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader
 

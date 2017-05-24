@@ -1,9 +1,6 @@
 #Para ver en pantalla
 #reset
 #set terminal X11
-
-set size ratio 0.5
-
 #Para exportar como latex
 set terminal tikz
 set output "Comparativa-disolucion-ZR-SI.tikz" 
