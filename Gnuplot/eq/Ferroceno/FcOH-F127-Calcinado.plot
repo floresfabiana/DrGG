@@ -79,5 +79,5 @@ plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with li
   unset key
   #set label "\\tiny{LO}$_3$" at 1280,0.55 font ",8" textcolor rgb "gray40"
   #set label "\\tiny{LO}$_4$" at 1210,0.525 font ",8" textcolor rgb "gray40"
-  plot "fc-1mM-F127-AuCNEA-Calcinado/1-FeOH-1mM-20.DTA" using ($3*1000):($4/0.0314*1e6) every ::1::655 with lines ls 1
+  plot "fc-1mM-F127-AuCNEA-Calcinado/1-FeOH-1mM-20.DTA.txt" using ($3*1000):($4/0.0314*1e6) every ::1::655 with lines ls 1
 unset multiplot
