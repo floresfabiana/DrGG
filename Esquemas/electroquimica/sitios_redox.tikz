@@ -45,8 +45,8 @@
 \draw[<-,bend right,very thin]  (Sitio4) edge node[right=-0.7mm] {\tiny{e\textsuperscript{-}}} (Sitio5);
 \draw[<-,bend right,very thin]  (Oro) edge node[right=-0.7mm] {\tiny{e\textsuperscript{-}}} (Sitio1);
 
-\draw[|-|,bend right,very thin]  (6.5,2.3) -- node[right=-0.7mm] {$\scriptscriptstyle d{_{_{\phi^{e}}}}=1.25$} (6.5,1.5);
-\draw[|-latex,bend right]  (6.7,0.7) -- node[right=-0.7mm] {$\scriptscriptstyle D{_{_H}}=\num{1e-10}$} (6.7,-0.2);
+\draw[|-|,bend right,very thin]  (6.5,2.3) -- node[right=-0.7mm] {$\scriptscriptstyle d{_{_{\phi^{e}}}}=1.25\,\text{nm}$} (6.5,1.5);
+\draw[|-latex,bend right]  (6.7,0.7) -- node[right=-0.7mm] {$\scriptscriptstyle D{_{_H}}=\num{e-9}\,\text{cm}^2\text{s}^{-1}$} (6.7,-0.2);
 
 \end{tikzpicture}
 %\SI{1e-10}{\cm^{2}\per\second}

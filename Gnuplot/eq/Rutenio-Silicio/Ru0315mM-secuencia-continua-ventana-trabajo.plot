@@ -40,7 +40,7 @@ set grid front ls 11
 
 #Coloca los nombre de los ejes
 	set xlabel "N\'umero de ciclos"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{I}_p^{np}/\\text{I}_p^{\\text{Au}}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set ylabel "$\\text{i}_p/\\text{i}_p^{\\text{Au}}$"	font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 

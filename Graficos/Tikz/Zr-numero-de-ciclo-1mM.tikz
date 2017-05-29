@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mar 23 may 2017 17:19:32 ART
+%% lun 29 may 2017 12:19:06 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
@@ -8,7 +8,7 @@
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,7.556)--(1.688,2.426)--(11.947,2.426);
 \gpfill{color=gp lt color border,color=.!15} (1.688,2.426)--(2.714,2.426)--(2.714,7.555)--(1.688,7.555)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{I}_p^{np}/\text{I}_p^{\text{Au}}$};
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{i}_p/\text{i}_p^{\text{Au}}$};
 \node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.817,1.040) {N'umero de ciclos};
 \node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (9.371,7.222) {ZSF - Ru \SI{1}{\milli\Molar}};
 \gpcolor{rgb color={0.000,0.000,0.000}}
