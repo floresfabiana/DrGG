@@ -20,7 +20,7 @@
     \node [no-block, right of=bloque3] (bloque4) {};
     \node [block4, below of=bloque4, node distance=-1cm] (bloque5) {Calcinación};
     \node [block4, above of=bloque4, node distance=-1cm] (bloque6) {Condensación del óxido};
-    \node [block5, right of=bloque6] (bloque7) {Extracción del surfactante};
+    \node [block5, right of=bloque6] (bloque7) {Eliminación del surfactante};
 
     %Bloques al final para que me entren las sombras
     %Colocar abajo del bloque mas inferior

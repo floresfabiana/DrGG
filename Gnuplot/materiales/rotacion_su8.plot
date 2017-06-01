@@ -66,8 +66,8 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
 	#set title "Grafico 1"
 
 #Coloca los nombre de los ejes
-	set xlabel "Tiempo / $s$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "Velocidad de rotación / mín$^{-1}$" font ",14" textcolor rgb "gray40" offset  -2,0
+	set xlabel "Tiempo/s" font ",14" textcolor rgb "gray40" offset  0,-2
+	set ylabel "Velocidad de rotación/min$^{-1}$" font ",14" textcolor rgb "gray40" offset  -2,0
 
 #Fuerza a establecer un rango
 	 

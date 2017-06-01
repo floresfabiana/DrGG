@@ -67,8 +67,8 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
 	#set title "Grafico 1"
 
 #Coloca los nombre de los ejes
-	set xlabel "Tiempo / $s$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "Velocidad de rotación / mín$^{-1}$" font ",14" textcolor rgb "gray40" offset  -2,0
+	set xlabel "Tiempo/s" font ",14" textcolor rgb "gray40" offset  0,-2
+	set ylabel "Velocidad de rotación/min$^{-1}$" font ",14" textcolor rgb "gray40" offset  -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -100,10 +100,10 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
 	# set label 2 sprintf("+%3.3f",b) at 27,55 font "Times Italic,12" textcolor rgb "gray40"
 	# set label 3 sprintf("R=%3.4f",STATS_correlation) at 22,52 font "Times Italic,12" textcolor rgb "gray40"
 
-set label 1 at  12.5, 4200 "\\small PDM-Si$_{4000}$" textcolor rgb '#800000' front
-set label 2 at  12.5, 3200 "\\small PDM-Si$_{3000}$" textcolor rgb '#ff0000' front
-set label 3 at  12.5, 2200 "\\small PDM-Si$_{2000}$" textcolor rgb '#ff4500' front
-set label 4 at  12.5, 1200 "\\small PDM-Si$_{1000}$" textcolor rgb '#ffa500' front
+set label 1 at  12.5, 4200 "\\small PDM$_{4000}$" textcolor rgb '#800000' front
+set label 2 at  12.5, 3200 "\\small PDM$_{3000}$" textcolor rgb '#ff0000' front
+set label 3 at  12.5, 2200 "\\small PDM$_{2000}$" textcolor rgb '#ff4500' front
+set label 4 at  12.5, 1200 "\\small PDM$_{1000}$" textcolor rgb '#ffa500' front
 
 # set style line 1 lc rgb '#800000' lt 1 lw 2
 # set style line 2 lc rgb '#ff0000' lt 1 lw 2

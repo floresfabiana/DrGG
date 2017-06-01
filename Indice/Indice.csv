@@ -45,7 +45,7 @@
  ácido ; ácido\index{acido@ácido} 
  infrarojo; infrarojo\index{infrarojo}
  depósito ; depósito\index{depósito} 
- fotoresina; fotoresina\index{fotoresina}
+ fotorresina; fotorresina\index{fotorresina}
  alineadora; alineadora\index{alineadora}
  máscara; máscara\index{máscara}
  FIB; FIB\index{FIB}
@@ -86,6 +86,7 @@
  oblea ; oblea\index{oblea} 
  FTIR ; FTIR\index{FTIR} 
  UV ; UV\index{UV} 
+ ultravioleta; ultravioleta\index{UV}
  sensor ; sensor\index{sensor} 
  Sensor ; Sensor\index{sensor} 
  sensores ; sensores\index{sensor} 
@@ -95,12 +96,14 @@
  Maxwell-Garnett; Maxwell-Garnett\index{Maxwell-Garnett}
  Lorentz-Lorentz; Lorentz-Lorentz\index{Lorentz-Lorentz} 
  tensión superficial; tensión superficial\index{tensión superficial}
+ energía superficial; energía superficial\index{energía superficial}
  presión de vapor; presión de vapor\index{presión de vapor}
  pH; pH\index{pH}
  hidrólisis ; hidrólisis\index{hidrólisis} 
  prehidrólisis ; prehidrólisis\index{prehidrólisis} 
-autoensamblado molecular;autoensamblado molecular\index{autoensamblado molecular}
+autoensamblado inducido por evaporación;autoensamblado inducido por evaporación\index{autoensamblado inducido por evaporación}
 Kelvin;Kelvin\index{Kelvin}
+Young;Young\index{Young}
  adherencia ; adherencia\index{adherencia} 
  Nerst; Nerst\index{Nerst}
  Randles-Sevcik; Randles-Sevcik\index{Randles-Sevcik}
@@ -127,7 +130,8 @@ Kelvin;Kelvin\index{Kelvin}
  platino; platino\index{platino}
  argón; argón\index{argón}
 MEMS;MEMS\index{MEMS}
- Zr; Zr\index{zirconio}
+ Zr; Zr\index{circonio}
+ circonio ; circonio\index{circonio} 
  Cr; Cr\index{cromo}
  Al; Al\index{aluminio}
  Au ; Au\index{oro} 
@@ -236,4 +240,7 @@ INQUIMAE;INQUIMAE\index{INQUIMAE}
 \textit{swelling};\textit{swelling}\index{swelling@\textit{swelling}}
  Crepaldi; Crepaldi\index{Crepaldi}
 Manzini;Manzini\index{Manzini}
+Pasteur;Pasteur\index{Pasteur}
+ hidrólisis; hidrólisis\index{hidrolisis@hidrólisis}
+ mojabilidad; mojabilidad\index{mojabilidad}
  dummy;dummy

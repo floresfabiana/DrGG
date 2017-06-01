@@ -57,8 +57,8 @@
 %\draw[help lines,red] (0,0) grid[step=1cm] (10,10);
 
 %Colores Silicio
-\tikzstyle{silicio1} = [darkgray,opacity=0.8]
-\tikzstyle{silicio2} = [darkgray,opacity=0.6]
+\tikzstyle{silicio1} = [lightgray,opacity=0.8]
+\tikzstyle{silicio2} = [lightgray,opacity=0.6]
 \tikzstyle{oro} = [yellow]
 %\tikzstyle{oro2} = [Yellow!92!red]
 \tikzstyle{oro2} = [top color=yellow!50, bottom color=Yellow]

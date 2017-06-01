@@ -1,0 +1,6 @@
+\begin{tikzpicture}
+
+\node at (0,0) {
+\chemfig{Zr(>[5]Cl)(<:[6]Cl)(>[7]Cl)(-[2,0.7]Cl)}
+};
+\end{tikzpicture}
