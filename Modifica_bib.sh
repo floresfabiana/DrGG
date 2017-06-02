@@ -16,15 +16,17 @@ CD_BIB="Referencias"
   OS=`uname`
   if [ "$OS" == "Darwin" ];
    then
-     echo -n "   Copiando Base Bibliografica.... "
-      cp /Users/gustavo/Documents/Mendeley\ Desktop/library.bib $CD_ACTUAL/$CD_BIB/base_bibliografica.bib > ./Error_bib.log 2>&1
-     if [ $? = 0 ];then
-       salida="$(tput setaf 2)  Listo!$(tput setaf 0)"
-     echo $salida
-     else
-     salida="$(tput setaf 1)  Error!$(tput setaf 0)"
-       echo $salida
-     fi  
+     echo -n "   Estoy en MAC... no hago ninguna modificación en la base bibliografica"
+     exit 0
+     # echo -n "   Copiando Base Bibliografica.... "
+     #  cp /Users/gustavo/Documents/Mendeley\ Desktop/library.bib $CD_ACTUAL/$CD_BIB/base_bibliografica.bib > ./Error_bib.log 2>&1
+     # if [ $? = 0 ];then
+     #   salida="$(tput setaf 2)  Listo!$(tput setaf 0)"
+     # echo $salida
+     # else
+     # salida="$(tput setaf 1)  Error!$(tput setaf 0)"
+     #   echo $salida
+     # fi  
   else
      echo -n "   Copiando Base Bibliografica del Mendeley.... "
      cp /home/gustavo/Documentos/Mendeley\ Desktop/library.bib $CD_ACTUAL/$CD_BIB/base_bibliografica.bib > ./Error_bib.log 2>&1
@@ -66,6 +68,8 @@ CD_BIB="Referencias"
       sed -i.tmp 's/month = {dec}/month = dec/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/TiO2/TiO$_2$/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/SiO2/SiO$_2$/g' $CD_BIB/base_bibliografica.bib
+      sed -i.tmp 's/1:10^5/$1:10^5$/g' $CD_BIB/base_bibliografica.bib
+      sed -i.tmp 's/AlGaN/$\\text{Al}_{1-X}\\text{Ga}_{X}\\text{N}$/g' $CD_BIB/base_bibliografica.bib
 
       #Verifico que todo salió bien
       if [ $? = 0 ];then
