@@ -16,7 +16,8 @@ CD_BIB="Referencias"
   OS=`uname`
   if [ "$OS" == "Darwin" ];
    then
-     echo -n "   Estoy en MAC... no hago ninguna modificación en la base bibliografica"
+     echo -n "   Estoy en Clementina... no hago ninguna modificación en la base bibliografica."
+     echo " "
      exit 0
      # echo -n "   Copiando Base Bibliografica.... "
      #  cp /Users/gustavo/Documents/Mendeley\ Desktop/library.bib $CD_ACTUAL/$CD_BIB/base_bibliografica.bib > ./Error_bib.log 2>&1

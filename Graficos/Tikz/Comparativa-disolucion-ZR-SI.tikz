@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 29 may 2017 12:19:06 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Mon May 29 18:07:45 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -121,8 +121,8 @@
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
 \node[gp node center] at (11.947,1.293) {$600$};
 \draw[gp path] (1.688,8.381)--(1.688,1.601)--(11.947,1.601);
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{i}_p/\text{i}_p^{\text{Au}}$};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.817,0.215) {N'umero de ciclos};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{i}_p/\text{i}_p^{\text{Au}}$};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.817,0.215) {N'umero de ciclos};
 \gpcolor{rgb color={1.000,0.000,0.000}}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.705,4.313)--(1.806,4.313)--(1.907,4.313)--(2.008,4.313)--(2.109,4.313)%
@@ -915,9 +915,9 @@
 \gppoint{gp mark 7}{(4.817,4.566)}
 \gppoint{gp mark 7}{(4.834,4.567)}
 \gpcolor{rgb color={0.000,0.000,0.000}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.654,7.567) {PDM Zr/Si};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.654,7.567) {PDM Zr/Si};
 \gpcolor{rgb color={0.000,0.392,0.000}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.654,5.127) {PDM Si};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.654,5.127) {PDM Si};
 %% coordinates of the plot area
 \gpdefrectangularnode{gp plot 1}{\pgfpoint{1.688cm}{1.601cm}}{\pgfpoint{11.947cm}{8.381cm}}
 \end{tikzpicture}
