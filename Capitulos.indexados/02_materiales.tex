@@ -466,7 +466,7 @@
 		
 			Las mediciones electroquímica\index{electroquimico}s\index{electroquimico} fueron una parte central de este trabajo. Se utilizaron dos tipos de técnicas voltamperométricas, de corriente continua y de corriente alterna. No solo se hizo uso de ellas como técnicas analíticas sino también como herramienta para establecer parámetros de transporte, concentración dentro y fuera de los poros, calcular constantes de difusión\index{difusión} y e inferir mecanismos de transporte\index{transporte} de las sonda\index{sonda}s a través de la red nanoporosa. 
 
-			Se utilizó, para ambas técnicas la típica configuración de celda de tres electrodos. La celda en sí fue fabricada en acrílico, con un volumen aproximado de \SI{3}{\ml} y con un orificio en la parte inferior. Para sellar contra el sustrato\index{sustrato} y evitar perdidas de la solución, se utilizo un sello de \SI{1}{\mm} de radio, el cual determina el área geometríca utilizada en \SI{3.15}{\mm^{2}}. En la figura \ref{fig:celda} se muestra un esquema del sistema de medición EQ y en la figura \ref{esq:eq} una fotografía en el momento de tomar las voltametrías. 
+			Se utilizó, para ambas técnicas la típica configuración de celda de tres electrodos. La celda en sí fue fabricada en acrílico, con un volumen aproximado de \SI{3}{\ml} y con un orificio en la parte inferior. Para sellar contra el sustrato\index{sustrato} y evitar perdidas de la solución, se utilizo un sello de \SI{1}{\mm} de radio, el cual determina el área geométrica utilizada en \SI{3.15}{\mm^{2}}. En la figura \ref{fig:celda} se muestra un esquema del sistema de medición EQ y en la figura \ref{esq:eq} una fotografía de una de las tantas mediciones realizadas. 
 
 			 \begin{figure}[!ht]
 			 		  \begin{center}
@@ -479,12 +479,12 @@
 	 		 \begin{figure}[ht!]
 			 		  \begin{center}
 			 		  \includegraphics[width=\textwidth]{Imagenes/eq.jpg}
-			 		  \caption[Equipo para realizar la medidas electroquímica\index{electroquimico}s\index{electroquimico}]{Fotografía del instrumental que se utilizó a lo largo de la Tesis para tomar las medidas electroquímica\index{electroquimico}s\index{electroquimico}.}
+			 		  \caption[Equipo para realizar la medidas electroquímica\index{electroquimico}s\index{electroquimico}]{Fotografía del instrumental que se utilizó a lo largo de la tesis para tomar las medidas electroquímica\index{electroquimico}s\index{electroquimico}.}
 			 		  \label{esq:eq}
 			 		  \end{center}
 			 		  \end{figure}	
 			 		  
-			Las mediciones electroquímica\index{electroquimico}s\index{electroquimico} fueron tomadas con un potencionestato \textit{Teq4}, para las medidas que se necesitaron velocidades de barrido por arriba de \SI{1}{\volt\per\second} se uso un \textit{Autolab}, de la firma \textit{Ecochemie}. Como electrodo de referencia\index{electrodo!de referencia} se utilizó un electrodo saturado de calomel (SCE, del ingles \textit{satured calomel electrode}) de la firma \textit{Cole-Parmer} y como contraelectrodo\index{electrodo!contraelectrodo} se utilizaron indistintamente electrodos de Au\index{electrodo!de Au} depositados por pulverización catódica\index{pulverización catódica} o una pieza de Pt\index{platino}. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímica\index{electroquimico}s\index{electroquimico}. 
+			Las mediciones electroquímica\index{electroquimico}s\index{electroquimico} fueron tomadas con un potencionestato \textit{Teq4}, para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second} se uso un \textit{Autolab}, de la firma \textit{Ecochemie}. Como electrodo de referencia\index{electrodo!de referencia} se utilizó un electrodo saturado de calomel (ESC) de la firma \textit{Cole-Parmer} y como contraelectrodo\index{electrodo!contraelectrodo} (CE) se utilizaron indistintamente electrodos de Au\index{electrodo!de Au} depositados por pulverización catódica\index{pulverización catódica} o una pieza de Pt\index{platino} de tamaño adecuado. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímica\index{electroquimico}s\index{electroquimico}. 
 			
 			A continuación se hace una breve reseña de las técnicas utilizadas, los parámetros usados y las configuraciones experimentales.
 
@@ -492,8 +492,8 @@
 
 				%Tabla ractivos EQ
 				     \begin{table}[ht!]
-			  		  \caption[Reactivos utilizados para las mediciones electroquímica\index{electroquimico}s\index{electroquimico}]{Reactivos utilizados durante las mediciones electroquímica\index{electroquimico}s\index{electroquimico} por el método de elementos finitos.}
-			  		   \begin{tabular}{>{\raggedright\arraybackslash}m{4.4cm}>{\centering\arraybackslash}m{1.75cm}>{\centering\arraybackslash}m{2.7cm}>{\raggedright\arraybackslash}m{1.7cm}} 
+			  		  \caption[Reactivos utilizados para las mediciones electroquímica\index{electroquimico}s\index{electroquimico}]{Reactivos y sonda\index{sonda}s electroquímica\index{electroquimico}s\index{electroquimico} utilizados para las mediciones electroquímica\index{electroquimico}s\index{electroquimico}}
+			  		   \begin{tabular}{>{\raggedright\arraybackslash}m{4.4cm}>{\centering\arraybackslash}m{1.75cm}>{\centering\arraybackslash}m{2.7cm}>{\raggedright\arraybackslash}m{1.6cm}} 
 			  		  \toprule
 					  Reactivo \hspace{3cm}Nombre& Marca & Peso Molecular (\si{g.mol^{-1}}) & Función  \\ \midrule
 			    	  \ferroCompleto \hspace{3cm} ferrocianuro de potasio\index{ferrocianuro de potasio} & \textit{Sigma} & 422,41  & Sonda \\ \midrule
@@ -512,9 +512,11 @@
 
 	 \subsection{Voltametría cíclica}
 	 		
-	 		La voltamperometría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo estacionario contra un electrodo de referencia\index{electrodo!de referencia}. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante entre ellos. Las señal de excitación es un barrido de potencial lineal con una onda de forma triangular. Las velocidades de barrido pueden variar desde unos cuantos milivolts por segundo hasta cientos de volts por segundo; en nuestro caso se utilizaron velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}, velocidades de compromiso para obtener experimentos de corta duración cortos pero donde aún predomine la transferencia de carga y no se observe desplazamiento de los potenciales oxidación o reducción.\cite{nicholson1964,Gewirth2004}
+	 		La voltamperometría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo estacionario contra un electrodo de referencia\index{electrodo!de referencia}. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante entre ellos. La señal de excitación es un barrido de potencial lineal con una onda de forma triangular, la cual parte de un potencial E$_1$, evoluciona linealmente hasta un potencial E$_2$ para luego volver a E$_1$. Las velocidades de este barrido pueden variar desde unos cuantos milivolts por segundo hasta cientos de volts por segundo; en nuestro caso se utilizaron velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}, se escogieron estas velocidades para llevar a cabo experimentos de una duración aceptable pero donde aún predomine la transferencia de carga y no se observe desplazamiento de potenciales para los picos de máxima oxidación y/o reducción.\cite{nicholson1964,Gewirth2004}
 
-	 		Se barre el potencial del electrodo de trabajo\index{electrodo!de trabajo} en dirección de ida y vuelta entre dos valores arbitrarios. Al\index{aluminio} usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica\index{electroquimico} del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajo en un pH\index{pH}$\sim 5$ para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo saturado de calomel.\cite{wang2014} 
+	 		Como ya se dijo anteriormente se barre el potencial del electrodo de trabajo\index{electrodo!de trabajo} en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al\index{aluminio} usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica\index{electroquimico} del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajo en un pH\index{pH}$\sim 5$ para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo saturado de calomel.\cite{wang2014} 
+
+	 		Esta técnica se utilizó para evaluar fenómenos de exclusión, permeación\index{permeacion} y preconcentración. También para determinar concentración de las sonda\index{sonda}s electroactivas dentro y fuera de los poros, calcular coeficientes de difusión\index{difusión} y estimar distancias de sitios redox\index{sitio redox\index{sitio redox}} así como chequear accesibilidad\index{accesibilidad} y estructura de las películas delgadas mesoporosas.
 
 
 	 		 %La onda triangular regresa a la misma velocidad y permite la visualización de un voltagrama completo, tal como se muestra en la figura \ref{fig:CV_ideal}, con las formas de las ondas anódicas (oxidación) y catódicas (reducción). 
@@ -540,7 +542,9 @@
 
 	 		\subsection{Voltametría cíclica de corriente alterna}
 
-	 		La técnica de voltatametría cíclica\index{voltametria!cíclica} de corriente alterna (VCA) consta en aplicar una oscilación sinusoidal de voltaje a la celda electroquímica\index{electroquimico}. El experimento en conjunto con un analizador de frecuencias ofrece un limite de detección menor e incrementa la sensibilidad respecto de la CV tradicional.\cite{Wi2000,Skoog1995} A la onda triangular clásica usada en VC se la perturba con una pequeña onda de corriente alterna, en los experimentos presentados en este trabajo la perturbación fue de de \SI{10}{\milli\volt} y la frecuencia de la misma de 1 y \SI{2}{\hertz}. El propósito de esta técnica fue el obtener el coeficiente de difusión\index{difusión} de hexaaminorutenio en sistemas porosos y contrastar con otras técnicas de forma de validar dicho coeficiente y los mecanismos de trasporte propuestos. 
+	 		La técnica de voltatametría cíclica\index{voltametria!cíclica} de corriente alterna (VCA) consta en aplicar una oscilación sinusoidal de voltaje a la celda electroquímica\index{electroquimico}. A la onda triangular clásica usada en VC se la perturba, montando sobre ella, una pequeña onda de corriente alterna, en los experimentos presentados en este trabajo la perturbación fue de de \SI{10}{\milli\volt} y la frecuencia de la misma de 1 y \SI{2}{\hertz}. Esta técnica se emplea en conjunto con un analizador de frecuencias para filtrar la componente continua de la alterna, de este modo, ofrece un limite de detección menor e incrementa la sensibilidad respecto de la CV tradicional.\cite{Wi2000,Skoog1995}
+
+	 		El propósito de esta técnica fue el obtener el coeficiente de difusión\index{difusión} de hexaaminorutenio en sistemas porosos y contrastar con otras técnicas de forma de validar dicho coeficiente y los mecanismos de trasporte propuestos. 
 
 	 \subsection{Simulaciones electroquímica\index{electroquimico}s\index{electroquimico}}\label{simulacion}
 
