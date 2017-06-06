@@ -172,7 +172,7 @@
 
 		El segmento infrarrojo (IR) del espectro electromagnético puede ser divido en tres zonas, según su longitud de onda, IR cercano (400 a \SI{10}{\cm^{-1}}), IR medio (4000 a \SI{400}{\cm^{-1}}), e IR lejano (14000 a \SI{4000}{\cm^{-1}}). El infrarrojo medio puede ser usado para estudiar las vibraciones fundamentales y la estructura roto-vibracional; brinda información acerca de los grupos orgánicos e inorgánicos  presentes a través del análisis de las vibraciones moleculares.\cite{Atkins2006,Barrow1962,Stuart2004} 
 		
-		A lo largo de este trabajo se uso esta porción del espectro IR para analizar los resultados de la extracción de surfactante y estructura inorgánica de las \pdm. Las mediciones se llevaron a cabo en la Unidad Técnica de Nanomateriales del Centro de Investigaciones en Procesos Superficiales del INTI (INTI-CIEPS). El equipo es un \textit{Thermo Scientific Nicolet 6700 FTIR} que cuenta con un microscopio para poder focalizar el haz en un área de aproximadamente \SI{0.5x0.5}{\mm}. Se utilizó la técnica de espectroscopia infrarroja por transformadas de Fourier (FTIR) tanto en trasmisión como en reflexión y los espectros fueron tomados con el detector MCT/B (\textit{Wide Band mercury/cadmiun/telluride}) que es de 4 a 10 veces más sensible que los detectores estándar para equipos de espectroscopia FTIR.\cite{Nicholet2007} Las películas destinada a ser caracterizadas por FTIR fueron depositadas sobre Si, por ser este trasparente en el IR medio.
+		A lo largo de este trabajo se uso esta porción del espectro IR para analizar los resultados de la extracción de surfactante y estructura inorgánica de las \pdm. Las mediciones se llevaron a cabo en la Unidad Técnica de Nanomateriales del Centro de Investigaciones en Procesos Superficiales del INTI (INTI-CIEPS). El equipo es un \textit{Thermo Scientific Nicolet 6700 FTIR} que cuenta con un microscopio para poder focalizar el haz en un área de aproximadamente \SI{0.5x0.5}{\mm}. Se utilizó la técnica de espectroscopia infrarroja por transformadas de Fourier (FTIR) tanto en trasmisión como en reflexión y los espectros fueron tomados con el detector MCT/B (\textit{Wide Band mercury cadmium telluride}) que es de 4 a 10 veces más sensible que los detectores estándar para equipos de espectroscopia FTIR.\cite{Nicholet2007} Las películas destinada a ser caracterizadas por FTIR fueron depositadas sobre Si, por ser este trasparente en el IR medio.
 
 	\subsection{Ángulo de contacto}
 
@@ -486,7 +486,7 @@
 			 		  
 			Las mediciones electroquímicas fueron tomadas con un potencionestato \textit{Teq4}, para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second} se uso un \textit{Autolab}, de la firma \textit{Ecochemie}. Como electrodo de referencia se utilizó un electrodo saturado de calomel (ESC) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de tamaño adecuado. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímicas. 
 			
-			A continuación se hace una breve reseña de las técnicas utilizadas, los parámetros usados y las configuraciones experimentales.
+			A continuación se hace una breve reseña sobre las técnicas utilizadas, los parámetros empleados y las configuraciones experimentales.
 
 			 \pagebreak
 
@@ -508,26 +508,30 @@
 			   		  \label{tabla:eq}
 			   		  \end{table}
 
-			   		  
-
 	 \subsection{Voltametría cíclica}
 	 		
 	 		La voltamperometría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo estacionario contra un electrodo de referencia. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante entre ellos. La señal de excitación es un barrido de potencial lineal con una onda de forma triangular, la cual parte de un potencial E$_1$, evoluciona linealmente hasta un potencial E$_2$ para luego volver a E$_1$. Las velocidades de este barrido pueden variar desde unos cuantos milivolts por segundo hasta cientos de volts por segundo; en nuestro caso se utilizaron velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}, se escogieron estas velocidades para llevar a cabo experimentos de una duración aceptable pero donde aún predomine la transferencia de carga y no se observe desplazamiento de potenciales para los picos de máxima oxidación y/o reducción.\cite{nicholson1964,Gewirth2004}
 
 	 		Como ya se dijo anteriormente se barre el potencial del electrodo de trabajo en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajo en un pH$\sim 5$ para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo saturado de calomel.\cite{wang2014} 
 
+	 		En la figura \ref{fig:CV_ideal} se muestra la onda triangular de excitación aplicada y la curva obtenida para una sonda electroquímica idealmente reversible, donde se destacan los parámetros mas importantes.
+	 			 \begin{figure}[ht]
+			  		  \begin{subfigure}[t]{0.495\textwidth}
+			  		  \includegraphics[width=\textwidth]{Graficos/onda-triangular.pdf}
+			  		  \end{subfigure}
+			  		  \begin{subfigure}[t]{0.495\textwidth}
+			  		  \includegraphics[width=\textwidth]{Esquemas/CV-ideal.pdf}
+			  		  \end{subfigure}
+			  		  \caption[Voltamperometria ideal reversible]{Curva de excitación y voltagrama típico para una especie redox reversible.}
+			  		  \label{fig:CV_ideal}
+			  		  \end{figure}
+
 	 		Esta técnica se utilizó para evaluar fenómenos de exclusión, permeación y preconcentración. También para determinar concentración de las sondas electroactivas dentro y fuera de los poros, calcular coeficientes de difusión y estimar distancias de sitios redox así como chequear accesibilidad y estructura de las películas delgadas mesoporosas.
 
 
 	 		 %La onda triangular regresa a la misma velocidad y permite la visualización de un voltagrama completo, tal como se muestra en la figura \ref{fig:CV_ideal}, con las formas de las ondas anódicas (oxidación) y catódicas (reducción). 
 
-	 		% \begin{figure}[ht]
-			 % 		  \begin{center}
-			 % 		  \includegraphics[width=0.65\textwidth]{Esquemas/CV_ideal.pdf}
-			 % 		  \caption[Voltamperograma ideal]{Voltagrama típico para una especie redox reversible.}
-			 % 		  \label{fig:CV_ideal}
-			 % 		  \end{center}
-			 % 		  \end{figure}
+	 		
 	
 	
 	 		% Los parámetros importantes en una voltametría cíclico son las magnitudes de la corriente anódica en el pico anódico $i_{pa}$, de la corriente catódica en el pico catódico $i_{pc}$, el potencial del pico catódico $E_{pc}$, el potencial del pico anódico $E_{pa}$, y el área bajo la curva que representa la carga ($Q$) total. 
@@ -540,17 +544,30 @@
 				% \end{equation}
 	 		% donde 0,446 es el factor para una reacción de transferencia electrónica simple controlada por difusión, $n$ es la cantidad de electrones involucrados, $F$ es la constante de Faraday, $A$ es el área del electrodo, $C$ la concentración de la especie en solución, $\upsilon$ es la velocidad de barrido, $D$ el coeficiente de difusión, $R$ la constante universal de los gases y $T$ la temperatura.
 
-	 		\subsection{Voltametría cíclica de corriente alterna}
+	 \subsection{Voltametría cíclica de corriente alterna}
 
 	 		La técnica de voltametría cíclica de corriente alterna (VCA) consta en aplicar una oscilación sinusoidal de voltaje a la celda electroquímica. A la onda triangular clásica usada en VC se la perturba, montando sobre ella, una pequeña onda de corriente alterna, en los experimentos presentados en este trabajo la perturbación fue de de \SI{10}{\milli\volt} y la frecuencia de la misma de 1 y \SI{2}{\hertz}. Esta técnica se emplea en conjunto con un analizador de frecuencias para filtrar la componente continua de la alterna, de este modo, ofrece un limite de detección menor e incrementa la sensibilidad respecto de la CV tradicional.\cite{Wi2000,Skoog1995}
 
+	 		En la figura \ref{fig:ACV_ideal} se muestra la onda triangular con la perturbación, y la curva obtenida para una sonda electroquímica idealmente reversible, luego del filtrado de la componente continua.
+
+	 			 \begin{figure}[ht]
+			  		  \begin{subfigure}[t]{0.495\textwidth}
+			  		  \includegraphics[width=\textwidth]{Graficos/onda-triangular-sin.pdf}
+			  		  \end{subfigure}
+			  		  \begin{subfigure}[t]{0.495\textwidth}
+			  		  \includegraphics[width=\textwidth]{Graficos/ACV-ideal.pdf}
+			  		  \end{subfigure}
+			  		  \caption[Voltamperometria ideal reversible]{Curva de excitación y voltagrama típico para una especie redox reversible.}
+			  		  \label{fig:ACV_ideal}
+			  		  \end{figure}
+	 		
 	 		El propósito de esta técnica fue el obtener el coeficiente de difusión de hexaaminorutenio en sistemas porosos y contrastar con otras técnicas de forma de validar dicho coeficiente y los mecanismos de trasporte propuestos. 
 
 	 \subsection{Simulaciones electroquímicas}\label{simulacion}
 
-	 	Para validar las hipótesis de transporte planteadas en el capitulo \ref{chap:Electroquimica} se llevaron a cabo simulaciones por computadora para voltametrías cíclicas. Las mismas se hicieron con el software  \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual simula las voltametrías utilizando elementos finitos. En la tabla \ref{tabla:simulacion} se resumen las variables utilizados para las simulaciones, sus valores y su descripción.
+	 	 Para validar las hipótesis de transporte planteadas en el capitulo \ref{chap:Electroquimica} se llevaron a cabo simulaciones por computadora para voltametrías cíclicas. Las mismas se hicieron con el software  \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual simula las voltametrías utilizando elementos finitos. En la tabla \ref{tabla:simulacion} se resumen las variables utilizados para las simulaciones, sus valores y su descripción.
 	 	
-	 	\begin{table}[ht!]
+	    	\begin{table}[ht!]
 	 	    \caption[Parámetros de las simulacinoes]{Parámetros y valores de entrada usadas durante las simulaciones de las voltametrías cíclicas.}
 	 	    \begin{tabular}{>{\raggedright\arraybackslash}m{1.4cm}>{\centering\arraybackslash}m{2.8cm}>{\raggedright\arraybackslash}m{6.7cm}} 
 	 	    \toprule
@@ -569,37 +586,19 @@
 			\label{tabla:simulacion}
 			\end{table} 
 
-	 % 	Parametros del Mod elo
-		% h = 200 nm (Espesor del Film)
-		% Cferroceno = 5 mM (concentración ferroceno en bulk)
-		% CRu = 0.5 M (concentración Rutenio en film)
-		% k = variable [unidades M -1 s -1 ] (constante de mediación redox)
-		% E 0 Ru = -0.3 V (potencial redox del rutenio)
-		% E 0 Ferroceno = 0.1 V (potencial redox del ferroceno)
-		% D ferroceno(sol) = 10 -6 cm 2 /s (coeficiente de difusión del ferroceno en solución)
-		% D ferroceno(film) = 10 -10 cm 2 /s (coeficiente de difusión del ferroceno en el film)
-		% D Rutenio(film) = 10 -6 cm 2 /s (coeficiente de electron hopping del rutenio en el film)
-		% v = 0.05 V/s (scan rate)
-	
-	 				
-
-
-% Log del capitulo version final:
-% Wanings: 0
-% Bad blcks: 11. Todos aceptados:
-
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:72 Overfull \hbox (17.79167pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:289 Overfull \hbox (5.44995pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:289 Overfull \hbox (2.57881pt too wide) in paragraph ----> Tabla 
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:290 Overfull \hbox (2.40611pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:291 Overfull \hbox (4.66563pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:291 Overfull \hbox (2.40611pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:292 Overfull \hbox (2.40611pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:296 Overfull \hbox (2.40611pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:0 Underfull \vbox (badness 7925) has occurred while \output is active [] -----> Muy apretada una pagina en sentido vertical, Es la imagen de la oblea V1, sube sobre el encabezado a apenas.
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:0 Underfull \vbox (badness 1406) has occurred while \output is active [] -----> Muy apretada una pagina en sentido vertical, Es la imagen del Sputt, sube apenas sobre el encabezado.
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:536 Overfull \hbox (3.51826pt too wide) in paragraph ----> Tabla
-
-
-%Agregar proceso de modificacion de la superficie. Ver Mail de Ale W:
-%		yo trataría primero la oblea con el Au depositado. Sobre la superficie del oro la idea es adsorber el MPTMS desde una solución en algún \%		solvente que esté lo más seco posible (esto para poder reusarla y demorar la hidrólisis/condensación del MPTMS que debería ser poca). %Solventes: tolueno, sería mi primera elección y la concentración 10 mM de MPTMS debería bastar. La adsroción 2 horas es más que suficiente, \%		enjuagar con acetona, secar con N2 o dejar secar y luego al dip coater.
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:56 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:57 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:58 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:268 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:268 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:269 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:270 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:270 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:271 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:275 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:0 Underfull --> Pagina de la foto de la alineadora, mucho espacio. Aceptable. OK!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:344 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:504 Overfull --> tabla ok!
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:0 Underfull --> Pagina del esquema de la celda --> Aceptable 
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:0 Underfull --> Pagina de la tabla de reactivos --> Aceptable
+% B: /home/gustavo/Dropbox/Tesis/Capitulos/02_materiales.tex:572 Overfull --> tabla ok!

@@ -105,9 +105,9 @@
 
 	%Incluyo Los capitulos
 	\input{Capitulos.indexados/01_introduccion.tex}
-  \input{Capitulos.indexados/02_materiales.tex}%Corregido por Gabriel Marzo 2016 / Visto Ok por Galo  21/4
+  \input{Capitulos.indexados/02_materiales.tex}    % Primera revision intensa. OK!
   \input{Capitulos.indexados/03_mesoporosos.tex}
-	\input{Capitulos.indexados/04_optimizacion.tex}
+	%\input{Capitulos.indexados/04_optimizacion.tex}
   \input{Capitulos.indexados/05_electroquimica.tex}
   \input{Capitulos.indexados/06_microfabricacion.tex}
 	\input{Capitulos.indexados/07_integracion.tex}
@@ -164,80 +164,19 @@
     
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%LOGS 1/12/2016                % 
+%LOGS 6/6/2017                % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Errors: 0 
 
-%Warnings: 11
-%W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Text page 33 contains only floats. --> Ok. Mucho Gráfico.
-% W: /home/gustavo/Dropbox/Tesis/Tesis.aux:0 Label `fig:mascara_v2' multiply defined.
-% W: /home/gustavo/Dropbox/Tesis/Tesis.aux:0 Label `sub@fig:mascara_v2' multiply defined.
-% W: /home/gustavo/Dropbox/Tesis/Tesis.aux:0 Label `fig:mascara_su8' multiply defined.
-% W: /home/gustavo/Dropbox/Tesis/Tesis.aux:0 Label `sub@fig:mascara_su8' multiply defined.
-% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Text page 33 contains only floats.
-% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:116 Reference `sec:intro_fotolito' on page 71 undefined
-% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:116 Reference `sec:intro_fotolito' on page 71 undefined
-% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Text page 76 contains only floats.
-% W: /home/gustavo/Dropbox/Tesis/Tesis.tex:0 File `Tesis.out' has changed.
+%Warnings: 10
+% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:148 Reference `eq:spin' on page 33 undefined
+% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:148 Reference `eq:spin' on page 33 undefined
+% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Text page 35 contains only floats.
+% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_electroquimica.tex:0 \headheight is too small (12.0pt): Make it at least 22.45728pt.
+% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_electroquimica.tex:136 Reference `' on page 73 undefined
+% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_electroquimica.tex:136 Reference `key' on page 73 undefined
+% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_electroquimica.tex:439 Reference `sec:comparcion_bajaT_calcinado' on page 84 undefined
+% W: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_electroquimica.tex:507 Reference `sec:zirconio' on page 85 undefined
+% W: /home/gustavo/Dropbox/Tesis/Tesis.tex:0 Text page 98 contains only floats.
 % W: /home/gustavo/Dropbox/Tesis/Tesis.tex:0 There were undefined references.
-% W: /home/gustavo/Dropbox/Tesis/Tesis.tex:0 There were multiply-defined labels.
-
-%Bad Blocks: 60
-
-%Materiales: Revisado!
-
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:72 Overfull \hbox (17.79167pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:288 Overfull \hbox (5.44995pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:288 Overfull \hbox (2.57881pt too wide) in paragraph ----> Tabla 
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:290 Overfull \hbox (2.40611pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:290 Overfull \hbox (4.66563pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:290 Overfull \hbox (2.40611pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:291 Overfull \hbox (2.40611pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:295 Overfull \hbox (2.40611pt too wide) in paragraph ----> Tabla
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:0 Underfull \vbox (badness 7925) has occurred while \output is active [] -----> Muy apretada una pagina en sentido vertical, Es la imagen de la oblea V1, sube sobre el encabezado a apenas.
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:0 Underfull \vbox (badness 1406) has occurred while \output is active [] -----> Muy apretada una pagina en sentido vertical, Es la imagen del Sputt, sube apenas sobre el encabezado.
-% B: /home/gustavo/Dropbox/Tesis/Capitulos/materiales.tex:538 Overfull \hbox (3.51826pt too wide) in paragraph ----> Tabla
-
-%Mesoporosos: Revisado!
-
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:35 Overfull \hbox (0.6677pt too wide) in paragraph -->OK. Ni se nota
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:100 Underfull \hbox (badness 3291) in paragraph  -->OK. Leyenda. Ni se nota
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:105 Underfull \hbox (badness 2103) in paragraph  -->OK. Leyenda. Ni se nota
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Overfull \vbox (2.41856pt too high) has occurred while \output is active [] ---> La pagina de los Float. Ni se nota.
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:176 Underfull \hbox (badness 10000) in paragraph
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:176 Underfull \hbox (badness 10000) in paragraph ---> Nota al margen
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:176 Underfull \hbox (badness 10000) in paragraph ---> Nota al margen
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:176 Underfull \hbox (badness 2205) in paragraph  ---> Nota al margen
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:176 Underfull \hbox (badness 3088) in paragraph  ---> Nota al margen
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:176 Underfull \hbox (badness 10000) in paragraph ---> Nota al margen 
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:176 Underfull \hbox (badness 1314) in paragraph  ---> Nota al margen
-
-%Optimizacion: 
-
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_optimizacion.tex:44 Overfull \hbox (1.74855pt too wide) in paragraph --> Apenas se nota, revisar al final
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_optimizacion.tex:0 Underfull \vbox (badness 1939) has occurred while \output is active [] --> Imagenes
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_optimizacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active [] -> Imagenes
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_optimizacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []-> Imagenes
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_optimizacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []-> Imagenes
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_optimizacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []-> Imagenes
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_optimizacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []-> Imagenes
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_optimizacion.tex:497 Overfull \hbox (0.76564pt too wide) in paragraph --> Tabla  No se nota
-% B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_optimizacion.tex:548 Underfull \hbox (badness 10000) in paragraph     --> Tabla. No se nota
-
-%Microfabriacacion:
-%B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []  --> Imagenes de la obleas, no se llena la pagina y esta mas alejada del margen superior, aceptada.
-%B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:266 Underfull \hbox (badness 2617) in paragraph --> Aceptado, mucho espacio por las abreviaciones de de las sondas.
-%B: /home/gustavo/Dropbox/Tesis/Tesis.tex:301 Underfull \hbox (badness 1803) in paragraph --> es la leyenda de una VC, no se nota
-
-
-% Bibliografia
-
-% B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:176 Underfull \hbox (badness 1137) in paragraph --> Ok. No se nota, Nicolet
-% B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:210 Underfull \hbox (badness 1137) in paragraph --> Ok. No se nota, The Ellipsometer 
-% B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:388 Underfull \hbox (badness 2478) in paragraph --> Ok. No se nota, Theory, Practice
-% B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:410 Underfull \hbox (badness 2564) in paragraph --> Ok. No se nota, Cyclic Voltammetry
-% B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:410 Underfull \hbox (badness 4084) in paragraph --> Ok. No se nota, Cyclic Voltammetry
-% B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:410 Underfull \hbox (badness 1584) in paragraph --> Ok. No se nota, Cyclic Voltammetry
-% B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:434 Underfull \hbox (badness 2980) in paragraph --> Ok. No se nota, Nanostructures Made
-% B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:536 Underfull \hbox (badness 10000) in paragraph --> Ok. No se nota, Citrate-Capped

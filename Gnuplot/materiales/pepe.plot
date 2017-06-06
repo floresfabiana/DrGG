@@ -1,10 +1,10 @@
 #Para ver en pantalla
-#reset
-#set terminal qt
+reset
+set terminal x11
 
 #Para exportar como latex
-set terminal tikz
-set output "pepe.tikz" 
+#set terminal tikz
+#set output "onda-triangular.tikz" 
 
 #Saco la leyenda
 unset key
@@ -51,8 +51,8 @@ set mytics 2
 #set title "Grafico 1"
 
 #Fuerza a establecer un rango
-set xrange [0:6]
-set yrange [0:50]
+set xrange [0:2]
+set yrange [-1:1]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
 set xtics 1
@@ -75,11 +75,11 @@ set mytics 2
 #Ploteo todas las funciones que les digamos
 
 #Coloca los nombre de los ejes
-set xlabel "Velocidad [m.s$^{-1}$]" font ",14" textcolor rgb "gray40" offset  0,-2
-set ylabel "Temperatura [$^{\\circ}$C]" font ",14" textcolor rgb "gray40" offset  -2,0
+set xlabel "tiempo" font ",14" textcolor rgb "gray40" offset  0,-2
+set ylabel "potencial" font ",14" textcolor rgb "gray40" offset  -2,0
 
 #set style fill transparent solid 0.5 noborder
-plot "data.txt" using 1:2 with lines ls 6
+plot "onda-triangular.txt" using 1:2 with lines ls 6
 #plot "data.txt" using 1:2 smooth bezier with filledcurves y2 ls 6,"data.txt" using 3:4 smooth bezier with filledcurves y2 ls 7
 
 #plot  with filledcurves closed
