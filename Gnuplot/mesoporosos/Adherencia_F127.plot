@@ -61,7 +61,7 @@ red_100 = "#ff0000"
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/}mV$" font ",14" textcolor rgb "gray40" offset  0,-2
+	set xlabel "$\\text{Potencial\\; vs\\; ESC/}$mV" font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
@@ -90,4 +90,7 @@ red_100 = "#ff0000"
 
 #Ploteo todas las funciones que les digamos
 
-plot for [col=3:25] 'Adherencia_F127.txt' using 1:col with lines ls 1, for [au=45:47] 'Adherencia_F127.txt' u 1:au with lines ls 3, 'Adherencia_F127.txt' u 1:2 with lines ls 3
+plot for [col=3:15] 'Adherencia_F127.txt' using 1:col with lines ls 1, 'Adherencia_F127.txt' u 1:2 with lines ls 3
+
+#plot for [col=3:15] 'Adherencia_F127.txt' using 1:col with lines ls 1, for [au=45:47] 'Adherencia_F127.txt' u 1:au with lines ls 3, 'Adherencia_F127.txt' u 1:2 with lines ls 3
+
