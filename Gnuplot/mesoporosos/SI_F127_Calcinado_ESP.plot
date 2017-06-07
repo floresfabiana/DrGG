@@ -29,7 +29,7 @@ set grid back ls 11
 
 
 #Coloca los nombre de los ejes
-set xlabel "Humedad Relativa / \\%HR" font ",14" textcolor rgb "gray40" offset  0,-2
+set xlabel "$\\text{P/P}_s$" font ",14" textcolor rgb "gray40" offset  0,-2
 set ylabel "Espesor / nm" font ",14" textcolor rgb "gray40" offset  -2,0
 
 #Ploteo todas las funciones que les digamos

@@ -3,7 +3,7 @@
 #set terminal x11
 
 #Para exportar como latex
-set terminal tikz 
+set terminal tikz gparrows tikzarrows
 set output "Adherencia_F127.tikz" 
 
 #Saco la leyenda
@@ -25,6 +25,9 @@ red_050 = "#bf0000"
 red_075 = "#e30101"
 red_100 = "#ff0000"
 
+#Flecha
+set style line 100  lc rgbcolor 'black' lw 1.5
+set style arrow 200 head filled size screen 0.03,15 ls 100
 
 #Defino estilos paset style line 2ra cada tipo de linea
 	# set style line 1 lc rgbcolor red_000 pt 1 ps 2 lw 2
@@ -40,6 +43,8 @@ red_100 = "#ff0000"
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
 	set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
+	set style line 8 lc rgb 'red' lt 1 lw 1.5 #Rojo
+	set style line 9 lc rgb 'gray30' lt 1 lw 1.5 #Negro
 
 
 #Estilos de los ejes 
@@ -90,7 +95,17 @@ red_100 = "#ff0000"
 
 #Ploteo todas las funciones que les digamos
 
-plot for [col=3:15] 'Adherencia_F127.txt' using 1:col with lines ls 1, 'Adherencia_F127.txt' u 1:2 with lines ls 3
+#plot for [col=3:15] 'Adherencia_F127.txt' using 1:col with lines ls 1, 'Adherencia_F127.txt' u 1:2 with lines ls 8
+#plot for [col=1:47] 'Adherencia_F127.txt' using 1:col with lines ls 9,
 
-#plot for [col=3:15] 'Adherencia_F127.txt' using 1:col with lines ls 1, for [au=45:47] 'Adherencia_F127.txt' u 1:au with lines ls 3, 'Adherencia_F127.txt' u 1:2 with lines ls 3
+#plot 'Adherencia_F127.txt' u 1:2 with lines ls 9, 'Adherencia_F127.txt' u 1:12 with lines ls 8
 
+plot 'Adherencia_F127.txt' using 1:3 with lines ls 9,\
+'Adherencia_F127.txt' using 1:5 with lines ls 9,\
+'Adherencia_F127.txt' using 1:7 with lines ls 9,\
+'Adherencia_F127.txt' u 1:2 with lines ls 8,\
+'Adherencia_F127-flecha.txt' u 1:2 smooth bezier ls 100, 'Adherencia_F127-flecha.txt' u 5:6:7:8 w vectors arrowstyle 200,\
+'Adherencia_F127-flecha.txt' u 3:4 smooth bezier ls 100, 'Adherencia_F127-flecha.txt' u 9:10:11:12 w vectors arrowstyle 200
+
+
+ #"flecha.txt" u 3:4:($5*3):($6*3) w vectors arrowstyle 200
