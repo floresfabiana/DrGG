@@ -16,7 +16,7 @@ set datafile separator ","
 set multiplot
 
 #Pongo la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+unset key
 
 #Saco el Borde
 unset border
@@ -52,13 +52,15 @@ set size ratio 0.6
 
 #Leyenda de los Picos
 set label "$\\nu_{\\text{\\tiny{C-H}}}$" at 3000,0.01 font ",10" textcolor rgb "gray40"
+set label "SF luego de calcinar" at 4000,-0.03 font ",8" textcolor rgb "black"
+set label "SF antes de calcinar" at 4000,0.13 font ",8" textcolor rgb "black"
 
 #Ploteo todas las funciones que les digamos
-plot "IR_Si_CF127.csv" using ($1):($2+0.12) with lines ls 3 title "PDM@Si-F127 calcinada", "IR_Si_FF127.csv" using 1:2 with lines ls 1 title "PDM@Si-F127  sin calcinar"
+plot "IR_Si_CF127.csv" using ($1):($2+0.12) with lines ls 3, "IR_Si_FF127.csv" using 1:2 with lines ls 1 title "SF antes de calcinar"
 
 #Inset con la extracción
   set size 0.42,0.28
-  set origin 0.15,0.59
+  set origin 0.15,0.68
   set object 1 rectangle from graph 0,0 to graph 1,1 behind fc rgb "white"
   set xrange [3100:2700]
   set tic scale 0.5
