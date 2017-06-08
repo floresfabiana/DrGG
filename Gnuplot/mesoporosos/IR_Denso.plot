@@ -17,7 +17,8 @@ set datafile separator ","
 set multiplot
 
 #Pongo la leyenda
-set key top Left right reverse samplen 3 font ",10" textcolor rgb "gray40"
+unset key
+#set key top Left right reverse samplen 3 font ",10" textcolor rgb "gray40"
 
 #Saco el Borde
 unset border
@@ -64,7 +65,9 @@ set label "$\\nu_{\\text{\\tiny{Si-OH}}}$" at 1010,0.08 font ",10" textcolor rgb
 set label "\\tiny{TO}$_3$" at 1180,0.48 font ",8" textcolor rgb "gray40"
 set label "\\tiny{CO}$_2$" at 2450,0.17 font ",8" textcolor rgb "gray40"
 set label "\\tiny{CO}$_2$" at 2450,0.02 font ",8" textcolor rgb "gray40"
-set label "\\tiny{H$_2$O adsorbida}" at 1900,0.05 font ",8" textcolor rgb "gray40"
+set label "\\tiny{H$_2$O}" at 1700,0.05 font ",8" textcolor rgb "gray40"
+set label "SiO$_2$ denso" at 3800,0.17 font ",8" textcolor rgb "black"
+set label "PDM calcinada" at 3800,0.025 font ",8" textcolor rgb "black"
 
 set arrow from 950,0.055 to 950,0.011 as 3
 
