@@ -125,13 +125,16 @@
  %Saco marcas laterales de los Capitulos
  \RemoveLabelsCap
 
- %Incluyo una lista de siglas y abreviaturas para usar luego
+ %Incluyo una lista de siglas y abreviaturas para usar luego, es la base de datos solamente
  \input{PostCapitulos/siglas.tex}
+ 
+ %Incluyo el Anexo A: información suplementaria
+ \input{PostCapitulos/suplementaria.tex}
 
- %Incluyo el Anexo A: siglas y abreviaturas
+ %Incluyo el Anexo B: siglas y abreviaturas
  \input{PostCapitulos/abreviaturas.tex}
 
- %Incluyo el Anexo B: abreviaturas
+ %Incluyo el Anexo C: abreviaturas
  \input{PostCapitulos/publicaciones.tex}
 
  %Incluyo las Referencias

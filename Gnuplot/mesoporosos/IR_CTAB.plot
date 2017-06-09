@@ -10,13 +10,13 @@ set output "IR_CTAB.tikz"
 set datafile separator ","
 
 #Saco la leyenda
-#unset key
+unset key
 
 #Hago el inset
 set multiplot
 
 #Pongo la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+#set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
 
 #Saco el Borde
 unset border
@@ -55,13 +55,15 @@ set size ratio 0.6
 
 #Leyenda de los Picos
 set label "$\\nu_{\\text{\\tiny{C-H}}}$" at 3000,0.05 font ",10" textcolor rgb "gray40"
+set label "SC luego de calcinar" at 4000,0.24 font ",8" textcolor rgb "black"
+set label "SC antes de calcinar" at 4000,0.02 font ",8" textcolor rgb "black"
 
 #Ploteo todas las funciones que les digamos
 plot "IR_Si_CCTAB.csv" using ($1):($2+0.16) with lines ls 3 title "PDM@Si-CTAB calcinada", "IR_Si_FCTAB.csv" using 1:2 with lines ls 1 title "PDM@Si-CTAB  sin calcinar"
 
 #Inset con la extracción
   set size 0.42,0.28
-  set origin 0.15,0.58
+  set origin 0.15,0.68
   set object 1 rectangle from graph 0,0 to graph 1,1 behind fc rgb "white"
   set xrange [3000:2800]
   set tic scale 0.5

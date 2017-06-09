@@ -1,9 +1,12 @@
 \cleardoublepage\phantomsection
-\phantomsection\mtcaddchapter[Anexo A: siglas y abreviaturas]
-\FormatoAnexoA
+\phantomsection\mtcaddchapter[Anexo B: siglas y abreviaturas]
+\FormatoAnexoB
+
+%Saco marcas laterales del cap anterior
+\RemoveLabelsAxUno
 
 %Agrego las marcas laterales
-\AddLabelsAxUno
+\AddLabelsAxDos
 
 %Problemas con el tema del fancystyle
 \let\originalstyle=\thispagestyle            % Store the command for later reuse.
@@ -11,7 +14,7 @@
 \def\thispagestyle#1{\originalstyle{empty}} % Use this to get blank header+footer, TeXnically it is only \thispagestyle{empty}.
 \def\thispagestyle#1{}                       % This line completely ignores the content of the \thispagestyle command.
 
-\chapter*{Anexo A: siglas y abreviaturas}
+\chapter*{Anexo B: siglas y abreviaturas}
 
 \noindent Lista de siglas y abreviaturas recurrentes utilizadas en este trabajo, listadas por orden alfabético.
 \vspace*{0.6cm}

@@ -1,12 +1,12 @@
 \cleardoublepage\phantomsection
-\phantomsection\mtcaddchapter[Anexo B: publicaciones]
-\FormatoAnexoB
+\phantomsection\mtcaddchapter[Anexo C: publicaciones]
+\FormatoAnexoC
 
 %Saco marcas laterales del cap anterior
-\RemoveLabelsAxUno
+\RemoveLabelsAxDos
 
 %Agrego las marcas laterales
-\AddLabelsAxDos
+\AddLabelsAxTres
 
 %Problemas con el tema del fancystyle
 \let\originalstyle=\thispagestyle            % Store the command for later reuse.
@@ -14,7 +14,7 @@
 \def\thispagestyle#1{\originalstyle{empty}} % Use this to get blank header+footer, TeXnically it is only \thispagestyle{empty}.
 \def\thispagestyle#1{}                       % This line completely ignores the content of the \thispagestyle command.
 
-\chapter*{Anexo B: publicaciones}
+\chapter*{Anexo C: publicaciones}
 
   \noindent Las siguientes publicaciones fueron derivas del presente trabajo de tesis, las mismas se listan en orden cronologico.
 

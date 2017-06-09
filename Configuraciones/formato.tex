@@ -153,7 +153,7 @@
 				\end{tikzpicture}
 			}		
 	 		{20pt}  	    				 %Separación Etiqueta/Texto                
-	 		{\vspace*{-0.15cm}}              %Codigo anterior
+	 		{\vspace*{-1.05cm}}              %Codigo anterior
 	 		[]   				 %Codigo Posteior
 	 }
 	 \newcommand{\FormatoAnexoB}{
@@ -161,6 +161,19 @@
 			{\Huge\filleft\scshape\color{grisoscuro}}      	 %Formato para etiqueta y texto
 	 		{\begin{tikzpicture}[remember picture,overlay] 						 %Cuadrado con el numero
 				\node[at={($(\NumCapX,\NumCapY)$)},anchor=center,font=\rmfamily\fontsize{300pt}{0pt}\bf\selectfont\color{grisoscuro},opacity=0.2] (texto) {\textit{B}};
+				\node at (-12.16,-2) {\rule{25cm}{0.5mm}};
+				\end{tikzpicture}
+			}		
+	 		{20pt}  	    				 %Separación Etiqueta/Texto                
+	 		{\vspace*{-0.15cm}}              %Codigo anterior
+	 		[]   				 %Codigo Posteior
+	 }
+
+	  \newcommand{\FormatoAnexoC}{
+	 		\titleformat{name=\chapter,numberless}[display]						 %Sin Numerar
+			{\Huge\filleft\scshape\color{grisoscuro}}      	 %Formato para etiqueta y texto
+	 		{\begin{tikzpicture}[remember picture,overlay] 						 %Cuadrado con el numero
+				\node[at={($(\NumCapX,\NumCapY)$)},anchor=center,font=\rmfamily\fontsize{300pt}{0pt}\bf\selectfont\color{grisoscuro},opacity=0.2] (texto) {\textit{C}};
 				\node at (-12.16,-2) {\rule{25cm}{0.5mm}};
 				\end{tikzpicture}
 			}		
@@ -193,6 +206,7 @@
 	 \newif\ifMaterialCap
 	 \newif\ifMaterialAxUno
 	 \newif\ifMaterialAxDos
+	 \newif\ifMaterialAxTres
 	 \newif\ifMaterialBib
 	 \newif\ifMaterialAlf
 
@@ -330,6 +344,38 @@
 	 	\else\relax\fi}
 	 	}
 	
+	%Con \AddLabelsAxDos se agregan los indicaroes laterales Anexo C
+	 \newcommand\AddLabelsAxTres{
+	 \MaterialAxTrestrue
+	 \AddEverypageHook{
+	 	\ifMaterialAxTres
+	 		\ifodd\value{page}
+  				\backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				  \begin{tikzpicture}[remember picture,overlay] 
+	 					\node[at={($(\PosVertical,-\PosHorizontal)-(\thechapter+2,0)$)}] % Las coordenadas son (y,-x)
+	 					(cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 					\node[at={($(cuadrado.center)+(0,0.2)$)},anchor=center,font=\large\filleft\scshape,text=white](texto) {Anexo C};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\else
+	 				 \backgroundsetup{
+	 				  angle=90, %Ojo!! Invierte las coordenadas!!
+	 				  contents={
+	 				    \begin{tikzpicture}[remember picture,overlay] 
+	 				    \node[at={($(\PosVertical,\PosHorizontal)-(\thechapter+2,0)$)}]  % Las coordenadas son (y,-x)
+	 				    (cuadrado) {\tikz {\draw[draw=none,fill=grisoscuro] (0,0) rectangle ++(3,1);} };
+	 				    \node[at={($(cuadrado.center)+(0,-0.2)$)},anchor=center,font=\large\filleft\scshape,text=white] (texto) {Anexo C};
+	 					\end{tikzpicture}
+	 				  }
+	 				 }
+  			\fi
+	 	\BgMaterial
+	 	\else\relax\fi}
+	 	}
+	 	
 	%Con \AddLabelsBib se agregan los indicaroes laterales para la bibliografia
 	 \newcommand\AddLabelsBib{
 	 \MaterialBibtrue
