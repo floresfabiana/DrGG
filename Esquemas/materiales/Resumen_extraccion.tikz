@@ -18,7 +18,7 @@
     \node [block2, right of=bloque1] (bloque2) {\textbf{Calentamiento} \SI{60}{\celsius}, \SI{1}{\hour}};
     \node [block3, right of=bloque2] (bloque3) {\textbf{Calentamiento} \SI{130}{\celsius}, \SI{1}{\hour}};
        
-    \node [block4, right of=bloque3,xshift=1.1cm] (bloque4) {\textbf{Básico} Atmósfera NH$_3$, \SI{10}{\min}};
+    \node [block4, right of=bloque3,xshift=1.1cm] (bloque4) {\textbf{Alcalino} Atmósfera NH$_3$, \SI{10}{\min}};
     \node [block4, below of=bloque4,node distance=-2.2cm] (bloque5) {\textbf{Ácido} Atmósfera HCl, \SI{10}{\min}};
     \node [block4, below of=bloque5,node distance=-2.2cm] (bloque6) {\textbf{Prolongado}  \SI{130}{\celsius}, \SI{7}{\day}};
     \node [block4, above of=bloque4,node distance=-2.2cm] (bloque7) {\textbf{Vacío} \SI{1e-5}{\milli\bar} \SI{130}{\celsius},7d};
