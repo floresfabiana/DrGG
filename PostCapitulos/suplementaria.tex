@@ -11,20 +11,20 @@
 \def\thispagestyle#1{\originalstyle{empty}} % Use this to get blank header+footer, TeXnically it is only \thispagestyle{empty}.
 \def\thispagestyle#1{}                       % This line completely ignores the content of the \thispagestyle command.
 
-%Esto cambia el contador de las figuras para que coloque la letra del apendice
+%Esto cambia el contador de las figuras para que coloque la letra del apéndice
 \renewcommand\thefigure{A.\arabic{figure}} 
 
+%Nombre del Anexo
 \chapter*{Anexo A: información suplementaria}
-  
-  
+    
     Se agregan en éste anexo los gráficos, imágenes y espectros que fueron apartados del cuerpo principal de la tesis. 
 
     \subsection*{Figuras correspondientes al capitulo \ref{chap:Mesoporosos}}
 
     %Simplificado
 
-    	%Microscopia F127 Simplificado
-      \begin{figure}[th]
+     %Microscopia F127 Simplificado
+      	   \begin{figure}[th]
 		 	   	    \begin{subfigure}[t]{0.49\textwidth}
 			       	\includegraphics[width=\textwidth]{Imagenes/Au_EtF127-Combinada.jpg}
 			   		\end{subfigure}
@@ -35,8 +35,8 @@
 					 \label{fig:Microscopia_F127_simplificado}	
 				     \end{figure}		
 	
-		%Microscopia CTAB Simplificado
-	  \begin{figure}[th]
+	 %Microscopia CTAB Simplificado
+	     \begin{figure}[th]
  	   	    \begin{subfigure}[t]{0.49\textwidth}
 	       	\includegraphics[width=\textwidth]{Imagenes/Au_EtCTAB-Combinada.jpg}
 	   		\end{subfigure}
@@ -47,7 +47,7 @@
 			 \label{fig:Microscopia_CTAB_simplificado}	
 		     \end{figure}	
 
-		%Elipso F127 Simplificaco	     
+	 %Elipso F127 Simplificaco	     
 	 \begin{figure}[th]
 			  	\begin{subfigure}[t]{0.495\textwidth}
 			  	\includegraphics[width=\textwidth]{Graficos/SI_F127_simplificado_EPA.pdf}
@@ -63,7 +63,7 @@
 				\label{fig:F127_simplificado}
 				\end{figure}
 	
-		%Elipso CTAB Simplificad
+	 %Elipso CTAB Simplificad
 	 \begin{figure}[!ht]	
 			\begin{subfigure}[t]{0.495\textwidth}
 		  	\includegraphics[width=\textwidth]{Graficos/SI_CTAB_simplificado_EPA.pdf}
@@ -78,7 +78,7 @@
 			\caption[Elipsoporosimetría \pdmC\space tratamiento simplificado.]{Resultados de elipsoporosimetría ambiental para una \pdmC\space sintetizada por el tratamientos simplificado.}
 			\end{figure}			
 
-		%FTIR Simplificado		
+	 %FTIR Simplificado		
 	 \begin{figure}[ht]
 				\begin{center}
 				\includegraphics[width=0.75\textwidth]{Graficos/IR_F127_simplificado.pdf}
@@ -87,7 +87,7 @@
 				\end{center}
 				\end{figure}
 
-		%FTIR Simplificado
+	 %FTIR Simplificado
 	 \begin{figure}[!ht]
 			\begin{center}
 			\includegraphics[width=0.75\textwidth]{Graficos/IR_CTAB_simplificado.pdf}
@@ -171,4 +171,79 @@
 			\end{center}
 			\end{figure}		
 
-  \let\thispagestyle=\originalstyle
+	%Vacio
+
+		%Microscopias F127
+		 \begin{figure}[!th]
+	 	   	    \begin{subfigure}[t]{0.49\textwidth}
+		       	\includegraphics[width=\textwidth]{Imagenes/Au_130VF127-Combinada.jpg}
+		   		\end{subfigure}
+		   		\begin{subfigure}[t]{0.49\textwidth}
+		   	    \includegraphics[width=\textwidth]{Imagenes/Si_130VF127-Combinada.jpg}
+		   		\end{subfigure}
+				 \caption[Microscopía óptica \pdmF\space tratamiento vacío.]{Microscopías ópticas para \pdmF\space sintetizadas por el tratamiento de condensación y extracción por alto vacío. Izquierda: sobre sustrato de Au. Derecha: sobre sustrato de Si. En los respectivos recuadros se observa el detalle por MEB del arreglo nanoporoso.}
+				 \label{fig:Microscopia_F127_vacio}	
+			     \end{figure}	
+
+		%Microscopias CTAB
+		 \begin{figure}[!th]
+		 	   	    \begin{subfigure}[t]{0.49\textwidth}
+			       	\includegraphics[width=\textwidth]{Imagenes/Au_130VCTAB-Combinada.jpg}
+			   		\end{subfigure}
+			   		\begin{subfigure}[t]{0.49\textwidth}
+			   	    \includegraphics[width=\textwidth]{Imagenes/Si_130VCTAB-Combinada.jpg}
+			   		\end{subfigure}
+					 \caption[Microscopía óptica \pdmC tratamiento vacío.]{Microscopías ópticas para \pdmC\space sintetizadas por el tratamiento en alto vacío. Izquierda: sobre sustrato de Au. Derecha: sobre sustrato de Si.}
+					 \label{fig:Microscopia_CTAB_vacio}	
+				     \end{figure}		 	    
+
+		%Elipso F127
+		   \begin{figure}[!ht]
+			  	\begin{subfigure}[t]{0.495\textwidth}
+			  	\includegraphics[width=\textwidth]{Graficos/SI_F127_vacio_EPA.pdf}
+				\caption{Elipsoporosimetría de una \pdmF\space tratamiento 7 días en alto vacío.}
+				\label{fig:F127_vacio_EPA}
+				\end{subfigure}
+				\begin{subfigure}[t]{0.495\textwidth}
+			  	\includegraphics[width=\textwidth]{Graficos/SI_F127_vacio_PSD.pdf}
+				\caption{Distribución de tamaño de poro y cuello.\\ }
+				\label{fig:F127_vacio_PSD}
+				\end{subfigure}
+				\caption[Elipsoporosimetría \pdmF\space tratamiento alto vacío.]{Resultados de elipsoporosimetría ambiental para una \pdmF\space sintetizada por el tratamientos prolongado, 7 días a \SI{130}{\celsius} en alto vacío (P=\SI{1e-5}{\milli\bar}).}
+				\end{figure}
+		
+		%Elipso CTAB
+		  \begin{figure}[!ht]
+		  	\begin{subfigure}[t]{0.495\textwidth}
+		  	\includegraphics[width=\textwidth]{Graficos/SI_CTAB_vacio_EPA.pdf}
+			\caption{Elipsoporsimetría de una \pdmC\space Tratamiento 7 días alto vacío.}
+			\label{fig:CTAB_vacio_EPA}
+			\end{subfigure}
+			\begin{subfigure}[t]{0.495\textwidth}
+		  	\includegraphics[width=\textwidth]{Graficos/SI_CTAB_vacio_PSD.pdf}
+			\caption{Distribución de tamaño de poro y cuello.\\ }
+			\label{fig:CTAB_vacio_PSD}
+			\end{subfigure}
+			\caption[Elipsoporosimetría \pdmC\space tratamiento alto vacío.]{Resultados de elipsoporosimetría ambiental para una \pdmC\space sintetizada por el tratamientos prolongado, 7 días a \SI{130}{\celsius} en alto vacío (P=\SI{1e-5}{\milli\bar}).}
+			\end{figure} 	
+		
+		%FTIR F127
+         \begin{figure}[!ht]
+			 	\begin{center}
+			 	\includegraphics[width=0.75\textwidth]{Graficos/IR_F127_vacio.pdf}
+			 	\caption[FTIR \pdmF\space tratamiento prolongado.]{Espectro de absorción de IR correspondiente a una \pdmF\space sintetizada por el tratamiento prolongado en alto vacío, antes y después de la extracción con 2-propanol.}
+			 	\label{fig:IR_F127_vacio}
+			 	\end{center}
+			 	\end{figure}
+						
+		%FTIR CTAB
+		 \begin{figure}[!ht]
+			 	\begin{center}
+			 	\includegraphics[width=0.75\textwidth]{Graficos/IR_CTAB_vacio.pdf}
+			 	\caption[FTIR \pdmC\space tratamiento prolongado.]{Espectro de absorción de IR correspondiente a una \pdmC\space sintetizada por el tratamiento prolongado en alto vacío, antes y después de la extracción con 2-propanol.}
+			 	\label{fig:IR_CTAB_vacio}
+			 	\end{center}
+			 	\end{figure}
+
+%Restituye el estilo
+\let\thispagestyle=\originalstyle
