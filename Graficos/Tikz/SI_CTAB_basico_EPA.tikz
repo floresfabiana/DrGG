@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 12 jun 2017 12:31:39 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Mon Jun 12 20:33:12 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -209,10 +209,10 @@
 \draw[gp path] (10.535,8.381)--(10.355,8.381);
 \node[gp node left] at (10.719,8.381) {$50$};
 \draw[gp path] (1.872,8.381)--(1.872,1.601)--(10.535,1.601)--(10.535,8.381);
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {'Indice de refracci'on};
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (11.792,4.991) {\% Volumen Poroso};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.203,0.215) {$\text{P/P}_s$};
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,8.047) {Adsorci'on};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {'Indice de refracci'on};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (11.792,4.991) {\% Volumen Poroso};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.203,0.215) {$\text{P/P}_s$};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,8.047) {Adsorci'on};
 \gpcolor{rgb color={0.502,0.000,0.000}}
 \gpsetlinewidth{2.00}
 \draw[gp path] (2.240,8.047)--(2.972,8.047);
@@ -249,7 +249,7 @@
 \gppoint{gp mark 7}{(9.707,8.076)}
 \gppoint{gp mark 7}{(2.606,8.047)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.739) {Desorci'on};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,7.739) {Desorci'on};
 \gpcolor{rgb color={1.000,0.271,0.000}}
 \draw[gp path] (2.240,7.739)--(2.972,7.739);
 \draw[gp path] (9.707,8.076)--(9.383,8.050)--(9.001,8.034)--(8.649,8.019)--(8.297,8.001)%
