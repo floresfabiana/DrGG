@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 12 jun 2017 12:42:59 ART
+%% mar 13 jun 2017 09:43:14 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -136,7 +136,7 @@
 \node[gp node center] at (1.136,1.440) {$4000$};
 \draw[gp path] (1.136,8.234)--(1.136,1.748)--(11.947,1.748);
 \node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {Absorbancia / u. a.};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.541,0.362) {N'umero de ondas / cm$^{-1}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.541,0.362) {N'umero de onda / cm$^{-1}$};
 \node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.420,7.900) {PDM@Si-CTAB sin extraer};
 \gpcolor{rgb color={0.502,0.000,0.000}}
 \gpsetlinewidth{1.20}

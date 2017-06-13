@@ -21,14 +21,21 @@
    \usepackage{wrapfig}
 
    %paquete para lenguaje matematico y símbolos
-   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel,esint}
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel,esint,pifont}
+    \newcommand{\cmark}{\ding{51}} %Tilde de correcto
+    \newcommand{\xmark}{\ding{55}} %Cruz de equivocado
 
    % Paquete para poner colores
    \usepackage[usenames,dvipsnames]{xcolor}
 
    %Para la justificación, formato y texto de los caption de las figuritas y tablas
    \usepackage{caption}
-
+   
+   %Para que me coloque el primer float justo al tope de pagina
+    \makeatletter
+    \setlength{\@fptop}{0pt}
+    \makeatother
+    
    %Paquete para poder poner imagenes una al lado de la otra
    \usepackage{subcaption}
    
@@ -57,7 +64,7 @@
    %Yo lo use para Cambiar el nombre de la Bibliografia
    \usepackage{etoolbox}
    
-   %Para Tablas multicolumnas, multifilas
+   %Para Tablas multicolumnas, multifilas y tablas largas
    \usepackage{multirow,multicol,array} 
 
    %Para rota Texto
