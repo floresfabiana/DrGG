@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mié 14 jun 2017 15:03:10 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Wed Jun 14 17:59:17 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -197,9 +197,9 @@
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
 \node[gp node center] at (11.947,1.293) {$1$};
 \draw[gp path] (1.872,8.381)--(1.872,1.601)--(11.947,1.601)--(11.947,8.381);
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {'Indice de refracci'on};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\text{P/P}_s$};
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,8.047) {SimSC};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {'Indice de refracci'on};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\text{P/P}_s$};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,8.047) {SimSC};
 \gpsetlinewidth{1.00}
 \draw[gp path] (2.240,8.047)--(2.972,8.047);
 \draw[gp path] (1.888,4.177)--(1.888,4.283)--(2.086,4.501)--(2.721,4.667)--(3.338,4.821)%
@@ -264,7 +264,7 @@
 \gppoint{gp mark 11}{(1.888,4.294)}
 \gppoint{gp mark 11}{(1.888,4.143)}
 \gppoint{gp mark 11}{(1.888,4.136)}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.739) {ProSC};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,7.739) {ProSC};
 \gpcolor{rgb color={1.000,0.000,1.000}}
 \draw[gp path] (2.240,7.739)--(2.972,7.739);
 \draw[gp path] (1.888,2.309)--(1.888,2.392)--(2.159,2.584)--(2.780,2.723)--(3.346,2.867)%
@@ -329,7 +329,7 @@
 \gppoint{gp mark 13}{(1.888,2.260)}
 \gppoint{gp mark 13}{(1.888,2.260)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.431) {VacSC};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,7.431) {VacSC};
 \gpcolor{rgb color={1.000,0.000,0.000}}
 \draw[gp path] (2.240,7.431)--(2.972,7.431);
 \draw[gp path] (1.889,2.256)--(1.888,2.366)--(2.080,2.607)--(2.720,2.829)--(3.337,3.066)%
@@ -394,7 +394,7 @@
 \gppoint{gp mark 7}{(1.889,2.117)}
 \gppoint{gp mark 7}{(1.888,2.113)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.123) {'AciC};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,7.123) {'AciC};
 \gpcolor{rgb color={1.000,0.647,0.000}}
 \draw[gp path] (2.240,7.123)--(2.972,7.123);
 \draw[gp path] (1.888,2.806)--(1.888,2.927)--(2.084,3.187)--(2.714,3.379)--(3.320,3.578)%
@@ -459,7 +459,7 @@
 \gppoint{gp mark 9}{(1.888,2.720)}
 \gppoint{gp mark 9}{(1.888,2.716)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,6.815) {AlcSC};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,6.815) {AlcSC};
 \gpcolor{rgb color={0.647,0.165,0.165}}
 \draw[gp path] (2.240,6.815)--(2.972,6.815);
 \draw[gp path] (1.889,2.155)--(1.888,2.268)--(2.080,2.561)--(2.717,2.806)--(3.327,3.055)%
@@ -524,7 +524,7 @@
 \gppoint{gp mark 5}{(1.889,1.959)}
 \gppoint{gp mark 5}{(1.888,1.951)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,6.507) {CalSC};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (3.156,6.507) {CalSC};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{2.50}
 \draw[gp path] (2.240,6.507)--(2.972,6.507);
