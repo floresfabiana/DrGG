@@ -34,13 +34,9 @@ red_100 = "#ff0000"
 	# set style line 4 lc rgbcolor red_075 pt 1 ps 2 lw 2
 	# set style line 5 lc rgbcolor red_100 pt 1 ps 2 lw 2
 	# set style line 6 lc rgbcolor 'red' lt -1 pt -1
-	set style line 1 lc rgb 'salmon' lt 1 lw 0.1 #Marron
+	set style line 1 lc rgb 'gray70' lt 1 lw 0.5 #Marron
 	set style line 2 lc rgb 'red' lt 1 lw 2.5 #ROjo
-	set style line 3 lc rgb '#ff4500' lt 1 lw 2 #Naranja
-	set style line 4 lc rgb '#ffa500' lt 1 lw 2 #Amarillo
-	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
-	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
-	set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
+	set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
@@ -99,7 +95,8 @@ red_100 = "#ff0000"
 #Ploteo todas las funciones que les digamos
 plot "Au F127 INTI BajaT Ru1mM.txt" using ($1):($2/0.0314) every 3 with lines ls 1, \
 "Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every 3 with lines ls 1, \
-"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every ::61633::63033  with lines ls 2, \
+"Au F127 INTI BajaT Ru1mM.txt" using ($1):($2/0.0314) every ::1::1400 with lines ls 2, \
+"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every ::61633::63033  with lines ls 3, \
 #"Au F127 INTI BajaT Ru1mM.txt" using ($7):($8/0.0314) every 10 with lines ls 1, \
 #"Au F127 INTI BajaT Ru1mM.txt" using ($9):($10/0.0314) every 10 with lines ls 1, \
 #"Au F127 INTI BajaT Ru1mM.txt" using ($11):($12/0.0314) every 10 with lines ls 1, \

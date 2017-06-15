@@ -10,13 +10,13 @@ set output "IR_CTAB_simplificado.tikz"
 set datafile separator ","
 
 #Saco la leyenda
-#unset key
+unset key
 
 #Para hacer los inset
 set multiplot
 
 #Pongo la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+#set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
 
 #Saco el Borde
 unset border
@@ -52,6 +52,9 @@ set size ratio 0.6
 
 #Leyenda de los Picos
 #set label "$\\nu_{\\text{\\tiny{C-H}}}$" at 3000,0.05 font ",10" textcolor rgb "gray40"
+set label "SimSC extraído" at 4000,0.15 font ",8" textcolor rgb "black"
+set label "SimSC s/extraer" at 4000,-0.05 font ",8" textcolor rgb "black"
+
 
 #Ploteo todas las funciones que les digamos
 plot "Si_EtCTAB.CSV" using ($1):($2-0.1) with lines ls 1 title "PDM@Si-CTAB sin extraer", "Si_EtCTAB_extraido.CSV" using 1:($2+0.1) with lines ls 3 title "PDM@Si-CTAB extraido"
@@ -59,7 +62,7 @@ plot "Si_EtCTAB.CSV" using ($1):($2-0.1) with lines ls 1 title "PDM@Si-CTAB sin 
 
 #Inset con la extracción
   set size 0.42,0.28
-  set origin 0.15,0.59
+  set origin 0.15,0.65
   set object 1 rectangle from graph 0,0 to graph 1,1 behind fc rgb "white"
   #set object 1 rectangle from screen 0.2,0.6 to screen 0.5,0.9 fillcolor rgb "green"
   #set title 'detalle de la zona recuadrada' font ",8" textcolor rgb "gray40"

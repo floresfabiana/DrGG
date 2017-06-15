@@ -10,13 +10,13 @@ set output "IR_CTAB_vacio.tikz"
 set datafile separator ","
 
 #Saco la leyenda
-#unset key
+unset key
 
 #Hago el inset
 set multiplot
 
 #Pongo la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+#set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
 
 #Saco el Borde
 unset border
@@ -55,13 +55,16 @@ set size ratio 0.6
 
 #Leyenda de los Picos
 #set label "$\\nu_{\\text{\\tiny{C-H}}}$" at 3000,0.05 font ",10" textcolor rgb "gray40"
+#set label "$\\nu_{\\text{\\tiny{C-H}}}$" at 3000,0.05 font ",10" textcolor rgb "gray40"
+set label "VacSC extraído" at 4000,0.22 font ",8" textcolor rgb "black"
+set label "VacSC s/extraer" at 4000,0.014 font ",8" textcolor rgb "black"
 
 #Ploteo todas las funciones que les digamos
 plot "Si_130VCTAB.CSV" using ($1):($2) with lines ls 1 title "PDM@Si-CTAB sin extraer", "Si_130VCTAB_extraido.CSV" using 1:($2+0.13) with lines ls 3 title "PDM@Si-CTAB extraido"
 
 #Inset con la extracción
   set size 0.42,0.28
-  set origin 0.15,0.55
+  set origin 0.15,0.65
   set object 1 rectangle from graph 0,0 to graph 1,1 behind fc rgb "white"
   set xrange [3000:2800]
   set tic scale 0.5

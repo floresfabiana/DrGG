@@ -10,13 +10,13 @@ set output "IR_F127_vacio_AGUA.tikz"
 set datafile separator ","
 
 #Saco la leyenda
-#unset key
+unset key
 
 #Hago el inset
 set multiplot
 
 #Pongo la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+#set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
 
 #Saco el Borde
 unset border
@@ -56,13 +56,18 @@ set size ratio 0.6
 
 #Leyenda de los Picos
 #set label "$\\nu_{\\text{\\tiny{C-H}}}$" at 3000,0.05 font ",10" textcolor rgb "gray40"
+set label "VacSF extraído + H$_2$O" at 4000,0.15 font ",8" textcolor rgb "black"
+set label "VacSF extraído" at 4000,0.07 font ",8" textcolor rgb "black"
+set label "VacSF s/extraer" at 4000,-0.0 font ",8" textcolor rgb "black"
 
 #Ploteo todas las funciones que les digamos
-plot "Si_130VF127.CSV" using ($1):($2) with lines ls 1 title "PDM@Si-F127 sin extraer", "Si_130VF127_extraido.CSV" using 1:($2+0.02) with lines ls 5 title "PDM@Si-F127 extraido 2-propanol", "Si_F127_T130V_7d_Tratamiento_Agua_Acida.CSV" using 1:($2+0.05) with lines ls 3 title "PDM@Si-F127 extraido agua ácida"
+plot "Si_130VF127.CSV" using ($1):($2) with lines ls 1 title "PDM@Si-F127 sin extraer",\
+"Si_130VF127_extraido.CSV" using 1:($2+0.032)  with lines ls 5 title "PDM@Si-F127 extraido 2-propanol",\
+"Si_F127_T130V_7d_Tratamiento_Agua_Acida.CSV" using 1:($2+0.09) with lines ls 3 title "PDM@Si-F127 extraido agua ácida"
 
 #Inset con la extracción
   set size 0.42,0.28
-  set origin 0.17,0.57
+  set origin 0.17,0.68
   set object 1 rectangle from graph 0,0 to graph 1,1 behind fc rgb "white"
   set xrange [3100:2700]
   set tic scale 0.5
@@ -78,5 +83,7 @@ plot "Si_130VF127.CSV" using ($1):($2) with lines ls 1 title "PDM@Si-F127 sin ex
   unset label
   unset arrow
   unset key
-  plot "Si_130VF127.CSV" using 1:($2) with lines ls 1 title "PDM@Si-CTAB sin extraer", "Si_130VF127_extraido.CSV" using 1:($2-0.035) with lines ls 5 title "PDM@Si-F127 extraido", "Si_F127_T130V_7d_Tratamiento_Agua_Acida.CSV" using 1:($2-0.053) with lines ls 3 title "PDM@Si-F127 extraido agua ácida"
+  plot "Si_130VF127.CSV" using 1:($2) with lines ls 1 title "PDM@Si-CTAB sin extraer",\
+   "Si_130VF127_extraido.CSV" using 1:($2-0.035) with lines ls 5 title "PDM@Si-F127 extraido",\
+   "Si_F127_T130V_7d_Tratamiento_Agua_Acida.CSV" using 1:($2-0.053) with lines ls 3 title "PDM@Si-F127 extraido agua ácida"
   unset multiplot
