@@ -4,7 +4,7 @@
 #set terminal aqua
 
 #Para exportar como latex
-set terminal tikz
+set terminal tikz gparrows tikzarrows
 set output "Ru-F127-CNEA-Calcinado-0-1.tikz" 
 
 #Saco la leyenda
@@ -55,6 +55,9 @@ red_100 = "#ff0000"
 	set style line 11 lc rgb 'gray20' lt 0 lw 1 
 	set grid back ls 11
 
+#Flecha
+set style line 100  lc rgbcolor 'black' lw 1.5
+set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
 	#set ytics 10 
@@ -104,6 +107,11 @@ red_100 = "#ff0000"
 plot "Au CNEA F127 Calcinado Ru0.1mM.txt" using ($1):($2/0.0314) every 2 with lines ls 1, \
 "Au CNEA F127 Calcinado Ru0.1mM.txt" using ($1):($2/0.0314) every ::1::1400 with lines ls 2, \
 "Au CNEA F127 Calcinado Ru0.1mM.txt" using ($3):($4/0.0314) every ::1::1400 with lines ls 3, \
+"Flecha-CNEA-Calcinado-0-1mM.txt" using 1:2 smooth bezier ls 100,\
+"Flecha-CNEA-Calcinado-0-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200,\
+"Flecha2-CNEA-Calcinado-0-1mM.txt" using 1:2 smooth bezier ls 100,\
+"Flecha2-CNEA-Calcinado-0-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200,\
+
 #"datos-Au-calciando-INTI-CNEA.txt" using ($5):($6/0.0314) with lines ls 3, \
 #"datos-Au-calciando-INTI-CNEA.txt" using ($7):($8/0.0314) with lines ls 3, \
 #"datos-Au-calciando-INTI-CNEA.txt" using ($9):($10/0.0314) with lines ls 3, \

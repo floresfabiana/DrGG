@@ -4,7 +4,7 @@
 #set terminal aqua
 
 #Para exportar como latex
-set terminal tikz
+set terminal tikz gparrows tikzarrows
 set output "Ru-F127-INTI-BajaT-1.tikz" 
 
 #Saco la leyenda
@@ -38,6 +38,10 @@ red_100 = "#ff0000"
 	set style line 2 lc rgb 'red' lt 1 lw 2.5 #ROjo
 	set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
 
+#Flecha
+set style line 100  lc rgbcolor 'black' lw 1.5
+set style arrow 200 head filled size screen 0.02,10 ls 100
+
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
@@ -62,7 +66,7 @@ red_100 = "#ff0000"
 
 #Fuerza a establecer un rango
 	 
-	#set xrange [20:70]
+	set xrange [-600:100]
 	#set yrange [10:60]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
@@ -96,7 +100,13 @@ red_100 = "#ff0000"
 plot "Au F127 INTI BajaT Ru1mM.txt" using ($1):($2/0.0314) every 3 with lines ls 1, \
 "Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every 3 with lines ls 1, \
 "Au F127 INTI BajaT Ru1mM.txt" using ($1):($2/0.0314) every ::1::1400 with lines ls 2, \
-"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every ::61633::63033  with lines ls 3, \
+"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every ::61633::63033  with lines ls 3,\
+"Flecha-BajaT-1mM.txt" using 1:2 smooth bezier ls 100,\
+"Flecha-BajaT-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200,\
+"Flecha2-BajaT-1mM.txt" using 1:2 smooth bezier ls 100,\
+"Flecha2-BajaT-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200,\
+
+
 #"Au F127 INTI BajaT Ru1mM.txt" using ($7):($8/0.0314) every 10 with lines ls 1, \
 #"Au F127 INTI BajaT Ru1mM.txt" using ($9):($10/0.0314) every 10 with lines ls 1, \
 #"Au F127 INTI BajaT Ru1mM.txt" using ($11):($12/0.0314) every 10 with lines ls 1, \

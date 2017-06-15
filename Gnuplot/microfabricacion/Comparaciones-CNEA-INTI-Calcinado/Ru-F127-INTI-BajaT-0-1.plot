@@ -104,7 +104,10 @@ plot "Au F127 INTI BajaT Ru0.1mM.txt" using ($1):($2/0.0314)  every 2 with lines
 "Au F127 INTI BajaT Ru0.1mM.txt" using ($3):($4/0.0314) every ::1::1400 with lines ls 3, \
 "Flecha-BajaT-0-1mM.txt" using 1:2 smooth bezier ls 100,\
 "Flecha-BajaT-0-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200,\
-"Flecha-BajaT-0-1mM.txt" using 1:2 with points ls 3
+"Flecha2-BajaT-0-1mM.txt" using 1:2 smooth bezier ls 100,\
+"Flecha2-BajaT-0-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200,\
+
+#"Flecha-BajaT-0-1mM.txt" using 1:2 with points ls 3
 #plot "Au F127 INTI BajaT Ru0.1mM.txt" using ($1):($2/0.0314) with lines ls 1, \
 #"Au F127 INTI BajaT Ru0.1mM.txt" using ($3):($4/0.0314)  with lines ls 1, \
 
