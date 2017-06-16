@@ -20,8 +20,7 @@
  \thispagestyle{empty}
 	
  %Resumen del Capitulo en Italica
- \noindent\textit{En este capitulo repasamos los resultados obtenidos en la fabricación de los electrodos. Se analizan los diseños utilizados, los materiales empleados y las caracterizaciones llevadas a cabo; fundamentalmente el desempeño electroquímico de los electrodos y la compatibilidad con las síntesis sol-gel que se emplearon para depositar las películas mesoporosas sobre ellos; síntesis que fueron ampliamente discutidas en los capítulos previos.
- }
+ \noindent\textit{En este capitulo se describen los resultados obtenidos durante en la fabricación de los electrodos cubiertos con las películas delgadas mesoporosaos. Se analizan los diseños utilizados, los materiales empleados, las técnicas aplicadas y las caracterizaciones llevadas a cabo. Principalmente se evaluó el desempeño electroquímico de los electrodos por un lado y la compatibilidad con las síntesis sol-gel que se emplearon para depositar las películas mesoporosas sobre ellos por el otro, de forma de compatiblizar los procesos \textit{top-down} con los \textit{bottom-up}.}
  
  
  %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
@@ -31,23 +30,31 @@
  %-------------------------------------------------------------------------------
 
 \section{Introducción}
+	
+	El diseño y desarrollo de un multisensor electroquímico selectivo, especifico, integrado y escalable basado en \pdm\space consta de dos bloques constructivos fundamentales, las películas delgadas mesoporosas y los electrodos. En el capítulo \ref{chap:Mesoporosos}, ya se discutió y analizó la elección de los materiales para conformar la película delgada mesoporososa con la cual se recubren los electrodos y en el capítulo \ref{chap:Electroquimica} se realizó un estudio profundo sobre el transporte dentro de ellas, la capacidad de preconcentrar, excluir, estabilidad química, etc.
 
-	El diseño de los sensores abarca desde la elección de los materiales, hasta el diseño de las máscaras para configurar los electrodos. En el capitulo \ref{chap:Mesoporosos}, ya se discutió la elección de los materiales para conformar la película delgada mesoporososa, con la cual se recubren los electrodos para formar el elemento <<activo>> de los sensores.
+	La integración de los procesos \textit{bottom-up}, propios de procesos de síntesis químicas, y \textit{top-down}, aquellos usados en microfabricación, no siempre es trivial. El sólo hecho de depositar soles con precursores de óxidos sobre oro, que resulten en películas delgadas homogéneas, bien adheridas sin grietas ni fisuras ya es un logro. El desafío, luego de desarrollar los métodos a bajas temperaturas para la síntesis de \pdm\space, de optimizar y estudiar su estructura y de comprender los procesos de transporte a través de las películas, es poder depositarlos sobre estructuras de oro con un diseño optimizado para usarlo de sensor. El depósito sobre, al menos dos materiales distintos, tiene dificultades inherentes al diseño de los electrodos y al espesor de cada capa fundamentalmente. 
 
-	Respecto de los electrodos se eligió Au como material para los mismos. Son conocidas las excelentes propiedades de este metal  para llevar a cabo reaccciones de oxido-reducción, lo que lo hace especialmente útil en mediciones electroquímicas.\cite{Wi2000,Pumera2007,Gewirth2004,Villullas2000} Si bien, como acabamos de decir, el Au es el material óptimo para electroquimica, existen otros mas económicos (tintas de carbono, óxido de indio/estaño, carbono vitreo, etc.), sin embargo, su respuesta electroquímica es poco repetible y tienen grandes desviaciones de la idealidad (sobre todo a altas velocidades de barrido). En este trabajo se busca hacer un estudio profundo sobre los mecanismos de transporte de sondas dentro de sistemas porosos, motivo por el cual necesitamos una respuesta electroquimica confiable y repetible.
+	El diseño debe considerar los materiales que se usarán así como racionalizar la estructura de los electrodos. Es por ello que es vital tener en cuenta una serie de factores a la hora de diseñar las máscaras para los sensores. Tener en cuenta la cantidad de electrodos de trabajo por sensor, calcular el área óptima para obtener señales aceptables, estimar resistencias, distancias entre ellos, espesores de depósito y demás parámetros.
 
-	%ESCRITO ANTERIORMENTE
-		% 	Siempre con la idea de desarrollar un multisensor electroquímicos selectivo, especifico, integrado y escalable decidimos, para logra este fin, explorar las propiedades de las películas delgadas de óxidos mesoporosos descritas con anterioridad. Nos dedicamos, como primera aproximación, a depositar estas películas de óxido sobre otra película delgada, esta vez de Au, que a su vez está depositada sobre algún sustrato rígido y térmicamente estable como vidrio u silicio, de forma de obtener una estructura bicapa electrodo\textbar mesoporoso. 
+	La elección del material para los electrodos se debe elegir cuidadosamente. Se trata de un compromiso entre tres factores; las dificultades para compatibilizar el óxido de las películas mesoporosas; obtener un respuesta electroquimica de calidad y, por último la facilidad para depositarlos y transferir diseños por litografía.
 
-		% 	Muchos de los trabajos que figuran el la bibliografía utilizan técnicas de electroquímica como herramienta de caracterización para películas mesoporosas con múltiples propósitos; como inferir estructuras de poros, accesibilidad, deducir propiedades de transporte y estimar variables del sistema. En este trabajo se plantea el uso de la electroquímica, no solo como herramienta de caracterización de películas mesoporososas sino también como técnica analítica. Para lograr dicho objetivo se evaluó el desempeño electroquímico de los electrodos de Au así como la viabilidad de ser utilizados como sustrato para el depósito de película delgada mesoporosa. Dichas películas serán el elemento activo, que actúa como membrana selectiva de los analitos electroactivos a cuantificar. 
+	En este trabajo se dió más peso poder generar diseños de electrodos racionales y obtener respuestas electroquimicas de buen desempeño. El oro posee excelentes propiedades para llevar a cabo reaccciones de oxido-reducción y obtener una respuestas confiables y repetibles.\cite{Wi2000,Pumera2007,Gewirth2004,Villullas2000} Si bien, el Au es el material óptimo para este tipo de mediciones, existen otros mas económicos y, en algunos casos mas fáciles de depositar (tintas de carbono, óxido de indio/estaño, carbono vitreo, etc.), sin embargo, su respuesta electroquímica es poco repetible, su rugosidades es muy variable y tienen grandes desviaciones de la idealidad (sobre todo a altas velocidades de barrido). 
 
+	En este capítulo se presentan los resultados colectados durante la fabricación de los microelectrodos. Se da cuenta de los diseño, se discuten las ventajas y desventajas de los procesos empleados y se pone énfasis en la compatibilidad con los métodos utilizados para el depósito y condensación de las \pdm\space realizados por procesos sol-gel. Se evalúa la calidad de la transferencia del diseño, las dimensiones, la respuesta electroquímica de los mismos y la posibilidad de escalar para producir sensores electroquímicos basados en películas delgadas mesoporosas en cantidad.
+
+
+	%se decidió que para logra este fin, explorar las propiedades de las películas delgadas de óxidos mesoporosos descritas con anterioridad. Nos dedicamos, como primera aproximación, a depositar estas películas de óxido sobre otra película delgada, esta vez de Au, que a su vez está depositada sobre algún sustrato rígido y térmicamente estable como vidrio u silicio, de forma de obtener una estructura bicapa electrodo\textbar mesoporoso. 
+
+ 	%Muchos de los trabajos que figuran el la bibliografía utilizan técnicas de electroquímica como herramienta de caracterización para películas mesoporosas con múltiples propósitos; como inferir estructuras de poros, accesibilidad, deducir propiedades de transporte y estimar variables del sistema. En este trabajo se plantea el uso de la electroquímica, no solo como herramienta de caracterización de películas mesoporososas sino también como técnica analítica. Para lograr dicho objetivo se evaluó el desempeño electroquímico de los electrodos de Au así como la viabilidad de ser utilizados como sustrato para el depósito de película delgada mesoporosa. Dichas películas serán el elemento activo, que actúa como membrana selectiva de los analitos electroactivos a cuantificar. 
+	
 \section{Microfabricación de los sensores}
 		
-	 	 En las secciones siguientes se discuten los resultados del diseño de los sensores, la fabricación de los electrodos, también se discuten las técnicas de deposito y las caracterizaciones realizadas sobre de los mismos y, por último, su compatibilidad con las técnicas sol-gel para utilizarse como sustratos para las películas mesoporosas funcionales.
+	 	 En las secciones siguientes se discuten los resultados del diseño de los sensores y la fabricación de los electrodos. Se discuten, también, las técnicas de microfabriación empleadas y las caracterizaciones realizadas sobre de los mismos. Por último, se analiza la compatibilidad con las técnicas sol-gel para utilizarse como sustratos de las películas mesoporosas funcionales.
 
   		\subsection{Consideraciones sobre el diseño}
 
-			Desde un principio se surgió la idea de fabricar un sensor con múltiples electrodos. Los dos diseños de sensores que se fabricaron en esta tesis tuvieron en cuenta esto, colocando múltiples electrodos por sensor. 
+			Desde un principio surgió la idea de fabricar un sensor con múltiples electrodos. De forma de tener sensores, para múltiples analitos, compactos y escalables. Para ello es importante hacer un diseño racional que tenga en cuenta los procesos que se usan en la industria electrónica de forma de poder escalar el prototipo. Las siguientes secciones tratan esta temática; de que forma se pueden hacer diseños de electrodos para un sensor multianalito y que procesos pueden llevarse a cabo de forma de escarlos y compatibilizar con los procesos de sintesis quimica de las peliulcas delgadas mesoporsosa.
 
 		 \subsubsection{Primer diseño}
 
@@ -103,7 +110,7 @@
 			     		\caption[Juego de máscara. Segunda versión]{Segunda versión de los sensores, a) máscaras  para los electrodos, b) detalle para un solo sensor, c) máscara para las celdas, d) máscara para la funcionalización.}
 			     		\label{fig:impresion_diseno_V2}
 			     	   	\end{figure}
-		 \newpage
+	
 			     		
 		 Para esta etapa se incluyeron dos máscaras más. Una segunda máscara que integra la celda electroquímica (realizada con una resina epoxi fotocurable, figura \ref{fig:mascara_su8}) en la oblea y una tercera para iluminar específicamente sobre el área de cada electrodo, con el objetivo de controlar el grado de polimerización dentro de la película sobre cada uno de ellos (figura \ref{fig:mascara_funcionalizacion}). Para ello se incluyeron marcas de alineación individuales en cada sensor (de esta forma se puede alinear cada sensor una vez cortada la oblea) como muestra la figura \ref{fig:impresion_diseno_v2_b}).
 		

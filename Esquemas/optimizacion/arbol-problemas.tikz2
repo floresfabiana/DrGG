@@ -16,7 +16,7 @@ ctab/.style={for tree={text centered, text width=1.8cm,align=center,draw,circle,
 calcinado/.style={for tree={align=center,draw,circle,fill=violet!70,very thick,minimum size=2.2cm,edge={-{Stealth[width=3mm]},},l sep=1cm,s sep=0.5cm}},
 vacio/.style={for tree={text centered, text width=1.8cm,align=center,draw,circle,very thick,minimum size=2.2cm,edge={-{Stealth[width=3mm]},},l sep=1cm,s sep=1cm}},
 reflujo/.style={for tree={text centered, text width=1.8cm,align=center,draw,circle,very thick,minimum size=2.7cm,edge={-{Stealth[width=3mm]},},l sep=1cm,s sep=1cm}},
-nivel 1/.style={for tree={text width=1.8cm,text centered,align=center,draw,circle,fill=yellow,very thick,minimum size=2.2cm,edge={-{Stealth[width=3mm]},},l sep=1cm,s sep=0.5cm}},
+nivel 1/.style={for tree={text width=1.8cm,text centered,align=center,draw,circle,fill=lightgray,very thick,minimum size=2.2cm,edge={-{Stealth[width=3mm]},},l sep=1cm,s sep=0.5cm}},
 buena/.style={for tree={draw,circle,fill=green!70,very thick,text centered,minimum size=2.7cm,edge={-{Stealth[width=3mm]},},l sep=1cm,s sep=0.5cm}},
 extraccion/.style={for tree={align=center,draw,circle,fill=orange!70,very thick,minimum size=2.7cm,edge={-{Stealth[width=3mm]},},l sep=1cm,s sep=1cm}},
 }
@@ -27,15 +27,15 @@ extraccion/.style={for tree={align=center,draw,circle,fill=orange!70,very thick,
     \node[anchor=west] at (-8.6,-4) {\Large{Falta de Adherencia}};
     \node[circle,fill=violet!80,text=white,inner sep=2] at (-9,-5) {\Large{2}};
     \node[anchor=west] at (-8.6,-5) {\Large{Difusi\'on de contaminantes}};
-    \node[circle,fill=yellow,text=white,inner sep=2] at (-9,-6) {\Large{3}};
-    \node[anchor=west] at (-8.6,-6) {\Large{Condensaci\'on del SiO$_2$ a T$<$150$^{\circ}$C}};
+    \node[circle,fill=lightgray,text=white,inner sep=2] at (-9,-6) {\Large{3}};
+    \node[anchor=west] at (-8.6,-6) {\Large{Doble dsitribuci\'on de cuellos}};
     \node[circle,fill=orange!70,text=white,inner sep=2] at (-9,-7) {\Large{4}};
-    \node[anchor=west] at (-8.6,-7) {\Large{Extracci\'on del surfactante a T$<$150$^{\circ}$C}};
+    \node[anchor=west] at (-8.6,-7) {\Large{Baja Extracci\'on de surfactante}};
 
 \node (tree) at (0,0) {
 \begin{forest}
 	for tree=,
-[Sistema, sistema
+[PDM, sistema
  	[\textcolor{white}{\Large\textbf{1}}\\ CTAB, ctab		
  	] 
  	[F127, f127
@@ -47,12 +47,33 @@ extraccion/.style={for tree={align=center,draw,circle,fill=orange!70,very thick,
  	  [\textcolor{white}{\Large\textbf{3}}\\ Vac\'io, vacio  
  	     [\hspace{-0.22cm}\textcolor{white}{\Large\textbf{4}}\\ \hspace{-0.22cm}Lavado IPA\\ \hspace{-0.24cm}+Lavado H$_2$O, extraccion]
  	     [\textcolor{white}{\Large\textbf{4}}\\ \hspace{-0.2cm} Reflujo iPOH\\ \hspace{-0.2cm}+H$_2$O PH$\approx$2, reflujo
- 	       	 [Electrodos\\PDM@F127, buena
+ 	       	 [Electrodos\\SF, buena
  	     	] 
  	     ]
  	   ]
  	]  
   ] 
 \end{forest}};
+
+\node (paralelo) at (13,0.1) {
+\begin{tikzpicture}
+\node (letras) at (11.72,7.5) {\Large PDM de SiO$_2$};
+\node (letras) at (12.45,7) {\Large  depositada sobre Au};
+\node (letras) at (11.5,4) {\Large Surfactante}; 
+\node (letras) at (11.50,0.5) {\Large M\'etodo de};
+\node (letras) at (11.75,0) {\Large  condensaci\'on};
+\node (letras) at (11.5,-3.5) {\Large Eliminaci\'on}; 
+\node (letras) at (11.85,-4) {\Large del surfactante};   
+\node (letras) at (12,-7.3) {\Large Sensor prototipo};  
+
+%Flechas
+\draw[-{Stealth[width=3mm]},line width=0.5mm,darkgray] (11,6.5) -- (11,4.5);
+\draw[-{Stealth[width=3mm]},line width=0.5mm,darkgray] (11,3.5) -- (11,1);
+\draw[-{Stealth[width=3mm]},line width=0.5mm,darkgray] (11,-0.5) -- (11,-3);
+\draw[-{Stealth[width=3mm]},line width=0.5mm,darkgray] (11,-4.5) -- (11,-6.8);
+
+\end{tikzpicture}
+};
+
 \end{tikzpicture}
 \end{document}
