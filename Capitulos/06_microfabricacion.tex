@@ -20,7 +20,7 @@
  \thispagestyle{empty}
 	
  %Resumen del Capitulo en Italica
- \noindent\textit{En este capitulo se describen los resultados obtenidos durante en la fabricación de los electrodos cubiertos con las películas delgadas mesoporosaos. Se analizan los diseños utilizados, los materiales empleados, las técnicas aplicadas y las caracterizaciones llevadas a cabo. Principalmente se evaluó el desempeño electroquímico de los electrodos por un lado y la compatibilidad con las síntesis sol-gel que se emplearon para depositar las películas mesoporosas sobre ellos por el otro, de forma de compatiblizar los procesos \textit{top-down} con los \textit{bottom-up}.}
+ \noindent\textit{En este capitulo se describen los resultados obtenidos durante en la fabricación de electrodos cubiertos con películas delgadas mesoporosas de sílice. Se analizan los diseños utilizados, los materiales empleados, las técnicas aplicadas y las caracterizaciones llevadas a cabo. Principalmente se evaluó el desempeño electroquímico de los electrodos por un lado, y la compatibilidad con las síntesis sol-gel por otro, de forma de compatibilizar los procesos \textit{top-down} con los \textit{bottom-up}.}
  
  
  %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
@@ -31,15 +31,16 @@
 
 \section{Introducción}
 	
-	El diseño y desarrollo de un multisensor electroquímico selectivo, especifico, integrado y escalable basado en \pdm\space consta de dos bloques constructivos fundamentales, las películas delgadas mesoporosas y los electrodos. En el capítulo \ref{chap:Mesoporosos}, ya se discutió y analizó la elección de los materiales para conformar la película delgada mesoporososa con la cual se recubren los electrodos y en el capítulo \ref{chap:Electroquimica} se realizó un estudio profundo sobre el transporte dentro de ellas, la capacidad de preconcentrar, excluir, estabilidad química, etc.
+	El diseño y desarrollo de un multisensor electroquímico selectivo, integrado y escalable basado en \pdm\space consta de dos bloques constructivos fundamentales, las películas delgadas mesoporosas y los electrodos. En el capítulo \ref{chap:Mesoporosos}, se discutió y analizó la elección de los materiales para conformar la película delgada mesoporososa con la cual se recubren los electrodos. En el capítulo \ref{chap:Electroquimica} se realizó un estudio profundo sobre sus propiedades de transporte, la capacidad de preconcentrar, excluir, estabilidad química, etc.
 
-	La integración de los procesos \textit{bottom-up}, propios de procesos de síntesis químicas, y \textit{top-down}, aquellos usados en microfabricación, no siempre es trivial. El sólo hecho de depositar soles con precursores de óxidos sobre oro, que resulten en películas delgadas homogéneas, bien adheridas sin grietas ni fisuras ya es un logro. El desafío, luego de desarrollar los métodos a bajas temperaturas para la síntesis de \pdm\space, de optimizar y estudiar su estructura y de comprender los procesos de transporte a través de las películas, es poder depositarlos sobre estructuras de oro con un diseño optimizado para usarlo de sensor. El depósito sobre, al menos dos materiales distintos, tiene dificultades inherentes al diseño de los electrodos y al espesor de cada capa fundamentalmente. 
+	La integración de los procesos \textit{bottom-up}, propios de procesos de síntesis químicas, y \textit{top-down}, aquellos usados en microfabricación, no siempre es trivial. El sólo hecho de depositar soles con precursores de óxidos sobre oro, que resulten en películas delgadas homogéneas, bien adheridas sin grietas ni fisuras, ya es un desafío. El objetivo, luego de desarrollar los métodos a bajas temperaturas para la síntesis de \pdm, de optimizar y estudiar su estructura y de comprender los procesos de transporte a través de las películas, es poder depositarlos sobre estructuras de oro con un diseño optimizado para usarlo como sensor. 
 
-	El diseño debe considerar los materiales que se usarán así como racionalizar la estructura de los electrodos. Es por ello que es vital tener en cuenta una serie de factores a la hora de diseñar las máscaras para los sensores. Tener en cuenta la cantidad de electrodos de trabajo por sensor, calcular el área óptima para obtener señales aceptables, estimar resistencias, distancias entre ellos, espesores de depósito y demás parámetros.
+	El depósito de soles sobre una superficie que tenga dos o más capas de distintos  materiales trae asociadas dificultades inherentes a las propiedades físicas y químicas de cada uno de ellas. Pueden diferir en el coeficiente de expansión térmica, en suquímica superficial, en su afinidad por el H$_2$O o solventes, etc.
+	Es por ello que el diseño debe considerar los materiales que se usarán y sus propiedades, así como racionalizar la estructura de los electrodos considerando resistencia eléctrica, espesor de los electrodos y facilidad para la fabricación. También es fundamental tener en cuenta una serie de factores a la hora de mandar a imprimir las máscaras para los sensores. Principalmente la resolución de línea que se puede obtener según el tipo de máscara, cantidad de electrodos de trabajo por sensor, calcular el área óptima para obtener señales aceptables, estimar resistencias, distancias entre electrodos y demás parámetros.
 
-	La elección del material para los electrodos se debe elegir cuidadosamente. Se trata de un compromiso entre tres factores; las dificultades para compatibilizar el óxido de las películas mesoporosas; obtener un respuesta electroquimica de calidad y, por último la facilidad para depositarlos y transferir diseños por litografía.
+	El material para los electrodos también se debe elegir cuidadosamente. Se trata de un compromiso entre tres factores; las dificultades para compatibilizar con óxido de las películas mesoporosas; obtener un respuesta electroquímica de calidad y, por último la facilidad para depositarlos y transferir diseños por litografía.
 
-	En este trabajo se dió más peso poder generar diseños de electrodos racionales y obtener respuestas electroquimicas de buen desempeño. El oro posee excelentes propiedades para llevar a cabo reaccciones de oxido-reducción y obtener una respuestas confiables y repetibles.\cite{Wi2000,Pumera2007,Gewirth2004,Villullas2000} Si bien, el Au es el material óptimo para este tipo de mediciones, existen otros mas económicos y, en algunos casos mas fáciles de depositar (tintas de carbono, óxido de indio/estaño, carbono vitreo, etc.), sin embargo, su respuesta electroquímica es poco repetible, su rugosidades es muy variable y tienen grandes desviaciones de la idealidad (sobre todo a altas velocidades de barrido). 
+	En este trabajo se priorizó generar diseños compactos, miniaturizar los electrodos y optimizarlos para obtener respuestas electroquímicas de buen desempeño. El oro posee excelentes propiedades para llevar a cabo reacciones de oxido-reducción y obtener una respuestas confiables y repetibles. Si bien, el Au es el material óptimo para este tipo de mediciones, existen otros mas económicos y, en algunos casos mas fáciles de depositar (tintas de carbono, óxido de indio/estaño, carbono vitreo, etc.), sin embargo, su respuesta electroquímica es poco repetible, su rugosidades es muy variable y tienen grandes desviaciones de la idealidad (sobre todo a altas velocidades de barrido).\cite{Wi2000,Pumera2007,Gewirth2004,Villullas2000}
 
 	En este capítulo se presentan los resultados colectados durante la fabricación de los microelectrodos. Se da cuenta de los diseño, se discuten las ventajas y desventajas de los procesos empleados y se pone énfasis en la compatibilidad con los métodos utilizados para el depósito y condensación de las \pdm\space realizados por procesos sol-gel. Se evalúa la calidad de la transferencia del diseño, las dimensiones, la respuesta electroquímica de los mismos y la posibilidad de escalar para producir sensores electroquímicos basados en películas delgadas mesoporosas en cantidad.
 
@@ -50,42 +51,46 @@
 	
 \section{Microfabricación de los sensores}
 		
-	 	 En las secciones siguientes se discuten los resultados del diseño de los sensores y la fabricación de los electrodos. Se discuten, también, las técnicas de microfabriación empleadas y las caracterizaciones realizadas sobre de los mismos. Por último, se analiza la compatibilidad con las técnicas sol-gel para utilizarse como sustratos de las películas mesoporosas funcionales.
+	 	 En las siguientes secciones se analiza el diseño de los sensores y se discuten los resultados de la fabricación de los electrodos. Se discuten, también, las técnicas de microfabricación empleadas y las caracterizaciones realizadas sobre los mismos. Por último, se analiza la compatibilidad con las técnicas sol-gel para utilizarse como sustratos de películas delgadas mesoporosas.
 
   		\subsection{Consideraciones sobre el diseño}
 
-			Desde un principio surgió la idea de fabricar un sensor con múltiples electrodos. De forma de tener sensores, para múltiples analitos, compactos y escalables. Para ello es importante hacer un diseño racional que tenga en cuenta los procesos que se usan en la industria electrónica de forma de poder escalar el prototipo. Las siguientes secciones tratan esta temática; de que forma se pueden hacer diseños de electrodos para un sensor multianalito y que procesos pueden llevarse a cabo de forma de escarlos y compatibilizar con los procesos de sintesis quimica de las peliulcas delgadas mesoporsosa.
+			 Desde un principio surgió la idea de fabricar una plataforma con múltiples electrodos. De forma de tener sensores, para múltiples analitos, compactos y escalables. Para ello es importante hacer un diseño que tenga en cuenta los procesos que se usan en la industria electrónica, de forma de poder escalar el prototipo. Las siguientes secciones tratan esta temática; de que forma se pueden generar diseños de electrodos para un sensor multianalito y que procesos pueden llevarse a cabo de forma de escalarlos y compatibilizar con los procesos de síntesis sol-gel.
 
 		 \subsubsection{Primer diseño}
 
-		 El primer diseño contempló cuatro electrodos de trabajo (ET) por sensor y preveía utilizar contraeelectrodo (CE) y electrodo de referencia (ER) externos. 
+		     El primer diseño contempló un sensor con cuatro electrodos de trabajo (ET) y preveía utilizar contraelectrodo (CE) y electrodo de referencia (ER) externos. 
 
-		 Se trabajó con dimensiones relativamente grandes (los electrodos circulares tienen un radio R=\SI{300}{\um} y los cuadrados el lado de L=\SI{500}{\um}) por dos motivos; 1) ya que fue la primera aproximación para estimar corrientes y, 2) bajar costos en la impresión de máscaras.
-		
-				\begin{figure}[th!]
+		    	\begin{figure}[th!]
 		 	       	\includegraphics[width=\textwidth]{Imagenes/diseno_mascara_v1.pdf}
  		       		\caption[Primer diseño y máscara de los sensores]{Diseño y máscara para la primera versión de los electrodos. A) diseño completo con 32 sensores de 4 ET cada uno, B) Detalles de las marcas de alineación, C) microscopía de la máscara ya impresa donde se ven las imperfecciones de la impresión.}
  		         	\label{fig:diseno_mascara_v1}
  		     		\end{figure}
+ 		 	 \pagebreak
+ 		     		
+		      Se trabajó con dimensiones relativamente grandes, con dos geometrías distintas, electrodos circulares con un radio R=\SI{300}{\um} y electrodos cuadrados de lado L=\SI{500}{\um}. Éste primer diseño, aunque simple y con un aprovechamiento del espacio poco eficiente cuenta con algunas ventajas destacadas. Muy económico para la impresión de las máscaras, áreas grandes de electrodos y pistas (para poder colocar fácilmente puntas de prueba y obtener valores altos de intensidad de modo de familiarizarse con las primeras respuestas EQ) y sencillo de fabricar debido a las dimensiones utilizadas.
+		      % . Esto diseño sirvió para familiarizarse con las primeras mediciones EQ y sencillo de fabricar.  
 		
-		 La figura \ref{fig:diseno_mascara_v1} muestra este primer diseño donde se puede apreciar que la impresión de la máscara, no es exactamente igual al diseño, sino que se ve una deformación del mismo dada por la baja resolución de la impresora; estableciendo de esta forma limitaciones en los diseños para usar con con este tipo de máscaras, la contrapartida es el muy bajo costo de las mismas y la facilidad para obtenerlas en cualquier librería gráfica.
+		      La figura \ref{fig:diseno_mascara_v1} muestra como fue este primer diseño. Se puede apreciar que la impresión de la máscara, no es exactamente igual al diseño, sino que se ve una deformación del mismo dada por la baja resolución de la impresora; estableciendo de esta forma limitaciones a la hora de diseñar con este tipo de máscaras. La contrapartida es el bajo costo de las mismas y la facilidad para obtenerlas en algunas librerías gráficas especializadas (el costo equivalente a una impresión de alta calidad sobre filminas de tamaño A4).
 		
  		 \subsubsection{Segundo Diseño}
 
-		 El segundo diseño, mas completo y compacto, está compuesto por sensores cuadrados de \SI{1}{\cm} de lado. Cada uno tiene, a su vez, 6 ET circulares y dispuestos sobre una circunferencia imaginaria y equiangulares entre ellos. (ver figura \ref{fig:mascara_diseno_v2} y {\ref{fig:diseno_mascara_v1}). Se hicieron 6 sensores de diámetros variados (con R=\SI{300}{\um},\SI{200}{\um},\SI{150}{\um},\SI{100}{\um} y \SI{20}{\um}), además contempla la integración del CE y del ER en el mismo sensor. El CE se ubica en el centro del diseño y tiene un área 5 veces mayor a la de los ET para no limitar la velocidad de reacción respecto del ET \cite{Wi2000}. El ER se ubica rodeando el CE, dispuestos de esta forma, nos aseguramos que todos los ET se encuentren equidistantes tanto del CE como del ER.
+		 El segundo diseño, mas complejo y compacto, con un aprovechamiento espacial optimizado está compuesto por sensores cuadrados de \SI{1}{\cm} de lado. Cada uno tiene, a su vez, 6 ET circulares y dispuestos sobre una circunferencia imaginaria y equiangulares entre ellos (ver figura \ref{fig:mascara_diseno_v2} y {\ref{fig:diseno_mascara_v1}). Se hicieron seis tipos de sensores diferentes, variando el diámetro de los electrodos (con R=\SI{300}{\um}, \SI{200}{\um}, \SI{150}{\um},\SI{100}{\um} y \SI{20}{\um}). Además, este diseño, contempla la integración del CE y del ER en el mismo sensor. El CE se ubica en el centro del diseño y tiene un área 5 veces mayor a la de los ET para no limitar la velocidad de reacción respecto del ET \cite{Wi2000}. El ER se ubica rodeando el CE. Esta configuración de <<electrodos calesita>>, en donde los ET se encuentren equidistantes tanto del CE como del ER, asegura que los valores de resistencia, capacidad y los procesos difusivos sean equivalentes para cada electrodo.
 
-						\begin{figure}[th!]
-			 	   	    \begin{subfigure}[t]{0.395\textwidth}
-			        	\includegraphics[width=\textwidth]{Imagenes/SistemaA.pdf}
-			    		\end{subfigure}
-						\begin{subfigure}[t]{0.595\textwidth}
-			     		\includegraphics[width=\textwidth]{Imagenes/diseno_3d.jpg}
-			        	\end{subfigure}
-			     		\caption[Segundo diseño y máscara de los sensores]{Segundo diseño de los sensores. Izquierda: Diseño de un sensor con los 6 electrodos de trabajo, el contraelectrodo, el electrodo de referencia y las marcas de alineación. Derecha: Esquema en perspectiva para un sensor de \SI{1x1}{\cm} con la celda. En rojo los electrodos y en verde la resina para la celda, el espesor de la misma es de aproximadamente \SI{100}{\um} y puede contener un volumen aproximado de \SI{2}{\ul}.}
-			     		\label{fig:mascara_diseno_v2}
-			     		\end{figure}
-
-			     			\begin{figure}[th!]
+		 %Mas adelante puedo colocar que se trata de un diseño flexible en el que puedo colcar mas electrodos calesita, 8 o 10 o 12
+			\begin{figure}[th!]
+			 	    \begin{subfigure}[t]{0.395\textwidth}
+			       	\includegraphics[width=\textwidth]{Imagenes/SistemaA.pdf}
+			    	\end{subfigure}
+					\begin{subfigure}[t]{0.595\textwidth}
+			        \includegraphics[width=\textwidth]{Imagenes/diseno_3d.jpg}
+			        \end{subfigure}
+			     	\caption[Segundo diseño y máscara de los sensores]{Segundo diseño de los sensores. Izquierda: Diseño de un sensor con 6 electrodos de trabajo, contraelectrodo, electrodo de referencia y marcas de alineación. Derecha: Modelo en 3D para un sensor con celda electroquímica. En rojo los electrodos y en verde la resina que conforma la celda, el espesor de la misma es de aproximadamente \SI{100}{\um} y puede contener un volumen aproximado de \SI{2}{\ul}.}
+			     	\label{fig:mascara_diseno_v2}
+			     	\end{figure}
+	     		
+		 Para esta etapa se incluyeron dos máscaras más. Una segunda máscara que integra la celda electroquímica (realizada con una resina epoxi fotocurable, figura \ref{fig:mascara_su8}) en la oblea y una tercera para iluminar específicamente sobre el área de cada uno de los electrodos, con el objetivo de controlar reacciones químicas dentro de los poros, inducidas por luz UV, p. ej. activar un iniciador o controlar el grado de polimerización  (figura \ref{fig:mascara_funcionalizacion}).\cite{annete por 2} Para ello se incluyeron marcas de alineación individuales en cada sensor. De esta forma se puede alinear cada uno con la máscara incluso luego de cortar la oblea e individualizar los sensores. EL detalle se muestra en la figura \ref{fig:impresion_diseno_v2_b}).
+					\begin{figure}[th!]
 			 	   	    \centering
 			 	   	    \begin{subfigure}[t]{0.495\textwidth}
 			        	\includegraphics[width=\textwidth]{Imagenes/mascara_revolver_electrodos.pdf}
@@ -111,9 +116,6 @@
 			     		\label{fig:impresion_diseno_V2}
 			     	   	\end{figure}
 	
-			     		
-		 Para esta etapa se incluyeron dos máscaras más. Una segunda máscara que integra la celda electroquímica (realizada con una resina epoxi fotocurable, figura \ref{fig:mascara_su8}) en la oblea y una tercera para iluminar específicamente sobre el área de cada electrodo, con el objetivo de controlar el grado de polimerización dentro de la película sobre cada uno de ellos (figura \ref{fig:mascara_funcionalizacion}). Para ello se incluyeron marcas de alineación individuales en cada sensor (de esta forma se puede alinear cada sensor una vez cortada la oblea) como muestra la figura \ref{fig:impresion_diseno_v2_b}).
-		
 		 En la figura \ref{fig:impresion_diseno_V2} se muestra el juego de mascaras completo usado para este segundo diseño y también una microscopía de la máscara ya impresa. Este segundo diseño, mejorado y con electrodos de menor tamaño, requirió una impresión de mejor calidad, lo cual se ve reflejado en la figura \ref{fig:impresion_diseno_v2_b} donde se ve que la impresión es fiel reflejo del diseño, incluso con detalles tan pequeños como cuadrados de \SI{10}{\um} de lado. 
 		 %Para más detalles de la impresión consultar la sección \ref{sec:impresion_mascaras}, pág \pageref{sec:impresion_mascaras}.
 				
@@ -440,8 +442,8 @@
 			Una vez demostrada la difusión a través de las películas de Au, se midió la resistencia superficial, con el objetivo de corroborar algún cambio respecto en las propiedades eléctricas de los electrodos. Se midió la resistencia sobre 3 muestras, una sin tratamientos térmico, otra tratada a \SI{350}{\celsius} y la tercera tratada también a \SI{350}{\celsius} pero en atmósfera de vacío (\SI{1e-5}{\milli\bar}) Los resultados se resumen en la tabla \ref{tabla:resistencia}, donde se corrobora que la resistencia por cuadrado es más alta en las muestras tratadas terminantemente, debido a la difusión de impurezas hacia la superficie. 
 
 				\begin{table}[ht!]
-			  		  \caption[Resistencia superficial de los electrodos]{Resistencia superficial de Au con y sin tratamiento térmico.} 
-			  		  \begin{tabular}{>{\raggedright\arraybackslash}m{3.6cm}>{\raggedright\arraybackslash}m{5cm}} 
+			  		  \caption[Resistencia superficial de los electrodos]{Resistencia superficial de los electrodos con y sin tratamiento térmico.} 
+			  		  \begin{tabular}{>{\raggedright\arraybackslash}m{4.4cm}>{\raggedright\arraybackslash}m{6.6cm}} 
 			  		  \toprule
 					  Muestra & Resistividad superficial $(\Omega/_{\square})$  \\ \midrule
 			      	  Au \SI{350}{\celsius} 		  	& $3.720 \pm 0.001$		 \\	  
@@ -519,6 +521,14 @@
 		   	% En la figura \ref{} se compara la voltametría, para \aminorutenio\space sobre un electrodo de Au3N y sobre otro recubierto con mesoporoso. Se ve allí, para el electrodo desnudo, que tanto la intensidad como la separación en potencial entre los picos catódicos y anódicos, muestran un proceso mucho mas irreversible de lo esperado para esta sonda, indicador de algún problema en la trasferencia electrónica entre analito y electrodo. La respuesta con el mesoporoso depositado es similar, con la diferencia que aquí se muestra como este ingresa en la película, la explicación detallada de este tipo de voltagrama se trata a fondo en el siguiente capítulo. Este resultado fue otro de los indicadores de que la película mesoporosa no es el problema, sino el electrodo.
 
 		% Aca va el cambio de au vs tratamientos de bajas temperaturas y aplicable a nuevos sustratos y por supuesto mucho mas economico (por el Au).
+
+\section{Electrodos impresosos}
+ 	
+ 	\subsection{PDM}
+
+ 		impresion
+
+ 	\subsection{NTC}	
 
 \section{Conclusiones parciales}
 

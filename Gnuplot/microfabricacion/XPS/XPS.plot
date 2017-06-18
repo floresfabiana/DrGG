@@ -12,11 +12,11 @@ set output "XPS.tikz"
 set datafile separator ","
 
 #Saco la leyenda
-#unset key
+unset key
 
 #Pongo la leyenda
-set key top Left right reverse samplen 3 font ",10" textcolor rgb "gray40"
-set key spacing 1.7
+#set key top Left right reverse samplen 3 font ",10" textcolor rgb "gray40"
+#set key spacing 1.7
 #Saco el Borde
 unset border
 
@@ -49,6 +49,9 @@ set grid back ls 11
 #Coloca los nombre de los ejes
 set xlabel "Energ\'ia / eV" font ",14" textcolor rgb "gray40" offset  0,-2
 set ylabel "Intensidad / u. a." font ",14" textcolor rgb "gray40" offset  -2,0
+
+set label at -900,60 "Cr\\textbar Au 400$^{\\circ}$C" textcolor rgb "black"
+set label at -900,35 "Cr\\textbar Au 25$^{\\circ}$C" textcolor rgb "black"
 
 #hago que sea mas largo en el eje X
 set size ratio 0.6
