@@ -6,8 +6,8 @@
 set terminal tikz
 set output "Concentraciones_Fc.tikz" 
 
-#Saco la leyenda
-	unset key
+#Leyenda
+	set key top left Left reverse samplen 3 font ",8" textcolor rgb "gray40"
 
 #Saco el Borde
 	unset border
@@ -96,4 +96,6 @@ red_100 = "#ff0000"
  
 
 #Ploteo todas las funciones que les digamos
-plot "Fc1mM-amplio.txt" using ($1):($2/0.0314) with lines ls 3, "Fc5mM-amplio.txt" using ($1):($2/0.0314) with lines ls 2, "Fc10mM-amplio.txt" using ($1):($2/0.0314) with lines ls 1
+plot "Fc1mM-amplio.txt" using ($1):($2/0.0314) with lines ls 5 title "FcOH 1mM",\
+"Fc5mM-amplio.txt" using ($1):($2/0.0314) with lines ls 4 title "FcOH 5mM",\
+"Fc10mM-amplio.txt" using ($1):($2/0.0314) with lines ls 3 title "FcOH 10mM"

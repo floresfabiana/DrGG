@@ -6,8 +6,8 @@
 set terminal tikz 
 set output "Concentraciones_Fe.tikz" 
 
-#Saco la leyenda
-	unset key
+#Leyenda
+	set key top left Left reverse samplen 3 font ",8" textcolor rgb "gray40"
 
 #Saco el Borde
 	unset border
@@ -92,9 +92,9 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 
 #Ploteo todas las funciones que les digamos
 i=183
-plot "Concentraciones_Fe.txt" using ($1*1000+i):($2*1e6/0.0025) with lines ls 5,\
-"Concentraciones_Fe.txt" using ($1*1000+i):($3*1e6/0.0025) with lines ls 4,\
-"Concentraciones_Fe.txt" using ($1*1000+i):($4*1e6/0.0025) with lines ls 3,\
-"Concentraciones_Fe.txt" using ($1*1000+i):($5*1e6/0.0025) with lines ls 2,\
-"Concentraciones_Fe.txt" using ($1*1000+i):($6*1e6/0.0025) with lines ls 1
+plot "Concentraciones_Fe.txt" using ($1*1000+i):($2*1e6/0.0025) with lines ls 5 title "FCN 1 mM" ,\
+"Concentraciones_Fe.txt" using ($1*1000+i):($3*1e6/0.0025) with lines ls 4 title "FCN 5m M",\
+"Concentraciones_Fe.txt" using ($1*1000+i):($4*1e6/0.0025) with lines ls 3 title "FCN 10 mM",\
+"Concentraciones_Fe.txt" using ($1*1000+i):($5*1e6/0.0025) with lines ls 2 title "FCN 25 mM",\
+"Concentraciones_Fe.txt" using ($1*1000+i):($6*1e6/0.0025) with lines ls 1 title "FCN 50 mM"
 

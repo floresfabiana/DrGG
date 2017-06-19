@@ -103,6 +103,7 @@ red_100 = "#ff0000"
 plot "datos-Au-calciando-INTI-CNEA.txt" using ($1):($2/0.0314) with lines ls 1, \
 "datos-Au-calciando-INTI-CNEA.txt" using ($3):($4/0.0314*0.95) with lines ls 2, \
 "datos-Au-calciando-INTI-CNEA.txt" using ($5):($6/0.0314) with lines ls 3, \
+
 #"datos-Au-calciando-INTI-CNEA.txt" using ($7):($8/0.0314) every 10  with lines ls 3, \
 #"datos-Au-calciando-INTI-CNEA.txt" using ($9):($10/0.0314)  every 10 with lines ls 3, \
 #"datos-Au-calciando-INTI-CNEA.txt" using ($11):($12/0.0314)  every 10 with lines ls 3

@@ -70,15 +70,15 @@ red_100 = "#ff0000"
 	fit f(x) "Calibracion_Fc.txt" using ($1):($2) via a,b
 	stat "Calibracion_Fc.txt" using 1:2
 
-	set label 1 sprintf("y=%3.3f+%3.3f",a,b) at 0.2,925 font ",10" textcolor rgb "gray40"
-	set label 2 sprintf("R=%3.4f",STATS_correlation) at 0.2,800 font ",10" textcolor rgb "gray40"
+	set label 1 sprintf("y=%3.3f+%3.3f",a,b) at 0.2,675 font ",8" textcolor rgb "gray40"
+	set label 2 sprintf("R=%3.4f",STATS_correlation) at 0.2,575 font ",8" textcolor rgb "gray40"
 
 	g(x) = c*x + d
 	fit g(x) "Calibracion_Fc.txt" using ($1):($3) via c,d
 	stat "Calibracion_Fc.txt" using 1:3
 
-	set label 3 sprintf("y=%3.3f %3.3f",c,d) at 0.2,-825 font ",10" textcolor rgb "gray40"
-	set label 4 sprintf("R=%3.4f",STATS_correlation) at 0.2,-950 font ",10" textcolor rgb "gray40"
+	set label 3 sprintf("y=%3.3f+%3.3f",c,d) at 0.2,-575 font ",8" textcolor rgb "gray40"
+	set label 4 sprintf("R=%3.4f",STATS_correlation) at 0.2,-675 font ",8" textcolor rgb "gray40"
  	
 
 #Ploteo todas las funciones que les digamos

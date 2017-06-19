@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Sat May 20 09:22:44 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% lun 19 jun 2017 14:43:13 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -78,7 +78,8 @@
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.872,7.628)--(11.947,7.628);
+\draw[gp path] (1.872,7.628)--(2.056,7.628);
+\draw[gp path] (4.294,7.628)--(11.947,7.628);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -105,7 +106,8 @@
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (3.131,1.601)--(3.131,8.381);
+\draw[gp path] (3.131,1.601)--(3.131,7.463);
+\draw[gp path] (3.131,8.201)--(3.131,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -175,10 +177,12 @@
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
 \node[gp node center] at (11.947,1.293) {$600$};
 \draw[gp path] (1.872,8.381)--(1.872,1.601)--(11.947,1.601);
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\text{Potencial\; vs\; ESC/mV}$};
-\gpcolor{rgb color={1.000,0.271,0.000}}
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\text{Potencial\; vs\; ESC/mV}$};
+\node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.971,8.078) {FcOH 1mM};
+\gpcolor{rgb color={0.000,0.392,0.000}}
 \gpsetlinewidth{2.00}
+\draw[gp path] (2.203,8.078)--(2.824,8.078);
 \draw[gp path] (1.878,4.599)--(1.881,4.599)--(1.887,4.600)--(1.896,4.601)--(1.909,4.602)%
   --(1.921,4.603)--(1.934,4.603)--(1.946,4.604)--(1.958,4.604)--(1.971,4.605)--(1.984,4.605)%
   --(1.996,4.606)--(2.009,4.606)--(2.021,4.607)--(2.034,4.607)--(2.047,4.607)--(2.059,4.608)%
@@ -446,7 +450,10 @@
   --(2.111,4.552)--(2.099,4.552)--(2.087,4.551)--(2.074,4.551)--(2.061,4.551)--(2.048,4.551)%
   --(2.036,4.551)--(2.023,4.551)--(2.011,4.551)--(1.998,4.550)--(1.986,4.550)--(1.973,4.550)%
   --(1.961,4.549)--(1.948,4.549)--(1.935,4.549)--(1.922,4.549)--(1.910,4.549);
-\gpcolor{rgb color={1.000,0.000,0.000}}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.971,7.832) {FcOH 5mM};
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\draw[gp path] (2.203,7.832)--(2.824,7.832);
 \draw[gp path] (1.878,4.356)--(1.881,4.358)--(1.887,4.360)--(1.896,4.362)--(1.908,4.365)%
   --(1.921,4.367)--(1.934,4.369)--(1.946,4.370)--(1.959,4.372)--(1.971,4.372)--(1.984,4.373)%
   --(1.996,4.374)--(2.009,4.375)--(2.021,4.376)--(2.034,4.377)--(2.046,4.378)--(2.058,4.378)%
@@ -714,7 +721,10 @@
   --(2.111,3.469)--(2.099,3.469)--(2.086,3.468)--(2.074,3.468)--(2.061,3.467)--(2.048,3.467)%
   --(2.036,3.467)--(2.023,3.466)--(2.011,3.466)--(1.998,3.466)--(1.985,3.465)--(1.972,3.465)%
   --(1.960,3.464)--(1.947,3.463)--(1.935,3.464)--(1.922,3.463)--(1.910,3.462);
-\gpcolor{rgb color={0.502,0.000,0.000}}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.971,7.586) {FcOH 10mM};
+\gpcolor{rgb color={1.000,0.271,0.000}}
+\draw[gp path] (2.203,7.586)--(2.824,7.586);
 \draw[gp path] (1.878,4.589)--(1.880,4.589)--(1.886,4.590)--(1.895,4.592)--(1.908,4.593)%
   --(1.920,4.594)--(1.933,4.595)--(1.945,4.595)--(1.958,4.596)--(1.971,4.596)--(1.983,4.597)%
   --(1.996,4.597)--(2.009,4.598)--(2.021,4.598)--(2.034,4.599)--(2.046,4.599)--(2.059,4.600)%

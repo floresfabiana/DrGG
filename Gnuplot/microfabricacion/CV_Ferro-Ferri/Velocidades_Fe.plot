@@ -7,7 +7,7 @@ set terminal tikz
 set output "Velocidades_Fe.tikz" 
 
 #Leyenda
-set key top left Left reverse samplen 3 font ",6" textcolor rgb "gray40"
+set key top left Left reverse samplen 3 font ",8" textcolor rgb "gray40"
 
 #Saco el Borde
 	unset border

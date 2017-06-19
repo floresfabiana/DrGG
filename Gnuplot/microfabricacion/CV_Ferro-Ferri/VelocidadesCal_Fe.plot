@@ -1,14 +1,13 @@
 #Para ver en pantalla
 #reset
 #set terminal qt
-#set terminal aqua
 
 #Para exportar como latex
 set terminal tikz
 set output "VelocidadesCal_Fe.tikz" 
 
 #Leyenda
-	set key top left Left reverse samplen -2 font ",10" textcolor rgb "gray40"
+	set key top left Left reverse samplen -2 font ",8" textcolor rgb "gray40"
 
 #Saco el Borde
 	unset border
@@ -32,8 +31,8 @@ set style line 11 lc rgb 'gray40' lt 0 lw 1
 set grid front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "log(v) [mv/s]"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "log(j) $[\\mu \\text{A.cm}^{-2}]$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "log(v)/$\\text{mV.s}^{-1}$"  font ",14" textcolor rgb "gray40" offset  0,-2
+	set ylabel "log(j$_p$)/$\\mu \\text{A.cm}^{-2}$"	font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -43,14 +42,14 @@ set grid front ls 11
 	 f(x) = a*x + b
 	 fit f(x) "VelocidadesCal_Fe.txt" using (log10($1)):(log10($3)) via a,b
 	 stat "VelocidadesCal_Fe.txt" using (log10($1)):(log10($3))
-	 set label 1 sprintf("y=%3.3fX + %3.3f",a,b) at 1.61,3.64 font ",6" textcolor rgb "gray40"
-	 set label 2 sprintf("R=%3.4f",STATS_correlation) at 1.61,3.61 font ",6" textcolor rgb "gray40"
+	 set label 1 sprintf("y=%3.3fX + %3.3f",a,b) at 1.41,3.57 font ",8" textcolor rgb "gray40"
+	 set label 2 sprintf("R=%3.4f",STATS_correlation) at 1.41,3.53 font ",8" textcolor rgb "gray40"
 
 	 g(x) = c*x + d
 	 fit g(x) "VelocidadesCal_Fe.txt" using (log10($1)):(log10($5)) via c,d
 	 stat "VelocidadesCal_Fe.txt" using (log10($1)):(log10($5))
-	 set label 5 sprintf("y=%3.3fX + %3.3f",c,d) at 1.65,3.45 font ",6" textcolor rgb "gray40"
-	 set label 6 sprintf("R=%3.4f",STATS_correlation) at 1.65,3.42 font ",6" textcolor rgb "gray40"	
+	 set label 5 sprintf("y=%3.3fX + %3.3f",c,d) at 1.41,3.27 font ",8" textcolor rgb "gray40"
+	 set label 6 sprintf("R=%3.4f",STATS_correlation) at 1.41,3.23 font ",8" textcolor rgb "gray40"	
 
 	 # h(x) = e*x + f
 	 # fit h(x) "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5)) every ::5::8 via e,f

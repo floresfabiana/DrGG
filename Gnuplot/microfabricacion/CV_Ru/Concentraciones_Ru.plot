@@ -6,8 +6,8 @@
 set terminal tikz 
 set output "Concentraciones_Ru.tikz" 
 
-#Saco la leyenda
-	unset key
+#Leyenda
+	set key top left Left reverse samplen 3 font ",8" textcolor rgb "gray40"
 
 #Saco el Borde
 	unset border
@@ -90,5 +90,9 @@ red_100 = "#ff0000"
 
 #Ploteo todas las funciones que les digamos
 
-plot "Concentraciones_Ru.txt" using ($1):($4/0.0314) with lines ls 5,"Concentraciones_Ru.txt" using ($1):($3/0.0314) with lines ls 4,"Concentraciones_Ru.txt" using ($1):($5/0.0314) with lines ls 3,	 "Concentraciones_Ru.txt" using ($1):($6/0.0314) with lines ls 2,"Concentraciones_Ru.txt" using ($1):($2/0.0314) with lines ls 1
+plot "Concentraciones_Ru.txt" using ($1):($4/0.0314) with lines ls 5 title "ARu 0,3 mM",\
+"Concentraciones_Ru.txt" using ($1):($3/0.0314) with lines ls 4 title "ARu 0,6 mM",\
+"Concentraciones_Ru.txt" using ($1):($5/0.0314) with lines ls 3 title "ARu 1,5 mM",\
+"Concentraciones_Ru.txt" using ($1):($6/0.0314) with lines ls 2 title "ARu 3 mM",\
+"Concentraciones_Ru.txt" using ($1):($2/0.0314) with lines ls 1 title "ARu 6 mM"
 

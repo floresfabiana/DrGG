@@ -50,7 +50,7 @@ red_100 = "#ff0000"
 
 #Coloca los nombre de los ejes
 	set xlabel "$\\text{Concentración/mM}$"		 font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	 font ",14" textcolor rgb "gray40" offset -2,0
+	set ylabel "$\\text{j}_p/ \\mu \\text{A.cm}^{-2}$"	 font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -71,16 +71,16 @@ red_100 = "#ff0000"
 
 	stat "Calibracion_Fe.txt" using 1:2
 
-	set label 1 sprintf("y=%3.3f%3.3f",a,b) at 0.5,18500 font ",10" textcolor rgb "gray40"
-	set label 2 sprintf("R=%3.4f",STATS_correlation) at 0.5,16500 font ",10" textcolor rgb "gray40"
+	set label 1 sprintf("y=%3.3f%3.3f",a,b) at 0.5,13500 font ",8" textcolor rgb "gray40"
+	set label 2 sprintf("R=%3.4f",STATS_correlation) at 0.5,11500 font ",8" textcolor rgb "gray40"
 
 	g(x) = c*x + d
 	fit g(x) "Calibracion_Fe.txt" using ($1):($3*1e6/0.0025) via c,d
 	
 	stat "Calibracion_Fe.txt" using 1:3
  	
- 	set label 3 sprintf("y=%3.3f %3.3f",c,d) at 0.5,-11300 font ",10" textcolor rgb "gray40"
-	set label 4 sprintf("R=%3.4f",STATS_correlation) at 0.5,-13300 font ",10" textcolor rgb "gray40"
+ 	set label 3 sprintf("y=%3.3f %3.3f",c,d) at 0.5,-6300 font ",8" textcolor rgb "gray40"
+	set label 4 sprintf("R=%3.4f",STATS_correlation) at 0.5,-8300 font ",8" textcolor rgb "gray40"
 
 #Ploteo todas las funciones que les digamos
 

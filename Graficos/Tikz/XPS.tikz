@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Fri Jun 16 20:02:10 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% lun 19 jun 2017 09:32:57 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -189,20 +189,20 @@
 \node[gp node left] at (1.136,7.307) {Cr\textbar Au 400$^{\circ}$C};
 \node[gp node left] at (1.136,4.991) {Cr\textbar Au 25$^{\circ}$C};
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (11.828,4.064) {\tiny{Au5d}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (11.218,4.064) {\tiny{Au5p3}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (10.848,6.474) {\tiny{Au4f}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (7.850,6.288) {\tiny{Au4d5}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (7.623,6.288) {\tiny{Au4d3}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (5.317,6.196) {\tiny{Au4p3}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (4.206,6.474) {\tiny{Au4p1}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (2.785,6.381) {\tiny{Au4s}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (8.483,5.176) {\tiny{C1s}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (5.556,6.288) {\tiny{O1s}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (5.018,6.196) {\tiny{Cr2p1}};
-\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (4.839,6.196) {\tiny{Cr2p3}};
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {Intensidad / u. a.};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.541,0.362) {Energ'ia / eV};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (11.828,4.064) {\tiny{Au5d}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (11.218,4.064) {\tiny{Au5p3}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (10.848,6.474) {\tiny{Au4f}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (7.850,6.288) {\tiny{Au4d5}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (7.623,6.288) {\tiny{Au4d3}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (5.317,6.196) {\tiny{Au4p3}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (4.206,6.474) {\tiny{Au4p1}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.785,6.381) {\tiny{Au4s}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (8.483,5.176) {\tiny{C1s}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (5.556,6.288) {\tiny{O1s}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (5.018,6.196) {\tiny{Cr2p1}};
+\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (4.839,6.196) {\tiny{Cr2p3}};
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {Intensidad / u. a.};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.541,0.362) {Energ'ia / eV};
 \gpcolor{rgb color={1.000,0.000,0.000}}
 \gpsetlinewidth{1.20}
 \draw[gp path] (1.136,6.401)--(1.139,6.406)--(1.136,6.393);
