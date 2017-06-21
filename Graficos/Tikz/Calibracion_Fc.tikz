@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 19 jun 2017 14:43:13 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Mon Jun 19 16:51:37 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -139,12 +139,12 @@
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
 \node[gp node center] at (11.947,1.293) {$10$};
 \draw[gp path] (2.056,8.381)--(2.056,1.601)--(11.947,1.601);
-\node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.254,7.279) {y=80.730+14.443};
-\node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.254,6.940) {R=0.9986};
-\node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.254,3.042) {y=-61.885+21.721};
-\node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.254,2.703) {R=-0.9985};
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.001,0.215) {$\text{Concentración/mM}$};
+\node[gp node left,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (2.254,7.279) {y=80.730+14.443};
+\node[gp node left,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (2.254,6.940) {R=0.9986};
+\node[gp node left,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (2.254,3.042) {y=-61.885+21.721};
+\node[gp node left,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (2.254,2.703) {R=-0.9985};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (7.001,0.215) {$\text{Concentración/mM}$};
 \gpsetlinewidth{1.00}
 \gpsetpointsize{4.00}
 \gppoint{gp mark 7}{(11.947,7.744)}

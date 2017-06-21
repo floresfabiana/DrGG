@@ -40,7 +40,7 @@ red_100 = "#ff0000"
 	set style line 10 lc rgb '#800000' lt 1 lw 2 #Marron
 	set style line 20 lc rgb '#ff0000' lt 1 lw 2 #ROjo
 	set style line 30 lc rgb '#ff4500' lt 1 lw 2 #Naranja
-	set style line 4 lc rgb '#ffa500' lt 1 lw 2 #Amarillo
+	set style line 4 lc rgb 'black' lt 1 lw 1 ps 1 pt 1 #Amarillo
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
 	set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
@@ -57,7 +57,7 @@ red_100 = "#ff0000"
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
 	#set ytics 10 
-	#set mytics 2 
+	set mxtics 10 
 
 #Pone el Titulo
 	#set title "Grafico 1"
@@ -100,9 +100,9 @@ red_100 = "#ff0000"
  
 
 #Ploteo todas las funciones que les digamos
-plot "datos-Au-calciando-INTI-CNEA.txt" using ($1):($2/0.0314) with lines ls 1, \
-"datos-Au-calciando-INTI-CNEA.txt" using ($3):($4/0.0314*0.95) with lines ls 2, \
-"datos-Au-calciando-INTI-CNEA.txt" using ($5):($6/0.0314) with lines ls 3, \
+plot "Au-CNEA-Calcinado.txt" using ($1):($2/0.0314) with lines ls 1, \
+"Au-INTI-TAmbiente.txt" using ($1):($2/0.0314*0.94) w l ls 2, \
+"Au-INTI-Calcinado.txt" using ($1):($2/0.0314) with lines ls 3, \
 
 #"datos-Au-calciando-INTI-CNEA.txt" using ($7):($8/0.0314) every 10  with lines ls 3, \
 #"datos-Au-calciando-INTI-CNEA.txt" using ($9):($10/0.0314)  every 10 with lines ls 3, \

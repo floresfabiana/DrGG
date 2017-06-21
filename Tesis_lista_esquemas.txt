@@ -29,5 +29,4 @@ Esquemas/altura-ancho.pdf
 Esquemas/Redox-Fc.pdf
 Esquemas/Redox-HQ.pdf
 Esquemas/Fc.pdf
-Esquemas/HQ.pdf
 Esquemas/flujo-microfab.pdf
