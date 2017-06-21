@@ -110,7 +110,7 @@
 	%\input{Capitulos.indexados/04_optimizacion.tex}
   \input{Capitulos.indexados/05_electroquimica.tex}
   \input{Capitulos.indexados/06_microfabricacion.tex}
-	\input{Capitulos.indexados/07_integracion.tex}
+	%\input{Capitulos.indexados/07_integracion.tex}
 	\input{Capitulos.indexados/08_conclusiones.tex}
   
   %----------------------------------------------------------------------------------------------
