@@ -532,7 +532,7 @@
 
 \section{Más allá de la microfabración}
 	
-	  Esta sección tiene por motivación mostrar y ejemplificar muy brevemente algunos experimentos, reflexiones y pruebas de concepto derivadas del presente trabajo, las cuales abren nuevas incógnitas y lineas de investigación y desarrollo en sensores. No tiene por objetivo demostrar caracterizaciones o resultados sometidos a un análisis profundo, sino mostrar los avances y conceptos llevados a cabo durante este trabajo con perspectivas a futuro.
+	  Esta sección tiene por motivación mostrar y ejemplificar muy brevemente algunos experimentos, reflexiones y pruebas de concepto derivadas del presente trabajo. Es posible que en base a estos experimentos se exploren nuevas lineas de investigación y desarrollo en el área sensores. No es el propósito de este apartado realizar demostraciones formales o hacer discusiones profundas de los resultados, sino mostrar los avances y conceptos que se están llevados a cabo durante este trabajo con perspectivas a futuros desarrollos o investigaciones.
 
 	\subsection{Integración en microchips de silicio}
 
@@ -543,11 +543,37 @@
  	  Se realizaron paralelamente durante este trabajo pruebas conceptuales sobre impresión de mesoporosos. El objetivo es transferir un patrón arbitrario al sustrato, de esta forma se podrían depositar películas delgadas mesoporosas de distintos óxidos sobre un arreglo de electrodos, p. ej. óxidos de Ti, Si/Zr, Ti/Si, etc. Se trabajó en colaboración con el grupo del Dr. .... en Alemania, donde se hicieron algunas pruebas de concepto depositando soles modificados con etilenglicol para poder imprimir con un equipo tipo InkJet sobre electrodos. Los procesos a baja temperatura desarrollos en este trabajo, no solo hacen que disminuya la difusión entre las capas metálicas, permitiendo la integración en chips de silicio, sino que permite depositar las \pdm\space sobre sustratos térmicamente menos estables. Los resultados fueron sistemas porosos de soles de SiO$_2$, estructurados con F127 impresos sobre silicio, sobre electrodos de oro y sobre electrodos de oro sobre sustrato flexible, de poliestireno de alto impacto (PAI). Se muestran los patrones en la figura \ref{}.
 
  		%imagenes Meso en Au, Meso en Silicio, Meso en Au con patrones, SEM
- 	  
+ 	  		\begin{figure}[th]
+		 	   	    \begin{subfigure}[t]{0.49\textwidth}
+			       	\includegraphics[width=\textwidth]{Imagenes/Au-sinTT.jpg}
+			   		\end{subfigure}
+			   		\begin{subfigure}[t]{0.49\textwidth}
+			   	    \includegraphics[width=\textwidth]{Imagenes/Au-conTT.jpg}
+			   		\end{subfigure}
+					 \begin{subfigure}[t]{0.49\textwidth}
+			       	\includegraphics[width=\textwidth]{Imagenes/Au-sinTT.jpg}
+			   		\end{subfigure}
+			   		\begin{subfigure}[t]{0.49\textwidth}
+			   	    \includegraphics[width=\textwidth]{Imagenes/Au-conTT.jpg}
+			   		\end{subfigure}
+			   		
+					 \caption[Microscopía comparativa electrodos Au]{Microscopías de barrido electrónico donde se comparan los electrodos sin someter a tratamiento térmico (izquierda) con los sometido tratamientos térmico (derecha). Se observa un cambio en el tamaño de las partículas que forman los electrodos.}
+					 \label{fig:Au_compTT}	
+				     \end{figure}
+
  	  Con la expectativa de poder realizar todo el proceso de fabricación de los sensores con técnicas de impresión, se muestran en la figura \ref{}, electrodos impresos por flexografía de tintas a base a nanotubos de carbono desarrolladas en el INTI-CMNB. Actualmente estas tintas están en desarrollo y en proceso de optimización para uso en sensores EQ. En la figura \ref{} se muestra la respuesta EQ para \fe\space \SI{2.5}{\nm}, si bien no es la misma que en electrodos de Au, es una respuesta reproducible y confiable. Se prevé próximamente imprimir ambos componentes en un solo sustrato, los electrodos y y películas delgadas mesoporosos.
 
  	  	%imagenes flexo + voltagrama
-
+ 	  			\begin{figure}[th]
+		 	   	    \begin{subfigure}[t]{0.49\textwidth}
+			       	\includegraphics[width=\textwidth]{Imagenes/Au-sinTT.jpg}
+			   		\end{subfigure}
+			   		\begin{subfigure}[t]{0.49\textwidth}
+			   	    \includegraphics[width=\textwidth]{Imagenes/Au-conTT.jpg}
+			   		\end{subfigure}
+					 \caption[Microscopía comparativa electrodos Au]{Microscopías de barrido electrónico donde se comparan los electrodos sin someter a tratamiento térmico (izquierda) con los sometido tratamientos térmico (derecha). Se observa un cambio en el tamaño de las partículas que forman los electrodos.}
+					 \label{fig:Au_compTT}	
+				     \end{figure}
  		
 
 \section{Conclusiones parciales}
@@ -563,22 +589,10 @@
 
 	En la figura \ref{fig:flujo-microfab} se resumen las etapas de trabajo para llegar a obtener los sensores, cuyas propiedades de transporte a través de la estructura de nanoporoso serán evaluadas en el próximo capitulo.
 				
-				\newpage
+	
 				
 				\begin{figure}[ht!]
 		 	       	\includegraphics[width=\textwidth]{Esquemas/flujo-microfab.pdf}
 		        	\caption[Fabricación de sensores, flujo de procesos.]{Diagrama donde se resumen las etapas en la fabricación de los sensores y los desafíos que surgieron durante las mismas. El cuadro lila es el sistema de sensores de estudio para los próximos capítulos donde se evaluarán las capacidades como sensores de dichos sistema.}
 		         	\label{fig:flujo-microfab}
 		     		\end{figure}
-
-
-% Una vez obtenida y analizada la respuesta sobre los electrodos de Au desnudo (esto es, sin recubrimiento de la película mesoporosa) se discutirá en los próximos capítulos como varia esta respuesta y como podemos sacar conclusiones acerca del transporte a travéz de peliculas mesoporosas y también de cuestiones estructurales de las mismas.
-
-
-% durante la tesis muchas medidas, bla bla y entonces los proximos capitulos es indistinto con un electrodo pleno o con electrodos con diseño transferido sistintas areas, electrodos de ag/cl y de calomel..... pseudoreferencia.... etc. etc  ... Para adoptar un criterio y con animos de poder comparar los resutlados siempre se normalizaron con la densidad de corriente y contra la referencia de calomel.
-
-
-%IMPORTANTE!!!!!!!!!!
-%
-%
-%AL pasar al final este capitulo me permite agregar algo de lo que se hizo con Impresion y polimeros, o quizas agregarlo al capitulo de OUTLOOK!
