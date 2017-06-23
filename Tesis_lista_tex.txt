@@ -8,11 +8,9 @@ PreCapitulos/abstract.tex
 Capitulos/01_introduccion.tex
 Capitulos/02_materiales.tex
 Capitulos/03_mesoporosos.tex
-Capitulos.indexados/04_optimizacion.tex
-Capitulos/05_electroquimica.tex
-Capitulos/06_microfabricacion.tex
-Capitulos/07_integracion.tex
-Capitulos/08_conclusiones.tex
+Capitulos/04_electroquimica.tex
+Capitulos/05_microfabricacion.tex
+Capitulos/06_conclusiones.tex
 PostCapitulos/siglas.tex
 PostCapitulos/suplementaria.tex
 PostCapitulos/abreviaturas.tex

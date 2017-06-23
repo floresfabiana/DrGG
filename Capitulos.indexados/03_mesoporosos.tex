@@ -513,8 +513,9 @@
 			 \begin{table}[ht!]
 			 \caption[Comparación de resultados \pdm]{Resumen de resultados obtenidos por cada una de las técnicas de caracterización, para cada uno de los métodos pos-depósito aplicados a \pdm.}
 			 \label{tabla:resultados}
+		 	 \begingroup
 		 	 \subcaption{Parte A: Microscopía, elipsoporosimetría\index{elipsoporosimetría ambiental} y ángulo de contacto\index{angulo@ángulo de contacto}.}
-			 
+			 \endgroup
 			 \begin{tabular}{>{\raggedright\arraybackslash}m{1.5cm}>{\centering\arraybackslash}m{0.7cm}>{\centering\arraybackslash}m{0.7cm}>{\centering\arraybackslash}m{0.1cm}>{\centering\arraybackslash}m{0.75cm}>{\centering\arraybackslash}m{0.75cm}>{\centering\arraybackslash}m{0.75cm}>{\centering\arraybackslash}m{0.75cm}>{\centering\arraybackslash}m{0.75cm}>{\centering\arraybackslash}m{0.98cm}} 
 			 \toprule
 				 \multirow{2}{*}{Método}& \multicolumn{2}{c}{Microscopia$^*$}&&\multicolumn{5}{c}{Elipsoporosimetría} & AC \\
@@ -535,8 +536,9 @@
 				 Al\index{aluminio}cSF   &\checkmark&\xmark&& 8,0 & 2,1$^\dagger$ & 32 & 225 & 1,374 & 24,5 \\
 			\bottomrule
 			\end{tabular}
-		    
+		    \begingroup
 		    \subcaption{Parte B: Accesibilidad de sonda\index{sonda}s EQ, espectroscopía IR y observaciones.}
+			\endgroup
 			\begin{tabular}{>{\raggedright\arraybackslash}m{1.5cm}>{\centering\arraybackslash}m{1cm}>{\centering\arraybackslash}m{1cm}>{\centering\arraybackslash}m{1.6cm}>{\raggedright\arraybackslash}m{4.9cm}} 
 			\toprule
 				 \multirow{2}{*}{Método}& \multicolumn{2}{c}{FTIR} & Señal EQ$^\ddagger$ & Observaciones generales\\
@@ -630,7 +632,7 @@
 
 		En la figura \ref{fig:IR_agua} se muestra una película delgada \index{película!delgada}de sílice, estructurada con F127, y preparado por el método de alto vacio\index{alto@alto vacío}. Al\index{aluminio}lí donde se comparan tres espectros IR para cada etapa; la película antes de extraer el surfactante\index{surfactante}, luego de extraerlo con 2-propanol\index{propanol@2-propanol} y, luego de extraerlo con el alcohol y seguido de un enjuague en agua acidificada. Se ve como con el enjuague en agua ácida disminuye la señal correspondiente a la vibración\index{vibración} C-H, que aparece ya sea por restos de surfactante\index{surfactante} y/o de la esterificación\index{esterificación} del 2-propanol.
 
-	\subsection{Sobre la respuesta electroquímica\index{electroquimico}}
+	\subsection{Sobre la respuesta electroquímica\index{electroquimico}}\label{sec:acc_eq}
 
 	  Una parte fundamental en la fabricación de las \pdm\space y su potencial uso para sensores\index{sensor} electroquímico\index{electroquimico}s\index{electroquimico} es la accesibilidad\index{accesibilidad} de moléculas dentro de la red porosa. Ya se demostró, en la sección \ref{sec:acc}, pág. \pageref{sec:acc} que el \aminorutenio\space es capaz de difundir en sistemas calcinados a través de los poros hasta la superficie\index{superficie} del electrodo, donde tiene lugar la reacción electroquímica\index{electroquimico}. Se debe evaluar, entonces,  la accesibilidad\index{accesibilidad} en sistemas de poros no calcinados. Los mediciones electroquímica\index{electroquimico}s\index{electroquimico} se llevaron a cabo en películas depositadas, condensadas y extraídas con el tratamiento de alto vacio\index{alto@alto vacío}, ya que es el que mostró las mejores condiciones de adherencia\index{adherencia} al Au, condensación\index{condensación} y distribución de poros para usar en sensores\index{sensor} EQ. 
 
@@ -668,7 +670,18 @@
 
       Si bien la capacidad de adsorción\index{adsorción} es prácticamente igual (la concentración dentro de los poros área de la curva azul), ya sea que se trate del sistema calcinado o del sistema de alto vacio\index{alto@alto vacío}, el mecanismo de adsorción\index{adsorción} parece ser diferente. En los calcinados la respuesta del primer ciclo se corresponde con la de una sonda\index{sonda} en un electrodo de Au\index{electrodo!de Au}\index{oro} sin \pdm, para luego evolucionar en la respuesta típica de un adsorbido. En cambio, en los sistemas de alto vacio\index{alto@alto vacío}, los primeros ciclos no dan respuesta, y, conforme la sonda\index{sonda} ingresa en los poros, la respuesta aumenta y hasta ser prácticamente igual a la del sistema calcinado. Este comportamiento sugiere que la accesibilidad\index{accesibilidad} no es igual para ambos sistemas. Los calcinados son sistemas más <<abiertos>> o mas comunicados. En los sistemas condensados a bajas temperaturas la difusión\index{difusión} de la sonda\index{sonda} al electrodo parece esta impedida, y la respuesta aumenta conforme aumenta la concentración de sonda\index{sonda} dentro de los poros. En resumen, en los sistemas calcinados la difusión\index{difusión} es más rápida que la adsorción\index{adsorción} y en los de alto vacio\index{alto@alto vacío} la difusión\index{difusión} esta impedida y solo se ve señal a medida que se adsorbe, a pesar de que la capacidad de adsorción\index{adsorción} es igual para ambos métodos.
 
-     
+      Esta diferencia de accesibilidad\index{accesibilidad} de los sistemas calcinados respectos de los sistemas de alto vacio\index{alto@alto vacío} también se hizo evidente cuando se utilizó ferroceno metanol\index{ferroceno metanol} como sonda\index{sonda}. Esta sonda\index{sonda} es neutra, por lo tanto no debería verse influenciada por la carga dentro de las películas. En la figura \ref{fig:fcOH_accesibilidad} se compara la respuesta de un \pdmF\space condensado y extraído por el método de alto vacio\index{alto@alto vacío} y un sistema \pdmF\space calcinado. Si bien ambos sistemas demostraron ser accesibles, los sistemas condensados a bajas temperaturas da un respuesta propia de un sistema limitado por difusión\index{difusión}. En el capítulo \ref{chap:Electroquimica} se discute y analiza en profundidad  los resultados de transporte\index{transporte} del ferroceno metanol\index{ferroceno metanol} en sistemas \pdmF, así como cálculos de constantes de difusión\index{difusión}.
+
+      		\begin{figure}[ht!]
+		 	\begin{subfigure}[t]{0.5\textwidth}
+		          	\includegraphics[width=\textwidth]{Graficos/Acc-FcOH-Calcinado.pdf}
+		          	\end{subfigure}
+		    \begin{subfigure}[t]{0.5\textwidth}
+		          	\includegraphics[width=\textwidth]{Graficos/Acc-FcOH-BajaT.pdf}
+		         	\end{subfigure}
+		         	\caption{Voltametrías para \fc\space \SI{1}{\milli\Molar} en \SI{100}{\milli\Molar} de KCl realizada a \SI{50}{\volt\per\second} contra ESC. Izquierda: sobre sistemas \pdmF\space calcinados. Derecha: sobre sistemas \pdmF\space condensados por el método de alto vacio\index{alto@alto vacío} y extraído con 2-propanol\index{propanol@2-propanol} y agua.}
+		         	\label{fig:fcOH_accesibilidad}
+		    \end{figure}     	
 
 \section{Conclusiones parciales}
 	
@@ -726,11 +739,6 @@
 %Muchos de los trabajos que figuran el la bibliografía utilizan técnicas de electroquímica\index{electroquimico} como herramienta de caracterización para películas mesoporosas con múltiples propósitos; como inferir estructuras de poros, accesibilidad, deducir propiedades de transporte\index{transporte} y estimar variables del sistema. En este trabajo se plantea el uso de la electroquímica\index{electroquimico}, no solo como herramienta de caracterización de películas mesoporososas sino también como técnica analítica. Para lograr dicho objetivo se evaluó el desempeño electroquímico\index{electroquimico} de los electrodos de Au\index{electrodo!de Au} así como la viabilidad de ser utilizados como sustrato\index{sustrato} para el depósito\index{depósito} de película delgada \index{película!delgada}mesoporosa. Dichas películas serán el elemento activo, que actúa como membrana selectiva de los analitos electroactivos a cuantificar. 
 
 %Revisión de LOGS
-
-%Warnings aceptables ---> son los subcaption de la tabla de resultados.
- %W: /home/gustavo/Dropbox/Tesis/Capitulos/03_mesoporosos.tex:522 \captionsetup{subtype*=...} or \subcaptionof(caption) outside box or environment
- %W: /home/gustavo/Dropbox/Tesis/Capitulos/03_mesoporosos.tex:522 \subcaption(caption) outside box or environment
- %W: /home/gustavo/Dropbox/Tesis/Capitulos/03_mesoporosos.tex:545 \subcaption(caption) outside box or environment
 
 
 % B: /home/gustavo/Dropbox/Tesis/Capitulos/03_mesoporosos.tex:61 Overfull \hbox (1.11682pt too wide) in paragraph --> OK Texto fuera de margen

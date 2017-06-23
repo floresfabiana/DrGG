@@ -1,0 +1,34 @@
+%Linea Para poder completar automaticamente las citas con el Sublime
+%No hace el documento, se puede borrar esta linea si no se usa el Sublime
+%------------------------------------------------------------------------------
+ \newcommand{\NoBiblioConc}[1]{
+ \ifthenelse{\equal{#1}{verdadero}}{}{\bibliography{Referencias/base_bibliografica}}
+ \NoBiblioConc{verdadero}}
+ %-----------------------------------------------------------------------------
+
+%Formato (Nombre de capitulo largo o corto), nombre del capitulo y estilo de la
+%Portada del Capitulo
+%------------------------------------------------------------------------------
+ 	
+ %Formato en si, titulo en un solo renglon
+ \FormatoCapituloUnaLinea
+ 
+ %Nombre y etiquete para referir
+ \chapter{Conclusiones}
+ \label{chap:Conclusiones}
+
+ %Para que no salga el numero de pagina en la portada del capitulo
+ \thispagestyle{empty}
+	
+ %Resumen del Capitulo en Italica
+ \noindent\textit{Aca van las conclusiones}
+ 
+ %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
+ \vfill
+ \minitoc
+ \newpage
+ %-------------------------------------------------------------------------------
+
+Por supuesto, aca van las conclusiones!
+\newpage
+
