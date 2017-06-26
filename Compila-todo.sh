@@ -75,7 +75,6 @@ if [ $? = 0 ];then
 else
     salida="$(tput setaf 1)  Error de compilacion, terminado en "
     echo -n $salida
-    
 fi) 2>&1 )"
 echo "$TIEMPO5 $(tput setaf 0)"
 

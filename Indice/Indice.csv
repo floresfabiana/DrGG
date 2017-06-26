@@ -52,6 +52,8 @@
  SEM; SEM\index{SEM}
  ángulo de contacto; ángulo de contacto\index{angulo@ángulo de contacto}
  condensación; condensación\index{condensación}
+ condensación ácida; condensación ácida\index{condensación!ácida}
+ condensación alcalina; condensación alcalina\index{condensación!alcalina}
  extracción; extracción\index{extracción}
  surfactante; surfactante\index{surfactante}
  iónico; iónico\index{iónico}
@@ -227,7 +229,7 @@ Wu ;Wu\index{Wu}
 Iler;Iler\index{Iler}
 Langmuir;Langmuir\index{Langmuir}
  Etienne; Etienne\index{Etienne}
-\textit{electron hopping};\textit{electron hopping}\index{electron hopping@\textit{electron hopping}}
+ \textit{electron hopping}; \textit{electron hopping}\index{electron hopping@\textit{electron hopping}}
  Avogadro; Avogrado\index{Avogadro}
 silanolato;\index{silanolato}
 sitio redox;sitio redox\index{sitio redox}
@@ -276,4 +278,8 @@ Pasteur;Pasteur\index{Pasteur}
  chip; chip\index{chip}
  tintas; tintas\index{tintas}
  Soler; Soler\index{Soler}
+ monocapa; monocapa\index{monocapa}
+ reflujo; reflujo\index{reflujo}
+ filmina; filmina\index{filmina}
+ tolueno; tolueno\index{tolueno}
  dummy;dummy

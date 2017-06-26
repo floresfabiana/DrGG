@@ -63,7 +63,7 @@ rm Tesis_lista_tex.txt
 
 #Para Imagenes
 for file in $CD_IMAGENES/*.jpg; do
-	
+	[ -e "$file" ] || continue
 	cat Tesis_lista_imagenes.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
@@ -72,7 +72,7 @@ for file in $CD_IMAGENES/*.jpg; do
 	fi		
 done
 for file in $CD_IMAGENES/*.png; do
-	
+	[ -e "$file" ] || continue
 	cat Tesis_lista_imagenes.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
@@ -81,7 +81,16 @@ for file in $CD_IMAGENES/*.png; do
 	fi		
 done
 for file in $CD_IMAGENES/*.pdf; do
-	
+	[ -e "$file" ] || continue
+	cat Tesis_lista_imagenes.txt|grep $file > /dev/null
+	if [ $? == 0 ]; then
+			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
+		else
+			echo "$file: $(tput setaf 1)No necesario!$(tput setaf 0)"
+	fi		
+done
+for file in $CD_IMAGENES/*.tif; do
+	[ -e "$file" ] || continue
 	cat Tesis_lista_imagenes.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
@@ -92,7 +101,7 @@ done
 
 #Para Esquemas
 for file in $CD_ESQUEMAS/*.pdf; do
-	
+	[ -e "$file" ] || continue
 	cat Tesis_lista_esquemas.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
@@ -103,7 +112,7 @@ done
 
 #Para graficos
 for file in $CD_GRAFICOS/*.pdf; do
-	
+	[ -e "$file" ] || continue
 	cat Tesis_lista_graficos.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
@@ -114,7 +123,7 @@ done
 
 #Para tex
 for file in Capitulos/*.tex; do
-	
+	[ -e "$file" ] || continue
 	cat Tesis_lista_tex.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
@@ -123,7 +132,7 @@ for file in Capitulos/*.tex; do
 	fi		
 done
 for file in PostCapitulos/*.tex; do
-	
+	[ -e "$file" ] || continue
 	cat Tesis_lista_tex.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
@@ -132,7 +141,7 @@ for file in PostCapitulos/*.tex; do
 	fi		
 done
 for file in PreCapitulos/*.tex; do
-	
+	[ -e "$file" ] || continue
 	cat Tesis_lista_tex.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
@@ -141,7 +150,7 @@ for file in PreCapitulos/*.tex; do
 	fi		
 done
 for file in Configuraciones/*.tex; do
-	
+	[ -e "$file" ] || continue
 	cat Tesis_lista_tex.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
@@ -150,7 +159,7 @@ for file in Configuraciones/*.tex; do
 	fi		
 done
 for file in Referencias/*.tex; do
-	
+	[ -e "$file" ] || continue
 	cat Tesis_lista_tex.txt|grep $file > /dev/null
 	if [ $? == 0 ]; then
 			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
