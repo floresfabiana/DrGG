@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #Defino algunas varibles utiles
-
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
 CD_ACTUAL=`pwd`
 CD_IMAGENES="Imagenes"
 CD_ESQUEMAS="Esquemas"
@@ -167,4 +168,24 @@ for file in Referencias/*.tex; do
 			echo "$file: $(tput setaf 1)No necesario!$(tput setaf 0)"
 	fi		
 done
+
+for file in $(find . -iname '*.plot'); do 
+     #cat Tesis_lista_graficos
+     archivo=$(basename $file)
+     extension="${archivo##*.}"
+     archivo_sin_ext="${archivo%.*}"
+     echo "$file"
+     echo $archivo
+     echo $archivo_sin_ext
+     cat Tesis_lista_graficos.txt|grep $archivo_sin_ext > /dev/null
+     if [ $? == 0 ]; then
+			echo "$file: $(tput setaf 2)Necesario!$(tput setaf 0)"
+		else
+			echo "$file: $(tput setaf 1)No necesario!$(tput setaf 0)"
+	fi	
+
+done
+
+IFS=$SAVEIFS
+
 exit 0
