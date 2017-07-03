@@ -1,0 +1,40 @@
+\def\firstcircle{(0,0) circle (3.5cm)}
+\def\secondcircle{(60:4cm) circle (3.5cm)}
+\def\thirdcircle{(0:4cm) circle (3.5cm)}
+
+    \begin{tikzpicture}
+       
+
+    \begin{scope}[opacity=0.2]
+      \draw[fill=green,] \firstcircle ;
+      \draw[fill=red] \secondcircle;
+      \draw[fill=blue] \thirdcircle ;
+    \end{scope}  
+    
+     \begin{scope}
+    \clip \secondcircle;
+    \clip \firstcircle;
+    \fill[gray] \thirdcircle;
+     \end{scope}
+
+    \begin{scope}
+       \path[draw=gray] \firstcircle node[below,xshift=-2cm,yshift=0.7cm,align=center,text width=7cm] {\textbf{Química sol-gel}};
+      \path[postaction={
+    decorate,
+    decoration={
+      text along path,
+      text align = left, 
+      text={peliuclas delgadas mesoporosas basadas en SiO2, depositado por spin coating, con control sobre tamano de poros y facil de funcionalizar en superficie, altamente porosas.}
+      }}] (-3.4,0) -- (0,0) (-3.3,-0.4) -- (0,-0.4) (-3.2,-0.8) -- (0,-0.8) (-3.1,-1.2) -- (0,-1.2) (-2.8,-1.4) -- (0, -1.4);
+       \path[draw=gray] \firstcircle node[below,xshift=-1.4cm] {}; %{autoensamblado inducido por evaporación, ecónomico, química suave, depositado por spin coating};
+        \draw[draw=gray] \secondcircle node [above,yshift=1cm] {Componente Analitica};
+        \draw[draw=gray] \thirdcircle node [below,xshift=1cm] {Microfabricación};
+        \draw[draw=none] \secondcircle  node[below,yshift=-1.8	cm] {Plataforma};
+        \draw[draw=none] \secondcircle  node[below,yshift=-2.2cm] {de sensores};
+    \end{scope}  
+
+   
+
+
+
+    \end{tikzpicture}
