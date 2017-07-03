@@ -1,0 +1,32 @@
+\def\firstcircle{(0,0) circle (3.5cm)}
+\def\secondcircle{(60:4cm) circle (3.5cm)}
+\def\thirdcircle{(0:4cm) circle (3.5cm)}
+
+    \begin{tikzpicture}
+       
+
+    \begin{scope}[opacity=0.2]
+      \draw[fill=green] \firstcircle ;
+      \draw[fill=red] \secondcircle;
+      \draw[fill=blue] \thirdcircle ;
+    \end{scope}  
+    
+     \begin{scope}
+    \clip \secondcircle;
+    \clip \firstcircle;
+    \fill[gray] \thirdcircle;
+     \end{scope}
+
+    \begin{scope}
+       \draw[draw=gray] \firstcircle node[below,xshift=-1cm] {Elemento activo};
+        \draw[draw=gray] \secondcircle node [above,yshift=1cm] {Componente Analitica};
+        \draw[draw=gray] \thirdcircle node [below,xshift=1cm] {Microfabricación};
+        \draw[draw=none] \secondcircle  node[below,yshift=-1.8	cm] {Plataforma};
+        \draw[draw=none] \secondcircle  node[below,yshift=-2.2cm] {de sensores};
+    \end{scope}  
+
+   
+
+
+
+    \end{tikzpicture}
