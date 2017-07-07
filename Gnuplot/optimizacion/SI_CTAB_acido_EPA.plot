@@ -36,6 +36,5 @@ set xlabel "$\\text{P/P}_s$" font ",14" textcolor rgb "gray40" offset  0,-2
 set ylabel "\'Indice de refracci\'on" font ",14" textcolor rgb "gray40" offset  -2,0
 set y2label "\\% Volumen Poroso" font ",14" textcolor rgb "gray40" offset  2,0
 
-
 #Ploteo todas las funciones que les digamos
 plot "Si_ACTAB-EPA.txt" using 1:2 axes x1y1 with linespoints ls 1 title "Adsorci\'on", "Si_ACTAB-EPA.txt" using 5:6 with linespoints ls 3 title "Desorci\'on", "Adsorci\'on"
