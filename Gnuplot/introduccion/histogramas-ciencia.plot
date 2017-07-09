@@ -36,7 +36,7 @@ set size ratio 1.8
 #Leyenda
 
 #Aspecto barras
-set style fill solid 0.1 border 
+set style fill solid 0.6 border
 
 #Archivos CSV
 set datafile separator ","
@@ -51,11 +51,11 @@ set style histogram gap 1
 set xtics rotate by 90 font ",12" offset 0, 0.6, 0 right
 set y2tics rotate by 90 font ",12" offset 1,0,0 center format "%'gK"
 set format y ""
-
+set boxwidth 0.95 relative
 
 #set label 100 at 8.8,0.6 "567" font ",8" rotate by 90
 #set label 200 at 9.17,0.2 "294" font ",8" rotate by 90
 
 #Grafico
-plot 'Scopus-Nanociencia-Paises.csv' using ($2/1000):xtic(1) every ::1::10 title " ",\
-'Scopus-Nanotech-Paises.csv' using ($2/1000):xtic(1) every ::1::10 title " "
+plot 'Scopus-Nanociencia-Paises.csv' using ($2/1000):xtic(1) every ::1::10 lc 'gray20' title " ",\
+'Scopus-Nanotech-Paises.csv' using ($2/1000):xtic(1) every ::1::10 lc 'orange' title " "

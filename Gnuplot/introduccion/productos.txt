@@ -1,0 +1,11 @@
+http://nanodb.dk/en/analysis/consumer-products/#chartHashsection
+
+
+Cantidad de productos nanotech por año
+
+"2012","1211"
+"2013","1216"
+"2014","1424"
+"2015","2274"
+"2016","2392"
+"2017","3005"
