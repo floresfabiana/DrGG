@@ -1,444 +1,968 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 10 jul 2017 10:20:11 ART
+%% mar 11 jul 2017 13:48:05 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,1.522)--(11.947,1.522);
+\draw[gp path] (1.688,1.421)--(11.947,1.421);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,1.522)--(1.868,1.522);
-\node[gp node center] at (1.136,1.522) {0K};
+\draw[gp path] (1.688,1.421)--(1.868,1.421);
+\node[gp node center] at (1.136,1.421) {0K};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,2.665)--(11.947,2.665);
+\draw[gp path] (1.688,2.447)--(11.947,2.447);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,2.665)--(1.868,2.665);
-\node[gp node center] at (1.136,2.665) {5K};
+\draw[gp path] (1.688,2.447)--(1.868,2.447);
+\node[gp node center] at (1.136,2.447) {2K};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,3.808)--(11.947,3.808);
+\draw[gp path] (1.688,3.473)--(11.947,3.473);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,3.808)--(1.868,3.808);
-\node[gp node center] at (1.136,3.808) {10K};
+\draw[gp path] (1.688,3.473)--(1.868,3.473);
+\node[gp node center] at (1.136,3.473) {4K};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,4.951)--(11.947,4.951);
+\draw[gp path] (1.688,4.499)--(11.947,4.499);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,4.951)--(1.868,4.951);
-\node[gp node center] at (1.136,4.951) {15K};
+\draw[gp path] (1.688,4.499)--(1.868,4.499);
+\node[gp node center] at (1.136,4.499) {6K};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,6.095)--(11.947,6.095);
+\draw[gp path] (1.688,5.524)--(11.947,5.524);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,6.095)--(1.868,6.095);
-\node[gp node center] at (1.136,6.095) {20K};
+\draw[gp path] (1.688,5.524)--(1.868,5.524);
+\node[gp node center] at (1.136,5.524) {8K};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,7.238)--(11.947,7.238);
+\draw[gp path] (1.688,6.550)--(1.872,6.550);
+\draw[gp path] (5.732,6.550)--(11.947,6.550);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,7.238)--(1.868,7.238);
-\node[gp node center] at (1.136,7.238) {25K};
+\draw[gp path] (1.688,6.550)--(1.868,6.550);
+\node[gp node center] at (1.136,6.550) {10K};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,8.381)--(11.947,8.381);
+\draw[gp path] (1.688,7.576)--(11.947,7.576);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,8.381)--(1.868,8.381);
-\node[gp node center] at (1.136,8.381) {30K};
-\draw[gp path] (1.688,1.293)--(1.688,1.473);
-\node[gp node center] at (1.688,0.985) {$1990$};
-\draw[gp path] (2.068,1.293)--(2.068,1.383);
-\draw[gp path] (2.448,1.293)--(2.448,1.383);
-\draw[gp path] (2.828,1.293)--(2.828,1.383);
-\draw[gp path] (3.208,1.293)--(3.208,1.383);
-\draw[gp path] (3.588,1.293)--(3.588,1.473);
-\node[gp node center] at (3.588,0.985) {$1995$};
-\draw[gp path] (3.968,1.293)--(3.968,1.383);
-\draw[gp path] (4.348,1.293)--(4.348,1.383);
-\draw[gp path] (4.728,1.293)--(4.728,1.383);
-\draw[gp path] (5.108,1.293)--(5.108,1.383);
-\draw[gp path] (5.488,1.293)--(5.488,1.473);
-\node[gp node center] at (5.488,0.985) {$2000$};
-\draw[gp path] (5.868,1.293)--(5.868,1.383);
-\draw[gp path] (6.248,1.293)--(6.248,1.383);
-\draw[gp path] (6.628,1.293)--(6.628,1.383);
-\draw[gp path] (7.007,1.293)--(7.007,1.383);
-\draw[gp path] (7.387,1.293)--(7.387,1.473);
-\node[gp node center] at (7.387,0.985) {$2005$};
-\draw[gp path] (7.767,1.293)--(7.767,1.383);
-\draw[gp path] (8.147,1.293)--(8.147,1.383);
-\draw[gp path] (8.527,1.293)--(8.527,1.383);
-\draw[gp path] (8.907,1.293)--(8.907,1.383);
-\draw[gp path] (9.287,1.293)--(9.287,1.473);
-\node[gp node center] at (9.287,0.985) {$2010$};
-\draw[gp path] (9.667,1.293)--(9.667,1.383);
-\draw[gp path] (10.047,1.293)--(10.047,1.383);
-\draw[gp path] (10.427,1.293)--(10.427,1.383);
-\draw[gp path] (10.807,1.293)--(10.807,1.383);
-\draw[gp path] (11.187,1.293)--(11.187,1.473);
-\node[gp node center] at (11.187,0.985) {$2015$};
-\draw[gp path] (11.567,1.293)--(11.567,1.383);
-\draw[gp path] (11.947,1.293)--(11.947,1.383);
-\draw[gp path] (1.688,8.381)--(1.688,1.293)--(11.947,1.293)--(11.947,8.381)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.837) {N'umero de publicaciones};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.817,0.215) {Año};
-\node[gp node left] at (3.156,8.047) {Nanociencia};
+\draw[gp path] (1.688,7.576)--(1.868,7.576);
+\node[gp node center] at (1.136,7.576) {12K};
+\draw[gp path] (1.688,1.421)--(1.688,1.601);
+\node[gp node center] at (1.688,1.113) {$1990$};
+\draw[gp path] (2.083,1.421)--(2.083,1.511);
+\draw[gp path] (2.477,1.421)--(2.477,1.511);
+\draw[gp path] (2.872,1.421)--(2.872,1.511);
+\draw[gp path] (3.266,1.421)--(3.266,1.511);
+\draw[gp path] (3.661,1.421)--(3.661,1.601);
+\node[gp node center] at (3.661,1.113) {$1995$};
+\draw[gp path] (4.055,1.421)--(4.055,1.511);
+\draw[gp path] (4.450,1.421)--(4.450,1.511);
+\draw[gp path] (4.845,1.421)--(4.845,1.511);
+\draw[gp path] (5.239,1.421)--(5.239,1.511);
+\draw[gp path] (5.634,1.421)--(5.634,1.601);
+\node[gp node center] at (5.634,1.113) {$2000$};
+\draw[gp path] (6.028,1.421)--(6.028,1.511);
+\draw[gp path] (6.423,1.421)--(6.423,1.511);
+\draw[gp path] (6.818,1.421)--(6.818,1.511);
+\draw[gp path] (7.212,1.421)--(7.212,1.511);
+\draw[gp path] (7.607,1.421)--(7.607,1.601);
+\node[gp node center] at (7.607,1.113) {$2005$};
+\draw[gp path] (8.001,1.421)--(8.001,1.511);
+\draw[gp path] (8.396,1.421)--(8.396,1.511);
+\draw[gp path] (8.790,1.421)--(8.790,1.511);
+\draw[gp path] (9.185,1.421)--(9.185,1.511);
+\draw[gp path] (9.580,1.421)--(9.580,1.601);
+\node[gp node center] at (9.580,1.113) {$2010$};
+\draw[gp path] (9.974,1.421)--(9.974,1.511);
+\draw[gp path] (10.369,1.421)--(10.369,1.511);
+\draw[gp path] (10.763,1.421)--(10.763,1.511);
+\draw[gp path] (11.158,1.421)--(11.158,1.511);
+\draw[gp path] (11.552,1.421)--(11.552,1.601);
+\node[gp node center] at (11.552,1.113) {$2015$};
+\draw[gp path] (11.947,1.421)--(11.947,1.511);
+\draw[gp path] (1.688,7.576)--(1.688,1.421)--(11.947,1.421)--(11.947,7.576)--cycle;
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.498) {N'umero de publicaciones};
+\node[gp node left] at (3.156,7.242) {Nanotecnologia};
 \gpcolor{rgb color={0.302,0.302,0.302}}
-\draw[gp path] (2.056,8.047)--(2.972,8.047);
-\draw[gp path] (11.567,7.327)--(11.187,6.911)--(10.807,6.586)--(10.427,6.098)--(10.047,5.627)%
-  --(9.667,5.406)--(9.287,4.669)--(8.907,4.073)--(8.527,3.563)--(8.147,3.138)--(7.767,2.817)%
-  --(7.387,2.390)--(7.007,1.971)--(6.628,1.743)--(6.248,1.674)--(5.868,1.591)--(5.488,1.551)%
-  --(5.108,1.547)--(4.728,1.537)--(4.348,1.531)--(3.968,1.525)--(3.588,1.523)--(3.208,1.523)%
-  --(2.828,1.523);
+\draw[gp path] (2.056,7.242)--(2.972,7.242);
+\draw[gp path] (11.947,6.728)--(11.552,6.979)--(11.158,6.614)--(10.763,7.307)--(10.369,7.173)%
+  --(9.974,6.750)--(9.580,6.200)--(9.185,5.633)--(8.790,6.160)--(8.396,5.194)--(8.001,4.890)%
+  --(7.607,4.609)--(7.212,4.227)--(6.818,3.563)--(6.423,2.772)--(6.028,1.971)--(5.634,1.765)%
+  --(5.239,1.633)--(4.845,1.587)--(4.450,1.557)--(4.055,1.564)--(3.661,1.540)--(3.266,1.452)%
+  --(2.872,1.437)--(2.477,1.428)--(2.083,1.432)--(1.688,1.427);
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(11.567,7.327)}
+\gppoint{gp mark 7}{(11.947,6.728)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(11.567,7.327)}
+\gppoint{gp mark 7}{(11.947,6.728)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(11.187,6.911)}
+\gppoint{gp mark 7}{(11.552,6.979)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(11.187,6.911)}
+\gppoint{gp mark 7}{(11.552,6.979)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(10.807,6.586)}
+\gppoint{gp mark 7}{(11.158,6.614)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(10.807,6.586)}
+\gppoint{gp mark 7}{(11.158,6.614)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(10.427,6.098)}
+\gppoint{gp mark 7}{(10.763,7.307)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(10.427,6.098)}
+\gppoint{gp mark 7}{(10.763,7.307)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(10.047,5.627)}
+\gppoint{gp mark 7}{(10.369,7.173)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(10.047,5.627)}
+\gppoint{gp mark 7}{(10.369,7.173)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(9.667,5.406)}
+\gppoint{gp mark 7}{(9.974,6.750)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(9.667,5.406)}
+\gppoint{gp mark 7}{(9.974,6.750)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(9.287,4.669)}
+\gppoint{gp mark 7}{(9.580,6.200)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(9.287,4.669)}
+\gppoint{gp mark 7}{(9.580,6.200)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(8.907,4.073)}
+\gppoint{gp mark 7}{(9.185,5.633)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(8.907,4.073)}
+\gppoint{gp mark 7}{(9.185,5.633)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(8.527,3.563)}
+\gppoint{gp mark 7}{(8.790,6.160)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(8.527,3.563)}
+\gppoint{gp mark 7}{(8.790,6.160)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(8.147,3.138)}
+\gppoint{gp mark 7}{(8.396,5.194)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(8.147,3.138)}
+\gppoint{gp mark 7}{(8.396,5.194)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(7.767,2.817)}
+\gppoint{gp mark 7}{(8.001,4.890)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(7.767,2.817)}
+\gppoint{gp mark 7}{(8.001,4.890)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(7.387,2.390)}
+\gppoint{gp mark 7}{(7.607,4.609)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(7.387,2.390)}
+\gppoint{gp mark 7}{(7.607,4.609)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(7.007,1.971)}
+\gppoint{gp mark 7}{(7.212,4.227)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(7.007,1.971)}
+\gppoint{gp mark 7}{(7.212,4.227)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(6.628,1.743)}
+\gppoint{gp mark 7}{(6.818,3.563)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(6.628,1.743)}
+\gppoint{gp mark 7}{(6.818,3.563)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(6.248,1.674)}
+\gppoint{gp mark 7}{(6.423,2.772)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(6.248,1.674)}
+\gppoint{gp mark 7}{(6.423,2.772)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(5.868,1.591)}
+\gppoint{gp mark 7}{(6.028,1.971)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(5.868,1.591)}
+\gppoint{gp mark 7}{(6.028,1.971)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(5.488,1.551)}
+\gppoint{gp mark 7}{(5.634,1.765)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(5.488,1.551)}
+\gppoint{gp mark 7}{(5.634,1.765)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(5.108,1.547)}
+\gppoint{gp mark 7}{(5.239,1.633)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(5.108,1.547)}
+\gppoint{gp mark 7}{(5.239,1.633)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(4.728,1.537)}
+\gppoint{gp mark 7}{(4.845,1.587)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(4.728,1.537)}
+\gppoint{gp mark 7}{(4.845,1.587)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(4.348,1.531)}
+\gppoint{gp mark 7}{(4.450,1.557)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(4.348,1.531)}
+\gppoint{gp mark 7}{(4.450,1.557)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(3.968,1.525)}
+\gppoint{gp mark 7}{(4.055,1.564)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(3.968,1.525)}
+\gppoint{gp mark 7}{(4.055,1.564)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(3.588,1.523)}
+\gppoint{gp mark 7}{(3.661,1.540)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(3.588,1.523)}
+\gppoint{gp mark 7}{(3.661,1.540)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(3.208,1.523)}
+\gppoint{gp mark 7}{(3.266,1.452)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(3.208,1.523)}
+\gppoint{gp mark 7}{(3.266,1.452)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(2.828,1.523)}
+\gppoint{gp mark 7}{(2.872,1.437)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(2.828,1.523)}
+\gppoint{gp mark 7}{(2.872,1.437)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(2.514,8.047)}
+\gppoint{gp mark 7}{(2.477,1.428)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(2.514,8.047)}
+\gppoint{gp mark 7}{(2.477,1.428)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.083,1.432)}
+\gpcolor{rgb color={0.302,0.302,0.302}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 7}{(2.083,1.432)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(1.688,1.427)}
+\gpcolor{rgb color={0.302,0.302,0.302}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 7}{(1.688,1.427)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.514,7.242)}
+\gpcolor{rgb color={0.302,0.302,0.302}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 7}{(2.514,7.242)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left] at (3.156,7.739) {Nanotecnologia};
-\gpcolor{rgb color={1.000,0.647,0.000}}
-\draw[gp path] (2.056,7.739)--(2.972,7.739);
-\draw[gp path] (11.567,3.887)--(11.187,3.999)--(10.807,3.837)--(10.427,4.146)--(10.047,4.086)%
-  --(9.667,3.897)--(9.287,3.652)--(8.907,3.399)--(8.527,3.634)--(8.147,3.204)--(7.767,3.068)%
-  --(7.387,2.943)--(7.007,2.772)--(6.628,2.477)--(6.248,2.124)--(5.868,1.767)--(5.488,1.675)%
-  --(5.108,1.616)--(4.728,1.595)--(4.348,1.582)--(3.968,1.585)--(3.588,1.575)--(3.208,1.536)%
-  --(2.828,1.529)--(2.448,1.525)--(2.068,1.527)--(1.688,1.524);
+\node[gp node left] at (3.156,6.934) {Nanoescala};
+\gpcolor{rgb color={0.000,0.000,1.000}}
+\draw[gp path] (2.056,6.934)--(2.972,6.934);
+\draw[gp path] (11.947,5.453)--(11.552,5.367)--(11.158,5.212)--(10.763,4.935)--(10.369,4.656)%
+  --(9.974,4.466)--(9.580,4.298)--(9.185,3.956)--(8.790,3.752)--(8.396,3.534)--(8.001,3.304)%
+  --(7.607,3.136)--(7.212,2.643)--(6.818,2.345)--(6.423,2.106)--(6.028,1.883)--(5.634,1.770)%
+  --(5.239,1.709)--(4.845,1.656)--(4.450,1.652)--(4.055,1.592)--(3.661,1.549)--(3.266,1.507)%
+  --(2.872,1.484)--(2.477,1.459)--(2.083,1.445)--(1.688,1.430);
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(11.567,3.887)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(11.947,5.453)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(11.567,3.887)}
+\gppoint{gp mark 6}{(11.947,5.453)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(11.187,3.999)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(11.552,5.367)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(11.187,3.999)}
+\gppoint{gp mark 6}{(11.552,5.367)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(10.807,3.837)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(11.158,5.212)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(10.807,3.837)}
+\gppoint{gp mark 6}{(11.158,5.212)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(10.427,4.146)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(10.763,4.935)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(10.427,4.146)}
+\gppoint{gp mark 6}{(10.763,4.935)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(10.047,4.086)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(10.369,4.656)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(10.047,4.086)}
+\gppoint{gp mark 6}{(10.369,4.656)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(9.667,3.897)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(9.974,4.466)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(9.667,3.897)}
+\gppoint{gp mark 6}{(9.974,4.466)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(9.287,3.652)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(9.580,4.298)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(9.287,3.652)}
+\gppoint{gp mark 6}{(9.580,4.298)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(8.907,3.399)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(9.185,3.956)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(8.907,3.399)}
+\gppoint{gp mark 6}{(9.185,3.956)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(8.527,3.634)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(8.790,3.752)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(8.527,3.634)}
+\gppoint{gp mark 6}{(8.790,3.752)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(8.147,3.204)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(8.396,3.534)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(8.147,3.204)}
+\gppoint{gp mark 6}{(8.396,3.534)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(7.767,3.068)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(8.001,3.304)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(7.767,3.068)}
+\gppoint{gp mark 6}{(8.001,3.304)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(7.387,2.943)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(7.607,3.136)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(7.387,2.943)}
+\gppoint{gp mark 6}{(7.607,3.136)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(7.007,2.772)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(7.212,2.643)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(7.007,2.772)}
+\gppoint{gp mark 6}{(7.212,2.643)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(6.628,2.477)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(6.818,2.345)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(6.628,2.477)}
+\gppoint{gp mark 6}{(6.818,2.345)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(6.248,2.124)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(6.423,2.106)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(6.248,2.124)}
+\gppoint{gp mark 6}{(6.423,2.106)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(5.868,1.767)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(6.028,1.883)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(5.868,1.767)}
+\gppoint{gp mark 6}{(6.028,1.883)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(5.488,1.675)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(5.634,1.770)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(5.488,1.675)}
+\gppoint{gp mark 6}{(5.634,1.770)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(5.108,1.616)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(5.239,1.709)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(5.108,1.616)}
+\gppoint{gp mark 6}{(5.239,1.709)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(4.728,1.595)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(4.845,1.656)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(4.728,1.595)}
+\gppoint{gp mark 6}{(4.845,1.656)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(4.348,1.582)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(4.450,1.652)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(4.348,1.582)}
+\gppoint{gp mark 6}{(4.450,1.652)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(3.968,1.585)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(4.055,1.592)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(3.968,1.585)}
+\gppoint{gp mark 6}{(4.055,1.592)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(3.588,1.575)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(3.661,1.549)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(3.588,1.575)}
+\gppoint{gp mark 6}{(3.661,1.549)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(3.208,1.536)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(3.266,1.507)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(3.208,1.536)}
+\gppoint{gp mark 6}{(3.266,1.507)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(2.828,1.529)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(2.872,1.484)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(2.828,1.529)}
+\gppoint{gp mark 6}{(2.872,1.484)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(2.448,1.525)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(2.477,1.459)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(2.448,1.525)}
+\gppoint{gp mark 6}{(2.477,1.459)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(2.068,1.527)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(2.083,1.445)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(2.068,1.527)}
+\gppoint{gp mark 6}{(2.083,1.445)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(1.688,1.524)}
-\gpcolor{rgb color={1.000,0.647,0.000}}
+\gppoint{gp mark 7}{(1.688,1.430)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(1.688,1.524)}
+\gppoint{gp mark 6}{(1.688,1.430)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(2.514,7.739)}
+\gppoint{gp mark 7}{(2.514,6.934)}
+\gpcolor{rgb color={0.000,0.000,1.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 6}{(2.514,6.934)}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left] at (3.156,6.626) {Nanociencia};
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\draw[gp path] (2.056,6.626)--(2.972,6.626);
+\draw[gp path] (11.947,1.683)--(11.552,1.601)--(11.158,1.712)--(10.763,1.702)--(10.369,1.657)%
+  --(9.974,1.860)--(9.580,1.661)--(9.185,1.595)--(8.790,1.632)--(8.396,1.573)--(8.001,1.655)%
+  --(7.607,1.536)--(7.212,1.477)--(6.818,1.469)--(6.423,1.453)--(6.028,1.436)--(5.634,1.429)%
+  --(5.239,1.424)--(4.845,1.423)--(4.450,1.422)--(4.055,1.424)--(3.661,1.421)--(3.266,1.422)%
+  --(2.872,1.422);
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(11.947,1.683)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(11.947,1.683)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(11.552,1.601)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(11.552,1.601)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(11.158,1.712)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(11.158,1.712)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(10.763,1.702)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(10.763,1.702)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(10.369,1.657)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(10.369,1.657)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(9.974,1.860)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(9.974,1.860)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(9.580,1.661)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(9.580,1.661)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(9.185,1.595)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(9.185,1.595)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(8.790,1.632)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(8.790,1.632)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(8.396,1.573)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(8.396,1.573)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(8.001,1.655)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(8.001,1.655)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(7.607,1.536)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(7.607,1.536)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(7.212,1.477)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(7.212,1.477)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(6.818,1.469)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(6.818,1.469)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(6.423,1.453)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(6.423,1.453)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(6.028,1.436)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(6.028,1.436)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(5.634,1.429)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(5.634,1.429)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(5.239,1.424)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(5.239,1.424)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.845,1.423)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(4.845,1.423)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.450,1.422)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(4.450,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.055,1.424)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(4.055,1.424)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(3.661,1.421)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(3.661,1.421)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(3.266,1.422)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(3.266,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.872,1.422)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(2.872,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.514,6.626)}
+\gpcolor{rgb color={0.000,0.376,0.678}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 5}{(2.514,6.626)}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left] at (3.156,6.318) {Nanoquimica};
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\draw[gp path] (2.056,6.318)--(2.972,6.318);
+\draw[gp path] (11.947,1.454)--(11.552,1.480)--(11.158,1.477)--(10.763,1.491)--(10.369,1.505)%
+  --(9.974,1.485)--(9.580,1.507)--(9.185,1.490)--(8.790,1.577)--(8.396,1.556)--(8.001,1.437)%
+  --(7.607,1.440)--(7.212,1.433)--(6.818,1.433)--(6.423,1.429)--(6.028,1.426)--(5.634,1.424)%
+  --(5.239,1.427)--(4.845,1.424)--(4.450,1.422)--(4.055,1.423)--(3.661,1.423)--(3.266,1.422)%
+  --(2.872,1.422)--(2.477,1.422)--(2.083,1.422);
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(11.947,1.454)}
 \gpcolor{rgb color={1.000,0.647,0.000}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(2.514,7.739)}
+\gppoint{gp mark 3}{(11.947,1.454)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(11.552,1.480)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(11.552,1.480)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(11.158,1.477)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(11.158,1.477)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(10.763,1.491)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(10.763,1.491)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(10.369,1.505)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(10.369,1.505)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(9.974,1.485)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(9.974,1.485)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(9.580,1.507)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(9.580,1.507)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(9.185,1.490)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(9.185,1.490)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(8.790,1.577)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(8.790,1.577)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(8.396,1.556)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(8.396,1.556)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(8.001,1.437)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(8.001,1.437)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(7.607,1.440)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(7.607,1.440)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(7.212,1.433)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(7.212,1.433)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(6.818,1.433)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(6.818,1.433)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(6.423,1.429)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(6.423,1.429)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(6.028,1.426)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(6.028,1.426)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(5.634,1.424)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(5.634,1.424)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(5.239,1.427)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(5.239,1.427)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.845,1.424)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(4.845,1.424)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.450,1.422)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(4.450,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.055,1.423)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(4.055,1.423)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(3.661,1.423)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(3.661,1.423)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(3.266,1.422)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(3.266,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.872,1.422)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(2.872,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.477,1.422)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(2.477,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.083,1.422)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(2.083,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.514,6.318)}
+\gpcolor{rgb color={1.000,0.647,0.000}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 3}{(2.514,6.318)}
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\node[gp node left] at (3.156,6.010) {Nanofisica};
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\draw[gp path] (2.056,6.010)--(2.972,6.010);
+\draw[gp path] (11.947,1.426)--(11.552,1.430)--(11.158,1.433)--(10.763,1.426)--(10.369,1.429)%
+  --(9.974,1.429)--(9.580,1.431)--(9.185,1.425)--(8.790,1.426)--(8.396,1.427)--(8.001,1.423)%
+  --(7.607,1.428)--(7.212,1.423)--(6.818,1.423)--(6.423,1.422)--(6.028,1.422)--(5.634,1.423)%
+  --(5.239,1.421)--(4.845,1.422)--(4.450,1.421)--(4.055,1.421)--(3.661,1.422)--(3.266,1.421)%
+  --(2.872,1.421)--(2.477,1.422)--(2.083,1.421)--(1.688,1.422);
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(11.947,1.426)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(11.947,1.426)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(11.552,1.430)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(11.552,1.430)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(11.158,1.433)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(11.158,1.433)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(10.763,1.426)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(10.763,1.426)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(10.369,1.429)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(10.369,1.429)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(9.974,1.429)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(9.974,1.429)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(9.580,1.431)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(9.580,1.431)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(9.185,1.425)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(9.185,1.425)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(8.790,1.426)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(8.790,1.426)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(8.396,1.427)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(8.396,1.427)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(8.001,1.423)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(8.001,1.423)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(7.607,1.428)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(7.607,1.428)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(7.212,1.423)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(7.212,1.423)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(6.818,1.423)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(6.818,1.423)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(6.423,1.422)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(6.423,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(6.028,1.422)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(6.028,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(5.634,1.423)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(5.634,1.423)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(5.239,1.421)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(5.239,1.421)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.845,1.422)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(4.845,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.450,1.421)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(4.450,1.421)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(4.055,1.421)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(4.055,1.421)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(3.661,1.422)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(3.661,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(3.266,1.421)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(3.266,1.421)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.872,1.421)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(2.872,1.421)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.477,1.422)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(2.477,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.083,1.421)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(2.083,1.421)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(1.688,1.422)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(1.688,1.422)}
+\gpcolor{color=gpbgfillcolor}
+\gpsetpointsize{4.00}
+\gppoint{gp mark 7}{(2.514,6.010)}
+\gpcolor{rgb color={0.647,0.165,0.165}}
+\gpsetpointsize{2.40}
+\gppoint{gp mark 4}{(2.514,6.010)}
 %% coordinates of the plot area
-\gpdefrectangularnode{gp plot 1}{\pgfpoint{1.688cm}{1.293cm}}{\pgfpoint{11.947cm}{8.381cm}}
+\gpdefrectangularnode{gp plot 1}{\pgfpoint{1.688cm}{1.421cm}}{\pgfpoint{11.947cm}{7.576cm}}
 \end{tikzpicture}
 %% gnuplot variables

@@ -8,7 +8,7 @@ set output "histogramas-ciencia.tikz"
 
 #Leyenda
 set key at graph 0.95, 0.80 horizontal samplen 0.3 spacing 6
-set label 2 'Nanociencia' at graph 0.85, 0.78 left rotate by 90  font ",14"   textcolor rgb "gray40"
+#set label 2 'Nanociencia' at graph 0.85, 0.78 left rotate by 90  font ",14"   textcolor rgb "gray40"
 set label 3 'Nanotecnología' at graph 0.93, 0.78 left rotate by 90  font ",14"  textcolor rgb "gray40"
 
 #Saco el Borde
@@ -57,5 +57,4 @@ set boxwidth 0.95 relative
 #set label 200 at 9.17,0.2 "294" font ",8" rotate by 90
 
 #Grafico
-plot 'Scopus-Nanociencia-Paises.csv' using ($2/1000):xtic(1) every ::1::10 lc 'gray20' title " ",\
-'Scopus-Nanotech-Paises.csv' using ($2/1000):xtic(1) every ::1::10 lc 'orange' title " "
+plot 'Scopus-Nanotech-Paises.csv' using ($2/1000):xtic(1) every ::1::10 lc 'gray20' title " "
