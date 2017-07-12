@@ -4,11 +4,9 @@
 
 #Para exportar como latex
 set terminal tikz tikzarrows
-set output "busqueda-por-ano.tikz" 
-set key left Left reverse textcolor 'gray40'
+set output "patentes.tikz" 
+set key left Left reverse  samplen 3 textcolor 'gray40' font ",12"
 
-#Para archivos csv
-set datafile separator ","
 
 #Relacion de aspecto
 set size ratio 0.60
@@ -32,10 +30,12 @@ set size ratio 0.60
 #Coloca los nombre de los ejes
 	unset xlabel
 	#set xlabel "Año"  font ",14" textcolor rgb "gray40" offset 0,-1
-    set ylabel "N\'umero de publicaciones" font ",14" textcolor rgb "gray40" offset -2,0
+    set ylabel "N\'umero de patentes" font ",14" textcolor rgb "gray40" offset -2,0
     set ytics offset -2,0,0 center format "%'gK"
-    set xtics 5
-    set xrange[1990:2016]
+    set xtics 5 
+    set xtics add (2001,2005,2010)
+    set mxtics 5
+    set xrange[2001:2016]
     set yrange[0:]
 #Cambio de aspecto
 #set size square 2.2,1
@@ -47,11 +47,8 @@ set style line 103 lc rgb 'brown' lt 1 lw 1.5 pt 4 pi -1 ps 0.6
 set style line 104 lc rgb 'blue' lt 1 lw 1.5 pt 6 pi -1 ps 0.6
 set pointintervalbox 1
 
-plot  "Scopus-127166-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 102 title "Nanotecnologia",\
-"Scopus-77852-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 104 title "Nanoescala",\
-"Scopus-6026-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 100 title "Nanociencia",\
-"Scopus-1758-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 101 title "Nanoquimica",\
-"Scopus-175-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 103 title "Nanofisica",\
+plot "patentesUSPTO.txt" u 1:($2/1000) w linespoints ls 102 title "USPTO",\
+"patentesEPO.txt" u 1:($2/1000) w linespoints ls 100 title "EPO",\
 
 
 #"productos.txt" u 1:($2/1000) w linespoints ls 100 title "Productos"
