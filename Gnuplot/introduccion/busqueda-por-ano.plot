@@ -26,12 +26,12 @@ set size ratio 0.60
 
 #Estilo de la grilla
 	set style line 11 lc rgb 'gray40' lt 0 lw 1 
-	unset grid
-	#set grid noxtics front ls 11
-    #set grid ytics back ls 11
+	#unset grid
+	set grid noxtics front ls 11
+    set grid ytics back ls 11
 #Coloca los nombre de los ejes
 	unset xlabel
-	#set xlabel "Año"  font ",14" textcolor rgb "gray40" offset 0,-1
+	set xlabel "Año"  font ",14" textcolor rgb "gray40" offset 0,-1
     set ylabel "N\'umero de publicaciones" font ",14" textcolor rgb "gray40" offset -2,0
     set ytics offset -2,0,0 center format "%'gK"
     set xtics 5

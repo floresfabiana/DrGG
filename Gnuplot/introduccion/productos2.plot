@@ -13,12 +13,17 @@ set label 3 'Paises' at graph 0.93,0.78 left rotate by 90  font ",14"  textcolor
 set label 4 'Compañías' at graph 0.86,0.78 left rotate by 90  font ",14"  textcolor rgb "gray40"
 set label 5 'Productos' at graph 0.79,0.78 left rotate by 90  font ",14"  textcolor rgb "gray40"
 
+set object 1 rect from 1.85,5.8 to 2.45,7.1 fc rgb "white" fs noborder
+set object 2 rect from -0.2,6.9 to 0,7.1 fc rgb "white" fs noborder
+set object 3 rect from 1.8,1.9 to 2,2.1 fc rgb "white" fs noborder
+
 #Saco el Borde
 	unset border
 
 #Saco las marcas
  # 	unset tics
  	unset mxtics
+ 	set xtics scale 0
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
 	set border 15 back ls 10 lw 1.5 
@@ -26,11 +31,11 @@ set label 5 'Productos' at graph 0.79,0.78 left rotate by 90  font ",14"  textco
 
 #Estilo de la grilla
 	set style line 11 lc rgb 'gray40' lt 0 lw 1 
-	unset grid
-	#set grid noxtics front ls 11
-    #set grid ytics back ls 11
+	#unset grid
+	set grid noxtics front ls 11
+   set grid ytics back ls 11
 #Coloca los nombre de los ejes
-	set y2label "N\'umero de publicaciones"  font ",14" textcolor rgb "gray40" offset 2,0
+	set y2label "N\'umero de publicaciones"  font ",18" textcolor rgb "gray40" offset 2,0
 
 #Cambio de aspecto
 set size square 1,2.2

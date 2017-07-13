@@ -1,39 +1,90 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mié 12 jul 2017 15:44:03 ART
+%% jue 13 jul 2017 13:48:51 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (0.460,3.118)--(10.347,3.118);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (0.460,3.118)--(0.640,3.118);
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (0.460,5.059)--(10.347,5.059);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
 \draw[gp path] (0.460,5.059)--(0.640,5.059);
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (0.460,7.000)--(10.347,7.000);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
 \draw[gp path] (0.460,7.000)--(0.640,7.000);
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (0.460,8.941)--(10.347,8.941);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
 \draw[gp path] (0.460,8.941)--(0.640,8.941);
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (0.460,10.882)--(10.347,10.882);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
 \draw[gp path] (0.460,10.882)--(0.640,10.882);
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (0.460,12.823)--(10.347,12.823);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
 \draw[gp path] (0.460,12.823)--(0.640,12.823);
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (0.460,14.764)--(9.066,14.764);
+\draw[gp path] (9.853,14.764)--(10.347,14.764);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
 \draw[gp path] (0.460,14.764)--(0.640,14.764);
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (0.460,16.705)--(10.347,16.705);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
 \draw[gp path] (0.460,16.705)--(0.640,16.705);
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (0.460,18.646)--(10.347,18.646);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
 \draw[gp path] (0.460,18.646)--(0.640,18.646);
-\draw[gp path] (1.359,3.118)--(1.359,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (1.359,3.118) {Estados Unidos};
-\draw[gp path] (2.258,3.118)--(2.258,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (2.258,3.118) {China};
-\draw[gp path] (3.156,3.118)--(3.156,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (3.156,3.118) {Japón};
-\draw[gp path] (4.055,3.118)--(4.055,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (4.055,3.118) {Alemania};
-\draw[gp path] (4.954,3.118)--(4.954,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (4.954,3.118) {Reino Unido};
-\draw[gp path] (5.853,3.118)--(5.853,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (5.853,3.118) {Corea del Sur};
-\draw[gp path] (6.752,3.118)--(6.752,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (6.752,3.118) {India};
-\draw[gp path] (7.651,3.118)--(7.651,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (7.651,3.118) {Francia};
-\draw[gp path] (8.549,3.118)--(8.549,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (8.549,3.118) {Brasil};
-\draw[gp path] (9.448,3.118)--(9.448,3.298);
 \node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (9.448,3.118) {Argentina};
 \draw[gp path] (10.347,3.118)--(10.167,3.118);
 \node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,3.118) {0K};
@@ -54,14 +105,15 @@
 \draw[gp path] (10.347,18.646)--(10.167,18.646);
 \node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,18.646) {40K};
 \draw[gp path] (0.460,18.646)--(0.460,3.118)--(10.347,3.118)--(10.347,18.646)--cycle;
-\node[gp node left,rotate=90,font={\fontsize{14pt}{16.8pt}\selectfont}] at (9.655,15.230) {Nanotecnología};
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (11.792,10.882) {N'umero de publicaciones};
+\gpfill{rgb color={1.000,1.000,1.000}} (8.999,13.988)--(9.898,13.988)--(9.898,17.093)--(8.999,17.093)--cycle;
+\node[gp node left,rotate=90,font={\fontsize{14pt}{16.8pt}\selectfont}] at (9.655,14.919) {Nanotecnología};
+\node[gp node center,rotate=-270,font={\fontsize{18pt}{21.6pt}\selectfont}] at (11.792,10.882) {N'umero de publicaciones};
 \gpcolor{color=gp lt color border}
-\node[gp node right] at (9.250,14.865) { };
-\gpfill{rgb color={0.200,0.200,0.200},color=.!60} (9.434,14.528)--(9.669,14.528)--(9.669,15.203)--(9.434,15.203)--cycle;
+\node[gp node right] at (9.250,14.555) { };
+\gpfill{rgb color={0.200,0.200,0.200},color=.!60} (9.434,14.218)--(9.669,14.218)--(9.669,14.893)--(9.434,14.893)--cycle;
 \gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinewidth{1.00}
-\draw[gp path] (9.434,14.528)--(9.669,14.528)--(9.669,15.202)--(9.434,15.202)--cycle;
+\draw[gp path] (9.434,14.218)--(9.669,14.218)--(9.669,14.892)--(9.434,14.892)--cycle;
 \gpfill{rgb color={0.200,0.200,0.200},color=.!60} (1.145,3.118)--(1.573,3.118)--(1.573,18.560)--(1.145,18.560)--cycle;
 \draw[gp path] (1.145,3.118)--(1.145,18.559)--(1.572,18.559)--(1.572,3.118)--cycle;
 \gpfill{rgb color={0.200,0.200,0.200},color=.!60} (2.044,3.118)--(2.472,3.118)--(2.472,9.930)--(2.044,9.930)--cycle;
