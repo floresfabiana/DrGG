@@ -4,10 +4,10 @@
 
 \begin{tikzpicture}
 
-    \begin{scope}[opacity=0.2]
-      \draw[fill=green,] \firstcircle ;
-      \draw[fill=red] \secondcircle;
-      \draw[fill=blue] \thirdcircle ;
+    \begin{scope}[opacity=0.5]
+      \draw[fill=green,draw=none] \firstcircle ;
+      \draw[fill=red,draw=none] \secondcircle;
+      \draw[fill=blue,draw=none] \thirdcircle ;
     \end{scope}  
     
     \begin{scope}
@@ -17,13 +17,13 @@
     \end{scope}
 
     \begin{scope}
-       \draw[draw=gray] \firstcircle node[below,xshift=-1cm] {\textbf{\textit{\large{bottom-up}}}};
+       \draw[draw=none] \firstcircle node[below,xshift=-1cm] {\textbf{\textit{\large{bottom-up}}}};
        \draw[draw=none] \firstcircle node[below,xshift=-1cm,yshift=-0.5cm] {(qu\'imica sol-gel)};
 
-       \draw[draw=gray] \secondcircle node [above,yshift=1cm] {\textbf{\large{Principio de medición}}};
+       \draw[draw=none] \secondcircle node [above,yshift=1cm] {\textbf{\large{Principio de medición}}};
        \draw[draw=none] \secondcircle node[above,yshift=0.5cm] {(electroq\'imica)};
 
-       \draw[draw=gray] \thirdcircle node [below,xshift=1cm] {\textbf{\textit{\large{top-down}}}};
+       \draw[draw=none] \thirdcircle node [below,xshift=1cm] {\textbf{\textit{\large{top-down}}}};
        \draw[draw=none] \thirdcircle node[below,xshift=1cm,yshift=-0.5cm] {(microfabricación)};
 
        \draw[draw=none] \secondcircle  node[below,yshift=-1.8	cm] {\textbf{\textcolor{white}{Plataforma}}};
