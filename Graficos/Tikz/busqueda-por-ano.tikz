@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% jue 13 jul 2017 13:56:11 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Fri Jul 14 18:12:36 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -101,8 +101,8 @@
 \node[gp node center] at (11.552,1.451) {$2015$};
 \draw[gp path] (11.947,1.759)--(11.947,1.849);
 \draw[gp path] (1.688,7.915)--(1.688,1.759)--(11.947,1.759)--(11.947,7.915)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.837) {N'umero de publicaciones};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.817,0.681) {Año};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.837) {N'umero de publicaciones};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.817,0.681) {Año};
 \node[gp node left] at (3.156,7.581) {Nanotecnologia};
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \draw[gp path] (2.056,7.581)--(2.972,7.581);

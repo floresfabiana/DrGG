@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% jue 13 jul 2017 13:56:11 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Fri Jul 14 18:12:37 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -76,44 +76,44 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (0.460,18.646)--(0.640,18.646);
-\node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (1.778,3.854) {NPD};
-\node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (5.074,3.854) {The Nanonodatabase};
-\node[gp node right,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (8.370,3.854) {CPI};
+\node[gp node right,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (1.778,3.854) {NPD};
+\node[gp node right,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (5.074,3.854) {The Nanonodatabase};
+\node[gp node right,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (8.370,3.854) {CPI};
 \draw[gp path] (10.347,3.854)--(10.167,3.854);
-\node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,3.854) {0K};
+\node[gp node center,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.839,3.854) {0K};
 \draw[gp path] (10.347,5.703)--(10.167,5.703);
-\node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,5.703) {1K};
+\node[gp node center,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.839,5.703) {1K};
 \draw[gp path] (10.347,7.552)--(10.167,7.552);
-\node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,7.552) {2K};
+\node[gp node center,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.839,7.552) {2K};
 \draw[gp path] (10.347,9.401)--(10.167,9.401);
-\node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,9.401) {3K};
+\node[gp node center,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.839,9.401) {3K};
 \draw[gp path] (10.347,11.250)--(10.167,11.250);
-\node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,11.250) {4K};
+\node[gp node center,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.839,11.250) {4K};
 \draw[gp path] (10.347,13.099)--(10.167,13.099);
-\node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,13.099) {5K};
+\node[gp node center,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.839,13.099) {5K};
 \draw[gp path] (10.347,14.948)--(10.167,14.948);
-\node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,14.948) {6K};
+\node[gp node center,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.839,14.948) {6K};
 \draw[gp path] (10.347,16.797)--(10.167,16.797);
-\node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,16.797) {7K};
+\node[gp node center,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.839,16.797) {7K};
 \draw[gp path] (10.347,18.646)--(10.167,18.646);
-\node[gp node center,rotate=90,font={\fontsize{12pt}{14.4pt}\selectfont}] at (10.839,18.646) {8K};
+\node[gp node center,rotate=90,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (10.839,18.646) {8K};
 \draw[gp path] (0.460,18.646)--(0.460,3.854)--(10.347,3.854)--(10.347,18.646)--cycle;
 \gpfill{rgb color={1.000,1.000,1.000}} (7.875,14.578)--(9.853,14.578)--(9.853,16.982)--(7.875,16.982)--cycle;
 \gpfill{rgb color={1.000,1.000,1.000}} (1.119,16.612)--(1.778,16.612)--(1.778,16.982)--(1.119,16.982)--cycle;
 \gpfill{rgb color={1.000,1.000,1.000}} (7.710,7.367)--(8.370,7.367)--(8.370,7.737)--(7.710,7.737)--cycle;
-\node[gp node left,rotate=90,font={\fontsize{14pt}{16.8pt}\selectfont}] at (9.655,15.392) {Paises};
-\node[gp node left,rotate=90,font={\fontsize{14pt}{16.8pt}\selectfont}] at (8.963,15.392) {Compañías};
-\node[gp node left,rotate=90,font={\fontsize{14pt}{16.8pt}\selectfont}] at (8.271,15.392) {Productos};
-\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (1.449,16.612) {6879};
-\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.108,6.258) {1322};
-\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (2.767,3.946) {52};
-\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (4.744,9.401) {3005};
-\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (5.404,5.241) {750};
-\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (6.063,3.909) {35};
-\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (8.040,7.182) {1814};
-\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (8.699,4.963) {622};
-\node[gp node left,rotate=90,font={\fontsize{8pt}{9.6pt}\selectfont}] at (9.358,3.909) {32};
-\node[gp node center,rotate=-270,font={\fontsize{18pt}{21.6pt}\selectfont}] at (11.792,11.250) {N'umero de publicaciones};
+\node[gp node left,rotate=90,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (9.655,15.392) {Paises};
+\node[gp node left,rotate=90,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (8.963,15.392) {Compañías};
+\node[gp node left,rotate=90,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (8.271,15.392) {Productos};
+\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (1.449,16.612) {6879};
+\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (2.108,6.258) {1322};
+\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (2.767,3.946) {52};
+\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (4.744,9.401) {3005};
+\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (5.404,5.241) {750};
+\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (6.063,3.909) {35};
+\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (8.040,7.182) {1814};
+\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (8.699,4.963) {622};
+\node[gp node left,rotate=90,font={\fontsize{8.0pt}{9.6pt}\selectfont}] at (9.358,3.909) {32};
+\node[gp node center,rotate=-270,font={\fontsize{18.0pt}{21.6pt}\selectfont}] at (11.792,11.250) {N'umero de publicaciones};
 \gpcolor{color=gp lt color border}
 \node[gp node right] at (7.860,15.013) { };
 \gpfill{rgb color={0.200,0.200,0.200},color=.!60} (8.044,14.676)--(8.279,14.676)--(8.279,15.351)--(8.044,15.351)--cycle;
