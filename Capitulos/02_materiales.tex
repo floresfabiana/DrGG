@@ -177,7 +177,7 @@
 
 	\subsection{Ángulo de contacto}
 
-		Medir el ángulo de contacto (AC) de un líquido permite evaluar la energía superficial ($\gamma$). La teoría vincula el AC con $\gamma$ mediante el análisis del equilibrio químico de tres fases. La fase líquida de la gota, la fase gaseosa del aire y la sólida del sustrato. El valor del AC depende principalmente de la relación que existe entre las fuerzas adhesivas entre el líquido y el sólido y las fuerzas cohesivas del líquido. Se puede, así, cuantificar la mojabilidad de un líquido en aire, en una determinada superficie.\cite{findenegg1997} Tomando dos caso extremos, cuando la superficie interactúa fuertemente con el líquido y se moja, el AC se aproxima a $0^{\circ}$, en cambio si la superficie y el líquido se repelen, el AC tenderá a $180^{\circ}$. En términos de equilibrio termodinámico, el potencial químico de las tres fases  debe ser igual. Quien dió la primera descripción en términos de energías interfasiales fue Young en 1805\cite{young1805}, donde postuló que la energía superficial líquido-vapor ($\gamma$) por el coseno del angulo de contacto($\theta$) es igual a diferencia de las energías superficiales sólido-líquido $\gamma_{_{SL}}$ y sólido-vapor $\gamma_{_{SV}}$s. Tal relación se la conoce como ecuación de Young (ecuación \ref{eq:young}).
+		Medir el ángulo de contacto (AC) de un líquido permite evaluar la energía superficial ($\gamma$). La teoría vincula el AC coni $\gamma$ mediante el análisis del equilibrio químico de tres fases. La fase líquida de la gota, la fase gaseosa del aire y la sólida del sustrato. El valor del AC depende principalmente de la relación que existe entre las fuerzas adhesivas entre el líquido y el sólido y las fuerzas cohesivas del líquido. Se puede, así, cuantificar la mojabilidad de un líquido en aire, en una determinada superficie.\cite{findenegg1997} Tomando dos caso extremos, cuando la superficie interactúa fuertemente con el líquido y se moja, el AC se aproxima a $0^{\circ}$, en cambio si la superficie y el líquido se repelen, el AC tenderá a $180^{\circ}$. En términos de equilibrio termodinámico, el potencial químico de las tres fases  debe ser igual. Quien dió la primera descripción en términos de energías interfasiales fue Young en 1805\cite{young1805}, donde postuló que la energía superficial líquido-vapor ($\gamma$) por el coseno del angulo de contacto($\theta$) es igual a diferencia de las energías superficiales sólido-líquido $\gamma_{_{SL}}$ y sólido-vapor $\gamma_{_{SV}}$s. Tal relación se la conoce como ecuación de Young (ecuación \ref{eq:young}).
 
 			\begin{equation}
 				\gamma\, cos(\theta) = \gamma_{_{SL}} - \gamma_{_{SV}}
@@ -189,11 +189,11 @@
 
 	\subsection{Elipsometría}\label{sec:elipso}
 
-		La elipsometría es una técnica de análisis óptico que se basa en el cambio del estado de polarización de la luz que incide sobre una o más películas delgadas soportadas sobre un material reflectivo. Dicho análisis es no destructivo y es útil para la determinación de espesores y constantes ópticas (índices de refracción y constante de absorción) de dichas películas.\cite{TompkinsHarlandG.1999,Rothen1945} Las mediciones obtenidas nos devuelven los parámetros elipsométricos $\Delta(\lambda)$ y $\Psi(\lambda)$. 
+		La elipsometría es una técnica de análisis óptico que se basa en el cambio del estado de polarización de la luz que incide sobre una o más películas delgadas soportadas sobre un material reflectivo. Dicho análisis es no destructivo y es útil para la determinación de espesores y constantes ópticas (índices de refracción y constante de absorción) de dichas películas.\cite{TompkinsHarlandG.1999,Rothen1945} El parámetro medido es el cociente complejo $\rho$ de la amplitud de la reflexión de los componentes paralelo ($r_p$) y perpendicular ($r_s$) del haz polarizado incidente. Este cociente se expresa como función de los parámetros elipsométricos $\Delta(\lambda)$ y $\Psi(\lambda)$. Debido a que las ecuaciones involucradas en el proceso no poseen resolución analítica, se necesita recurrir a modelos que describan el material para obtener las propiedades de interés, es decir, el índice de refracción real, $n$, el espesor, $t$, y el coeficiente de absorción $k$. Mediante un ajuste iterativo por cuadrados mínimos de $\Delta(\lambda)$ y $\Psi(\lambda)$ (para el cual se proponen valores iniciales para $n$, $k$ y $t$ de la muestra) se minimiza la diferencia ente el modelo y los datos experimentales. De esta forma se extrae el espesor y el índice de refracción. \cite{TompkinsHarlandG.1999}
 
-		Mediante un modelo matemático (en el cual se proponen valores iniciales para las constantes ópticas y el espesor de la muestra) se ajusta por cuadrados mínimos hasta minimizar, por sucesivas iteraciones, la diferencia con los datos experimentales. De esta forma se extrae del modelo el espesor y el índice de refracción de la película. Cuando se adapta una cámara al equipo, donde se puede variar la presión parcial de H$_2$O, es posible medir los cambio de las propiedades ópticas de las \pdm durante la adsorción y desorción de H$_2$O. A esta técnica se la conoce con el nombre de porosimetría elipsométrica ambiental (PEA) \cite{Boissiere2005}. La figura \ref{fig:elipso} esquematiza el funcionamiento del elipsómetro y la figura \ref{fig:elipsofoto}, pág \pageref{fig:elipsofoto}, es una fotografía del equipo utilizado un \textit{SOPRA} modelo \textit{GES 5E}. 
+		Cuando se adapta al equipo una cámara, en la que se puede variar la presión parcial de H$_2$O, es posible medir los cambios de las propiedades ópticas (p. ej. espesor e índice de refracción) de las \pdm\space durante la adsorción y desorción de H$_2$O. A esta técnica se la conoce con el nombre de porosimetría elipsométrica ambiental (PEA) \cite{Boissiere2005}. La figura \ref{fig:elipso} muestra un esquema con los principales componentes de un elipsómetro con cámra para controla la presión relativa de agua.
 
-			  \begin{figure}[t]
+			  \begin{figure}[h]
 				\begin{center}
 				\includegraphics[width=\textwidth]{Esquemas/Elipso.pdf}
 			  	\caption[Esquema de la técncia de elipsoporosimetría ambiental]{Esquema de los componentes principales del equipos de elipsometría utilizado para determinar las constantes elipsométricas, $\Delta(\lambda)$ y $\Psi(\lambda)$, de las cuales se obtienen el espesor, indice de refracción, coeficiente de absorción, distribución y tamaño de poros y cuellos de las \pdm.}
@@ -201,8 +201,13 @@
 			  	\end{center}
 			  	\end{figure}
 		
-		El volumen de vapor adsorbido dentro de los poros se determina a partir de dicha variación utilizando aproximaciones de medio efectivo como la de Bruggeman\cite{Bruggeman1935} o la de Maxwell-Garnett\cite{Garnett1906} que son simplificaciones de la ecuación general de Lorentz-Lorentz\cite{TompkinsHarlandG.1999}.
-		La aproximacion de Bruggeman considera dos componentes mezclados al azar cuyas fracciones en volumen ($f_i$) y constante dielectrica ($\mathcal{E}_i$) deben cumplir con la ecuación \ref{eq:bruggeman} donde $\mathcal{E}_e$ es la constante dieléctrica del material compuesto, la cual se determina experimentalmente.
+		El volumen de vapor adsorbido dentro de los poros se determina a partir de la variación de $n(\lambda)$ utilizando aproximaciones de medio efectivo como la de Bruggeman\cite{Bruggeman1935} o la de Maxwell-Garnett\cite{Garnett1906} que son simplificaciones de la ecuación Lorentz-Lorentz general\cite{TompkinsHarlandG.1999}.
+		La aproximación de Bruggeman considera dos componentes mezclados al azar cuyas fracciones en volumen ($f_i$) y constante dieléctrica ($\mathcal{E}_i$) deben cumplir con la ecuación \ref{eq:bruggeman} donde $\mathcal{E}_e$ es la constante dieléctrica del material compuesto. El índice de refracción se define según la ecuación \ref{eq:indice} donde $\mu$ es permeabilidad electromagnética relativa.
+						\begin{equation}
+					 	   n=\sqrt{\mathcal{E}\mu}
+					 	   \label{eq:indice}
+						\end{equation}
+		Para la mayoría de los materiales, y cerca del rango visible, $\mu$ es muy cercana a la unidad, por lo tanto es común aproximar $\mathcal{E}_e=n_e^2$.
 							\begin{equation}
 					 		   	 f_1\left(\frac{\mathcal{E}_1-\mathcal{E}_e}{\mathcal{E}_1+2\mathcal{E}_e}\right)+
 					 		   	 f_2\left(\frac{\mathcal{E}_2-\mathcal{E}_e}{\mathcal{E}_2+2\mathcal{E}_e}\right)=0
@@ -219,14 +224,29 @@
 					 		   	 \left(\frac{\mathcal{E}_e-\mathcal{E}_1}{\mathcal{E}_e+2\mathcal{E}_1}\right)=0
 					 		     \label{eq:maxwall2}
 								\end{equation}
-		El volumen total ocupado por los poros, V$_p$, y el volumen de agua adsorbido para cada HR, V$_{ads}$, se calcularon aplicando indistintamente dichas aproximaciones (ya que para \pdm\space dan resultados equivalentes) a las constantes dieléctricas medidas del film seco y lleno de agua, luego de la condensación capilar.\cite{Angelome2008,Fuertes2009,Nano-compuestas2013}. Se construye de esta forma una isoterma de adsorción/desorción de H$_2$O en función del índice de refracción de la o las películas porosas.
-		El tamaño de los poros y los cuellos, que forman la red porosa tridimensional, se puede calcular a partir de la rama de adsorción y de la de desorción de la isoterma respectivamente. Para ello debemos recurrir a la ecuación de Kelvin (ec. \ref{eq:kelvin}), que describe el equilibrio líquido-vapor considerando tamaño de la esfera y energía superficial. Donde R es la constante de los gases, T es la temperatura, P es la presión de vapor, P$_s$ es la presión de vapor de saturación, $\gamma$ es la tensión superficial del líquido, V$_m$ es el volumen molar del líquido y $\theta$ es el ángulo de contacto sólido-líquido. \cite{Baklanov2000,Boissiere2005,Sing1985} Para poros esféricos la relación $\partial S/ \partial dV$ es proporcional al radio de la esfera, llamado radio de Kelvin.\cite{FernandezPrini2005}
+		El volumen total ocupado por los poros, V$_p$, y el volumen de agua adsorbido para cada HR, V$_{ads}$, se calcularon aplicando indistintamente dichas aproximaciones (ya que para \pdm\space dan resultados equivalentes) a las constantes dieléctricas (o índices de refracción) medidas del film seco y lleno de agua, luego de la condensación capilar.\cite{Angelome2008,Fuertes2009,Nano-compuestas2013}. Se construye de esta forma una isoterma de adsorción/desorción de H$_2$O en función del índice de refracción (o volumen poroso) de las películas porosas. Los distintos tipos de isortermas para la adsorción de sobre materiales absorbentes porosos fue clasificada por la IUPAC en ocho grupos (Ia, Ib, II, III, IVa, IVb, V y VI) y seis ciclos de histéresis para los tipos IVa y V (H1, H2a, H2b, H3, H4 y H5). \cite{Thommes2015}
+
+		La figura \ref{} ejemplifica la adsorción de agua medida por PEA para una película .........
+		%Zr0.8Ce0.2O2 calcinado a 350°C. 
+		La curva resultante corresponde a una isoterma tipo IVa, con ciclo de histéresis tipo H2b. Este tipo de isoterma es la más frecuente en este trabajo. El ciclo de histéresis indica la presencia de mesoporos, cuyo llenado se produce por condensación capilar. \cite{Gregg1967}
+
+						%\begin{figure}[ht]
+					%		  \begin{center}
+				%			  \includegraphics[width=\textwidth]{Imagenes/elipsometro.jpg}
+			%			  \caption[Elipsómetro]{Foto del equipos elipsómetro espectroscópico marca \textit{SOPRA}, modelo \textit{GES 5E} ubicado en la Gerencia Química, CAC-CNEA utilizado para la caracterización de las \pdm.}
+			%				  \label{fig:elipsofoto}
+			%				  \end{center}
+			%				  \end{figure}
+
+		La distribución para los diámetros de poros y cuellos que se presenta en la figura \ref{}, se puede calcular a partir de la rama de adsorción y de la de desorción de la isoterma respectivamente. Para ello debemos recurrir a la ecuación de Kelvin (ec. \ref{eq:kelvin}), que describe el equilibrio líquido-vapor considerando tamaño de la esfera y energía superficial. Donde R es la constante de los gases, T es la temperatura, P es la presión de vapor, P$_s$ es la presión de vapor de saturación, $\gamma$ es la tensión superficial del líquido, V$_m$ es el volumen molar del líquido y $\theta$ es el ángulo de contacto sólido-líquido. \cite{Baklanov2000,Boissiere2005,Sing1985} Para poros esféricos la relación $\partial S/ \partial dV$ es proporcional al radio de la esfera, llamado radio de Kelvin.\cite{FernandezPrini2005}
 			\begin{equation}
 			  	 \ln \left(\frac{P}{P_s}\right)=\frac{2\gamma V_m}{RT} \cos{\theta}\frac{\partial S}{\partial V}
 			     \label{eq:kelvin}
 			 	 \end{equation}					
-		Todas las medidas fueron tomadas en la Gerencia Química, CAC-CNEA con un elipsómetro espectroscópico marca \textit{SOPRA}, modelo \textit{GES 5E}. El rango espectral del equipo va de 190 a \SI{900}{\nm}, pose una cámara para realizar las mediciones en condiciones de humedad controladas y también permite configuración en modo \textit{micro-spot} que permite reducir el área de medición a una región de aproximadamente \SI{1}{\mm^2}. El modelado de los parámetros se hizo mediante el \textit{software Winelli II} también de la marca \textit{SOPRA}.
-					\begin{figure}[ht]
+		Todas las medidas fueron tomadas en la Gerencia Química, CAC-CNEA con un elipsómetro espectroscópico marca \textit{SOPRA}, modelo \textit{GES 5E}, cuya fotografía se puede apreciar en la figura \ref{fig:elipsofoto}.
+ 		El rango espectral del equipo va de 190 a \SI{900}{\nm}, pose una cámara para realizar las mediciones en condiciones de humedad controladas y también permite configuración en modo \textit{micro-spot} que permite reducir el área de medición a una región de aproximadamente \SI{1}{\mm^2}. El modelado de los parámetros se hizo mediante el \textit{software Winelli II} también de la marca \textit{SOPRA}.
+			
+						\begin{figure}[ht]
 							  \begin{center}
 							  \includegraphics[width=\textwidth]{Imagenes/elipsometro.jpg}
 							  \caption[Elipsómetro]{Foto del equipos elipsómetro espectroscópico marca \textit{SOPRA}, modelo \textit{GES 5E} ubicado en la Gerencia Química, CAC-CNEA utilizado para la caracterización de las \pdm.}
@@ -547,10 +567,10 @@
 			  		  \end{figure}
 	 		
 	 		El propósito de esta técnica fue el obtener el coeficiente de difusión de hexaaminorutenio en sistemas porosos y contrastar con otras técnicas de forma de validar dicho coeficiente y los mecanismos de trasporte propuestos. 
-
+			
 	 \subsection{Simulaciones electroquímicas}\label{simulacion}
 
-	 	 Para validar las hipótesis de transporte planteadas en el capitulo \ref{chap:Electroquimica} se llevaron a cabo simulaciones por computadora para voltametrías cíclicas. Las mismas se hicieron con el software  \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual simula las voltametrías utilizando elementos finitos. En la tabla \ref{tabla:simulacion} se resumen las variables utilizados para las simulaciones, sus valores y su descripción.
+	 	 Con la finalidad de validar las hipótesis de transporte planteadas en el capitulo \ref{chap:Electroquimica} y establecer las condiciones en las que se pueden o no observar fenómenos de mediación electroquímica, se llevaron a cabo simulaciones de voltametrías cíclicas por computadora. Las mismas se realizaron en colaboración con el Dr. Tagliasucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía (INQUIMAE) con el software \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual simula las voltametrías utilizando elementos finitos. En la tabla \ref{tabla:simulacion} se resumen las variables utilizados para las simulaciones, sus valores y su descripción.
 	 	
 	    	\begin{table}[ht!]
 	 	    \caption[Parámetros de las simulacinoes]{Parámetros y valores de entrada usadas durante las simulaciones de las voltametrías cíclicas.}
