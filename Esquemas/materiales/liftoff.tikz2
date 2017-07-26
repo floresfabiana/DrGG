@@ -59,9 +59,9 @@
 %Colores Silicio
 \tikzstyle{silicio1} = [lightgray,opacity=0.8]
 \tikzstyle{silicio2} = [lightgray,opacity=0.6]
-\tikzstyle{oro} = [yellow]
+\tikzstyle{oro} = [YellowOrange]
 %\tikzstyle{oro2} = [Yellow!92!red]
-\tikzstyle{oro2} = [top color=yellow!50, bottom color=Yellow]
+\tikzstyle{oro2} = [top color=yellow!50, bottom color=YellowOrange]
 
 %Colores Fotoresina
 \tikzstyle{resina1} = [red,opacity=0.6]
@@ -222,8 +222,8 @@
 		\fill[oro] (0.75,1) -- ++(50:1cm) -- ++(0:0.25cm) -- ++(230:1cm) -- cycle;
 		\fill[oro] (0,1) --  ++(0:1cm) -- ++(50:0.15cm) -- ++(180:1cm) -- cycle;
 		\fill[oro] (0.64,1.767) -- ++(0:1cm) -- ++(230:0.15cm) -- ++(180:1cm) -- cycle;
-		\draw[yellow,very thick] (0.4,1.39) -- ++(0:0.9cm);
-		\draw[yellow,very thick] (0.535,1.05) -- ++(50:0.9cm);
+		\draw[YellowOrange,very thick] (0.4,1.39) -- ++(0:0.9cm);
+		\draw[YellowOrange,very thick] (0.535,1.05) -- ++(50:0.9cm);
 
 		\end{tikzpicture}
 };	

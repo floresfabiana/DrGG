@@ -162,7 +162,7 @@
 \node [textos2] (text1) at (4.2,0.5) {\scriptsize{Analizador}};
 \node [textos2] (text1) at (-5.8,0.5) {\scriptsize{Polarizador}};
 \node [textos2] (text1) at (0,1.2) {\scriptsize{Celda}};
-\node [textos] (text1) at (-4,-2.5) {\scriptsize{Flujo de aire/vapor control de HR}};
+\node [textos] (text1) at (-4,-2.5) {\scriptsize{Flujo de aire/vapor control de P$_{\text{H}{_2}\text{O}}$}};
 %\node (centro) at (-7.7,1.3) {\scriptsize{de luz polarizada}};
 
 %Angulo
