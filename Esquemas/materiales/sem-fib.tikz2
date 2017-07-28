@@ -119,7 +119,7 @@
 
   %labels
   \node[rotate=52] (text2) at (0.6,1.1) {\scriptsize Muestra};
-  \node (text2) at (0,4.75) {\scriptsize Columna SEM};
+  \node (text2) at (0,4.75) {\scriptsize Columna MEB};
   \node (text2) at (-3,4.6) {\Huge{\bfseries a}};
   \node[rotate=52] (text2) at (-2.5,3.4) {\scriptsize Columna FIB};
   \node (text2) at (3,4.8) {\scriptsize detectores};
