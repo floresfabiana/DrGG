@@ -137,18 +137,23 @@
 	};
 
 %Poros
- \node at (-0.985,1.75) {
+ \node at (-0.984,1.750) {
 	\begin{tikzpicture}
 	\foreach \x in {0,8,...,16}{
-	\fill[blue] circle (0.105);
-	\fill[blue, yshift=0,xshift=\x] circle (0.105);
-	\fill[blue, yshift=8,xshift=\x] circle (0.105);
-	\fill[blue, yshift=16,xshift=\x] circle (0.105);
-	\fill[blue, yshift=24,xshift=\x] circle (0.105);
-  \fill[white, yshift=23.4,xshift=-3.5] rectangle (0.8,0.13);
-	}; 
+	%\fill[blue] circle (0.105);
+	\fill[blue,opacity=0.7, yshift=0,xshift=\x] circle (0.10);
+	\fill[blue,opacity=0.7, yshift=8,xshift=\x] circle (0.10);
+	\fill[blue,opacity=0.7, yshift=16,xshift=\x] circle (0.10);
+	\fill[blue,opacity=0.7, yshift=24,xshift=\x] circle (0.10);
+  }; 
 	\end{tikzpicture}
 	};
+  %parte de los poros
+  \node at (-0.9883,1.7553) {
+  \begin{tikzpicture}
+  \fill[white, yshift=23.45,xshift=-3.5] rectangle (0.8,0.1341);
+  \end{tikzpicture}
+  };
 
 %Electrodos
  \node at (0.5,1.1) {
@@ -167,10 +172,10 @@
 
 
 %Celda
-  \node at (-0.99,3.672) {
+  \node at (-0.99,3.685) {
   \begin{tikzpicture}
   %\path[draw=black,line width=3mm] (-0.2,0.5) -- (-0.2,4);
-  \fill[fill=blue,opacity=0.7] (0.4,0) -- (0.5,0) -- (1,1) -- (1,2.5) -- (-1,2.5) -- (-1,1) -- (-0.5,0) -- (-0.5,-0.03) -- (0.5,-0.03);
+  \fill[fill=blue,opacity=0.7] (0.4,0) -- (0.5,0) -- (1,1) -- (1,2.5) -- (-1,2.5) -- (-1,1) -- (-0.5,0) -- (-0.5,-0.035) -- (0.5,-0.035);
   \path[draw=black,line width=0.7mm] (0.4,0) -- (0.5,0) -- (1,1) -- (1,3);
   \path[draw=black,line width=0.7mm] (-0.4,0) -- (-0.5,0) -- (-1,1) -- (-1,3);
 
