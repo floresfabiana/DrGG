@@ -268,7 +268,7 @@ IUPAC;IUPAC\index{IUPAC}
  ánodo ; ánodo\index{ánodo} 
  electrón; electrón\index{electrón}
  molécula ; molécula\index{moléculas} 
- átomo ; átomo\index{átomo} 
+ átomo ; átomo\index{atomo@átomo} 
  etilenglico; etilenglicol\index{etilenglicol}
  inyección de tinta; inyección de tinta\index{inyección de tinta}
  flexografía; flexografía\index{flexografía}
@@ -297,4 +297,9 @@ IUPAC;IUPAC\index{IUPAC}
  Venn ; Venn \index{Venn}
  \textit{dip-coating}; \textit{dip-coating}\index{dip-coating@\textit{dip-coating}}
  cristal fotónico;\index{cristal fotónico}
- dummy;dummy
+ hidrógeno; hidrógeno\index{hidrógeno}
+ Brij 58; Brij58\index{Brij 58}
+polibutileno de tereftalato;polibutileno de tereftalato\index{polibutileno de tereftalato}
+polietileno de tereftalato;polietileno de tereftalato\index{polietileno de tereftalato}
+ Huo; Huo\index{Huo}
+dummy;dummy

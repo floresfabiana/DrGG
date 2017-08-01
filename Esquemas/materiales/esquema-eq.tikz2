@@ -49,6 +49,7 @@
 \node at (4.18,3.3) {$E_{apl}$ vs $E_{ref}$};
 \node at (-4.63,3.8) {$I \rightarrow 0$};
 \node at (-4.3,3.3) {$E_{ref}=\text{Cte}$};
+%\node at (-9,5.5) {\huge{a}};
 
 % \draw (0,2.5)node[left] {$+$} to[short,o-] (0,4)
 %       to[R=\SI{1}{k\ohm},-*] (3,4) to[short] (5,4)

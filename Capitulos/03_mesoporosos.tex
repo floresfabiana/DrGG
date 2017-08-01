@@ -21,7 +21,7 @@
  \thispagestyle{empty}
 	
  %Resumen del Capitulo en Italica
- \noindent\textit{En este capítulo se exponen los resultados obtenidos para la fabricación y caracterización de películas mesoporosas. Se desarrollan metodologías y tratamientos alternativos a la calcinación con el objetivo de bajar la temperatura en los procesos y así compatibilizar con sustratos lábiles, poliméricos y con técnicas empleadas en microelectrónica. Se evalúo la estabilidad de las películas, adherencia a los electrodos, porosidad, accesibilidad, diámetro de poros cuellos, control del espesor y demás variables que se consideraron relevantes para su aplicación como película permeoselectiva para iones en sensores electroquímicos}
+ \noindent\textit{En este capítulo se exponen los resultados obtenidos para la fabricación y caracterización de películas delgadas mesoporosas. Se desarrollan metodologías y tratamientos alternativos a la calcinación, con el objetivo de obtener \pdm\space a menores temperaturas, y así compatibilizar con sustratos lábiles, poliméricos y con técnicas empleadas en microelectrónica. Se evaluó la estabilidad de las películas, adherencia a los electrodos, porosidad, accesibilidad, diámetro de poros, cuellos, control del espesor y demás variables que se consideraron relevantes para su aplicación como película permeoselectiva para iones en sensores electroquímicos}
  
  %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
  \vfill
@@ -31,13 +31,15 @@
 
 \section{Introducción}
 
-	Existen una gran variedad precursores sensibles de condensar y determinar la estructura de películas delgadas mesoporosas de óxidos (PDM). Estas se pueden formar tanto de óxidos puros, como SiO$_2$, de TiO$_2$, ZrO$_2$, o de óxidos de metales mixtos como TiSi, SiZr, por enumerar los precursores más utilizados. También existe una gran variedad de agentes moldeante para establecer el tamaño y la estructura espacial de los poros (F127, P123, Brij 58, CTAB, etc) \cite{angelome2011,schuth2013,Soler-Illia2006,Soler-Illia2002a}. Este trabajo se centró exclusivamente en síntesis de \pdm\space utilizando óxido de silicio como precursor para generar la estructura inorgánica. En la mayoría de los casos se utilizó puro y en algunos combinado con óxido de circonio (ZrO$_2$). Para modelar el tamaño y estructura de los poros se utilizó el copolímero de bloque Pluronic F127 y bromuro de hexadeciltrimetilamonio (CTAB).Esta elección no fue arbitraria, sino que se hizo en base a premisas bien fundamentadas:
+	Existen una gran variedad de precursores para controlar la composición y la estructura de películas delgadas mesoporosas de óxidos (PDM). Estas se pueden conformar tanto de óxidos puros, como SiO$_2$, TiO$_2$, ZrO$_2$ o de óxidos de mixtos de metales como (Si,Zr)O$_2$ o (Si,Ti)O$_2$; en general de óxidos metálicos de formula (M,M')O$_2$ siendo M y M', Si, Ti, Zr, Ce o Hf por enumerar los más utilizados.
+
+	También existe una gran variedad de agentes moldeante para establecer el tamaño y la estructura espacial de los poros (F127, P123, Brij 58, CTAB, etc) \cite{angelome2011,schuth2013,Soler-Illia2006,Soler-Illia2002a}. Este trabajo se centró exclusivamente en síntesis de \pdm\space utilizando óxido de silicio como precursor para generar la estructura inorgánica. En la mayoría de los casos se utilizó puro, y en algunos combinado con óxido de circonio (ZrO$_2$). Para controlar el tamaño y estructura espacial de los poros se utilizó el copolímero de bloque Pluronic F127 y bromuro de hexadeciltrimetilamonio (CTAB).Esta elección no fue arbitraria, sino que se hizo en base a premisas bien fundamentadas:
 		
 		\begin{enumerate}
 
 		\item El SiO$_2$ es procesable por técnicas sol-gel a través de diferentes precursores, es económico y fundamentalmente es el óxido mas utilizado en microelectrónica, aspecto fundamental en este trabajo para compatibilizar los procesos \textit{top-down} y \textit{bottom-up}.
 
-		\item Tiene una química rica, bien conocida, forma enlaces covalentes con el carbono y es fácilmente funcionalizable pos-síntesis mediante el agregado de una gran variedad de grupos funcionales orgánicos o biológicos. Esta característica resultará fundamental para la selectividad de los sensores.
+		\item Tiene una química rica, bien conocida, forma enlaces covalentes con el carbono y es fácilmente funcionalizable pos-síntesis mediante el agregado de una gran variedad de grupos funcionales orgánicos o biológicos. Esta característica resulta fundamental para conferir selectividad de los sensores.
 
 		\item No presenta absorción en el UV/Vis, esta característica es fundamental para poder hacer polimerizaciones dentro de los nanoporos sin tener interferencias por absorción de luz.
 
@@ -47,25 +49,43 @@
 	
 	Una vez elegidos los componentes esenciales que darán estructura a la película activa, se hizo foco en variar los sustratos. Ya que, al ser el objetivo final de la tesis sentar las bases para la fabricación de sensores multiselectivos, se debían explorar las distintos soportes para las películas mesoporosas, de forma de poder abarcar un rango amplio de materiales para distintos usos.
 
-	Se depositaron los soles sobre silicio monocristalino, sobre vidrio y sobre películas delgadas de Au. En una primera etapa el objetivo fue el de estudiar el comportamiento de las \pdm\space sobre a diferentes sustratos. Para poder comparar los resultados con la bibliografía\cite{Soler-Illia2006,Brinker1990} se decidió, para esta etapa, depositar las películas por la ruta clásica de calcinación, explicada en la sección \ref{sec:cond_y_extr}, pág. \pageref{sec:cond_y_extr}. Impuestas estas condiciones de temperatura, se eligieron sustratos térmicamente estables:
+	Se depositaron los soles base sílice sobre silicio monocristalino, sobre vidrio y sobre películas delgadas de Au, con el objetivo de estudiar el comportamiento sobre cada uno de estos sustratos. Para poder comparar los resultados con la bibliografía\cite{Soler-Illia2006,Brinker1990} se decidió, en una primera etapa, tratar las películas por la ruta clásica de calcinación, explicada en la sección \ref{sec:cond_y_extr}, pág. \pageref{sec:cond_y_extr}. Impuestas estas condiciones de temperatura, se eligieron sustratos térmicamente estables:
 
 		\begin{itemize}
 
-			\item \textit{Portaobjetos de Vidrio}. Se utilizó para todo tipo de experimentos exploratorios, por ejemplo para pruebas de deposito, cortes o diseños, ya que es el mas económico que disponemos, de superficie plana y con la misma composición que el sol, lo cual minimiza el estrés térmico sustrato-película.
+			\item \textit{Portaobjetos de vidrio}. Se utilizó para todo tipo de experimentos exploratorios, por ejemplo para pruebas de depósito, cortes o diseños, ya que es el más económico del que disponemos, de superficie plana y con la misma composición que el sol, lo cual minimiza el estrés térmico sustrato-película.
 
-			\item \textit{Silicio monocristalino, orientación cristalina [100]}. Las películas depositadas sobre silicio se utilizaron para obtener resultados de espectroscopía de absorbancia IR, para hacer elipsoporisimetrías e imágenes MEB principalmente. El silicio ofrece también un mayor contraste para visualizar las \pdm\space que el vidrio o el oro, por lo que se usó también para estimar la uniformidad de espesor por interferencia en toda la superficie depositada.
+			\item \textit{Silicio monocristalino, orientación cristalina [100]}. Las películas depositadas sobre silicio se utilizaron para obtener resultados de espectroscopía de absorbancia IR, para hacer elipsoporosimetrías e imágenes MEB principalmente. El silicio ofrece también un mayor contraste para visualizar las \pdm\space que el vidrio o el oro, por lo que se usó también para estimar la uniformidad de espesor sin la necesidad de utilizar microscopio, evaluando la homogeneidad a la largo de la superficie a través del color del depósito , el cual resulta de la interferencia óptica.
 		
-			\item \textit{Películas delgadas de Au}. Estos sustratos fueron destinado para las pruebas electroquímicas, evaluar fenómenos de transporte, accesibilidad y propiedades de permeoselectividad. También se utilizó para imágenes de MEB.
+			\item \textit{Películas delgadas de Au}. El Au es el material elegido para los electrodos de los sensores. Sobre ellos se llevaron a cabo las pruebas electroquímicas, se evaluaron fenómenos de transporte, accesibilidad y propiedades de permeoselectividad. También se utilizó para obtener imágenes de MEB. 
 
 			\end{itemize}
 	
-	En una segunda etapa, una vez dominada la química y física para obtener soles estables, películas homogéneas de espesor controlado y poder depositar sobre una amplia variedad de sustratos térmicamente estables, se dedicará el resto del capitulo a la discusión sobre métodos pos-depósito. 
+	En una segunda etapa, una vez dominada la química y física para obtener soles estables, películas homogéneas de espesor controlado y poder depositar sobre una amplia variedad de sustratos térmicamente estables, se dedicará el resto del capitulo a la discusión sobre métodos pos-depósito. Dicho tratamientos tienen por objetivo preservar la estructura del cristal líquido y extraer el molde sin necesidad de recurrir a la calcinación ($\text{T}\approx 350^\circ \text{C}$).
 
-	El desarrollo que se llevó a cabo sobre métodos de síntesis alternativos a la calcinación tienen varios própositos y surge de necesidades concretas. Por un lado, bajar la temperatura, permite compatibilizar los procesos \textit{bottom-up} (utilizados en la síntesis de las \pdm), y los procesos \textit{top-down} (necesarios para fabricar los sensores). Poro otro lado, permite incluir cada vez, materiales más diversos y, a su vez, poder tener mayores opciones a la hora de elegir de que forma fabricar los sensores para aplicaciones dedicadas\cite{Doshi2000a,Wagner2013,Innocenzi2013,Soler-Illia2002a}.
+	La gran mayoría de los autores emplean temperaturas típicamente entre \SI{350}{\celsius} y \SI{600}{\celsius} para producir \pdm. Dicho rango de temperatura tiene como ventaja que promueve la condensación del óxido y, a su vez, calcina el surfactante (materia orgánica) dando lugar a la formación de los poros.\cite{Kresge1992,Beck1992,DiRenzo1997}  Sin embargo para obtener un control adecuado sobre la estructura final, antes de la calcinación, se debe estabilizar el arreglo micelar, es decir la estructura formada molde supramolecular. Huo y col.\cite{Huo1996} en 1996 advierten sobre este hecho y estudian la formación de silice......... 
 
-	Para avanzar en esta dirección se explora una gama de procesos y condiciones químicas para sintetizar las películas delgadas mesoporosas reduciendo la temperatura por debajo de la temperatura de calcinación, típicamente de unos \SI{350}{\celsius}. Este proceso, que la mayoría de los autores emplean, tiene como ventaja, que promueve la condensación del óxido y, a su vez, calcina el surfactante (materia orgánica) dando lugar a la formación de los poros.\cite{Zhang2015,Horiuchi2011,Clark2000,Zhang2005}
+	
 
-	La búsqueda de métodos de síntesis a bajas temperaturas permitiría fabricar los electrodos sobre Au metalúrgico o carbono (ver capitulo \ref{chap:Microfabricacion}, donde se desarrolla en profundidad estos aspectos) e incorporar sustratos poliméricos, como acrílico, resinas de poliéster, polibutileno de tereftalato (PBT), polietileno de tereftalato (PET), abriendo la posibilidad de utlizar una gama de materiales mucho mas amplia y abaratando costos.
+	Control de ciclos de humedad, pH, envejecimiento y rampas de tempearuta son vareibles.....son varibles muy estudiadas para el control de la mesoestructura de los poros y las estrcuturas resultante para la calcinacion posterior. 
+
+	...... 2013... EISA y TiO2 estadios tempranos de stabilizacion
+	
+	A pesar de estos trabajos citados, son pocos los proceos donde la extracción del molde supramolecular se lleve a temperaturas por temperaturas por debajo de 200ºC. 
+
+
+
+
+	El desarrollo de métodos de extracción del molde supramolecular alternativos a la calcinación tienen varios própositos y surge de necesidades concretas. Por un lado, disminuir la temperatura permite compatibilizar los procesos \textit{bottom-up} (utilizados en la síntesis de las \pdm), y los procesos \textit{top-down} (necesarios para fabricar los sensores). Poro otro lado, permite incluir cada vez, sustratos más diversos y, a su vez, poder tener mayores opciones a la hora de elegir de que forma fabricar los sensores para aplicaciones dedicadas\cite{Doshi2000a,Wagner2013,Innocenzi2013,Soler-Illia2002a}.
+
+	
+
+
+
+
+	Para avanzar en esta dirección se exploró una gama de procesos y condiciones químicas para sintetizar las películas delgadas mesoporosas reduciendo la temperatura por debajo de la temperatura de calcinación, que es típicamente de unos \SI{350}{\celsius}. Este proceso, que la mayoría de los autores emplean, tiene como ventaja, que promueve la condensación del óxido y, a su vez, calcina el surfactante (materia orgánica) dando lugar a la formación de los poros.\cite{Zhang2015,Horiuchi2011,Clark2000,Zhang2005}
+
+	La búsqueda de métodos de síntesis a bajas temperaturas permitiría fabricar los electrodos sobre Au metalúrgico o carbono (ver capitulo \ref{chap:Microfabricacion}, donde se desarrolla en profundidad estos aspectos) e incorporar sustratos poliméricos, como acrílico, resinas de poliéster, polibutileno de tereftalato (PBT), polietileno de tereftalato (PET), abriendo la posibilidad de utlizar una gama de materiales mucho mas amplia y abaratando costos en aplicaciones.
 
 	Veremos que mediante los procedimientos desarrollados es posible extender el uso de los sustratos considerablemente, abarcando virtualmente a cualquier superficie de baja rugosidad cuyo material sea estable por encima de los \SI{130}{\celsius}, incluyendo materiales poliméricos flexibles.
 		
@@ -482,7 +502,7 @@
 
 	 \subsection{Método ácido}
 
-	 	 Algunos autores proponen que un medio fuertemente ácido (pH$<1$) favorece la hidrólisis del alcóxido y la condensación de los grupo siloxano \cite{Soler-Illia2011,Doshi2000a,Boissiere2000,Huo1996,Beck1992}. Las películas depositadas, estabilizadas en cámara de humedad y  parcialmente condensadas a \SI{130}{\celsius}, tal como se explica en la sección \ref{sec:cond_y_extr}, pág. \pageref{sec:cond_y_extr}, fueron expuestos a una atmósfera de HCl durante \SI{15}{\minute}. 
+	 	 Algunos autores proponen que un medio fuertemente ácido (pH$<1$) favorece la hidrólisis del alcóxido y la condensación de los grupo siloxano \cite{Soler-Illia2011,Doshi2000a,Huo1996,Boissiere2000,Beck1992}. Las películas depositadas, estabilizadas en cámara de humedad y  parcialmente condensadas a \SI{130}{\celsius}, tal como se explica en la sección \ref{sec:cond_y_extr}, pág. \pageref{sec:cond_y_extr}, fueron expuestos a una atmósfera de HCl durante \SI{15}{\minute}. 
 
 		 En las microscopias para las \pdm\space sometidas a este método (ya sean estructuradas con F127 como con CTAB) se observan grietas y discontinuidades cuando se depositaron sobre electrodos de Au (figuras \ref{fig:Microscopia_F127_acido} y \ref{fig:Microscopia_CTAB_acido}). Este hecho se ha atribuido a una condensación rápida, catalizada por el medio extremadamente ácido. Al no presentar buena adherencia sobre el sustrato, las películas de sílice se contraen en todas las direcciones, y no solo en la dirección normal a la superficie, como ocurre en las \pdm\space depositadas sobre silicio, donde las fuerzas de adherencia al sustrato priman por sobre las fuerzas contracción en el plano\cite{Sakatani2006,Boissiere2005,Guillemin2010}. En ese caso las películas quedan bien formadas y homogéneas en toda el área de la muestra para ambos surfactantes. Se ha observado por microscopía electrónica que para los sistemas \pdmF\space (\ref{fig:Microscopia_F127_acido}) los  poros están casi unidos formando una especie de poro elongado, propio de una estructura \textit{p6mm}\cite{GonzalezSolveyra2017}. 
 	

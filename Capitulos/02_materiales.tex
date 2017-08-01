@@ -516,27 +516,39 @@
 	
 \section{Mediciones Electroquímicas}\label{sec:medidas_eq}
 		
-			Las mediciones electroquímicas fueron una parte central de este trabajo. Se utilizaron dos tipos de técnicas voltamperométricas, de corriente continua y de corriente alterna. No sólo se hizo uso de ellas como técnicas analíticas sino también como herramienta para establecer parámetros de transporte, concentración dentro y fuera de los poros, calcular constantes de difusión e inferir mecanismos de transporte de las sondas a través de la red nanoporosa. 
+			Las mediciones electroquímicas fueron una parte central de este trabajo. Se utilizaron dos tipos de técnicas voltamperométricas, de corriente continua y de corriente alterna. 	%No sólo se hizo uso de ellas como técnicas analíticas sino también como herramienta para establecer parámetros de transporte, concentración dentro y fuera de los poros, calcular constantes de difusión e inferir mecanismos de transporte de las sondas a través de la red nanoporosa. 
+			Para ambas técnicas se utilizó la configuración típica para celda de tres electrodos.\cite{Wi2000} El electrodo de trabajo (ET) es donde ocurre la reacción electroquímica, para ello se le aplica un potencial variable respecto de otro electrodo de potencial fijo, denominado electrodo de referencia (ER). La corriente resultante de la reacción química circula entre el electrodo de trabajo y el electrodo auxiliar o contraelectrodo (CE). 
 
-			Se utilizó, para ambas técnicas la típica configuración de celda de tres electrodos. La celda en sí fue fabricada en acrílico, con un volumen aproximado de \SI{3}{\ml} y con un orificio en la parte inferior. Para sellar contra el sustrato y evitar perdidas de la solución, se utilizo un sello de \SI{1}{\mm} de radio, el cual determina el área geométrica utilizada en \SI{3.15}{\mm^{2}}. En la figura \ref{fig:celda} se muestra un esquema del sistema de medición EQ y en la figura \ref{esq:eq} una fotografía de una de las tantas mediciones realizadas. 
+					\begin{figure}[h!]
+			 		  \begin{center}
+			 		  \includegraphics[width=0.80\textwidth]{Esquemas/esquema-eq.pdf}
+			 		  \caption[Circuito eléctrico EQ]{Esquema eléctrico correspondiente al armado experimental utilizado para realizar las voltametrías cíclicas.}
+			 		  \label{fig:eq-circuito}
+			 		  \end{center}
+			 		  \end{figure}
+
+			\pagebreak
+
+			La variación del potencial aplicado y la medición de la corriente se controlan mediante un potenciostato. El diagrama eléctrico se encuentra esquematizado en la figura \ref{fig:eq-circuito}.
+
+			Las mediciones se llevaron a cabo sobre dos ensamblados experimentales diferentes. Uno utilizado durante los estadios más tempranos de la tesis, sobre electrodos sin diseño transferido. Para este armado se preparó una celda fabricada en acrílico, con un volumen aproximado de \SI{3}{\ml} y un orificio en la parte inferior. La celda se llena con la solución que contiene la sonda por la parte superior, y para sellar la parte en contacto con el sustrato de forma de evitar perdidas, se utilizó un sello de \SI{1}{\mm} de radio, el cual determina el área geométrica utilizada en \SI{3.15}{\mm^{2}}. Éste preparado experimental precisó de ER y CE externos. En la figura \ref{fig:celda}a se expone una fotografía para este sistema. 
+
+             En el segundo ensamblado experimental, cuya fotografía se muestran en la fig \ref{fig:celda}b, las mediciones se llevan a cabo sobre electrodos con un diseño transferido. En el cual el CE se encuentra integrado en los sensores. Como referencia se utilizo un electrodo externo. El área, en este caso, queda determinada por el diseño (consultar sección \ref{sec:diseno}) de los electrodos. En todos los voltagramas presentados en este trabajo, con el objetivo de hacer las comparaciones más simples, las intensidades fueron normalizados por el área geométrica de cada electrodo y los potenciales referidos al potencial de un electrodo estándar de calomel saturado (\SI{0.248}{\volt} contra electrodo normal de hidrógeno a \SI{20}{\celsius})\cite{BANUS1941}.
 
 
 			 \begin{figure}[h!]
-			  		  \begin{subfigure}[t]{\textwidth}
-			  		  \centering\includegraphics[width=0.70\textwidth]{Esquemas/esquema-eq.pdf}
+			  		 \begin{subfigure}[t]{0.495\textwidth}
+			  		  \includegraphics[width=\textwidth]{Imagenes/EQ1.jpg}
 			  		  \end{subfigure}
 			  		  \begin{subfigure}[t]{0.495\textwidth}
-			  		  \includegraphics[width=\textwidth]{Imagenes/eq.jpg}
+			  		  \includegraphics[width=\textwidth]{Imagenes/EQ2.jpg}
 			  		  \end{subfigure}
-			  		  \begin{subfigure}[t]{0.495\textwidth}
-			  		  \includegraphics[width=\textwidth]{Imagenes/eq-2.jpg}
-			  		  \end{subfigure}
-			  \caption[Equipo para realizar la medidas electroquímicas]{Fotografía del instrumental que se utilizó a lo largo de la tesis para tomar las medidas electroquímicas. Configuración de de una celda tres electrodos para realizar medidas electroquímicas.}
-			  		 \label{esq:eq}
+			  \caption[Equipo para realizar la medidas electroquímicas]{Fotografía del instrumental que se utilizó a lo largo de la tesis para tomar las medidas electroquímicas. Izquierda: celda de acrílico sobre electrodos de Au recbierto con una \pdm\space utilizando CE y ER externos. Derecha: oblea con 6 ET por sensor, celda fabricada con resina epoxi SU8, CE integrado y utilizando un ER externo.}
+			  		 \label{fig:celda}
 			 		 \end{figure}	
 					
 			 		  
-			Las mediciones electroquímicas fueron tomadas con un potencionestato \textit{Teq4}, para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second} se uso un \textit{Autolab}, de la firma \textit{Ecochemie}. Como electrodo de referencia se utilizó un electrodo saturado de calomel (ESC) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de tamaño adecuado. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímicas. 
+			Las mediciones electroquímicas fueron tomadas con un potencionestato \textit{Teq4}, para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second} se utlizó un \textit{Autolab}, de la firma \textit{Ecochemie}. Como electrodo de referencia se empleó un electrodo saturado de calomel (ESC) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de tamaño adecuado. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímicas. 
 			
 			A continuación se hace una breve reseña sobre las técnicas utilizadas, los parámetros empleados y las configuraciones experimentales.
 
@@ -551,7 +563,6 @@
 			    	  \ferriCompleto \hspace{3cm} ferricianuro de potasio & \textit{Sigma} & 329,27  & Sonda  \\ \midrule
 			  		  \aminorutenioCompleto  \hspace{3cm}  cloruro de hexaaminorutenio& \textit{Aldrich} &  309,61  & Sonda  \\ \midrule
 			  		  \raisebox{-.5\height}{\includegraphics[scale=0.4]{Esquemas/Fc.pdf}}  \hspace{3cm} ferroceno metanol   & \textit{Aldrich} &  216,06 & Sonda  \\ \midrule
-			  		  \raisebox{-.5\height}{\includegraphics[scale=0.4]{Esquemas/HQ.pdf}} \hspace{3cm} hidroquinona	& \textit{Biopack} & 110.11  & Sonda  \\ \midrule
 			  		  H$_2$O \hspace{3cm} agua &  \SI{18}{\mega\ohm\per\cm}  &  18,02 & Solvente \\ \midrule
 			  		  KCl  \hspace{3cm} cloruro de potasio   & \textit{Biopack} & 74,56 & Electrolito Soporte \\
  			  		  \bottomrule
@@ -559,11 +570,13 @@
 			   		  \label{tabla:eq}
 			   		  \end{table}
 
+		\pagebreak
+			   		  	
 	 \subsection{Voltametría cíclica}
 	 		
-	 		La voltamperometría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo estacionario contra un electrodo de referencia. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante entre ellos. La señal de excitación es un barrido de potencial lineal con una onda de forma triangular, la cual parte de un potencial E$_1$, evoluciona linealmente hasta un potencial E$_2$ para luego volver a E$_1$. Las velocidades de este barrido pueden variar desde unos cuantos milivolts por segundo hasta cientos de volts por segundo; en nuestro caso se utilizaron velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}; se escogieron estas velocidades para llevar a cabo experimentos de una duración aceptable pero donde aún predomine la transferencia de carga y no se observe desplazamiento de potenciales para los picos de máxima oxidación y/o reducción, ya que a altas velocidades de barrido  \cite{nicholson1964,Gewirth2004}
+	 		La voltamperometría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo estacionario contra un electrodo de referencia. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante entre ellos. La señal de excitación es un barrido de potencial lineal con una onda de forma triangular, la cual parte de un potencial E$_1$, evoluciona linealmente hasta un potencial E$_2$ para luego volver a E$_1$. Las velocidades de este barrido pueden variar desde unos cuantos milivolts por segundo hasta cientos de volts por segundo; en nuestro caso se utilizaron velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}; se escogieron estas velocidades para llevar a cabo experimentos de una duración aceptable y que no se observe desplazamiento de potenciales para los picos de máxima oxidación y/o reducción, debido a limitaciones en la transferencia de carga por altas velocidades de barrido. \cite{nicholson1964,Gewirth2004}
 
-	 		Como ya se dijo anteriormente se barre el potencial del electrodo de trabajo en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajo en un pH$\sim 5$ para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo saturado de calomel.\cite{wang2014} 
+	 		Como ya se dijo anteriormente se barre el potencial del electrodo de trabajo en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajó a un pH$\sim 5$, para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo saturado de calomel.\cite{wang2014} 
 
 	 		En la figura \ref{fig:CV_ideal} se muestra la onda triangular de excitación aplicada y la curva obtenida para una sonda electroquímica idealmente reversible, donde se destacan los parámetros mas importantes.
 	 			 \begin{figure}[ht]
