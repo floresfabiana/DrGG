@@ -72,6 +72,7 @@ CD_BIB="Referencias"
       sed -i.tmp 's/1:10^5/$1:10^5$/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/AlGaN/$\\text{Al}_{1-X}\\text{Ga}_{X}\\text{N}$/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/\&/\\&/g' $CD_BIB/base_bibliografica.bib
+      sed -i.tmp 's/Zr1xO2/$\\text{Zr}_{1-X}\\text{Si}_{X}\\text{O}_{2}$/g' $CD_BIB/base_bibliografica.bib
 
       #Verifico que todo salió bien
       if [ $? = 0 ];then
