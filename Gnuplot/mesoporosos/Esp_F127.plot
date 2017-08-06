@@ -18,7 +18,7 @@ unset border
 unset tics
 
 #Defino estilos para cada tipo de linea
-set style line 1 lc rgb 'gray40' pt 7 ps 1.5 #Circulo
+set style line 1 lc rgb 'gray40' pt 7 ps 1 #Circulo
 set style line 3 lc rgb '#ff4500' lt 1 lw 2 pt 7 ps 1 #Naranja
 
 #Estilos de los ejes 
@@ -39,6 +39,7 @@ set ylabel "Espesor / nm" font ",14" textcolor rgb "gray40" offset  -2,0
 #Hace un FIT
 f(x) = a*x**(b)
 fit f(x) "Datos_esp_F127.txt" using 1:2 via a,b
+stddev_y = sqrt(FIT_WSSR / (FIT_NDF + 1 ))
 
 #R cuadrado sacado con el Origin: R2=9.7551
 
@@ -46,4 +47,4 @@ set label 1 sprintf("$t=%3.0fx^{%3.3f}$",a,b) at 3100,380 font ",10" textcolor r
 set label 3 "R$^2$=0,97551" at 3100,360 font ",10" textcolor rgb "gray40"
 
 #Ploteo todas las funciones que les digamos
-plot f(x) with lines ls 3, "Datos_esp_F127.txt" using 1:2 with points ls 1
+plot f(x) with lines ls 3, "Datos_esp_F127.txt" using 1:2:($2/15) with yerrorbar ls 1

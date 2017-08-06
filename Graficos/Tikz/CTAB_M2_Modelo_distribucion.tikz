@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mié 26 jul 2017 11:37:09 ART
+%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
+%% Fri Aug  4 19:30:36 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
@@ -8,11 +8,11 @@
 \gpsetlinewidth{1.50}
 \draw[gp path] (0.922,8.381)--(0.922,1.139)--(11.947,1.139)--(11.947,8.381)--cycle;
 \gpcolor{rgb color={0.000,0.000,0.000}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.943,6.671) {cuellos};
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (6.251,6.671) {poros};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (2.943,6.671) {cuellos};
+\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (6.251,6.671) {poros};
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.760) {Poblaci'on relativa};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.434,0.215) {Di'ametro};
+\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.760) {Poblaci'on relativa};
+\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.434,0.215) {Di'ametro};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \draw[gp path] (11.947,1.406)--(11.725,1.410)--(11.312,1.418)--(10.924,1.426)--(10.559,1.435)%
   --(10.214,1.438)--(9.888,1.434)--(9.580,1.430)--(9.286,1.426)--(9.008,1.421)--(8.743,1.424)%

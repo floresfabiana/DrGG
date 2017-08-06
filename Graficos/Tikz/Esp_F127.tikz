@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Sat May 20 09:22:42 2017
+%% Sat Aug  5 11:50:28 2017
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -145,7 +145,19 @@
   --(11.947,2.698);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinewidth{1.00}
-\gpsetpointsize{6.00}
+\draw[gp path] (3.740,5.796)--(3.740,6.718);
+\draw[gp path] (3.650,5.796)--(3.830,5.796);
+\draw[gp path] (3.650,6.718)--(3.830,6.718);
+\draw[gp path] (5.792,3.876)--(5.792,4.524);
+\draw[gp path] (5.702,3.876)--(5.882,3.876);
+\draw[gp path] (5.702,4.524)--(5.882,4.524);
+\draw[gp path] (7.843,3.180)--(7.843,3.728);
+\draw[gp path] (7.753,3.180)--(7.933,3.180);
+\draw[gp path] (7.753,3.728)--(7.933,3.728);
+\draw[gp path] (9.895,2.990)--(9.895,3.511);
+\draw[gp path] (9.805,2.990)--(9.985,2.990);
+\draw[gp path] (9.805,3.511)--(9.985,3.511);
+\gpsetpointsize{4.00}
 \gppoint{gp mark 7}{(3.740,6.257)}
 \gppoint{gp mark 7}{(5.792,4.200)}
 \gppoint{gp mark 7}{(7.843,3.454)}
