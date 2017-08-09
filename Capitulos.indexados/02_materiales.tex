@@ -492,7 +492,17 @@
 	\subsection{Microscopía con iones de galio\index{galio} focalizados (FIB)}\label{sec:FIB}
 
 		El bombardeo con haz de iones (FIB, del ingles \textit{focused ion beam}) es una técnica que se utiliza fundamentalmente para el análisis de materiales en general, y en particular para materiales propios de la industria de la microelectrónica\index{microelectrónica}, más específicamente para análisis de microsistemas (MEMS\index{MEMS}, del ingles \textit{Micro Electro Mechanical Systems}) y circuitos integrados (IC, del ingles \textit{Integrated Circuits}). 
-			\begin{figure}[hb!]
+
+		Consiste en el bombardeo de la muestra con iones de galio\index{galio} para desplazar los átomos de la misma. El Ga\index{galio}$^{\circ}$ (que se almacena en en un 
+		reservorio en la cabeza de la columna) se licua y se ioniza para dar lugar a los iones de Ga\index{galio}${^+}$,
+			
+		 los cuales mediante un sistema de lentes electromagnéticas (similar al usado en MEB) son acelerados y focalizados sobre la muestra. 
+
+		El impacto de los iones Ga\index{galio}${^+}$ desplaza los átomos de la muestra generando así <<cortes>> sobre la misma. Previo al tratamiento, sin romper vacío y dentro de la cámara del FIB\index{FIB}, se deposita sobre la muestra una delgada \index{película!delgada}capa de Pt\index{platino} ($\sim$\SI{150}{\nm}). La misma actúa como protección de la muestra y para generar un borde de corte mas abrupto, ya que la taza de desplazamiento de los átomos de Pt\index{platino} con iones Ga\index{galio}${^+}$ es extremadamente baja.\cite{Giannuzzi2005,Orloff1996} La técnica es de especial utilidad para examinar secciones transversales de muestras, calcular espesor\index{espesor}es, reconstruir volumenes en 3D, preparar láminas para microscopia\index{microscopía}\index{microscopía} electrón\index{electrón}ica de trasmisión, entre otros tantos ejemplos. El diagrama de la figura \ref{esq:sem-fib}a representa la disposición espacial de las columnas (de iones y electrones), detectores y muestra del equipo. En en el panel (b) de la misma figura se muestra una imagen de electrones secundarios, rotada \SI{52}{\degree} de un corte realizado para examinar la sección transversal de un dispositivo. En el panel (c) es una imagen de alta resolución de la sección remarcada del panel (b).La muestra se trata de un\index{cristal fotónico} formado por capas alternadas de mesoporosos de Ti\index{titanio}O$_2$ y SiO$_2$, estructurados con F127 y CTAB respectivamente.\cite{Gimenez2017}
+
+		Prácticamente en todos los casos se requiere una aceleración de iones de \SI{30}{\kilo\electronvolt} para que sea efectiva la trasferencia de momento, el flujo de iones varia de acuerdo a una realción de compromiso entre tiempo y calidad de corte, siendo las corriente mas utilizadas entre \SI{2.5}{\nano\ampere} y \SI{40}{\pico\ampere} \cite{Orloff2003,Reyntjens2001}.
+
+		\begin{figure}[ht!]
 			  		  \begin{subfigure}[t]{\textwidth}
 			  		  \centering\includegraphics[width=0.60\textwidth]{Esquemas/sem-fib.pdf}
 			  		  \end{subfigure}
@@ -502,18 +512,9 @@
 			  		  \begin{subfigure}[t]{0.498\textwidth}
 			  		  \includegraphics[width=\textwidth]{Imagenes/FIB-panel-c.jpg}
 			  		  \end{subfigure}
-			  		  \caption[Esquema de las microscopia\index{microscopía}\index{microscopía}s FIB\index{FIB}/SEM]{(a) Esquema donde se muestra la disposición de las columnas de electrones y de átomos de galio\index{galio} del \textit{Helios NanoLab 650} y los principales eventos que ocurren al impactar los haces con la muestras.(b) Corte para observar de la sección trasversal de un dispositivo mesoporoso multicapa. (c) Imagen de alta resolución de la sección trasnversal enmarcada en (b).}
+			  		  \caption[Esquema de las microscopia\index{microscopía}\index{microscopía}s FIB\index{FIB}/SEM]{(a) Esquema donde se muestra la disposición de las columnas de electrones y de átomos de galio\index{galio} del \textit{Helios NanoLab 650} y los principales eventos que ocurren al impactar los haces sobre la muestra.(b) Corte en sección trasversal de un dispositivo mesoporoso multicapa. (c) Imagen de alta resolución de la sección trasnversal enmarcada en (b).}
 			  		  \label{esq:sem-fib}
 			  		  \end{figure}
-			  		  
-		Consiste en el bombardeo de la muestra con iones de galio\index{galio} para desplazar los átomos de la misma. El Ga\index{galio}$^{\circ}$ (que se almacena en en un 
-		reservorio en la cabeza de la columna) se licua y se ioniza para dar lugar a los iones de Ga\index{galio}${^+}$,
-			
-		 los cuales mediante un sistema de lentes electromagnéticas (similar al usado en MEB) son acelerados y focalizados sobre la muestra. 
-
-		El impacto de los iones Ga\index{galio}${^+}$ desplaza los átomos de la muestra generando así <<cortes>> sobre la misma. Previo al tratamiento, sin romper vacío y dentro de la cámara del FIB\index{FIB}, se deposita sobre la muestra una delgada \index{película!delgada}capa de Pt\index{platino} ($\sim$\SI{150}{\nm}). La misma actúa como protección de la muestra y para generar un borde de corte mas abrupto, ya que la taza de desplazamiento de los átomos de Pt\index{platino} con iones Ga\index{galio}${^+}$ es extremadamente baja.\cite{Giannuzzi2005,Orloff1996} La técnica es de especial utilidad para examinar secciones transversales de muestras, calcular espesor\index{espesor}es, reconstruir volumenes en 3D, preparar láminas para microscopia\index{microscopía}\index{microscopía} electrón\index{electrón}ica de trasmisión, entre otros tantos ejemplos. El diagrama de la figura \ref{esq:sem-fib}a representa la disposición espacial de las columnas (de iones y electrones), detectores y muestra del equipo. En en el panel (b) de la misma figura se muestra una imagen de electrones secundarios, rotada \SI{52}{\degree} de un corte realizado para examinar la sección transversal de un dispositivo. En el panel (c) es una imagen de alta resolución de la sección remarcada del panel (b).La muestra se trata de un\index{cristal fotónico} formado por capas alternadas de mesoporosos de Ti\index{titanio}O$_2$ y SiO$_2$, estructurados con F127 y CTAB respectivamente.\cite{Gimenez2017}
-
-		Prácticamente en todos los casos se requiere una aceleración de iones de \SI{30}{\kilo\electronvolt} para que sea efectiva la trasferencia de momento, el flujo de iones varia de acuerdo a una realción de compromiso entre tiempo y calidad de corte, siendo las corriente mas utilizadas entre \SI{2.5}{\nano\ampere} y \SI{40}{\pico\ampere} \cite{Orloff2003,Reyntjens2001}.
 	
 \section{Mediciones Electroquímicas}\label{sec:medidas_eq}
 		
@@ -535,7 +536,7 @@
              En el segundo ensamblado experimental, cuya fotografía se muestran en la fig \ref{fig:celda}b, las mediciones se llevan a cabo sobre electrodos con un diseño transferido. En el cual el CE se encuentra integrado en los sensores. Como referencia se utilizo un electrodo externo. El área, en este caso, queda determinada por el diseño (consultar sección \ref{sec:diseno}) de los electrodos. En todos los voltagramas presentados en este trabajo, con el objetivo de hacer las comparaciones más simples, las intensidades fueron normalizados por el área geométrica de cada electrodo y los potenciales referidos al potencial de un electrodo estándar de calomel saturado (\SI{0.248}{\volt} contra electrodo normal de hidrógeno\index{hidrógeno} a \SI{20}{\celsius})\cite{BANUS1941}.
 
 
-			 \begin{figure}[h!]
+			 \begin{figure}[b!]
 			  		 \begin{subfigure}[t]{0.495\textwidth}
 			  		  \includegraphics[width=\textwidth]{Imagenes/EQ1.jpg}
 			  		  \end{subfigure}
@@ -576,6 +577,9 @@
 	 		Como ya se dijo anteriormente se barre el potencial del electrodo de trabajo\index{electrodo!de trabajo} en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al\index{aluminio} usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica\index{electroquimico} del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajó a un pH\index{pH}$\sim 5$, para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo saturado de calomel.\cite{wang2014} 
 
 	 		En la figura \ref{fig:CV_ideal} se muestra la onda triangular de excitación aplicada y la curva obtenida para una sonda\index{sonda} electroquímica\index{electroquimico} idealmente reversible, donde se destacan los parámetros mas importantes.
+	 		
+	 		Esta técnica se utilizó para evaluar fenómenos de exclusión, permeación\index{permeacion} y preconcentración. También para determinar concentración de las sonda\index{sonda}s electroactivas dentro y fuera de los poros, calcular coeficientes de difusión\index{difusión} y estimar distancias de sitios redox\index{sitio redox\index{sitio redox}} así como chequear accesibilidad\index{accesibilidad} y estructura de las películas delgadas mesoporosas.
+
 	 			 \begin{figure}[ht]
 			  		  \begin{subfigure}[t]{0.495\textwidth}
 			  		  \includegraphics[width=\textwidth]{Graficos/onda-triangular.pdf}
@@ -587,7 +591,7 @@
 			  		  \label{fig:CV_ideal}
 			  		  \end{figure}
 
-	 		Esta técnica se utilizó para evaluar fenómenos de exclusión, permeación\index{permeacion} y preconcentración. También para determinar concentración de las sonda\index{sonda}s electroactivas dentro y fuera de los poros, calcular coeficientes de difusión\index{difusión} y estimar distancias de sitios redox\index{sitio redox\index{sitio redox}} así como chequear accesibilidad\index{accesibilidad} y estructura de las películas delgadas mesoporosas.
+	 		
 
 	 \subsection{Voltametría cíclica de corriente alterna}
 
@@ -595,7 +599,9 @@
 
 	 		En la figura \ref{fig:ACV_ideal} se muestra la onda triangular con la perturbación, y la curva obtenida para una sonda\index{sonda} electroquímica\index{electroquimico} idealmente reversible, luego del filtrado de la componente continua.
 
-	 			 \begin{figure}[ht]
+	 		El propósito de esta técnica fue el obtener el coeficiente de difusión\index{difusión} de hexaaminorutenio en sistemas porosos y contrastar con otras técnicas de forma de validar dicho coeficiente y los mecanismos de trasporte propuestos. 
+
+	 			 \begin{figure}[hb]
 			  		  \begin{subfigure}[t]{0.495\textwidth}
 			  		  \includegraphics[width=\textwidth]{Graficos/onda-triangular-sin.pdf}
 			  		  \end{subfigure}
@@ -606,7 +612,7 @@
 			  		  \label{fig:ACV_ideal}
 			  		  \end{figure}
 	 		
-	 		El propósito de esta técnica fue el obtener el coeficiente de difusión\index{difusión} de hexaaminorutenio en sistemas porosos y contrastar con otras técnicas de forma de validar dicho coeficiente y los mecanismos de trasporte propuestos. 
+	 		
 			
 	 \subsection{Simulaciones electroquímica\index{electroquimico}s\index{electroquimico}}\label{simulacion}
 
