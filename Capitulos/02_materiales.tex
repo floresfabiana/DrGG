@@ -616,14 +616,25 @@
 			
 	 \subsection{Simulaciones electroquímicas}\label{simulacion}
 
-	 	 Con la finalidad de validar las hipótesis de transporte planteadas en el capitulo \ref{chap:Electroquimica} y establecer las condiciones en las que se pueden o no observar fenómenos de mediación electroquímica, se llevaron a cabo simulaciones de voltametrías cíclicas por computadora. 
+	 	 Con la finalidad de validar las hipótesis de transporte planteadas en el capitulo \ref{chap:Electroquimica} y establecer las condiciones en las que se pueden o no observar fenómenos de mediación electroquímica, se llevaron a cabo simulaciones numéricas de voltametrías cíclicas por computadora.
 
-	 	 Comúnmente la ecuación básica que se necesita resolver para simular fenómenos electroquímicos es la ecuación de difusión, la cual relaciona la concentración $c$ con el tiempo $t$ y la distancia al electrodo $x$, dada por el coeficiente de difusión $D$. Esta ecuación se trata de un parábola de segundo orden en derivadas parciales y se la conoce como la segunda ley de Fick.
+	 	 Se eligió realizar las simulaciones por el método de elementos finitos (MEF). El MEF es un método de calculo numérico, especialmente orientado a la resolución de ecuaciones diferenciales, de amplia difusión y para el cuál existen una gran cantidad programas con módulos preprogramados para diversas aplicaciones. En términos matemáticos, el MEF es una técnica numérica para la resolución de problemas descritos como un conjunto de ecuaciones diferenciales parciales. Comúnmente la ecuación básica que se necesita resolver para simular fenómenos electroquímicos es la ecuación de difusión, la cual relaciona la concentración $c$ con el tiempo $t$ y la distancia al electrodo $x$, dada por el coeficiente de difusión $D$.\cite{Britz2005,Nann2003} Esta ecuación se trata de un parábola de segundo orden en derivadas parciales y se la conoce como la segunda ley de Fick.\cite{fick1855}
 
-	 	 %En términos matemáticos, el Método de Elementos Finitos (MEF) es una técnica numérica para la resolución de problemas descritos como un conjunto de ecuaciones diferenciales parciales. Utilizando los elementos finitos, se puede analizar cualquier forma, utilizar métodos diferentes para idealizar la geometría y obtener resultados con la precisión deseada. 
+	 	 \begin{equation}
+	 	 	\frac{\partial c}{\partial t}=D\frac{\partial^2 c}{\partial^2 x}
+	 	 	\label{eq:fick}
+	 	 \end{equation}
+
+	 	 Esta ecuación es la base del problema a la cual se le suman variables derivadas de las condiciones particulares de cada sistema que se quiera simular. 
+
+	 	 %Convección, reacciones químicas, fenómenos de adsorción, y demás complicaciones son sólo algunos ejemplos que producen cambios en la concentración y en la difusión en sí. Para ellos se deben describir con precisión las condiciones de contorno particular para cada experimentos simulado.
+
+	 	 El modelo aplicado en este trabajo utiliza condiciones de contorno de equilibrio (ecuación de Nerst) en la superficie del electrodo tanto para la sonda como para el mediador, lo cual es valido siempre que la cinética de electrodo sea suficientemente rápida. Dentro de la película mesoporosa se considera la difusión del mediador ($D$) y la sonda($D$) según la segunda ley de Fick (ecuación \ref{eq:fick}), utilizando coeficiente variables. En los caso en que se simuló una mediación redox, la reaccion entre entre ambos (sonda y mediador) fue descripta como una reaccion bimolecular de orden uno entre cada especie. En la solucion solo difunde la sonda. No se considera la migracion, lo cual es valido siempre y cuando la concentracion del electrolito soporte sea suficientemente alta. 
+
+	     El modelo asume que el sistema es homogeneo en planos paralelos al electrodo y por lo tanto hay gradientes solo en la direccion normal al electrodo.   
 
 
-	 	 Las mismas se realizaron en colaboración con el Dr. Tagliasucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía (INQUIMAE) con el software \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual simula las voltametrías utilizando elementos finitos. En la tabla \ref{tabla:simulacion} se resumen las variables utilizados para las simulaciones, sus valores y su descripción.\cite{Britz2016}
+	 	 Las simulaciones se se realizaron en colaboración con el Dr. Tagliasucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía (INQUIMAE) con el software \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual simula las voltametrías utilizando elementos finitos. En la tabla \ref{tabla:simulacion} se resumen las variables utilizados para las simulaciones, sus valores y su descripción.
 	 	
 	    	\begin{table}[ht!]
 	 	    \caption[Parámetros de las simulacinoes]{Parámetros y valores de entrada usadas durante las simulaciones de las voltametrías cíclicas.}
