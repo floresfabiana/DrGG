@@ -521,7 +521,7 @@
 			Las mediciones electroquímica\index{electroquimico}s\index{electroquimico} fueron una parte central de este trabajo. Se utilizaron dos tipos de técnicas voltamperométricas, de corriente continua y de corriente alterna. 	%No sólo se hizo uso de ellas como técnicas analíticas sino también como herramienta para establecer parámetros de transporte, concentración dentro y fuera de los poros, calcular constantes de difusión\index{difusión} e inferir mecanismos de transporte\index{transporte} de las sonda\index{sonda}s a través de la red nanoporosa. 
 			Para ambas técnicas se utilizó la configuración típica para celda de tres electrodos.\cite{Wi2000} El electrodo de trabajo\index{electrodo!de trabajo} (ET) es donde ocurre la reacción electroquímica\index{electroquimico}, para ello se le aplica un potencial variable respecto de otro electrodo de potencial fijo, denominado electrodo de referencia\index{electrodo!de referencia} (ER). La corriente resultante de la reacción química circula entre el electrodo de trabajo\index{electrodo!de trabajo} y el electrodo auxiliar o contraelectrodo\index{electrodo!contraelectrodo} (CE). 
 
-					\begin{figure}[h!]
+					\begin{figure}[ht!]
 			 		  \begin{center}
 			 		  \includegraphics[width=0.80\textwidth]{Esquemas/esquema-eq.pdf}
 			 		  \caption[Circuito eléctrico EQ]{Esquema eléctrico correspondiente al armado experimental utilizado para realizar las voltametrías cíclicas.}
@@ -580,7 +580,7 @@
 	 		
 	 		Esta técnica se utilizó para evaluar fenómenos de exclusión, permeación\index{permeacion} y preconcentración. También para determinar concentración de las sonda\index{sonda}s electroactivas dentro y fuera de los poros, calcular coeficientes de difusión\index{difusión} y estimar distancias de sitios redox\index{sitio redox\index{sitio redox}} así como chequear accesibilidad\index{accesibilidad} y estructura de las películas delgadas mesoporosas.
 
-	 			 \begin{figure}[ht]
+	 			 \begin{figure}[h!]
 			  		  \begin{subfigure}[t]{0.495\textwidth}
 			  		  \includegraphics[width=\textwidth]{Graficos/onda-triangular.pdf}
 			  		  \end{subfigure}
@@ -601,7 +601,7 @@
 
 	 		El propósito de esta técnica fue el obtener el coeficiente de difusión\index{difusión} de hexaaminorutenio en sistemas porosos y contrastar con otras técnicas de forma de validar dicho coeficiente y los mecanismos de trasporte propuestos. 
 
-	 			 \begin{figure}[hb]
+	 			 \begin{figure}[hb!]
 			  		  \begin{subfigure}[t]{0.495\textwidth}
 			  		  \includegraphics[width=\textwidth]{Graficos/onda-triangular-sin.pdf}
 			  		  \end{subfigure}
@@ -616,25 +616,34 @@
 			
 	 \subsection{Simulaciones electroquímica\index{electroquimico}s\index{electroquimico}}\label{simulacion}
 
-	 	 Con la finalidad de validar las hipótesis de transporte\index{transporte} planteadas en el capitulo \ref{chap:Electroquimica} y establecer las condiciones en las que se pueden o no observar fenómenos de mediación\index{mediacion} electroquímica\index{electroquimico}, se llevaron a cabo simulaciones numéricas de voltametrías cíclicas por computadora.
+	 	 Con la finalidad de validar las hipótesis de transporte\index{transporte} planteadas en el capitulo \ref{chap:Electroquimica} y establecer las condiciones en las que se pueden o no observar fenómenos de mediación\index{mediacion} electroquímica\index{electroquimico}, se llevaron a cabo simulaciones numéricas por computadora de reproduciendo las condiciones experimentales utilizadas.
 
-	 	 Se eligió realizar las simulaciones por el método de elementos finitos (MEF). El MEF es un método de calculo numérico, especialmente orientado a la resolución de ecuaciones diferenciales, de amplia difusión\index{difusión} y para el cuál existen un gran cantidad programas con módulos preprogramados para diversas aplicaciones. En términos matemáticos, el MEF es una técnica numérica para la resolución de problemas descritos como un conjunto de ecuaciones diferenciales parciales. Comúnmente la ecuación básica que se necesita resolver para simular fenómenos electroquímico\index{electroquimico}s\index{electroquimico} es la ecuación de difusión\index{difusión}, la cual relaciona la concentración $c$ con el tiempo $t$ y la distancia al electrodo $x$, dada por el coeficiente de difusión\index{difusión} $D$.\cite{Britz2005,Nann2003} Esta ecuación se trata de un parábola de segundo orden en derivadas parciales y se la conoce como la segunda ley de Fick\index{Fick}.\cite{fick1855}
+	 	 Se optó para realizar las simulaciones el método de elementos finitos\index{metodo de elementos finitos@método de elementos finitos} (MEF). El MEF es un método de calculo numérico, especialmente orientado a la resolución de ecuaciones diferenciales, de amplia difusión\index{difusión} y para el cuál existen una gran cantidad programas con módulos preprogramados orientados para diversas aplicaciones (problemas mecánicos, físicos, químicos, biológicos, etc.). En términos matemáticos, el MEF es una técnica numérica para la resolución de problemas descritos como un conjunto de ecuaciones diferenciales parciales. Comúnmente la ecuación básica que se necesita resolver para simular fenómenos electroquímico\index{electroquimico}s\index{electroquimico} es la ecuación de difusión\index{difusión}, la cual relaciona la concentración $c$ con el tiempo $t$ y la distancia al electrodo $x$, dada por el coeficiente de difusión\index{difusión} $D$.\cite{Britz2005,Nann2003} Esta ecuación se trata de un parábola de segundo orden en derivadas parciales y se la conoce como la segunda ley de Fick\index{Fick}.\cite{fick1855}
 
 	 	 \begin{equation}
 	 	 	\frac{\partial c}{\partial t}=D\frac{\partial^2 c}{\partial^2 x}
+	 	 	\label{eq:fick}
 	 	 \end{equation}
 
-	 	 Esta ecuación es la base del problema a la cual se le suman variables derivadas de las condiciones particulares de cada sistema que se quiera simular. Convección, reacciones químicas, fenómenos de adsorción\index{adsorción}, y demás complicaciones son sólo algunos ejemplos que producen cambios en la concentración y en la difusión\index{difusión} en sí. Para ellos se deben describir con precisión las condiciones de contorno particular para cada experimentos simulado.
+	 	 Esta ecuación es la base para simular los fenómenos de transporte, a la cual se le suman variables o complicaciones derivadas de las condiciones particulares de cada sistema que se quiera simular. Convección, reacciones químicos, fenómenos de adsorción\index{adsorción} son sólo algunas de estas complicaciones que producen en el cambio del perfil de concentraciones y la difusión\index{difusión} en sí, agregando complejidad a al sistema de ecuaciones diferenciales.  
 
-	 	 El modelo usa condiciones de contorno de equilbrio (ecuacion de Nernst) en la superficie\index{superficie} del electrodo tanto para la sonda\index{sonda} como para el mediador, lo cual es valido siempre que la cinetica de electrodo sea rapida. Dentro del film se considera la difusion del mediador y la sonda\index{sonda} (segunda ley de Fick\index{Fick}) y ademas la reaccion redox entre ambos (reaccion bimolecular de orden uno entre cada especie). En la solucion solo difunde la sonda\index{sonda}. No se considera la migracion, lo cual es valido siempre y cuando la concentracion del electrolito soporte sea suficientemente alta. 
+	 	 El modelo aplicado en este trabajo utiliza condiciones de contorno de equilibrio en la superficie\index{superficie} del electrodo, descriptas por la ecuación de Nerst\index{Nerst}. Dichas condiciones se aplican tanto para la sonda\index{sonda} (\fc) como para el mediador(\ru), lo cual es valido siempre que la cinética de electrodo sea suficientemente rápida. Todos lo procesos difusivos (para la sonda\index{sonda} y el mediador) son descriptos según la segunda ley de Fick\index{Fick} (ec. \ref{eq:fick}) ya sea en la película mesoporosa\index{película!mesoporosa} o en la solución, en la cual se considera solo la presencia de la sonda\index{sonda}. Los coeficientes de cada especie fueron variando en función las condiciones de cada experimento simulado. En los caso en los que se simuló una mediación\index{mediacion} redox, la reacción entre entre la sonda\index{sonda} y el mediador fue descripta como una reacción bimolecular de orden uno entre cada especie. En ningún caso se considera migración, lo cual es valido siempre y cuando la concentración del electrolito soporte sea suficientemente alta. El modelo asume que el sistema es homogéneo (tanto en la solución como en la película)en planos paralelos al electrodo y por lo tanto solo existen gradientes en la dirección normal al electrodo. 
 
-	     El modelo asume que el sistema es homogeneo en planos paralelos al electrodo y por lo tanto hay gradientes solo en la direccion normal al electrodo.   
+	 	 La figura \ref{esq:simulacion} es un diagrama esquemático representativo del modelo con las varibles químicas y físicas que se tuvieron en cuenta. En la tabla \ref{tabla:simulacion} se resumen dichas variables, sus valores y su descripción.
 
-
-	 	 Las simulaciones se se realizaron en colaboración con el Dr. Tagliasucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía (INQUIMAE\index{INQUIMAE}) con el software \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual simula las voltametrías utilizando elementos finitos. En la tabla \ref{tabla:simulacion} se resumen las variables utilizados para las simulaciones, sus valores y su descripción.
-	 	
+	 	 Las simulaciones se se realizaron en colaboración con el Dr. Tagliasucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía (INQUIMAE\index{INQUIMAE}) con el software \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual cuanta con un modulo electroquímico\index{electroquimico} (\url{https://www.comsol.com/electrochemistry-module}).
+	 			
+	 			 \begin{figure}[ht!]
+			 		  \begin{center}
+			 		  \includegraphics[width=0.80\textwidth]{Esquemas/modelo-simulacion.pdf}
+			 		  \caption[Modelos para simulación\index{simulacion} por MEF]{Esquema del modelo utilizado para las simulaciones por el MEF y las variables que se utilizaron para evaluar fenómenos de trasporte y mediación\index{mediacion} redox.}
+			 		  \label{esq:simulacion}
+			 		  \end{center}
+			 		  \end{figure}	
+	 	 	
+			  	
 	    	\begin{table}[ht!]
-	 	    \caption[Parámetros de las simulacinoes]{Parámetros y valores de entrada usadas durante las simulaciones de las voltametrías cíclicas.}
+	 	    \caption[Parámetros de las simulaciones]{Parámetros y valores de entrada usadas durante las simulaciones de las voltametrías cíclicas.}
 	 	    \begin{tabular}{>{\raggedright\arraybackslash}m{1.4cm}>{\centering\arraybackslash}m{2.8cm}>{\raggedright\arraybackslash}m{6.7cm}} 
 	 	    \toprule
 	 	    Variable  & 	Valor  &   descripción      \\ \midrule
@@ -657,7 +666,7 @@
 
 % Recien miro lo que me enviaste. No se cuanto detalle queres agregar. Te mando un resumen breve...
 
-% El metodo de elementos finitos es bastante estandar. Si queres leer un poco sobre su uso en electroquimica y citar algo de simulacion numerica, podes mirar el libro de Britz (Digital Simulation in Electrochemistry). Ti\index{titanio}ene muy poco sobre elementos finitos, pero creo que te alcanza. 
+% El metodo de elementos finitos\index{metodo de elementos finitos@método de elementos finitos} es bastante estandar. Si queres leer un poco sobre su uso en electroquimica y citar algo de simulacion numerica, podes mirar el libro de Britz (Digital Simulation in Electrochemistry). Ti\index{titanio}ene muy poco sobre elementos finitos\index{metodo de elementos finitos@método de elementos finitos}, pero creo que te alcanza. 
 
 % El modelo usa condiciones de contorno de equilbrio (ecuacion de Nernst) en la superficie\index{superficie} del electrodo tanto para la sonda\index{sonda} como para el mediador, lo cual es valido siempre que la cinetica de electrodo sea rapida. Dentro del film se considera la difusion del mediador y la sonda\index{sonda} (segunda ley de Fick\index{Fick}) y ademas la reaccion redox entre ambos (reaccion bimolecular de orden uno entre cada especie). En la solucion solo difunde la sonda\index{sonda}. No se considera la migracion, lo cual es valido siempre y cuando la concentracion del electrolito soporte sea suficientemente alta. 
 
