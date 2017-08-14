@@ -616,50 +616,56 @@
 			
 	 \subsection{Simulaciones electroquímica\index{electroquimico}s\index{electroquimico}}\label{simulacion}
 
-	 	 Con la finalidad de validar las hipótesis de transporte\index{transporte} planteadas en el capitulo \ref{chap:Electroquimica} y establecer las condiciones en las que se pueden o no observar fenómenos de mediación\index{mediacion} electroquímica\index{electroquimico}, se llevaron a cabo simulaciones numéricas por computadora de reproduciendo las condiciones experimentales utilizadas.
+	 	 Con la finalidad de validar las hipótesis de transporte\index{transporte} planteadas en el capitulo \ref{chap:Electroquimica} y establecer las condiciones en las que se pueden o no observar fenómenos de mediación\index{mediacion} electroquímica\index{electroquimico}, se llevaron a cabo simulaciones numéricas por computadora de algunos experimentos relevantes para tal fin.
 
-	 	 Se optó para realizar las simulaciones el método de elementos finitos\index{metodo de elementos finitos@método de elementos finitos} (MEF). El MEF es un método de calculo numérico, especialmente orientado a la resolución de ecuaciones diferenciales, de amplia difusión\index{difusión} y para el cuál existen una gran cantidad programas con módulos preprogramados orientados para diversas aplicaciones (problemas mecánicos, físicos, químicos, biológicos, etc.). En términos matemáticos, el MEF es una técnica numérica para la resolución de problemas descritos como un conjunto de ecuaciones diferenciales parciales. Comúnmente la ecuación básica que se necesita resolver para simular fenómenos electroquímico\index{electroquimico}s\index{electroquimico} es la ecuación de difusión\index{difusión}, la cual relaciona la concentración $c$ con el tiempo $t$ y la distancia al electrodo $x$, dada por el coeficiente de difusión\index{difusión} $D$.\cite{Britz2005,Nann2003} Esta ecuación se trata de un parábola de segundo orden en derivadas parciales y se la conoce como la segunda ley de Fick\index{Fick}.\cite{fick1855}
+	 	 Se optó para realizar las simulaciones el método de elementos finitos\index{metodo de elementos finitos@método de elementos finitos} (MEF). El MEF es un método de calculo numérico, especialmente orientado a la resolución de ecuaciones diferenciales, de amplia difusión\index{difusión} y para el cuál existen una gran cantidad programas con módulos preprogramados orientados para diversas aplicaciones (problemas mecánicos, físicos, químicos, biológicos, etc.). En términos matemáticos, el MEF es una técnica numérica para la resolución de problemas descriptos como un conjunto de ecuaciones diferenciales parciales. Comúnmente la ecuación básica que se necesita resolver para simular fenómenos electroquímico\index{electroquimico}s\index{electroquimico} es la ecuación de difusión\index{difusión}, la cual relaciona la concentración $c$ con el tiempo $t$ y la distancia al electrodo $x$, dada por el coeficiente de difusión\index{difusión} $D$.\cite{Britz2005,Nann2003} Se trata de un parábola de segundo orden en derivadas parciales y se la conoce como la segunda ley de Fick\index{Fick}.\cite{fick1855}
 
 	 	 \begin{equation}
 	 	 	\frac{\partial c}{\partial t}=D\frac{\partial^2 c}{\partial^2 x}
 	 	 	\label{eq:fick}
 	 	 \end{equation}
 
-	 	 Esta ecuación es la base para simular los fenómenos de transporte, a la cual se le suman variables o complicaciones derivadas de las condiciones particulares de cada sistema que se quiera simular. Convección, reacciones químicos, fenómenos de adsorción\index{adsorción} son sólo algunas de estas complicaciones que producen en el cambio del perfil de concentraciones y la difusión\index{difusión} en sí, agregando complejidad a al sistema de ecuaciones diferenciales.  
+	 	 Esta ecuación es la base para simular los fenómenos de transporte, a la cual se le suman variables y complicaciones derivadas de las condiciones particulares de cada sistema que se quiera simular. Convección, reacciones químicos, fenómenos de adsorción\index{adsorción} son sólo algunas de estas complicaciones que producen cambios en el perfil de concentraciones y en la difusión\index{difusión} en sí, agregando complejidad al sistema de ecuaciones diferenciales.  
 
-	 	 El modelo aplicado en este trabajo utiliza condiciones de contorno de equilibrio en la superficie\index{superficie} del electrodo, descriptas por la ecuación de Nerst\index{Nerst}. Dichas condiciones se aplican tanto para la sonda\index{sonda} (\fc) como para el mediador(\ru), lo cual es valido siempre que la cinética de electrodo sea suficientemente rápida. Todos lo procesos difusivos (para la sonda\index{sonda} y el mediador) son descriptos según la segunda ley de Fick\index{Fick} (ec. \ref{eq:fick}) ya sea en la película mesoporosa\index{película!mesoporosa} o en la solución, en la cual se considera solo la presencia de la sonda\index{sonda}. Los coeficientes de cada especie fueron variando en función las condiciones de cada experimento simulado. En los caso en los que se simuló una mediación\index{mediacion} redox, la reacción entre entre la sonda\index{sonda} y el mediador fue descripta como una reacción bimolecular de orden uno entre cada especie. En ningún caso se considera migración, lo cual es valido siempre y cuando la concentración del electrolito soporte sea suficientemente alta. El modelo asume que el sistema es homogéneo (tanto en la solución como en la película)en planos paralelos al electrodo y por lo tanto solo existen gradientes en la dirección normal al electrodo. 
+	 	 El modelo aplicado en este trabajo utiliza condiciones de contorno de equilibrio en la superficie\index{superficie} del electrodo, descriptas por la ecuación de Nerst\index{Nerst}. Dichas condiciones se aplican tanto para la sonda\index{sonda} (\fc) como para el mediador(\ru), lo cual es válido siempre que la cinética de electrodo sea suficientemente rápida. Todos los procesos difusivos (para la sonda\index{sonda} y el mediador) son descriptos según la segunda ley de Fick\index{Fick} (ec. \ref{eq:fick}) ya sea en la película mesoporosa\index{película!mesoporosa} o en la solución, en la cual se considera solo la presencia de la sonda\index{sonda}. Los coeficientes de cada especie fueron variando en función las condiciones de cada experimento simulado. En los caso en los que se simuló una mediación\index{mediacion} redox, la reacción entre entre la sonda\index{sonda} y el mediador fue descripta como una reacción bimolecular de orden uno entre cada especie. En ningún caso se considera migración, lo cual es valido siempre y cuando la concentración del electrolito soporte sea suficientemente alta. El modelo asume que el sistema es homogéneo (tanto en la solución como en la película) en planos paralelos al electrodo y por lo tanto solo existen gradientes en la dirección normal al electrodo. 
 
 	 	 La figura \ref{esq:simulacion} es un diagrama esquemático representativo del modelo con las varibles químicas y físicas que se tuvieron en cuenta. En la tabla \ref{tabla:simulacion} se resumen dichas variables, sus valores y su descripción.
 
 	 	 Las simulaciones se se realizaron en colaboración con el Dr. Tagliasucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía (INQUIMAE\index{INQUIMAE}) con el software \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual cuanta con un modulo electroquímico\index{electroquimico} (\url{https://www.comsol.com/electrochemistry-module}).
 	 			
-	 			 \begin{figure}[ht!]
+	 			 \begin{figure}
 			 		  \begin{center}
 			 		  \includegraphics[width=0.80\textwidth]{Esquemas/modelo-simulacion.pdf}
-			 		  \caption[Modelos para simulación\index{simulacion} por MEF]{Esquema del modelo utilizado para las simulaciones por el MEF y las variables que se utilizaron para evaluar fenómenos de trasporte y mediación\index{mediacion} redox.}
+			 		  \caption[Modelos para simulación\index{simulacion} por MEF]{Esquema del modelo utilizado para las simulaciones por el MEF y las variables que se emplearon para evaluar fenómenos de trasporte y mediación\index{mediacion} redox.}
 			 		  \label{esq:simulacion}
 			 		  \end{center}
 			 		  \end{figure}	
-	 	 	
-			  	
-	    	\begin{table}[ht!]
+	 		
+			
+	    	\begin{table}
 	 	    \caption[Parámetros de las simulaciones]{Parámetros y valores de entrada usadas durante las simulaciones de las voltametrías cíclicas.}
 	 	    \begin{tabular}{>{\raggedright\arraybackslash}m{1.4cm}>{\centering\arraybackslash}m{2.8cm}>{\raggedright\arraybackslash}m{6.7cm}} 
 	 	    \toprule
 	 	    Variable  & 	Valor  &   descripción      \\ \midrule
-	 	    $h$  	  &    \SI{200}{nm}	& 	   espesor\index{espesor} de las películas delgadas mesoporosas 	    \\ \midrule
+	 	    $h$  	  &  \hspace{-5mm} \SI{200}{nm}	& 	   espesor\index{espesor} de las películas delgadas mesoporosas 	    \\ \midrule
 	 	    $C_{\fc}$  & \SI{5}{\milli\Molar}  & concentración de FeOH en solución    \\ \midrule
 	 	    $C_{\ru}$ & \SI{1}{\milli\Molar}  & concentración de \ru\space en las películas    \\ \midrule
+	 	    $C_{KCl}$ & \hspace{-5mm}  \SI{100}{\milli\Molar}  & concentración de electrolito soporte    \\ \midrule
 	 	    $k$ 		   & variable 	 & 	constante de mediación\index{mediacion} redox    \\ \midrule
-	 	    $E^\circ_{\ru}$  & \SI{-0.3}{\volt} vs ESC & potencial reducción estandar el \ru \\ \midrule
+	 	    $E^\circ_{\ru}$  & \hspace{-3mm}\SI{-0.3}{\volt} vs ESC & potencial reducción estandar el \ru \\ \midrule
 	 	    $E^\circ_{\fc}$  & \SI{0.3}{\volt} vs ESC & potencial reducción estandar el \fc \\ \midrule
-	 	    $D_{\fc}$  & variable & coeficiente de difusión\index{difusión} del \fc\space en el film \\ \midrule
+	 	    $D_{\fc}^{pel} $  & variable & coeficiente de difusión\index{difusión} del \fc\space en la película \\ \midrule
+	 	    $D_{\fc}^{sol} $  & variable & coeficiente de difusión\index{difusión} del \fc\space en la solución \\ \midrule
 	 	    $D_{e}$  & variable & coeficiente de difusión\index{difusión} por \textit{electron hopping }del \ru\space en el film \\ \midrule
-	 	    $\nu$    & \SI{50}{\milli\volt\per\second}  &  velocidad de barrido\index{velocidad!de barrido} \\
+	 	    $\nu$    & \hspace{3.5mm} \SI{50}{\milli\volt\per\second}  &  velocidad de barrido\index{velocidad!de barrido} \\
 	 	     \bottomrule
 			\end{tabular}
 			\label{tabla:simulacion}
 			\end{table} 
+
+
+
+
 
 % Mail de mario
 % Hola Gustavo,
