@@ -130,7 +130,7 @@
 
 		 Allí se pueden destacar dos características de las \pdm: 1) la continuidad ya que no se ven ni grietas ni fisuras y, 2) la homogeneidad en el color de interferencias. Dicho color es indicador de que el espesor es constante en toda la superficie, salvo en los bordes debido, precisamente, a los efectos de borde generados por la rotación del \textit{spinner}\cite{Franssila2004,Jaeger2001}.
 
-		  La ausencia de discontinuidades microscópicas (grietas o fisuras) se pudo corroborar con imágenes MEB, donde se ve que el depósito es homogéneo en la superficie (ver figura \ref{fig:sem_homogeneidad}). En dichas imágenes también se observan detalles del arreglo poroso, y, en el caso del F127 se ve que el arreglo poroso esta homogéneamente distribuido también a lo largo del eje transversal a la superficie, como se muestra en la ampliación de la figura \ref{fig:sem_homogeneidad2}.
+		 La ausencia de discontinuidades microscópicas (grietas o fisuras) se pudo corroborar con imágenes MEB, donde se ve que el depósito es homogéneo en la superficie (ver figura \ref{fig:sem_homogeneidad}). En dichas imágenes también se observan detalles del arreglo poroso, y, en el caso del F127 se ve que el arreglo poroso esta homogéneamente distribuido también a lo largo del eje transversal a la superficie, como se muestra en la ampliación de la figura \ref{fig:sem_homogeneidad2}.
 		
 
 				\begin{figure}[bh!]
@@ -161,35 +161,37 @@
 				     \vspace*{0.2cm}
 				     \end{figure}
  	
-		 El espesor se controla variando las condiciones de aceleración y velocidad final del \textit{spin-coater}, por lo tanto, para cada condición, se obtiene un espesor diferente. Las rampas de aceleracíón que se han utilizado para las \pdm\space se muestran en la figura \ref{fig:spin}. 
+		 El espesor se controla variando las condiciones de aceleración y velocidad final del \textit{spin-coater}, por lo tanto, para cada condición, se obtiene un espesor diferente. Las rampas de aceleración que se han utilizado para las \pdm\space se muestran en la figura \ref{fig:spin}. Tener control y conocimiento del espesor de las películas es importante para calcular o estimar otras magnitudes, por ejemplo concentración dentro de los poros o la distancia características de difusión. 
 
-		 Algunos autores han desarrollaron un tratamiento teórico para el deposito de películas poliméricas por \textit{spin-coating}, encontrando una dependencia del espesor con la velocidad según \cite{Norrman2005,Meyerhofer1978,Bornside1989,Lora1990}:
+		 Algunos autores han desarrollaron modelos para establecer la dependencia del espesor con la rotación del spinner en depósitos de películas poliméricas, encontrando una dependencia según: \cite{Norrman2005,Meyerhofer1978,Bornside1989,Lora1990}:
 			\begin{equation}
 			  t = k_1 \omega^{\alpha}
 			  \label{eq:spin_meso}
 			  \end{equation}		
-		donde $k_1$ y $\alpha$ son constantes empíricas que dependen de la concentración del monómero, del solvente, del sustrato, de la interacción sol/sustrato y  de las propiedades reológicas del sol. Tal como se mostró en la ecuación \ref{eq:spin_meso}, y siguiendo los reportes de la literatura, el valor de $\alpha$ parece mantenerse contante y en las cercanías de $\alpha=-0.5$ para una gran cantidad de polímeros. Ajustando matemáticamente los valores de espesor en función de la rotación, según la ecuación \ref{eq:spin_meso}, se obtienen los valores de $k_1=6413$ y  $\alpha=-0.442$, los cuales siguen la tendencia esperada; disminución del espesor con el aumento de la velocidad angular y decaimiento exponencial con $\alpha \approx -0.5$. \marginpar{Quizás acá debe hacer la curva de calibración de espesores para el CTAB, que no la tengo.}
+		donde $k_1$ y $\alpha$ son constantes empíricas que dependen de la concentración del monómero, del solvente, del sustrato, de la interacción sol/sustrato y  de las propiedades reológicas del sol. Tal como se mostró en la ecuación \ref{eq:spin_meso}, y siguiendo los reportes de la literatura, el valor de $\alpha$ parece mantenerse contante y en las cercanías de $\alpha=-0.5$ para una gran cantidad de polímeros. 
+
+		Para controlar el espesor de los depósitos se realizaron mediciones del mismo en función de la velocidad final de rotación.  Dichas mediciones fueron tomadas en todos los casos por elipsoporosimetría ambiental (EPA) y sólo en algunos casos selecionados se contrastaron por MEB/FIB, obteniéndose valores comparables por ambas metodologías. Una vez establecido un valor de rotación de referencia se midieron en forma sistemática para cada tratamientos pos-depósito, con ambos surfactantes. Los valores de dichas mediciones se encuentras resumidos en la tabla \ref{tabla:resultados}.
+		Los gráficos de la figura \ref{fig:esp} corresponden a la mediciones de espesores en sistemas calcinados. Fueron ajustados matemáticamente por la ecuación \ref{eq:spin_meso} y se obtuvieron valores de $k_1=6413\pm 2300$ y $\alpha=-0.44 \pm 0.04$ para \pdmF y $k_1=7601\pm 1800$ y $\alpha=-0.44 \pm 0.04$ para \pdmF. Dichos resultados siguen la tendencia esperada; disminución del espesor con el aumento de la velocidad angular y decaimiento exponencial con $\alpha \approx -0.5$. 
+
+		
 			\begin{figure}[!ht]
-						\begin{center}
-						\includegraphics[width=0.70\textwidth]{Graficos/Esp_F127.pdf}
-						\caption[Espesor en función de la velocidad de rotación.]{Espesor en función de la velocidad de rotación para sistemas \pdmF con velocidades angulares comprendidas en 1000 y \SI{4000}{\minute^{-1}.}}
-						\label{fig:esp}
-						\end{center}
-						\end{figure}
+				\begin{subfigure}[t]{0.495\textwidth}
+				\includegraphics[width=\textwidth]{Graficos/Esp_F127.pdf}
+				\end{subfigure}
+				\begin{subfigure}[t]{0.495\textwidth}
+				\includegraphics[width=\textwidth]{Graficos/Esp_CTAB.pdf}
+				\end{subfigure}
+				\caption[Espesor en función de la velocidad angular]{Control del espesor en función de la velocidad de velocidades angulares para valores comprendidos entre 1000 y \SI{4000}{\minute^{-1}} en sistemas calcinados estructurados con CTAB (izquierda) y F127 (derecha). Todas las mediciones fueron llevadas a cabo por EPA.}
+				\label{fig:esp}		
+				\end{figure}
+	
+	\subsection{Adherencia al sustrato de las \pdm}	
 
-		 El espesor de las películas se midió en todos los casos por elipsoporosimetría ambiental (EPA), 
-		 
-		 El espesor de las \pdm\space se midió indistintamente por elipsoporosimetría ambiental (EPA) o por microscopía (FIB/MEB), se puede consultar los detalles de las técnicas en las correspondientes secciones del capítulo \ref{chap:Materiales}. En el gráfico de la figura \ref{fig:esp} se muestra la curva de espesores que corresponde a un sistema nanoporoso de SiO$_2$ utilizando F127 como surfactante. 
-
-		 
-
-	\subsection{Discusión sobre la adherencia de las \pdm}	
-
-		 En numerosos trabajos se ha demostrado la producción de películas delgadas mesoporososas de sílice (tanto con F127 como con CTAB) sobre sustratos de vidrio o silicio. Sin embargo, en ninguno se menciona la existencia de problemas de adherencia al sustrato \cite{Angelome2008,Fuertes2010,Violi2015}. Es más, se conoce que luego de ,tratamientos térmicos para condensar y calcinar el surfactante, las películas sufren una contracción uniaxial a lo largo del eje normal a la superficie del sustrato debido a la fuerte adherencia al sustrato.\cite{Grosso2004,Soler-Illia2012,Chougnet2005} Se sabe desde hace décadas, que los metales nobles no tienen una buena adherencia sobre sustratos no-metálicos\cite{Kern1990,Hieber1976}, con lo cual es de esperar que también se experimenten problemas de adherencia al querer depositar un sol sobre una película delgada de Au. 
+		 En numerosos trabajos se ha demostrado la producción de películas delgadas mesoporososas de sílice (tanto con F127 como con CTAB) sobre sustratos de vidrio o silicio. En ninguno de ellos se menciona la existencia de problemas de adherencia al sustrato \cite{Angelome2008,Fuertes2010,Violi2015}. Resulta natural utilizar sustratos de silicio o vidrio debido a la compatibilidad estructura y química que comparten con las películas en base sílice. Es más, se conoce que luego de tratamientos térmicos para condensar y calcinar el surfactante, las películas sufren una contracción uniaxial a lo largo del eje normal a la superficie del sustrato debido a la fuerte adherencia al sustrato.\cite{Grosso2004,Soler-Illia2012,Chougnet2005} Uno de los pilares de este trabajo es el depósito de \pdm\space en base silicio sobre sustratos metalicos, mas precisamente sobre AU. Sin embargo, se sabe desde hace décadas, que los metales nobles no tienen una buena adherencia sobre sustratos no-metálicos\cite{Kern1990,Hieber1976}, con lo cual es de esperar que también se experimenten problemas de adherencia al querer depositar un sol sobre una película delgada de Au. \cite{Meyer2004,Nugen2009,nasa1973}
 
 		\subsubsection{Adherencia de \pdm\space sobre electrodos de Au}
 
-			En el caso en los cuales se depositó \pdm\space estructuradas con Pluronic F127 sobre películas de Au, se observó, en algunos casos, falta de adherencia. Por ejemplo, en el gráfico \ref{fig:adherencia_F127}, se observa se <<despega>> la \pdm\space durante la adsorción de \aminorutenio. La forma del voltagrama (tanto los cambios en la intensidad como los corrimientos en el potencial) se discuten en profundidad en el capitulo \ref{chap:Electroquimica}. Por ahora nos basta con decir que se trata de un cambio repentino de un ciclo de medición al siguiente, pasando de la típica respuesta de una \pdm, a la respuesta habitual de un electrodo desnudo de Au. Esta respuesta sugiere que la película no sufrió una disolución lenta y paulatina, sino que se desprendió del sustrato, total o parcialmente, en algún momento de la medición.
+			En el caso en los cuales se depositó \pdm\space estructuradas con Pluronic F127 sobre películas de Au, se observó, en algunos casos, adherencia deficiente. Por ejemplo, en el gráfico \ref{fig:adherencia_F127}, se observa que se despega la \pdm\space durante la adsorción de \aminorutenio. La forma del voltagrama (tanto los cambios en la intensidad como los corrimientos en el potencial) se discuten en profundidad en el capitulo \ref{chap:Electroquimica}. Por ahora nos basta con decir que se trata de un cambio repentino de un ciclo de medición al siguiente, pasando de la típica respuesta de una \pdm, a la respuesta habitual de un electrodo desnudo de Au. Esta respuesta sugiere que la película no sufrió una disolución lenta y paulatina, sino que se desprendió del sustrato, total o parcialmente, en algún momento de la medición.
 			
 				\begin{figure}[th]
 				 	   	    \begin{center} 

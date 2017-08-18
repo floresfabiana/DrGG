@@ -44,7 +44,7 @@ stddev_y = sqrt(FIT_WSSR / (FIT_NDF + 1 ))
 
 #R cuadrado sacado con el Origin: R2=9.7551
 
-set label 1 sprintf("$t=%3.0fx^{%3.3f}%3.3f$",a,b,a_err) at 3100,380 font ",10" textcolor rgb "gray40"
+set label 1 sprintf("$t=%3.0fx^{%3.3f}$",a,b) at 3100,380 font ",14" textcolor rgb "gray40"
 #set label 3 "R$^2$=0,97551" at 3100,360 font ",10" textcolor rgb "gray40"
 #print a
 #Ploteo todas las funciones que les digamos
