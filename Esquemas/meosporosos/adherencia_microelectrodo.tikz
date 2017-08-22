@@ -60,9 +60,9 @@
 %Electrodos
 \node at (0,1.1) {
 	\begin{tikzpicture}
-	\fill[yellow] rectangle (1.6,0.2);
-	\fill[yellow,xshift=3cm] rectangle (1.6,0.2);
-	\fill[yellow,xshift=6cm] rectangle (1.6,0.2);
+	\fill[YellowOrange] rectangle (1.6,0.2);
+	\fill[YellowOrange,xshift=3cm] rectangle (1.6,0.2);
+	\fill[YellowOrange,xshift=6cm] rectangle (1.6,0.2);
 	\end{tikzpicture}
 };
 

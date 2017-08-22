@@ -130,7 +130,7 @@
 
 		 Allí se pueden destacar dos características de las \pdm: 1) la continuidad ya que no se ven ni grietas ni fisuras y, 2) la homogeneidad en el color de interferencias. Dicho color es indicador de que el espesor es constante en toda la superficie, salvo en los bordes debido, precisamente, a los efectos de borde generados por la rotación del \textit{spinner}\cite{Franssila2004,Jaeger2001}.
 
-		 La ausencia de discontinuidades microscópicas (grietas o fisuras) se pudo corroborar con imágenes MEB, donde se ve que el depósito es homogéneo en la superficie (ver figura \ref{fig:sem_homogeneidad}). En dichas imágenes también se observan detalles del arreglo poroso, y, en el caso del F127 se ve que el arreglo poroso esta homogéneamente distribuido también a lo largo del eje transversal a la superficie, como se muestra en la ampliación de la figura \ref{fig:sem_homogeneidad2}.
+		 La ausencia de discontinuidades microscópicas (grietas o fisuras) se pudo corroborar con imágenes MEB, donde se ve que el depósito es homogéneo en la superficie (ver figura \ref{fig:sem_homogeneidad}). En dichas imágenes también se observan detalles del arreglo poroso, y, en el caso del F127 se ve que dicho arreglo poroso esta homogéneamente distribuido también a lo largo del eje transversal a la superficie, como se muestra en la ampliación de la figura \ref{fig:sem_homogeneidad2}.
 		
 
 				\begin{figure}[bh!]
@@ -163,7 +163,7 @@
  	
 		 El espesor se controla variando las condiciones de aceleración y velocidad final del \textit{spin-coater}, por lo tanto, para cada condición, se obtiene un espesor diferente. Las rampas de aceleración que se han utilizado para las \pdm\space se muestran en la figura \ref{fig:spin}. Tener control y conocimiento del espesor de las películas es importante para calcular o estimar otras magnitudes, por ejemplo concentración dentro de los poros o la distancia características de difusión. 
 
-		 Algunos autores han desarrollaron modelos para establecer la dependencia del espesor con la rotación del spinner en depósitos de películas poliméricas, encontrando una dependencia según: \cite{Norrman2005,Meyerhofer1978,Bornside1989,Lora1990}:
+		 Algunos autores han desarrollado un marco teórico para establecer la dependencia del espesor con la velocidad de rotación en depósitos de películas poliméricas, encontrando una relación matemática según: \cite{Norrman2005,Meyerhofer1978,Bornside1989,Lora1990}
 			\begin{equation}
 			  t = k_1 \omega^{\alpha}
 			  \label{eq:spin_meso}
@@ -171,7 +171,7 @@
 		donde $k_1$ y $\alpha$ son constantes empíricas que dependen de la concentración del monómero, del solvente, del sustrato, de la interacción sol/sustrato y  de las propiedades reológicas del sol. Tal como se mostró en la ecuación \ref{eq:spin_meso}, y siguiendo los reportes de la literatura, el valor de $\alpha$ parece mantenerse contante y en las cercanías de $\alpha=-0.5$ para una gran cantidad de polímeros. 
 
 		Para controlar el espesor de los depósitos se realizaron mediciones del mismo en función de la velocidad final de rotación.  Dichas mediciones fueron tomadas en todos los casos por elipsoporosimetría ambiental (EPA) y sólo en algunos casos selecionados se contrastaron por MEB/FIB, obteniéndose valores comparables por ambas metodologías. Una vez establecido un valor de rotación de referencia se midieron en forma sistemática para cada tratamientos pos-depósito, con ambos surfactantes. Los valores de dichas mediciones se encuentras resumidos en la tabla \ref{tabla:resultados}.
-		Los gráficos de la figura \ref{fig:esp} corresponden a la mediciones de espesores en sistemas calcinados. Fueron ajustados matemáticamente por la ecuación \ref{eq:spin_meso} y se obtuvieron valores de $k_1=6413\pm 2300$ y $\alpha=-0.44 \pm 0.04$ para \pdmF y $k_1=7601\pm 1800$ y $\alpha=-0.44 \pm 0.04$ para \pdmF. Dichos resultados siguen la tendencia esperada; disminución del espesor con el aumento de la velocidad angular y decaimiento exponencial con $\alpha \approx -0.5$. 
+		Los gráficos de la figura \ref{fig:esp} corresponden a la mediciones de espesores en sistemas calcinados. Fueron ajustados matemáticamente por la ecuación \ref{eq:spin_meso} y se obtuvieron valores de $k_1=6413\pm 2300$ y $\alpha=-0.44 \pm 0.04$ para \pdmF\space y $k_1=7601\pm 1800$ y $\alpha=-0.44 \pm 0.04$ para \pdmC. Dichos resultados siguen la tendencia esperada; disminución del espesor con el aumento de la velocidad angular y decaimiento exponencial con $\alpha \approx -0.5$. 
 
 		
 			\begin{figure}[!ht]
@@ -181,27 +181,30 @@
 				\begin{subfigure}[t]{0.495\textwidth}
 				\includegraphics[width=\textwidth]{Graficos/Esp_CTAB.pdf}
 				\end{subfigure}
-				\caption[Espesor en función de la velocidad angular]{Control del espesor en función de la velocidad de velocidades angulares para valores comprendidos entre 1000 y \SI{4000}{\minute^{-1}} en sistemas calcinados estructurados con CTAB (izquierda) y F127 (derecha). Todas las mediciones fueron llevadas a cabo por EPA.}
+				\caption[Espesor en función de la velocidad angular]{Control del espesor en función de la velocidad de velocidades angulares para valores comprendidos entre 1000 y \SI{4000}{\minute^{-1}} en sistemas calcinados estructurados con F127 (izquierda) y CTAB (derecha). Todas las mediciones fueron llevadas a cabo por EPA.}
 				\label{fig:esp}		
 				\end{figure}
 	
 	\subsection{Adherencia al sustrato de las \pdm}	
 
-		 En numerosos trabajos se ha demostrado la producción de películas delgadas mesoporososas de sílice (tanto con F127 como con CTAB) sobre sustratos de vidrio o silicio. En ninguno de ellos se menciona la existencia de problemas de adherencia al sustrato \cite{Angelome2008,Fuertes2010,Violi2015}. Resulta natural utilizar sustratos de silicio o vidrio debido a la compatibilidad estructura y química que comparten con las películas en base sílice. Es más, se conoce que luego de tratamientos térmicos para condensar y calcinar el surfactante, las películas sufren una contracción uniaxial a lo largo del eje normal a la superficie del sustrato debido a la fuerte adherencia al sustrato.\cite{Grosso2004,Soler-Illia2012,Chougnet2005} Uno de los pilares de este trabajo es el depósito de \pdm\space en base silicio sobre sustratos metalicos, mas precisamente sobre AU. Sin embargo, se sabe desde hace décadas, que los metales nobles no tienen una buena adherencia sobre sustratos no-metálicos\cite{Kern1990,Hieber1976}, con lo cual es de esperar que también se experimenten problemas de adherencia al querer depositar un sol sobre una película delgada de Au. \cite{Meyer2004,Nugen2009,nasa1973}
+		 En numerosos trabajos se ha demostrado la producción de películas delgadas mesoporososas de sílice (tanto con F127 como con CTAB) sobre sustratos de vidrio o silicio. En ninguno de ellos se menciona la existencia de problemas de adherencia al sustrato \cite{Angelome2008,Fuertes2010,Violi2015}. Resulta natural utilizar sustratos de silicio o vidrio debido a la compatibilidad estructural y química que comparten con las películas en base sílice. De hecho tanto película como sustrato son óxidos de silicio. Se conoce que luego de tratamientos térmicos para condensar y calcinar el surfactante, las películas sufren una contracción uniaxial a lo largo del eje normal a la superficie del sustrato debido a la fuerte adherencia al sustrato.\cite{Grosso2004,Soler-Illia2012,Chougnet2005} Uno de los pilares de este trabajo es el depósito de \pdm\space en base silicio sobre sustratos metalicos, mas precisamente sobre AU. Sin embargo, se sabe desde hace décadas, que los metales nobles no tienen una buena adherencia sobre sustratos no-metálicos\cite{Kern1990,Hieber1976}, con lo cual es de esperar que también se experimenten problemas de adherencia al querer depositar un sol sobre una película delgada de Au. \cite{Meyer2004,Nugen2009,nasa1973}
 
 		\subsubsection{Adherencia de \pdm\space sobre electrodos de Au}
 
-			En el caso en los cuales se depositó \pdm\space estructuradas con Pluronic F127 sobre películas de Au, se observó, en algunos casos, adherencia deficiente. Por ejemplo, en el gráfico \ref{fig:adherencia_F127}, se observa que se despega la \pdm\space durante la adsorción de \aminorutenio. La forma del voltagrama (tanto los cambios en la intensidad como los corrimientos en el potencial) se discuten en profundidad en el capitulo \ref{chap:Electroquimica}. Por ahora nos basta con decir que se trata de un cambio repentino de un ciclo de medición al siguiente, pasando de la típica respuesta de una \pdm, a la respuesta habitual de un electrodo desnudo de Au. Esta respuesta sugiere que la película no sufrió una disolución lenta y paulatina, sino que se desprendió del sustrato, total o parcialmente, en algún momento de la medición.
+			En los electrodos en los cuales se depositó \pdm\space estructuradas con Pluronic F127 sobre películas de Au, se observó, en algunos casos, adherencia deficiente. 
+			
+			Las tres voltametrías cíclicas (VC) de color negro del gráfivo \ref{fig:adherencia_F127} corresponden a respuesta de la sonda \aminorutenio (la cual difunde a través de la película) luego de 38 ciclos consecutivos, cantidad de ciclos suficiente para adsorber y saturar la \pdm\space con la sonda. Los mecanismos de transporte, adsorción y forma de las VC (tanto los cambios en la intensidad como los corrimientos en el potencial) se discuten en profundidad en el capitulo \ref{chap:Electroquimica}. La observación de interés para determinar la adherencia es el cambio repentino en dos VC consecutivas (del ciclo 41 al 42). Este cambio sugiere que el sistema muda de la típica respuesta de una sonda que atraviesa una \pdm, a la respuesta habitual de un electrodo desnudo de Au, representado por la voltametría roja. Esta comportamiento sugiere que la película no sufrió una disolución lenta y paulatina, sino que se desprendió del electrodo, total o parcialmente, en algún momento de la medición.
 			
 				\begin{figure}[th]
 				 	   	    \begin{center} 
 				        	\includegraphics[width=0.70\textwidth]{Graficos/Adherencia_F127.pdf}
-				       		\caption[Adherencia de \pdmF \space sobre una película delgada de Au.]{Serie de voltametrías cíclicas consecutivas donde se evidencia la falta de adherencia de \pdmF\space sobre electrodo de Au. Las flechas negras indican un cambio repentino de comportamiento. Las VC fueron tomadas a \SI{50}{\milli\volt.\second^{-1}} usando de referencia ESC y con de \ru\space \SI{1}{\milli\Molar}.}
+				       		\caption[Adherencia de \pdmF \space sobre una película delgada de Au.]{Serie de voltametrías cíclicas consecutivas, del ciclo 39 al 42, donde se evidencia la falta de adherencia de \pdmF\space sobre electrodo de Au. Las flechas negras indican un cambio repentino en el comportamiento, de un electrodo recubierto con una \pdm\space (negro) a un electrodo desnudo (rojo). Las VC fueron tomadas a \SI{50}{\milli\volt.\second^{-1}} usando de referencia ESC y con sonda \ru\space \SI{1}{\milli\Molar}.}
 				         	\label{fig:adherencia_F127}
 				     		\end{center}
 				     		\end{figure}
 
-			En los casos en los cuales se utilizó CTAB como molde para los poros, el comportamiento es algo diferente. Se ven problemas de adherencia en la mayoría de los tratamientos alternativos, así como en la calcinación. Presentan grietas y fisuras, macro y microscopicas y se observan desprendimientos antes de someter los sensores a cualquier medición, es decir, apenas terminada la síntesis. Solo se rescataron algunos pocos casos exitosos de formación de \pdmC\space por calcinación utilizando como soporte electrodos de Au. Éstos sirvieron para hacer experimentos de EQ conceptuales sobre transporte en poros (consultar capitulo \ref{chap:Electroquimica}), pero en la generalidad de los casos se observa desprendimiento de la película tal como muestran las imágenes de la figura \ref{fig:CTAB_adherencia}.
+			En los casos en los cuales se utilizó CTAB como molde para los poros, el comportamiento es algo diferente. Se ven problemas de adherencia en la mayoría de los tratamientos alternativos, así como en la calcinación. Presentan grietas y fisuras, macro y microscópicas y se observan desprendimientos antes de someter los sensores a cualquier medición, es decir, apenas terminada la síntesis. Sólo se rescataron algunos pocos casos exitosos de formación de \pdmC\space por calcinación utilizando como soporte electrodos de Au, con una superficie lo suficientemente extensa para poder realizar mediciones electroquímicas. Éstos sirvieron para hacer experimentos de EQ conceptuales sobre transporte en poros (consultar capitulo \ref{chap:Electroquimica}), pero en la generalidad de los casos se observa desprendimiento de la película tal como muestran las imágenes de la figura \ref{fig:CTAB_adherencia}.
+
 	     
 				\begin{figure}[th]
 		 	   	    \begin{subfigure}[t]{0.49\textwidth}
@@ -214,23 +217,33 @@
 					 \label{fig:CTAB_adherencia}	
 				     \end{figure}
 			
-			Además de la ya mencionada falta de adherencia de los óxidos sobre películas de Au, este desprendimiento se debe, sobre todo, a la interacción CTAB-Au. Es numerosa la información que se encuentra en la literatura sobre la interacción superficial de CTAB sobre películas delgadas y/o nanopartículas de Au. La principal aplicación se basa en la adsorción y autoensamblado del CTAB para controlar el crecimiento y estabilización de nanopartículas de Au. \cite{Cheng2003,Smith2008,Lim2014,Meena2013,Wang2013,Hamon2009}
-
-			Cuando el surfactante se encuentra en una concentración más alta que la concentración micelar crítica (cmc), las micelas formadas se adsorben sobre el Au. Su distribución y densidad a largo de la superficie del electrodo parece depender de la concentración, la orientación cristalina del Au, el solvente y la rugosidad de la superficie\cite{Meena2013,Lim2014}. La adsorción de estas micelas en la superficie del electrodo, sumada a la poca adherencia del propia del SiO$_2$, son los factores que impiden la formación y adherencia de \pdmC\space sobre electrodos de Au.
-									
+			Además de la ya mencionada falta de adherencia de los óxidos sobre películas de Au, este desprendimiento se debe, sobre todo, a la interacción CTAB-Au. Es numerosa la información que se encuentra en la literatura sobre la interacción superficial de CTAB sobre películas delgadas y/o nanopartículas de Au. La principal aplicación se basa en la adsorción y autoensamblado del CTAB para controlar el crecimiento y estabilización de nanopartículas de Au. \cite{Cheng2003,Smith2008,Meena2013,Wang2013,Hamon2009} Algunos autores lo utilizan por encima de la concentración micelar crítica (cmc)\cite{Lim2014}o combinado con otros reactivos para favorecer el crecimiento cristalino en alguna dirección preferencial\cite{Smith2009}. Los electrodos de Au, depositados por pulverización catódica, generan películas policristalinas sin favorecer ninguna dirección cristalina.\cite{Svorcik2010,Bechelany2010} Sobre esta superficie las moléculas de CTAB o las micelas se adsorben. Su distribución y densidad a largo de la superficie del electrodo parece depender de la concentración, la orientación cristalina del Au, el solvente y la rugosidad de la superficie\cite{Meena2013,Lim2014}. La adsorción del surfactante en la superficie del electrodo, sumada a la poca adherencia propia del SiO$_2$, son factores que van en demerito de la adherencia y consecuentemente de la formación de \pdmC\space sobre electrodos de Au.
+							
 		\subsubsection{Modificaciones superficiales}\label{sec:adherencia}
 
-			La adherencia de las \pdm\space es crítica para la elaboración de los sensores, y, en función de los resultados expuestos en la sección anterior, es un problema a tener en cuenta durante la fabricación de sensores electroquímicos basados en electrodos de Au.
-
-			Las estrategias usadas para solucionar estos problemas se basaron en dos conceptos:
+			 En función de los resultados expuestos en la sección anterior queda claro que la falta de adherencia de las \pdm\space sobre oro es crítica para la elaboración de los sensores. Por otra parte, al fabricar electrodos de Au con un diseño arbitrario, se suma la dificultad de obtener películas delgadas continuas y adherentes sobre un sistema con dos regiones distintas en su superficie, óxido y metal.
+ 
+             Las estrategias empleadas para promover la adherencia en estos sistemas se basaron en dos conceptos:
 				\begin{enumerate}
 
-					\item En la modificación superficial de los electrodos, creando puntos de anclaje al esqueleto inorgánico.
+					\item Optimizar el diseño de forma de minimizar el área metálica de los electrodos, pistas y contactos, ampliando la región del óxido para favorecer la adhenrecia de las \pdm.
 
-					\item Minimizando el área de contacto electrodo-mesoporoso.
+					\item Realizar modificaciones superficial en los electrodos, tendiendo puntos de anclaje entre el electrodo y el esqueleto inorgánico de las \pdm.
 
 					\end{enumerate}
-			La modificación superficial de los electrodos se llevó acabo siguiendo el procedimiento detallado en el capitulo \ref{chap:Materiales}, sección \ref{sec:silanizacion}. Se buscó una molécula compatible con el sistema utilizado, que pueda vincular la superficie del electrodo e integrarse en el esqueleto de las \pdm. Se usó para este fin el 3-mercaptopropil trimetoxisilano (MPTMS), el cual es fácilmente de ligar covalentemente al Au por el tiol\cite{Gosser}, y por el otro tiene el silano el cual es perfectamente compatible con el precursor utilizado\cite{Wu2014,Wu2013,Chen2011}. En la figura \ref{fig:mod_sup} se muestra la molécula en cuestión y un esquema de como queda anclado la \pdm\space, mediante el MPTMS, al electrodo.
+			
+			La primera estrategia utilizada para promover una mayor adherencia de las \pdm\space a los sensores, se basa en minimizar el área de contacto electrodo-mesoporoso. Las mayoría de los resultados discutidos en este capítulo fueron realizados en \pdm\space sobre electrodos plenos de Au. Sin embargo, los sensores comprenden un conjunto de electrodos o microelectrodos sobre un sustrato dieléctrico (p. ej. SiO$_2$ o vidrio). Eligiendo un diseño adecuado se puede minimizar el área de los electrodos metálicos. De ésta forma las \pdm\space quedan adheridas fuertemente a los sectores del óxido, donde no está el Au. El resultado final es una película bien adherida sobre una superficie mixta soporte/electrodos.  La figura \ref{fig:adherencia_microelectrodo} representa de manera esquemática esta situación.
+			
+				\begin{figure}[!ht]
+					\begin{center}
+					\includegraphics[width=0.80\textwidth]{Esquemas/adherencia_microelectrodo.pdf}
+					\caption[Adherencia a los microelectrodos.]{Esquema de un corte transversal de los sensores donde se observan los microelectrodos y la \pdm\space depositada sobre ellos. Las flechas indican las zonas de baja y alta adherencia.}
+					\label{fig:adherencia_microelectrodo}
+					\end{center}
+					\end{figure}
+					
+					
+			La segunda estrategia se basa en modificar los electrodos mediante una funcionalización superficial, la cual se llevó acabo siguiendo el procedimiento detallado en el capitulo \ref{chap:Materiales}, sección \ref{sec:silanizacion}. Se buscó una molécula compatible con el sistema utilizado, que pueda vincular la superficie del electrodo e integrarse en el esqueleto de las \pdm. Se usó para este fin el 3-mercaptopropil trimetoxisilano (MPTMS), el cual es fácilmente de ligar covalentemente al Au por el tiol\cite{Gosser,Byun2013}, y por el otro tiene el silano el cual es perfectamente compatible con el precursor de Si(IV) utilizado\cite{Wu2014,Wu2013,Chen2011}. En la figura \ref{fig:mod_sup} se muestra la molécula en cuestión y un esquema de como queda anclado la \pdm, mediante el MPTMS, al electrodo.
 			
 					\begin{figure}[!ht]
 							\begin{center}
@@ -240,7 +253,9 @@
 							\end{center}
 							\end{figure}
 			
-			Una vez realizada la modificación superficial, se llevaron a cabo mediciones EQ, con el objetivo de comparar electrodos modificados y sin modificar, de forma de evaluar el posible bloqueo de los electrodos. La figura \ref{fig:comparaciones_MPTMS} muestra los voltagramas los resultados de dichas comparaciones. Se comparan allí, electrodos con MPTMS y sin MPTMS, recubiertas con \pdm\space y sin recubrir. De estos gráficos comparativos se desprende que el rendimiento electroquímico no se ve afectado significativamente.
+			Una vez realizada la modificación superficial, se llevaron a cabo mediciones EQ para evaluar como se modifican los voltagramas debido a la funcionalización. Se realizaron dos comparaciones con propósitos diferentes: 1) verificar que la señal sobre un electrodo desnudo no se vea afectada significativamente por la presencia de MPTMS ligado a la superficie del Au; y 2) demostrar que la funcionalización del Au mejora la adherencia cuando se depositan \pdm\space sobre esta superficie modificada.
+
+            La figura \ref{fig:comparaciones_MPTMS} muestra los voltagramas los resultados de dichas comparaciones. Se comparan allí, electrodos con MPTMS y sin MPTMS, recubiertas con \pdm\space y sin recubrir. De estos gráficos comparativos se desprende que el rendimiento electroquímico no se ve afectado significativamente.
 	 		
 		 			\begin{figure}[th]
 			 	   	    \begin{subfigure}[t]{0.49\textwidth}
@@ -255,17 +270,7 @@
 						 \label{fig:comparaciones_MPTMS}	
 					     \end{figure}
 			
-			La segunda estrategía utlizada para promover una mayor adherencia de las \pdm\space a los sensores, se basa en minimizar el área de contacto electrodo-mesoporoso. Las mayoría de los resultados discutidos en este capítulo fueron realizados en \pdm\space sobre electrodos plenos de Au. Sin embargo, los sensores son un conjunto de electrodos o microelectrodos sobre un sustrato dieléctrico (p. ej. SiO$_2$ o vidrio). Eligiendo un diseño adecuado se puede minimizar el área de los electrodos respecto del soporte. De ésta forma las \pdm\space quedan adheridas fuertemente a los sectores donde no está el Au. El resultado final es una película bien adherida sobre una superficie mixta soporte/electrodos.  La figura \ref{fig:adherencia_microelectrodo} representa de manera esquemática esta situación.
-			
-				\begin{figure}[!ht]
-					\begin{center}
-					\includegraphics[width=0.70\textwidth]{Esquemas/adherencia_microelectrodo.pdf}
-					\caption[Adherencia a los microelectrodos.]{Esquema de un corte transversal de los sensores donde se observan los microelectrodos y la \pdm\space depositada sobre ellos. Las flechas indican las zonas de baja y alta adherencia.}
-					\label{fig:adherencia_microelectrodo}
-					\end{center}
-					\end{figure}
-			
-			Ambas estrategias que promueven la adherencia de las \pdm\space son complementarias. Esto quiere decir que se puede optimizar el diseño para minimizar la superficie de electrodos y, a su vez, se pueden tratar los sectores donde queda el Au expuesto con MPTMS, de manera de generar puntos de vinculación entre el mesoporosos y el electrodo. El tratamiento se realiza luego de depositar el Au y antes de realizar el decapado de la fotorresina (consultar sección \ref{sec:fotolito}, pág. \pageref{sec:fotolito}).		
+				Ambas estrategias que promueven la adherencia de las \pdm\space son complementarias. Esto quiere decir que se puede optimizar el diseño para minimizar la superficie de electrodos y, a su vez, se pueden tratar los sectores donde queda el Au expuesto con MPTMS, de manera de generar puntos de vinculación entre el mesoporosos y el electrodo. El tratamiento se realiza luego de depositar el Au y antes de realizar el decapado de la fotorresina (consultar sección \ref{sec:fotolito}, pág. \pageref{sec:fotolito}).		
 			% Por último decir que se van a usar de ahora en adelante estos sistema, reforzar con bibliografia.
 
 \section{Métodos alternativos de síntesis de \pdm}
