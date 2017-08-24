@@ -33,9 +33,9 @@ red_100 = "#ff0000"
 	# set style line 4 lc rgbcolor red_075 pt 1 ps 2 lw 2
 	# set style line 5 lc rgbcolor red_100 pt 1 ps 2 lw 2
 	# set style line 6 lc rgbcolor 'red' lt -1 pt -1
-	set style line 1 lc rgb '#800000' lt 1 lw 1 #Marron
+	set style line 1 lc rgb 'red' lt 1 lw 1 #Marron
 	set style line 2 lc rgb '#ff0000' lt 1 lw 1 #ROjo
-	set style line 3 lc rgb '#ff4500' lt 1 lw 1 #Naranja
+	set style line 3 lc rgb 'black' lt 1 lw 1 #Naranja
 	set style line 4 lc rgb '#ffa500' lt 1 lw 2 #Amarillo
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
@@ -78,9 +78,10 @@ red_100 = "#ff0000"
 	#set mytics 2
 
 #Pongo la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+set key top left Left reverse samplen 3 font ",12" textcolor rgb "gray40"
  
 
 #Ploteo todas las funciones que les digamos
 
-plot 'Au_Control_Ru_1mM.txt' using 1:($2/0.0314) with lines ls 1 title "Electrodo sin modificar", 'Au_MPTMS_Ru_1mM.txt' u 1:($2/0.0314*1.10) with lines ls 3  title "Electrodo con MPTMS"
+plot 'Au_Control_Ru_1mM.txt' using 1:($2/0.0314) with lines ls 1 title "Au virgen",\
+'Au_MPTMS_Ru_1mM.txt' u 1:($2/0.0314*1.10) with lines ls 3  title "Au con MPTMS"

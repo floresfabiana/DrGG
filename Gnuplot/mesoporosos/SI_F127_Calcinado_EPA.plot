@@ -7,7 +7,7 @@ set terminal tikz
 set output "SI_F127_Calcinado_EPA.tikz" 
 
 #Saco la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+set key top left Left reverse samplen 3 font ",12" textcolor rgb "gray40"
 #Saco el Borde
 unset border
 
