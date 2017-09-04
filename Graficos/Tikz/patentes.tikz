@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Fri Jul 14 18:12:36 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% lun 04 sep 2017 12:39:08 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -78,7 +78,8 @@
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.504,7.274)--(11.947,7.274);
+\draw[gp path] (1.504,7.274)--(1.688,7.274);
+\draw[gp path] (4.078,7.274)--(11.947,7.274);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -118,11 +119,11 @@
 \draw[gp path] (11.947,1.704)--(11.947,1.794);
 \draw[gp path] (1.504,7.970)--(1.504,1.704)--(11.947,1.704)--(11.947,7.970)--cycle;
 \gpfill{rgb color={1.000,1.000,1.000}} (2.200,6.926)--(4.637,6.926)--(4.637,7.900)--(2.200,7.900)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.837) {N'umero de patentes};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.725,0.626) {Año};
-\node[gp node left,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (1.868,7.677) {USPTO};
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.837) {N'umero de patentes};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.725,0.626) {Año};
+\node[gp node left,font={\fontsize{12pt}{14.4pt}\selectfont}] at (2.973,7.605) {USPTO};
 \gpcolor{rgb color={0.302,0.302,0.302}}
-\draw[gp path] (1.688,7.677)--(1.868,7.677);
+\draw[gp path] (1.909,7.605)--(2.752,7.605);
 \draw[gp path] (1.504,2.629)--(2.200,2.748)--(2.896,3.014)--(3.593,3.133)--(4.289,3.067)%
   --(4.985,3.461)--(5.681,3.488)--(6.377,3.578)--(7.074,3.876)--(7.770,4.820)--(8.466,5.010)%
   --(9.162,5.423)--(9.858,6.128)--(10.555,7.748)--(11.251,7.683)--(11.947,7.611);
@@ -224,14 +225,14 @@
 \gppoint{gp mark 7}{(11.947,7.611)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(1.778,7.677)}
+\gppoint{gp mark 7}{(2.331,7.605)}
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 7}{(1.778,7.677)}
+\gppoint{gp mark 7}{(2.331,7.605)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (1.868,7.452) {EPO};
+\node[gp node left,font={\fontsize{12pt}{14.4pt}\selectfont}] at (2.973,7.235) {EPO};
 \gpcolor{rgb color={0.000,0.376,0.678}}
-\draw[gp path] (1.688,7.452)--(1.868,7.452);
+\draw[gp path] (1.909,7.235)--(2.752,7.235);
 \draw[gp path] (1.504,1.873)--(2.200,1.944)--(2.896,2.032)--(3.593,2.047)--(4.289,2.040)%
   --(4.985,2.109)--(5.681,2.131)--(6.377,2.211)--(7.074,2.224)--(7.770,2.297)--(8.466,2.401)%
   --(9.162,2.493)--(9.858,2.578)--(10.555,2.601)--(11.251,2.689)--(11.947,3.101);
@@ -333,10 +334,10 @@
 \gppoint{gp mark 5}{(11.947,3.101)}
 \gpcolor{color=gpbgfillcolor}
 \gpsetpointsize{4.00}
-\gppoint{gp mark 7}{(1.778,7.452)}
+\gppoint{gp mark 7}{(2.331,7.235)}
 \gpcolor{rgb color={0.000,0.376,0.678}}
 \gpsetpointsize{2.40}
-\gppoint{gp mark 5}{(1.778,7.452)}
+\gppoint{gp mark 5}{(2.331,7.235)}
 %% coordinates of the plot area
 \gpdefrectangularnode{gp plot 1}{\pgfpoint{1.504cm}{1.704cm}}{\pgfpoint{11.947cm}{7.970cm}}
 \end{tikzpicture}
