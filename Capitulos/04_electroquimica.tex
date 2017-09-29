@@ -21,7 +21,7 @@
  \thispagestyle{empty}
 	
  %Resumen del Capitulo en Italica
- \noindent\textit{En este capitulo se estudia exhaustivamente los fenómenos de transporte de sondas a través de las películas delgadas mesoporosas y su respuesta electroquímica. Analizando los resultados obtenidos por voltametría cíclica, voltametría cíclica de corriente alterna y simulaciones por elementos finitos, se sugiere un modelo de transporte para cada caso y se calculan parámetros para los distintos sistemas, como concentración dentro las poros, coeficiente de difusión, constante de Langmuir y estabilidad química entre otros.}
+ \noindent\textit{En este capítulo se estudian exhaustivamente los fenómenos de transporte de sondas a través de las películas delgadas mesoporosas y su respuesta electroquímica. Analizando los resultados obtenidos por voltametría cíclica, voltametría cíclica de corriente alterna y simulaciones por elementos finitos, se sugiere un modelo de transporte para cada caso y se calculan parámetros para los distintos sistemas, como concentración dentro las poros, coeficiente de difusión, constante de Langmuir y estabilidad química entre otros.}
 
  %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
  \vfill
@@ -31,10 +31,7 @@
 
 \section{Introducción}
 
-	Una vez estudiados los distintos tratamientos de síntesis y realizada la fabricación de los sensores se dedicará, en este capitulo, a estudiar las propiedades de los mismos para detectar y cuantificar una serie de sondas electroquímicas elegidas, precisamente, para poder evaluar distintos aspectos de transporte a través de los sistemas nanoporosos. 
-	Los sensores están compuestos básicamente de una película delgada de oro y una película delgada nanoporosa.
-
-	La superficie de las paredes dejan expuestos, hacia el interior de los poros, grupos silanoles los cuales pueden estar o no protonados.\cite{Brinker1990,Soler-Illia2011} 
+	Luego de obtener y analizar los resultados de depositar, condensar y extraer \pdm\space sobre distintos sustratos y bajo diferentes tratamientos pos-depósito, se dedicará este capítulo al estudio de las propiedades de los sensores para detectar y cuantificar una variedad de sondas electroquímicas. Estas sondas, dadas sus cualidades, permitirán obtener información acerca del transporte a través de los sistemas nanoporosos. Los sensores están compuestos básicamente de una película delgada de oro sobre la cual se deposita  una película delgada nanoporosa en base sílice. La superficie de las paredes dejan expuestos, hacia el interior de los poros, grupos silanoles los cuales pueden estar o no protonados.\cite{Brinker1990,Soler-Illia2011} 
 			\begin{equation}
 				\begin{aligned}
 				\includegraphics[scale=0.75]{Esquemas/equilibriosilica.pdf}
@@ -42,19 +39,22 @@
 				\end{aligned}
 				\end{equation}
 
-	La reacción \ref{eq:equilibriosilica} ejemplifica el equilibrio ácido-base que se establece en la superficie de la sílice. El pKa del $\text{SiO}_2$ es menor a 4 y la mayoría de los autores coinciden en que el punto isoeléctrico (PI) varía de $1$ a $4$ dependiendo de  las distintas forma alotrópicas del óxido de silicio, en particular para el SiO$_2$ sintetizado vía sol-gel el $\text{PI}\approx 2$ \cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013}.
+	Las reacciones \ref{eq:equilibriosilica} ejemplifican el equilibrio ácido-base que se establece en la superficie de una película de sílice. El pK$_{a2}$ del $\text{SiO}_2$ es menor a 4 y la mayoría de los autores coinciden en que el punto isoeléctrico (IEP) varía de $1$ a $4$ dependiendo de  las distintas forma alotrópicas del óxido de silicio, en particular para el SiO$_2$ sintetizado vía sol-gel el $\text{IEP}\approx 2$ \cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013}.
 	Wu y colaboradores\cite{Si-HanWu2013} analizaron, por un lado, el estado de carga superficial de nanoparticulas de sílice mesoporosa y, por otro, la tasa de condensación. El gráfico de la figura \ref{fig:silica_ph} muestra como varían las razones  $\text{SiO}^{-}/\text{SiOH}$ y $\text{SiOH}_2^{+}/\text{SiOH}$ en función del pH; se puede apreciar que solo por encima de $\text{pH}\geq7$ se obtiene una superficie de carga negativa donde todos los silanoles reaccionaron, cediendo su $\text{H}^{+}$, para convertirse en iones silanoatos; mientras que para pH bajos ($\text{pH}\leq1$), la sílice se vuelve inestable antes de llegar a un estado de carga completamente positivo y, solo queda, parcialmente positiva. En el mismo trabajo\cite{Si-HanWu2013} también plantean que la tasa de condensación decrece por encima de $\text{pH}\geq7.5$ debido a que entra en una zona de inestabilidad donde el óxido se disuelve, catalizado por el medio básico.
 		\begin{figure}[th!]
-			\centering
- 	       	\includegraphics[width=0.70\textwidth]{Graficos/Silica-PH-Stability.pdf}
+			\begin{subfigure}[t]{0.73\textwidth}
+ 	       	\includegraphics[width=\textwidth]{Graficos/Silica-PH-Stability.pdf}
+ 	       	\end{subfigure}
+ 	       	\begin{subfigure}[t]{0.25\textwidth}
+ 	       	 	\includegraphics[scale=0.80]{Esquemas/carga-PI.pdf}
+	      	 \end{subfigure}
 	    	\caption[Tasa de condensación y estado de carga superficial]{Tasa de condensación y estado de carga superficial para nanoparticulas de sílice en función de pH. Gráfico extraído de \textit{Synthesis of mesoporous silica nanoparticles} Chem. Soc. Rev., 42(9):3862, 2013.\cite{Si-HanWu2013}}
 	       	\label{fig:silica_ph}
 	    	\end{figure}
 	De hecho, Iler, en su libro \textit{<<The Chemistry of Silica>>}, explica que la tasa de disolución de la sílice en medio acuoso depende de muchos factores y, que además, salvando el tipo de sílice, el proceso de disolución requiere de un catalizador. Presenta un gráfico de la tasa de disolución en función del pH (figura \ref{fig:disolucion_ph}) y postula que la misma depende de la forma alotrópica de la sílice. Para formas mas porosas, como el SiO$_2$ amorfo, la cinética de disolución es mas rápida, mientras que para otras, mas cristalinas, como el cuarzo, se hace mucho mas lenta. Por último aclara que se trata de un proceso de despolimerización vía hidrólisis, y que la solubilidad es la concentración de Si(OH)$_4$ cuando alcanza un estado estacionario en el equilibrio despolimerazación-polimerización.\cite{iler1979}. 
 
 			\begin{figure}[th!]
-			\centering
- 	       	\includegraphics[width=0.70\textwidth]{Graficos/disolucion_ph.pdf}
+			    \includegraphics[width=0.70\textwidth]{Graficos/disolucion_ph.pdf}
 	       		\caption[Tasa de disolución sílice en función del pH]{Tasa de disolución de la sílice en función de pH. Gráfico extraído de \textit{The chemistry of silica} Wiley 1ª edición, 1979.\cite{iler1979}}
 	         	\label{fig:disolucion_ph}
 	     		\end{figure}
