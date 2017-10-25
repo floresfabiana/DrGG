@@ -1,0 +1,87 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[paperwidth=7.7cm,paperheight=2cm,hmargin=-0.5cm,vmargin=0.1cm,bottom=-1cm]{geometry}
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,english,activeacute,es-tabla]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+
+
+   %Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{shapes.symbols}
+
+   %Para hacer quimica
+   \usepackage{chemfig}
+
+       % %Este comando los exporta como pdf, si se comenta se compila entero el codigo tikz
+       %  \usetikzlibrary{external}
+       %  \tikzsetnextfilename{\jobname}
+       %  \tikzexternalize
+       %  \newcommand{\includetikz}[1]{%
+       %  \tikzsetnextfilename{#1}%
+       %  \input{#1.tikz}%
+       %  }
+
+
+
+\begin{document}
+ \thispagestyle{empty}
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+
+\def\makebraces(#1,#2)#3#4#5{%
+  \edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+  \edef\delimvshift{\the\dimexpr(#1-#2)/2}%
+  \chemmove{
+    \node[at=(#4),yshift=(\delimvshift)]
+      {$
+       \left\delimleft
+         \vrule height\delimhalfdim depth\delimhalfdim width0pt
+       \right.
+      $};
+    \node[at=(#5),yshift=(\delimvshift)]
+      {$
+        \left.
+          \vrule height\delimhalfdim depth\delimhalfdim width0pt
+        \right\delimright_{\rlap{#3}}
+      $};
+  }%
+}
+
+%\includetikz{f127}
+
+\begin{tikzpicture}
+ \setpolymerdelim[]
+ \schemestart
+  \chemfig{
+  Si(-[:135]O-[:210]-[:150])(-[:225]O-[:150]-[:210])(-[:45]O-[:330]-[:30])
+  (-[:315]-[:30]-[:330]-[:30]-[:330]NH_2)
+  }
+  \schemestop
+\end{tikzpicture}
+
+\end{document}
+
+\begin{tikzpicture}
+
+\end{tikzpicture}

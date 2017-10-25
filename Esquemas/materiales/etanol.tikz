@@ -2,7 +2,8 @@
 
 
 \schemestart
-\chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-OH}
+%\chemfig{H-C(-[2]H)(-[6]H)-C(-[2]H)(-[6]H)-OH}
+\chemfig{CH_3CH_2OH}
 \schemestop
 
 

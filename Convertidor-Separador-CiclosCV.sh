@@ -18,7 +18,7 @@ do
 	directorio="$(dirname $i)"
 	
 		 # touch 	temporal0.txt	
-	  for j in {1..45}  #Cambiar aca con la cantidad de ciclos del archivo, normalemente 45
+	  for j in {1..90}  #Cambiar aca con la cantidad de ciclos del archivo, normalemente 45
 	   	do
 	   		k=$(($j + 9))
 	   		Vii=$(($j*1400-1400+1)) #Colocar aqui las cantidad de puntos del voltagrama 

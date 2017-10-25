@@ -2,7 +2,8 @@
 
 
 \node at (0,0) {
-\chemfig{[:-218]H-O([:218]-H)}
+%\chemfig{[:-218]H-O([:218]-H)}
+\chemfig{H_2O}
 };
 
 
