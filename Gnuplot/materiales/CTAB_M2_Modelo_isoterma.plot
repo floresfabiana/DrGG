@@ -41,8 +41,8 @@ set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Leyendas
 #set label "a" at 0.016,1.423 font ",28" textcolor rgb 'black'
-set label "adsorción" at 0.48,1.35 rotate by 76 font ",12" textcolor rgb 'gray40'
-set label "desorción" at 0.34,1.353 rotate by 76 font ",12" textcolor rgb 'gray40'
+set label "adsorción" at 0.48,1.35 rotate by 76 font ",14" textcolor rgb 'gray40'
+set label "desorción" at 0.34,1.353 rotate by 76 font ",14" textcolor rgb 'gray40'
 
 #Coloca los nombre de los ejes
 set xlabel "$\\text{P/P}_s$" font ",14" textcolor rgb "gray40" offset  0,-2

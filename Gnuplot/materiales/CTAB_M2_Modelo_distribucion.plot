@@ -36,8 +36,8 @@ set xrange [0:6]
 set yrange [0:3.6]
 
 #Leyenda
-set label "cuellos" at 1.1,2.75  font ",10" textcolor rgb "black"
-set label "poros" at 2.9,2.75  font ",10" textcolor rgb "black"
+set label "cuellos" at 1.1,2.75  font ",12" textcolor rgb "black"
+set label "poros" at 2.9,2.75  font ",12" textcolor rgb "black"
 #set label "b" at 0.1,3.2  font ",24" textcolor rgb "black"
 
 #Coloca los nombre de los ejes

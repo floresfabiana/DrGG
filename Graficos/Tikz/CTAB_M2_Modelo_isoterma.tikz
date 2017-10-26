@@ -1,16 +1,16 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Fri Aug  4 19:30:36 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% jue 26 oct 2017 14:48:44 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (0.922,8.381)--(0.922,1.139)--(11.947,1.139)--(11.947,8.381)--cycle;
-\node[gp node left,rotate=76,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (6.214,4.547) {adsorción};
-\node[gp node left,rotate=76,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (4.671,4.675) {desorción};
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.760) {'Indice de refracci'on};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.434,0.215) {$\text{P/P}_s$};
+\node[gp node left,rotate=76,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.214,4.547) {adsorción};
+\node[gp node left,rotate=76,font={\fontsize{14pt}{16.8pt}\selectfont}] at (4.671,4.675) {desorción};
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.760) {'Indice de refracci'on};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.434,0.215) {$\text{P/P}_s$};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \draw[gp path] (0.940,1.659)--(1.210,1.919)--(1.944,2.170)--(2.635,2.391)--(3.334,2.630)%
   --(3.997,2.877)--(4.610,3.192)--(5.235,3.733)--(5.835,4.577)--(6.416,6.720)--(7.003,7.976)%

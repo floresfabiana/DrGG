@@ -101,11 +101,14 @@
 
 	\subsection{Depósitos de las películas delgadas mesoporosas}\label{sec:deposito_pdm}
 
-			Las películas mesoporosas utilizadas en esta tesis fueron depositadas en el Laboratorio de Fotolitografía del INTI-CMNB por \textit{spin-coating}. La técnica consiste en un portamuestras acoplado a un cabezal rotatorio que al girar dispersa el líquido para formar una película sobre el sustrato.
+			Las películas mesoporosas utilizadas en esta tesis fueron depositadas en el Laboratorio de Fotolitografía del INTI-CMNB por \textit{spin-coating}. Dicha técnica consiste en 
+			dispensar el sol sobre el sustrato, el cual está sujeto a un portamuestras que a su vez se encuentra acoplado a un cabezal rotatorio. Al hacer rotar el cabezal, se aplica sobre el líquido una fuerza proporcional a la velocidad angular, dispersando el sol para formar un recubrimiento sobre la muestra.
 
 			Como sustrato para realizar los depósitos se utilizaron: vidrio, silicio, oro sobre silicio, microelectrodos y sustratos poliméricos como  polimetilmetacrilato (PMMA) y poliestireno de alto impacto (PAI). Cada uno de ellos fue escogido para una función particular (p. ej. sustrato para reacciones electroquímicas) o por alguna característica distintiva (p. ej. transparente en el IR). En la tabla \ref{tabla:sustratos}, pág. \pageref{tabla:sustratos}, se agrupan los sustratos utilizados y se resumen algunas características y funciones destacadas.
 
-			Las dimensiones de las muestras fueron típicamente de \SI{1x1}{\cm} a \linebreak \SI{2x2}{\cm}, aunque la técnica permite depositar películas continuas de hasta \SI{15}{cm} de diámetro. En algunos casos, para obtener lotes de 32 o 46 sensores (dependiendo del diseño), se utilizaron obleas de silicio de \SI{10}{\cm} de diámetro. Antes de hacer el depósito, el sol se pasa a través de un filtro de jeringa de nailon de \SI{0.45}{\um} (\textit{GAMAFIL}) para evitar la presencia de partículas que puedan generar discontinuidades y/o <<cometas>> en los depósitos\cite{Franssila2004}. Luego, para dispensar el sol en el sustrato, se utilizaron pipetas tipo Pasteur o pipetas automáticas dependiendo del volumen requerido, el cual varió de 80 a \SI{100}{\uL.\cm^{-2}}. Las condiciones del laboratorio durante el depósito se mantuvieron en \SI{25}{\celsius} y a una HR entre 30\% y 50\%. Una vez dispensado el sol, se da comienzo a la rotación que dispersa la solución de manera homogénea sobre el sustrato y, a su vez, la evaporación del solvente promueve la formación del cristal líquido por el mecanismo de AEIE\cite{Brinker1999}.
+			Las dimensiones de las muestras fueron típicamente de \SI{1x1}{\cm} a \linebreak \SI{2x2}{\cm}, aunque la técnica permite depositar películas continuas de hasta \SI{15}{cm} de diámetro. En algunos casos, para obtener lotes de 32 o 46 sensores (dependiendo del diseño), se utilizaron obleas de silicio de \SI{10}{\cm} de diámetro. Antes de hacer el depósito, el sol se pasa a través de un filtro de jeringa de nailon de \SI{0.45}{\um} (\textit{GAMAFIL}) para evitar la presencia de partículas que puedan generar discontinuidades y/o <<cometas>> en los depósitos\cite{Franssila2004}. Luego, para dispensar el sol en el sustrato, se utilizaron pipetas tipo Pasteur o pipetas automáticas dependiendo del volumen requerido, el cual varió de 80 a \SI{100}{\uL.\cm^{-2}}. 
+
+			Las condiciones del laboratorio durante el depósito se mantuvieron en \SI{25}{\celsius} y a una HR entre 30\% y 50\%. Una vez dispensado el sol, se da comienzo a la rotación que dispersa la solución de manera homogénea sobre el sustrato y, a su vez, la evaporación del solvente promueve la formación del cristal líquido por el mecanismo de AEIE\cite{Brinker1999}.
 
 
 			\pagebreak El espesor de la película, ($t$), es inversamente proporcional a la raíz cuadrada de la velocidad angular ($\omega$), es decir $t\propto \omega ^{-1/2}$. Las rampas de velocidad y aceleración fueron optimizadas para obtener \pdm\space con espesores entre 150 y \SI{300}{\nm}\cite{Meyerhofer1978,Hall1998,Brinker1990}. Los esquemas aplicados se muestran en gráfico de la figura \ref{fig:rampa-spin}. 
@@ -250,6 +253,7 @@
 					 		   	 f_2\left(\frac{\mathcal{E}_2-\mathcal{E}_e}{\mathcal{E}_2+2\mathcal{E}_e}\right)=0
 					 		     \label{eq:bruggeman}
 								\end{equation}
+		
 		La aproximación de Maxwell-Garnett considera al material compuesto por al menos dos especies, la matriz y la inclusión. En el caso de los óxidos porosos, la matriz es el óxido y el aire el surfactante la inclusión. Se deben satisfacer en este caso las ecuaciones \ref{eq:maxwall1} y \ref{eq:maxwall2}.
 				
 							\begin{equation}
@@ -430,7 +434,7 @@
 		   	Todos los depósitos fueron realizados en el equipo de \textit{sputtering} del INTI-CMNB. El mismo cuenta, entre sus principales capacidades, con una fuente DC (hasta \SI{1.5}{\kW}) una fuente de RF (\SI{600}{W} a \SI{13.56}{\MHz}), posibilidad de depositar 3 materiales consecutivamente y capacidad para colocar sustratos de hasta \SI{250}{\nm}. El mismo es de la marca \textit{Boc Edwards}, en la figura \ref{fig:sputt} se muestra el equipo y un detalle al momento de hacer los depósitos.
 
 
-		   		  \begin{figure}[t!]
+		   		  \begin{figure}[h!]
 				  \begin{center}
 				  \includegraphics[width=\textwidth]{Imagenes/sputt.jpg}
 				  \caption[Equipo para depósito de películas delgadas, \textit{sputtering}]{Foto del instrumental utilizado para realizar los depósitos bicapa Ti\textbar Au o Cr\textbar Au.(A) El equipo \textit{BOC Edwards} completo donde se ve el gabinete de control y la cámara de vacío, (B) Foto a través de la ventana al momento de realizar un deposito de Cr y (C) Foto a través de la ventana al momento de realizar un deposito de Au.}
@@ -438,24 +442,22 @@
 				  \end{center}
 				  \end{figure}
 
-	\subsection{Proceso de\textit{ lift-off}}
+	\vspace*{-1.0cm}\subsection{Proceso de\textit{ lift-off}}
 
    	     Una vez finalizados los procesos de fotolitografía y pulverización de cada una de las capas es necesario remover el excedente de material. Este proceso de remoción, que se explica aquí, se conoce por su nombre en ingles \textit{lift-off}.
 
 		 La bicapa Ti\textbar Au o Cr\textbar Au se pulverizó sobre toda la superficie de la oblea, tanto en las partes donde estaba el silicio descubierto como en las partes donde quedó la fotorresina sin revelar. 
 		
-			\begin{figure}[h!]
+		 De esta forma, al estar el metal sobre la resina, disolviendo ésta, se desvincula la capa Ti\textbar Au del sustrato y queda completa la transferencia de los diseños. 
+		 La disolución de la fotoresina se lleva a cabo en acetona (\textit{Sigma}) dentro de un baño de ultrasonido (\textit{TESTLAB} Modelo \textit{tb02}) a \SI{22}{\kHz}. En la figura \ref{esq:liftoff} se esquematiza todo el proceso completo.
+
+		 	\begin{figure}[t!]
 			  \begin{center}
 			  \includegraphics[width=\textwidth]{Esquemas/liftoff.pdf}
 			  \caption[Esquema del proceso de\textit{ lift-off}]{Esquema del proceso de\textit{ lift-off} en el cual se decapa la fotorresina. 1) Fotorresina transferida en base a un diseño, 2) depósito metálico, 3) disolución de la fotorresina con un solvente adecuado, 4) diseño completamente trasferido.}
 			  \label{esq:liftoff}
 			  \end{center}
 			  \end{figure}
-
-		 De esta forma, al estar el metal sobre la resina, disolviendo ésta, se desvincula la capa Ti\textbar Au del sustrato y queda completa la transferencia de los diseños. 
-		 La disolución de la fotoresina se lleva a cabo en acetona (\textit{Sigma}) dentro de un baño de ultrasonido (\textit{TESTLAB} Modelo \textit{tb02}) a \SI{22}{\kHz}. En la figura \ref{esq:liftoff} se esquematiza todo el proceso completo.
-
-		 
 
 	\subsection{Modificación superficial}\label{sec:silanizacion}
 		
