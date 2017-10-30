@@ -48,7 +48,7 @@ red_100 = "#ff0000"
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 
@@ -78,7 +78,7 @@ red_100 = "#ff0000"
 	#set mytics 2
 
 #Pongo la leyenda
-set key top left Left reverse samplen 3 font ",12" textcolor rgb "gray40"
+set key top left Left reverse samplen 3 spacing 2 font ",14" textcolor rgb "gray40"
  
 
 #Ploteo todas las funciones que les digamos

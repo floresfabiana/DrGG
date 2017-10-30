@@ -43,7 +43,7 @@ set style arrow 200 head filled size screen 0.03,15 ls 100
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
 	set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
-	set style line 8 lc rgb 'red' lt 1 lw 1.5 #Rojo
+	set style line 8 lc rgb 'black' lt 1 dashtype 8 lw 1.5 #Rojo
 	set style line 9 lc rgb 'gray30' lt 1 lw 1.5 #Negro
 
 
@@ -53,7 +53,7 @@ set style arrow 200 head filled size screen 0.03,15 ls 100
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 
