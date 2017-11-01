@@ -25,12 +25,12 @@ set style line 6 lc rgb 'gray40' lt 1 lw 1 pt 11 ps 1 #Naranja
 
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 
-set border 11 back ls 10 lw 1.5 
+set border 3 back ls 10 lw 1.5 
 set tics nomirror
 
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray70' lt 0 lw 1 
 set grid back ls 11
 
 #Coloca los nombre de los ejes

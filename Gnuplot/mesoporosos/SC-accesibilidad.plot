@@ -40,7 +40,7 @@ red_100 = "#ff0000"
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
 	set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
-
+	set style line 8 lc rgb 'black' lt 1 lw 2 #Violeta
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
@@ -48,7 +48,7 @@ red_100 = "#ff0000"
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 
@@ -90,4 +90,4 @@ red_100 = "#ff0000"
 
 #Ploteo todas las funciones que les digamos
 
-plot 'SC-accesibilidad-Ru1mM-calcinado.txt' using ($1*1000):($2/0.0314*1e6) with lines ls 2
+plot 'SC-accesibilidad-Ru1mM-calcinado.txt' using ($1*1000):($2/0.0314*1e6) with lines ls 8

@@ -1,75 +1,90 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mié 21 jun 2017 10:51:33 ART
+%% mar 31 oct 2017 15:50:07 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,1.601)--(11.947,1.601);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,1.601)--(2.052,1.601);
 \node[gp node right] at (1.688,1.601) {$-200$};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,2.731)--(11.947,2.731);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,2.731)--(2.052,2.731);
 \node[gp node right] at (1.688,2.731) {$-100$};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,3.861)--(11.947,3.861);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,3.861)--(2.052,3.861);
 \node[gp node right] at (1.688,3.861) {$0$};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,4.991)--(11.947,4.991);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,4.991)--(2.052,4.991);
 \node[gp node right] at (1.688,4.991) {$100$};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,6.121)--(11.947,6.121);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,6.121)--(2.052,6.121);
 \node[gp node right] at (1.688,6.121) {$200$};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,7.251)--(11.947,7.251);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,7.251)--(2.052,7.251);
 \node[gp node right] at (1.688,7.251) {$300$};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,8.381)--(11.947,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,8.381)--(2.052,8.381);
 \node[gp node right] at (1.688,8.381) {$400$};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,1.601)--(1.872,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -84,10 +99,12 @@
 \draw[gp path] (2.656,1.601)--(2.656,1.691);
 \draw[gp path] (2.768,1.601)--(2.768,1.691);
 \draw[gp path] (2.880,1.601)--(2.880,1.691);
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (2.991,1.601)--(2.991,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -102,10 +119,12 @@
 \draw[gp path] (3.775,1.601)--(3.775,1.691);
 \draw[gp path] (3.887,1.601)--(3.887,1.691);
 \draw[gp path] (3.999,1.601)--(3.999,1.691);
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (4.111,1.601)--(4.111,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -120,10 +139,12 @@
 \draw[gp path] (4.895,1.601)--(4.895,1.691);
 \draw[gp path] (5.006,1.601)--(5.006,1.691);
 \draw[gp path] (5.118,1.601)--(5.118,1.691);
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (5.230,1.601)--(5.230,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -138,10 +159,12 @@
 \draw[gp path] (6.014,1.601)--(6.014,1.691);
 \draw[gp path] (6.126,1.601)--(6.126,1.691);
 \draw[gp path] (6.238,1.601)--(6.238,1.691);
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (6.350,1.601)--(6.350,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -156,10 +179,12 @@
 \draw[gp path] (7.133,1.601)--(7.133,1.691);
 \draw[gp path] (7.245,1.601)--(7.245,1.691);
 \draw[gp path] (7.357,1.601)--(7.357,1.691);
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (7.469,1.601)--(7.469,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -174,10 +199,12 @@
 \draw[gp path] (8.253,1.601)--(8.253,1.691);
 \draw[gp path] (8.365,1.601)--(8.365,1.691);
 \draw[gp path] (8.477,1.601)--(8.477,1.691);
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (8.589,1.601)--(8.589,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -192,10 +219,12 @@
 \draw[gp path] (9.372,1.601)--(9.372,1.691);
 \draw[gp path] (9.484,1.601)--(9.484,1.691);
 \draw[gp path] (9.596,1.601)--(9.596,1.691);
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (9.708,1.601)--(9.708,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -210,10 +239,12 @@
 \draw[gp path] (10.492,1.601)--(10.492,1.691);
 \draw[gp path] (10.604,1.601)--(10.604,1.691);
 \draw[gp path] (10.716,1.601)--(10.716,1.691);
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (10.828,1.601)--(10.828,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -228,10 +259,12 @@
 \draw[gp path] (11.611,1.601)--(11.611,1.691);
 \draw[gp path] (11.723,1.601)--(11.723,1.691);
 \draw[gp path] (11.835,1.601)--(11.835,1.691);
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (11.947,1.601)--(11.947,8.381);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}

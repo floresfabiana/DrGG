@@ -25,7 +25,7 @@ set size ratio 0.60
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	#unset grid
 	set grid noxtics front ls 11
     set grid ytics back ls 11

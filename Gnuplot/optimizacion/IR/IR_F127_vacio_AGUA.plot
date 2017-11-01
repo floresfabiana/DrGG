@@ -46,7 +46,7 @@ set yrange [-0.075:]
 set format y ""
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray70' lt 0 lw 1 
 set grid back ls 11
 
 #Coloca los nombre de los ejes

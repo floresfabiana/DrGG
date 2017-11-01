@@ -25,7 +25,7 @@ set object 2 rect from 8.5,28 to 9.5,36 fc rgb "white" fs noborder
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	#unset grid
 	set grid noxtics front ls 11
     set grid ytics back ls 11

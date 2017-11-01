@@ -1,67 +1,80 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Fri Jul 14 18:12:36 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% mié 01 nov 2017 13:41:12 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.688,1.759)--(11.947,1.759);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,1.759)--(1.868,1.759);
 \node[gp node center] at (1.136,1.759) {0K};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.688,2.785)--(11.947,2.785);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,2.785)--(1.868,2.785);
 \node[gp node center] at (1.136,2.785) {2K};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.688,3.811)--(11.947,3.811);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,3.811)--(1.868,3.811);
 \node[gp node center] at (1.136,3.811) {4K};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.688,4.837)--(11.947,4.837);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,4.837)--(1.868,4.837);
 \node[gp node center] at (1.136,4.837) {6K};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.688,5.863)--(11.947,5.863);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,5.863)--(1.868,5.863);
 \node[gp node center] at (1.136,5.863) {8K};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.688,6.889)--(1.872,6.889);
 \draw[gp path] (5.732,6.889)--(11.947,6.889);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,6.889)--(1.868,6.889);
 \node[gp node center] at (1.136,6.889) {10K};
+\gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.688,7.915)--(11.947,7.915);
+\gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -101,8 +114,8 @@
 \node[gp node center] at (11.552,1.451) {$2015$};
 \draw[gp path] (11.947,1.759)--(11.947,1.849);
 \draw[gp path] (1.688,7.915)--(1.688,1.759)--(11.947,1.759)--(11.947,7.915)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.837) {N'umero de publicaciones};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.817,0.681) {Año};
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.837) {N'umero de publicaciones};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.817,0.681) {Año};
 \node[gp node left] at (3.156,7.581) {Nanotecnologia};
 \gpcolor{rgb color={0.302,0.302,0.302}}
 \draw[gp path] (2.056,7.581)--(2.972,7.581);

@@ -23,6 +23,7 @@ unset key
 	set style line 5 lc rgb '#CB3E16' pt 1 ps 2 lw 2
 	set style line 6 lc rgb '#C51F1B' pt 1 ps 2 lw 2
 	set style line 7 lc rgb '#BF0012' pt 1 ps 2 lw 2
+	set style line 8 lc rgb 'black' lt 1 lw 2 #Violeta
 	set style increment user
 
 #Estilos de los ejes 
@@ -31,7 +32,7 @@ unset key
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 
@@ -55,4 +56,4 @@ unset key
 #FILES = system("ls -1 fc-1mM-F127-AuCNEA-Calcinado/*.txt")
 FILES = system("ls -1 fc-1mM-F127-AuCNEA-Calcinado/2-FeOH-1mM-50.DTA.txt")
 
-plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader ls 1
+plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader ls 8

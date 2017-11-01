@@ -29,6 +29,7 @@ red_100 = "#ff0000"
 	set style line 4 lc rgbcolor red_075 pt 1 ps 2 lw 2
 	set style line 5 lc rgbcolor red_100 pt 1 ps 2 lw 2
 	set style line 6 lc rgbcolor 'red' lt -1 pt -1
+    set style line 8 lc rgb 'black' lt 1 lw 2 #Violeta
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
@@ -36,7 +37,7 @@ red_100 = "#ff0000"
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 #Coloca los nombre de los ejes
@@ -74,4 +75,4 @@ red_100 = "#ff0000"
 #set label 101 sprintf("\\SI{5}{\\milli\\Molar}") at 405,44 font ",10" textcolor rgb "black"
 #set label 102 sprintf("\\SI{10}{\\milli\\Molar}") at 405,86 font ",10" textcolor rgb "black"
 	  
-plot "FC_1mM_F127_20.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314) with lines ls 6
+plot "FC_1mM_F127_20.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314) with lines ls 8
