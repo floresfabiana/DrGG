@@ -9,10 +9,25 @@
 		   }
 };
 
+
+%El mesoporoso
+\node at (6,2.3) {
+\begin{tikzpicture}
+\node (A) at (0,0) {};
+\node (B) at (5,0) {};
+\node (C) at (0,1.2) {};
+\node (D) at (5,1.2) {};
+\begin{scope}[on background layer]
+    \draw[draw=none,top color=gray!40] (A.center) -- (C.center) -- (D.center) -- (B.center) to [bend left=15] (A.center);
+    \end{scope}
+
+\end{tikzpicture}
+};
+
 %Superficie del Au
 \node at (6,-1.82) {
 \begin{tikzpicture}
-\fill[yellow,path fading=south] rectangle (5,1.5);
+\draw[draw=none, top color=yellow] rectangle (5,1.5);
 \end{tikzpicture}
 };,,,,,,dash pattern=on 2pt off 1pt
 
@@ -26,19 +41,6 @@
 		   }
 };
 
-%El mesoporoso
-\node at (6,2.3) {
-\begin{tikzpicture}
-\node (A) at (0,0) {};
-\node (B) at (5,0) {};
-\node (C) at (0,1.2) {};
-\node (D) at (5,1.2) {};
-\begin{scope}[on background layer]
-    \draw[draw=none,fill=gray!40,path fading=south] (A.center) -- (C.center) -- (D.center) -- (B.center) to [bend left=15] (A.center);
-    \end{scope}
-
-\end{tikzpicture}
-};
 
 
 \end{tikzpicture}
