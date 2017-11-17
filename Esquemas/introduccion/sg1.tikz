@@ -1,0 +1,10 @@
+\begin{tikzpicture}
+
+\node at (0,0) {
+%\chemfig{Si([:30]-O-[:-30]-)([:120]-O-[:60]-)([:210]-O-[:150]-)([:300]-O-[:240]-)}
+\schemestart  
+H$_2$O \quad + \quad\chemfig{Si(-[2]OR)(-[4]RO)(-[6]OR)(-[8]OR)}\arrow{->[hidrólisis]}[0,1.5]\chemfig{Si(-[2]OH)(-[4]RO)(-[6]OR)(-[8]OR)}\quad+\quad ROH
+\schemestop
+};
+
+\end{tikzpicture}
