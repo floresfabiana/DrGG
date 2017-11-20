@@ -1,0 +1,245 @@
+\documentclass[tikz]{standalone}
+
+%Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows,arrows.meta}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{shapes.symbols}
+   \usetikzlibrary{decorations.pathreplacing}
+   \usetikzlibrary{decorations.text}
+   \usetikzlibrary{fit}
+   \usetikzlibrary{calc}
+   \usetikzlibrary{positioning}
+   \usetikzlibrary{matrix}
+   \usetikzlibrary{decorations.pathmorphing}
+   \usetikzlibrary{fadings}
+   \usetikzlibrary{shadings}
+   \usetikzlibrary{decorations}
+
+\newcommand\irregularcircle[2]{% radius, irregularity
+  \pgfextra {\pgfmathsetmacro\len{(#1)+rand*(#2)}}
+  +(0:\len pt)
+  \foreach \a in {10,20,...,350}{
+    \pgfextra {\pgfmathsetmacro\len{(#1)+rand*(#2)}}
+    -- +(\a:\len pt)
+  } -- cycle
+}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+\node at (0,0) {
+\begin{tikzpicture}
+  \coordinate (c) at (0,0);
+  \coordinate (d) at (1,2);
+  \fill[gray,rounded corners=1mm] (d) \irregularcircle{1cm}{1mm};
+\end{tikzpicture}
+};
+
+\node at (5,0) {
+\begin{tikzpicture}
+  \coordinate (c) at (0,0);
+  \coordinate (d) at (1,2);
+  \fill[gray,rounded corners=1mm] (d) \irregularcircle{1cm}{1mm};
+\end{tikzpicture}
+};
+
+\node at (-5,0) {
+\begin{tikzpicture}
+  \coordinate (c) at (0,0);
+  \coordinate (d) at (1,2);
+  \fill[blue!10!cyan!70!white,rounded corners=1mm] (d) \irregularcircle{1cm}{1mm};
+\end{tikzpicture}
+};
+
+%flechas
+ \node at (2.5,0) {
+  \begin{tikzpicture}
+\tikzstyle{flechas} = [darkgray]
+    \fill[flechas] (1.8,1) -- ++(0:2) -- ++(40:0.1) -- ++(140:0.1) -- ++(180:2) -- ++(-40:0.1) -- cycle;
+   \end{tikzpicture}
+  };
+
+  \node at (-2.5,0) {
+  \begin{tikzpicture}
+\tikzstyle{flechas} = [darkgray]
+    \fill[flechas] (1.8,1) -- ++(0:2) -- ++(40:0.1) -- ++(140:0.1) -- ++(180:2) -- ++(-40:0.1) -- cycle;
+   \end{tikzpicture}
+  };    
+
+%Poros
+ \node at (0,0) {
+  \begin{tikzpicture}
+  \fill[white] circle (0.25);
+  \fill[white,xshift=12,yshift=12] circle (0.25);
+  \fill[white,xshift=-12,yshift=-12] circle (0.25);
+  \fill[white,xshift=-12,yshift=12] circle (0.25);
+  \fill[white,xshift=12,yshift=-12] circle (0.25);
+  \end{tikzpicture}
+  };
+
+ \node at (5,0) {
+  \begin{tikzpicture}
+  \fill[white] circle (0.25);
+  \fill[white,xshift=12,yshift=12] circle (0.25);
+  \fill[white,xshift=-12,yshift=-12] circle (0.25);
+  \fill[white,xshift=-12,yshift=12] circle (0.25);
+  \fill[white,xshift=12,yshift=-12] circle (0.25);
+  \end{tikzpicture}
+  };
+% %Miscelas
+ \node at (0,0) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {0,30,...,348}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+  };
+
+ \node at (0.422,0.422) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {0,30,...,348}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+  };
+
+   \node at (-0.422,-0.422) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {0,30,...,348}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+  };
+ 
+  \node at (-0.422,0.422) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {0,30,...,348}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+  };
+ 
+  \node at (0.422,-0.422) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {0,30,...,348}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+  };
+
+ \node at (-5.2,0.2) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+   \begin{scope}[scale=2.2]   
+   {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (30:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+          \end{scope}
+  \end{tikzpicture}
+  };
+
+\node at (-5.5,-0.3) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+   \begin{scope}[scale=2.2]   
+   {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (110:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+          \end{scope}
+  \end{tikzpicture}
+  };
+
+\node at (-4.5,0) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+   \begin{scope}[scale=2.2]   
+   {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (85:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+          \end{scope}
+  \end{tikzpicture}
+  };
+
+  \node at (-5,-0.4) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+   \begin{scope}[scale=2.2]   
+   {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (220:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+          \end{scope}
+  \end{tikzpicture}
+  };
+
+  \node at (-4.8,0.7) {
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+   \begin{scope}[scale=2.2]   
+   {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (190:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+          \end{scope}
+  \end{tikzpicture}
+  };
+
+% \node at (-5.2,0.2) {
+%  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.1pt,decoration={random steps,segment length=2pt,amplitude=1pt}}]
+%   \begin{scope}[scale=.30]
+%   \draw[blue,thin,projectile,line width=0.75pt] (0,0) to (30:1cm)
+%   node[shift={(30:0.7mm)},circle,inner sep=0.1pt,minimum size=5pt,fill,inner color=white,outer color=blue,opacity=0.9] {};        \end{scope}
+%  \end{tikzpicture}
+%  };
+
+ \node at (-5,0) {
+ \begin{tikzpicture}
+    \fill[gray] (0,0) circle (0.05cm);
+    \fill[gray] (0.5,-0.4) circle (0.05cm);
+    \fill[gray] (-0.4,0.4) circle (0.05cm);
+    \fill[gray] (-0.5,-0.5) circle (0.05cm);
+     \fill[gray] (0.45,0.5) circle (0.05cm);
+
+    \end{tikzpicture}
+ };
+
+\node at (-5,-1.5) {\large{sol}};
+\node at (0,-1.5) {\large{mesoestructura}};
+\node at (0,-1.9) {\large{h\'ibrida}};
+\node at (5,-1.5) {\large{material}};
+\node at (5,-2) {\large{mesoporoso}};
+
+\node at (-2.5,0.5) {\large{AEIE}};
+\node at (2.5,0.9) {\large{Eliminaci\'on}};
+\node at (2.5,0.5) {\large{del molde}};
+
+
+
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,298 @@
+\documentclass[tikz]{standalone}
+
+%\usepackage[paperwidth=2cm,paperheight=7cm,hmargin=-0.5cm,vmargin=0.2cm,bottom=-1cm]{geometry}
+
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+   \pgfplotsset{compat=1.14}
+%Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows,arrows.meta}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{shapes.symbols}
+   \usetikzlibrary{decorations.pathreplacing}
+   \usetikzlibrary{decorations.text}
+   \usetikzlibrary{fit}
+   \usetikzlibrary{calc}
+   \usetikzlibrary{positioning}
+   \usetikzlibrary{matrix}
+   \usetikzlibrary{decorations.pathmorphing}
+   \usetikzlibrary{fadings}
+   \usetikzlibrary{shadings}
+   \usetikzlibrary{decorations}
+
+   %Estilo flechas de evaporacion
+\tikzstyle{flechas_evaporacion} = [color=orange,line width=1pt]
+
+%Script para las micelas
+\newcommand{\micela}{
+  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {0,30,...,348}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          %\draw[circle,minimum size=1cm]  (0,0)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    %Sustrato
+    \node at (-2,-2) {
+    \begin{tikzpicture}
+    \draw[draw=none,right color=darkgray,left color=white] (0,0) rectangle (2,16);
+    \end{tikzpicture}
+    };
+
+
+    %Liquido
+    \node at (3.5,-2) {
+    \begin{tikzpicture}
+    \draw[draw=none,right color=blue,top color=gray!10, bottom color=blue!10!cyan!70!white] (0,0) -- (10,0) to [out=160,in=270] (2,16) -- (0,16) -- cycle ;
+    \end{tikzpicture}
+    };
+
+  
+
+    %Linea de la cmc
+     \node at (3,-6.2) {
+    \begin{tikzpicture}
+    \draw[dashed,black,line width=1pt] (0,0) -- ++(1,0) to [out=0,in=180] (5,-1) -- ++(4,0) ;
+    \end{tikzpicture}
+    };
+
+    %Micelas enteras
+    \node at (0,0.2) { 
+    \begin{tikzpicture} 
+    \foreach \i in {0,-1,...,-10}
+    {\node at (-8,\i + \i/20)  {\micela};
+    \node at (-7+\i*\i/100,\i)  {\micela};
+    \node at (-7.5+\i*\i/200,\i-0.5)  {\micela};
+    }
+    \end{tikzpicture}
+    };
+
+    \node at (1.8,-5.5) {
+    \begin{tikzpicture}
+    \micela
+     \end{tikzpicture}
+
+    };
+
+
+    %parte de micelas
+    \node at (0.5,-6.2) { 
+     \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {210,250,...,348}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          %\draw[circle,minimum size=1cm]  (0,0)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+    };
+
+     \node at (-0.5,-6.5) { 
+     \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {30,60,...,120}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          %\draw[circle,minimum size=1cm]  (0,0)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+    };
+
+     \node at (1.2,-6.8) { 
+     \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {300,60,...,60}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          %\draw[circle,minimum size=1cm]  (0,0)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+    };
+
+  \node at (2.5,-6.3) { 
+     \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+     %\foreach \z in {0,2.8,5.6}{%
+     %\foreach \y in {0,2.8,5.6}{%
+     \begin{scope}[scale=2.2]
+         \foreach \x in {330,360,...,430}
+         {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (\x:0.09cm)%(\x+rand*2:1cm+rand*2)
+          %\draw[circle,minimum size=1cm]  (0,0)
+          node[shift={(\x:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+         %node[circle,inner sep=0.5mm,fill,path fading=center,fading transform={rotate=\x}] {};}
+         \end{scope}
+         %}
+         %}
+  \end{tikzpicture}
+    };
+
+
+%mooleculas sueltas de surfactante
+  \node at (1.1,-8.3) { 
+    \begin{tikzpicture}[scale=0.9]
+    \foreach \i in {0,...,4}{
+       \foreach \j in {0,...,4}{
+           \node at (\i + 0.5*rand,\j/2 + 0.5*rand) {\begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+   \begin{scope}[scale=2.2]   
+   {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (rnd*360:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(rnd*360:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+          \end{scope}
+  \end{tikzpicture}};
+          }}
+\end{tikzpicture}
+    };
+
+  \node at (4,-9) { 
+    \begin{tikzpicture}[scale=0.9]
+    \foreach \i in {0,...,2}{
+       \foreach \j in {0,...,2}{
+           \node at (\i + 0.5*rand,\j/2 + 0.5*rand) {\begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+   \begin{scope}[scale=2.2]   
+   {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (rnd*360:0.09cm)%(\x+rand*2:1cm+rand*2)
+          node[shift={(rnd*360:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+          \end{scope}
+  \end{tikzpicture}};
+          }}
+\end{tikzpicture}
+    };
+
+
+
+%  \node at (-5.2,0.2) {
+%   \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+%    \begin{scope}[scale=2.2]   
+%    {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (30:0.09cm)%(\x+rand*2:1cm+rand*2)
+%           node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+%           \end{scope}
+%   \end{tikzpicture}
+%   };
+
+% \node at (-5.5,-0.3) {
+%   \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+%    \begin{scope}[scale=2.2]   
+%    {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (110:0.09cm)%(\x+rand*2:1cm+rand*2)
+%           node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+%           \end{scope}
+%   \end{tikzpicture}
+%   };
+
+% \node at (-4.5,0) {
+%   \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+%    \begin{scope}[scale=2.2]   
+%    {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (85:0.09cm)%(\x+rand*2:1cm+rand*2)
+%           node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+%           \end{scope}
+%   \end{tikzpicture}
+%   };
+
+%   \node at (-5,-0.4) {
+%   \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+%    \begin{scope}[scale=2.2]   
+%    {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (220:0.09cm)%(\x+rand*2:1cm+rand*2)
+%           node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+%           \end{scope}
+%   \end{tikzpicture}
+%   };
+
+%   \node at (-4.8,0.7) {
+%   \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.01pt,decoration={random steps,segment length=0.1pt,amplitude=0.3pt}}]
+%    \begin{scope}[scale=2.2]   
+%    {\draw [blue,thin,projectile,line width=0.1pt] (0,0) to (190:0.09cm)%(\x+rand*2:1cm+rand*2)
+%           node[shift={(30:0.07mm)},circle,inner sep=0.01pt,minimum size=2pt,fill,inner color=white,outer color=blue, opacity=0.9] {};}
+%           \end{scope}
+%   \end{tikzpicture}
+%   };
+
+% % \node at (-5.2,0.2) {
+% %  \begin{tikzpicture}[projectile/.style={decorate,rounded corners=0.1pt,decoration={random steps,segment length=2pt,amplitude=1pt}}]
+% %   \begin{scope}[scale=.30]
+% %   \draw[blue,thin,projectile,line width=0.75pt] (0,0) to (30:1cm)
+% %   node[shift={(30:0.7mm)},circle,inner sep=0.1pt,minimum size=5pt,fill,inner color=white,outer color=blue,opacity=0.9] {};        \end{scope}
+% %  \end{tikzpicture}
+% %  };
+
+%  \node at (-5,0) {
+%  \begin{tikzpicture}
+%     \fill[gray] (0,0) circle (0.05cm);
+%     \fill[gray] (0.5,-0.4) circle (0.05cm);
+%     \fill[gray] (-0.4,0.4) circle (0.05cm);
+%     \fill[gray] (-0.5,-0.5) circle (0.05cm);
+%      \fill[gray] (0.45,0.5) circle (0.05cm);
+
+%     \end{tikzpicture}
+%  };
+
+%Leyendas
+\node at (3.2,5) {\Large{Organizaci\'on de micelas}};
+\node at (3.2,4.5) {\Large{cristal l\'iquido}};
+
+\node at (3.8,-1.5) {\Large{evaporaci\'on}};
+\node at (3.8,-2) {\Large{solvente}};
+
+\node at (4.2,-4.5) {\Large{formaci\'on de}};
+\node at (4.2,-5) {\Large{micelas}};
+
+\node at (7,-7) {\Large{cmc}};
+
+\node[rotate=90] at (-4,-3.5) {\Huge{desplazamineto sustrato}};
+
+\node at (2.7,-10.5) {\huge{soluci\'on con precursores y surfactante}};
+
+
+%flecha desplazamiento
+ \node at (-3.95,2.7) {
+  \begin{tikzpicture}[rotate=90,scale=3]
+\tikzstyle{flechas} = [darkgray]
+    \fill[flechas] (1.8,1) -- ++(0:1) -- ++(40:0.1) -- ++(140:0.1) -- ++(180:1) -- ++(-40:0.1) -- cycle;
+   \end{tikzpicture}
+  };
+
+
+  %Evaporacion solvente
+    \node at (2,-2) {
+    \begin{tikzpicture}[rotate=-70]
+    \def\t {10}
+    \foreach\s in {4,6,8,\t}{\draw[flechas_evaporacion] (\s/\t,1.4) to [out=70,in =250] (\s/\t,2.2);}
+        \end{tikzpicture}
+
+};
+
+
+% \node at (-2.5,0.5) {\large{AEIE}};
+% \node at (2.5,0.9) {\large{Eliminaci\'on}};
+% \node at (2.5,0.5) {\large{del molde}};
+
+
+
+
+\end{tikzpicture}
+\end{document}
