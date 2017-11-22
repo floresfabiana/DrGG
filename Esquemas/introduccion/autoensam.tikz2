@@ -6,7 +6,7 @@
    \usepackage{tikz}
    \usepackage{pgfplots}
    \usepackage{gnuplot-lua-tikz}
-   \pgfplotsset{compat=1.14}
+   %\pgfplotsset{compat=1.14}
 %Librerias Tikz Extra
    \usetikzlibrary{shapes,arrows,arrows.meta}
    \usetikzlibrary{shapes.arrows, fadings}
