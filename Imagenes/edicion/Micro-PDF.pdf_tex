@@ -1,0 +1,82 @@
+%% Creator: Inkscape inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Micro-PDF.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1277.71958008bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.96166709)%
+    \put(0,0){\includegraphics[width=\unitlength]{Micro-PDF.pdf}}%
+    \put(0.32206592,0.89562158){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Silicio}}}%
+    \put(0.59599823,0.90360268){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1) Limpieza}}}
+     \put(0.59599823,0.87360268){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2) Dep\'osito fotoresina}}}
+    \put(0.59599823,0.84360268){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3) Curado}}}
+    \put(0.27090752,0.81695399){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Fotoresina}}}%
+    \put(0.59417113,0.75549875){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1) Alineaci\'on}}}
+    \put(0.59417113,0.72549875){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2) Exposici\'on }}}%
+    \put(0.48018396,0.69449545){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$h\nu$}}}%
+    \put(0.59599823,0.59813835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1) Entrecuzamiento}}}
+    \put(0.59599823,0.56813835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2) Revelado}}}
+    \put(0.59599823,0.53813835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{3) Rigidizaci\'on}}}%
+    \put(0.29130627,0.63290461){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{M\'ascara}}}%
+    \put(0.24052869,0.42355634){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{Fotoresina}}}%
+\put(0.24052869,0.39355634){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{positiva}}}
+    \put(0.72059738,0.43639133){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Fotoresina}}}
+%
+\put(0.72059738,0.40639133){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{negativa}}}
+    \put(0.07712715,0.03540403){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Grabado por
+}}}%
+\put(0.07712715,0.00540403){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{v\'ia h\'umeda}}}
+    \put(0.26101857,0.36691309){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Procesos posteriores a la litograf\'ia}}}%
+    \put(0.27491752,0.03166041){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Grabado por}}}
+    \put(0.27491752,0.00166041){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{v\'ia seca}}}%
+    \put(0.47604367,0.03229287){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Depsici\'on}}}%
+     \put(0.47604367,0.00229287){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{electrol\'itica}}}%
+    \put(0.67111412,0.03301903){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Pulverizaci\'on}}}%
+    \put(0.67111412,0.00301903){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{ca\'odica}}}
+    \put(0.90536118,0.0320048){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Micromodelado}}}%
+  \end{picture}%
+\endgroup%
