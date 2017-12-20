@@ -57,7 +57,7 @@
 
   \draw [dashed]  (-4,3.1) -- (-4,-3.1);
 
-  \node at (-2.3,0) {
+  \node at (-1.82,0) {
   \schemestart
    \chemfig{+OH^{-}}
    \schemestop
@@ -75,9 +75,15 @@
 
    \node at (3.35,0) {
   \schemestart
-   \chemfig{OH^{-}+3H_2O}
+   \chemfig{OH^{-}\hspace{0.2cm}+3H_2O}
    \schemestop
   };
+
+ \node at (1,-0.3) {
+  \schemestart
+ \arrow \hspace*{4cm} \arrow
+  \schemestop
+ }; 
 
  \node at (7,0) {
    \schemestart
