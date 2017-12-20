@@ -20,7 +20,7 @@
        
     \node [block4, right of=bloque3,xshift=1.1cm] (bloque4) {\textbf{Alcalino} Atmósfera NH$_3$, \SI{10}{\min}};
     \node [block4, below of=bloque4,node distance=-2.2cm] (bloque5) {\textbf{Ácido} Atmósfera HCl, \SI{10}{\min}};
-    \node [block4, below of=bloque5,node distance=-2.2cm] (bloque6) {\textbf{Prolongado}  \SI{130}{\celsius}, \SI{7}{\day}};
+    \node [block4, below of=bloque5,node distance=-2.2cm] (bloque6) {\textbf{Tratamiento}  \SI{130}{\celsius}, \SI{7}{\day}};
     \node [block4, above of=bloque4,node distance=-2.2cm] (bloque7) {\textbf{Vacío} \SI{1e-5}{\milli\bar} \SI{130}{\celsius},7d};
     \node [block4, above of=bloque7,node distance=-2.2cm] (bloque8) {\textbf{Calcinación}  \SI{350}{\celsius},\SI{2}{\hour}  \SI{1}{\celsius.\min^{-1}}};
     
