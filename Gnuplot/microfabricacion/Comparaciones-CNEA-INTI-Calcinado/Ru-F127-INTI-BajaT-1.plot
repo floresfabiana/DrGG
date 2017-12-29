@@ -8,7 +8,7 @@ set terminal tikz gparrows tikzarrows
 set output "Ru-F127-INTI-BajaT-1.tikz" 
 
 #Saco la leyenda
-	unset key
+set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -600,260
 
 #Saco el Borde
 	unset border
@@ -61,8 +61,8 @@ set style arrow 200 head filled size screen 0.02,10 ls 100
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",16" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -97,14 +97,14 @@ set style arrow 200 head filled size screen 0.02,10 ls 100
  
 
 #Ploteo todas las funciones que les digamos
-plot "Au F127 INTI BajaT Ru1mM.txt" using ($1):($2/0.0314) every 3 with lines ls 1, \
-"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every 3 with lines ls 1, \
-"Au F127 INTI BajaT Ru1mM.txt" using ($1):($2/0.0314) every ::1::1400 with lines ls 2, \
-"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every ::61633::63033  with lines ls 3,\
-"Flecha-BajaT-1mM.txt" using 1:2 smooth bezier ls 100,\
-"Flecha-BajaT-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200,\
-"Flecha2-BajaT-1mM.txt" using 1:2 smooth bezier ls 100,\
-"Flecha2-BajaT-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200,\
+plot "Au F127 INTI BajaT Ru1mM.txt" using ($1):($2/0.0314) every 3 with lines ls 1 title "VacSF", \
+"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every 3 with lines ls 1 notitle, \
+"Au F127 INTI BajaT Ru1mM.txt" using ($1):($2/0.0314) every ::1::1400 with lines ls 2 notitle, \
+"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every ::61633::63033  with lines ls 3 notitle,\
+"Flecha-BajaT-1mM.txt" using 1:2 smooth bezier ls 100 notitle,\
+"Flecha-BajaT-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200 notitle,\
+"Flecha2-BajaT-1mM.txt" using 1:2 smooth bezier ls 100 notitle,\
+"Flecha2-BajaT-1mM.txt" u 3:4:5:6 w vectors arrowstyle 200 notitle,\
 
 
 #"Au F127 INTI BajaT Ru1mM.txt" using ($7):($8/0.0314) every 10 with lines ls 1, \

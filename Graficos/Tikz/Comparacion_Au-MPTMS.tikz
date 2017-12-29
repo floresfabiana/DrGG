@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 30 oct 2017 13:54:34 ART
+%% jue 28 dic 2017 10:34:53 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
@@ -197,8 +197,8 @@
 \node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
 \node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\text{Potencial\; vs\; ESC/}mV$};
 \node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (3.526,7.976) {Au virgen};
-\gpcolor{rgb color={1.000,0.000,0.000}}
-\gpsetlinewidth{1.00}
+\gpcolor{rgb color={0.000,0.000,0.000}}
+\gpsetdashtype{gp dt 2}
 \draw[gp path] (2.314,7.976)--(3.268,7.976);
 \draw[gp path] (1.887,2.813)--(1.890,2.819)--(1.897,2.827)--(1.907,2.838)--(1.921,2.853)%
   --(1.935,2.864)--(1.949,2.877)--(1.964,2.887)--(1.978,2.896)--(1.993,2.906)--(2.007,2.914)%
@@ -437,6 +437,8 @@
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (3.526,7.526) {Au con MPTMS};
 \gpcolor{rgb color={0.000,0.000,0.000}}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.00}
 \draw[gp path] (2.314,7.526)--(3.268,7.526);
 \draw[gp path] (1.879,2.742)--(1.882,2.746)--(1.889,2.753)--(1.900,2.764)--(1.913,2.777)%
   --(1.928,2.789)--(1.942,2.801)--(1.957,2.811)--(1.972,2.822)--(1.986,2.833)--(2.001,2.842)%

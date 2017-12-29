@@ -1,4 +1,4 @@
-#Para ver en pantalla
+ #Para ver en pantalla
 #reset
 #set terminal qt
 
@@ -7,7 +7,7 @@ set terminal tikz
 set output "SI_CTAB_prolongado_EPA.tikz" 
 
 #Saco la leyenda
-set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+set key top left Left reverse samplen 3 font ",14" textcolor rgb "black" at -0.01,1.3774
 #Saco el Borde
 unset border
 
@@ -16,7 +16,7 @@ unset tics
 
 #Defino estilos para cada tipo de linea
 set style line 1 lc rgb '#800000' lt 1 lw 2 pt 7 ps 1 #Marron
-set style line 3 lc rgb '#ff4500' lt 1 lw 2 pt 7 ps 1 #Naranja
+set style line 3 lc rgb '#ff4500' lt 1 lw 2 pt 9 ps 1.5 #Naranja
 
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 

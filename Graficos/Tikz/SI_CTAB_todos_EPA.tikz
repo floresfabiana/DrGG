@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mar 31 oct 2017 15:50:09 ART
+%% vie 29 dic 2017 10:13:42 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
@@ -84,7 +84,7 @@
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,6.874)--(2.056,6.874);
-\draw[gp path] (4.076,6.874)--(11.947,6.874);
+\draw[gp path] (4.260,6.874)--(11.947,6.874);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
@@ -96,7 +96,7 @@
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.872,7.628)--(2.056,7.628);
-\draw[gp path] (4.076,7.628)--(11.947,7.628);
+\draw[gp path] (4.260,7.628)--(11.947,7.628);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
@@ -435,7 +435,7 @@
 \gppoint{gp mark 7}{(1.889,2.117)}
 \gppoint{gp mark 7}{(1.888,2.113)}
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.123) {'AciC};
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (3.156,7.123) {'AciSC};
 \gpcolor{rgb color={1.000,0.647,0.000}}
 \draw[gp path] (2.240,7.123)--(2.972,7.123);
 \draw[gp path] (1.888,2.806)--(1.888,2.927)--(2.084,3.187)--(2.714,3.379)--(3.320,3.578)%

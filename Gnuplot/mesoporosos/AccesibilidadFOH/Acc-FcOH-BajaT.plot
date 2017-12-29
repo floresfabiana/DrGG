@@ -7,7 +7,8 @@ set terminal tikz
 set output "Acc-FcOH-BajaT.tikz" 
 
 #Saco la leyenda
-unset key
+	set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -100,18
+
 
 #Saco el Borde
 	unset border
@@ -41,8 +42,8 @@ red_100 = "#ff0000"
 	set grid back ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/}mV$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ESC/}mV$" font ",16" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -75,4 +76,4 @@ red_100 = "#ff0000"
 #set label 101 sprintf("\\SI{5}{\\milli\\Molar}") at 405,44 font ",10" textcolor rgb "black"
 #set label 102 sprintf("\\SI{10}{\\milli\\Molar}") at 405,86 font ",10" textcolor rgb "black"
 	  
-plot "FC_1mM_F127_20.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314) with lines ls 8
+plot "FC_1mM_F127_20.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314) with lines ls 8 title "VacSF"

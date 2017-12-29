@@ -36,12 +36,11 @@
  poro ; poro\index{poro} 
  transporte ; transporte\index{transporte} 
  voltametría de corriente alterna; voltametría de corriente alterna\index{voltametría!de corriente alterna}
- espectroscopia; espectroscopia\index{espectroscopia}
  espectroscopía; espectroscopía\index{espectroscopía}
  fotolitografía; fotolitografía\index{fotolitografía}
  litografía ; litografía\index{litografía} 
  calcinación; calcinación\index{calcinación}
- alto vacío; alto vacio\index{alto@alto vacío}
+ alto vacío; alto vacío\index{alto@alto vacío}
  básico ; básico\index{básico} 
  ácido ; ácido\index{acido@ácido} 
  infrarojo; infrarojo\index{infrarojo}
@@ -50,7 +49,7 @@
  alineadora; alineadora\index{alineadora}
  máscara; máscara\index{máscara}
  FIB; FIB\index{FIB}
- SEM; SEM\index{SEM}
+ MEB; MEB\index{MEB}
  ángulo de contacto; ángulo de contacto\index{angulo@ángulo de contacto}
  condensación; condensación\index{condensación}
  condensación ácida; condensación ácida\index{condensación!ácida}
@@ -58,20 +57,17 @@
  extracción; extracción\index{extracción}
  surfactante; surfactante\index{surfactante}
  iónico; iónico\index{iónico}
- microscopia; microscopía\index{microscopía}
- microscopia electrónica; microscopía electrónica\index{microscopía!electrónica}
- microscopia de barrido; microscopia\index{microscopía!de barrido}
- microscopia óptica; microscopia\index{microscopía!óptica}
- microscopía; microscopia\index{microscopía}
- microscopía electrónica; microscopía\index{microscopía!electrónica}
- microscopía de barrido; microscopía\index{microscopía!de barrido}
- microscopía óptica; microscopía\index{microscopía!óptica}
- electrónica de transmisión; electrónica de transmisión\index{microscopía!de transmisión}
+ microscopía electrónica; microscopía electrónica\index{MEB}
+ microscopía de barrido; microscopía\index{MEB}
+ microscopía óptica; microscopía óptica\index{microscopía!óptica}
+ electrónica de transmisión; electrónica de transmisión\index{MET}
+ microscopía; microscopía\index{microscopía}
  XPS; XPS\index{XPS}
  nitrogeno ; nitrogeno\index{nitrogeno} 
  oxigeno ; oxigeno\index{oxigeno} 
  sustrato ; sustrato\index{sustrato} 
  vidrio ; vidrio\index{vidrio} 
+ atmósfera; atmósfera\index{atmósfera}
  2-propanol ; 2-propanol\index{propanol@2-propanol} 
  porosidad ; porosidad\index{porosidad} 
  accesibilidad ; accesibilidad\index{accesibilidad} 
@@ -167,7 +163,7 @@ NH;NH\index{amoniaco}
 INIFTA;INIFTA\index{INIFTA}
 \textit{software};\textit{software}\index{software@\textit{software}}
  Innocenzi;Innocenzi\index{Innocenzi}
- Sánchez;Sánchez\index{Sánchez}
+ Sánchez; Sánchez\index{Sánchez}
  contracción axial ; contracción axial\index{contracción axial}
  potenciostato; potenciostato\index{potenciostato}
  UV/Vis; UV/Vis\index{UV}
@@ -324,4 +320,5 @@ oxolación;oxolació\index{oxolación}
 Walcarius;Walcarius\index{Walcarius}
 Bass;Bass\index{Bass}
 Longinotti;Longinotti\index{Longinotti}
+ micela; micela\index{micela}
 dummy;dummy

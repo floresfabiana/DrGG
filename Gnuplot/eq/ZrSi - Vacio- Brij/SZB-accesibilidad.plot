@@ -7,7 +7,7 @@ set terminal tikz
 set output "SZB-accesibilidad.tikz" 
 
 #Saco la leyenda
-	unset key
+	set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -500,260
 
 #Saco el Borde
 	unset border
@@ -39,7 +39,7 @@ set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
 
 #Para graficar todas
 
-plot "Sobre sustrato de Si RU 1mM  SEgunda prueba  3  (25_09_2017-12_57_42)/terxera.txt" using 1:($2/0.0314) every ::14000::15000 w l ls 1,\
+plot "Sobre sustrato de Si RU 1mM  SEgunda prueba  3  (25_09_2017-12_57_42)/terxera.txt" using 1:($2/0.0314) every ::14000::15000 w l ls 1 title "VacSZB",\
 
 #"../Control_Au/Ru 1mM Au Rango Cort.txt" u 1:($2/0.0314) every ::4800::6000 w l ls 2,\
 #"../../Rutenio-Silicio/Ru1mM-secuencia-continua-hasta-disolucion.txt" using 1:($2/0.0314) every 2 with lines ls 5,\

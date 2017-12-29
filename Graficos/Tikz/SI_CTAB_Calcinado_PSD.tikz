@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mar 31 oct 2017 08:59:31 ART
+%% vie 29 dic 2017 14:34:15 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
@@ -238,6 +238,7 @@
 \draw[gp path] (1.688,8.381)--(1.688,1.601)--(11.947,1.601);
 \node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {Poblaci'on relativa};
 \node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.817,0.215) {Di'ametro / nm};
+\gpcolor{rgb color={0.000,0.000,0.000}}
 \node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.119,7.985) {Di'ametro de poros};
 \gpcolor{rgb color={0.502,0.000,0.000}}
 \gpsetlinewidth{2.00}
@@ -337,7 +338,7 @@
 \gppoint{gp mark 7}{(2.079,1.780)}
 \gppoint{gp mark 7}{(2.051,1.769)}
 \gppoint{gp mark 7}{(6.384,7.985)}
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpcolor{rgb color={0.000,0.000,0.000}}
 \node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.119,7.554) {Di'ametro de cuellos};
 \gpcolor{rgb color={1.000,0.271,0.000}}
 \draw[gp path] (5.907,7.554)--(6.861,7.554);

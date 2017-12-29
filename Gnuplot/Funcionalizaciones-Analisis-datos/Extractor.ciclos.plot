@@ -51,7 +51,7 @@ set ytics 0.5
 
   set print "Sensor/Ru1mM/salida2.txt" 
        do for [i=1:180:2] {
-        stats [-400:-100]  "Sensor/Ru1mM/DHDP-SinFuncionalizar-Separados.txt" u i:(column(i+1)) nooutput ; 
+        stats [-400:-100]  "Sensor/Ru1mM/DHDP3mM-Ru1mM-Separados.txt" u i:(column(i+1)) nooutput ; 
          print (i-1)/2+1, STATS_pos_max_y, STATS_pos_min_y, STATS_min_y, STATS_max_y
        } 
        set print

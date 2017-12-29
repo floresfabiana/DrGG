@@ -49,7 +49,7 @@ plot "Si_EtCTAB-EPA.txt" using 1:2 with linespoints ls 6 title "SimSC",\
 "Si_130CTAB-EPA.txt" using 5:6 with linespoints ls 5 notitle,\
 "Si_130VCTAB-EPA.txt" using 1:2 with linespoints ls 1 title "VacSC",\
 "Si_130VCTAB-EPA.txt" using 5:6 with linespoints ls 1 notitle,\
-"Si_ACTAB-EPA.txt" using 1:2 with linespoints ls 2 title "\'AciC",\
+"Si_ACTAB-EPA.txt" using 1:2 with linespoints ls 2 title "\'AciSC",\
 "Si_ACTAB-EPA.txt" using 5:6 with linespoints ls 2 notitle,\
 "Si_BCTAB-EPA.txt" using 1:2 with linespoints ls 4 title "AlcSC",\
 "Si_BCTAB-EPA.txt" using 5:6 with linespoints ls 4 notitle,\

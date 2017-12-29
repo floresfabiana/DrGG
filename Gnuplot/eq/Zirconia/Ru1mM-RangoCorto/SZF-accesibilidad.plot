@@ -7,7 +7,7 @@ set terminal tikz
 set output "SZF-accesibilidad.tikz" 
 
 #Saco la leyenda
-	unset key
+	set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -500,360
 
 #Saco el Borde
 	unset border
@@ -43,7 +43,7 @@ filename(n) = sprintf("Ru 1mM  en Zr 13x45 Rango Corto  (20_04_2017-16_44_14)/Ru
 
 #plot for [i=5:5:1] filename(i) using 1:($2/0.0314) every ::1400 w l ls 1,\
 
-plot for [i=5:5:1] filename(i) using 1:($2/0.0314) every ::1400::2800 w l ls 1,\
+plot for [i=5:5:1] filename(i) using 1:($2/0.0314) every ::1400::2800 w l ls 1 title "VacSZF",\
 
 #"../Control_Au/Ru 1mM Au Rango Cort.txt" u 1:($2/0.0314) every ::4800::6000 w l ls 2,\
 #"../../Rutenio-Silicio/Ru1mM-secuencia-continua-hasta-disolucion.txt" using 1:($2/0.0314) every 2 with lines ls 5,\

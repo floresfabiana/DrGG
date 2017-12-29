@@ -24,7 +24,7 @@ set style line 3 lc rgb '#ff4500' lt 1 lw 2 pt 7 ps 0.5 #Naranja
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 
 set border 3 back ls 10 lw 1.5 
-set tics nomirror
+set tics nomirror font ", 12"
 
 #Estilo de la grilla
 set style line 11 lc rgb 'gray70' lt 0 lw 1 
@@ -33,8 +33,8 @@ set xrange[0:5000]
 set yrange[100:400]
 
 #Coloca los nombre de los ejes
-set xlabel "Velocidad de rotaci\'on / min$^{-1}$" font ",14" textcolor rgb "gray40" offset  0,-2
-set ylabel "Espesor / nm" font ",14" textcolor rgb "gray40" offset  -2,0
+set xlabel "Velocidad de rotaci\'on / min$^{-1}$" font ",16" textcolor rgb "gray40" offset  0,-2
+set ylabel "Espesor / nm" font ",16" textcolor rgb "gray40" offset  -2,0
 
 #Hace un FIT
 f(x) = a*x**(b)
@@ -43,7 +43,7 @@ stddev_y = sqrt(FIT_WSSR / (FIT_NDF + 1 ))
 
 #R cuadrado sacado con el Origin: R2=9.7551
 
-set label 1 sprintf("$t=%3.0fx^{%3.3f}$",a,b) at 3100,380 font ",14" textcolor rgb "gray40"
+set label 1 sprintf("$d=%3.0fx^{%3.3f}$",a,b) at 3100,370 font ",16" textcolor rgb "black"
 #set label 3 "R$^2$=0,97551" at 3100,360 font ",10" textcolor rgb "gray40"
 
 #Ploteo todas las funciones que les digamos

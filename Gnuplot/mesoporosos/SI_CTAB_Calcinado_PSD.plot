@@ -7,7 +7,7 @@ set terminal tikz
 set output "SI_CTAB_Calcinado_PSD.tikz" 
 
 #Saco la leyenda
-set key top right Left reverse samplen 3 spacing 1 width -2 font ",14" textcolor rgb "gray40"
+set key top right Left reverse samplen 3 spacing 1 width -2 font ",14" textcolor rgb "black"
 
 #Saco el Borde
 unset border

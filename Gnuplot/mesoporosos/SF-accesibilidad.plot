@@ -7,7 +7,7 @@ set terminal tikz
 set output "SF-accesibilidad.tikz" 
 
 #Saco la leyenda
-	unset key
+set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -600,180
 
 #Saco el Borde
 	unset border
@@ -90,4 +90,4 @@ red_100 = "#ff0000"
 
 #Ploteo todas las funciones que les digamos
 
-plot  "SF-accesibilidad-Ru1mM-calcinado.txt" u 3:($4/0.0314*0.90) every ::1::1400 w l ls 8
+plot  "SF-accesibilidad-Ru1mM-calcinado.txt" u 3:($4/0.0314*0.90) every ::1::1400 w l ls 8 title "CalSF"

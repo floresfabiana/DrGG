@@ -7,7 +7,8 @@ set terminal tikz
 set output "SC-accesibilidad.tikz" 
 
 #Saco la leyenda
-	unset key
+set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -600,72
+
 
 #Saco el Borde
 	unset border
@@ -90,4 +91,4 @@ red_100 = "#ff0000"
 
 #Ploteo todas las funciones que les digamos
 
-plot 'SC-accesibilidad-Ru1mM-calcinado.txt' using ($1*1000):($2/0.0314*1e6) with lines ls 8
+plot 'SC-accesibilidad-Ru1mM-calcinado.txt' using ($1*1000):($2/0.0314*1e6) with lines ls 8 title "CalSC"

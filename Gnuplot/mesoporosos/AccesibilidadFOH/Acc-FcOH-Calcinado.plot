@@ -8,7 +8,8 @@ set output "Acc-FcOH-Calcinado.tikz"
 
 #Saco la leyenda
 #set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray40" at 370,-700
-unset key
+set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -100,130
+
 
 #Saco el Borde
 	unset border
@@ -41,8 +42,8 @@ unset key
 	#set mytics 2 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",16" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -56,4 +57,4 @@ unset key
 #FILES = system("ls -1 fc-1mM-F127-AuCNEA-Calcinado/*.txt")
 FILES = system("ls -1 fc-1mM-F127-AuCNEA-Calcinado/2-FeOH-1mM-50.DTA.txt")
 
-plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader ls 8
+plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title "CalSF" ls 8 

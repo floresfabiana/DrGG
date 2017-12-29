@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mar 31 oct 2017 10:28:06 ART
+%% jue 28 dic 2017 12:04:45 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
@@ -210,7 +210,7 @@
 \node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (6.387,3.416) {\tiny{acoplamiento LO$_3$-TO4$_3$}};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (1.754,4.250) {SiO$_2$ denso};
-\node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (1.754,2.906) {PDM calcinada};
+\node[gp node left,font={\fontsize{8pt}{9.6pt}\selectfont}] at (1.754,2.906) {CalSF};
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {Absorbancia / u. a.};
 \node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.541,0.362) {N'umero de onda / cm$^{-1}$};

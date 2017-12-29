@@ -23,7 +23,7 @@ set output "Comparacion_F127-MPTMS.tikz"
 	# set style line 5 lc rgbcolor red_100 pt 1 ps 2 lw 2
 	# set style line 6 lc rgbcolor 'red' lt -1 pt -1
 	set style line 1 lc rgb 'red' lt 1 lw 1 #Marron
-	set style line 2 lc rgb '#ff0000' lt 1 lw 1 #ROjo
+	set style line 2 lc rgb 'black' lt 1 lw 1 #ROjo
 	set style line 3 lc rgb 'gray25' lt 1 lw 1 #Naranja
 	set style line 4 lc rgb '#ffa500' lt 1 lw 2 #Amarillo
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde

@@ -75,7 +75,7 @@ set label "\\tiny{H$_2$O}" at 1700,0.025 font ",8" textcolor rgb "gray40"
 set label "\\tiny{acoplamiento LO$_3$-TO4$_3$}" at 2300,0.08 font ",8" textcolor rgb "gray40"
 
 set label "SiO$_2$ denso" at 3800,0.17 font ",8" textcolor rgb "black"
-set label "PDM calcinada" at 3800,0.025 font ",8" textcolor rgb "black"
+set label "CalSF" at 3800,0.025 font ",8" textcolor rgb "black"
 
 #Estilo de la Flecha
 set style line 100  lc rgbcolor 'gray40' lw 1.5

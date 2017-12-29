@@ -95,7 +95,7 @@
   %Agrego marcas laterales en los capitulos
   \AddLabelsCap
 
-	%Incluyo Los capitulosBB
+	%Incluyo Los capitulos
 	\input{Capitulos.indexados/01_introduccion.tex}
   \input{Capitulos.indexados/02_materiales.tex}    
   \input{Capitulos.indexados/03_mesoporosos.tex}

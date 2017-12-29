@@ -15,11 +15,11 @@ set key top left Left reverse samplen 3 font ",14" textcolor rgb "gray40"
 #Saco las marcas
  # 	unset tics
  	unset mxtics
- 	set xtics scale 0
+ 	set xtics scale 0 offset 0,-0.4
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
 	set border 15 back ls 10 lw 1.5 
-	set tics nomirror
+	set tics nomirror font ",14"
 
 #Estilo de la grilla
 	set style line 11 lc rgb 'gray70' lt 0 lw 1 
@@ -27,8 +27,8 @@ set key top left Left reverse samplen 3 font ",14" textcolor rgb "gray40"
 	set grid noxtics front ls 11
     set grid ytics back ls 11
 #Coloca los nombre de los ejes
-	set ylabel "\\% volumen poroso"  font ",14" textcolor rgb "gray40" offset -2,0
-    set xlabel "Método"  font ",14" textcolor rgb "gray40" offset 0,-1
+	set ylabel "\\% volumen poroso"  font ",16" textcolor rgb "gray40" offset -2,0
+    set xlabel "Método"  font ",16" textcolor rgb "gray40" offset 0,-1.4
 
 #Cambio de aspecto
 #set size square 1,2.2

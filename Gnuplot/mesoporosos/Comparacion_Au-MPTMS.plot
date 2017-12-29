@@ -40,7 +40,7 @@ red_100 = "#ff0000"
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
 	set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
-
+    set style line 8 lc rgb 'black' lt 1 dashtype 2 lw 1.5 #Rojo
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
@@ -83,5 +83,5 @@ set key top left Left reverse samplen 3 spacing 2 font ",14" textcolor rgb "gray
 
 #Ploteo todas las funciones que les digamos
 
-plot 'Au_Control_Ru_1mM.txt' using 1:($2/0.0314) with lines ls 1 title "Au virgen",\
+plot 'Au_Control_Ru_1mM.txt' using 1:($2/0.0314) with lines ls 8 title "Au virgen",\
 'Au_MPTMS_Ru_1mM.txt' u 1:($2/0.0314*1.10) with lines ls 3  title "Au con MPTMS"
