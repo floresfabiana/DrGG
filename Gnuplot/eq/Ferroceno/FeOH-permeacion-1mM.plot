@@ -7,7 +7,7 @@ set terminal tikz
 set output "FeOH-permeacion-1mM.tikz" 
 
 #Saco la leyenda
-	unset key
+set key top left Left reverse samplen 2 font ",14" textcolor rgb "black" 
 
 #Saco el Borde
 	unset border
@@ -40,6 +40,8 @@ red_100 = "#ff0000"
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
 	set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
+	set style line 8 lc rgb 'black' lt 1 dashtype 2 lw 1.5 #Rojo
+	set style line 9 lc rgb 'black' lt 1 lw 1.5 #Negro
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
@@ -76,5 +78,5 @@ red_100 = "#ff0000"
 # "Control/Fc5mM-amplio.txt" using ($1):($2/0.0314) with lines ls 2,\
 # "Control/Fc10mM-amplio.txt" using ($1):($2/0.0314) with lines ls 2,\
 
- plot "fc-1mM/FC_1mM_F127_50.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314)  with lines ls 5, \
- "Control/Fc1mM-amplio.txt" using ($1):($2/0.0314) with lines ls 2,\
+ plot "fc-1mM/FC_1mM_F127_50.DTA-Ciclo-1" using ($1*1000):($2*1e6/0.0314)  with lines ls 9 title "SF", \
+ "Control/Fc1mM-amplio.txt" using ($1):($2/0.0314) with lines ls 8 title "Au",\

@@ -33,9 +33,9 @@ red_100 = "#ff0000"
 	# set style line 3 lc rgbcolor red_050 pt 1 ps 2 lw 2
 	# set style line 4 lc rgbcolor red_075 pt 1 ps 2 lw 2
 	# set style line 5 lc rgbcolor red_100 pt 1 ps 2 lw 2
-	set style line 1 lc rgb 'gray70' lt 1 lw 0.5 #Marron
-	set style line 2 lc rgb 'red' lt 1 lw 2.5 #ROjo
-	set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
+set style line 1 lc rgb 'gray80' lt 1 lw 0.5 #Marron
+set style line 2 lc rgb 'black' lt 1 dashtype 2 lw 2.5
+set style line 3 lc rgb 'black' lt 1 lw 2.5 #Azul
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 

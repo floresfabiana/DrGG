@@ -7,7 +7,7 @@ set terminal tikz
 set output "FcOH-F127-Calcinado-difusion.tikz"
 
 #Leyenda
-	set key top left Left reverse samplen -2 font ",10" textcolor rgb "gray40"
+	set key top left Left reverse samplen -2 font ",14" textcolor rgb "black"
 
 #Saco el Borde
 	unset border
@@ -19,7 +19,7 @@ set output "FcOH-F127-Calcinado-difusion.tikz"
 
 #Defino estilos para cada tipo de linea
 set style line 1 lc rgb 'black' pt 7 ps 1 lw 1#Cuadrado
-set style line 2 lc rgb 'red' pt 7 ps 1  #Circulo
+set style line 2 lc rgb 'red' pt 9 ps 1.5  #Circulo
 set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo 
 set style line 4 lt 0 lc rgb 'black'  lw 3
 
@@ -65,6 +65,6 @@ set grid front ls 11
 #Grafico
 
 
-plot "FcOH-F127-Calcinado-difusion.txt" using (log10($1)):(log10($3)) with points ls 1 title "Corriente \'anodica",\
-"FcOH-F127-Calcinado-difusion.txt" using (log10($1)):(log10($5)) with points ls 2 title "Corriente cat\'odica",\
+plot "FcOH-F127-Calcinado-difusion.txt" using (log10($1)):(log10($3)) with points ls 1 title "corriente \'anodica",\
+"FcOH-F127-Calcinado-difusion.txt" using (log10($1)):(log10($5)) with points ls 2 title "corriente cat\'odica",\
 z(x) w l ls 4 notitle

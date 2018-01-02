@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Sat Jun 17 10:27:03 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% mar 02 ene 2018 17:04:49 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
@@ -8,9 +8,8 @@
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,7.556)--(1.688,2.426)--(11.947,2.426);
 \gpfill{color=gp lt color border,color=.!15} (1.688,2.426)--(2.714,2.426)--(2.714,7.555)--(1.688,7.555)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{i}_p/\text{i}_p^{\text{Au}}$};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.817,1.040) {N'umero de ciclos};
-\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (9.371,7.222) {ZSF - Ru \SI{1}{\milli\Molar}};
+\node[gp node center,rotate=-270,font={\fontsize{16pt}{19.2pt}\selectfont}] at (0.246,4.991) {$\text{i}_p/\text{i}_p^{\text{Au}}$};
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (6.817,1.040) {N'umero de ciclos};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{1.00}
 \gpsetpointsize{1.20}
@@ -599,8 +598,8 @@
 \gppoint{gp mark 7}{(11.656,6.507)}
 \gppoint{gp mark 7}{(11.673,6.505)}
 \gppoint{gp mark 7}{(11.691,6.500)}
-\gppoint{gp mark 7}{(9.187,7.222)}
 \gpcolor{rgb color={1.000,0.000,0.000}}
+\gpsetlinewidth{2.00}
 \draw[gp path] (1.705,4.991)--(1.806,4.991)--(1.907,4.991)--(2.008,4.991)--(2.109,4.991)%
   --(2.209,4.991)--(2.310,4.991)--(2.411,4.991)--(2.512,4.991)--(2.613,4.991)--(2.714,4.991)%
   --(2.815,4.991)--(2.915,4.991)--(3.016,4.991)--(3.117,4.991)--(3.218,4.991)--(3.319,4.991)%
@@ -621,12 +620,13 @@
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
 \draw[gp path] (1.688,2.426)--(11.947,2.426);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,2.426)--(1.868,2.426);
-\node[gp node right] at (1.504,2.426) {$0$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,2.426) {$0$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -635,7 +635,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,3.709)--(1.868,3.709);
-\node[gp node right] at (1.504,3.709) {$0.5$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,3.709) {$0.5$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -644,7 +644,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,4.991)--(1.868,4.991);
-\node[gp node right] at (1.504,4.991) {$1$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,4.991) {$1$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -653,7 +653,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,6.274)--(1.868,6.274);
-\node[gp node right] at (1.504,6.274) {$1.5$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,6.274) {$1.5$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -662,7 +662,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,7.556)--(1.868,7.556);
-\node[gp node right] at (1.504,7.556) {$2$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,7.556) {$2$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -671,7 +671,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,2.426)--(1.688,2.606);
-\node[gp node center] at (1.688,2.118) {$0$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.688,2.026) {$0$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -680,7 +680,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (3.398,2.426)--(3.398,2.606);
-\node[gp node center] at (3.398,2.118) {$100$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (3.398,2.026) {$100$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -689,7 +689,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (5.108,2.426)--(5.108,2.606);
-\node[gp node center] at (5.108,2.118) {$200$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (5.108,2.026) {$200$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -698,7 +698,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (6.818,2.426)--(6.818,2.606);
-\node[gp node center] at (6.818,2.118) {$300$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.818,2.026) {$300$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -707,17 +707,16 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (8.527,2.426)--(8.527,2.606);
-\node[gp node center] at (8.527,2.118) {$400$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (8.527,2.026) {$400$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (10.237,2.426)--(10.237,7.068);
-\draw[gp path] (10.237,7.376)--(10.237,7.556);
+\draw[gp path] (10.237,2.426)--(10.237,7.556);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (10.237,2.426)--(10.237,2.606);
-\node[gp node center] at (10.237,2.118) {$500$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (10.237,2.026) {$500$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -726,11 +725,11 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (11.947,2.426)--(11.947,2.606);
-\node[gp node center] at (11.947,2.118) {$600$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (11.947,2.026) {$600$};
 \draw[gp path] (1.688,7.556)--(1.688,2.426)--(11.947,2.426);
 \gpcolor{rgb color={0.000,0.000,0.000}}
-\node[gp node left,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (2.030,6.530) {I};
-\node[gp node left,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.818,6.530) {II};
+\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (2.030,6.530) {I};
+\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.818,6.530) {II};
 %% coordinates of the plot area
 \gpdefrectangularnode{gp plot 1}{\pgfpoint{1.688cm}{2.426cm}}{\pgfpoint{11.947cm}{7.556cm}}
 \end{tikzpicture}

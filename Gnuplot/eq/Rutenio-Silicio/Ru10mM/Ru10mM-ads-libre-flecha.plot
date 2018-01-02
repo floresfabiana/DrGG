@@ -8,7 +8,8 @@ set terminal tikz gparrows tikzarrows
 set output "Ru10mM-ads-libre-flecha.tikz"
 
 #Saco la leyenda
-	unset key
+set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -525,1300 
+
 
 #Saco el Borde
 	unset border
@@ -27,7 +28,7 @@ red_075 = "#e30101"
 red_100 = "#ff0000"
 
 #Flecha
-set style line 100  lc rgbcolor 'gray40' lw 1.5
+set style line 100  lc rgbcolor 'black' lw 1.5
 set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Lo saque de http://www.perbang.dk/rgbgradient/
@@ -58,31 +59,14 @@ set style arrow 200 head filled size screen 0.02,10 ls 100
 # set style line 49 lc rgb '#0088bf' lt 1 lw 3 # --- Azul
 
 #Verde Claro a verde Oscuro
-set style line 1  lc rgb '#88f051' lt 1 lw 3 # --- Verde claro
-set style line 3  lc rgb '#82ea4d' lt 1 lw 1 #      .
-set style line 5  lc rgb '#7ce44a' lt 1 lw 1 #      .
-set style line 7  lc rgb '#77de46' lt 1 lw 1 #      .
-set style line 9  lc rgb '#71d843' lt 1 lw 1 #      .
-set style line 11  lc rgb '#6bd240' lt 1 lw 1 #      .
-set style line 13  lc rgb '#66cd3c' lt 1 lw 1 #      .
-set style line 15  lc rgb '#60c739' lt 1 lw 1 #      .
-set style line 17 lc rgb '#5ac136' lt 1 lw 1 #      .
-set style line 19 lc rgb '#55bb32' lt 1 lw 1 #      .
-set style line 21 lc rgb '#4fb52f' lt 1 lw 1 #      .
-set style line 23  lc rgb '#49af2b' lt 1 lw 1 #      .
-set style line 25  lc rgb '#44aa28' lt 1 lw 1 #      .
-set style line 27  lc rgb '#3ea425' lt 1 lw 1 #      .
-set style line 29  lc rgb '#389e21' lt 1 lw 1 #      .
-set style line 31  lc rgb '#33981e' lt 1 lw 1 #      .
-set style line 33  lc rgb '#2d921b' lt 1 lw 1 #      .
-set style line 35  lc rgb '#278c17' lt 1 lw 1 #      .
-set style line 37 lc rgb '#228714' lt 1 lw 1 #      .
-set style line 39 lc rgb '#1c8110' lt 1 lw 1 #
-set style line 41 lc rgb '#167b0d' lt 1 lw 1 #      .
-set style line 43 lc rgb '#11750a' lt 1 lw 1 #      .
-set style line 45 lc rgb '#0b6f06' lt 1 lw 1 # 		.
-set style line 47 lc rgb '#056903' lt 1 lw 1 # 		.
-set style line 49 lc rgb '#006400' lt 1 lw 3 # --- vede Oscuro
+set style line 3   lc rgb 'gray80' lt 1 lw 1 # --- Verde claro
+set style line 9   lc rgb 'gray70' lt 1 lw 1 #      .
+set style line 15   lc rgb 'gray60' lt 1 lw 1 #      .
+set style line 21  lc rgb 'gray50' lt 1 lw 1 #      .
+set style line 27  lc rgb 'gray40' lt 1 lw 1 #      .
+set style line 33  lc rgb 'gray30' lt 1 lw 1 #      .
+set style line 39  lc rgb 'gray20' lt 1 lw 1 #      .
+set style line 49  lc rgb '#black' lt 1 lw 2 # --- vede Oscuro
 
 
 #Estilos de los ejes 
@@ -136,9 +120,9 @@ set grid back ls 400
 # set label at -284,1020 "p" font ",8" rotate by 34 textcolor rgb "gray40" front
 # set label at -275,1090 "o" font ",8" rotate by 16 textcolor rgb "gray40" front
 
-set label at -500,180 "adsorbido" font ",8" textcolor rgb "gray40" front
-set label at -300,980 "libre" font ",8"  textcolor rgb "gray40" front
-set label at -175,1200 "+ciclos" font ",8"  textcolor rgb "gray40" front
+set label at -500,180 "adsorbido" font ",14" textcolor rgb "black" front
+set label at -300,980 "libre" font ",14"  textcolor rgb "black" front
+set label at -175,1200 "+ciclos" font ",14"  textcolor rgb "black" front
 
 #Para graficar todas
 # plot for [i=7:25:2] 'Ru10mM.txt' using i:(column(i+1)/0.0314) w lines ls i-4, \
@@ -146,12 +130,12 @@ set label at -175,1200 "+ciclos" font ",8"  textcolor rgb "gray40" front
 # 'Ru10mM.txt' u 5:($6/0.0314) with lines ls 1, \
 # 'Ru10mM.txt' u 53:($54/0.0314) with lines ls 49,  "flecha.txt" u 1:2 smooth bezier ls 100, "flecha.txt" u 3:4:($5*3):($6*3) w vectors arrowstyle 200 #"flecha.txt" with points
 
- plot for [i=7:19:2] 'Ru10mM.txt' using i:(column(i+1)/0.0314) w lines ls i*3-18, \
- 'Ru10mM.txt' u 21:($22/0.0314) with lines ls 49, \
- "flecha2.txt" u 1:2:3:4  w vectors arrowstyle 200, \
- "flecha2.txt" u 5:6:7:8  w vectors arrowstyle 200, \
- "flecha2.txt" u 9:10:11:12  w vectors arrowstyle 200, \
- "flecha2.txt" u 13:14:15:16  w vectors arrowstyle 200, \
+ plot for [i=7:19:2] 'Ru10mM.txt' using i:(column(i+1)/0.0314) w lines ls i*3-18 notitle, \
+ 'Ru10mM.txt' u 21:($22/0.0314) with lines ls 49 title "SF", \
+ "flecha2.txt" u 1:2:3:4  w vectors arrowstyle 200 notitle, \
+ "flecha2.txt" u 5:6:7:8  w vectors arrowstyle 200 notitle, \
+ "flecha2.txt" u 9:10:11:12  w vectors arrowstyle 200 notitle, \
+ "flecha2.txt" u 13:14:15:16  w vectors arrowstyle 200 notitle, \
 
 
 

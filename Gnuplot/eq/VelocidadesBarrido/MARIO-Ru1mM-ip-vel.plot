@@ -23,7 +23,7 @@ set style line 1 lc rgb 'black' pt 7 ps 1 lw 1#Circulos Negros
 set style line 2 lc rgb 'red' pt 7 ps 1  #Circulo
 set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo 
 set style line 4 lc rgb 'red' lt -1 pt -1
-set style line 100  lc rgbcolor 'red' lw 2
+set style line 100  lc rgbcolor 'red' lw 4
 set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Estilos de los ejes 

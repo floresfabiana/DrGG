@@ -7,7 +7,8 @@ set terminal tikz
 set output "Zr-ExclusionFcCN.tikz" 
 
 #Saco la leyenda
-	unset key
+set key top left Left reverse samplen 3 font ",14" textcolor rgb "black" at -100,280
+
 
 #Saco el Borde
 	unset border
@@ -34,10 +35,10 @@ red_100 = "#ff0000"
 	# set style line 5 lc rgbcolor red_100 pt 1 ps 2 lw 2
 	# set style line 6 lc rgbcolor 'red' lt -1 pt -1
 	set style line 1 lc rgb '#800000' lt 1 lw 2 #Marron
-	set style line 2 lc rgb '#ff0000' lt 1 lw 2 #ROjo
+	set style line 2 lc rgb 'black' lt 1 dashtype 2 lw 2.5 #Rojo
 	set style line 3 lc rgb '#ff4500' lt 1 lw 2 #Naranja
 	set style line 4 lc rgb '#ffa500' lt 1 lw 2 #Amarillo
-	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
+	set style line 5 lc rgb 'black' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
 	set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
 
@@ -97,5 +98,5 @@ red_100 = "#ff0000"
 
 #Ploteo todas las funciones que les digamos
 #Divido por 2.95 para llevarlo a 1mM de FeCN6
-plot "Exclusion_FeCN/Zr 2 FeCN 2.5mM.txt" using ($1):($2/0.0314) every ::1200::2400 with lines ls 5,\
-"Control_Au/FeCN 2.5mM.txt" using ($1):($2/0.0314/2.9) every ::1200::2400 with lines ls 2
+plot "Exclusion_FeCN/Zr 2 FeCN 2.5mM.txt" using ($1):($2/0.0314) every ::1200::2400 with lines ls 5 title "VacZSF",\
+"Control_Au/FeCN 2.5mM.txt" using ($1):($2/0.0314/2.9) every ::1200::2400 with lines ls 2 title "Au"

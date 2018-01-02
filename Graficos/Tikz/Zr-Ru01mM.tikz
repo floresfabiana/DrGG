@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% mar 23 may 2017 13:36:48 ART
+%% mar 02 ene 2018 16:43:55 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -11,7 +11,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,1.601)--(2.052,1.601);
-\node[gp node right] at (1.688,1.601) {$-150$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.688,1.601) {$-150$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -20,7 +20,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,2.731)--(2.052,2.731);
-\node[gp node right] at (1.688,2.731) {$-100$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.688,2.731) {$-100$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -29,7 +29,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,3.861)--(2.052,3.861);
-\node[gp node right] at (1.688,3.861) {$-50$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.688,3.861) {$-50$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -38,7 +38,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,4.991)--(2.052,4.991);
-\node[gp node right] at (1.688,4.991) {$0$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.688,4.991) {$0$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -47,7 +47,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,6.121)--(2.052,6.121);
-\node[gp node right] at (1.688,6.121) {$50$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.688,6.121) {$50$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -56,7 +56,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,7.251)--(2.052,7.251);
-\node[gp node right] at (1.688,7.251) {$100$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.688,7.251) {$100$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -65,7 +65,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,8.381)--(2.052,8.381);
-\node[gp node right] at (1.688,8.381) {$150$};
+\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.688,8.381) {$150$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -74,7 +74,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,1.601)--(1.872,1.781);
-\node[gp node center] at (1.872,1.293) {$-500$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.872,1.201) {$-500$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -83,7 +83,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (3.887,1.601)--(3.887,1.781);
-\node[gp node center] at (3.887,1.293) {$-400$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (3.887,1.201) {$-400$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -92,7 +92,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (5.902,1.601)--(5.902,1.781);
-\node[gp node center] at (5.902,1.293) {$-300$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (5.902,1.201) {$-300$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -101,7 +101,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (7.917,1.601)--(7.917,1.781);
-\node[gp node center] at (7.917,1.293) {$-200$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.917,1.201) {$-200$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -110,7 +110,7 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (9.932,1.601)--(9.932,1.781);
-\node[gp node center] at (9.932,1.293) {$-100$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (9.932,1.201) {$-100$};
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
@@ -119,11 +119,11 @@
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
-\node[gp node center] at (11.947,1.293) {$0$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (11.947,1.201) {$0$};
 \draw[gp path] (1.872,8.381)--(1.872,1.601)--(11.947,1.601);
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\text{Potencial\; vs\; ESC/mV}$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\node[gp node center,rotate=-270,font={\fontsize{18pt}{21.6pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
+\node[gp node center,font={\fontsize{18pt}{21.6pt}\selectfont}] at (6.909,0.215) {$\text{Potencial\; vs\; ESC/mV}$};
+\gpcolor{rgb color={0.800,0.800,0.800}}
 \gpsetlinewidth{0.50}
 \draw[gp path] (1.872,4.210)--(1.892,4.214)--(1.932,4.221)--(1.972,4.228)--(2.013,4.235)%
   --(2.053,4.242)--(2.093,4.257)--(2.133,4.264)--(2.173,4.273)--(2.213,4.281)--(2.254,4.285)%
@@ -4616,7 +4616,7 @@
   --(5.259,2.552)--(5.159,2.542)--(5.058,2.547)--(4.957,2.549)--(4.857,2.566)--(4.757,2.600)%
   --(4.656,2.632)--(4.554,2.665)--(4.453,2.721)--(4.353,2.770)--(4.253,2.822)--(4.152,2.871)%
   --(4.052,2.934);
-\gpcolor{rgb color={0.000,0.000,1.000}}
+\gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{2.50}
 \draw[gp path] (1.872,4.573)--(1.893,4.578)--(1.913,4.583)--(1.933,4.588)--(1.953,4.591)%
   --(1.973,4.591)--(1.993,4.590)--(2.013,4.593)--(2.033,4.594)--(2.054,4.597)--(2.074,4.601)%
@@ -4803,7 +4803,7 @@
   --(3.542,4.834)--(3.562,4.840)--(3.582,4.842)--(3.602,4.854)--(3.623,4.861)--(3.643,4.867)%
   --(3.663,4.873)--(3.683,4.876)--(3.703,4.881)--(3.723,4.888)--(3.743,4.895)--(3.764,4.902)%
   --(3.783,4.907)--(3.804,4.915)--(3.824,4.923);
-\gpcolor{rgb color={1.000,0.000,0.000}}
+\gpsetdashtype{gp dt 2}
 \draw[gp path] (1.872,4.162)--(1.877,4.163)--(1.918,4.165)--(1.958,4.171)--(1.998,4.176)%
   --(2.038,4.180)--(2.079,4.186)--(2.119,4.191)--(2.159,4.194)--(2.199,4.198)--(2.240,4.203)%
   --(2.280,4.208)--(2.321,4.211)--(2.361,4.214)--(2.400,4.216)--(2.440,4.221)--(2.481,4.226)%

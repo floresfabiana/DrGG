@@ -9,8 +9,8 @@ set terminal tikz
 set output "Zr-numero-de-ciclo-1mM.tikz" 
 
 #Saco la leyenda
-	set key top right Left reverse sample -2 font ",10" textcolor rgb "gray40" 
-	#unset key
+	#set key top right Left reverse sample -2 font ",10" textcolor rgb "gray40" 
+	unset key
 
 #Saco el Borde
 	unset border
@@ -24,24 +24,25 @@ set output "Zr-numero-de-ciclo-1mM.tikz"
 
 #Defino estilos para cada tipo de linea
 set style line 1 lc rgb 'black' pt 7 ps 0.3 lw 1#Cuadrado
-set style line 2 lc rgb 'red' pt 7 ps 1  #Circulo
+set style line 2 lc rgb 'red' pt 7 ps 1 lw 2 #Circulo
 set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo 
 set style line 4 lc rgb 'red' lt -1 pt -1
 
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
-set tics nomirror
+set tics nomirror font ",14"
 
 #Estilo de la grilla
 set style line 11 lc rgb 'gray40' lt 0 lw 1 
 set grid front ls 11
 
 set ytics 0.5
+set xtics offset 0,-0.3
 
 #Coloca los nombre de los ejes
-	set xlabel "N\'umero de ciclos"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{i}_p/\\text{i}_p^{\\text{Au}}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "N\'umero de ciclos"  font ",16" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{i}_p/\\text{i}_p^{\\text{Au}}$"	font ",16" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 

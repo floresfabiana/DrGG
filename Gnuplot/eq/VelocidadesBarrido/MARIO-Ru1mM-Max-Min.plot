@@ -10,7 +10,7 @@ set output "MARIO-Ru1mM-Max-Min.tikz"
 set datafile sep','
 
 #Saco la leyenda
-	set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+	set key top left Left reverse samplen -1 font ",14" textcolor rgb "gray40"
 #Saco el Borde
 	unset border
 
@@ -19,7 +19,7 @@ set datafile sep','
 
 #Defino estilos para cada tipo de linea
 set style line 1 lc rgb 'black' pt 7 ps 1 lw 1#Cuadrado
-set style line 2 lc rgb 'red' pt 7 ps 1  #Circulo
+set style line 2 lc rgb 'red' pt 9 ps 1.5  #Circulo
 set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo 
 set style line 4 lt 0 lc rgb 'black'  lw 3
 

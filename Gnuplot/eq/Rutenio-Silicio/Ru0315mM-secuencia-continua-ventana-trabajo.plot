@@ -17,7 +17,7 @@ set output "Ru0315mM-secuencia-continua-ventana-trabajo.tikz"
 
 # #Rectangulo, ventana de trabajo
  set style rect fc lt -1 fs solid 0.15 noborder
- set obj rect from 30, graph 0 to 50, graph 1
+ set obj rect from 35, graph 0 to 45, graph 1
  set label at 10,9 "I" font ",14" textcolor rgb "black" front
  set label at 35,9 "II" font ",14" textcolor rgb "black" front
  set label at 110,9 "III" font ",14" textcolor rgb "black" front
@@ -32,19 +32,20 @@ set style line 4 lc rgb 'red' lt -1 pt -1
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
-set tics nomirror
+set tics nomirror  font ",14"
 
 #Estilo de la grilla
 set style line 11 lc rgb 'gray40' lt 0 lw 1 
 set grid front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "N\'umero de ciclos"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{i}_p/\\text{i}_p^{\\text{Au}}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "N\'umero de ciclos"  font ",16" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{i}_p/\\text{i}_p^{\\text{Au}}$"	font ",16" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
 	set xrange [0:160]
+	set xtics offset 0,-0.3
 	set yrange [0:]
 
 #EL valor 4.01 corresponde al pico maximo en la oxidación.

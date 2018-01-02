@@ -7,7 +7,7 @@ set terminal tikz gparrows tikzarrows
 set output "FcOH-Simulacion-K0DFcOH.tikz" 
 
 #Saco la leyenda
-set key top right Left at 500,480 reverse sample 2 font ",10" textcolor rgb "gray40" 
+set key top right Left at 525,480 reverse sample 2 font ",14" textcolor rgb "black" 
 
 #Saco el Borde
 	unset border
@@ -15,11 +15,11 @@ set key top right Left at 500,480 reverse sample 2 font ",10" textcolor rgb "gra
 #Saco las marcas
   	unset tics
 #Defino estilos paset style line 2ra cada tipo de linea
-	set style line 1 lc rgb '#E5BC00' pt 1 ps 2 lw 2
+	set style line 5 lc rgb '#E5BC00' pt 1 ps 2 lw 2
 	set style line 2 lc rgb '#DE9C05' pt 1 ps 2 lw 2
 	set style line 3 lc rgb '#D87D0B' pt 1 ps 2 lw 2
 	set style line 4 lc rgb '#D25E10' pt 1 ps 2 lw 2
-	set style line 5 lc rgb '#CB3E16' pt 1 ps 2 lw 2
+	set style line 1 lc rgb '#CB3E16' pt 1 ps 2 lw 2
 	set style line 6 lc rgb '#C51F1B' pt 1 ps 2 lw 2
 	set style line 7 lc rgb '#BF0012' pt 1 ps 2 lw 2
 	set style increment user
@@ -34,7 +34,7 @@ set key top right Left at 500,480 reverse sample 2 font ",10" textcolor rgb "gra
 	set grid back ls 11
 
 #Estilo de las flechas
-	set style line 100  lc rgbcolor 'gray40' lw 1.5
+	set style line 100  lc rgbcolor 'black' lw 1.5
 	set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
@@ -54,8 +54,8 @@ set key top right Left at 500,480 reverse sample 2 font ",10" textcolor rgb "gra
 #"fc-10mM-F127-AuCNEA-Calcinado/2-FeOH-1mM-50.DTA" u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader,\
 
 #Leyenda
-	  set label 100 sprintf("ARu adsorbido") at -200,-490 font ",8" textcolor rgb "black" 
-	  set label 101 sprintf("permeación FcOH") at 200,-230 font ",8" textcolor rgb "black"
+	  set label 100 sprintf("ARu adsorbido") at -200,-490 font ",12" textcolor rgb "black" 
+	  set label 101 sprintf("permeación FcOH") at 200,-230 font ",12" textcolor rgb "black"
 
 
 #Ploteo todas las funciones que les digamos

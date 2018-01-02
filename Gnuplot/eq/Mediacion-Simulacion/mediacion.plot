@@ -7,16 +7,18 @@ set terminal tikz
 set output "mediacion.tikz" 
 
 #Saco la leyenda
-	unset key
+set key top left Left reverse samplen 3  font ",14" textcolor rgb "black" at -600,580 
+
 
 #Saco el Borde
 	unset border
 
 #Saco las marcas
   	unset tics
-set style line 1 lc rgb '#006400' lt 1 lw 1.5 #Verde
-set style line 2 lc rgb 'red' lt 1 lw 1.5 #ROjo
-set style line 3 lc rgb 'blue' lt 1 lw 1.5 #Azul
+set style line 1 lc rgb 'black' lt 1 lw 1.5 #Verde
+set style line 2 lc rgb 'black' lt 1 dashtype 2 lw 1.5
+#set style line 2 lc rgb 'red' lt 1 lw 1.5 #ROjo
+set style line 3 lc rgb 'gray50' lt 1 lw 1.5 #Azul
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
@@ -37,6 +39,6 @@ set style line 3 lc rgb 'blue' lt 1 lw 1.5 #Azul
 	#set yrange [10:60]
 
 #Para graficar todas
-plot 'MediacionFC-1.txt' using 1:($2/0.0314*0.80) w lines ls 2, \
-'MediacionFC-2.txt' using 1:($2/0.0314) w lines ls 3, \
-'MediacionFC-4.txt' using 1:($2/0.0314) w lines ls 1, \
+plot 'MediacionFC-2.txt' using 1:($2/0.0314) w lines ls 3 title "SF sin ARu", \
+'MediacionFC-4.txt' using 1:($2/0.0314) w lines ls 1 title "SF con ARu", \
+'MediacionFC-1.txt' using 1:($2/0.0314*0.80) w lines ls 2 title "Au", \

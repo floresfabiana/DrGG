@@ -26,12 +26,12 @@ set output "Comparacion-CICLOS-Ru1mM-cal-vac-Zr.tikz"
 set style line 1 lc rgb 'black' pt 7 ps 0.5 lw 1#Cuadrado
 set style line 2 lc rgb 'olive' pt 7 ps 0.5  #Circulo
 set style line 3 lc rgb 'blue' lw 2 pt 7 ps 0.5 #Triangulo 
-set style line 4 lc rgb 'red' pt 7 ps 1  #Circulo
+set style line 4 lc rgb 'red' pt 7 ps 1 lw 2 #Circulo
 
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
-set tics nomirror
+set tics nomirror font ",14"
 
 #Estilo de la grilla
 set style line 11 lc rgb 'gray40' lt 0 lw 1 
@@ -40,15 +40,15 @@ set grid front ls 11
 set ytics 0.5
 
 #Coloca los nombre de los ejes
-	set xlabel "N\'umero de ciclos"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{i}_p/\\text{i}_p^{\\text{Au}}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "N\'umero de ciclos"  font ",16" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{i}_p/\\text{i}_p^{\\text{Au}}$"	font ",16" textcolor rgb "gray40" offset -2,0
 
 
 #Fuerza a establecer un rango
 	 
 	#set xrange [0:400]
 	set yrange [0:2.5]
-
+	set xtics offset 0,-0.3
 
 #Para graficar todas
 	f(X)=1
@@ -60,9 +60,9 @@ set ytics 0.5
   #      } 
   #      set print
 #Leyenda
-   set label at 100,1.8 "CalSF"  font ",8" front textcolor rgb "olive" 
-   set label at 100,1.3 "VacSF"  font ",8" front textcolor rgb "blue"
-   set label at 100,2.15 "VacZSF"  font ",8" front textcolor rgb "black"
+   set label at 95,1.8 "CalSF"  font ",12" front textcolor rgb "olive" 
+   set label at 95,1.3 "VacSF"  font ",12" front textcolor rgb "blue"
+   set label at 95,2.15 "VacSZF"  font ",12" front textcolor rgb "black"
    
 
 #plot for [i=1:90:2] "Ru 1mM  en Zr 13x45 Rango Corto  (20_04_2017-16_44_14)/primero.txt" using i:(column(i+1)/0.0314) w l ls 2,\

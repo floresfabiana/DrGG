@@ -34,10 +34,9 @@ red_100 = "#ff0000"
 	# set style line 4 lc rgbcolor red_075 pt 1 ps 2 lw 2
 	# set style line 5 lc rgbcolor red_100 pt 1 ps 2 lw 2
 	# set style line 6 lc rgbcolor 'red' lt -1 pt -1
-	set style line 1 lc rgb 'gray70' lt 1 lw 0.5 #Marron
-	set style line 2 lc rgb 'red' lt 1 lw 2.5 #ROjo
-	set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
-
+set style line 1 lc rgb 'gray80' lt 1 lw 0.5 #Marron
+set style line 2 lc rgb 'black' lt 1 dashtype 2 lw 2.5
+set style line 3 lc rgb 'black' lt 1 lw 2.5 #Azul
 #Flecha
 set style line 100  lc rgbcolor 'black' lw 1.5
 set style arrow 200 head filled size screen 0.02,10 ls 100

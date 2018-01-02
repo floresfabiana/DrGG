@@ -16,7 +16,7 @@ set output "ACV-1-2Hz.tikz"
   	unset tics
 set style line 1 lc rgb 'gray70' lt 1 lw 0.5 #Marron
 set style line 2 lc rgb 'red' lt 1 lw 1 #ROjo
-set style line 3 lc rgb 'blue' lt 1 lw 1 #Azul
+set style line 3 lc rgb 'black' lt 1 lw 1 #Azul
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 

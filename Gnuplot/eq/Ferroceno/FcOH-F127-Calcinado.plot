@@ -3,7 +3,7 @@
 #set terminal X11
 
 #Para exportar como latex
-set terminal tikz
+set terminal tikz gparrows tikzarrows
 set output "FcOH-F127-Calcinado.tikz" 
 
 #Para hacer los inset
@@ -36,6 +36,9 @@ set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray40" at
 	set style line 11 lc rgb 'gray40' lt 0 lw 1 
 	set grid back ls 11
 
+#Flecha
+set style line 100  lc rgbcolor 'black' lw 1.5
+set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
 	#set ytics 10 
@@ -56,28 +59,32 @@ set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray40" at
 #Ploteo todas las funciones que les digamos
 FILES = system("ls -1 fc-1mM-F127-AuCNEA-Calcinado/*.txt")
 
-plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader
+plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with lines title columnheader,\
+"flechaFcOH.txt" u 1:2:3:4  w vectors arrowstyle 200 notitle,\
+ "flechaFcOH.txt" u 5:6:7:8  w vectors arrowstyle 200 notitle
 
-# Now we set the options for the smaller plot
-  set size 0.4,0.4
-  set origin 0.12,0.58
-  set object 1 rectangle from graph 0,0 to graph 1,1 behind fc rgb "white"
-  #set object 1 rectangle from screen 0.2,0.6 to screen 0.5,0.9 fillcolor rgb "green"
-  set xrange [-200:400]
-  #set xtics 100
-  set yrange [-150:150]
-  set border 15
-  unset grid
-  set xlabel ""
-  set xtics font ", 6"
-  set ytics font ", 6"
-  set ylabel ""
-  set xtics 200
-  set ytics 150
-  unset label
-  unset arrow
-  unset key
-  #set label "\\tiny{LO}$_3$" at 1280,0.55 font ",8" textcolor rgb "gray40"
-  #set label "\\tiny{LO}$_4$" at 1210,0.525 font ",8" textcolor rgb "gray40"
-  plot "fc-1mM-F127-AuCNEA-Calcinado/1-FeOH-1mM-20.DTA.txt" using ($3*1000):($4/0.0314*1e6) every ::1::655 with lines ls 1
-unset multiplot
+
+ # Now we set the options for the smaller plot
+   set size 0.4,0.4
+   set origin 0.12,0.58
+   set object 1 rectangle from graph 0,0 to graph 1,1 behind fc rgb "white"
+   #set object 1 rectangle from screen 0.2,0.6 to screen 0.5,0.9 fillcolor rgb "green"
+   set xrange [-200:400]
+   #set xtics 100
+   set yrange [-150:150]
+   set border 15
+   unset grid
+   set xlabel ""
+   set xtics font ", 6"
+   set ytics font ", 6"
+   set ylabel ""
+   set xtics 200
+   set ytics 150
+   unset label
+   unset arrow
+   unset key
+   #set label "\\tiny{LO}$_3$" at 1280,0.55 font ",8" textcolor rgb "gray40"
+   #set label "\\tiny{LO}$_4$" at 1210,0.525 font ",8" textcolor rgb "gray40"
+   plot "fc-1mM-F127-AuCNEA-Calcinado/1-FeOH-1mM-20.DTA.txt" using ($3*1000):($4/0.0314*1e6) every ::1::655 with lines ls 1,\
+
+ unset multiplot

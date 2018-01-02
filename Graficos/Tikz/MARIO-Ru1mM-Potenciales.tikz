@@ -1,14 +1,14 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Sat May 20 09:22:36 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% mar 02 ene 2018 17:25:49 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.872,8.381)--(1.872,1.601)--(11.947,1.601);
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {E$^{p}$-E$^{o}_{ads}$};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\nu$ / mV.s$^{-1}$};
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {E$^{p}$-E$^{o}_{ads}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\nu$ / mV.s$^{-1}$};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{1.00}
 \gpsetpointsize{4.00}
@@ -73,7 +73,7 @@
 %
   \gpfill{rgb color={1.000,0.000,0.000}} (3.944,4.859)--(3.987,4.859)--(3.944,4.614)--(3.901,4.859)--cycle;
 \gpcolor{rgb color={1.000,0.000,0.000}}
-\gpsetlinewidth{2.00}
+\gpsetlinewidth{4.00}
 \draw[gp path] (3.944,4.859)--(3.987,4.859)--(3.944,4.614)--(3.901,4.859)--cycle;
 \draw[gp path] (3.944,5.368)--(3.944,4.859);
 %

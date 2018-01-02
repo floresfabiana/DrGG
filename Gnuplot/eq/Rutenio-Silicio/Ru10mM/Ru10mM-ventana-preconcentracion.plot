@@ -16,9 +16,9 @@ set output "Ru10mM-ventana-preconcentracion.tikz"
   	unset tics
 # #Rectangulo, ventana de trabajo
  set style rect fc lt -1 fs solid 0.15 noborder
- set obj rect from 30, graph 0 to 80, graph 1
+ set obj rect from 35, graph 0 to 55, graph 1
  set label at 10,1.1 "I" font ",14" textcolor rgb "black" front
- set label at 50,1.1 "II" font ",14" textcolor rgb "black" front
+ set label at 41,1.1 "II" font ",14" textcolor rgb "black" front
  set label at 125,1.1 "III" font ",14" textcolor rgb "black" front
 
 
@@ -31,7 +31,7 @@ set style line 4 lc rgb 'red' lt -1 pt -1
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
-set tics nomirror
+set tics nomirror font ",14"
 
 #Estilo de la grilla
 set style line 11 lc rgb 'gray40' lt 0 lw 1 
@@ -53,6 +53,7 @@ set grid front ls 11
 #Fuerza a establecer un rango
 	 
 	set xrange [0:140]
+	set xtics offset 0,-0.3
 #	set yrange [-1000:1000]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores

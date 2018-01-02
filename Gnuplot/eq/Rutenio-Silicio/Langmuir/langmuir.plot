@@ -7,7 +7,8 @@ set terminal tikz
 set output "langmuir.tikz"
 
 #Saco la leyenda
-	unset key
+	set key bottom right Left reverse samplen -1 font ",14" textcolor rgb "gray40" 
+
 
 #Saco el Borde
 	unset border
@@ -28,7 +29,7 @@ red_100 = "#ff0000"
 
 #Defino estilos para cada tipo de linea
 set style line 1 lc rgb 'black' pt 7 ps 1 lw 1#Cuadrado
-set style line 2 lc rgb 'red' pt 7 ps 1  #Circulo
+set style line 2 lc rgb 'red' pt 9 ps 1.5  #Circulo
 set style line 3 lc rgb 'black' pt 7 ps 9 #Triangulo 
 set style line 4 lc rgb 'red' lt -1 pt -1
 
@@ -94,6 +95,6 @@ set grid back ls 11
 
 #Ploteo todas las funciones que les digamos
 
-plot "langmuir.txt" using ($1):($2) with points ls 1,f(x) with lines ls 3, \
-"langmuir.txt" using ($1):($3) with points ls 2,g(x) with lines ls 4
+plot "langmuir.txt" using ($1):($2) with points ls 1  title "Corriente \'anodica" ,f(x) with lines ls 3 notitle, \
+"langmuir.txt" using ($1):($3) with points ls 2 title "Corriente cat\'odica",g(x) with lines ls 4 notitle
 #"Calibracion_Fc.txt" using ($1):($3) with  points ls 1, f(x) with lines ls 4, g(x) with lines ls 4
