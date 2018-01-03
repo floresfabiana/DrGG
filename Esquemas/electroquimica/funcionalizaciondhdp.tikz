@@ -1,0 +1,63 @@
+
+\begin{tikzpicture}
+
+%El mesoporoso
+\node at (4.7,0.93) {
+\begin{tikzpicture}
+\node (A) at (-3.7,-2) {};
+\node (B) at (-3.7,2) {};
+\node (C) at (-1.3,2) {};
+\node (D) at (-1.3,-2) {};
+\begin{scope}[on background layer]
+    \draw[draw=none,fill=gray!60,path fading=east] (A.center) -- (B.center) -- (C.center) to [bend left=-30] (D.center) -- (A.center);
+    \end{scope}
+
+\end{tikzpicture}
+};
+
+%Estructura del meso
+\node at (4.55,0.93) {
+	\chemfig[scale=0.6][scale=0.6]{Si(-[:340]O|^{-})(-[:50]O|^{-})(-[:220]O(-[:180,1pt,,,,,dash pattern=on 2pt off 1pt]))(-[:140]O(-[:70]					 Si(-[:0]O|^{-})(-[:180]O(-[:180,0.4pt,,,,,dash pattern=on 2pt off 1pt]))(-[:100]O(-[:60]
+								   Zr(-[:320]O|^{-})(-[:30,1.3pt]O|^{-})(-[:130]O(-[:180,1.05pt,,,,,dash pattern=on 2pt off 1pt])	
+	)))))
+	}
+};
+
+\node at (5.8,0.93) {
++
+};
+
+\node at (7.3,0.93) {
+\includegraphics[scale=0.6]{dhdp.pdf}
+};
+
+\node at (9.5,0.93) {
+\begin{tikzpicture}
+\draw[->,>=stealth] (0,0) -- (1,0);
+\end{tikzpicture}
+};
+
+%El mesoporoso
+\node at (11.5,0.93) {
+\begin{tikzpicture}
+\node (A) at (-3.7,-2) {};
+\node (B) at (-3.7,2) {};
+\node (C) at (-1.3,2) {};
+\node (D) at (-1.3,-2) {};
+\begin{scope}[on background layer]
+    \draw[draw=none,fill=gray!60,path fading=east] (A.center) -- (B.center) -- (C.center) to [bend left=-30] (D.center) -- (A.center);
+    \end{scope}
+
+\end{tikzpicture}
+};
+	
+%Estructura del meso
+\node at (16,0.93) {
+	\chemfig[scale=0.6][scale=0.6]{Si(-[:340]O|^{-})(-[:50]O|^{-})(-[:220]O(-[:180,1pt,,,,,dash pattern=on 2pt off 1pt]))(-[:140]O(-[:70]Si(-[:0]O)(-[:180]O(-[:180,0.4pt,,,,,dash pattern=on 2pt off 1pt]))(-[:100]O(-[:60]Zr(-[:350,1.05pt,,,,,dash pattern=on 2pt off 1pt]O(=[:310]P
+	(-[:45]O-[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30] -[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30])
+	(-[:-45]O-[:-30]-[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30] -[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30]-[:30]-[:-30]-[:30])
+	(-[:225,1.1pt])))(-[:60,1.3pt]O|^{-})(-[:130]O(-[:180,1.05pt,,,,,dash pattern=on 2pt off 1pt]))))))
+	}
+};
+
+\end{tikzpicture}
