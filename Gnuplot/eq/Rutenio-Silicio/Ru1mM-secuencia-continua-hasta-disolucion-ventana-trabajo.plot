@@ -17,9 +17,9 @@ set output "Ru1mM-secuencia-continua-hasta-disolucion-ventana-trabajo.tikz"
 
 # #Rectangulo, ventana de trabajo
  set style rect fc lt -1 fs solid 0.15 noborder
- set obj rect from 60, graph 0 to 75, graph 1
+ set obj rect from 60, graph 0 to 70, graph 1
  set label at 20,1.5 "I" font ",14" textcolor rgb "black" front
- set label at 62.5,1.5 "II" font ",14" textcolor rgb "black" front
+ set label at 60,1.5 "II" font ",14" textcolor rgb "black" front
  set label at 140,1.5 "III" font ",14" textcolor rgb "black" front
 
 #Defino estilos para cada tipo de linea

@@ -124,8 +124,8 @@
           \fill [black, fill opacity = 1/50] (0,0) -- (\r+\s-\i:2 and 2/3) arc (\r+\s-\i:\r-\s+\i:2 and 2/3)  -- cycle;
 
 %Haces de luz
-\fill[red,path fading=east] (centro.center) -- (luz-fuente1.center) -- (luz-fuente2.center) -- cycle;
-\fill[red,path fading=west] (centro.center) -- (luz-detector1.center) -- (luz-detector2.center) -- cycle;
+\shade[right color=white,left color=red,draw=none] (centro.center) -- (luz-fuente1.center) -- (luz-fuente2.center) -- cycle;
+\shade[right color=red,left color=white,draw=none] (centro.center) -- (luz-detector1.center) -- (luz-detector2.center) -- cycle;
 
 %Detector y fuente
 \draw [line width=0.2cm, red ] (luz-fuente1.east) -- (luz-fuente2.east);

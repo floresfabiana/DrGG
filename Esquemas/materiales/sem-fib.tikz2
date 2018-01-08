@@ -19,13 +19,13 @@
  
    \node[xshift=0.3cm,yshift=0.95cm] (muestra) {
       \begin{tikzpicture}[rotate=52]
-      \shade[draw=none, fill=gray,path fading=south] (-1.5,0) -- (0,0) -- (0,-0.22) -- ++(0:0.6cm) -- ++(90:0.219) -- (1.5,0) -- (1.5,-1) -- (-1.5,-1) -- cycle;% sample
+      \shade[draw=none,top color=gray,bottom color=white] (-1.5,0) -- (0,0) -- (0,-0.22) -- ++(0:0.6cm) -- ++(90:0.219) -- (1.5,0) -- (1.5,-1) -- (-1.5,-1) -- cycle;% sample
       \end{tikzpicture}
    };
 
    \node[yshift=2.3cm,xshift=-0.65cm] (haces)  {
      \begin{tikzpicture}
-     \fill[color=green, path fading=north,fading transform={rotate=52}]
+     \fill[color=green, top color=green,fading transform={rotate=52}]
     (2.5,0) ++(135:2) ++(225:0.3) -- ++(45:0.6) -- (2.5,0) -- cycle;%FIB
      \shade[inner color=blue, top color=blue] (2.2,2.2) -- ++(0.6,0) -- ++(-0.3,-2.2) -- cycle;%SEm
      \end{tikzpicture}
@@ -45,14 +45,14 @@
 
     \node (electrones)[xshift=-0.4cm,yshift=1.3cm] {
       \begin{tikzpicture}[rotate=150]
-        \draw[draw=none,fill,black, path fading=north,fading transform={rotate=52}] (0,0) circle (0.05);
-        \draw[draw=none,fill,black, path fading=north,fading transform={rotate=52}] (0.3,0.12) circle (0.05);
-        \draw[draw=none,fill,black, path fading=north,fading transform={rotate=52}] (0.25,0.2) circle (0.05);
-        \draw[draw=none,fill,black, path fading=north,fading transform={rotate=52}] (0.27,0.32) circle (0.05);
-        \draw[draw=none,fill,black, path fading=north,fading transform={rotate=52}] (0.15,0.15) circle (0.05);
-        \draw[draw=none,fill,black, path fading=north,fading transform={rotate=52}] (0.18,0.05) circle (0.05);
-        \draw[draw=none,fill,black, path fading=north,fading transform={rotate=52}] (0.5,0.08) circle (0.05);
-        \draw[draw=none,fill,black, path fading=north,fading transform={rotate=52}] (0.45,0.23) circle (0.05);
+        \draw[draw=none,left color=black] (0,0) circle (0.05);
+        \draw[draw=none,left color=black] (0.3,0.12) circle (0.05);
+        \draw[draw=none,left color=black] (0.25,0.2) circle (0.05);
+        \draw[draw=none,left color=black] (0.27,0.32) circle (0.05);
+        \draw[draw=none,left color=black] (0.15,0.15) circle (0.05);
+        \draw[draw=none,left color=black] (0.18,0.05) circle (0.05);
+        \draw[draw=none,left color=black] (0.5,0.08) circle (0.05);
+        \draw[draw=none,left color=black] (0.45,0.23) circle (0.05);
        \end{tikzpicture}
     };   
 

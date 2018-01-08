@@ -28,7 +28,7 @@
 %Superficie de Silciio
 \node at (0,0.5)[on background layer] {
 	\begin{tikzpicture}
-	\fill[darkgray,path fading=south] rectangle (7.3,1);
+	\fill[draw=none,top color=darkgray] rectangle (7.3,1);
 	\end{tikzpicture}
 	};
 
