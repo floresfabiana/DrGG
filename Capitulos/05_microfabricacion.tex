@@ -20,7 +20,7 @@
  \thispagestyle{empty}
 	
  %Resumen del Capitulo en Italica
- \noindent\textit{En este capitulo se describen los resultados obtenidos durante en la fabricación de electrodos cubiertos con películas delgadas mesoporosas de sílice. Se analizan los diseños utilizados, los materiales empleados, las técnicas aplicadas y las caracterizaciones llevadas a cabo. Principalmente se evaluó el desempeño electroquímico de los electrodos por un lado, y la compatibilidad con las síntesis sol-gel por otro, de forma de compatibilizar los procesos \textit{top-down }con los \textit{bottom-up.}}\index{bottom-up@\textit{bottom-up}}\index{top-down@\textit{top-down}}
+ \noindent\textit{En este capítulo se describen los resultados obtenidos durante en la fabricación de electrodos recubiertos con películas delgadas mesoporosas de SiO$_2$ o Si$_x$Zr$_{1-x}$O$_2$. Se analizan los diseños utilizados, los materiales empleados, las técnicas aplicadas y las caracterizaciones llevadas a cabo. Principalmente se evaluó el desempeño electroquímico de los electrodos por un lado, y la compatibilidad con las síntesis sol-gel por otro, de forma de compatibilizar los procesos \textit{top-down }con los \textit{bottom-up.}\index{bottom-up@\textit{bottom-up}}\index{top-down@\textit{top-down}}. Por último se presentan los resultados EQ  para sondas modelos (\fe, \ru\space y \fc)obtenidos con un prototipo de sensor compuestos por electrodos recubiertos con distintas películas.}
  
  
  %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
@@ -31,18 +31,18 @@
 
 \section{Introducción}
 	
-	El diseño y desarrollo de un multisensor electroquímico selectivo, integrado y escalable basado en \pdm\space consta de dos bloques constructivos fundamentales, las películas delgadas mesoporosas y los electrodos. En el capítulo \ref{chap:Mesoporosos}, se discutió y analizó la elección de los materiales para conformar la película delgada mesoporososa con la cual se recubren los electrodos. En el capítulo \ref{chap:Electroquimica} se realizó un estudio profundo sobre sus propiedades de transporte, la capacidad de preconcentrar, excluir, estabilidad química, etc.
+	El diseño y desarrollo de un multisensor electroquímico selectivo, integrado y escalable basado en \pdm\space consta de dos bloques constructivos fundamentales: las películas delgadas mesoporosas y los electrodos. En el capítulo \ref{chap:Mesoporosos}, se discutió y analizó la elección de los materiales para conformar la película delgada mesoporososa con la cual se recubren los electrodos. En el capítulo \ref{chap:Electroquimica} se realizó un estudio profundo las propiedades de transporte, la capacidad de preconcentrar, excluir y estabilidad química de dichos recubrimientos sobre películas delgadas de Au.
 
-	La integración de los procesos \textit{bottom-up}, propios de procesos de síntesis químicas, y \textit{top-down}, aquellos usados en microfabricación, no siempre es trivial. El sólo hecho de depositar soles con precursores de óxidos sobre oro, que resulten en películas delgadas homogéneas, bien adheridas sin grietas ni fisuras, ya es un desafío. El objetivo, luego de desarrollar los métodos a bajas temperaturas para la síntesis de \pdm, de optimizar y estudiar su estructura y de comprender los procesos de transporte a través de las películas, es poder depositarlos sobre estructuras de oro con un diseño optimizado para usarlo como sensor. 
+	La integración de los procesos \textit{bottom-up}, propios de procesos de síntesis químicas, y \textit{top-down}, aquellos usados en microfabricación, nunca es trivial. El sólo hecho de depositar soles con precursores de óxidos sobre oro, que resulten en películas delgadas homogéneas, bien adheridas sin grietas ni fisuras, ya es un desafío, como se vió en el capítulo \ref{chap:Mesoporosos}. El objetivo, luego de desarrollar los métodos a bajas temperaturas para la síntesis de \pdm, de optimizar y estudiar su estructura y de comprender los procesos de transporte a través de las películas, es poder depositarlos sobre estructuras de oro con un diseño optimizado para usarlo como sensor. 
 
-	El depósito de soles sobre una superficie que tenga dos o más capas de distintos  materiales trae asociadas dificultades inherentes a las propiedades físicas y químicas de cada uno de ellas. Pueden diferir en el coeficiente de expansión térmica, en suquímica superficial, en su afinidad por el H$_2$O o solventes, etc.
-	Es por ello que el diseño debe considerar los materiales que se usarán y sus propiedades, así como racionalizar la estructura de los electrodos considerando resistencia eléctrica, espesor de los electrodos y facilidad para la fabricación. También es fundamental tener en cuenta una serie de factores a la hora de mandar a imprimir las máscaras para los sensores. Principalmente la resolución de línea que se puede obtener según el tipo de máscara, cantidad de electrodos de trabajo por sensor, calcular el área óptima para obtener señales aceptables, estimar resistencias, distancias entre electrodos y demás parámetros.
+	El depósito de soles sobre una superficie que tenga dos o más capas de distintos  materiales trae asociadas dificultades inherentes a las propiedades físicas y químicas de cada uno de ellas. Pueden diferir en el coeficiente de expansión térmica, en la química superficial, en la afinidad por el H$_2$O o solventes, etc.
+	Es por ello que el diseño debe considerar los materiales que se usarán y sus propiedades, así como racionalizar la estructura de los electrodos considerando resistencia eléctrica, espesor de los electrodos y facilidad para la fabricación. También es fundamental tener en cuenta una serie de factores a la hora de imprimir las máscaras para los sensores. Principalmente la resolución de línea que se puede obtener según el tipo de máscara, cantidad de electrodos de trabajo por sensor, calcular el área óptima para obtener señales aceptables, estimar resistencias, distancias entre electrodos y demás parámetros.
 
-	El material para los electrodos también se debe elegir cuidadosamente. Se trata de un compromiso entre tres factores; las dificultades para compatibilizar con óxido de las películas mesoporosas; obtener un respuesta electroquímica de calidad y, por último la facilidad para depositarlos y transferir diseños por litografía.
+	El material para los electrodos también se debe elegir cuidadosamente. Se trata de un compromiso entre tres factores: 1) compatibilidad con el óxido de las películas mesoporosas, 2) obtención de una respuesta electroquímica de calidad y, 3) la facilidad para depositarlos y transferir los diseños por litografía.
 
-	En este trabajo se priorizó generar diseños compactos, miniaturizar los electrodos y optimizarlos para obtener respuestas electroquímicas de buen desempeño. El oro posee excelentes propiedades para llevar a cabo reacciones de oxido-reducción y obtener una respuestas confiables y repetibles. Si bien, el Au es el material óptimo para este tipo de mediciones, existen otros mas económicos y, en algunos casos mas fáciles de depositar (tintas de carbono, óxido de indio/estaño, carbono vitreo, etc.), sin embargo, su respuesta electroquímica es poco repetible, su rugosidades es muy variable y tienen grandes desviaciones de la idealidad (sobre todo a altas velocidades de barrido).\cite{Wi2000,Villullas2000}
+	En este trabajo se priorizó generar diseños compactos, miniaturizar los electrodos y optimizarlos para obtener respuestas electroquímicas de buen desempeño. El oro posee excelentes propiedades para llevar a cabo reacciones de oxido-reducción y obtener una respuestas confiables y repetibles. Si bien el Au es el material óptimo para este tipo de mediciones, existen otros materiales más económicos y, en algunos casos mas fáciles de depositar (tintas de carbono, óxido de indio/estaño, carbono vítreo, etc.), sin embargo, su respuesta electroquímica es poco repetible, su rugosidad es muy variable y tienen grandes desviaciones de la idealidad (sobre todo a altas velocidades de barrido).\cite{Wi2000,Villullas2000}
 
-	En este capítulo se presentan los resultados colectados durante la fabricación de los microelectrodos. Se da cuenta de los diseño, se discuten las ventajas y desventajas de los procesos empleados y se pone énfasis en la compatibilidad con los métodos utilizados para el depósito y condensación de las \pdm\space realizados por procesos sol-gel. Se evalúa la calidad de la transferencia del diseño, las dimensiones, la respuesta electroquímica de los mismos y la posibilidad de escalar para producir sensores electroquímicos basados en películas delgadas mesoporosas en cantidad.
+	En este capítulo se presentan los resultados colectados durante la fabricación de los microelectrodos. Se da cuenta de los diseños, se discuten las ventajas y desventajas de los procesos empleados y se pone énfasis en la compatibilidad con los métodos utilizados para el depósito y condensación de las \pdm\space realizados por procesos sol-gel. Se evalúa la calidad de la transferencia del diseño, las dimensiones, la respuesta electroquímica de los mismos y la posibilidad de escalar el proceso para producir sensores electroquímicos basados en películas delgadas mesoporosas en cantidad.
 
 
 	%se decidió que para logra este fin, explorar las propiedades de las películas delgadas de óxidos mesoporosos descritas con anterioridad. Nos dedicamos, como primera aproximación, a depositar estas películas de óxido sobre otra película delgada, esta vez de Au, que a su vez está depositada sobre algún sustrato rígido y térmicamente estable como vidrio u silicio, de forma de obtener una estructura bicapa electrodo\textbar mesoporoso. 
@@ -51,11 +51,11 @@
 	
 \section{Microfabricación de los sensores}\label{sec:microfabricaci_n_de_los_sensores}
 		
-	 	 En las siguientes secciones se analiza el diseño de los sensores y se discuten los resultados de la fabricación de los electrodos. Se discuten, también, las técnicas de microfabricación empleadas y las caracterizaciones realizadas sobre los mismos. Por último, se analiza la compatibilidad con las técnicas sol-gel para utilizarse como sustratos de películas delgadas mesoporosas.
+	 	 En las siguientes secciones se analizan los diseños de los sensores y los resultados de la fabricación de los electrodos. Se discuten, también, las técnicas de microfabricación empleadas y las caracterizaciones realizadas sobre los mismos. Por último, se analiza la compatibilidad con las técnicas sol-gel para utilizarse como sustratos de películas delgadas mesoporosas.
 
   		\subsection{Consideraciones sobre el diseño}\label{sec:diseno}
 
-			 Desde un principio surgió la idea de fabricar una plataforma con múltiples electrodos. De forma de tener sensores, para múltiples analitos, compactos y escalables. Para ello es importante hacer un diseño que tenga en cuenta los procesos que se usan en la industria electrónica, de forma de poder escalar el prototipo. Las siguientes secciones tratan esta temática; de que forma se pueden generar diseños de electrodos para un sensor multianalito y que procesos pueden llevarse a cabo de forma de escalarlos y compatibilizar con los procesos de síntesis sol-gel.
+			 Desde un principio surgió la idea de fabricar una plataforma con múltiples electrodos, de forma de tener sensores, para múltiples analitos, compactos y escalables. Para ello es importante proveer un diseño que tenga en cuenta los procesos que se usan en la industria electrónica, a fin de poder escalar el prototipo. Las siguientes secciones tratan esta temática; de qué manera se pueden generar diseños de electrodos para un sensor multianalito, y cuales procesos pueden llevarse a cabo de forma de escalarlos y compatibilizar con los procesos de síntesis sol-gel.
 
 		 \subsubsection{Primer diseño}
 
@@ -68,17 +68,17 @@
  		     		\end{figure}
  		 	 \pagebreak
  		     		
-		      Se trabajó con dimensiones relativamente grandes, con dos geometrías distintas, electrodos circulares con un radio R=\SI{300}{\um} y electrodos cuadrados de lado L=\SI{500}{\um}. Éste primer diseño, aunque simple y con un aprovechamiento del espacio poco eficiente cuenta con algunas ventajas destacadas. Muy económico para la impresión de las máscaras, áreas grandes de electrodos y pistas (para poder colocar fácilmente puntas de prueba y obtener valores altos de intensidad de modo de familiarizarse con las primeras respuestas EQ) y sencillo de fabricar debido a las dimensiones utilizadas.
+		      Se trabajó con dimensiones relativamente grandes, con dos geometrías distintas, electrodos circulares con un radio R=\SI{300}{\um} y electrodos cuadrados de lado L=\SI{500}{\um}. Éste primer diseño, aunque simple y con un aprovechamiento del espacio poco eficiente cuenta con algunas ventajas destacadas. Resulta muy económico para la impresión de las máscaras, áreas grandes de electrodos y pistas (para poder colocar fácilmente puntas de prueba y obtener valores altos de intensidad de modo de familiarizarse con las primeras respuestas EQ) y sencillo de fabricar debido a las dimensiones utilizadas.
 		      % . Esto diseño sirvió para familiarizarse con las primeras mediciones EQ y sencillo de fabricar.  
 		
-		      La figura \ref{fig:diseno_mascara_v1} muestra como fue este primer diseño. Se puede apreciar que la impresión de la máscara, no es exactamente igual al diseño, sino que se ve una deformación del mismo dada por la baja resolución de la impresora; estableciendo de esta forma limitaciones a la hora de diseñar con este tipo de máscaras. La contrapartida es el bajo costo de las mismas y la facilidad para obtenerlas en algunas librerías gráficas especializadas (el costo equivalente a una impresión de alta calidad sobre filminas de tamaño A4).
+		      La figura \ref{fig:diseno_mascara_v1} muestra el resultado de la impresión de este primer diseño. Se puede observar que la impresión de la máscara no es exactamente igual al diseño, se destaca una deformación del mismo dada por la baja resolución de la impresora, estableciendo de esta forma limitaciones a la hora de diseñar con este tipo de máscaras. La contrapartida es el bajo costo de las mismas y la facilidad para obtenerlas en algunas librerías gráficas especializadas con un costo asociado equivalente a una impresión de alta calidad sobre filminas de tamaño A4.
 		
  		 \subsubsection{Segundo Diseño}
 
-		 	 El segundo diseño, mas complejo y compacto, con un aprovechamiento espacial optimizado está compuesto por sensores cuadrados de \SI{1}{\cm} de lado. Cada uno tiene, a su vez, 6 ET circulares y dispuestos sobre una circunferencia imaginaria y equiangulares entre ellos (ver figura \ref{fig:mascara_diseno_v2} y {\ref{fig:diseno_mascara_v1}). Se hicieron seis tipos de sensores diferentes, variando el diámetro de los electrodos (con R=\SI{300}{\um}, \SI{200}{\um}, \SI{150}{\um},\SI{100}{\um} y \SI{20}{\um}). Además, este diseño, contempla la integración del CE y del ER en el mismo sensor. El CE se ubica en el centro del diseño y tiene un área 5 veces mayor a la de los ET para no limitar la velocidad de reacción respecto del ET \cite{Wi2000}. El ER se ubica rodeando el CE. Esta configuración de <<electrodos calesita>>, en donde los ET se encuentren equidistantes tanto del CE como del ER, asegura que los valores de resistencia, capacidad y los procesos difusivos sean equivalentes para cada electrodo.
+		 	 El segundo diseño, más complejo y compacto, con un aprovechamiento espacial optimizado está compuesto por sensores cuadrados de \SI{1}{\cm} de lado. Cada uno tiene, a su vez, 6 ET circulares dispuestos sobre una circunferencia imaginaria, de manera que queden equiangulares entre ellos (ver figura \ref{fig:mascara_diseno_v2} y {\ref{fig:diseno_mascara_v1}). Se hicieron seis tipos de sensores diferentes, variando el diámetro de los electrodos (con R=\SI{300}{\um}, \SI{200}{\um}, \SI{150}{\um},\SI{100}{\um} y \SI{20}{\um}). Además, este diseño, contempla la integración del CE y del ER en el mismo sensor. El CE se ubica en el centro del diseño y tiene un área 5 veces mayor a la de los ET para no limitar la velocidad de reacción respecto del ET \cite{Wi2000}. El ER se ubica rodeando el CE. Esta configuración de <<electrodos calesita>>, en donde los ET se encuentren equidistantes tanto del CE como del ER, asegura que los valores de resistencia, capacidad y los procesos difusivos sean equivalentes para cada electrodo.\cite{Bockris1974}
 
 		     %Mas adelante puedo colocar que se trata de un diseño flexible en el que puedo colcar mas electrodos calesita, 8 o 10 o 12
-			     \begin{figure}[th!]
+			     \begin{figure}[b!]
 			 	    \begin{subfigure}[t]{0.395\textwidth}
 			       	\includegraphics[width=\textwidth]{Imagenes/SistemaA.pdf}
 			    	\end{subfigure}
@@ -89,7 +89,7 @@
 			     	\label{fig:mascara_diseno_v2}
 			     	\end{figure}
 	   
-		     Para esta etapa se incluyeron dos máscaras más. Una segunda máscara que integra la celda electroquímica (realizada con una resina epoxi fotocurable, figura \ref{fig:mascara_su8}) en la oblea y una tercera para iluminar específicamente sobre el área de cada uno de los electrodos, con el objetivo de controlar reacciones químicas dentro de los poros, inducidas por luz UV, p. ej. activar un iniciador o controlar el grado de polimerización  (figura \ref{fig:mascara_funcionalizacion}).\cite{Andrieu-Brunsen2015,Herzog2015,Silies2015} Para ello se incluyeron marcas de alineación individuales en cada sensor. De esta forma se puede alinear cada uno con dicha máscara, incluso luego de cortar la oblea e individualizar los sensores. El detalle de este segundo juego de máscaras se muestra en la figura \ref{fig:impresion_diseno_V2}.
+		     Para esta etapa se incluyeron dos máscaras más. Una segunda máscara que integra la celda electroquímica en la oblea (realizada con una resina epoxi fotocurable, figura \ref{fig:mascara_su8}) y una tercera para iluminar específicamente sobre el área de cada uno de los electrodos, con el objetivo de controlar reacciones químicas dentro de los poros, inducidas por luz UV, p. ej. activar un iniciador o controlar el grado de polimerización  (figura \ref{fig:mascara_funcionalizacion}).\cite{Andrieu-Brunsen2015,Herzog2015,Silies2015} Para ello se incluyeron marcas de alineación individuales en cada sensor. De esta forma se puede alinear individualmente cada sensor con dicha máscara, incluso luego de cortar la oblea e individualizar los sensores. El detalle de este segundo juego de máscaras se muestra en la figura \ref{fig:impresion_diseno_V2}. \vspace*{-0.3cm}
 					\begin{figure}[th!]
 			 	   	    \centering
 			 	   	    \begin{subfigure}[t]{0.495\textwidth}
@@ -112,7 +112,8 @@
 			        	\caption{Máscara para iluminar específicamente sobre el área de cada uno de los electrodos de cada sensor.}
 			         	\label{fig:mascara_funcionalizacion}
 			     		\end{subfigure}
-			     		\caption[Juego de máscara. Segunda versión]{Segunda versión de los sensores, (a) máscaras  para los electrodos, (b) detalle para un solo sensor, (c) máscara para las celdas, (d) máscara para la funcionalización.}
+			     		\vspace*{-0.3cm}
+			     		\caption[Juego de máscara. Segunda versión]{Segunda versión de los sensores, (a) máscaras  para los electrodos, (b) detalle para un sensor individualizado, (c) máscara para las celdas, (d) máscara para la funcionalización.}
 			     		\label{fig:impresion_diseno_V2}
 			     	   	\end{figure}
 	
@@ -121,62 +122,69 @@
 				
  		\subsection{Transferencia de los diseños}
 
- 			 Una vez revisado el diseño y con las máscaras impresas, se realizó la transferencia de los mismos por fotolitografía. Los fundamentos de la técnica ya fueron introducidos en la sección \ref{sec:intro_fotolito}, pág. \pageref{sec:intro_fotolito}.
+ 			 Una vez conforme con el diseño y ya con las máscaras impresas, se realizó la transferencia de los mismos por fotolitografía. Los fundamentos de la técnica ya fueron introducidos en la sección \ref{sec:intro_fotolito}, pág. \pageref{sec:intro_fotolito}.
 
- 			 Se eligió una fotorresina de doble exposición (mas conocida en inglés como \textit{image-reversal}) por estar especialmente diseñada  para aplicaciones de decapado o \textit{lift-off}. Las variables de espesor resultante del proceso de \textit{spin-coating}, tiempo y temperatura de secado de solventes, tiempo de irradiación UV, tiempo y temperatura de curado y tiempo de revelado fueron tomados de los valores de referencia que figuran en la hoja de datos provista por el fabricante. \cite{TI35E} Los valores utilizados y detalles experimentales fueron expuestos en la sección \ref{sec:fotolito}, pág. \pageref{sec:fotolito}.
+ 			 Se eligió una fotorresina de doble exposición (conocida en inglés como \textit{image-reversal}) por estar especialmente diseñada para aplicaciones de decapado o \textit{lift-off}. Las variables de espesor resultante del proceso de \textit{spin-coating}, tiempo y temperatura de secado de solventes, tiempo de irradiación UV, tiempo y temperatura de curado y tiempo de revelado fueron tomados de aquellos valores de referencia que figuran en la hoja de datos provista por el fabricante. \cite{TI35E} Los valores de los parámetros utilizados y detalles experimentales fueron expuestos en la sección \ref{sec:fotolito}, pág. \pageref{sec:fotolito}.
 
- 			 Se recomienda, para esta fotorresina, que la relación de aspecto entre el ancho de linea y el espesor sea mayor a 2 ($L/e>2$), de forma de obtener paredes verticales y estructuras mecánicamente robustas. 
+ 			 Se recomienda, para esta fotorresina, que la relación de aspecto entre el ancho de línea ($L$) y el espesor ($e$) sea mayor a 2, de forma de obtener paredes verticales y estructuras mecánicamente robustas. 
 
  				\begin{equation}
 				\frac{L}{e} \geq 2, \hspace*{0.2cm}\text{con}\hspace{0.2cm}  e \approx \SI{3}{\um}		
  				\end{equation}
 
-     		 A su vez se fijó una rotación tal (\SI{4000}{\minute}, velocidad final) que establezca un espesor de aproximadamente \SI{3}{\um} para que haya una discontinuidad en el deposito del metal entre las partes con y sin fotorresina, tal como muestra el esquema de la figura \ref{fig:undercut}.
+     		 A su vez se fijó una rotación especifica (\SI{4000}{\per\minute}, velocidad final) que determine un espesor de aproximadamente \SI{3}{\um} para que haya una discontinuidad en el depósito del metal entre las partes con y sin fotorresina, tal como muestra el esquema y la microscopía de la figura \ref{fig:undercut}. Esta discontinuidad es necesaria para remover correctamente el metal que esta sobre la resina sin arrastrar metal que formará los electrodos. 
 
 					%Figura esquema undercutting
- 				\begin{figure}[ht!]
+ 				\begin{figure}[hb!]
  				\centering
- 				\includegraphics[width=0.75\textwidth]{Esquemas/altura-ancho.pdf}
- 				\caption[Perfil de fotorresina para el decapado o\textit{ lift-off}]{Esquema de la fotoresina depositada y revelada, donde se muestra relación de espesor respecto del ancho de linea y el espacio para poder diluirla. El esquema muestra en particular un sobrerevelado aproximadamente del 20\%, para obtener buenos resultados durante el procesos de\textit{ lift-off}.}
+ 				\begin{subfigure}[t]{0.75\textwidth}
+ 				\hspace{0.46cm}\includegraphics[width=\textwidth]{Esquemas/altura-ancho.pdf}
+ 				\end{subfigure}
+ 				\begin{subfigure}[t]{0.65\textwidth}
+ 				\includegraphics[width=\textwidth]{Imagenes/fotoresina_perfil.jpg}
+ 				\end{subfigure}
+ 				\caption[Perfil de fotorresina para el decapado o\textit{ lift-off}]{Arriba: esquema de la fotoresina depositada y revelada, donde se muestra la relación de espesor respecto del ancho de línea y el sobrerevelado necesario para un correcto decapado. Abajo: corte por FIB para evaluar el sobrerevelado y espesor obtenido luego de la transferencia por litografía.}
  				\label{fig:undercut}
  				\end{figure}
 
- 	   		 La variable más delicada, es, sin lugar a dudas, el tiempo de revelado, ya que es la que compensa los errores acumulados en el proceso. Cualquier irregularidad en el sistema de iluminación, inhomogeneidades en el espesor o calentamiento desparejo se ve reflejado en tiempos de revelado diferenciales para diferentes sectores. Dicho esto, mientras más grande el sustrato más difícil es lograr un revelado parejo. Es, también en este paso, donde se regula el <<sobrerevelado>> o, del inglés \textit{undercutting}, perfil necesario para que no se deposite metal en los laterales de la fotorresina, tal como se esquematiza en la figura \ref{fig:undercut}. El parámetro $\beta$ es la medida del sobrerevelado que es la diferencia entre la proyección en el sustrato de la superficie superior y la superficie inferior de la resina. Un $\beta \approx$\SI{500}{\nm} es el ideal para obtener buenos resultados en el procesos de \textit{lift-off}. 
+ 	   		 La variable más delicada, es, sin lugar a dudas, el tiempo de revelado, ya que es la que compensa los errores acumulados en el proceso. Cualquier irregularidad en el sistema de iluminación, inhomogeneidades en el espesor o calentamiento desparejo se ve reflejado en tiempos de revelado diferenciales para diferentes sectores. Dicho esto, mientras más extenso el sustrato, más difícil es lograr un revelado parejo. Es, también en este paso, donde se regula el <<sobrerevelado>> o, del inglés \textit{undercutting}, perfil necesario para que no se deposite metal en los laterales de la fotorresina (figura \ref{fig:undercut}). El parámetro $\beta$ es la medida del sobrerevelado, que es la diferencia entre la proyección en el sustrato de la superficie superior y la superficie inferior de la resina. Un $\beta\!\!\approx$\SI{500}{\nm} es el ideal para obtener buenos resultados en el procesos de \textit{lift-off}. 
  
- 	         En la secuencia de imágenes de microscopia óptica de la figura \ref{fig:revelado} se muestra como evoluciona el revelado con el tiempo y, en particular, se ve en la última imagen de esta secuencia, el resultado final de la etapa de litografía y como el diseño resultó transferido de manera precisa.
+ 	         En la secuencia de imágenes de microscopia óptica de la figura \ref{fig:revelado} se muestra cómo evoluciona el revelado con el tiempo y, en particular, se ve en la última imagen de esta secuencia, el resultado final de la etapa de litografía y como el diseño resultó transferido de manera precisa.
 
  				%Imagnes revelado
- 				\begin{figure}[th]
+ 				\begin{figure}[th!]
 			 	   	    \centering
-			 	   	    \begin{subfigure}[t]{0.235\textwidth}
+			 	   	    \begin{subfigure}[t]{0.495\textwidth}
 			        	\includegraphics[width=\textwidth]{Imagenes/revelado1.jpg}
 			       		\end{subfigure}
-			     		\begin{subfigure}[t]{0.235\textwidth}
+			     		\begin{subfigure}[t]{0.495\textwidth}
 			     		\includegraphics[width=\textwidth]{Imagenes/revelado2.jpg}
 			    		\end{subfigure}
-			     		\begin{subfigure}[t]{0.235\textwidth}
-			         	\includegraphics[width=\textwidth]{Imagenes/revelado3.jpg}
+			     		\begin{subfigure}[t]{0.495\textwidth}
+						\vspace*{-0.3cm}
+			     		\includegraphics[width=\textwidth]{Imagenes/revelado3.jpg}
 			        	\end{subfigure}
-						\begin{subfigure}[t]{0.235\textwidth}
+						\begin{subfigure}[t]{0.495\textwidth}
+			     		\vspace*{-0.3cm}
 			     		\includegraphics[width=\textwidth]{Imagenes/revelado4.jpg}
 			        	\end{subfigure}
-			     		\caption[Revelado en función del tiempo]{Tiempos crecientes de revelado (de izquierda  a derecha (\SI{2.5}{min},\SI{3.5}{min},\SI{4.5}{min} y \SI{6}{min}) donde se aprecia como se disuelve la resina en la solución reveladora indicado por el cambio de color a medida que disminuye el espesor. Por último la oblea revelada por completo. Se deja un 20\% mas del tiempo necesario, para asegurarse un revelado total y para crear el perfil negativo de las paredes, especialmente útil para el proceso de\textit{ lift-off}.}
+			     		\caption[Revelado en función del tiempo]{Tiempos crecientes de revelado: \SI{2.5}{min},\SI{3.5}{min},\SI{4.5}{min} y \SI{6}{min}). Se aprecia como se disuelve la resina en la solución reveladora indicado por el cambio de color a medida que disminuye el espesor. Se muestra en la última microscopía el reveladio completo con un 20\% de tiempo adicional para crear el perfil negativo de las paredes, necesario para el proceso de\textit{ lift-off}.}
 			     		\label{fig:revelado}
 			     	   	\end{figure}
 
- 		     Se llevó a cabo una segunda etapa de litografía (luego del deposito de Ti\textbar Au de para los electrodos) para colocar una resina fotocurable, epoxi, de alta viscosidad que genera estructuras de hasta \SI{100}{\um} de altura. En la fotografía de la figura \ref{fig:su8} se puede apreciar la alta viscosidad de la misma al momento de hacer el deposito por \textit{spincoating}. Nuevamente los datos para trabajarla se obtuvieron de la hoja de datos del fabricante\cite{Su8,Microchemicals2014} y los detalles experimentales fueron expuestos en  sección \ref{sec:fotolito}, pág. \pageref{sec:fotolito}. Esta resina se uso para hacer la celda electroquímica}, la cual puede contener un volumen aproximado \SI{2}{\ul} de solución. En las microscopias de la figura \ref{fig:resultados-su8} se muestra el resultado obtenido luego de alinear y depositar esta resina epoxi.
+ 		      Se llevó a cabo una segunda etapa de litografía (luego del depósito de Ti\textbar Au para los electrodos) para colocar una resina fotocurable, epoxi, de alta viscosidad que genera estructuras de hasta \SI{100}{\um} de altura. En la fotografía de la figura \ref{fig:su8} se destaca la alta viscosidad de la misma al momento de hacer el deposito por \textit{spincoating}. Nuevamente los datos para trabajarla se obtuvieron de la hoja de datos del fabricante\cite{Su8,Microchemicals2014} y los detalles experimentales fueron expuestos en  sección \ref{sec:fotolito}, pág. \pageref{sec:fotolito}. Esta resina se usó para hacer la celda electroquímica, la cual puede contener un volumen aproximado \SI{2}{\ul} de solución. En las microscopias de la figura \ref{fig:resultados-su8} se muestra el resultado obtenido luego de alinear y depositar esta resina epoxi.
 
  				%Figura SU8 + alineacion + microscopia die con Su8
  				%Figura esquema undercutting
- 				\begin{figure}[ht!]
+ 				\begin{figure}[h!]
  				\centering
  				\includegraphics[width=\textwidth]{Imagenes/SU8.jpg}
- 				\caption[Depósito de la resina epoxi SU8]{Deposito por \textit{spin-coating }de la resina expoxi para encapsular. Se destaca la alta viscosidad de la misma, lo que permite formar paredes de hasta \SI{100}{\um} de espesor.}
+ 				\caption[Depósito de la resina epoxi SU8]{Depósito por \textit{spin-coating }de la resina expoxi para encapsular. Se destaca la alta viscosidad de la misma, lo que permite formar paredes de hasta \SI{100}{\um} de espesor.}
  				\label{fig:su8}
  				\end{figure}
 
  				%Figura esquema undercutting
- 				\begin{figure}[th]
+ 				\begin{figure}[bh!]
 			 	   	    \centering
 			 	   	    \begin{subfigure}[t]{0.495\textwidth}
 			        	\includegraphics[width=\textwidth]{Imagenes/alineacionSU8.pdf}
@@ -194,9 +202,9 @@
 
  		\subsection{Películas delgadas de Ti\textbar Au}
 
-		 Como ya se mencionó anteriormente, los electrodos de los sensores son de Au y fueron depositados por la técnica de pulverización catódica o mas comúnmente conocida por su nombre en inglés \textit{sputtering}. La fabricación consistió primero en depositar una capa de al menos de \SI{20}{\nm} de espesor, llamada capa de  adherencia, la misma puede ser indistintamente de Ti o Cr, la cual promueve la adherencia del Au; sin esta capa el Au no adhiere sobre superficies no metálicas.\cite{Hieber1976} Una vez depositada la capa adherente y sin romper el vacío de la cámara del equipo, se depositaron \SI{150}{nm} de Au. El espesor resultó ser el óptimo para lograr un electrodo mecánicamente robusto y con buenas propiedades de conducción eléctrica pero suficientemente delgado para que las película delgadas mesoporosas sean continuas entre los electrodos y el sustrato. Para cada caso, en condiciones constantes, se puede realizar una curva de calibración. La misma se consigue graficando el espesor de las películas depositadas en función del tiempo, con el objetivo de establecer la tasa de depósito y así poder controlar el espesor de la película. 
+		 Como ya se mencionó anteriormente, los electrodos de los sensores son de Au y fueron depositados por la técnica de pulverización catódica o mas comúnmente conocida por su nombre en inglés \textit{sputtering}. La fabricación consistió primero en depositar una capa de al menos de \SI{20}{\nm} de espesor, llamada capa de  adherencia, la misma puede ser indistintamente de Ti o Cr, la cual promueve la adherencia del Au; sin esta capa el Au no adhiere sobre superficies no metálicas.\cite{Hieber1976} Una vez depositada la capa adherente y sin romper el vacío de la cámara del equipo, se depositaron \SI{150}{nm} de Au. El espesor resultó ser el óptimo para lograr un electrodo mecánicamente robusto y con buenas propiedades de conducción eléctrica pero suficientemente delgado para que las películas delgadas mesoporosas sean continuas entre los electrodos y el sustrato. Para cada caso, en condiciones constantes, se puede realizar una curva de calibración. La misma se consigue graficando el espesor de las películas depositadas en función del tiempo, con el objetivo de establecer la tasa de depósito y así poder controlar el espesor de la película. 
 
-		 Se optimizaron las condiciones de \textit{sputtering} para obtener películas homogéneas tanto en espesor como superficialmente. Para lograrlo se variaron los parámetros relevantes de la técnica, que son: la aceleración de los iones, determinada por diferencia de tensión entre el cátodo y ánodo; la densidad de corriente y el flujo de Ar. Una vez establecidas dichas condiciones se mantuvieron constante a lo largo de la tesis. El espesor de las películas metálicas, $d$, se reguló controlando el tiempo de depósito, $t$. De acuerdo a los los trabajos de Sigmund\cite{sigmund1968} y Seah\cite{Seah2005} éstas variables son directamente proporcionales según la ecuación \ref{eq:sputt}, donde $J$ es la densidad de corriente, $Y$ el rendimiento de la pulverización, $r$ el radio de los átomos de la muestra y $e_o$ la carga del electrón.
+		 Se optimizaron las condiciones de \textit{sputtering} para obtener películas homogéneas tanto en espesor como superficialmente. Para lograrlo se variaron los parámetros relevantes de la técnica, que son: la aceleración de los iones, determinada por diferencia de tensión entre el cátodo y ánodo; la densidad de corriente y el flujo de Ar. Una vez establecidas dichas condiciones se mantuvieron constante a lo largo de la tesis. El espesor de las películas metálicas, $d$, se reguló controlando el tiempo de depósito, $t$. De acuerdo a los los trabajos de Sigmund\cite{sigmund1968} y Seah\cite{Seah2005} éstas variables son directamente proporcionales según la ecuación \ref{eq:sputt}, donde $J$ es la densidad de corriente, $Y$ el rendimiento de la pulverización, $r$ el radio átomico del material y $e_o$ la carga del electrón.
 
 	 			\begin{equation}
 	 				d=\left(\frac{JYr^3}{e_o}\right)t
@@ -205,8 +213,14 @@
 
 		 Las condiciones de depósito de cada una de las sucesivas capas se detallan en la tabla \ref{tabla:sputt1}, pág. \pageref{tabla:sputt1}, para las películas metálicas y en la tabla  \ref{tabla:sputt2}, pág. \pageref{tabla:sputt2} para el SiO$_2$. 
 
+
+		 Para establecer las tasas de depósitos de uno de los materiales pulverizados, se midió el espesor resultante de las películas por diferentes técnicas. Para monocapas de Au y espesores pequeños típicamente menores a los \SI{30}{\nm}, se utilizó elipsometría espectrométrica, los detalles experimentales y la base de la técnica ya fueron discutidos en la sección \ref{sec:elipso}, pág. \pageref{sec:elipso}. Para evaluar el apilamiento de sucesivas capas, inspeccionar la homogeneidad tanto en espesor como superficial, se utilizó microscopía electrónica de barrido (MEB) y haz focalizado de iones (FIB), técnica que permite hacer cortes e inspecciones de secciones transversales de los depósitos en distintos puntos. 
+		
+		 En la figura \ref{fig:FIB_electrodos} se puede ver un corte transversal de los electrodos, realizado por FIB, donde se ven los espesores de ambas películas metálicas (Ti, capa adherente y Au), así como la capa dieléctrica de SiO$_2$. También se aprecia la buena homogeneidad en el espesor de cada una de las capas y en la superficie de la capa de Au, donde ocurrirá finalmente el intercambio electrónico entre las especies redox. Midiendo los espesores de las capas depositadas a distintos tiempos, podemos establecer la tasa de deposito, obtenida de la pendiente del figura \ref{fig:calibracionAu}. Como ya se mencionó en reiteradas ocasiones, es de suma importancia conocer y controlar los espesores de cada una de las capas, ya sean películas delgadas mesoporosas, densas o metálicas.
+
+
 		 		%figura FIB de los electrodos
-						  \begin{figure}[ht!]
+						  \begin{figure}[h!]
 						  \begin{center}
 						  \includegraphics[width=0.80\textwidth]{Imagenes/Perfil.jpg}
 						  \caption[Sección trasversal de los eletrodos]{Corte transversal de los electrodos, donde se observan detalles de la bicapa Cr\textbar Au depositada sobre una oblea de silicio con un depósito aislante de SiO$_2$.}
@@ -214,74 +228,71 @@
 						  \end{center}
 						  \end{figure} 	
 
-		 Para establecer las tasas de depósitos de cada una de la películas depositadas, se midió el espesor por diferentes técnicas. Para monocapas de Au y espesores pequeños típicamente menores a los \SI{30}{\nm}, se utilizó elipso espectrofotometría, los detalles experimentales y la base de la técnica ya fueron discutidos en la sección \ref{sec:elipso}, pág. \pageref{sec:elipso}. Para evaluar el apilamiento de sucesivas capas, inspeccionar la homogeneidad tanto en espesor como superficial, se utilizó microscopia electrónica de barrido (MEB) y haz focalizado de iones (FIB), técnica que permite hacer cortes e inspecciones de secciones transversales de los depósitos en distintos puntos. 
-
-		 	%Grafico de la curva de calibración para el Au
-					   		\begin{figure}[ht!]
+				%Grafico de la curva de calibración para el Au
+					   		\begin{figure}[h!]
 					   		\begin{center}
 							\includegraphics[width=0.75\textwidth]{Graficos/Espesor_Au.pdf}
 							\caption[Curva de calibración para el espesor de los electrodos]{Curva de calibración para establecer la tasa de de depósito de la capa de Au. La misma se realizó por pulverización catódica en las condiciones experimentales detalladas en la tabla \ref{tabla:sputt1}.}
 							\label{fig:calibracionAu}
 							\end{center}
-							\end{figure}
-		
-		 En la figura \ref{fig:FIB_electrodos} se puede ver un corte transversal de los electrodos, realizado por FIB, donde se ven los espesores de ambas películas metálicas (Ti, capa adherente y Au), así como la capa dieléctrica de SiO$_2$. También se aprecia la buena homogeneidad en el espesor de cada una de las capas y en la superficie de la capa de Au, donde ocurrirá finalmente el intercambio electrónico entre las especies redox. Midiendo los espesores de las capas depositadas a distintos tiempos, podemos establecer la tasa de deposito, obtenida de la pendiente del figura \ref{fig:calibracionAu}. Como ya se mencionó en reiteradas ocasiones es de suma importancia conocer y controlar los espesores de cada una de las capas, ya sean películas delgadas mesoporosas, densas o metálicas.
+							\end{figure}		  
 		
   		\subsection{Decapado de la fotorresina o\textit{ lift-off}}
 
 		 %En algun lugar se puede decir que se elijio lift-off en lugar de etching porque es mejor porque no se coloca fottoresina sobre los electrodos, etc, etc.
 
-		 La última etapa de la fabricación de los electrodos, el decapado de la fotorresina, se conoce mas comúnmente con el nombre en inglés, \textit{lift-off} y consiste en disolver la fotorresina que queda como capa de sacrificio. En la figura \ref{fig:undercut} se pueden ver los sitios por donde da comienzo la disolución. La misma es completamente soluble en acetona. Cabe destacar, nuevamente, que es importante la disontinuidad de la película de oro para que tenga éxito esta etapa, ya que, si existe continuidad entre la parte que se quiere dejar y la que no, se generan imperfecciones en los bordes, o se desprende el metal de partes que no se desea. Para ello es muy importante saber bien los espesores que se logran durante el depósito, tanto de fotorresina como de película de Au, para regular la distancia que quede entre el metal en el sustrato y el metal sobre la resina; el esquema \ref{fig:undercut} presentado anteriormente en la pág. \pageref{fig:undercut} ejemplifica bien esta situación.
+		 La última etapa de la fabricación de los electrodos es el decapado de la fotorresina, técnica que se conoce mas comúnmente con el nombre en inglés, \textit{lift-off}. Consiste en disolver la fotorresina que queda luego del revelado y que se utilizó a modo de capa de sacrificio. En la figura \ref{fig:undercut} se pueden ver los sitios por donde da comienzo la disolución. La fotoresina utilizada es completamente soluble en acetona. Cabe destacar, nuevamente, que es importante la disontinuidad de la película de oro para que tenga éxito esta etapa, ya que, si existe continuidad entre la parte que se quiere dejar y la que no, se generan imperfecciones en los bordes, o se desprende el metal de partes que no se desea. Para ello es muy importante saber bien los espesores que se logran durante el depósito, tanto de fotorresina como de película de Au, para regular la distancia que quede entre el metal en el sustrato y el metal sobre la resina. El esquema y la microscopía de la figura\ref{fig:undercut} presentado anteriormente en la pág. \pageref{fig:undercut} ejemplifica bien esta situación.
 
 					  %Oblea Terminada V1
 					  \begin{figure}[ht!]
 					  \begin{center}
 					  \includegraphics[width=\textwidth]{Imagenes/lift-off.jpg}
-					  \caption[Proceso de decapado o\textit{ lift-off}]{Proceso de decapado o\textit{ lift-off}. Fotografía correpondiente a los electrodos del primer diseño, donde se muestra como a medida que se disuelve la fotorresina se va levantando el metal que esta sobre ella.}
+					  \caption[Proceso de decapado o\textit{ lift-off}]{Proceso de decapado o\textit{ lift-off}. Fotografía correpondiente a los electrodos del primer diseño, donde se muestra como a medida que se disuelve la fotorresina se va levantando el metal que está sobre ella.}
 					  \label{fig:ultrasonido}
 					  \end{center}
 					  \end{figure}
 
-		 Por último, es importarte saber que es necesario aplicar ultrasonido; no alcanza con una simple inmersión de la oblea en solvente, hay que mantener una constante convección para la remoción de la fotorresina, que esta debajo del metal. A su vez, este proceso evita la redepositación del mismo sobre los electrodos (figura \ref{fig:ultrasonido}), ya que si ocurre este fenómeno es muy difícil, una vez que se seca la oblea, remover el metal de desperdicio pegado a los electrodos. Es en esta etapa final del proceso donde se demuestra si resultaron efectivas las etapas de limpieza y revelado. De haber algún residuo remanente durante la limpieza del sustrato o haber efectuado un revelado incompleto, llevará indefectiblemente a un desprendimiento de los electrodos del sustrato.
+		 Por último, es importarte saber que es necesario aplicar ultrasonido. No alcanza con una simple inmersión de la oblea en solvente sino que se precisa mantener una constante convección para la completa remoción de la fotorresina. A su vez, este proceso de constante movimiento evita el redepósito del metal liberado sobre los electrodos (figura \ref{fig:ultrasonido}), ya que si ocurre este fenómeno es muy difícil, una vez que se seca la oblea, remover el metal de desperdicio que se adhiere a los electrodos. Es en esta etapa final del proceso donde se demuestra si resultaron efectivas las etapas de limpieza y revelado. De haber algún residuo remanente durante la limpieza del sustrato o haber efectuado un revelado incompleto, se producirá indefectiblemente el desprendimiento de los electrodos del sustrato.
 
-		 Finalmente, en las figuras \ref{fig:ObleaV1} y \ref{fig:ObleaV2}, se muestra el resultado final de la fabricación de los electrodos realizados en obleas de cuatro pulgadas (\SI{10}{\cm} de diámetro) para los dos diseños.
+		 Finalmente, en las figuras \ref{fig:ObleaV1} y \ref{fig:ObleaV2}, se muestra el resultado final de la fabricación de los electrodos realizados en obleas de cuatro pulgadas (\SI{10}{\cm} de diámetro) para los dos diseños elaborados.
 
+		 			  \clearpage
 					  %Oblea Terminada V1
 					  \begin{figure}[ht!]
 					  \begin{center}
-					  \includegraphics[width=\textwidth]{Imagenes/ObleaV1.jpg}
+					  \includegraphics[width=0.90\textwidth]{Imagenes/ObleaV1.jpg}
 					  \caption[Electrodos, primera versión]{Primer diseño de los sensores. Oblea de silicio de \SI{10}{cm} de diámetro, capa de SiO$_2$ y 32 sensores con cuatro electrodos de trabajo cada uno.}
 					  \label{fig:ObleaV1}
 					  \end{center}
 					  \end{figure} 	
 
 					  %Oblea Terminada V2
-					  \begin{figure}[ht!]
+					  \begin{figure}[h!]
 					  \begin{center}
-					  \includegraphics[width=\textwidth]{Imagenes/ObleaV2.jpg}
+					  \includegraphics[width=0.90\textwidth]{Imagenes/ObleaV2.jpg}
 					  \caption[Electrodos, segunda versión]{Segundo diseño de los sensores. Oblea de silicio de \SI{10}{cm} de diámetro con 46 sensores con 6 electrodos de trabajo, contraelectrodo y pseudoreferencia. También se muestra la celda electroquímica depositada con resina epoxi SU-8.}
 					  \label{fig:ObleaV2}
 					  \end{center}
 					  \end{figure} 	
-		
-\section{Caracterizaciones de los electrodos}
+	
+		\section{Caracterización de los electrodos}
 
-		Se dará cuanta en esta sección de las diferentes caracterizaciones y ensayos practicados sobre los electrodos de Au. Fundmentalmente la respuesta electroquímica, ya que la base de los sensores son las reacciones de oxido reducción. Es por ello que es necesario obtener electrodos de respuesta reproducible, confiable y fabricados por un proceso repetible y escalable. 
+		 Se dará cuenta en esta sección de las diferentes caracterizaciones y ensayos practicados sobre los electrodos de Au. Fundamentalmente la respuesta electroquímica, ya que la base de los sensores son las reacciones de óxido reducción. Es por ello que es necesario obtener electrodos de respuesta reproducible, confiable y fabricados por un proceso repetible y escalable. 
 
 	\subsection{Respuesta electroquímica}\label{sec:respuesta_sondas_au}
 			 		
-			Una vez que los resultados de la fabricación de los sensores fueron óptimos se evaluó el desempeño electroquímico de los mismos. En el capítulo \ref{chap:Materiales} se describe con detalle el montaje experimental para realizar las mediciones de voltametrías cíclica (VC). Se usaron como sondas electroquímicas ferro y ferricianuro de potasio (\Ferro\space y \Ferri, \fe), cloruro de hexaaminorutenio(III) (\aminorutenioCompleto, \ru), hidroquinona (\hidroquinona, \hq) y ferroceno metanol \linebreak (\ferroceno, \fc). La elección de estas sondas modelos tiene que ver fundamentalmente con la carga neta de cada una de ellas, y con la reversibildiad de los pares redox. Analizaremos ahora como fue la respuesta de las películas delgadas de Au para cada una de estas sondas.
+			Una vez que los resultados de la fabricación de los sensores fueron óptimos se evaluó el desempeño electroquímico de los mismos. En el capítulo \ref{chap:Materiales} se describe con detalle el montaje experimental para realizar las mediciones de voltametrías cíclica (VC). Se usaron como sondas electroquímicas ferro y ferricianuro de potasio (\Ferro\space y \Ferri, \fe), cloruro de hexaaminorutenio(III) (\aminorutenioCompleto, \ru) y ferroceno metanol (\ferroceno, \fc). La elección de estas sondas modelo tiene que ver fundamentalmente con la carga neta de cada una de ellas, y con la reversibildiad de los pares redox. Analizaremos ahora como fue la respuesta de los electrodos compuestos por películas delgadas de Au para cada una de estas sondas.
 				
 		\subsubsection*{Respuesta de ferro/ferricianuro de potasio}	 
 			 	
-		   En electroquímica este par redox es frecuentemente utilizado para evaluar la calidad de los electrodos, ya que es un par redox cuyas especies oxidada y reducida son económicas, fácil de conseguir, solubles en solución acuosa y se compartan de forma cuasireversible frente al intercambio electrónico electrodo-especie. La reacción que tiene lugar es la siguiente:
+		   En electroquímica éste par rédox es frecuentemente utilizado para evaluar la calidad de electrodos. Esto se debe a que se trata de par rédox cuyas especies oxidada y reducida son moléculas económicas, fácil de conseguir, solubles en solución acuosa y se compartan de forma cuasireversible frente al intercambio electrónico electrodo-especie. La reacción que tiene lugar es la siguiente:
 			 \begin{equation}
 			 \schemestart 
 			 Fe(CN)$_6^{4-}$  
 			 \arrow{<=>[\scriptsize oxidación][\scriptsize reducción]}[0,1.5] 
 			 Fe(CN)$_6^{3-}+e^-$ \schemestop
 			 \end{equation}
-		   Se espera, en la aproximación más simple, que sigan el comportamiento descrito por Randles-Sevcik, donde la intensidad de pico ($i_p$) es proporcional a la concentración ($C$) y a la velocidad de barrido a la $1/2$ $(v^{1/2})$ según:
+		   Se espera, en la aproximación más simple, que sigan el comportamiento descrito por Randles-Sevcik, donde la intensidad de pico ($i_p$) es proporcional a la concentración ($C$) y a la raiz cuadrada de la velocidad de barrido $v$ según:
 		  
 		 	\begin{equation}
 			i_p=0.4463nFAC\left(\frac{nFvD}{RT}\right)^{1/2}
@@ -296,41 +307,39 @@
 	     		\end{subfigure}
      		 \begin{subfigure}[t]{0.495\textwidth}
 	        	\includegraphics[width=\textwidth]{Graficos/Calibracion_Fe.pdf}
-	       		\caption{Curva de calibración para distintas concentraciones de la cupla \fe\space valores tomados de la figura \ref{fig:Fe_a}.}
+	       		\caption{Curva de calibración para distintas concentraciones de la cupla \fe. Valores tomados de la figura \ref{fig:Fe_a}.}
 	         	\label{fig:Fe_b}
 	     		\end{subfigure}
 	     		%\vspace*{0.5cm}
 
  	     	\begin{subfigure}[t]{0.495\textwidth}
          		\includegraphics[width=\textwidth]{Graficos/Velocidades_Fe.pdf}
-        	    \caption{Voltametrías cíclicas de una solución \SI{10}{\milli\Molar} de la cupla equimolar \fe\space a diferentes velocidades de barrido.}
+        	    \caption{Voltametrías cíclicas de una solución \SI{10}{\milli\Molar} de la cupla equimolar \fe\space para diferentes velocidades de barrido.}
         	    \label{fig:Fe_c}
      		 	\end{subfigure}
      	 	\begin{subfigure}[t]{0.495\textwidth}
         		\includegraphics[width=\textwidth]{Graficos/VelocidadesCal_Fe.pdf}
-       			\caption[Respuesta a diferentes velocidades de barrido para \fe]{Respuesta de la corriente de pico para \fe\space \SI{10}{\milli\Molar} frente a diferentes velocidades de barrido.}
+       			\caption[Respuesta a diferentes velocidades de barrido para \fe]{Dependencia de la corriente de pcio con la velocidad de barrido para \fe\space \SI{10}{\milli\Molar}. Valores extraidos de la figura \ref{fig:Fe_c}.}
          		\label{fig:Fe_d}
      			\end{subfigure}
-     		 \caption[Respuesta electroquímica para \fe]{(a) Respuesta electroquímica de la cupla equimolar \fe\space para distintas concetraciones, (b) curva de calibrado para dichas concentraciones. (c) dependencia de la intensidad con la velocidad de barrido y, (d) dependencia lineal con la inversa de la raíz cuadrada de la velocidad de barrido. Todos los voltagramas fueron tomadas con contraelectrodo de Pt y en una solución 0,1M de NaCl como electrolito soporte, contra ESC.}
+     		 \caption[Respuesta electroquímica para \fe]{(a) Respuesta electroquímica de la cupla equimolar \fe\space para distintas concentraciones, (b) curva de calibración para dichas concentraciones. (c) Densidad de corriente en función con la velocidad de barrido, (d) dependencia de la densidad de corriente de pico con la raíz cuadrada de la velocidad de barrido. Todos los voltagramas fueron tomadas con contraelectrodo de Pt, en 0,1M de NaCl como electrolito soporte y utilizando como referencia ESC.}
      		 \label{fig:ferro-ferri-CV}
      		 \end{figure}
 
-     		 \pagebreak
-		
-		  	  Con el propósito de corroborar este comportamientos, se realizaron experimentos de VC a diferentes concentraciones de la sonda (figuras \ref{fig:Fe_a} y  \ref{fig:Fe_b}) y a distintas velocidades de barrido (figuras \ref{fig:Fe_c} y  \ref{fig:Fe_d}). Resultaron de especial utilidad la curva de calibración y la respuesta frente a distintas velocidades de barrido. Para cualquiera de estás velocidades los voltagramas conservan constantes los valores de $E^\circ$, indicativo de una buena trasferencia de carga entre el electrodo y la sonda. Además se destaca la relación del log(v) con el log(j$_p$), verificando la ecuación de Randles-Sevcik (ec. \ref{eq:rs2}).		  	  
+     		 Con el propósito de corroborar este comportamientos, se realizaron experimentos de VC a diferentes concentraciones de la sonda (figuras \ref{fig:Fe_a} y  \ref{fig:Fe_b}) y a distintas velocidades de barrido (figuras \ref{fig:Fe_c} y  \ref{fig:Fe_d}). Resultaron de especial utilidad la curva de calibración y la respuesta frente a distintas velocidades de barrido. Para cualquiera de estás velocidades los voltagramas conservan constantes los valores de $E^\circ$, indicativo de una buena trasferencia de carga entre el electrodo y la sonda. Además se destaca la relación lineal de j$_p$ con $v^{1/2}$ verificando la ecuación de Randles-Sevcik (ec. \ref{eq:rs2}).		  	  
   					
-		  	  Con los resultados obtenidos para estas voltametrias se puede sugerir que el sistema responde a un proceso de difusión lineal semiinfinita, lo cual era lo que se esperaba en primer orden para un sistema en el que el electrodo esta embebido en solución con el analito electroactivo en solución de electrolito soporte {(\SI{0,1}{\milli\Molar} KCl, pH=$5.5$)\cite{Wi2000,Pumera2007,Gewirth2004,Villullas2000}.
+		  	 Con los resultados obtenidos para estas voltametrías se puede sugerir que el sistema responde a un proceso de difusión lineal en un plano semiinfinito, lo cual era lo que se esperaba en primer orden para un sistema en el que el electrodo esta embebido en solución con el analito electroactivo en solución de electrolito soporte {(\SI{0,1}{\milli\Molar} KCl, pH=$5.5$)\cite{Wi2000,Pumera2007,Gewirth2004,Villullas2000}.
 
 	 	\subsubsection*{Respuesta del cloruro de hexaaminorutenio(III)}
 	
-	 	  Otra sonda electroquímica que se utilizó mucho y resultó relevante para este trabajo, es el cloruro de hexaaminorutenio(III). Esta molécula en solución se disocia para formar el complejo \aminorutenio. La reacción redox que tiene lugar es la siguiente:
+	 	 El cloruro de hexaaminorutenio(III) se utilizó extensivamente en este trabajo, gran parte de la discusión del capítulo \ref{chap:Electroquimica} tiene por eje la adsorción de este complejo en las películas delgadas mesoporosas. Esta molécula en solución se disocia para formar el complejo \aminorutenio. La reacción rédox que tiene lugar es la siguiente:
 	 		 	 	  		\begin{equation}
 	 		 	 	 			\schemestart 
 					 			 Ru(NH$_3$)$_6^{2+}$  
 					 			 \arrow{<=>[\scriptsize oxidación][\scriptsize reducción]}[0,1.5] 
 					 		 	 Ru(NH$_3$)$_6^{3+}+e^-$ \schemestop 
 	 		 	 	 		\end{equation}
-	 	  El intercambio entre los estados de oxidación Ru$^{3+}$/Ru$^{2+}$, responde a un proceso electroquímico reversible, en el cual podemos fácilmente reducir u oxidar el complejo variando el potencial del electrodo de trabajo. Habiendo ya comprobado, con el \fe, el buen desempeño de los electrodos respecto de la velocidad de barrido, se eligió un valor \SI{50}{\milli\volt\per\second} para las voltametrías cíclicas (de uso frecuente para este tipo de mediciones). Se llevaron a cabo una serie de VC para varias concentraciones de la sonda, con el objetivo de elaborar la correspondiente curva de calibración para \aminorutenio.
+	 	  El intercambio entre los estados de oxidación Ru$^{3+}$/Ru$^{2+}$, responde a un proceso electroquímico reversible, en el cual podemos fácilmente reducir u oxidar el complejo variando el potencial del electrodo de trabajo. Habiendo ya comprobado, con el \fe, el buen desempeño de los electrodos respecto de la velocidad de barrido, se eligió un valor \SI{50}{\milli\volt\per\second} para las voltametrías cíclicas (de uso frecuente para este tipo de mediciones). Se llevaron a cabo una serie de VC para varias concentraciones de la sonda, con el objetivo de elaborar la correspondiente curva de calibración para \aminorutenio. Se verifica de estos voltagramas el buen desempeño EQ de los electrodos referente a la transferencia de electrones.
 		
 			 \begin{figure}[ht]
 	 	     \begin{subfigure}[t]{0.495\textwidth}
@@ -344,12 +353,13 @@
 	         	\label{fig:Ru_b}
 	     		\end{subfigure}
 	     		\label{rutenio}
-	     		\caption[Respuesta electroquímica para \ru]{(a) Voltametrías cíclicas para soluciones de \ru\space de distinta concentración y, (b) curva de calibración para dichas concentraciones. Todos los voltagramas fueron tomados a \SI{50}{\milli\volt\per\second} con contraelectrodo de Pt en una solución \SI{0.1}{\milli\Molar} de NaCl contra ESC.}
+	     		\caption[Respuesta electroquímica para \ru]{(a) Voltametrías cíclicas para soluciones de \ru\space de distinta concentración y, (b) curva de calibración para dichas concentraciones. Todos los voltagramas fueron tomados a \SI{50}{\milli\volt\per\second} con contraelectrodo de Pt en una solución \SI{0.1}{\milli\Molar} de NaCl y utilizando de referencia ESC.}
 	     	 \end{figure}
 			 		 	 
 		\subsubsection*{Respuesta del ferroceno metanol}
  	 	 
- 	 	  El \fc\space fue otra de las sondas electroquímicas que se utilizó. A diferencia de las sondas anteriores la especie reducida de ésta molécula no tiene carga neta. Es por ello que resultó imprescindible para sacar conclusiones acerca de los fenómenos de transporte dentro las películas delgadas mesoporosas y sus propiedades permeoselectivas, como ya se discutió ampliamente en el capítulo anterior. La reacción de oxidación/reducción es la siguiente:
+ 	 	  A diferencia de las sondas anteriores la especie reducida del \fc\space tiene carga neta, por lo que se puede esperar que no tenga interacciones de tipo electrostáticas con las películas delgadas mesopoporosas. Por lo que es de  Es por ello que resultó imprescindible para sacar conclusiones acerca de los fenómenos de transporte y comparar sistemas calcinados con sistemas no clacinados, como ya se discutió ampliamente en el capítulo anterior. 
+ 	 	  La reacción de oxidación/reducción para esta molécula es la siguiente:
  	 	 			%Ecuación redox para el Ferroceno
  	 				 \begin{equation}
  	 	 				\begin{aligned}
@@ -357,7 +367,7 @@
  	 	 				\end{aligned}
  	 	 			 \end{equation}
  	 	  
- 	 	 De la misma forma que se realizó para las otras sondas, se confeccionó una curva de calibración para distintas concentraciones de \fc\space, la \ref{Fig:Fc} muestra la respuesta electroquímica correspondiente sobre electrodos de Au.
+ 	 	 De la misma forma que se realizó para las otras sondas, se confeccionó una curva de calibración para distintas concentraciones de \fc\space, la figura \ref{Fig:Fc} muestra la respuesta electroquímica correspondiente sobre electrodos de Au.
  	 				
  	 				%Graficos para el Ferroceno
 		 		 \begin{figure}[ht]
@@ -371,7 +381,7 @@
 		         	\caption{Curva de calibración para la especie \fc. Los valores fueron tomados de la figura \ref{fig:Fc_a}.}
 		          	\label{fig:Fc_b}
 		      		\end{subfigure}
-		      	 \caption[Respuesta electroquímica para \fc]{a) Voltametrías cíclicas para soluciones de \fc\space de distinta concetración y, b) curva de calibración para dichas concentraciones. Todos los voltagramas fueron tomadas a \SI{50}{\milli\volt\per\second} con contraelectrodo de Pt y en una solución \SI{0.1}{\Molar} de NaCl como electrolito soporte.}
+		      	 \caption[Respuesta electroquímica para \fc]{(a) Voltametrías cíclicas para soluciones de \fc\space de distinta concentración y, (b) curva de calibración para dichas concentraciones. Todos los voltagramas fueron tomadas a \SI{50}{\milli\volt\per\second} con contraelectrodo de Pt en una solución \SI{0.1}{\Molar} de NaCl y utilizando ESC como referencia.}
 		      	 \label{Fig:Fc}
 	      		 \end{figure}
 
@@ -403,17 +413,19 @@
 				% 	     		 \label{fig:HQ}
 				% 	     		 \end{figure} 
 				 
-		 En la tabla \ref{tabla:sondas} se resumen las características y los resultados de las voltametrías cíclicas para cada una de las sondas modelo elegidas. Durante todo el desarrollo de la tesis se utilizaron estos resultados con ánimos de comparar las voltametrías sobre los electrodos desnudos y sobre los electrodos con la película mesoporosa.
+		 En la tabla \ref{tabla:sondas} se resumen las características y los resultados de las voltametrías cíclicas para cada una de las sondas modelo elegidas. Las variables calculadas fueron la diferencia de potenciales entre el pico de corriente anódico y catódico, de forma de evaluar la reversibilidad de la reacción y capacidad de transferencia electrónica de los electrodos y el coeficiente de difusión de una especie libre en un electrodo plano semiinfinito. Durante todo el desarrollo de la tesis se utilizaron estos resultados con ánimos de comparar los voltagramas sobre los electrodos desnudos y sobre los electrodos con la película mesoporosa.
+		  
 		  %Tabla resultados EQ
 		     \begin{table}[ht]
-	  		  \caption[Sondas electroquímicas]{Resultados y características de las sondas electroactivas utilizadas.}
-	  		  \begin{tabular}{>{\raggedright\arraybackslash}m{2.43cm}>{\centering\arraybackslash}m{3cm}>{\centering\arraybackslash}m{3cm}>{\centering\arraybackslash}m{2cm}}
+		     \vspace*{0.5cm}
+	  		  \caption[Sondas electroquímicas]{Características de las sondas electroactivas utilizadas a lo largo de la tesis. Cálculo del coeficiente de difusión ($D$) para difusión en un plano simiinfinito a \SI{25}{\celsius}.}
+	  		  \begin{tabular}{>{\raggedright\arraybackslash}m{2.2cm}>{\centering\arraybackslash}m{2.3cm}>{\centering\arraybackslash}m{2.3cm}>{\centering\arraybackslash}m{1.5cm}>{\centering\arraybackslash}m{1.72cm}}
 	  		  \toprule
-			  \multirow{2}{*}{Sonda}  	& Carga especie  & Carga especie  & \multirow{2}{*}{$\Delta$E(mV)} \\
-			     		    & \hspace*{-0.79cm}reducida      & \hspace*{-0.85cm}oxidada  &	   \\ \midrule
-	    	  \ferroferri	& \multirow{1}{*}{$4-$}  		& $3-$	     			   &  150  \\ \midrule
-	  		  \aminorutenio & $2+$							& $3+$					   &  80   \\ \midrule
-	  		  \raisebox{-.5\height}{\includegraphics[scale=0.5]{Esquemas/Fc.pdf}}   &  \hspace*{-0.29cm}0 & 1+ &  103  \\   		 
+			  \multirow{2}{*}{Sonda}  	& Carga especie  & Carga especie  & \multirow{2}{*}{$\Delta$E(mV)} & \multirow{2}{*}{$D$(cm$^2$s$^{-1}$)} \\
+			     		    & \hspace*{-0.79cm}reducida      & \hspace*{-0.85cm}oxidada  &	   & \\ \midrule
+	    	  \ferroferri	& \multirow{1}{*}{$4-$}  		& $3-$	     			   &  150  &  \num{2.0e-7}\\ \midrule
+	  		  \aminorutenio & $2+$							& $3+$					   &  80   &  \num{5.5e-6} \\ \midrule
+	  		  \raisebox{-.5\height}{\includegraphics[scale=0.5]{Esquemas/Fc.pdf}}   &  \hspace*{-0.29cm}0 & 1+ &  103 & \num{1.9e-6} \ \\   		 
 	  		  \bottomrule
 	    	  \end{tabular}
 	   		  \label{tabla:sondas}
@@ -423,11 +435,15 @@
 
     \subsection{Incompatibilidad \textit{top-down/bottom-up}}
 
-  			Una vez demostrado el buen desempeño electroquímico de los microelectrodos fabricados por técnicas \textit{top-down}, el siguiente paso fue el depósito de la película mesoporosa sobre los electrodos. Ya se discutió a lo largo del capítulo \ref{chap:Mesoporosos} las técnicas de deposito, el control sobre la síntesis para obtener películas de diferente porosidad, espesor, adherencia, etc.
+  			Una vez demostrado el óptimo desempeño electroquímico de los microelectrodos fabricados por técnicas \textit{top-down}, la siguiente etapa consintió en el depósito de la película mesoporosa sobre los electrodos. Ya se discutió a lo largo del capítulo \ref{chap:Mesoporosos} las técnicas de depósito, el control sobre la síntesis para obtener películas de diferente porosidad, espesor, adherencia, etc.
 
-  			Nos apoyamos en trabajos similares\cite{Otal2006,Calvo2009,Fattakhova-Rohlfing2007,Rohlfing2005}, donde utilizan la electroquímica como herramienta para establecer propiedades de las \pdm. En estos trabajos utilizan vidrio ITO o vidrio FTO como electrodos y desarrollan la electroquímica sobre sistemas más clásicos, películas delgadas calcinadas y electrodos no miniaturizados. En este trabajo, una vez depositadas las \pdm\space sobre los electrodos de oro, los resultados para \pdm\space calcinadas no fueron los esperados.  Mostraban, o voltametrias <<planas>>, o curvas donde la respuesta no era clara (figuras \ref{fig:Fe-Au-compa} y \ref{fig:Ru-Au-compa}). 
+  			Previo a los resultados discutidos y analizados en el capítulo \ref{chap:Mesoporosos} y basándose en trabajos similares\cite{Otal2006,Calvo2009,Fattakhova-Rohlfing2007,Rohlfing2005}, donde utilizan la electroquímica como herramienta para establecer propiedades de las \pdm, se realizaron mediciones elecroquímicas preliminares para evaluar el transporte en peliculas delgadas mesoporosas de SiO$_2$. En los trabajos citados utilizan vidrio ITO o vidrio FTO como electrodos y llevan a cabo mediciones electroquímicas sobre sistemas clásicos, películas delgadas calcinadas y electrodos no miniaturizados. En este trabajo, una vez depositadas las \pdm\space sobre los electrodos de oro, los primeros resultados para \pdm\space calcinadas (previos al desarrollo de la discusión del \ref{chap:Electroquimica}) no fueron los esperados. Mostraban, o voltagramas <<planas>>, o curvas donde la respuesta no era óptima, propia de electrodos con alta resistencia o limitados en la cinética de transferencia electrónica (figuras \ref{fig:Fe-Au-compa} y \ref{fig:Ru-Au-compa}).
 
-  			La búsqueda de la respuesta a este problema se encaró de forma sistemática. Partiendo de la hipótesis de que se trataba de algún contaminate, poros bloqueados o defectos durante la síntesis del mesoporosos, se repitió la preparación de los soles, los ensayos electroquímicos cambiando reactivos, sondas, solventes y electrolitos soportes. No pudiendo dar con la solución, se atribuyó el problema a alguna etapa de proceso. Se hicieron muestras control, donde se llevaron en paralelo los procesos de síntesis de películas mesoporosas, (descripto en la sección \ref{sec:cond_y_extr}, pág \pageref{sec:cond_y_extr}) pero sin la película. Es decir, sometiendo los electrodos de Au desnudos a condiciones de humedad y temperatura del proceso de síntesis de las \pdm. La respuesta electroquímica seguía siendo defectuosa, por lo que se planteó una nueva hipótesis. Esta nueva hipótesis, plantea que el problema de la mala respuesta EQ radica en someter los electrodos al tratamiento térmico de calcinación (\SI{350}{\celsius}).
+  			El motivo por la cuál la respuesta electroquímica en sistemas calcinados era muy diferente a la reportada se encaró de forma sistemática. Se plantearon diferentes hipótesis: 1) contaminación de los reactivos, 2) poros bloqueados, 3) defectos durante la síntesis del mesoporoso y, 4) difusión de impurezas producto de la calcinación.
+
+  			Partiendo de la hipótesis de que se trataba de algún contaminate, se repitió la preparación de los soles, sondas, solventes y electrolitos soportes. No pudiendo dar con la solución, se atribuyó el problema a alguna etapa de proceso. Se hicieron muestras control, donde se llevaron en paralelo los procesos de síntesis de películas mesoporosas, (descripto en la sección \ref{sec:cond_y_extr}, pág \pageref{sec:cond_y_extr}) pero sin la película. Es decir, sometiendo los electrodos de Au desnudos a condiciones de humedad y temperatura idénticos al proceso de síntesis de las \pdm. La respuesta electroquímica seguía siendo defectuosa, por lo que se consolidó la hipótesis de difusión de contaminantes por la temperatura utilizada (\SI{350}{\celsius}). 
+
+  			%Esta nueva hipótesis, plantea que el problema de la mala respuesta EQ radica en someter los electrodos al tratamiento térmico de calcinación (\SI{350}{\celsius}).
 
   			Una vez que hallada la respuesta surgieron dos vías de acción, 1) Cambiar el material de los electrodos por oro de mayor calidad o platino, 2) sustituir o evitar el paso de calcinación. Se consideró la segunda opción mucho mas rica, tanto científica como tecnológicamente, ya que permitía resolver el problema y desarrollar un método de condensación y extracción para sintetizar películas delgadas mesoporosas de óxido de silicio. El desarrollo de este método alternativo ya fue extensamente tratado en el capítulo \ref{chap:Mesoporosos}.
 

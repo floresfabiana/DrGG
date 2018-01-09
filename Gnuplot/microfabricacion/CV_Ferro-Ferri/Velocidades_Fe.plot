@@ -7,7 +7,7 @@ set terminal tikz
 set output "Velocidades_Fe.tikz" 
 
 #Leyenda
-set key top left Left reverse samplen 3 font ",8" textcolor rgb "gray40"
+set key top left Left reverse sample 3 font ",14" textcolor rgb "black"
 
 #Saco el Borde
 	unset border
@@ -46,7 +46,7 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
-	set tics nomirror
+	set tics nomirror font ",14"
 
 #Estilo de la grilla
 	set style line 11 lc rgb 'gray40' lt 0 lw 1 
@@ -62,11 +62,13 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
 
 #Coloca los nombre de los ejes
 	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2.5,0
 
 #Fuerza a establecer un rango
 	 
-	set xrange [-300:]
+	set xrange [-300:700]
+	set xtics -300,200,700 offset 0,-0.5
+	set ytics offset -0.2,0
 	#set yrange [10:60]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
@@ -91,9 +93,10 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
 
 #Ploteo todas las funciones que les digamos
 i=260 #
-plot "Velocidades_Fe.txt" using ($1*1000+183):($2*1e6/0.0025-i) with lines ls 5 title "FCN 10mM, 5 mV/s",\
-"Velocidades_Fe.txt" using ($1*1000+183):($3*1e6/0.0025-i) with lines ls 4 title "FCN 10mM, 10 mV/s",\
-"Velocidades_Fe.txt" using ($1*1000+183):($4*1e6/0.0025-i) with lines ls 3 title "FCN 10mM, 20 mV/s",\
-"Velocidades_Fe.txt" using ($1*1000+183):($5*1e6/0.0025-i) with lines ls 2 title "FCN 10mM, 50 mV/s",\
-"Velocidades_Fe.txt" using ($1*1000+183):($6*1e6/0.0025-i) with lines ls 1title "FCN 10mM, 100 mV/s"
+plot "Velocidades_Fe.txt" using ($1*1000+183):($6*1e6/0.0025-i) with lines ls 1 title "100 mV/s",\
+"Velocidades_Fe.txt" using ($1*1000+183):($5*1e6/0.0025-i) with lines ls 2 title "50 mV/s",\
+"Velocidades_Fe.txt" using ($1*1000+183):($4*1e6/0.0025-i) with lines ls 3 title "20 mV/s",\
+"Velocidades_Fe.txt" using ($1*1000+183):($3*1e6/0.0025-i) with lines ls 4 title "10 mV/s",\
+"Velocidades_Fe.txt" using ($1*1000+183):($2*1e6/0.0025-i) with lines ls 5 title "5 mV/s",\
+
 

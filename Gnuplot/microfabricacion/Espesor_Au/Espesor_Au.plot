@@ -64,8 +64,8 @@ fit f(x) "Espesor_Au.txt" using 1:2 via a,b
 
 stat "Espesor_Au.txt" using 1:2
 
-set label 1 sprintf("y=%3.3f x +%3.3f",a,b) at 2,57 font ",10" textcolor rgb "gray40"
-set label 3 sprintf("R=%3.4f",STATS_correlation) at 2,53 font ",10" textcolor rgb "gray40"
+set label 1 sprintf("y=%3.3f x +%3.3f",a,b) at 2,57 font ",12" textcolor rgb "black"
+set label 3 sprintf("R=%3.4f",STATS_correlation) at 2,52 font ",12" textcolor rgb "black"
  
  
 

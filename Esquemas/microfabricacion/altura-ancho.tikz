@@ -28,7 +28,7 @@
 %Superficie de Silciio
 \node at (0,0.5)[on background layer] {
 	\begin{tikzpicture}
-	\fill[draw=none,top color=darkgray] rectangle (7.3,1);
+	\shade[draw=none,top color=darkgray] rectangle (7.3,1);
 	\end{tikzpicture}
 	};
 
@@ -64,7 +64,7 @@
 \node at ([yshift=1.85cm,xshift=-1.5cm]B.center) {\scriptsize{sobrerevelado}};
 \node at ([yshift=0.7cm,xshift=-3cm]B.center) {\scriptsize{fotoresina}};
 \node at ([yshift=0cm,xshift=-3.1cm]B.center) {\scriptsize{sustrato}};
-\node at (4.45,1.25) {\scriptsize{$h$}};
+\node at (4.45,1.25) {\scriptsize{$e$}};
 \node at (1.6,2.23) {\scriptsize{$L$}};
 \node  at (2.25,2.23) {\scriptsize{$\beta$}};
 

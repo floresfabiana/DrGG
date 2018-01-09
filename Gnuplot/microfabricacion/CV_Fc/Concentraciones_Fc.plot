@@ -7,7 +7,7 @@ set terminal tikz
 set output "Concentraciones_Fc.tikz" 
 
 #Leyenda
-	set key top left Left reverse samplen 3 font ",8" textcolor rgb "gray40"
+	set key top left Left reverse sample 3 font ",14" textcolor rgb "black"
 
 #Saco el Borde
 	unset border
@@ -44,7 +44,7 @@ red_100 = "#ff0000"
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
-	set tics nomirror
+	set tics nomirror font ",14"
 
 #Estilo de la grilla
 	set style line 11 lc rgb 'gray40' lt 0 lw 1 
@@ -67,7 +67,8 @@ red_100 = "#ff0000"
 	 
 	#set xrange [20:70]
 	#set yrange [10:60]
-
+	set xtics  offset 0,-0.5
+	set ytics offset -0.3,0
 #Graduacion del eje x e Intervalos entre las marcas mayores
 	#set xtics 10
 	#set mxtics 2
@@ -96,6 +97,6 @@ red_100 = "#ff0000"
  
 
 #Ploteo todas las funciones que les digamos
-plot "Fc1mM-amplio.txt" using ($1):($2/0.0314) with lines ls 5 title "FcOH 1mM",\
-"Fc5mM-amplio.txt" using ($1):($2/0.0314) with lines ls 4 title "FcOH 5mM",\
-"Fc10mM-amplio.txt" using ($1):($2/0.0314) with lines ls 3 title "FcOH 10mM"
+plot "Fc5mM-amplio.txt" using ($1):($2/0.0314) with lines ls 4 title "FcOH 10mM",\
+"Fc10mM-amplio.txt" using ($1):($2/0.0314) with lines ls 3 title "FcOH 5mM",\
+"Fc1mM-amplio.txt" using ($1):($2/0.0314) with lines ls 5 title "FcOH 1mM",\

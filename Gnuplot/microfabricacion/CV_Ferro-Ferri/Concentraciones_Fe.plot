@@ -7,7 +7,7 @@ set terminal tikz
 set output "Concentraciones_Fe.tikz" 
 
 #Leyenda
-	set key top left Left reverse samplen 3 font ",8" textcolor rgb "gray40"
+	set key top left Left reverse sample 3 font ",14" textcolor rgb "black"
 
 #Saco el Borde
 	unset border
@@ -46,7 +46,7 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
-	set tics nomirror
+	set tics nomirror font ",14"
 
 #Estilo de la grilla
 	set style line 11 lc rgb 'gray40' lt 0 lw 1 
@@ -67,7 +67,9 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 
 #Fuerza a establecer un rango
 	 
-	set xrange [-300:]
+	set xrange [-300:700]
+	set xtics -300,200,700 offset 0,-0.5
+	set ytics offset -0.3,0
 	#set yrange [10:60]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
@@ -92,9 +94,8 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 
 #Ploteo todas las funciones que les digamos
 i=183
-plot "Concentraciones_Fe.txt" using ($1*1000+i):($2*1e6/0.0025) with lines ls 5 title "FCN 1 mM" ,\
-"Concentraciones_Fe.txt" using ($1*1000+i):($3*1e6/0.0025) with lines ls 4 title "FCN 5m M",\
-"Concentraciones_Fe.txt" using ($1*1000+i):($4*1e6/0.0025) with lines ls 3 title "FCN 10 mM",\
+plot "Concentraciones_Fe.txt" using ($1*1000+i):($6*1e6/0.0025) with lines ls 1 title "FCN 50 mM",\
 "Concentraciones_Fe.txt" using ($1*1000+i):($5*1e6/0.0025) with lines ls 2 title "FCN 25 mM",\
-"Concentraciones_Fe.txt" using ($1*1000+i):($6*1e6/0.0025) with lines ls 1 title "FCN 50 mM"
-
+"Concentraciones_Fe.txt" using ($1*1000+i):($4*1e6/0.0025) with lines ls 3 title "FCN 10 mM",\
+"Concentraciones_Fe.txt" using ($1*1000+i):($3*1e6/0.0025) with lines ls 4 title "FCN 5m M",\
+"Concentraciones_Fe.txt" using ($1*1000+i):($2*1e6/0.0025) with lines ls 5 title "FCN 1 mM" ,\
