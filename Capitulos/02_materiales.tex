@@ -184,11 +184,11 @@
     \vspace*{-0.3cm}
 	\subsection{Funcionalización de las \pdm}\label{sub:funcionalizaci_n_de_las_pdm}
 	
-		Se realizaron una serie de reacciones químicas con el propósito de funcionalizar las paredes de los poros de la \pdm\space y con el objetivo de conferir a cada electrodo, de un mismo sensor, alguna característica distintiva. Las funcionalizaciones se llevaron a cabo sobre películas mixtas Si$_{0.9}$Zr$_{0.1}$O$_2$ sintetizadas por el método de alto vacío. Esta elección está fundamentada en los buenos resultados obtenidos para estos sistemas, los cuales se discuten a lo largo de los capítulos \ref{chap:Mesoporosos} y \ref{chap:Electroquimica}).
+		Se realizaron una serie de reacciones químicas con el propósito de funcionalizar las paredes de los poros de la \pdm\space y con el objetivo de conferir a cada electrodo, de un mismo sensor, alguna característica distintiva. Las funcionalizaciones se llevaron a cabo sobre películas mixtas Si$_{0.9}$Zr$_{0.1}$O$_2$ sintetizadas por el método de alto vacío. Esta elección está fundamentada en los buenos resultados obtenidos para estos sistemas, los cuales se discuten a lo largo de los capítulos \ref{chap:Mesoporosos} y \ref{chap:Electroquimica}.
 
-		Las moléculas elegidas para incorporar a las \pdmZ\space se exponen en la tabla \ref{tabla:funciones}. Allí se indica el nombre, la estructura, concentración y condiciones bajo las cuales se realizaron las reacciones y nomenclatura de los sistemas resultantes.
+		Las moléculas elegidas para incorporar a las \pdmZ\space se exponen en la tabla \ref{tabla:funciones}. Allí se indica la denominación, estructura, concentración y condiciones bajo las cuales se realizaron las reacciones y nomenclatura de los sistemas resultantes.
 
-		Las funcionalizaciones se llevaron a cabo en una región estrecha del sensor, de forma de abarcar un sólo electrodo por cada reacción. Para delimitar la zona de reacción se utilizó un recipiente de polipropileno con un sello contra la \pdm, evitando derrames laterales. Las condiciones experimentales fueron adaptaciones de las utilizadas por Angelomé\cite{Angelome2008} y Calvo\cite{Calvo20210}, utilizando como solvente tetrahidrofurano(\textit{Sintorgan}) para el DHDP(\textit{Fluka}) y tolueno(\textit{DORWIL}) para el APTES(\textit{Aldrich}). Se normalizó el tiempo y la temperatura de ambas reacciones con el propósito de poder funcionalizar dos o más electrodos en simultáneo. El enjuague se realizó con abundante etanol seguido de secado con flujo de aire o N$_2$.
+		Las funcionalizaciones se llevaron a cabo en una región estrecha del sensor, de forma de abarcar un sólo electrodo por cada reacción. Para delimitar la zona de reacción se utilizó un recipiente de polipropileno con un sello contra la \pdm, evitando derrames laterales. Las condiciones experimentales fueron adaptaciones de las utilizadas por Angelomé\cite{Angelome2008} y Calvo\cite{Calvo20210}, utilizando como solvente tetrahidrofurano(\textit{Sintorgan}) para el DHDP(\textit{Fluka}) y tolueno(\textit{DORWIL}) para el APTES(\textit{Aldrich}). Se normalizó el tiempo y la temperatura de ambas reacciones con el propósito de poder funcionalizar dos o más electrodos en simultáneo. Una vez termianda la reacción se realizó un enjuague con abundante etanol seguido de secado con flujo de aire o N$_2$.
 
 		 \begin{table}[ht!]
   		   \caption[Moléculas funcionalizantes]{Moléculas utilizadas para funcionalizar los electrodos, condiciones experimentales y nomenclatura.} 
@@ -696,7 +696,7 @@
 	 	    Variable  & 	Valor  &   descripción      \\ \midrule
 	 	    $h$  	  &  \hspace{-5mm} \SI{200}{nm}	& 	   espesor de las películas delgadas mesoporosas 	    \\ \midrule
 	 	    $C_{\fc}$  & \SI{5}{\milli\Molar}  & concentración de FeOH en solución    \\ \midrule
-	 	    $C_{\ru}$ & \SI{1}{\milli\Molar}  & concentración de \ru\space en las películas    \\ \midrule
+	 	    $C_{\ru}$ & \SI{1}{\Molar}  & concentración de \ru\space en las películas    \\ \midrule
 	 	    $C_{KCl}$ & \hspace{-5mm}  \SI{100}{\milli\Molar}  & concentración de electrolito soporte    \\ \midrule
 	 	    $k$ 		   & variable 	 & 	constante de mediación redox    \\ \midrule
 	 	    $E^\circ_{\ru}$  & \hspace{-3mm}\SI{-0.3}{\volt} vs ESC & potencial reducción estandar el \ru \\ \midrule
@@ -712,26 +712,6 @@
 
 			\vfill
 		
-
-
-
-% Mail de mario
-% Hola Gustavo,
-
-% Recien miro lo que me enviaste. No se cuanto detalle queres agregar. Te mando un resumen breve...
-
-% El metodo de elementos finitos es bastante estandar. Si queres leer un poco sobre su uso en electroquimica y citar algo de simulacion numerica, podes mirar el libro de Britz (Digital Simulation in Electrochemistry). Tiene muy poco sobre elementos finitos, pero creo que te alcanza. 
-
-% El modelo usa condiciones de contorno de equilbrio (ecuacion de Nernst) en la superficie del electrodo tanto para la sonda como para el mediador, lo cual es valido siempre que la cinetica de electrodo sea rapida. Dentro del film se considera la difusion del mediador y la sonda (segunda ley de Fick) y ademas la reaccion redox entre ambos (reaccion bimolecular de orden uno entre cada especie). En la solucion solo difunde la sonda. No se considera la migracion, lo cual es valido siempre y cuando la concentracion del electrolito soporte sea suficientemente alta. 
-
-% El modelo asume que el sistema es homogeneo en planos paralelos al electrodo y por lo tanto hay gradientes solo en la direccion normal al electrodo.   
-
-% Decime si con eso te alcanza
-
-% Saludos,
-
-% Mario
-
 
 
 %Revisión de LOGS

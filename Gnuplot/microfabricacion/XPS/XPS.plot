@@ -34,7 +34,12 @@ set style line 10 lc rgb 'gray40' lt 1 lw 5
 set border 3 back ls 10 lw 1.5 
 set xtics nomirror
 set ytics nomirror
-set mxtics 4
+unset mxtics
+
+# #Rectangulo, ventana de trabajo
+#set style rect front fs empty border lt 456 lc rgb 'black'
+set object 2 rect from -615,15  to -556.5,65 fs empty border lc rgb 'black'  dt 3 lw 1.5
+# set style rect fc lt -1 fs empty border lc 'black'
 
 #Rango invertido para el IR
 set xrange [-900:5]
@@ -50,7 +55,7 @@ set grid back ls 11
 set xlabel "Energ\'ia / eV" font ",14" textcolor rgb "gray40" offset  0,-2
 set ylabel "Intensidad / u. a." font ",14" textcolor rgb "gray40" offset  -2,0
 
-set label at -900,60 "Cr\\textbar Au 400$^{\\circ}$C" textcolor rgb "black"
+set label at -900,65 "Cr\\textbar Au 400$^{\\circ}$C" textcolor rgb "black"
 set label at -900,35 "Cr\\textbar Au 25$^{\\circ}$C" textcolor rgb "black"
 
 #hago que sea mas largo en el eje X
@@ -62,20 +67,20 @@ set size ratio 0.6
 
 # set style arrow 3 head filled size screen 0.015,10,65 ls 20
 
-set label "\\tiny{Au5d}" at -5,25 rotate by 90 font ",8" textcolor rgb "gray40"
-set label "\\tiny{Au5p3}" at -56,25 rotate by 90 font ",8" textcolor rgb "gray40"
-set label "\\tiny{Au4f}" at -87,51 rotate by 90 font ",8" textcolor rgb "gray40"
-set label "\\tiny{Au4d5}" at -338,49 rotate by 90 font ",8" textcolor rgb "gray40"
-set label "\\tiny{Au4d3}" at -357,49 rotate by 90 font ",8" textcolor rgb "gray40"
-set label "\\tiny{Au4p3}" at -550,48 rotate by 90 font ",8" textcolor rgb "gray40"
-set label "\\tiny{Au4p1}" at -643,51 rotate by 90 font ",8" textcolor rgb "gray40"
-set label "\\tiny{Au4s}" at -762,50 rotate by 90 font ",8" textcolor rgb "gray40"
+set label "Au5d" at -5,25 rotate by 90 font ",8" textcolor rgb "black"
+set label "Au5p3" at -56,25 rotate by 90 font ",8" textcolor rgb "black"
+set label "Au4f" at -87,51 rotate by 90 font ",8" textcolor rgb "black"
+set label "Au4d5" at -330,49 rotate by 90 font ",8" textcolor rgb "black"
+set label "Au4d3" at -357,49 rotate by 90 font ",8" textcolor rgb "black"
+set label "Au4p3" at -542,48 rotate by 90 font ",8" textcolor rgb "black"
+set label "Au4p1" at -643,51 rotate by 90 font ",8" textcolor rgb "black"
+set label "Au4s" at -762,50 rotate by 90 font ",8" textcolor rgb "black"
 
-set label "\\tiny{C1s}" at -285,37 rotate by 90 font ",8" textcolor rgb "gray40"
-set label "\\tiny{O1s}" at -530,49rotate by 90 font ",8" textcolor rgb "gray40"
+set label "C1s" at -285,37 rotate by 90 font ",8" textcolor rgb "black"
+set label "O1s" at -522,49rotate by 90 font ",8" textcolor rgb "black"
 
-set label "\\tiny{Cr2p1}" at -575,48 rotate by 90 font ",8" textcolor rgb "gray40"
-set label "\\tiny{Cr2p3}" at -590,48rotate by 90 font ",8" textcolor rgb "gray40"
+set label "Cr2p1" at -572,49 rotate by 90 font ",8" textcolor rgb "black"
+set label "Cr2p3" at -593,49 rotate by 90 font ",8" textcolor rgb "black"
 
 # set label "\\tiny{TO}$_2$" at 900,0.03 font ",8" textcolor rgb "gray40"
 # set label "$\\nu_{\\text{\\tiny{Si-OH}}}$" at 1010,0.08 font ",10" textcolor rgb "gray40"
