@@ -113,6 +113,9 @@ Kelvin;Kelvin\index{Kelvin}
 Young;Young\index{Young}
  adherencia ; adherencia\index{adherencia} 
  Nerst; Nerst\index{Nerst}
+Ybarra;Ybarra\index{Ybarra}
+ Donnan; Donnan\index{Donnan}
+ Laviron; Laviron\index{Laviron}
  Randles-Sevcik; Randles-Sevcik\index{Randles-Sevcik}
  Faraday; Faraday\index{Faraday}
  potencial de pico; potencial de pico\index{potencial!de pico}
@@ -245,7 +248,8 @@ sitios redox;sitios redox\index{sitio redox}
  Calvo; Calvo\index{Calvo}
 INQUIMAE;INQUIMAE\index{INQUIMAE}
  permeación ; permeación\index{permeacion} 
- mediación ; mediación\index{mediacion} 
+ mediación; mediación\index{mediacion rédox}
+ sitios rédox; sitios rédox\index{sitios rédox}
  simulación ; simulación\index{simulacion} 
 \textit{swelling};\textit{swelling}\index{swelling@\textit{swelling}}
  Crepaldi; Crepaldi\index{Crepaldi}

@@ -1,0 +1,176 @@
+\begin{tikzpicture}[gnuplot]
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% vie 12 ene 2018 12:14:04 ART
+\path (0.000,0.000) rectangle (12.500,8.750);
+\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.688,1.601)--(11.947,1.601);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.688,1.601)--(1.868,1.601);
+\node[gp node right] at (1.504,1.601) {$-10$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.688,3.296)--(11.947,3.296);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.688,3.296)--(1.868,3.296);
+\node[gp node right] at (1.504,3.296) {$-5$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.688,4.991)--(11.947,4.991);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.688,4.991)--(1.868,4.991);
+\node[gp node right] at (1.504,4.991) {$0$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.688,6.686)--(7.899,6.686);
+\draw[gp path] (11.763,6.686)--(11.947,6.686);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.688,6.686)--(1.868,6.686);
+\node[gp node right] at (1.504,6.686) {$5$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.688,8.381)--(11.947,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.688,8.381)--(1.868,8.381);
+\node[gp node right] at (1.504,8.381) {$10$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (1.688,1.601)--(1.688,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (1.688,1.601)--(1.688,1.781);
+\node[gp node center] at (1.688,1.293) {$0$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (3.740,1.601)--(3.740,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (3.740,1.601)--(3.740,1.781);
+\node[gp node center] at (3.740,1.293) {$100$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (5.792,1.601)--(5.792,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (5.792,1.601)--(5.792,1.781);
+\node[gp node center] at (5.792,1.293) {$200$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (7.843,1.601)--(7.843,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (7.843,1.601)--(7.843,1.781);
+\node[gp node center] at (7.843,1.293) {$300$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (9.895,1.601)--(9.895,6.401);
+\draw[gp path] (9.895,8.201)--(9.895,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (9.895,1.601)--(9.895,1.781);
+\node[gp node center] at (9.895,1.293) {$400$};
+\gpsetlinetype{gp lt axes}
+\gpsetdashtype{gp dt axes}
+\gpsetlinewidth{1.00}
+\draw[gp path] (11.947,1.601)--(11.947,8.381);
+\gpsetlinetype{gp lt border}
+\gpsetdashtype{gp dt solid}
+\gpsetlinewidth{1.50}
+\draw[gp path] (11.947,1.601)--(11.947,1.781);
+\node[gp node center] at (11.947,1.293) {$500$};
+\draw[gp path] (1.688,8.381)--(1.688,1.601)--(11.947,1.601);
+\node[gp node center,rotate=-270,font={\fontsize{16pt}{19.2pt}\selectfont}] at (0.246,4.991) {$\text{log}(i_{lim}/i_s)$};
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (6.817,0.215) {$\Delta E$ /mV};
+\gpcolor{rgb color={0.000,0.000,0.000}}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (8.267,7.976) {$D_e=10^{-4}\text{cm}^{-2}.\text{s}^{-1}$};
+\gpcolor{rgb color={1.000,0.000,0.000}}
+\gpsetlinewidth{2.50}
+\gpsetpointsize{3.20}
+\gppoint{gp mark 7}{(1.688,7.052)}
+\gppoint{gp mark 7}{(2.714,6.767)}
+\gppoint{gp mark 7}{(3.740,6.479)}
+\gppoint{gp mark 7}{(4.766,6.191)}
+\gppoint{gp mark 7}{(5.792,5.906)}
+\gppoint{gp mark 7}{(6.818,5.618)}
+\gppoint{gp mark 7}{(7.843,5.333)}
+\gppoint{gp mark 7}{(8.869,5.045)}
+\gppoint{gp mark 7}{(9.895,4.757)}
+\gppoint{gp mark 7}{(10.921,4.472)}
+\gppoint{gp mark 7}{(11.947,4.184)}
+\gppoint{gp mark 7}{(8.083,7.976)}
+\gpcolor{rgb color={0.000,0.000,0.000}}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (8.267,7.526) {$D_e=10^{-6}\text{cm}^{-2}.\text{s}^{-1}$};
+\gpcolor{rgb color={0.000,0.000,1.000}}
+\gpsetlinewidth{1.00}
+\gppoint{gp mark 5}{(1.688,6.374)}
+\gppoint{gp mark 5}{(2.714,6.089)}
+\gppoint{gp mark 5}{(3.740,5.801)}
+\gppoint{gp mark 5}{(4.766,5.513)}
+\gppoint{gp mark 5}{(5.792,5.228)}
+\gppoint{gp mark 5}{(6.818,4.940)}
+\gppoint{gp mark 5}{(7.843,4.655)}
+\gppoint{gp mark 5}{(8.869,4.367)}
+\gppoint{gp mark 5}{(9.895,4.079)}
+\gppoint{gp mark 5}{(10.921,3.794)}
+\gppoint{gp mark 5}{(11.947,3.506)}
+\gppoint{gp mark 5}{(8.083,7.526)}
+\gpcolor{rgb color={0.000,0.000,0.000}}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (8.267,7.076) {$D_e=10^{-8}\text{cm}^{-2}.\text{s}^{-1}$};
+\gpsetpointsize{4.80}
+\gppoint{gp mark 13}{(1.688,5.696)}
+\gppoint{gp mark 13}{(2.714,5.411)}
+\gppoint{gp mark 13}{(3.740,5.123)}
+\gppoint{gp mark 13}{(4.766,4.835)}
+\gppoint{gp mark 13}{(5.792,4.550)}
+\gppoint{gp mark 13}{(6.818,4.262)}
+\gppoint{gp mark 13}{(7.843,3.977)}
+\gppoint{gp mark 13}{(8.869,3.689)}
+\gppoint{gp mark 13}{(9.895,3.401)}
+\gppoint{gp mark 13}{(10.921,3.116)}
+\gppoint{gp mark 13}{(11.947,2.828)}
+\gppoint{gp mark 13}{(8.083,7.076)}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (8.267,6.626) {$D_e=10^{-10} \text{cm}^{-2}.\text{s}^{-1}$};
+\gpcolor{rgb color={0.600,0.600,0.600}}
+\gpsetlinewidth{0.50}
+\gppoint{gp mark 9}{(1.688,5.018)}
+\gppoint{gp mark 9}{(2.714,4.733)}
+\gppoint{gp mark 9}{(3.740,4.445)}
+\gppoint{gp mark 9}{(4.766,4.157)}
+\gppoint{gp mark 9}{(5.792,3.872)}
+\gppoint{gp mark 9}{(6.818,3.584)}
+\gppoint{gp mark 9}{(7.843,3.299)}
+\gppoint{gp mark 9}{(8.869,3.011)}
+\gppoint{gp mark 9}{(9.895,2.723)}
+\gppoint{gp mark 9}{(10.921,2.438)}
+\gppoint{gp mark 9}{(11.947,2.150)}
+\gppoint{gp mark 9}{(8.083,6.626)}
+%% coordinates of the plot area
+\gpdefrectangularnode{gp plot 1}{\pgfpoint{1.688cm}{1.601cm}}{\pgfpoint{11.947cm}{8.381cm}}
+\end{tikzpicture}
+%% gnuplot variables
