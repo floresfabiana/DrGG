@@ -1,5 +1,6 @@
  microfabricación; microfabricación\index{microfabricación}
  fosfonato; fosfonato\index{fosfonato}
+ agua; agua\index{agua}
  complejación; complejación\index{complejación}
  hidrocarburo; hidrocarburo\index{hidrocarburo}
  hidrofóbic; hidrofóbic\index{hidrofóbico}
@@ -11,6 +12,7 @@
  ánodo; ánodo\index{anodo @ ánodo}
  pulverización catódica; pulverización catódica\index{pulverización catódica}
  \textit{lift-off}; \textit{lift-off}\index{lift@\textit{lift-off}}
+ \textit{foundry}; \textit{foundry}\index{foundry@\textit{foundry}}
  \textit{spin-coating}; \textit{spin-coating}\index{spin@\textit{spin-coating}}
  electrodo de Au; electrodo de Au\index{electrodo!de Au}
  electrodos de Au; electrodos de Au\index{electrodo!de Au}
@@ -326,6 +328,7 @@ silanización;silanización\index{silanización}
 Brij58;Brij58\index{Brij58}
  polipropileno; polipropileno\index{polipropileno}
  funcionalización; funcionalización\index{funcionalización}
+ funcionalizar; funcionalizar\index{funcionalizar}
  dihexadecilfosfato; dihexadecilfosfato\index{dihexadecilfosfato}
 APTES;APTES\index{aminopropil@3-aminopropil trietoxisilano}
 oxolación;oxolació\index{oxolación}
