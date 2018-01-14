@@ -504,44 +504,60 @@
 
 	\subsection{Respuesta para \ru, \fe\space y \fc}	
 
-		Se analizó la respuesta electroquímica para \aminorutenio, \ferroferri\space y \ferroceno en cada uno de los electrodos de un sensor EQ como el mostrado en el esquema de la figura \ref{fig:sensor-calesita}. La medición consiste en ciclar electroquímicamente en una ventana de potencial adecuado para cada sonda utilizando cada uno de los electrodos de un mismo sensor. Una vez que se recogieron los $n$ voltagramas se extrae de cada uno el  pico máxima de corriente anódica y se gráfica en función de la cantidad de ciclos. 
+		Se analizó la respuesta electroquímica de \aminorutenio, \ferroferri\space y \ferroceno\space para cada uno de los electrodos de un sensor EQ similar al mostrado en el esquema de la figura \ref{fig:sensor-calesita}. La medición consiste en ciclar electroquímicamente, en un rango de potencial adecuado para cada sonda, utilizando cada uno de los electrodos de un mismo sensor. Una vez que se colectaron los $n$ voltagramas se extrae de cada uno de ellos el pico de máxima de corriente anódica, luego se grafica dicho valor en función de la cantidad de ciclos. 
 
-		Ya se estudió, a la largo de este capitulo, la respuesta para cada una de estas sondas. En el caso del \fe\space se tiene una fuerte exclusión por parte de las peliculas sin funcionlizar y una minima permeación en las peliculas con APTES y DHDP. El caso del FcOH ...... permeacion.... figuras 1 y 2 respectivamente.
 
-		\begin{figure}[ht!]
-		 	       	\begin{center}
-		 	       	\includegraphics[width=\textwidth]{Graficos/ciclosintferroceno.pdf}
-		        	\caption[asd]{asd}
-		         	\end{center}
-		     		\end{figure}
 
-		\begin{figure}[ht!]
-		 	       	\begin{center}
-		 	       	\includegraphics[width=\textwidth]{Graficos/ciclosintfecn.pdf}
-		        	\caption[asd]{asd}
-		         	\end{center}
-		     		\end{figure}
+		\begin{figure}[b!]
+		 	\begin{subfigure}[t]{0.495\textwidth}
+		 	  \includegraphics[width=\textwidth]{Graficos/ciclosintferroceno.pdf}
+		      \end{subfigure}
+			\begin{subfigure}[t]{0.495\textwidth}
+		 	    \includegraphics[width=\textwidth]{Graficos/ciclosintfecn.pdf}
+			\end{subfigure}
+		      	\caption[Corriente de pico de \fc\space y \fe\space en función del número de ciclos]{Corriente de pico anódico para \fc\space \SI{1}{\milli\Molar} (izquierda) y  \fe\space \SI{1}{\milli\Molar} (derecha) en función de la cantidad de ciclos. Los datos fueron tomados a una velocidad de barrido de \SI{50}{\milli\volt\per\second} en solución de KCl \SI{100}{\milli\Molar} en un sensor compuesto por cuatro electrodos diferentes: de Au (Au), recubierto con una pelicula mesoporosa sin funcionalizar (\pdmZ), con una funcionalizada con DHDP (\pdmZ$^P_3$) y con una funcionalizada con APTES (\pdmZ$^N_1$).}
+		      	\label{fig:ciclos-fe-fcoh}
+		      	\end{figure}
 		     		
-		\begin{figure}[ht!]
+	Ya se estudió en detalle en el capítulo \ref{chap:Electrooquimica} la respuesta de los voltagramas para cada una de estas sondas. En el caso del \fe\space se tiene una fuerte exclusión por parte de las películas sin funcionalizar y una mínima permeación en las películas con APTES y DHDP. 
+	En el caso del \fc\space en todos las casos el fenómeno dominante es la permeación, como es de esperar para una sonda de carga neutra. Debido a que las membranas fueron condensadas y extraídas a bajas temperaturas la difusión es lenta y la corriente resultante es bastante menor que la obtenida en electrodos de Au desnudo (consulta sección \ref{sec:difusion}, pág. \pageref{sec:difusion}). Las corriente de pico a lo largo de los ciclos para estas dos sondas es prácticamente invariante tal como se puede observar en los gráficos de la figura \ref{fig:ciclos-fe-fcoh}.
+
+	El caso más interesante es de la sonda positiva, el \ru. La intensidad de pico anódico, para condiciones de contorno constante (velocidad de barrido, pH, fuerza iónica, concentración de \ru\space en solución), evoluciona en cada ciclo de forma diferente según se va adsorbiendo en las películas delgadas mesoporosas. La interpretación de las distintas respuestas ya discutieron en la sección \ref{sub_sec_funcionalizaciones_chap_4}, pág. \pageref{sub_sec_funcionalizaciones_chap_4}. Al igual que para las otras sondas, en el gráfico \ref{fig:ruciclos}  se muestra como va cambiando la intensidad de pico, para cada electrodo, a medida que se aumenta la cantidad de ciclos electroquímicos. 
+
+			\begin{figure}[ht!]
 		 	       	\begin{center}
-		 	       	\includegraphics[width=\textwidth]{Graficos/ciclosintru.pdf}
-		        	\caption[asd]{asd}
+		 	       	\includegraphics[width=0.85\textwidth]{Graficos/ciclosintru.pdf}
+		        	\caption[Corriente de pico de \ru\space en función del número de ciclos]{Corriente de pico anódico para \ru\space \SI{1}{\milli\Molar} en función de la cantidad de ciclos. Los datos fueron tomados a una velocidad de barrido de \SI{50}{\milli\volt\per\second} en solución de KCl \SI{100}{\milli\Molar} en un sensor compuesto por cuatro electrodos diferentes: de Au (Au), recubierto con una película mesoporosa sin funcionalizar (\pdmZ), con una funcionalizada con DHDP (\pdmZ$^P_3$) y con una funcionalizada con APTES (\pdmZ$^N_1$).}
+		         	\label{fig:ruciclos}
 		         	\end{center}
 		     		\end{figure}
-		     		     		     		
+	
+	Con el objetivo de utilizar los sensores en aplicaciones analíticas se pueden sintetizar aún más los datos presentados en los gráficos \ref{fig:ciclos-fe-fcoh} y \ref{fig:ruciclos}. Durante la recolección de datos se pueden escoger aquellos que devuelve cada electrodo en un número de ciclo dado; luego se exponen estos resultados en un histograma como los que se muestra en la figura \ref{fig:barras}. En estos gráficos se volcaron los valores obtenidos en los ciclos 25 y 50 en cada uno de los cuatro electrodos diferentes, para cada una de los analitos electroactivos. De los histogramas se pueden establecer perfiles de respuestas para las sondas de concentración conocida, de forma que el sistema vaya almacenando las respuestas de cada electrodo en una base de datos, para luego comparar la respuesta de una muestra incógnita con la almacenada en la base. Mientras mayor sea la variabilidad de funcionalizaciones de las películas delgadas mesoporosas y la cantidad de electrodos diferentes por sensor, más inequívoca será identificación del analito, aún en matrices complejas, ya que la detección estará determinada por la respuesta de un conjunto de electrodos, limitado por las funcionalizaciones que se puedan llevar a cabo o por la cantidad de electrodos determinada en el diseño.
+   		
+
+			\begin{figure}[h!]
+		 	\begin{subfigure}[t]{0.495\textwidth}
+		 	 \includegraphics[width=\textwidth]{Graficos/histogramas-ciclo25.pdf}
+		 	  \end{subfigure}
+			\begin{subfigure}[t]{0.495\textwidth}
+		 	   \includegraphics[width=\textwidth]{Graficos/histogramas-ciclo50.pdf}
+		 	   \end{subfigure}
+		      	\caption[Corriente de pico en distintos ciclos voltamperometricos]{Densidad de corriente anódica máxima en los ciclos 25 y 50 para cada uno de los electrodos del sensor. Las sondas probadas fueron \fc \SI{1}{\milli\Molar}, \fe\space \SI{1}{\milli\Molar} y \ru\space \SI{1}{\milli\Molar} en KCl \SI{100}{\milli\Molar} a una velocidad de barrido de \SI{50}{\milli\volt\per\second}.}
+		      	\label{fig:barras}
+		      	\end{figure}
 
 
 \section{Más allá de la microfabración}
 	
-	  Esta sección tiene por motivación mostrar y ejemplificar muy brevemente algunos experimentos, reflexiones y pruebas de concepto derivadas del presente trabajo. Estos experimentos generan nuevas incógnitas y abren lineas de investigación y desarrollo en el área sensores. No es el propósito de este apartado realizar demostraciones formales o hacer discusiones profundas de los resultados, sino mostrar los avances y conceptos surgidos durante esta tesis con perspectivas a futuros desarrollos e investigaciones.
+	  Esta sección tiene por motivación mostrar y ejemplificar muy brevemente algunos experimentos, reflexiones y pruebas de concepto derivadas del presente trabajo. Estos experimentos generan nuevas incógnitas y abren líneas de investigación y desarrollo en el área de sensores. No es el propósito de este apartado realizar demostraciones formales o hacer discusiones profundas de los resultados, sino mostrar los avances y conceptos surgidos de los conocimientos y experiencia adquieridas durante esta tesis con perspectivas a futuros desarrollos e investigaciones.
 
 	\subsection{Integración en microchips de silicio}
 
-	  La ventaja de fabricar lectrodos por técnicas de microelectrónica es indiscutible. Hay muchas fabricas a nivel global  de microsistemas (MEMS) y circuitos integrados (IC) (conocidas en ingles simplemente como \textit{foundry}). Dichas fabricadas elaboran sus productos con procesos estándar de fabricación, por cada nodo tecnológico, con reglas de diseño claras y bien establecidas. La integración de sensores en circuitos integrados no es algo nuevo, y, dado el nivel de integración de la electrónica de las últimas décadas, es algo que siempre se debe detener en cuenta en la etapa de prototipado de sensores.\cite{Wang2012,Liu1993,Novell2012,Yu2013,Sarkar2014} Debido al desarrollo y optimización de los procesos para depositar \pdm\space a bajas temperaturas se podría fácilmente integrar los sensores EQ en solo chip con potenciostato integrado en la lógica del IC.
+	  La ventaja de fabricar electrodos por técnicas de microelectrónica es indiscutible. Hay muchas fabricas a nivel global de microsistemas (MEMS) y circuitos integrados (IC) (conocidas en ingles simplemente como \textit{foundry}). Dichas fabricadas elaboran sus productos con procesos estándar de fabricación, por cada nodo tecnológico, con reglas de diseño claras, rígidas y bien establecidas. La integración de sensores en circuitos integrados no es algo nuevo, y, dado el nivel de integración de la electrónica de las últimas décadas, es algo que siempre se debe tener en cuenta en la etapa de prototipado de sensores.\cite{Wang2012,Liu1993,Novell2012,Yu2013,Sarkar2014} Debido al desarrollo y optimización de los procesos para depositar \pdm\space a bajas temperaturas se podría fácilmente integrar los sensores EQ en un solo chip con potenciostato integrado en la lógica del IC.
  	
  	\subsection{Sensores y electrodos flexibles e impresos}
 
- 	  Se realizaron, durante este trabajo, pruebas conceptuales sobre impresión de mesoporosos. El objetivo fue transferir un diseño arbitrario sobre diversos sustratos, además, de esta forma se podrían imprimir \pdm\space de igual o distintos óxidos. Se trabajó en colaboración con el grupo del Dr. Baumann, del \textit{Department of Digital Printing and Imaging Technology} de la \textit{Technische Universität Chemnitz} de Alemania (\url{https://www.tu-chemnitz.de/mb/DigiTech/professorship.php}). Allí se realizaron pruebas de concepto imprimiendo soles modificados con etilenglicol con un equipo de inyección de tinta sobre diversos soportes. Los procesos a baja temperatura desarrollos en este trabajo, no solo hacen que disminuya la difusión entre las capas metálicas, permitiendo la integración en chips de silicio, sino que permite depositar las \pdm\space sobre sustratos térmicamente menos estables. Los resultados fueron sistemas porosos de soles de SiO$_2$, estructurados con F127 impresos sobre silicio, oro, microelectrodos y poliestireno de alto impacto (PAI). Se muestran, en la figura \ref{fig:flexibles}, patrones cuadrados impresos sobre una diversidad de sustratos variando, con el objetivo de encontrar las condiciones óptimas para su impresión.
+ 	  Se realizaron pruebas conceptuales sobre impresión de mesoporosos, con el objetivo de realizar cualquier diseño arbitrario en la película mesoporosas. Se usaron los soles como tintas y se imprimieron sobre diversos sustratos, además, de esta forma se podrían imprimir \pdm\space de igual o distintos óxidos en un mismo sustrato. Se trabajó en colaboración con el grupo del Dr. Baumann, del \textit{Department of Digital Printing and Imaging Technology} de la \textit{Technische Universität Chemnitz} de Alemania (\url{https://www.tu-chemnitz.de/mb/DigiTech/professorship.php}). Allí imprimieron soles modificados con etilenglicol con un equipo de inyección de tinta. Los procesos a baja temperatura desarrollos en este trabajo, no solo hacen que disminuya la difusión entre las capas metálicas, permitiendo la integración en chips de silicio, sino que permite depositar las \pdm\space sobre sustratos térmicamente menos estables. Los resultados fueron sistemas porosos de soles de SiO$_2$, estructurados con F127 impresos sobre silicio, oro, microelectrodos y poliestireno de alto impacto (PAI). Se muestran, en la figura \ref{fig:flexibles}, patrones cuadrados impresos sobre una diversidad de sustratos variando los parámetros de impresión, con el objetivo de encontrar las condiciones óptimas para una correcta transferencia.
 
  		%imagenes Meso en Au, Meso en Silicio, Meso en Au con patrones, SEM
  	  		\begin{figure}[th]
@@ -582,26 +598,46 @@
 			   		\begin{subfigure}[t]{0.43\textwidth}
 			   	    \includegraphics[width=\textwidth]{Graficos/TintaNTC-FeCN2-5mM.pdf}
 			   		\end{subfigure}
-					 \caption[Electrodos de NTC flexibles.]{Electrodos impresos por inyección de tinta en base a nanotubos de carbono donde se muestra la flexibilidad de la tinta y su respuesta electroquímica con una sonda de \fe\space \SI{2.5}{\milli\Molar} en solución de KCl \SI{100}{\milli\Molar}}
+					 \caption[Electrodos de NTC flexibles.]{Electrodos impresos por inyección de tinta en base a nanotubos de carbono donde se muestra la flexibilidad de la tinta y su respuesta electroquímica con una sonda de \fe\space \SI{2.5}{\milli\Molar} en solución de KCl \SI{100}{\milli\Molar} a \SI{50}{\milli\volt\per\second}.}
 					 \label{fig:tintas}	
 				     \end{figure}
  		
 
 \section{Conclusiones parciales}
 
-	A lo largo de este capítulo se presentan los resultados obtenidos durante el proceso de fabricación de los microelectrodos. Se hicieron dos diseños, de los cuales el segundo (retroalimentado de la experiencia del primero) es mas compacto, incorpora mas electrodos por sensor y prevé el uso de contraeletrodo y referencia integrados en el mismo.
+	Se presentaron en este capítulo los resultados obtenidos durante el proceso de fabricación de los sensores. Se idearon dos diseños, de los cuales el segundo (retroalimentado de la experiencia del primero) es más compacto, incorpora más electrodos por sensor y prevé el uso de contraeletrodo y referencia integrados en el mismo dispositivo.
 	
-	Los mismos fueron fabricados por un conjunto de técnicas conocidas como \textit{top-down}, propios de la microelectrónica. Fotolitografía óptica, deposición por pulverización catódica y \textit{lift-off}, entre otras. Encontradas las condiciones óptimas de proceso para cada etapa, y, conforme con los resultados, se evaluó el desempeño electroquímica de los mismos, la cual resulto ser muy satisfactoria. 
+	Los mismos fueron fabricados por un conjunto de técnicas conocidas como \textit{top-down}, propios de la microelectrónica como: fotolitografía óptica, deposición por pulverización catódica y \textit{lift-off}, entre otras. Se establecieron las condiciones óptimas de proceso para cada etapa, y, una vez conseguido resultados satisfactorios, se evaluó el desempeño electroquímico de los sensores, el cuál resulto óptimo. 
 
-	Se depositaron.......sorbre electrodos.... en las primeras etapas... previo al desarrolo... 3 y 4.
-	Previo a los resultados y al analisis sobre los métodos possintesis de \pdm ddesarrollado en el capitulo 3 y a las mediciones y discución sobre trasnporte mantenidad en el capitulo 4, se deposito evaluó el desempeño electroquimico cuando se deposita sobre ellos pdm calcinandas............................
+	Sobre los electrodos de (Ti,Cr)\textbar Au se realizaron los primeros depósitos de películas delgadas mesoporosas de sílice. En esta etapa surgieron algunas dificultades, en particular, en lo referente al sensado electroquímico. Se realizó un estudio meticuloso sobre la superficie de los electrodos.  Se discutió como se vió afectado el desempeño electroquímico durante los procesos de calcinación debido a fenómenos de difusión de interferentes hacia la superficie de lo electrodos, afectando sensiblemente la trasferencia de carga entre la sonda y el electrodo. 
+
+	Éste fue uno de los motivos (junto con con otros como utilizar polímeros, evitar calcinaciones y reducir costos) para el desarrollo de procesos de síntesis de películas mesoporosas de SiO$_2$ a temperaturas menores que las clásicas de calcinación, donde se minimizan los procesos difusivos y no es necesario recurrir a metales de ultra pureza. Las consecuencias directas de este desarrollo fueron que se pudo depositar los óxidos sobre Au metalúrgico (Au3N) sin perder desempeño analítico y, a su vez, permitió depositar las \pdm\space sobre sustratos que sean estables a \SI{130}{\celsius}. Dicho desarrollo se estudia extensamente en el capítulo \ref{chap:Mesoporosos}, mientras que en el capítulo \ref{chap:Electroquimica} se estudia la estabilidad química y mecánica de la películas sintetizadas.
+
+	Ya con el proceso de síntesis optimizado se escogieron las películas más estables para la fabricación de un sensor prototipo. Se fabricaron nuevamente electrodos con el diseño en forma de calesita y se depositaron sobre ellas películas mesoporosas de Si$_{0.9}$Zr$_{0.1}$O$_2$ mediante el método de alto vacío. Sobre uno de los sensores se funcionalizaron estás películas porosas con dihexadecilfosfato (DHDP) y 3-aminopropil trietoxisilano (APTES), específicamente sobre el área de cada electrodo.
+	Se analizaron las respuestas amperométrica de cada electrodo de este sensor en función del ciclado electroquímico, obteniéndose patrones de respuesta para cada una de las sondas en función de la interacción entre la sonda y la película. 
+	
+	Finalmente se exploraron algunas técnicas de depósito mediante impresión por inyección de tinta con el objetivo de poder transferir algún diseño a las películas mesoporosas.
 
 
 
-	La siguiente etapa fue la de colocar la \pdm\space sobre ellos, discutida extensamente en el capítulo \ref{chap:Mesoporosos}. En esta etapa surgieron algunas dificultades,en particular, en lo referente al sensado electroquímico, pudimos detectar fenómenos de difusión hacia la superficie del electrodo durante la calcinación de las películas de SiO$_2$ mesoporosa sobre ellos, impidiendo el intercambio de electrones sonda-electrodo. 
 
-	Este fue uno de los motores (junto con con otros como utilizar polímeros, evitar calcinaciones y reducir costos) para el desarrollo de procesos de síntesis de películas mesoporosas de SiO$_2$, a temperaturas menores que las clásicas de calcinación, donde se minimizan los procesos difusivos y no es necesario recurrir a material de ultra pureza.
 
-	Las consecuencias directas de este desarrollo fueron que se pudo continuar depositando los óxidos sobre Au metalúrgico (Au3N) sin perder desempeño analítico y, a su vez, permitió depositar las \pdm\space sobre sustratos que sean estables a \SI{130}{\celsius}. Esto permitió acceder a sustratos flexibles, económicos y poder utilizar otros materiales como electrodos. Es en está área donde se incursionó imprimiendo tintas basadas en nanotubos de carbo y peliculas delgadas me soporosas de óxido de silicio sobre diversa cantidad de sustratos, incorporando las \pdm\space como sensores EQ al campo de la electrónica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	

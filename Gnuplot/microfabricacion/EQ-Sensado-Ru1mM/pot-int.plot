@@ -8,7 +8,7 @@ set terminal tikz
 set output "pot-int.tikz" 
 
 #Saco la leyenda
-	set key top left Left sample -1 spacing 1.5 reverse font ",14" textcolor rgb "black" 
+	set key top left Left sample -1 spacing 1.3 reverse font ",12" textcolor rgb "black" 
 
 #Saco el Borde
 	unset border
@@ -16,10 +16,10 @@ set output "pot-int.tikz"
 #Saco las marcas
   	unset tics
 
-set style line 1 lc rgb 'gray60' pt 9 lt 1 ps 0.75 lw 0.5 #Marron
-set style line 2 lc rgb 'red' pt 7 lt 1 ps 0.75 lw 2.5 #ROjo
-set style line 3 lc rgb 'blue' pt 5 lt 1 ps 0.75 lw 1 #Azul
-set style line 5 lc rgb 'black' pt 13 lt 1 ps 0.75 lw 1 #Azul
+set style line 1 lc rgb 'gray60' pt 9 lt 1 ps 1.25 lw 0.5 #Marron
+set style line 2 lc rgb 'red' pt 7 lt 1 ps 1 lw 2.5 #ROjo
+set style line 3 lc rgb 'blue' pt 5 lt 1 ps 1 lw 1 #Azul
+set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.25 lw 1 #Azul
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
@@ -40,8 +40,8 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 0.75 lw 1 #Azul
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial pico an\'odico (}E^p_a\\text{) vs ESC / mV}$" font ",16" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}^a_p / \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial pico an\'odico (}E^p_a\\text{) vs ESC / mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{j}^a_p / \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
