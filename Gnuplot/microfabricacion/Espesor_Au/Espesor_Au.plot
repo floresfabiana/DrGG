@@ -31,13 +31,13 @@ set border 3 back ls 10 lw 1.5
 set tics nomirror
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray70' lt 0 lw 1 
 set grid back ls 11
 
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
 set ytics 10 
-set mytics 2 
+#set mytics 2 
 
 #Pone el Titulo
 #set title "Grafico 1"
@@ -52,7 +52,7 @@ set yrange [0:60]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
 set xtics 10
-set mxtics 2
+#set mxtics 2
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
 set ytics 10

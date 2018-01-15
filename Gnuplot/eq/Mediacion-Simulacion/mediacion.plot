@@ -7,7 +7,7 @@ set terminal tikz
 set output "mediacion.tikz" 
 
 #Saco la leyenda
-set key top left Left reverse samplen 3  font ",14" textcolor rgb "black" at -600,580 
+set key top left Left reverse samplen 2.8  font ",14" textcolor rgb "black" at -600,580 
 
 
 #Saco el Borde
@@ -26,7 +26,7 @@ set style line 3 lc rgb 'gray50' lt 1 lw 1.5 #Azul
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 111 lc rgb 'gray40' lt 0 lw 1 
+	set style line 111 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 111
 
 #Coloca los nombre de los ejes

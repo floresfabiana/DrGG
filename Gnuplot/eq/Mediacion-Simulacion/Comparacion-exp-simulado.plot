@@ -27,7 +27,7 @@ set style line 7 lc rgb 'black' lt 1 dashtype 2 lw 1.5
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 111 lc rgb 'gray40' lt 0 lw 1 
+	set style line 111 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 111
 
 #Coloca los nombre de los ejes

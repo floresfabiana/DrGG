@@ -28,7 +28,7 @@ set style line 4 lt 0 lc rgb 'black'  lw 3
 	set tics nomirror font ",14"
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 

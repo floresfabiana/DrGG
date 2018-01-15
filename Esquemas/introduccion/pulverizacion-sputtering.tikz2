@@ -1,0 +1,114 @@
+% Rusting Iron
+% Author: Jason Waskiewicz
+% A "jazzy" picture of the stages of rust (presented for a high school level).
+% Iron is red, oxygen is blue and electrons are black. At the left you see
+% iron atoms with two oxygen molecules, then the electrons go to the oxygen molecules
+% leaving oxygen ions and iron ions which then disolve.
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{circuits.ee.IEC}
+\begin{document}
+    \begin{tikzpicture}[
+        >=stealth,
+        iron/.style={shade, ball color=red},
+        electron/.style={shade, ball color=black},
+        oxygen/.style={shade, ball color=blue},
+        droplet/.style={ball color=blue!20, opacity=0.4},
+        sustrato/.style={ball color=darkgray!20,},
+        circuit ee IEC
+        ]
+
+
+     \begin{scope}[xshift=2cm,yshift=0]
+           \draw[droplet] (0,0) -- (0,3.5) -- (-1,3.5) -- (-1,3.8) -- (0,3.8) -- (0,5) -- (8,5) -- (8,3.8) -- (9,3.8) -- (9,3.5) -- (8,3.5) -- (8,0) -- cycle;
+    \end{scope}
+    
+    
+
+    %Draw the iron atoms
+     \begin{scope}[scale=0.75,xshift=1.8cm,yshift=0.35cm]
+    \foreach \x in {3.5,4,4.5,5,8}
+            \draw [iron] (\x,1,-0.5) circle (0.25cm);
+    \foreach \x in {3.25,3.75,4.25,4.75,5.25,5.75,6.25,6.75,7.25,7.75,8.25}
+            \draw [iron] (\x,0.55,-0.5) circle (0.25cm);
+    \foreach \x in {3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,8.5}
+            \draw [iron] (\x,0.1,-0.5) circle (0.25cm);
+     \fill[iron] (3.2,-0.3) rectangle (8.7,0.1);
+    \end{scope}
+
+     \begin{scope}[scale=0.75,xshift=1.8cm,yshift=6.55cm]
+    \foreach \x in {3.25,3.75,4.25,4.75,5.25,5.75,6.25,6.75,7.25,7.75,8.25}
+            \draw [iron] (\x,-0.75,-0.5) circle (0.25cm);
+    \fill[sustrato] (3.2,-0.3) rectangle (8.7,0.1);
+    \end{scope}
+    %Draw the iron electrons; this isn't totally realistic for illustrating Fe+3 ions
+    %\foreach \x in {1.25,1.75,2.25,2.75}
+     %       \draw [electron] (\x,1.25,-0.5) circle (0.1cm);
+    %\foreach \x in {1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8}
+     %       \draw [electron] (\x,0.75,-0.5) circle (0.1cm);
+
+    %Draw the O2 molecules
+    %\draw [oxygen] (1.5,1.8,-0.5) circle (0.15cm);
+    %\draw [oxygen] (1.6,2.0,-0.5) circle (0.15cm);
+
+    %\draw [oxygen] (1.8,1.6,-0.5) circle (0.15cm);
+    %\draw [oxygen] (2.05,1.6,-0.5) circle (0.15cm);
+
+    %Draw the arrows showing the electrons going to the O2 molecules
+    %\draw (3.45,1.35) -- (3.75,2.25) [->,thick];
+    %\draw (3.95,1.35) -- (3.95,2.25) [->,thick];
+    %\draw (4.45,1.35) -- (4.35,1.85) [->,thick];
+    %\draw (4.95,1.35) -- (4.5,1.85) [->,thick];
+
+     %Draw the time arrows
+    \draw (5.5,1.5) -- ++(0.2,-0.45) [->,very thick];
+    \draw (5.65,3.2) -- ++(0.5,-2) [->,very thick];
+    \draw (5.9,1.05) -- ++(-0.35,1) [->,very thick];
+     \draw (6.3,1.2) -- ++(0.15,1.2) [->,very thick];
+    \draw (6.5,1.2) -- ++(0.4,0.65) [->,very thick];
+    \draw (-0.4,3.65) -- ++(2,0) [->,very thick];
+    \draw (9.5,3.65) -- ++(2,0) [->,very thick];
+
+    %Draw O-2 ions with (-) labels
+    \shadedraw [oxygen] (3.75,2.4,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (4.15,2.0,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (5,2.8,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (5.25,1.5,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (3,4,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (2,3.8,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (6.7,3.4,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (5.4,3.2,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (2.7,1.9,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (4.3,3.2,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (2.5,4.5,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (3,3,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {\small{Ar$^+$}};
+    \shadedraw [oxygen] (2.5,3.5,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+    \shadedraw [oxygen] (2.2,3.1,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {};
+
+
+
+    %Draw the dissolved Fe+3 ions and O-2 ions
+    \shadedraw [iron] (6.25,2.5,-0.5) circle (0.16cm) node [above=3pt,right=4pt] {};
+    \shadedraw [iron] (6.85,2.0,-0.5) circle (0.16cm) node [above=3pt,right=4pt] {};
+    \shadedraw [iron] (5.2,2.1,-0.5) circle (0.16cm) node [above=3pt,right=4pt] {};
+
+    %\shadedraw [oxygen] (6.95,1.5,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {\small{2-}};
+    %\shadedraw [oxygen] (6.15,2.0,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {\small{2-}};
+    %\shadedraw [oxygen] (7.05,2.5,-0.5) circle (0.15cm) node [above=3pt,right=2pt] {\small{2-}};
+
+    %Leyenda
+    \node at (7,7) {An\'odo};
+    \node at (0,0) {Cat\'odo};
+    \node at (5.8,5.3) {Sustrato};
+    \node at (5.8,-0.3) {Blanco};
+    \node at (0.7,4) {Entrada de Ar};
+    \node at (11.3,4) {Salida de gases};
+
+    \draw[very thick] (7,5) -- (7,6) -- (8,6) -- (8,5.7) node [ground={pos=1.25},rotate=270] {};
+  
+    \end{tikzpicture}
+
+           
+  
+
+\end{document}

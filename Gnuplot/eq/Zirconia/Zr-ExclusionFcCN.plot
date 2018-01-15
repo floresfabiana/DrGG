@@ -7,7 +7,7 @@ set terminal tikz
 set output "Zr-ExclusionFcCN.tikz" 
 
 #Saco la leyenda
-set key top left Left reverse samplen 3 font ",14" textcolor rgb "black" at -100,280
+set key top left Left reverse samplen 2.5 font ",14" textcolor rgb "black" at -100,280
 
 
 #Saco el Borde
@@ -48,7 +48,7 @@ red_100 = "#ff0000"
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 

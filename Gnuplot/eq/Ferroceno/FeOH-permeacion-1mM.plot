@@ -7,7 +7,7 @@ set terminal tikz
 set output "FeOH-permeacion-1mM.tikz" 
 
 #Saco la leyenda
-set key top left Left reverse samplen 2 font ",14" textcolor rgb "black" 
+set key top left Left reverse samplen 1.4 font ",14" textcolor rgb "black" 
 
 #Saco el Borde
 	unset border
@@ -49,7 +49,7 @@ red_100 = "#ff0000"
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 

@@ -33,7 +33,7 @@ set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray40" at
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 #Flecha

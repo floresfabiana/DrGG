@@ -7,7 +7,7 @@ set terminal tikz
 set output "Ru10mM-Resumen.tikz"
 
 #Saco la leyenda
-set key top left Left reverse samplen 3 spacing 2.1 font ",14" textcolor rgb "black" at -500,1400 
+set key top left Left reverse samplen 2.5 spacing 2.1 font ",14" textcolor rgb "black" at -500,1400 
 
 
 #Saco el Borde
@@ -50,10 +50,10 @@ red_100 = "#ff0000"
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 
 set border 3 back ls 10 lw 1.5 
-set tics nomirror
+set tics nomirror font ",14"
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray70' lt 0 lw 1 
 set grid back ls 11
 
 
@@ -71,6 +71,7 @@ set grid back ls 11
 #Fuerza a establecer un rango
 	 
 	set xrange [-500:]
+	set xtics offset 0,-0.4
 #	set yrange [-1000:1000]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores

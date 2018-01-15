@@ -7,7 +7,7 @@ set terminal tikz
 set output "SI_F127_prolongado_PSD.tikz" 
 
 #Saco la leyenda
-set key top right Left reverse samplen 3  font ",14" textcolor rgb "black"
+set key top right Left reverse samplen 3 width -3 font ",14" textcolor rgb "black" at 21.5,1.76
 #Saco el Borde
 unset border
 

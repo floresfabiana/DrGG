@@ -76,11 +76,11 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
 	#set xtics 10
-	set mxtics 2
+	#set mxtics 2
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
 	set ytics 1000
-	set mytics 2
+	#set mytics 2
 
 #FITEO
 	#f(x) = a*x + b

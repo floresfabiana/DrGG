@@ -72,10 +72,10 @@ set style line 49  lc rgb '#black' lt 1 lw 2 # --- vede Oscuro
 #Estilos de los ejes 
 set style line 300 lc rgb 'gray40' lt 1 lw 5 
 set border 3 back ls 300 lw 1.5 
-set tics nomirror
+set tics nomirror  font ",14"
 
 #Estilo de la grilla
-set style line 400 lc rgb 'gray40' lt 0 lw 1 
+set style line 400 lc rgb 'gray70' lt 0 lw 1 
 set grid back ls 400
 
 
@@ -94,7 +94,7 @@ set grid back ls 400
 	 
 	set xrange [-500:]
 	set yrange [:1500]
-
+	set xtics offset 0,-0.4
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
 	#set xtics 10

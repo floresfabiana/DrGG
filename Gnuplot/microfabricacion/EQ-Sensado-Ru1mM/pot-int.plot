@@ -27,7 +27,7 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.25 lw 1 #Azul
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 111 lc rgb 'gray40' lt 0 lw 1 
+	set style line 111 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 111
 
 
@@ -40,8 +40,8 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.25 lw 1 #Azul
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial pico an\'odico (}E^p_a\\text{) vs ESC / mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}^a_p / \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial pico an\'odico (}E^p_a\\text{) vs ESC / mV}$" font ",12" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{j}^a_p / \\mu \\text{A.cm}^{-2}$"	   font ",12" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 

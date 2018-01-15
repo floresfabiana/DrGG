@@ -30,7 +30,7 @@ set key top right Left at 525,480 reverse sample 2 font ",14" textcolor rgb "bla
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray40' lt 0 lw 1 
+	set style line 11 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 11
 
 #Estilo de las flechas

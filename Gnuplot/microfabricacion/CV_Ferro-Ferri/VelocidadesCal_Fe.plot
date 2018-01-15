@@ -29,7 +29,7 @@ set xtics offset 0,-0.2
 set ytics offset 0.7,0
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray70' lt 0 lw 1 
 set grid front ls 11
 
 #Coloca los nombre de los ejes

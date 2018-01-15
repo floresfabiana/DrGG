@@ -27,7 +27,7 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 0.75 lw 1 #Azul
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 111 lc rgb 'gray40' lt 0 lw 1 
+	set style line 111 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 111
 
 

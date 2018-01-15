@@ -123,11 +123,11 @@
   \node (text2) at (-3,4.6) {\Huge{\bfseries a}};
   \node[rotate=52] (text2) at (-2.5,3.4) {\scriptsize Columna FIB};
   \node (text2) at (3,4.8) {\scriptsize detectores};
-  \node (text2) at (2.7,4.42) {\tiny e\textsuperscript{-} retrodidispersados (BSD)};
-  \node (text2) at (3.22,4.05) {\tiny emisi\'on de rayos X (EDS)};
-  \node (text2) at (3.55,3.65) {\tiny e\textsuperscript{-} secundarios (TLD)};
-  \node (text2) at (-1.5,1.5) {\tiny \'atomos};
-  \node (text2) at (-1.35,1.3) {\tiny removidos};
+  \node (text2) at (2.9,4.42) {\scriptsize e\textsuperscript{-} retrodidispersados (BSD)};
+  \node (text2) at (3.4,4.05) {\scriptsize emisi\'on de rayos X (EDS)};
+  \node (text2) at (3.70,3.65) {\scriptsize e\textsuperscript{-} secundarios (TLD)};
+  \node (text2) at (-1.7,1.5) {\scriptsize \'atomos};
+  \node (text2) at (-1.5,1.3) {\scriptsize removidos};
 
   
 \end{tikzpicture}
