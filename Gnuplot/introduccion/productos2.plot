@@ -57,22 +57,22 @@ set style histogram cluster gap 2
 
 set xrange [-0.4:2.6]
 #Nombre de los paises rotados
-set xtics rotate by 90 font ",12" offset 0, 0.6, 0 right
-set y2tics rotate by 90 font ",12" offset 1,0,0 center format "%'gK"
+set xtics rotate by 90 font ",14" offset 0, 0.6, 0 right
+set y2tics rotate by 90 font ",14" offset 1,0,0 center format "%'gK"
 set format y ""
 set boxwidth 0.95 relative
 
-set label 101 at -0.1,6.9 "6879" font ",8"  textcolor rgb "gray40" rotate by 90
-set label 102 at 0.1,1.3 "1322" font ",8" textcolor rgb "gray40"  rotate by 90
-set label 103 at 0.3,0.05 "52" font ",8"  textcolor rgb "gray40" rotate by 90
+set label 101 at -0.1,6.9 "6879" font ",12"  textcolor rgb "gray40" rotate by 90
+set label 102 at 0.1,1.3 "1322" font ",12" textcolor rgb "gray40"  rotate by 90
+set label 103 at 0.3,0.05 "52" font ",12"  textcolor rgb "gray40" rotate by 90
 
-set label 201 at 0.9,3 "3005" font ",8"  textcolor rgb "gray40" rotate by 90
-set label 202 at 1.1,0.75 "750" font ",8" textcolor rgb "gray40"  rotate by 90
-set label 203 at 1.3,0.03 "35" font ",8"  textcolor rgb "gray40" rotate by 90
+set label 201 at 0.9,3 "3038" font ",12"  textcolor rgb "gray40" rotate by 90
+set label 202 at 1.1,0.75 "750" font ",12" textcolor rgb "gray40"  rotate by 90
+set label 203 at 1.3,0.03 "35" font ",12"  textcolor rgb "gray40" rotate by 90
 
-set label 301 at 1.9,1.8 "1814" font ",8"  textcolor rgb "gray40" rotate by 90
-set label 302 at 2.1,0.6 "622" font ",8" textcolor rgb "gray40"  rotate by 90
-set label 303 at 2.3,0.03 "32" font ",8"  textcolor rgb "gray40" rotate by 90
+set label 301 at 1.9,1.8 "1814" font ",12"  textcolor rgb "gray40" rotate by 90
+set label 302 at 2.1,0.6 "622" font ",12" textcolor rgb "gray40"  rotate by 90
+set label 303 at 2.3,0.03 "32" font ",12"  textcolor rgb "gray40" rotate by 90
 
 #Grafico
 plot 'productos.txt' using ($2/1000):xtic(1) lc 'gray20' title " ",\

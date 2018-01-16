@@ -5,7 +5,7 @@
 #Para exportar como latex
 set terminal tikz tikzarrows
 set output "busqueda-por-ano.tikz" 
-set key left Left reverse textcolor 'gray40'
+set key left Left spacing 2 reverse textcolor 'gray40'
 
 #Para archivos csv
 set datafile separator ","
@@ -47,11 +47,11 @@ set style line 103 lc rgb 'brown' lt 1 lw 1.5 pt 4 pi -1 ps 0.6
 set style line 104 lc rgb 'blue' lt 1 lw 1.5 pt 6 pi -1 ps 0.6
 set pointintervalbox 1
 
-plot  "Scopus-127166-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 102 title "Nanotecnologia",\
+plot  "Scopus-127166-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 102 title "Nanotecnolog\'ia",\
 "Scopus-77852-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 104 title "Nanoescala",\
 "Scopus-6026-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 100 title "Nanociencia",\
-"Scopus-1758-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 101 title "Nanoquimica",\
-"Scopus-175-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 103 title "Nanofisica",\
+"Scopus-1758-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 101 title "Nanoqu\'imica",\
+"Scopus-175-Analyze-Year.csv" u 1:($2/1000) w linespoints ls 103 title "Nanof\'isica",\
 
 
 #"productos.txt" u 1:($2/1000) w linespoints ls 100 title "Productos"

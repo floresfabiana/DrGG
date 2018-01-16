@@ -51,8 +51,8 @@ set style data histograms
 set style histogram gap 1
 
 #Nombre de los paises rotados
-set xtics rotate by 90 font ",12" offset 0, 0.6, 0 right
-set y2tics rotate by 90 font ",12" offset 1,0,0 center format "%'gK"
+set xtics rotate by 90 font ",14" offset 0, 0.6, 0 right
+set y2tics rotate by 90 font ",14" offset 1,0,0 center format "%'gK"
 set format y ""
 set boxwidth 0.95 relative
 

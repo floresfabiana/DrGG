@@ -1,0 +1,1 @@
+plot "APTES-SinFuncionalizar-Ciclos.txt" u 1:5, "APTES-10mM-Ciclos.txt" u 1:5, "DHDP-SinFuncionalizar-Ciclos.txt" u 1:5, "DHDP-3mM-Ciclos.txt" u 1:5
