@@ -51,7 +51,7 @@ set xrange [40:100000]
 # "MARIO-Ru1mM-Max-Min-Corregido.csv" using 1:(($6/$1)/(0.1/3)) with points ls 1 notitle  , \
 # "MARIO-Ru1mM-Max-Min-Corregido.csv" using 1:(($6/$1)/(0.1/3)) smooth bezier ls 2 notitle  , \
 
-plot "MARIO-Ru1mM-Max-Min-Corregido.csv" using 1:(($4/$1)/(0.1/3)) with points ls 1 notitle  ,\
-"MARIO-Ru1mM-Max-Min-Corregido.csv" using 1:(($6/$1)/(0.1/3)) with points ls 1 notitle  , \
-"MARIO-Ru1mM-FLECHAS.csv" using 9:10:11:12 w vectors arrowstyle 200 notitle, \
-"MARIO-Ru1mM-FLECHAS.csv" using 13:14:15:16 w vectors arrowstyle 200 notitle
+plot "MARIO-Ru1mM-Max-Min-Corregido.csv" using 1:(($4/$1)/(0.1/1.5)) with points ls 1 notitle  ,\
+"MARIO-Ru1mM-Max-Min-Corregido.csv" using 1:(($6/$1)/(0.1/1.5)) with points ls 1 notitle  , \
+"MARIO-Ru1mM-FLECHAS.csv" using 9:($10/2):11:($12/2) w vectors arrowstyle 200 notitle, \
+"MARIO-Ru1mM-FLECHAS.csv" using 13:($14/2):15:($16/2) w vectors arrowstyle 200 notitle

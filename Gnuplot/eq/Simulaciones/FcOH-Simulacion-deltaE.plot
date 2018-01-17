@@ -49,7 +49,7 @@ set key top right Left reverse sample 2 font ",10" textcolor rgb "gray40"
 	#set mytics 2 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango

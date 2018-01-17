@@ -40,7 +40,7 @@ set style line 3 lc rgb 'black' lt 1 lw 0.5 #Azul
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",18" textcolor rgb "gray20" offset  0,-2
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",18" textcolor rgb "gray20" offset  0,-2
 	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",18" textcolor rgb "gray20" offset -2.7,0
 
 #Fuerza a establecer un rango

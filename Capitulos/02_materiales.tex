@@ -20,7 +20,7 @@
  \thispagestyle{empty}
 	
  %Resumen del Capitulo en Italica 
-  \noindent\textit{En este capítulo se presenta la descripción experimental de todos los materiales, instrumental y procesos involucrados en la tesis. En la primera sección se detallan los procesos de síntesis de las películas mesoporosas, desde la preparación de los soles hasta la caracterización de las mismas; en la segunda se presentan los procesos de fabricación de los electrodos, desde el diseño a las técnicas de transferencia; la tercera sección describe las técnicas de microscopías utilizadas y la última sección detalla como se llevaron a cabo las mediciones y simulaciones electroquímicas.}
+ % \noindent\textit{En este capítulo se presenta la descripción experimental de todos los materiales, instrumental y procesos involucrados en la tesis. En la primera sección se detallan los procesos de síntesis de las películas mesoporosas, desde la preparación de los soles hasta la caracterización de las mismas; en la segunda se presentan los procesos de fabricación de los electrodos, desde el diseño a las técnicas de transferencia; la tercera sección describe las técnicas de microscopías utilizadas y la última sección detalla como se llevaron a cabo las mediciones y simulaciones electroquímicas.}
 
 
  %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
@@ -58,9 +58,9 @@
 				  		  Pluronic F127 F127    & \hspace*{-10px} \includegraphics[scale=0.5]{Esquemas/f127.pdf} & \multirow{1}{*}{$13800$}	 & agente moldeante	 \\ \midrule
 				  		  bromuro de hexadeciltrimetilamonio  CTAB   & \hspace*{1cm} \includegraphics[scale=0.6]{Esquemas/ctab.pdf} & \multirow{1}{*}{$364.48$}	 & agente moldeante	 \\ \midrule
 				  		   polioxietileno[20] cetil éter\hspace{2cm}Brij58   & \hspace*{0.5cm}\includegraphics[scale=0.65]{Esquemas/brij58.pdf} & \multirow{1}{*}{$1124$}	 & agente moldeante	 \\ \midrule
-				  		  ácido clorhídrico HCl& \includegraphics[scale=0.75]{Esquemas/hcl.pdf}  & \multirow{1}{*}{$36,46$}   & cataliza la hidrólisis \\ \midrule
-				  		  agua \hspace{2cm} H$_2$O  &  \includegraphics[scale=0.75]{Esquemas/agua.pdf}  & \multirow{1}{*}{$18,02$}   & reactivo de hidrólisis \\ \midrule
-				  		  etanol \hspace{2cm} EtOH  & \includegraphics[scale=0.75]{Esquemas/etanol.pdf}  & \multirow{1}{*}{$46,07$}   & solvente \\ 
+				  		  ácido clorhídrico HCl& \includegraphics{Esquemas/hcl.pdf}  & \multirow{1}{*}{$36,46$}   & cataliza la hidrólisis \\ \midrule
+				  		  agua \hspace{2cm} H$_2$O  &  \includegraphics{Esquemas/agua.pdf}  & \multirow{1}{*}{$18,02$}   & reactivo de hidrólisis \\ \midrule
+				  		  etanol\hspace{0.75cm}EtOH  & \includegraphics{Esquemas/etanol.pdf}  & \multirow{1}{*}{$46,07$}   & solvente \\ 
 				  		  \bottomrule
 				    	  \end{tabular}
 				   		  \label{tabla:reactivos}
@@ -131,7 +131,7 @@
 			    	   \label{tabla:sustratos}
 			   		   \end{table}
 
-			   		   \begin{figure}[h!]
+			   		   \begin{figure}[b!]
 						 \begin{center}
 						 \includegraphics[width=0.80\textwidth]{Graficos/rotacion_meso.pdf}
 						 \caption[Parámetros de depósito para las \pdm]{Esquema con las rampas más frecuentes de aceleración, velocidad y tiempo utilizadas para el depósito de \pdm.}
@@ -592,7 +592,7 @@
 
              En el segundo ensamblado experimental, cuya fotografía se muestran en la figura \ref{fig:celda}b, las mediciones se llevan a cabo sobre electrodos con un diseño transferido, en el cúal el CE se encuentra integrado en los sensores. Como referencia se utilizó un electrodo externo. El área, en este caso, queda determinada por el diseño (consultar sección \ref{sec:diseno}) de los electrodos. En todos los voltagramas presentados en este trabajo, con el objetivo de hacer las comparaciones más simples, las intensidades fueron normalizados por el área geométrica de cada electrodo y los potenciales referidos al potencial de un electrodo estándar de calomel saturado (\SI{0.248}{\volt} contra electrodo normal de hidrógeno a \SI{20}{\celsius})\cite{BANUS1941}.
 					 		  
-			 Las mediciones electroquímicas fueron tomadas con un potenciostato \textit{Teq4}, o un potenciostato \textit{Autolab} de la firma \textit{Ecochemie} para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second}. Como electrodo de referencia se empleó un electrodo saturado de calomel (ESC) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de \SI{2}{\square\cm}. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímicas. 
+			 Las mediciones electroquímicas fueron tomadas con un potenciostato \textit{Teq4}, o un potenciostato \textit{Autolab} de la firma \textit{Ecochemie} para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second}. Como electrodo de referencia se empleó un electrodo de calomel saturado (ECS) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de \SI{2}{\square\cm}. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímicas. 
 			
 			 A continuación se hace una breve reseña sobre las técnicas utilizadas, los parámetros empleados y las configuraciones experimentales.
 
@@ -600,7 +600,7 @@
 	 		
 	 		La voltamperometría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo de trabajo respecto de un electrodo de referencia. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante que circula por el electrodo de trabajo. La señal de excitación es un barrido de potencial lineal con una onda de forma triangular, la cual parte de un potencial E$_1$, evoluciona linealmente hasta un potencial E$_2$ para luego volver a E$_1$. Las velocidades de este barrido pueden variar desde menos de \SI{1}{\milli\volt.\second^{-1}} hasta cientos de volts por segundo; en nuestro caso se utilizaron velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}; se escogieron estas velocidades para llevar a cabo experimentos de una duración aceptable y que no se observe desplazamiento de potenciales para los picos de máxima oxidación y/o reducción, debido a limitaciones en la transferencia de carga por altas velocidades de barrido. \cite{nicholson1964,Gewirth2004}
 
-	 		Como ya se dijo anteriormente se barre el potencial del electrodo de trabajo en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajó a un pH$\sim 5$, para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo saturado de calomel.\cite{wang2014} 
+	 		Como ya se dijo anteriormente se barre el potencial del electrodo de trabajo en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajó a un pH$\sim 5$, para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo de calomel saturado.\cite{wang2014} 
 
 
 	 			 \begin{figure}[h!]
@@ -679,8 +679,8 @@
 	 	    $C_{\ru}$ & \SI{1}{\Molar}  & concentración de \ru\space en las películas    \\ \midrule
 	 	    $C_{KCl}$ & \hspace{-5mm}  \SI{100}{\milli\Molar}  & concentración de electrolito soporte    \\ \midrule
 	 	    $k$ 		   & variable 	 & 	constante de mediación redox    \\ \midrule
-	 	    $E^\circ_{\ru}$  & \hspace{-3mm}\SI{-0.3}{\volt} vs ESC & potencial reducción estandar el \ru \\ \midrule
-	 	    $E^\circ_{\fc}$  & \SI{0.3}{\volt} vs ESC & potencial reducción estandar el \fc \\ \midrule
+	 	    $E^\circ_{\ru}$  & \hspace{-3mm}\SI{-0.3}{\volt} vs ECS & potencial reducción estandar el \ru \\ \midrule
+	 	    $E^\circ_{\fc}$  & \SI{0.3}{\volt} vs ECS & potencial reducción estandar el \fc \\ \midrule
 	 	    $D_{\fc}^{pel} $  & variable & coeficiente de difusión del \fc\space en la película \\ \midrule
 	 	    $D_{\fc}^{sol} $  & variable & coeficiente de difusión del \fc\space en la solución \\ \midrule
 	 	    $D_{e}$  & variable & coeficiente de difusión por \textit{electron hopping }del \ru\space en el film \\ \midrule

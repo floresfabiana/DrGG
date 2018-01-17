@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% jue 28 dic 2017 10:43:08 ART
+%% mié 17 ene 2018 14:59:04 ART
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.702,0.702,0.702}}
 \gpsetlinetype{gp lt axes}
@@ -206,7 +206,7 @@
 \node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (6.118,2.204) {+ciclos};
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\text{Potencial\; vs\; ESC/}$mV};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.909,0.215) {$\text{Potencial\; vs\; ECS/}$mV};
 \gpcolor{rgb color={0.745,0.745,0.745}}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.883,4.693)--(1.894,4.698)--(1.919,4.704)--(1.947,4.709)--(1.976,4.713)%

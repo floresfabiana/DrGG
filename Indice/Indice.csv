@@ -1,5 +1,10 @@
  microfabricación; microfabricación\index{microfabricación}
  fosfonato; fosfonato\index{fosfonato}
+ Butler; Butler\index{Butler}
+ Volmer; Volmer\index{Volmer}
+ Heyrovský; Heyrovský\index{Heyrovský}
+ Feynman; Feynman\index{Feynman}
+ polarografía; polarografía\index{polarografía}
  agua; agua\index{agua}
  complejación; complejación\index{complejación}
  hidrocarburo; hidrocarburo\index{hidrocarburo}
@@ -9,6 +14,7 @@
  \textit{sputtering}; \textit{sputtering}\index{sputtering@\textit{sputtering}}
  radiofrecuencia; radiofrecuencia\index{radiofrecuencia}
  cátodo; cátodo\index{cátodo}
+ Audebert y col; Audebert y col\index{Audebert}
  ánodo; ánodo\index{anodo @ ánodo}
  pulverización catódica; pulverización catódica\index{pulverización catódica}
  \textit{lift-off}; \textit{lift-off}\index{lift@\textit{lift-off}}
@@ -221,7 +227,6 @@ INIFTA;INIFTA\index{INIFTA}
 \label{fig:modelo-problemas};\label{fig:modelo-problemas}\index{bottom-up@\textit{bottom-up}}\index{top-down@\textit{top-down}}
 ultrasonido ;ultrasonido\index{ultrasonido}
 espectro electromagnético; espectro electromagnético\index{espectro electromagnético}
-longitud de onda;longitud de onda\index{longitud de onda}
 \lambda;\lambda\index{longitud de onda}
 coeficiente de absorción;coeficiente de absorción\index{coeficiente de absorción}
 polarización;polarización\index{polarización}
@@ -238,12 +243,13 @@ resina epoxi;resina expoxi\index{resina!expoxi}
 silice;silice\index{silicio!oxido de}
 punto isoeléctrico;punto isoeléctrico\index{punto isoeléctrico}
 Wu ;Wu\index{Wu} 
+ calomel; calomel\index{electrodo!de calomel}
 Iler;Iler\index{Iler}
 Langmuir;Langmuir\index{Langmuir}
  Etienne; Etienne\index{Etienne}
  \textit{electron hopping}; \textit{electron hopping}\index{electron hopping@\textit{electron hopping}}
  Avogadro; Avogrado\index{Avogadro}
-silanolato;\index{silanolato}
+ silanolato; silanolato\index{silanolato}
 sitio redox;sitio redox\index{sitio redox}
 sitios redox;sitios redox\index{sitio redox}
  Tagliazucchi; Tagliazucchi\index{Tagliazucchi}
@@ -308,6 +314,7 @@ IUPAC;IUPAC\index{IUPAC}
  fullereno; fullereno\index{fullereno}
  Venn ; Venn \index{Venn}
  \textit{dip-coating}; \textit{dip-coating}\index{dip-coating@\textit{dip-coating}}
+ \textit{spray-coating}; \textit{spray-coating}\index{spray-coating@\textit{spray-coating}}
  cristal fotónico;\index{cristal fotónico}
  hidrógeno; hidrógeno\index{hidrógeno}
  Brij58; Brij58\index{Brij58}
@@ -325,7 +332,6 @@ polietileno de tereftalato;polietileno de tereftalato\index{polietileno de teref
  Fick; Fick\index{Fick}
 elementos finitos;elementos finitos\index{metodo de elementos finitos@método de elementos finitos}
 silanización;silanización\index{silanización}
-Brij58;Brij58\index{Brij58}
  polipropileno; polipropileno\index{polipropileno}
  funcionalización; funcionalización\index{funcionalización}
  funcionalizar; funcionalizar\index{funcionalizar}

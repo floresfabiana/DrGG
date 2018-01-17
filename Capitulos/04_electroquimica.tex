@@ -21,8 +21,7 @@
  \thispagestyle{empty}
 	
  %Resumen del Capitulo en Italica
- \noindent\textit{En este capítulo se estudian exhaustivamente los fenómenos de transporte de sondas a través de las películas delgadas mesoporosas y su respuesta electroquímica. Analizando los resultados obtenidos por voltametría cíclica, voltametría cíclica de corriente alterna y simulaciones por elementos finitos. Se sugiere un modelo de transporte para cada caso y se calculan parámetros para los distintos sistemas, como concentración dentro las poros, coeficiente de difusión, constante de Langmuir y estabilidad química,
-  entre otros.}
+ %\noindent\textit{En este capítulo se estudian exhaustivamente los fenómenos de transporte de sondas a través de las películas delgadas mesoporosas y su respuesta electroquímica. Analizando los resultados obtenidos por voltametría cíclica, voltametría cíclica de corriente alterna y simulaciones por elementos finitos. Se sugiere un modelo de transporte para cada caso y se calculan parámetros para los distintos sistemas, como concentración dentro las poros, coeficiente de difusión, constante de Langmuir y estabilidad química, entre otros.}
 
  %Indice de capitulo alineada al borde inferior de la pagina, nueva pagina
  \vfill
@@ -32,14 +31,14 @@
 
 \section{Introducción}
 
-	Luego de obtener y analizar los resultados de depositar, condensar y extraer \pdm\space sobre distintos sustratos y bajo diferentes tratamientos pos-depósito, se dedicará este capítulo al estudio de las propiedades de los sensores para detectar y cuantificar una variedad de sondas electroquímicas. Estas sondas, dadas sus cualidades, permitirán obtener información acerca del transporte a través de los sistemas nanoporosos. Los sensores están compuestos básicamente de una película delgada de oro sobre la cual se deposita  una película delgada nanoporosa de sílice. La superficie de las paredes dejan expuestos, hacia el interior de los poros, grupos silanoles los cuales pueden estar o no protonados.\cite{Brinker1990,Soler-Illia2011} 
+	Luego de obtener y analizar los resultados de depositar, condensar y extraer \pdm\space sobre distintos sustratos y bajo diferentes tratamientos pos-depósito, se dedicará este capítulo al estudio de las propiedades de los sensores para detectar y cuantificar una variedad de sondas electroquímicas. Estas sondas, dadas sus cualidades, permitirán obtener información acerca del transporte a través de los sistemas nanoporosos. Los sensores están compuestos básicamente de una película delgada de oro sobre la cual se deposita  una película delgada mesoporosa de sílice. La superficie de las paredes dejan expuestos, hacia el interior de los poros, grupos silanoles los cuales pueden estar o no protonados.\cite{Brinker1990,Soler-Illia2011} 
 			\begin{equation}
 				\begin{aligned}
 				\includegraphics[scale=0.75]{Esquemas/equilibriosilica.pdf}
 				\label{eq:equilibriosilica}
 				\end{aligned}
 				\end{equation}
-	Las reacciones \ref{eq:equilibriosilica} ejemplifican el equilibrio ácido-base que se establece en la superficie de una película de sílice. El pK$_{a2}$ del $\text{SiO}_2$ es menor a 4 y la mayoría de los autores coinciden en que el punto isoeléctrico (IEP) varía de $1$ a $4$ dependiendo de  las distintas forma alotrópicas del óxido de silicio, en particular para el SiO$_2$ sintetizado vía sol-gel el $\text{IEP}\approx 2$ \cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013}.
+	Las reacciones \ref{eq:equilibriosilica} ejemplifican el equilibrio ácido-base que se establece en la superficie de una película de sílice. El pK$_{a2}$ del $\text{SiO}_2$ es menor a 4 y la mayoría de los autores coinciden en que el punto isoeléctrico (IEP) varía de $1$ a $4$ dependiendo de  las distintas formas morfológicas del óxido de silicio, en particular para el SiO$_2$ sintetizado vía sol-gel el $\text{IEP}\approx 2$ \cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013}.
 	Wu y colaboradores\cite{Si-HanWu2013} analizaron, por un lado, el estado de carga superficial de nanopartículas de sílice mesoporosa y, por otro, la velocidad de condensación. El gráfico de la figura \ref{fig:silica_ph} muestra como varían las razones  $\text{SiO}^{-}/\text{SiOH}$ y $\text{SiOH}_2^{+}/\text{SiOH}$ en función del pH; se puede apreciar que solo por encima de $\text{pH}\geq7$ se obtiene una superficie de carga negativa donde todos los silanoles reaccionaron, cediendo su $\text{H}^{+}$, para convertirse en iones silanoatos; mientras que para pH bajos ($\text{pH}\leq1$), la sílice se vuelve inestable antes de llegar a un estado de carga completamente positivo y, solo queda, parcialmente positiva. 
 		\begin{figure}[bh!]
 			\begin{subfigure}[t]{0.73\textwidth}
@@ -53,7 +52,7 @@
 	    	\end{figure}
 	En el mismo trabajo\cite{Si-HanWu2013} también plantean que la velocidad de condensación decrece por encima de $\text{pH}\geq7.5$ debido a que entra en una zona de inestabilidad donde el óxido se disuelve, catalizado por el medio básico.
 	    	
-	De hecho, Iler, en su libro \textit{<<The Chemistry of Silica>>}, explica que la velocidad de disolución de la sílice en medio acuoso depende de muchos factores y, que además, dependiendo el tipo de sílice, el proceso de disolución requiere de un catalizador. Presenta un gráfico de la velocidad de disolución en función del pH (figura \ref{fig:disolucion_ph}) y postula que la misma depende de la forma alotrópica de la sílice. Para formas mas porosas, como el SiO$_2$ amorfo, la cinética de disolución es más rápida, mientras que para otras, más cristalinas, como el cuarzo, se hace mucho mas lenta. Por último aclara que se trata de un proceso de despolimerización vía hidrólisis, y que la solubilidad es la concentración de Si(OH)$_4$ cuando alcanza un estado estacionario en el equilibrio despolimerazación-polimerización.\cite{iler1979,blesa1994}. 
+	De hecho, Iler, en su libro \textit{<<The Chemistry of Silica>>}, explica que la velocidad de disolución de la sílice en medio acuoso depende de muchos factores y, que además, dependiendo el tipo de sílice, el proceso de disolución requiere de un catalizador. Presenta un gráfico de la velocidad de disolución en función del pH (figura \ref{fig:disolucion_ph}) y postula que la misma depende de la forma que adopte la sílice, ya sea cristalina o amorfa. Para formas menos organizadas, como el SiO$_2$ amorfo, la cinética de disolución es más rápida, mientras que para otras, más cristalinas, como el cuarzo, se hace mucho mas lenta. Por último aclara que se trata de un proceso de despolimerización vía hidrólisis, y que la solubilidad es la concentración de Si(OH)$_4$ cuando alcanza un estado estacionario en el equilibrio despolimerazación-polimerización.\cite{iler1979,blesa1994}. 
 
 			\begin{figure}[th!]
 			    \begin{center}
@@ -72,21 +71,21 @@
 				\end{aligned}
 				\end{equation} 
 	
-	El mecanismo de \ref{eq:disolucionsilica} no está completamente consensuado en la literatura especializada. Sin embargo, todos los autores coinciden en que el óxido se vuelve inestable en cualquiera de sus forma alotrópicas a partir de un $\text{pH}\geq7$ y que, a partir de $\text{pH}\geq10$ el proceso de disolución se acelera varios ordenes de magnitud.\cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013,iler1979} En 2007 Bass y colaboradores\cite{bass2007} realizaron un estudio completo sobre la estabilidad de películas de óxidos mesoporososos de SiO$_2$, Zr$_X$Si$_{1-X}$O$_2$, Al$_X$Si$_{1-X}$O$_2$ y TiO$_2$ en condiciones fisiológicas (pH$=7.4$), llegando a la conclusión de que la sílice mesoporosa se disuelve rápidamente mientras que es más estable con un pequeño agregado de circonio o aluminio en su estructura.
+	El mecanismo de \ref{eq:disolucionsilica} no está completamente consensuado en la literatura especializada. Sin embargo, todos los autores coinciden en que el óxido se vuelve inestable en cualquiera de sus formas a partir de un $\text{pH}\geq7$ y que, a partir de $\text{pH}\geq10$ el proceso de disolución se acelera varios ordenes de magnitud.\cite{Kosmulski2002,Kosmulski2014,Schwarz1984,Si-HanWu2013,iler1979} En 2007 Bass y colaboradores\cite{bass2007} realizaron un estudio completo sobre la estabilidad de películas de óxidos mesoporososos de SiO$_2$, Zr$_X$Si$_{1-X}$O$_2$, Al$_X$Si$_{1-X}$O$_2$ y TiO$_2$ en condiciones fisiológicas (pH$=7.4$), llegando a la conclusión de que la sílice mesoporosa se disuelve rápidamente mientras que es más estable con un pequeño agregado de circonio o aluminio en su estructura.
 
 	%Este capitulo tiene por objetivo comprender los fenómenos de transporte dentro de las películas mesoporososas mediante técnicas electroquímicas. 
 
-	Son muchos los trabajos que aplican técnicas de electroquímica a electrodos recubiertos con \pdm\space (de distintos óxidos, funcionalizados y sin funcionalizar), ya sea para caracterizar el material o para potenciales aplicaciones. Se pueden citar ejemplos que utilizan EQ como herramientas para evaluar la accesibilidad de las películas en función de la organización espacial de los poros\cite{Etienne2007,Herzog2013}, caracterizar el área especifica libre del electrodo \cite{Otal2006} o caracterizar el transporte de masa dentro de los poros\cite{Calvo2009,brunsen2011}. Dentro de los trabajos que sugieren aplicaciones, podemos encontrar aquellos que los usan como membranas permeoselectiva \cite{Fattakhova-Rohlfing2007,Andrieu-Brunsen2015,Calvo2009}, como interface electrocatalitica\cite{BaeJ.HanJ.Chung2012}, cristales fotónicos\cite{Gimenez2017}, sistemas preconcentradores\cite{Etienne2015,Gimenez2016-2}, etc. Se puede profundizar la información sobre electroquímica aplica a materiales mesoporosos en general consultando los \textit{reviews} de Walcarius de 2013\cite{walcarius2013,Etienne2013} y 2015\cite{Etienne2015}.
+	Son muchos los trabajos que aplican técnicas de electroquímica a electrodos recubiertos con \pdm\space (de distintos óxidos, funcionalizados y sin funcionalizar), ya sea para caracterizar el material o para potenciales aplicaciones. Se pueden citar ejemplos que utilizan EQ como herramientas para evaluar la accesibilidad de las películas en función de la organización espacial de los poros\cite{Etienne2007,Herzog2013}, caracterizar el área especifica libre del electrodo \cite{Otal2006} o caracterizar el transporte de masa dentro de los poros\cite{Calvo2009,brunsen2011}. Dentro de los trabajos que sugieren aplicaciones, podemos encontrar aquellos que los usan como membranas permeoselectiva \cite{Fattakhova-Rohlfing2007,Andrieu-Brunsen2015,Calvo2009}, como interface electrocatalítica\cite{BaeJ.HanJ.Chung2012}, cristales fotónicos\cite{Gimenez2017}, sistemas preconcentradores\cite{Etienne2015,Gimenez2016-2}, etc. Se puede profundizar la información sobre electroquímica aplicada a materiales mesoporosos en general consultando los \textit{reviews} de Walcarius de 2013\cite{walcarius2013,Etienne2013} y 2015\cite{Etienne2015}.
 
-	A pesar de esta gran cantidad de publicaciones de sílice mesoporosas orientadas a electroquímica, son pocos los que dan una interpretación fisicoquímica (con diferentes técnicas EQ y herramientas de simulación) de los fenómenos de transporte que ocurren dentro de los poros, y menos aún aquellos discuten la disolución de las películas. 
+	A pesar de esta gran cantidad de publicaciones de sílice mesoporosas orientadas a electroquímica, son pocos los que dan una interpretación fisicoquímica (con diferentes técnicas EQ y herramientas de simulación) de los fenómenos de transporte que ocurren dentro de los poros, y menos aún aquellos que discuten la disolución de las películas. 
 
-	Se verá, en este capitulo, que la inestabilidad de la sílice mesoporosas es aún mayor cuando se la somete a un ciclado electroquímico, presentando un desafío inherente para desarrollar sensores electroquímicos con \pdm\space de SiO$_2$. También es un serio inconveniente a la hora de interpretar resultados, debido al constante cambio en el tamaño de los poros y cuellos debido a la disolución del películas. 
+	Se verá, en este capítulo, que la inestabilidad de la sílice mesoporosas es aún mayor cuando se la somete a un ciclado electroquímico, presentando un desafío inherente para desarrollar sensores electroquímicos con \pdm\space de SiO$_2$. También es un serio inconveniente a la hora de interpretar resultados, debido al constante cambio en el tamaño de los poros y cuellos debido a la disolución del películas. 
 
 	Es por ello, que para realizar un estudio profundo de los fenómenos que ocurren dentro de las películas, así como su potencial uso en aplicaciones (sensores, filtros, adsorbente, \textit{drug delivery}), no se debe dejar pasar por alto la inestabilidad de las \pdm\space frente a la disolución en medios acuosos.
 	
 \section{Transporte de sondas en \pdm}
 
-	 Durante las próximas secciones se analizan e interpretan los resultados obtenidos al colocar soluciones con sondas electroquímicas, de diferente naturaleza, sobre los sensores. Al ser la fabricación de los sensores una parte estructural de este trabajo, cabe aclarar sobre qué sistemas se realizaron los experimentos mostrados en este capitulo. Se utilizó, indistintamente, películas de oro plenas sobre sustratos varios (silicio, vidrio, flexible)  o con patrones de electrodos ya transferidos por fotolitografía (consultar sección \ref{sec:microfabricaci_n_de_los_sensores}). En este capítulo se trabajó exclusivamente en sistemas con películas delgadas mesoporosas (\pdm), de óxido de silicio (\pdmF) o de óxidos mixtos silicio/circonio (\pdmZ), estructuradaras con Pluronic F127, y sintetizada con el método de alto vacío (consultar sección \ref{sec:trat-vacio}, pág. \pageref{sec:trat-vacio}). Todas las medidas electroquímicas (EQ) usaron como referencia un electrodo saturado de calomel (ESC) y fueron normalizadas por el área geométrica del electrodo, de forma de facilitar la comparación de resultados cuando se trata de sensores con distinto diseño. Todas los experimentos fueron llevadas a cabo a $\text{pH}\approx5,5$ en solución de KCl \SI{100}{\milli\Molar}. Esta elección se basa en el doble propósito de elegir un pH que podemos encontrar en sumideros de aguas naturales, y conservar dentro de las películas delgadas mesoporosas una fuerte carga negativa sin comprometer la inestabilidad de la sílice.
+	 Durante las próximas secciones se analizan e interpretan los resultados obtenidos al colocar soluciones con sondas electroquímicas, de diferente naturaleza, sobre los sensores. Al ser la fabricación de los sensores una parte estructural de este trabajo, cabe aclarar sobre qué sistemas se realizaron los experimentos mostrados en este capitulo. Se utilizó, indistintamente, películas de oro plenas sobre sustratos varios (silicio, vidrio, flexible)  o con patrones de electrodos ya transferidos por fotolitografía (consultar sección \ref{sec:microfabricaci_n_de_los_sensores}). En este capítulo se trabajó exclusivamente en sistemas con películas delgadas mesoporosas (\pdm), de óxido de silicio (\pdmF) o de óxidos mixtos silicio/circonio (\pdmZ), estructuradaras con Pluronic F127, y sintetizada con el método de alto vacío (consultar sección \ref{sec:trat-vacio}, pág. \pageref{sec:trat-vacio}). Todas las medidas electroquímicas (EQ) usaron como referencia un electrodo de calomel saturado  (ECS) y fueron normalizadas por el área geométrica del electrodo, de forma de facilitar la comparación de resultados cuando se trata de sensores con distinto diseño. Todas los experimentos fueron llevadas a cabo a $\text{pH}\approx5,5$ en solución de KCl \SI{100}{\milli\Molar}. Esta elección se basa en el doble propósito de elegir un pH que podemos encontrar en sumideros de aguas naturales, y conservar dentro de las películas delgadas mesoporosas una fuerte carga negativa sin comprometer la inestabilidad de la sílice.
 
 	\subsection{Caso 1. Sonda de carga negativa: \texorpdfstring{\ferroferri}{ferroferri}}
 
@@ -95,24 +94,24 @@
 			\begin{figure}[ht]
 				\centering
 		 	    \includegraphics[width=0.70\textwidth]{Graficos/ExclusionFcCN.pdf}
-		        \caption[Exclusión electrostática en \pdmF]{Respuesta comparativa de un electrodo de Au recubierto con \pdmF\space y sin recubrir frente a una sonda \fe\space \SI{1}{\milli\Molar} en \SI{0.1}{\Molar} de KCl a \SI{50}{\milli\volt\per\second} y utilizando un ESC como referencia.}
+		        \caption[Exclusión electrostática en \pdmF]{Respuesta comparativa de un electrodo de Au recubierto con \pdmF\space y sin recubrir frente a una sonda \fe\space \SI{1}{\milli\Molar} en \SI{0.1}{\Molar} de KCl a \SI{50}{\milli\volt\per\second} y utilizando un ECS como referencia.}
 		        \label{fig:exclusion_vs_Au}
 		      	\end{figure}
 	
 	 En el voltagrama para el electrodo recubierto con \pdmF\space (verde) de la figura \ref{fig:exclusion_vs_Au} no se observa ni reducción ni oxidación de la sonda. Al ser ésta de carga negativa, no es capaz de ingresar a la película (la cual está cargada negativamente), y, por lo tanto tampoco puede difundir hacia el electrodo. La repulsión se debe a un efecto de exclusión electrostática. Este fenómeno de exclusión ya fue reportado por varios autores\cite{alberti2015,schmuhl2005,Andrieu-Brunsen2015,brunsen2011}. Al pH de trabajo, $\text{pH}=5,5$, los silanoles están como silanolatos, como ya se explicó anteriormente, estableciendo una carga negativa en todo el espesor de la película.
 
-	 Desde el punto del estudio de fenómenos de  transporte esta sonda no es especialmente útil, porque, como ya se demostró, no puede ingresar en la \pdm. Sin embargo, nos ofrece información importante sobre la integridad estructural de las películas delgadas. Sicho de otro modo, al no obtener señal electroquímica significa que la sonda no percola a través de la \pdm, de donde se concluye que la \pdm\space se encuentra sin fisuras, agujeros o rajaduras y que recubre por completo el área del electrodo. 
+	 Desde el punto del estudio de fenómenos de  transporte esta sonda no es especialmente útil, porque, como ya se demostró, no puede ingresar en la \pdm. Sin embargo, nos ofrece información importante sobre la integridad estructural de las películas delgadas. Dicho de otro modo, al no obtener señal electroquímica significa que la sonda no percola a través de la \pdm, de donde se concluye que la \pdm\space se encuentra sin fisuras, agujeros o rajaduras y que recubre por completo el área del electrodo. 
 
-	 Por ende fue muy importante para corroborar el estado de las \pdm\space al finalizar experimentos donde se dudaba del estado de la película (si no hay señal la \pdm está intacta, si hay señal el Au quedó expuesto). De esta forma esta sonda se utilizó a modo de <<experimento control>> para comprobar que las películas no tuviera sitios de percolación debido a daños estructurales.
+	 Por ende fue muy importante para corroborar el estado de las \pdm\space al finalizar experimentos donde se dudaba del estado de la película (si no hay señal la \pdm\space está intacta, si hay señal el Au quedó expuesto). De esta forma esta sonda se utilizó a modo de <<experimento control>> para comprobar que las películas no tuviera sitios de percolación debido a daños estructurales.
 
-	\subsection{Caso 2. Sonda de carga neutra: ferronceno metanol}
+	\subsection{Caso 2. Sonda de carga neutra: ferroceno metanol}
 
 		Al ser el ferroceno metanol (\ferroceno, \fc) una molécula que, en su estado reducido, no presenta carga, es de esperar que no se vea afectada por la carga de las paredes de los poros. En la figura \ref{fig:permeacion} se comparan los voltagramas resultantes de colocar una solución de ferroceno metanol sobre un electrodo de Au desnudo (punteado) y uno recubierto con la \pdm\space (sólido).  Si bien el gráfico  requiere más análisis, está claro que el \fc\space permea a través de la película nanoporosa, para dar una señal electroquímica. En las próximas secciones se discutirá la forma, intensidad y otras variables de los voltagramas, y se analizarán experimentos complementarios. Por ahora basta con haber demostrado que una sonda neutra de permea a través de la \pdm\space generando una señal electroquímica, aunque de menor intensidad que la obtenida con el electrodo desnudo.
 
 		\begin{figure}[ht]
 				\centering
 		 	    \includegraphics[width=0.70\textwidth]{Graficos/FeOH-permeacion-1mM.pdf}
-		        \caption[Permeación ferroceno metanol en \pdmF]{Respuesta comparativa de un electrodo de Au recubierto con \pdmF\space y sin recubrir utilzianado \fc\space \SI{1}{\milli\Molar} en \SI{0.1}{\Molar} de KCl, a \SI{50}{\milli\volt\per\second} utilizando como referencia un ESC.}
+		        \caption[Permeación ferroceno metanol en \pdmF]{Respuesta comparativa de un electrodo de Au recubierto con \pdmF\space y sin recubrir utilzianado \fc\space \SI{1}{\milli\Molar} en \SI{0.1}{\Molar} de KCl, a \SI{50}{\milli\volt\per\second} utilizando como referencia un ECS.}
 		        \label{fig:permeacion}
 		      	\end{figure}
 		%Ferroceno y todos los datos de permeacion. Calcinado vs Bajas Tcd 
@@ -184,7 +183,7 @@
 		        \label{fig:fcoh_bajaT}
 		      	\end{figure}
 		
-		Aunque las mediciones se realizaron bajo las las mismas condiciones, en este caso se observa una respuesta diferente que en el caso de las \pdmF\space calcinadas, sugiriendo que la difusión se encuentra disminuida a través estos sistemas porosos. La forma de la curva de los voltagramas de la figura \ref{fig:fcoh_bajaT} remite a una típica respuesta para sistemas en equilibrio, formando un gradiente de concentración a lo largo de la sección de la película y alcanzando una corriente límite $\text{i}_l$. 
+		Aunque las mediciones se realizaron bajo las las mismas condiciones, en este caso se observa una respuesta diferente que en el caso de las \pdmF\space calcinadas, sugiriendo que la difusión se encuentra disminuida a través estos sistemas porosos. La forma de la curva de los voltagramas de la figura \ref{fig:fcoh_bajaT} remite a una típica respuesta para sistemas en estado estacionario	, formando un gradiente de concentración a lo largo de la sección de la película y alcanzando una corriente límite $\text{i}_l$. 
 		La forma de calcular el coeficiente de difusión en estos sistemas es mediante la ecuación \ref{eq:de-ferroceno-bajaT}, donde se calcula $D$ a partir de $\text{i}_l$, de la diferencia de concentración entre las cercanías del electrodo ($C_{x=0}$) y el seno de la solución $C_s$, el área del electrodo ($A$) y el espesor de la película ($L$).
 
 			\begin{equation}
@@ -315,21 +314,21 @@
 					\nu_{\scriptscriptstyle{D}}=\frac{RT}{\tau_{\scriptscriptstyle{D}}F}
 					\label{eq:v_caracteristica}
 			 \end{equation}
-	     \indent Es en esta velocidad característica, donde la respuesta del potencial cambia, de un comportamiento de difusión en capa delgada a un comportamiento de difusión en un plano semiinfinito. Para determinar $\nu_{\scriptscriptstyle{D}}$ se tomaron VCs de \ru\space sobre \pdmF\space a distintas velocidades de barrido, desde \SI{50}{\milli\volt\per\second} a \SI{50}{\volt\per\second}. Luego se graficó el desplazamiento de potencial de pico por un lado, y la intensidad de pico por otro, ambas variables en función de la velocidades de barrido (gráficos \ref{fig:corrimiento-potenciales} y \ref{fig:ip-vel} respectivamente).
+	     \indent Es a esta velocidad característica donde la respuesta del potencial cambia de un comportamiento de difusión en capa delgada a un comportamiento de difusión en régimen semiinfinito. Para determinar $\nu_{\scriptscriptstyle{D}}$ se tomaron voltametrías cíclicas de \ru\space sobre \pdmF\space a distintas velocidades de barrido, desde \SI{50}{\milli\volt\per\second} a \SI{50}{\volt\per\second}. Luego se graficó el desplazamiento de potencial de pico por un lado, y la corriente de pico por otro, ambas variables en función de la velocidades de barrido (gráficos \ref{fig:corrimiento-potenciales} y \ref{fig:ip-vel} respectivamente).
 
-	     En La figura \ref{fig:corrimiento-potenciales} se indica mediante flechas rojas la velocidad característica donde, aparentemente, la transferencia de carga se produce más rápidamente que el transporte de la misma. Sin embargo, el procesos de transferencia de carga enmascara la separación de picos y, por lo tanto, sería impreciso establecer un valor de $\nu_{\scriptscriptstyle{D}}$ de este gráfico.
+	     En la figura \ref{fig:corrimiento-potenciales} se indica mediante flechas rojas la velocidad característica donde aparentemente la difusión cambia de régimen, de acotado a semiinfinito. Sin embargo, sería impreciso establecer un valor de $\nu_{\scriptscriptstyle{D}}$ de este gráfico, ya que el proceso de transferencia de carga de la sonda al electrodo enmascara la separación entre los potenciales ($E^p-E^0_{ads}$) y, por lo tanto, resulta difícil establecer un límite preciso.
 			
-			 \begin{figure}[ht]
+			 \begin{figure}[b!]
 					\centering
 			 	    \includegraphics[width=0.70\textwidth]{Graficos/MARIO-Ru1mM-Potenciales.pdf}
 			        \caption[Desplazamiento de potenciales]{Desplazamiento de los potenciales en función de la velocidad de barrido. Las flechas rojas indican la velocidad característica para el cambio de régimen, de capa delgada a control difusional.}
 			        \label{fig:corrimiento-potenciales}
 			      	\end{figure}
          
-         	 \begin{figure}[ht]
+         	 \begin{figure}[b!]
 			 	 \begin{subfigure}[t]{0.5\textwidth}
 			 	 \includegraphics[width=1\textwidth]{Graficos/MARIO-Ru1mM-ip-vel.pdf}
-				  \caption{Intensidad de pico  en función de la velocidad de barrido. Lbas flechas rojas indican la velocidad característica para el cambio de régimen.}
+				  \caption{Intensidad de pico  en función de la velocidad de barrido. Las flechas rojas indican la velocidad característica para el cambio de régimen.}
 			 	 \label{fig:ip-vel}
 		  	  	 \end{subfigure}	
 			 	 \begin{subfigure}[t]{0.5\textwidth}
@@ -337,7 +336,7 @@
 			  	 \caption{log(i$p$) vs log($\nu$) para determinar el cambio de régimen.}
 			 	 \label{fig:logj-logv}
 		  		 \end{subfigure}
-				  \caption[Cálculo de velocidad de barrido característica]{Gráficos para determinar $\nu_{\scriptscriptstyle{D}}$, en a) marcada con flechas rojas donde es máls sencillo de determinar debido a la independencia del potencial; en b) mediante el cambio en la pendiente de  régimen en capa delgada ($\text{i}_{p} \propto \nu$) a régimen controlado por difusión ($\text{i}_{p} \propto \nu^{1/2}$).}
+				  \caption[Cálculo de velocidad de barrido característica]{Gráficos para determinar $\nu_{\scriptscriptstyle{D}}$, en a) marcada con flechas rojas donde es más sencillo de determinar debido a la independencia del potencial; en b) mediante el cambio en la pendiente de  régimen en capa delgada ($\text{i}_{p} \propto \nu$) a régimen controlado por difusión ($\text{i}_{p} \propto \nu^{1/2}$).}
 			 	 \label{fig:ip-vel2}
 			 	 \end{figure}
 
@@ -356,7 +355,7 @@
 	 			\begin{figure}[ht]
 					\centering
 			 	    \includegraphics[width=0.70\textwidth]{Graficos/ACV-1-2Hz.pdf}
-			        \caption[Voltametrías de corriente alterna]{Voltametría de corriente alterna para una película satura con \ru. Se aplicó una perturbación de 10mV y una frecuencia de 1 y \SI{2}{\hertz} en solución de KCl \SI{100}{\milli\Molar} usando como referencia ESC.}
+			        \caption[Voltametrías de corriente alterna]{Voltametría de corriente alterna para una película satura con \ru. Se aplicó una perturbación de 10mV y una frecuencia de 1 y \SI{2}{\hertz} en solución de KCl \SI{100}{\milli\Molar} usando como referencia ECS.}
 			        \label{fig:acv}
 			      	\end{figure}
 
@@ -384,7 +383,7 @@
 
 		Allí se observa que la señal del \fc\space es de una intensidad comparable con la que la que se obtiene en un electrodo de Au desnudo. Se desprenden a partir de estos resultados dos hipótesis: que la señal del \fc\space se debe a una mediación electroquímica entre el \ru\space y el electrodo o bien que el \fc\space está permeando a través de la película por algún cambio debido a la adsorción del \ru\space en la película. Cabe destacar que la señal del \fc\space en la película cargada de \ru\space es mucho mas intensa que la que corresponde a colocar \fc\space en una \pdmF\space sin \ru\space (voltagramas negro y gris respectivamente).
 
-		Para poder discriminar e interpretar cual es el proceso que está dando origen a la señal, se recurrió a experimentos de simulación. Se trabajó en conjunto con el Dr. Mario Tagliazucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía (INQUIMAE) haciendo simulaciones por elementos finitos con el programa \textit{COMSOL Multiphysics\textsuperscript\textregistered}.
+		Para poder discriminar e interpretar cuál es el proceso que está dando origen a la señal, se recurrió a experimentos de simulación. Se trabajó en conjunto con el Dr. Tagliazucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía (INQUIMAE) haciendo simulaciones por elementos finitos con el programa \textit{COMSOL Multiphysics\textsuperscript\textregistered}.
 
 		Se utilizó un modelo el cual considera un electrodo recubierto con una película delgada \SI{200}{nm} saturada de  \aminorutenio en una concentración de \SI{1}{\Molar}. Para una descripción detallada de los parámetros utilizados se pueden consultar en la sección \ref{simulacion}, pág. \pageref{simulacion}. 
 
@@ -392,23 +391,22 @@
 
 			\begin{figure}[ht]
 					\centering
-			 	    \includegraphics[width=0.70\textwidth]{Graficos/FcOH-Simulacion-deltaE.pdf}
-			        \vspace*{-2mm}
-			        \caption[Simulación EQ de mediación redox]{Simulación por elementos finitos del voltagrama para la mediación entre una sonda en solución y una \pdmF\space con \ru\space \SI{1}{\milli\Molar}. En el eje de la abscisas se coloca la diferencia de potencial estándar para cada una de las sondas con ESC.}
+			 	    \includegraphics[width=0.80\textwidth]{Graficos/FcOH-Simulacion-deltaE.pdf}
+			        \caption[Simulación EQ de mediación redox]{Simulación por elementos finitos del voltagrama para la mediación entre una sonda en solución y una \pdmF\space con \ru\space \SI{1}{\milli\Molar}. En el eje de la abscisas se coloca la diferencia de potencial estándar para cada una de las sondas con ECS.}
 			        \label{fig:sim_mediacion}
 			      	\end{figure}
 
-		Del análisis de la simulación se desprende que la mediación electroquímica es posible. Sin embargo para $\Delta E^\circ\!\!>\,$\SI{300}{\milli\volt} la intensidad de la sonda en solución disminuye sensiblemente y para una separación de más de \SI{400}{\milli\volt} es prácticamente nula. Debe existir un mínimo solapamiento entre los potenciales de reducción/oxidación de ambas especies, de modo tal que una fracción de la población de los sitios rédox anclados en la película puedan transferir o recibir la carga, de la sonda en la solución en la interfase película-solución al electrodo de Au.
+		Del análisis de la simulación se desprende que la mediación electroquímica es posible. Sin embargo para $\Delta E^\circ\!\!>\,$\SI{300}{\milli\volt} la corriente debida a la oxidación/reducción de la sonda en solución disminuye sensiblemente y para una separación de más de \SI{400}{\milli\volt} es prácticamente nula. %Debe existir un mínimo solapamiento entre los potenciales de reducción/oxidación de ambas especies, de modo tal que una fracción de la población de los sitios rédox anclados en la película puedan transferir o recibir la carga, de la sonda en la solución en la interfase película-solución al electrodo de Au.
 
 		En experimentos de laboratorio (consultar sección \ref{sec:respuesta_sondas_au}, pág. \pageref{sec:respuesta_sondas_au}), la separación de potenciales estándar del \ru\space y del \fc\space es de aproximadamente \SI{400}{\milli\volt} para medidas independiente y sobre electrodos de Au. Por la tanto, es de esperar que la señal observada para el \fc\space en la figura \ref{fig:mediacion} se trate de un proceso de permeación y no de mediación.
 
-		Se realizaron dos nuevas simulaciones, ahora permitiendo que ocurran, simultáneamente, los procesos de mediación y permeación. Los parámetros variables fueron el coeficiente de difusión del \fc\space dentro de la película, $D_{Fc}$ y la constante para la reacción de mediación redox, $k$. En el gráfico \ref{fig:sim_med_k0}, la mediación no es posible por una imposición propia de la simulación, donde $k\!=\!0$. Allí se observa que la permeación ocurre para $D_{Fc}\!\!\gtrsim$\SI{e-10}{\square\cm\per\second} y a partir de \SI{e-6}{\square\cm\per\second} llega a un valor limite para el cual la respuesta se mantiene constante.
+		Se realizaron dos nuevas simulaciones, ahora permitiendo que ocurran, simultáneamente, los procesos de mediación y permeación. Los parámetros variables fueron el coeficiente de difusión del \fc\space dentro de la película, $D_{Fc}$ y la constante para la reacción de mediación redox, $k$. En el gráfico \ref{fig:sim_med_k0}, la mediación no es posible por una imposición propia de la simulación, donde $k\!=\!0$. Allí se observa que la permeación ocurre para $D_{Fc}\!\!\gtrsim$\SI{e-10}{\square\cm\per\second} y a partir de \SI{e-6}{\square\cm\per\second} llega a un valor límite para el cual la respuesta se mantiene constante.
 
-		\pagebreak
+		%\pagebreak
 
-		En el caso de hacer simulaciones que permitan la mediación redox, asignando una valor $k\!=$\SI{1000}{\per\Molar\per\second} para la constante cinética de intercambio electrónico para la mediación, se pone de manifiesto que la permeación es el proceso dominante para valores de $D_{Fc}\!\gtrsim$\SI{e-6}{\per\Molar\per\second} y que, si bien es pobre, la mediación redox se dá para valores de $D_{Fc}\!\!\lesssim$\SI{e-8}{\per\Molar\per\second}. Valores de este orden de magnitud fueron reportados por Audebert y col. para sistemas similares\cite{Audebert2015} .
+		En el caso de hacer simulaciones que permitan la mediación redox, asignando una valor $k\!=$\SI{1000}{\per\Molar\per\second} para la constante cinética de intercambio electrónico para la mediación, se pone de manifiesto que la permeación es el proceso dominante para valores de $D_{Fc}\!\gtrsim$\SI{e-6}{\per\Molar\per\second} (figura \ref{fig:sim_med_1000}). Para constantes de difusión $D_{Fc}\!\gtrsim$\SI{e-8}{\per\Molar\per\second} se manifiestan ambos procesos, la mediación y la permeación, y para valores de $D_{Fc}\!\lesssim$\SI{e-10}{\per\Molar\per\second} ya no es posible de observar permeación y solo se ve un pequeño pico atribuible a un proceso de mediación rédox. Audebert y col. reportaron valores de coeficientesde difusión en éstos ordenes de magnitud para sistemas similares\cite{Audebert2015}.
 
-		En la sección \ref{sec:difusion} se calculo el coeficiente de difusión del \fc\space utilizando los sistemas fabricados a bajas temperatura por el método de alto vacío, el cual resulto ser $D_{Fc}\!\!=$\SI{2.5e-9}{\per\Molar\per\second}. Bajo estas condiciones, deberíamos observar en los resultados experimentales, de acuerdo a las simulaciones, ambos fenómenos, mediación redox y permeación. 
+		En la sección \ref{sec:difusion} se calculó el coeficiente de difusión del \fc\space utilizando los sistemas fabricados a bajas temperatura por el método de alto vacío, el cual resulto ser $D_{Fc}\!\!=$\SI{2.5e-9}{\per\Molar\per\second}. Bajo estas condiciones, deberíamos observar en los resultados experimentales, de acuerdo a las simulaciones, ambos fenómenos, mediación redox y permeación. 
 			
 			\begin{figure}[ht]
 				\begin{subfigure}[t]{0.495\textwidth}
@@ -440,7 +438,7 @@
 		
 	    \pagebreak
 
-		Con las simulaciones que se han realizado y, comparando en un mismo gráfico, los experimentos simulados con los experimentos realizados en el laboratorio (figura \ref{fig:comp_sim_exp}), se puede interpretar cúal es el fenómeno de transporte de carga/masa dominante en los sistemas estudiados. Resulta evidente que sólo el fenómeno de permeación es el dominante, sugiriendo un cambio en el coeficiente de difusion del \fc, de $D_{Fc}=$\SI{2.5e-9}{\per\Molar\per\second} a, por lo menos, $D_{Fc}\!=$\SI{e-6}{\per\Molar\per\second}, el cual es un valor más próximo al calculado para sistemas calcinados, $D_{Fc}=$\SI{6.1e-6}{\per\Molar\per\second} (ver sección \ref{sec:difusion}, pág. \pageref{sec:difusion}). 
+		Con las simulaciones que se han realizado y, comparando en un mismo gráfico, los experimentos simulados con los experimentos realizados en el laboratorio (figura \ref{fig:comp_sim_exp}), se puede interpretar cúal es el fenómeno de transporte de carga/masa dominante en los sistemas estudiados. Resulta evidente que sólo el fenómeno de permeación es el dominante, sugiriendo un cambio en el coeficiente de difusion del \fc, de $D_{Fc}\!=$\SI{2.5e-9}{\per\Molar\per\second} a, por lo menos, $D_{Fc}\!=$\SI{e-6}{\per\Molar\per\second}, el cual es un valor más próximo al calculado para sistemas calcinados, $D_{Fc}=$\SI{6.1e-6}{\per\Molar\per\second} (ver sección \ref{sec:difusion}, pág. \pageref{sec:difusion}). 
 
 		La interpretación de estos resultados es que los sistemas porosos, condensados y extraídos a baja tempratura, van cambiando su estructura a medida que el \ru\space se adsorbe en su superficie de los poros, permitiendo, luego que el \fc\space difunda más libremente hacia el electrodo, de forma similar a lo observado para sistemas calcinados. Como veremos más adelante esto responde a un proceso de disolución de la sílice catalizado por la adsorción de \aminorutenio.
 
@@ -480,7 +478,7 @@
 
 		\noindent Esta expresión, que no es otra cosa que la ecuación de Nernst, demuestra que en el equilibrio las concentraciones de $O$ y $R$ quedan determinadas por el potencial del electrodo, de la misma manera que sucedería en un electrodo metálico sin recubrimiento. Esto significa que, independientemente de los valores que puedan adoptar los potenciales formales de los pares rédox en la película y la solución, no existen impedimentos termodinámicos para que el par rédox en la solución reaccione en cualquiera de los dos sentidos, hacia la reducción o la oxidación.
 
-		Ybarra y colaboradores\cite{ybarra2008} estudiaron el caso para sistemas en estado estacionario. Los autores encuentran una expresión simplificada para la corriente anódica cuando al velocidad de transporte de carga en el mediador es lento ($i_e$) y la $K$ (que depende de la separaciones de los potenciales formales) es relativamente grande y, definen la corriente $i_{lim}$ en función de estos dos parámetros.
+		Ybarra y col.\cite{ybarra2008} estudiaron el caso para sistemas en estado estacionario. Los autores encuentran una expresión simplificada para la corriente anódica cuando al velocidad de transporte de carga en el mediador es lento ($i_e$) y la $K$ (que depende de la separaciones de los potenciales formales) es relativamente grande y, definen la corriente $i_{lim}$ en función de estos dos parámetros.
 
 		\begin{equation}
 		i_{lim}=\frac{i_e}{K}
@@ -513,7 +511,7 @@
 
 		Como ya se ha demostrado, al poner en contacto una solución de \ru\space sobre una \pdmF, la película se va cargando con la sonda hasta alcanzar la saturación. Es de esperar que la carga dentro de la película se mantenga constante y que, a partir del voltagrama de máxima adsorción las sucesivas voltametrías sean equivalentes.
 
-		Sin embargo, no es así, y al ciclar constantemente el sistema se obtienen voltagramas como el presentado en la figura \ref{fig:diso_ru1mM}, experimento donde se adsorbió \ru\space \SI{1}{\milli\Molar}. Se observa que la película se va cargando conforme aumenta el número de ciclos, y adsorbe cada más \ru hasta llegar a un valor máximo de adsorción, indicado por la curva azul. Si se continúa ciclando el sistema el mismo evoluciona hasta la curva roja, la cual coincide con un voltagrama para \ru\space medido sobre un electrodo de Au desnudo. Esto sugiere que las \pdmF\space se disuelven luego de hacer algunos ciclos de VC.
+		Sin embargo, no es así, y al ciclar constantemente el sistema se obtienen voltagramas como el presentado en la figura \ref{fig:diso_ru1mM}, experimento donde se adsorbió \ru\space \SI{1}{\milli\Molar}. Se observa que la película se va cargando conforme aumenta el número de ciclos, y adsorbe cada más \ru\space hasta llegar a un valor máximo de adsorción, indicado por la curva azul. Si se continúa ciclando el sistema el mismo evoluciona hasta la curva roja, la cual coincide con un voltagrama para \ru\space medido sobre un electrodo de Au desnudo. Esto sugiere que las \pdmF\space se disuelven luego de hacer algunos ciclos de VC.
 
 		Si bien estamos en a un pH ($5.5$) donde la disolución de las \pdmF\space debería ser mínima o nula, las mismas parecen disolverse con bastante facilidad, mostrando siempre el comportamientos del voltagrama de la figura \ref{fig:diso_ru1mM}, independientemente del tratamientos posdepósito o de la concentración de la sonda utilizada. De estas observaciones surgió la disyuntiva de que, si la disolución se debe al pH, a la sonda o al potencial aplicado. Se han aislado estas variables dejando sumergidas las \pdmF\space en solución con electrolito soporte (KCl \SI{100}{\milli\Molar}), con y sin \ru\space durante varios días y no se ha observado disolución alguna de las \pdm. Tampoco se ha observado disolución cuando se utilizan sondas neutras o negativas, como \fe, hidroquinona o \fc. En resumen, las \pdmF\space sólo se disuelven cuando se realizan VCs consecutivas con solución de \ru\space.
 			
@@ -570,7 +568,7 @@
 				\begin{figure}[ht]
 				\centering
 		 	    \includegraphics[width=0.75\textwidth]{Graficos/Zr-ExclusionFcCN.pdf}
-		        \caption[Exclusión electrostática en \pdmZ]{Respuesta comparativa de un electrodo de Au recubierto con \pdmZ\space (sólida) y uno sin recubrir (punteado) frente a una sonda \ferroferri\space \SI{1}{\milli\Molar} en \SI{0.1}{\Molar} de KCl utilizando ESC como referencia.}
+		        \caption[Exclusión electrostática en \pdmZ]{Respuesta comparativa de un electrodo de Au recubierto con \pdmZ\space (sólida) y uno sin recubrir (punteado) frente a una sonda \ferroferri\space \SI{1}{\milli\Molar} en \SI{0.1}{\Molar} de KCl utilizando ECS como referencia.}
 		        \label{fig:fcn-zr}
 		      	\end{figure} 
 	 

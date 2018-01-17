@@ -57,7 +57,7 @@ set label 100 sprintf("+ciclos") at -280,300 font ",10" textcolor rgb "black"
 set label 101 sprintf("+ciclos") at -305,-420 font ",10" textcolor rgb "black"
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/}$mV" font ",14" textcolor rgb "gray40" offset  0,-2
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/}$mV" font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango

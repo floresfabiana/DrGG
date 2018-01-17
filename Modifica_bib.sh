@@ -69,6 +69,7 @@ CD_BIB="Referencias"
       sed -i.tmp 's/month = {dec}/month = dec/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/TiO2/TiO$_2$/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/SiO2/SiO$_2$/g' $CD_BIB/base_bibliografica.bib
+      sed -i.tmp 's/SnO2/SnO$_2$/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/1:10^5/$1:10^5$/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/AlGaN/$\\text{Al}_{1-X}\\text{Ga}_{X}\\text{N}$/g' $CD_BIB/base_bibliografica.bib
       sed -i.tmp 's/\&/\\&/g' $CD_BIB/base_bibliografica.bib

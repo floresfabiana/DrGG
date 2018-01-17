@@ -42,7 +42,7 @@ red_100 = "#ff0000"
 	set grid back ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/}mV$" font ",16" textcolor rgb "gray40" offset  0,-2
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/}mV$" font ",16" textcolor rgb "gray40" offset  0,-2
 	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango

@@ -67,18 +67,20 @@
     \addcontentsline{toc}{chapter}{\contentsname}
     \tableofcontents
 
-    \cleardoublepage\phantomsection
-    \addcontentsline{toc}{chapter}{\listfigurename}
-    \listoffigures 
+    %Indice de figuras si se quiere
+    %\cleardoublepage\phantomsection
+    %\addcontentsline{toc}{chapter}{\listfigurename}
+    %\listoffigures 
     
-    \cleardoublepage\phantomsection
-    \addcontentsline{toc}{chapter}{\listtablename}
-    \listoftables
+    %indice de tablas si se quiere
+    %\cleardoublepage\phantomsection
+    %\addcontentsline{toc}{chapter}{\listtablename}
+    %\listoftables
  	
     %Ajusta la numeración de los MiniInsdices
     \adjustmtc   %Uno por el Indice General
-    \adjustmtc   %Uno por el Indice de Figuras
-    \adjustmtc   %Uno por el Indice de tablas
+    %\adjustmtc   %Uno por el Indice de Figuras
+    %\adjustmtc   %Uno por el Indice de tablas
     \adjustmtc   %Uno por la pagina Agradecimiento
     \adjustmtc   %Una por la pagina Resumen 
     \adjustmtc   %Uno por la Pagina Abstract
@@ -150,79 +152,77 @@
     2. Revisar todos los warning y bad blocks! 
      
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%LOGS 16/01/2018               % 
+%LOGS 17/01/2018               % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 [Compile ~/Dropbox/Tesis/Tesis.tex]
 
-B: /home/gustavo/Dropbox/Tesis/PreCapitulos/portada.tex:33 Underfull \hbox (badness 10000) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:84 Overfull \hbox (1.28865pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active [] --> Ok 
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:191 Overfull \hbox (0.45546pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active [] --> Ok
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:57 Overfull \hbox (31.79701pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:58 Overfull \hbox (17.79167pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:59 Overfull \hbox (36.46326pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:60 Overfull \hbox (5.32484pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:60 Overfull \hbox (20.62682pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:197 Overfull \hbox (4.51093pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:199 Overfull \hbox (20.65024pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:199 Overfull \hbox (4.35883pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \vbox (8.21071pt too high) detected --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \hbox (3.67725pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \vbox (10.8982pt too high) detected --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \hbox (0.99646pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \hbox (4.35883pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:202 Overfull \hbox (4.23734pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:331 Overfull \hbox (5.44995pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:331 Overfull \hbox (2.57881pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:332 Overfull \hbox (2.33168pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:333 Overfull \hbox (4.66563pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:333 Overfull \hbox (2.33168pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:334 Overfull \hbox (2.33168pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:338 Overfull \hbox (2.33168pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 2538) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 1173) has occurred while \output is active []  --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:527 Overfull \hbox (0.84297pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:586 Overfull \hbox (16.32191pt too wide) in paragraph  --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:587 Overfull \hbox (5.88878pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 6094) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:670 Underfull \hbox (badness 1092) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:674 Overfull \hbox (1.13486pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:304 Overfull \hbox (37.56091pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:306 Overfull \hbox (0.991pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:308 Overfull \hbox (5.85289pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:308 Overfull \hbox (6.4079pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:302 Underfull \hbox (badness 10000) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Underfull \vbox (badness 1546) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:437 Underfull \hbox (badness 10000) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Underfull \vbox (badness 3354) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Underfull \vbox (badness 1248) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:597 Underfull \hbox (badness 10000) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:624 Overfull \hbox (0.74876pt too wide) in paragraph --> Ok 
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:624 Underfull \hbox (badness 10000) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:692 Overfull \hbox (2.22221pt too wide) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:692 Overfull \hbox (2.22221pt too wide) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:743 Overfull \hbox (2.22221pt too wide) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:743 Overfull \hbox (2.22221pt too wide) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:788 Overfull \hbox (2.22221pt too wide) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:290 Underfull \hbox (badness 10000) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:330 Overfull \hbox (2.22221pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:662 Underfull \hbox (badness 10000) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 2818) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:136 Overfull \hbox (13.08846pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 1112) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:393 Overfull \hbox (6.04271pt too wide) in paragraph --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active [] --> OK
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:425 Underfull \hbox (badness 10000) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/06_conclusiones.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active [] ---> OK
-B: /home/gustavo/Dropbox/Tesis/PostCapitulos/abreviaturas.tex:22 Overfull \hbox (5.16283pt too wide) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/PostCapitulos/publicaciones.tex:25 Underfull \hbox (badness 10000) in paragraph --> Ok
-B: /home/gustavo/Dropbox/Tesis/PostCapitulos/publicaciones.tex:32 Overfull \hbox (1.54936pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/PreCapitulos/portada.tex:33 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:84 Overfull \hbox (1.8444pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:192 Overfull \hbox (0.45546pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:57 Overfull \hbox (31.79701pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:58 Overfull \hbox (17.79167pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:59 Overfull \hbox (36.46326pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:60 Overfull \hbox (5.32484pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:60 Overfull \hbox (20.62682pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:197 Overfull \hbox (4.51093pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:199 Overfull \hbox (20.65024pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:199 Overfull \hbox (4.35883pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \vbox (8.21071pt too high) detected
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \hbox (3.67725pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \vbox (10.8982pt too high) detected
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \hbox (0.99646pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:201 Overfull \hbox (4.35883pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:202 Overfull \hbox (4.23734pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:331 Overfull \hbox (5.44995pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:331 Overfull \hbox (2.57881pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:332 Overfull \hbox (2.33168pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:333 Overfull \hbox (4.66563pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:333 Overfull \hbox (2.33168pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:334 Overfull \hbox (2.33168pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:338 Overfull \hbox (2.33168pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 2538) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 1173) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:527 Overfull \hbox (0.84297pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:586 Overfull \hbox (16.32191pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:587 Overfull \hbox (5.88878pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 6094) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:670 Underfull \hbox (badness 1092) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:674 Overfull \hbox (1.13486pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:304 Overfull \hbox (37.56091pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:306 Overfull \hbox (0.991pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:308 Overfull \hbox (5.85289pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:308 Overfull \hbox (6.4079pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:302 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Underfull \vbox (badness 1546) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:437 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Underfull \vbox (badness 3354) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:0 Underfull \vbox (badness 1248) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:597 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:624 Overfull \hbox (0.74876pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:624 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:692 Overfull \hbox (2.22221pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:692 Overfull \hbox (2.22221pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:743 Overfull \hbox (2.22221pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:743 Overfull \hbox (2.22221pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:788 Overfull \hbox (2.22221pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:289 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:329 Overfull \hbox (2.22221pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:661 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 2818) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:136 Overfull \hbox (13.08846pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 1112) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:393 Overfull \hbox (6.04271pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:425 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/06_conclusiones.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/PostCapitulos/abreviaturas.tex:22 Overfull \hbox (5.16283pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/PostCapitulos/publicaciones.tex:25 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:128 Underfull \hbox (badness 1215) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:128 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:156 Underfull \hbox (badness 10000) in paragraph
@@ -231,41 +231,42 @@ B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:238 Underfull \hbox (badness 10000) in 
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:238 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:258 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:284 Underfull \hbox (badness 1990) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:410 Underfull \hbox (badness 1762) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:420 Underfull \hbox (badness 2707) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:420 Underfull \hbox (badness 5050) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:420 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:420 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:446 Underfull \hbox (badness 1320) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:458 Underfull \hbox (badness 1097) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:458 Underfull \hbox (badness 1389) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:487 Underfull \hbox (badness 3281) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:487 Underfull \hbox (badness 4353) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:487 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:536 Underfull \hbox (badness 4316) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:536 Underfull \hbox (badness 2521) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:536 Underfull \hbox (badness 2205) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:536 Underfull \hbox (badness 4954) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:825 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:825 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:881 Underfull \hbox (badness 1424) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:907 Underfull \hbox (badness 1092) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1019 Underfull \hbox (badness 2744) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1580 Underfull \hbox (badness 1163) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1580 Underfull \hbox (badness 2142) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1783 Underfull \hbox (badness 2707) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1783 Underfull \hbox (badness 1142) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1947 Underfull \hbox (badness 1173) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2112 Underfull \hbox (badness 1210) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2167 Underfull \hbox (badness 7397) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2167 Underfull \hbox (badness 2932) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2299 Underfull \hbox (badness 6995) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2299 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2299 Underfull \hbox (badness 5231) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2299 Underfull \hbox (badness 3724) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2299 Underfull \hbox (badness 2875) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2299 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:410 Underfull \hbox (badness 4291) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:421 Underfull \hbox (badness 1762) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:431 Underfull \hbox (badness 2707) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:431 Underfull \hbox (badness 5050) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:431 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:431 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:457 Underfull \hbox (badness 1320) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:469 Underfull \hbox (badness 1097) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:469 Underfull \hbox (badness 1389) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:498 Underfull \hbox (badness 3281) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:498 Underfull \hbox (badness 4353) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:498 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:547 Underfull \hbox (badness 4316) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:547 Underfull \hbox (badness 2521) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:547 Underfull \hbox (badness 2205) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:547 Underfull \hbox (badness 4954) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:836 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:836 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:892 Underfull \hbox (badness 1424) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:918 Underfull \hbox (badness 1092) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1030 Underfull \hbox (badness 2744) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1591 Underfull \hbox (badness 1163) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1591 Underfull \hbox (badness 2142) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1794 Underfull \hbox (badness 2707) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1794 Underfull \hbox (badness 1142) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1958 Underfull \hbox (badness 1173) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2123 Underfull \hbox (badness 1210) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2178 Underfull \hbox (badness 7397) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2178 Underfull \hbox (badness 2932) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 6995) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 5231) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 3724) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 2875) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 10000) in paragraph
 
-0 errors, 0 warnings, 111 badboxes
+0 errors, 0 warnings, 109 badboxes
 
-[Finished in 16.70s]
+[Finished in 16.26s]
