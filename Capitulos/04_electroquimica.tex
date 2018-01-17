@@ -408,7 +408,7 @@
 
 		En la sección \ref{sec:difusion} se calculó el coeficiente de difusión del \fc\space utilizando los sistemas fabricados a bajas temperatura por el método de alto vacío, el cual resulto ser $D_{Fc}\!\!=$\SI{2.5e-9}{\per\Molar\per\second}. Bajo estas condiciones, deberíamos observar en los resultados experimentales, de acuerdo a las simulaciones, ambos fenómenos, mediación redox y permeación. 
 			
-			\begin{figure}[ht]
+			\begin{figure}[b!]
 				\begin{subfigure}[t]{0.495\textwidth}
 					\centering
 			 	    \includegraphics[width=1\textwidth]{Graficos/FcOH-Simulacion-K0DFcOH.pdf}
@@ -429,18 +429,16 @@
 			      	\end{figure}
 			  	
 		
-				\begin{figure}[ht]
+				\begin{figure}[b!]
 					\centering
 			 	    \includegraphics[width=0.70\textwidth]{Graficos/Comparacion-exp-simulado.pdf}
-			        \caption[Simulación EQ comparadas con datos experimentales]{Comparación entre resultados experimentales y de simulación. Los parámetros de la simulación fueron $k=$\SI{1000}{\per\Molar\per\second}, $D_{Fc}=$ \SI{e-6}{\square\cm\per\second} con \fc\space \SI{5}{\milli\Molar} en un \pdm\space con \ru\space adsorbido \SI{1}{\Molar}. El experimento de laboratorio fue realizado con las mismas concentraciones para ambas sondas.}
+			        \caption[Simulación EQ comparadas con datos experimentales]{Comparación entre resultados experimentales y de simulación. Los parámetros de la simulación fueron $k=$\SI{1000}{\per\Molar\per\second}, $D_{Fc}\!=$ \SI{e-6}{\square\cm\per\second} con \fc\space \SI{5}{\milli\Molar} en un \pdm\space con \ru\space adsorbido \SI{1}{\Molar}. El experimento de laboratorio fue realizado con las mismas concentraciones para ambas sondas.}
 			        \label{fig:comp_sim_exp}
 			      	\end{figure}
 		
-	    \pagebreak
+	   	Con las simulaciones que se han realizado y, comparando en un mismo gráfico, los experimentos simulados con los experimentos realizados en el laboratorio (figura \ref{fig:comp_sim_exp}), se puede interpretar cúal es el fenómeno de transporte de carga/masa dominante en los sistemas estudiados. Resulta evidente que sólo el fenómeno de permeación es el dominante, sugiriendo un cambio en el coeficiente de difusion del \fc, de $D_{Fc}\!=$\SI{2.5e-9}{\per\Molar\per\second} a, por lo menos, $D_{Fc}\!=$\SI{e-6}{\per\Molar\per\second}, el cual es un valor más próximo al calculado para sistemas calcinados, $D_{Fc}\!=$\SI{6.1e-6}{\per\Molar\per\second} (ver sección \ref{sec:difusion}, pág. \pageref{sec:difusion}). 
 
-		Con las simulaciones que se han realizado y, comparando en un mismo gráfico, los experimentos simulados con los experimentos realizados en el laboratorio (figura \ref{fig:comp_sim_exp}), se puede interpretar cúal es el fenómeno de transporte de carga/masa dominante en los sistemas estudiados. Resulta evidente que sólo el fenómeno de permeación es el dominante, sugiriendo un cambio en el coeficiente de difusion del \fc, de $D_{Fc}\!=$\SI{2.5e-9}{\per\Molar\per\second} a, por lo menos, $D_{Fc}\!=$\SI{e-6}{\per\Molar\per\second}, el cual es un valor más próximo al calculado para sistemas calcinados, $D_{Fc}=$\SI{6.1e-6}{\per\Molar\per\second} (ver sección \ref{sec:difusion}, pág. \pageref{sec:difusion}). 
-
-		La interpretación de estos resultados es que los sistemas porosos, condensados y extraídos a baja tempratura, van cambiando su estructura a medida que el \ru\space se adsorbe en su superficie de los poros, permitiendo, luego que el \fc\space difunda más libremente hacia el electrodo, de forma similar a lo observado para sistemas calcinados. Como veremos más adelante esto responde a un proceso de disolución de la sílice catalizado por la adsorción de \aminorutenio.
+		La interpretación de estos resultados es que los sistemas porosos, condensados y extraídos a baja temperatura, van cambiando su estructura a medida que el \ru\space se adsorbe en su superficie de los poros, permitiendo, luego que el \fc\space difunda más libremente hacia el electrodo, de forma similar a lo observado para sistemas calcinados. Como veremos más adelante esto responde a un proceso de disolución de la sílice catalizado por la adsorción de \aminorutenio.
 
 	\subsection{Discusión sobre el efecto de \texorpdfstring{$K$}{K} y \texorpdfstring{$D_e$}{De} sobre la medición electroquímica}
 
@@ -453,9 +451,9 @@
 				\label{eq:laviron}
 			\end{equation}
 
-		\noindent donde $\omega$ y $\rho$ son las concentraciones de las especies reducidas y oxidadas del polímero en la interfaz electrodo/polímero, $E$ es el potencial de electrodo medido respecto a un electrodo de referencia, $E_{\omega / \rho}^{0}$ es el potencial formal del mediador rédox y $F$ la constante de Faraday. Si el sistema está en equilibrio, no hay flujo de corriente neta y las concentraciones $\omega$ y $\rho$ en toda la película deben ser uniformes debido a la condición de equilibrio material dentro del polímero. Por lo tanto, las concentraciones de $\omega$ y $\rho$ en la interfaz polímero/solución son las dadas por la ecuación \ref{eq:laviron}
+		\noindent donde $\omega$ y $\rho$ son las concentraciones de las especies reducidas y oxidadas del polímero en la interfaz electrodo/polímero, $E$ es el potencial de electrodo medido respecto a un electrodo de referencia, $E_{\omega / \rho}^{0}$ es el potencial formal del mediador rédox y $F$ la constante de Faraday. Si el sistema está en equilibrio, no hay flujo de corriente neta y las concentraciones $\omega$ y $\rho$ en toda la película deben ser uniformes debido a la condición de equilibrio material dentro del polímero. Por lo tanto, las concentraciones de $\omega$ y $\rho$ en la interfaz polímero/solución son las dadas por la ecuación \ref{eq:laviron}.
 
-		Como ya vimos anteriormente se puede establecer una analogía entre el comportamiento de los sitios rédox en polímeros y en películas delgadas mesoporososa. La concentración de sitios rédox es igual a la suma de las concentraciones de las especies reducidas y oxidadas, $\phi^{e}=\omega + \rho$, dicha concentración ya fué estimada anteriormente en la  sección \ref{sub:capacidad_de_preconcentraci_n}. Ésta relación para los sitios rédox se puede combinar con la ecuación \ref{eq:laviron} para obtener la constante de equilibrio que gobierna la reacción de la interfase (ecuaciones \ref{eq:constante} y \ref{eq:react} respectivamente), donde $O$ y $R$ son las especies oxidada y reducida en solución y $C_R$ y $C_O$ las respectivas concentraciones\cite{ybarra2005}.
+		Como ya vimos anteriormente se puede establecer una analogía entre el comportamiento de los sitios rédox en polímeros y en películas delgadas mesoporososa. La concentración de sitios rédox es igual a la suma de las concentraciones de las especies reducidas y oxidadas, $\phi^{e}=\omega + \rho$, dicha concentración ya fue estimada anteriormente en la  sección \ref{sub:capacidad_de_preconcentraci_n}. Ésta relación para los sitios rédox se puede combinar con la ecuación \ref{eq:laviron} para obtener la constante de equilibrio que gobierna la reacción de la interfase (ecuaciones \ref{eq:constante} y \ref{eq:react} respectivamente), donde $O$ y $R$ son las especies oxidada y reducida en solución y $C_R$ y $C_O$ las respectivas concentraciones\cite{ybarra2005}.
 
 
 		\begin{equation}
