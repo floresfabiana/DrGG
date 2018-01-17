@@ -4,7 +4,7 @@
 #set terminal X11
 
 #Para exportar como latex
-set terminal tikz
+set terminal tikz gparrows tikzarrows
 set output "pot-int.tikz" 
 
 #Saco la leyenda
@@ -32,7 +32,7 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.25 lw 1 #Azul
 
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
-	set xtics 25
+	set xtics (-100,-125,-150,-180,-200,-225,-250,-275,-310)
 	#set mytics 2 
 
 #Pone el Titulo
@@ -45,7 +45,7 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.25 lw 1 #Azul
 
 #Fuerza a establecer un rango
 	 
-	set xrange [-100:-300]
+	set xrange [-100:-310]
 	#set yrange [10:60]#Zirconio
 
 #Primero con Zirconio: Zr-Meso.txt
@@ -64,12 +64,20 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.25 lw 1 #Azul
 # "DHDP-3mM-ciclos-45-90.txt" u 3:4 ls 5, "DHDP-3mM-ciclos-45-90.txt" u 2:5 ls 5, \
 
 
+set arrow 10 from -90,158 to -315,158 nohead lc 'red'
+set arrow 11 from -168,-30 to -168,615 nohead lc 'red'
+set arrow 12 from -298,-30 to -298,615 nohead lc 'red'
+set label "$E_{libre}^p$" at -158,-60 font ",12" textcolor rgb "red"
+set label "$E_{ads}^p$" at -288,-60 font ",12" textcolor rgb "red"
+set label "$j_{Au}^p$" at -75,155 font ",12" textcolor rgb "red"
+
+
 plot "Au.txt" u 1:($2/0.0314) ls 2 title "Au",\
-"APTES-1mM-ciclos-1-45.txt" u 2:($5/0.0314) ls 3 title "SZF$^N_1$", \
-"APTES-1mM-ciclos-45-90.txt" u 2:($5/0.0314) ls 3 notitle, \
-"APTES-1mM-ciclos-90-135.txt" u 2:($5/0.0314) ls 3 notitle, \
+"APTES-1mM-ciclos-1-45.txt" u ($2-7):($5/0.0314) ls 3 title "SZF$^N_1$", \
+"APTES-1mM-ciclos-45-90.txt" u ($2-7):($5/0.0314) ls 3 notitle, \
+"APTES-1mM-ciclos-90-135.txt" u ($2-7):($5/0.0314) ls 3 notitle, \
 "DHDP-3mM-ciclos-1-45.txt" u 2:($5/0.0314) ls 5 notitle, \
 "DHDP-3mM-ciclos-45-90.txt" u 2:($5/0.0314) ls 5 title "SZF$^P_3$",\
-"Zr-Meso-Bis.txt" u ($2-15):($5/0.0314*1.15) every ::1::150 ls 1 title "SZF"
+"Zr-Meso-Bis.txt" u ($2-15):($5/0.0314*1.15) every ::1::150 ls 1 title "SZF",\
 
 
