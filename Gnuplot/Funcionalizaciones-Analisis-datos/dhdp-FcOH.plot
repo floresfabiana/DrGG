@@ -54,10 +54,15 @@ set style line 3 lc rgb 'black' lt 1 lw 0.5 #Azul
 # 'Ru0315mM.txt' using 5:($6/0.0314) w lines ls 3, \
 # 'Ru0315mM.txt' using 13:($14/0.0314) w lines ls 2
 
-plot "DHDP3mM/FeCN.txt" u 1:($2/0.0314) every 5 ::2400::54008 w l ls 1 title "SZF", \
-"DHDP3mM/FeCN.txt" u 3:($4/0.0314) every 5 ::2400::54008 w l ls 1 notitle,\
-"DHDP3mM/FeCN.txt" u 5:($6/0.0314) every 5 ::4800::54008 w l ls 3 title "SZF$^P_3$",\
-"DHDP3mM/FeCN.txt" u 7:($8/0.0314) every 5 ::2400::54008 w l ls 3 notitle ,\
-
+plot "APTES/FcOH.txt" u 1:($2/0.0314) every 5 ::2000::53000 w l ls 1 title "SZF", \
+"DHDP3mM/FeOH.txt" u 1:($2/0.0314) every 5 ::18000::64008 w l ls 3 title "SZF$^P_3$",\
 
 #"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every ::61633::63033  with lines ls 2, \
+
+#plot "Control/FeOH.txt" u 1:($2/0.0314) w l title "au" , 
+#"DHDP3mM/FeOH.txt" u 1:($2/0.0314) w l title "DHDP", 
+#"APTES/FcOH.txt" u 1:($2/0.0314) w l title "sin funcion" ,
+# "APTES/FcOH.txt" u 3:($4/0.0314) w l title "sin funcion",
+#"APTES/FcOH.txt" u 5:($6/0.0314) w l title "APTES 10", 
+#"APTES/FcOH.txt" u 7:($8/0.0314) w l title "APTES 10",
+# "APTES/FcOH.txt" u 9:($10/0.0314) w l title "APTES 1"

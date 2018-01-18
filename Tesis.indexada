@@ -160,7 +160,6 @@
 B: /home/gustavo/Dropbox/Tesis/PreCapitulos/portada.tex:33 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:84 Overfull \hbox (1.8444pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:192 Overfull \hbox (0.45546pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:57 Overfull \hbox (31.79701pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:58 Overfull \hbox (17.79167pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:59 Overfull \hbox (36.46326pt too wide) in paragraph
@@ -207,13 +206,12 @@ B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:692 Overfu
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:743 Overfull \hbox (2.22221pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:743 Overfull \hbox (2.22221pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/03_mesoporosos.tex:788 Overfull \hbox (2.22221pt too wide) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:289 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:329 Overfull \hbox (2.22221pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:295 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:333 Overfull \hbox (2.22221pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 6252) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:670 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:732 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:661 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 2818) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:136 Overfull \hbox (13.08846pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 1112) has occurred while \output is active []
@@ -223,23 +221,19 @@ B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:425 U
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/06_conclusiones.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/PostCapitulos/abreviaturas.tex:22 Overfull \hbox (5.16283pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/PostCapitulos/publicaciones.tex:25 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:128 Underfull \hbox (badness 1215) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:128 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:156 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:238 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:238 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:238 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:258 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:284 Underfull \hbox (badness 1990) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:410 Underfull \hbox (badness 4291) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:421 Underfull \hbox (badness 1762) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:431 Underfull \hbox (badness 2707) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:431 Underfull \hbox (badness 5050) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:431 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:431 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:457 Underfull \hbox (badness 1320) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:469 Underfull \hbox (badness 1097) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:469 Underfull \hbox (badness 1389) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:129 Underfull \hbox (badness 1215) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:129 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:157 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:240 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:240 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:240 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:260 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:286 Underfull \hbox (badness 1990) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:412 Underfull \hbox (badness 4291) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:433 Underfull \hbox (badness 2707) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:433 Underfull \hbox (badness 5050) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:433 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:433 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:498 Underfull \hbox (badness 3281) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:498 Underfull \hbox (badness 4353) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:498 Underfull \hbox (badness 10000) in paragraph
@@ -251,22 +245,22 @@ B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:836 Underfull \hbox (badness 10000) in 
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:836 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:892 Underfull \hbox (badness 1424) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:918 Underfull \hbox (badness 1092) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1030 Underfull \hbox (badness 2744) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1591 Underfull \hbox (badness 1163) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1591 Underfull \hbox (badness 2142) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1794 Underfull \hbox (badness 2707) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1794 Underfull \hbox (badness 1142) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1958 Underfull \hbox (badness 1173) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2123 Underfull \hbox (badness 1210) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2178 Underfull \hbox (badness 7397) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2178 Underfull \hbox (badness 2932) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 6995) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 10000) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 5231) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 3724) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 2875) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2310 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1029 Underfull \hbox (badness 2744) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1590 Underfull \hbox (badness 1163) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1590 Underfull \hbox (badness 2142) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1793 Underfull \hbox (badness 2707) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1793 Underfull \hbox (badness 1142) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:1957 Underfull \hbox (badness 1173) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2122 Underfull \hbox (badness 1210) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2177 Underfull \hbox (badness 7397) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2177 Underfull \hbox (badness 2932) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2309 Underfull \hbox (badness 6995) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2309 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2309 Underfull \hbox (badness 5231) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2309 Underfull \hbox (badness 3724) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2309 Underfull \hbox (badness 2875) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2309 Underfull \hbox (badness 10000) in paragraph
 
-0 errors, 0 warnings, 109 badboxes
+0 errors, 0 warnings, 103 badboxes
 
-[Finished in 16.26s]
+[Finished in 17.00s]

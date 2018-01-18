@@ -67,7 +67,7 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.25 lw 1 #Azul
 set arrow 10 from -90,158 to -315,158 nohead lc 'red'
 set arrow 11 from -168,-30 to -168,615 nohead lc 'red'
 set arrow 12 from -298,-30 to -298,615 nohead lc 'red'
-set label "$E_{libre}^p$" at -158,-60 font ",12" textcolor rgb "red"
+set label "$E_{sol}^p$" at -162,-60 font ",12" textcolor rgb "red"
 set label "$E_{ads}^p$" at -288,-60 font ",12" textcolor rgb "red"
 set label "$j_{Au}^p$" at -75,155 font ",12" textcolor rgb "red"
 
