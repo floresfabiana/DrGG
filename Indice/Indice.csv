@@ -2,6 +2,9 @@
  fosfonato; fosfonato\index{fosfonato}
  Butler; Butler\index{Butler}
  Volmer; Volmer\index{Volmer}
+ Bardeen; Bardeen\index{Bardeen} 
+ Brattain; Brattain\index{Brattain} 
+ Shockley; Shockley\index{Shockley}
  Heyrovský; Heyrovský\index{Heyrovský}
  Feynman; Feynman\index{Feynman}
  polarografía; polarografía\index{polarografía}
@@ -150,13 +153,13 @@ Ybarra;Ybarra\index{Ybarra}
 MEMS;MEMS\index{MEMS}
  Zr; Zr\index{circonio}
  circonio ; circonio\index{circonio} 
- Cr; Cr\index{cromo}
- Al; Al\index{aluminio}
+ Cr ; Cr\index{cromo}
+ Al ; Al\index{aluminio}
  Au ; Au\index{oro} 
- Ar; Ar\index{argón}
+ Ar ; Ar\index{argón}
  Pt; Pt\index{platino}
- Ti; Ti\index{titanio}
- Ce; Ce\index{cerio}
+ Ti ; Ti\index{titanio}
+ Ce ; Ce\index{cerio}
  Hf; Hf\index{hafmio}
  Si ; Si \index{silicio}
 HCl;HCl\index{acido@ácido!clohídrico}
@@ -255,7 +258,7 @@ sitios redox;sitios redox\index{sitio redox}
  Tagliazucchi; Tagliazucchi\index{Tagliazucchi}
  Calvo; Calvo\index{Calvo}
 INQUIMAE;INQUIMAE\index{INQUIMAE}
- permeación ; permeación\index{permeacion} 
+ permeación ; permeación\index{permeación} 
  mediación; mediación\index{mediacion rédox}
  sitios rédox; sitios rédox\index{sitios rédox}
  simulación ; simulación\index{simulacion} 
@@ -294,7 +297,7 @@ IUPAC;IUPAC\index{IUPAC}
  Baumann; Baumann\index{Baumann}
  chip; chip\index{chip}
  tintas; tintas\index{tintas}
- Soler-Illia; Soler-Illia\index{Soler-Illia}
+Soler-Illia ; Soler-Illia \index{Soler-Illia}
  monocapa; monocapa\index{monocapa}
  reflujo; reflujo\index{reflujo}
  filmina; filmina\index{filmina}
