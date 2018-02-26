@@ -51,9 +51,9 @@
 
   \node at (0,0) {
    \schemestart
-    \chemfig{Si(-[8]OH)(-[5]O-[4,0.8,,,dash pattern=on 2pt off 2pt])(-[4]O-[4,0.55,,,dash pattern=on 2pt off 2pt])(-[3]O-[4,0.8,,,dash pattern=on 2pt off 2pt])} + H$_2$O
-    \arrow{<=>[$\mathrm{K_1}$][$\mathrm{K_2}$]}[0,1.3]
-    \chemfig{Si(-[8]O^{-})(-[5]O-[4,0.8,,,dash pattern=on 2pt off 2pt])(-[4]O-[4,0.55,,,dash pattern=on 2pt off 2pt])(-[3]O-[4,0.8,,,dash pattern=on 2pt off 2pt])} + H$_3$O$^+$
+    \chemfig{Si(-[8]OH)(-[5]O-[4,0.8,,,dash pattern=on 2pt off 2pt])(-[4]O-[4,0.55,,,dash pattern=on 2pt off 2pt])(-[3]O-[4,0.8,,,dash pattern=on 2pt off 2pt])} + H$_3$O$^+$
+    \arrow{<=>[$\mathrm{K_3}$][$\mathrm{K_4}$]}[0,1.3]
+    \chemfig{Si(-[8]OH_{2}^{+})(-[5]O-[4,0.8,,,dash pattern=on 2pt off 2pt])(-[4]O-[4,0.55,,,dash pattern=on 2pt off 2pt])(-[3]O-[4,0.8,,,dash pattern=on 2pt off 2pt])} + H$_2$O
     \schemestop
   };
   
