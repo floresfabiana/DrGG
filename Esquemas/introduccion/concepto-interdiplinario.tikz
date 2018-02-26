@@ -21,7 +21,7 @@
        \draw[draw=none] \firstcircle node[below,xshift=-1cm,yshift=-0.5cm] {(qu\'imica sol-gel)};
 
        \draw[draw=none] \secondcircle node [above,yshift=1cm] {\textbf{\large{Principio de medición}}};
-       \draw[draw=none] \secondcircle node[above,yshift=0.5cm] {(electroq\'imica)};
+       \draw[draw=none] \secondcircle node[above,yshift=0.5cm] {(electroqu\'imica)};
 
        \draw[draw=none] \thirdcircle node [below,xshift=1cm] {\textbf{\textit{\large{top-down}}}};
        \draw[draw=none] \thirdcircle node[below,xshift=1cm,yshift=-0.5cm] {(microfabricación)};

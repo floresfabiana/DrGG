@@ -5,7 +5,7 @@
 %\chemfig{Si([:30]-O-[:-30]-)([:120]-O-[:60]-)([:210]-O-[:150]-)([:300]-O-[:240]-)}
 
 \schemestart  
-\chemfig{Si(-[2]OR)(-[4]RO)(-[6]OR)(-[8]OH)} \quad + \quad\chemfig{Si(-[2]OR)(-[4]XO)(-[6]OR)(-[8]OR)}\arrow{->[X=H,R]}[0,1.5]\chemfig{Si(-[2]OR)(-[4]RO)(-[6]OR)(-[8]\text{(}OH\text{)}(-Si(-[2]OR)(-[6]OR)([8]-OR)))}
+\chemfig{Si(-[2]OR)(-[4]RO)(-[6]OR)(-[8]OH)} \quad + \quad\chemfig{Si(-[2]OR)(-[4]XO)(-[6]OR)(-[8]OR)}\arrow{->[X=H,R]}[0,1.5]\chemfig{Si(-[2]OR)(-[4]RO)(-[6]OR)(-[8]\text{(}OH\text{)}(-Si(-[2]OR)(-[6]OR)([8]-OR)))}\quad+\quad XO$^-$
 \schemestop
 };
 

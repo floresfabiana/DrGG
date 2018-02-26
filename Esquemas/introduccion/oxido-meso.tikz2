@@ -229,14 +229,15 @@
  };
 
 \node at (-5,-1.5) {\large{sol}};
-\node at (0,-1.5) {\large{mesoestructura}};
-\node at (0,-1.9) {\large{h\'ibrida}};
-\node at (5,-1.5) {\large{material}};
+\node at (0,-1.5) {\large{\'oxido}};
+\node at (0,-1.9) {\large{mesoestructurado}};
+\node at (5,-1.5) {\large{\'oxido}};
 \node at (5,-2) {\large{mesoporoso}};
 
-\node at (-2.5,0.5) {\large{AEIE}};
-\node at (2.5,0.9) {\large{Eliminaci\'on}};
-\node at (2.5,0.5) {\large{del molde}};
+\node at (-2.5,0.9) {\normalsize{formaci\'on de la}};
+\node at (-2.5,0.5) {\normalsize{mesoestructura}};
+\node at (2.5,0.9) {\normalsize{eliminaci\'on}};
+\node at (2.5,0.5) {\normalsize{del molde}};
 
 
 
