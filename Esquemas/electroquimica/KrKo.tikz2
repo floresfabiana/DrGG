@@ -1,0 +1,72 @@
+\documentclass[a4paper,10pt]{standalone}
+%\usepackage[paperwidth=14cm,paperheight=2.3cm,hmargin=-0.7cm,vmargin=0cm,bottom=-1cm]{geometry}
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,english,activeacute,es-tabla]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+
+
+   %Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{shapes.symbols}
+
+   %Para hacer quimica
+   \usepackage{chemfig}
+
+       % %Este comando los exporta como pdf, si se comenta se compila entero el codigo tikz
+       %  \usetikzlibrary{external}
+       %  \tikzsetnextfilename{\jobname}
+       %  \tikzexternalize
+       %  \newcommand{\includetikz}[1]{%
+       %  \tikzsetnextfilename{#1}%
+       %  \input{#1.tikz}%
+       %  }
+
+
+
+\begin{document}
+\newcommand{\ARua}{[Ru(NH$_3$)$_6]^{3+}_{sol}$}
+\newcommand{\ARub}{[Ru(NH$_3$)$_6]^{2+}_{sol}$}
+\newcommand{\ARuc}{[Ru(NH$_3$)$_6]^{3+}_{ads}$}
+\newcommand{\ARud}{[Ru(NH$_3$)$_6]^{2+}_{ads}$}
+
+\begin{tikzpicture}
+
+  \node at (0,0) {
+   \schemestart
+    \ARua \space + e$^-$ \arrow(primera--segunda){<=>}[0,1.3]  \ARub
+    \arrow(@primera--){<=>}[-90,1.3]    \ARuc \space + e$^-$ \arrow{<=>}[0,1.3]  \ARud \arrow(@segunda--){<=>}[-90,1.3]
+    \schemestop
+  };
+  
+  %\node at (0.3,-1) {K$_{a1}$\hspace{4.7cm}K$_{a2}$};
+
+
+
+
+\end{tikzpicture}
+
+\end{document}
+
+

@@ -1,5 +1,10 @@
  microfabricación; microfabricación\index{microfabricación}
  tensioactivo; tensioactivo\index{tensioactivo}
+ Moore; Moore\index{Moore}
+ Hoerni; Hoerni\index{Hoerni}
+ Noyce; Noyce\index{Noyce}
+ Kilby; Kilby\index{Kilby}
+ Ley de Moore; Ley de Moore\index{Moore!Ley de}
  porógeno; porógeno\index{porógeno}
  fosfonato; fosfonato\index{fosfonato}
  Butler; Butler\index{Butler}
@@ -155,13 +160,13 @@ Ybarra;Ybarra\index{Ybarra}
 MEMS;MEMS\index{MEMS}
  Zr; Zr\index{circonio}
  circonio ; circonio\index{circonio} 
- Cr ; Cr\index{cromo}
- Al ; Al\index{aluminio}
- Au ; Au\index{oro} 
- Ar ; Ar\index{argón}
- Pt; Pt\index{platino}
- Ti ; Ti\index{titanio}
- Ce ; Ce\index{cerio}
+ Cr ; Cr \index{cromo}
+ Al ; Al \index{aluminio}
+ Au ; Au \index{oro} 
+ Ar ; Ar \index{argón}
+ Pt; Pt \index{platino}
+ Ti ; Ti \index{titanio}
+ Ce ; Ce \index{cerio}
  Hf; Hf\index{hafmio}
  Si ; Si \index{silicio}
 HCl;HCl\index{acido@ácido!clohídrico}
@@ -342,7 +347,7 @@ silanización;silanización\index{silanización}
  funcionalizar; funcionalizar\index{funcionalizar}
  dihexadecilfosfato; dihexadecilfosfato\index{dihexadecilfosfato}
 APTES;APTES\index{aminopropil@3-aminopropil trietoxisilano}
-oxolación;oxolació\index{oxolación}
+oxolación;oxolación\index{oxolación}
 (olación);(olación)\index{olación}
 Walcarius;Walcarius\index{Walcarius}
 Bass;Bass\index{Bass}
