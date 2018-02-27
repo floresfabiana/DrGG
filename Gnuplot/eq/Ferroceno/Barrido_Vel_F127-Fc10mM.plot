@@ -1,6 +1,6 @@
 #Para ver en pantalla
 #reset
-#set terminal X11
+#set terminal x11
 
 #Para exportar como latex
 set terminal tikz

@@ -1,6 +1,6 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Sat May 20 09:22:15 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% jue 22 feb 2018 16:37:21 -03
 \path (0.000,0.000) rectangle (12.500,8.750);
 \gpcolor{rgb color={0.400,0.400,0.400}}
 \gpsetlinetype{gp lt axes}
@@ -97,7 +97,7 @@
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (1.688,7.765)--(1.872,7.765);
-\draw[gp path] (2.052,7.765)--(11.947,7.765);
+\draw[gp path] (4.362,7.765)--(11.947,7.765);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -124,7 +124,8 @@
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (2.970,1.601)--(2.970,8.381);
+\draw[gp path] (2.970,1.601)--(2.970,7.526);
+\draw[gp path] (2.970,8.201)--(2.970,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -133,7 +134,8 @@
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (4.253,1.601)--(4.253,8.381);
+\draw[gp path] (4.253,1.601)--(4.253,7.526);
+\draw[gp path] (4.253,8.201)--(4.253,8.381);
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
@@ -194,12 +196,12 @@
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
 \node[gp node center] at (11.947,1.293) {$600$};
 \draw[gp path] (1.688,8.381)--(1.688,1.601)--(11.947,1.601);
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.817,0.215) {$\text{Potencial\; vs\; ESC/}mV$};
-\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (2.052,8.088) {Fc 10mM, 10 mV/s};
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {$\text{j}/ \mu \text{A.cm}^{-2}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.817,0.215) {$\text{Potencial\; vs\; ESC/}mV$};
+\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (2.602,8.088) {Fc 10mM, 10 mV/s};
 \gpcolor{rgb color={0.404,0.004,0.024}}
 \gpsetlinewidth{2.00}
-\draw[gp path] (1.872,8.088)--(2.052,8.088);
+\draw[gp path] (1.982,8.088)--(2.492,8.088);
 \draw[gp path] (1.737,2.331)--(1.763,2.731)--(1.788,2.784)--(1.814,2.790)--(1.840,2.794)%
   --(1.865,2.792)--(1.891,2.793)--(1.917,2.795)--(1.943,2.796)--(1.968,2.797)--(1.994,2.798)%
   --(2.020,2.799)--(2.045,2.800)--(2.071,2.800)--(2.096,2.801)--(2.122,2.802)--(2.148,2.802)%
@@ -335,9 +337,9 @@
   --(1.967,2.490)--(1.941,2.490)--(1.916,2.490)--(1.890,2.490)--(1.864,2.489)--(1.839,2.489)%
   --(1.813,2.489)--(1.787,2.488)--(1.762,2.488)--(1.736,2.488)--(1.710,2.487)--(1.688,2.487);
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (2.052,7.863) {Fc 10mM, 20 mV/s};
+\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (2.602,7.863) {Fc 10mM, 20 mV/s};
 \gpcolor{rgb color={0.404,0.004,0.024}}
-\draw[gp path] (1.872,7.863)--(2.052,7.863);
+\draw[gp path] (1.982,7.863)--(2.492,7.863);
 \draw[gp path] (1.737,2.114)--(1.762,2.466)--(1.788,2.518)--(1.814,2.520)--(1.839,2.522)%
   --(1.865,2.523)--(1.891,2.524)--(1.916,2.525)--(1.942,2.527)--(1.968,2.528)--(1.994,2.529)%
   --(2.019,2.530)--(2.045,2.531)--(2.070,2.532)--(2.096,2.533)--(2.122,2.534)--(2.147,2.535)%
@@ -473,9 +475,9 @@
   --(1.968,2.363)--(1.942,2.363)--(1.916,2.363)--(1.891,2.364)--(1.865,2.364)--(1.839,2.364)%
   --(1.814,2.364)--(1.788,2.364)--(1.762,2.364)--(1.737,2.363)--(1.711,2.363)--(1.688,2.362);
 \gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (2.052,7.638) {Fc 10mM, 50 mV/s};
+\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (2.602,7.638) {Fc 10mM, 50 mV/s};
 \gpcolor{rgb color={0.553,0.000,0.000}}
-\draw[gp path] (1.872,7.638)--(2.052,7.638);
+\draw[gp path] (1.982,7.638)--(2.492,7.638);
 \draw[gp path] (1.737,2.082)--(1.762,2.438)--(1.788,2.491)--(1.814,2.494)--(1.839,2.497)%
   --(1.865,2.499)--(1.891,2.502)--(1.916,2.504)--(1.942,2.506)--(1.968,2.508)--(1.993,2.510)%
   --(2.019,2.513)--(2.045,2.514)--(2.070,2.516)--(2.096,2.518)--(2.122,2.519)--(2.147,2.521)%

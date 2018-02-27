@@ -1,5 +1,5 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[paperwidth=14cm,paperheight=2.3cm,hmargin=-0.7cm,vmargin=0cm,bottom=-1cm]{geometry}
+\usepackage[paperwidth=11.5cm,paperheight=2cm,hmargin=-0.7cm,vmargin=0cm,bottom=-1cm]{geometry}
 %Sección de Plugins
 %--------------------------------------------------------------------------
    %Idioma, fuentes y entrada de teclado
