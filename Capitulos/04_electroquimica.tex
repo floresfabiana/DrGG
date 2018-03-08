@@ -1,4 +1,4 @@
-	º	%Linea Para poder completar automaticamente las citas con el Sublime
+%Linea Para poder completar automaticamente las citas con el Sublime
 %No hace el documento, se puede borrar esta linea si no se usa el Sublime
 %------------------------------------------------------------------------------
  \newcommand{\NoBiblioEQ}[1]{
@@ -139,10 +139,14 @@
 
 	\subsection{Caso 3. Sonda con carga positiva: \texorpdfstring{\aminorutenioCompleto}{aminorutenio}}
 
-		Para este caso se utilizó como sonda cloruro de hexaminorutenio(III)\linebreak (\aminorutenioCompleto, \ru), sonda bien conocida por su reversibilidad entre los estados reducido y oxidado. Los primeros experimentos con esta sonda dan como resultados los voltagramas presentados en la figura \ref{fig:primero-Ru10mM}. Allí se muestra una serie continua de sucesivas voltametrías cíclicas y su evolución en el tiempo, desde el verde claro al verde oscuro. El cambio en la señal en función del tiempo se debe al ingreso del \ru\space a través de la matriz porosa, aumentando la intensidad de la señal conforme aumenta la concentración de la sonda dentro de los poros. A su vez, se observa un desplazamiento del pico anódico hacia un potencial más negativo, indicando que se trata de un proceso de adsorción del \ru\space dentro de los poros. Dicho desplazamiento se debe a la suma de un término extra al potencial formal de la sonda libre, producto del equilibrio de adsorción de las especies reducidas y oxidadas en la película mesoporosa ($K_R/K_O$) según\cite{Wi2000}: 
+		Para este caso se utilizó como sonda cloruro de hexaminorutenio(III)\linebreak (\aminorutenioCompleto, \ru), sonda bien conocida por su reversibilidad entre los estados reducido y oxidado. Los primeros experimentos con esta sonda dan como resultados los voltagramas presentados en la figura \ref{fig:primero-Ru10mM}. Allí se muestra una serie continua de sucesivas voltametrías cíclicas y su evolución en el tiempo, desde el gris claro al negro. El cambio en la señal en función del tiempo se debe al ingreso del \ru\space a través de la matriz porosa, aumentando la intensidad de la señal conforme aumenta la concentración de la sonda dentro de los poros. A su vez, se observa un desplazamiento del pico anódico hacia un potencial más negativo, indicando que se trata de un proceso de adsorción del \ru\space dentro de los poros. 
+		
+		Se pueden representar las reacciones de adsorción y las de oxidación\textbar reducción como un ciclo termodinámico donde $K_R$ es la constante de adsorción de la especie reducida, $K_O$ es la constante de adsorción de la especie oxidada, $E^0_{ads}$ es el potencial formal de la especie adsorbida y $E^0_{sol}$ al de la especie oxidada.\cite{ybarra2007}
+
+		Por lo tanto, el desplazamiento antes mencionado se debe a la suma de un término extra al potencial formal de la sonda libre, producto del equilibrio de adsorción de las especies reducidas y oxidadas en la película mesoporosa ($K_R/K_O$) según\cite{Wi2000}:
 
 				\begin{equation}
-				E^0_{sol} = E^0_{ads}-\frac{RT}{nF}\ln \left(\frac{K_R}{K_O}\right)
+				E^0_{ads} = E^0_{sol}-\frac{RT}{nF}\ln \left(\frac{K_R}{K_O}\right)
 				\end{equation}
 
 		En resumen, el comportamiento de la sonda se puede interpretar como consecuencia de una atracción electrostática sonda-pared, generando una señal <<mixta>> con dos contribuciones, la del \ru\space libre en solución o libre dentro de los poros y la del adsorbido en las paredes de la película mesoporosa, esto se se pone de manifiesto en los voltagramas de la figura \ref{fig:Ru10mM_ingreso}.
