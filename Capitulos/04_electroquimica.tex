@@ -141,15 +141,23 @@
 
 		Para este caso se utilizó como sonda cloruro de hexaminorutenio(III)\linebreak (\aminorutenioCompleto, \ru), sonda bien conocida por su reversibilidad entre los estados reducido y oxidado. Los primeros experimentos con esta sonda dan como resultados los voltagramas presentados en la figura \ref{fig:primero-Ru10mM}. Allí se muestra una serie continua de sucesivas voltametrías cíclicas y su evolución en el tiempo, desde el gris claro al negro. El cambio en la señal en función del tiempo se debe al ingreso del \ru\space a través de la matriz porosa, aumentando la intensidad de la señal conforme aumenta la concentración de la sonda dentro de los poros. A su vez, se observa un desplazamiento del pico anódico hacia un potencial más negativo, indicando que se trata de un proceso de adsorción del \ru\space dentro de los poros. 
 		
-		Se pueden representar las reacciones de adsorción y las de oxidación\textbar reducción como un ciclo termodinámico donde $K_R$ es la constante de adsorción de la especie reducida, $K_O$ es la constante de adsorción de la especie oxidada, $E^0_{ads}$ es el potencial formal de la especie adsorbida y $E^0_{sol}$ al de la especie oxidada.\cite{ybarra2007}
-
-		Por lo tanto, el desplazamiento antes mencionado se debe a la suma de un término extra al potencial formal de la sonda libre, producto del equilibrio de adsorción de las especies reducidas y oxidadas en la película mesoporosa ($K_R/K_O$) según\cite{Wi2000}:
+		Se pueden resumir las reacciones de adsorción y las de oxidación\textbar reducción cómo un ciclo termodinámico (ec. \ref{eq:ciclo}), donde $K_R$ es la constante de adsorción de la especie reducida, $K_O$ es la constante de adsorción de la especie oxidada, $E^0_{ads}$ es el potencial formal de la especie adsorbida y $E^0_{sol}$ al de la especie oxidada.\cite{ybarra2007}
 
 				\begin{equation}
-				E^0_{ads} = E^0_{sol}-\frac{RT}{nF}\ln \left(\frac{K_R}{K_O}\right)
+				\begin{aligned}
+		 	    \includegraphics[width=0.70\textwidth]{Esquemas/KrKo.pdf}
+		 	    \label{eq:ciclo}
+		 	    \end{aligned}
+		      	\end{equation}
+
+		\noindent Por lo tanto, el desplazamiento antes mencionado se debe a la suma de un término extra al potencial formal de la sonda libre, producto del equilibrio de adsorción de las especies reducidas y oxidadas en la película mesoporosa ($K_R/K_O$) según\cite{Wi2000}:
+
+				\begin{equation}
+				E^0_{ads} = E^0_{sol}-\frac{RT}{nF}\ln \left(\frac{K_O}{K_R}\right)
+				\label{eq:kokreq}
 				\end{equation}
 
-		En resumen, el comportamiento de la sonda se puede interpretar como consecuencia de una atracción electrostática sonda-pared, generando una señal <<mixta>> con dos contribuciones, la del \ru\space libre en solución o libre dentro de los poros y la del adsorbido en las paredes de la película mesoporosa, esto se se pone de manifiesto en los voltagramas de la figura \ref{fig:Ru10mM_ingreso}.
+		En resumen, el comportamiento de la sonda se puede interpretar como consecuencia de una atracción electrostática sonda-pared, generando una señal <<mixta>> con dos contribuciones, la del \ru\space libre en solución o libre dentro de los poros y la del \ru\space adsorbido en las paredes de la película mesoporosa, esto se se pone de manifiesto en los voltagramas de la figura \ref{fig:Ru10mM_ingreso}.
 
 			\begin{figure}[th]
 				\begin{subfigure}[t]{0.495\textwidth}
@@ -166,48 +174,53 @@
 		      	\label{fig:primero-Ru10mM}
 		      	\end{figure}
 
-		Con el objetivo de discriminar ambas contribuciones se realizó el siguiente experimento. Una vez alcanzada la intensidad de pico máxima, se retira de la celda la solución con la sonda y se reemplaza por solución que contiene únicamente electrolito soporte. De esta forma, de existir señal, solo tendría sentido si la misma proviene del \ru\space retenido en la película mesoporosa. El gráfico de la figura \ref{fig:Ru10mM-resumen} muestra los resultados de dicho experimento. El mismo contiene tres voltagramas; el de color rojo corresponde a la respuesta de \ru\space en un electrodo de Au desnudo; la curva de color verde a la señal de una película en solución de \ru; y la curva azul es el resultado de intercambiar la solución con la sonda por solución con electrolito soporte unicamente. Esta última curva tiene la forma característica que presentan las sondas adsorbidas, matrices con sitios redox <<anclados>>\cite{ybarra2005} (como los que presentan los polímeros conductores) o los polímeros funcionalizados con compuestos electroactivos \cite{Rohlfing2005,Vila2015}, donde la separación de potencial entre los picos catódicos y anódicos es menor que \SI{60}{\milli\volt}, $\Delta E < \SI{60}{\milli\volt}$\cite{Wi2000}.
+		Con el objetivo de discriminar ambas contribuciones se realizó el siguiente experimento. Una vez alcanzada la intensidad de pico máxima, cuando se mantiene constante de ciclo a ciclo, se retira de la celda la solución con la sonda y se reemplazó por solución que contenía únicamente electrolito soporte. De esta forma, de existir señal, solo tendría sentido si la misma proviene del \ru\space retenido en la película mesoporosa. El gráfico de la figura \ref{fig:Ru10mM-resumen} muestra los resultados de dicho experimento. El mismo contiene tres voltagramas; el de línea punteada corresponde a la respuesta de \ru\space en un electrodo de Au desnudo; la curva de color negra a la señal de una película en solución de \ru; y la curva gris es el resultado de intercambiar la solución con la sonda por solución con electrolito soporte unicamente. Esta última curva tiene la forma característica que presentan las sondas adsorbidas, matrices con sitios redox <<anclados>>\cite{ybarra2005,yabarra2007} (como los que presentan los polímeros conductores) o los polímeros funcionalizados con compuestos electroactivos \cite{Rohlfing2005,Vila2015}, donde la separación de potencial entre los picos catódicos y anódicos es menor a $\Delta E = \SI{59}{\milli\volt}$. En este caso en particular la separación resulta en $\Delta E = \SI{39}{\milli\volt}$, mucho menor a $\Delta E = \SI{80}{\milli\volt}$ que es la diferencia entre potenciales máximos cuando el \ru\space está se encuentra en solución y no adsorbido (consultar tabla \ref{tabla:sondas}, pág. \pageref{tabla:sondas})\cite{Wi2000}.
 
-		Sin duda, bajo estas condiciones de contorno, este es el caso mas interesante de los tres expuestos y el mas provechoso para estudiar propiedades físicas y químicas de los sistemas porosos. Los próximos apartados se centrarán en determinar variables de los sistemas mesoporosos y estudiar los fenómenos de transporte que allí ocurren.
+		Estos experimentos preliminares muestran que tanto las interacciones electrostáticas como las fisicoquímicas (adsorción) tiene importantes consecuencias sobre en el comportamientos general de los multisensores frente a diferentes analitos. 
+		Los próximos apartados se  centrarán en estudiar los fenómenos de transporte y estimar parámetros característicos para estos sistemas mesoporosos.
 
-\section{Caso de estudio: ferroceno metanol}\label{sec:difusion}
+\section{Estudio detallado de la sonda ferroceno metanol}\label{sec:difusion}
 
 	 Los resultados preliminares de la respuesta electroquímica del ferroceno metanol (\ferroceno,\fc) en las \pdmF\space ya fueron presentados en la sección \ref{sec:acc_eq}, pág. \pageref{sec:acc_eq} del capítulo \ref{chap:Mesoporosos}. Sin embargo, en dicha sección, la discusión se centró en el análisis de las \pdm\space y cómo cambia la accesibilidad al electrodo en función de los distintos tratamientos de condensación posdepósito.
 	 En esta sección, se vuelven a discutir estos mismos resultados, pero ahora en términos de fenómenos de transporte y modelos válidos aplicables al cálculo de coeficientes de difusión del \fc\space en las \pdm.
 
 	\subsection{En sistemas mesoporosos calcinados}
 
-	 Según los resultados de FTIR y EPA, en los sistemas calcinados, aquellos en los que se eliminó el surfactante sometiendo las películas a \SI{350}{\celsius}, la red nanoporosa está más accesible y mejor interconectada que aquellos que no fueron calcinados (ver capítulo \ref{chap:Mesoporosos}). En el voltagrama de la figura \ref{fig:fc_calcinado} se muestra cualitativamente que la accesibilidad de \fc\space sobre \pdmF\space calcinadas es alta, presentando una comportamiento similar al de un electrodo de Au desnudo. 
+	 Según los resultados de FTIR y EPA, en los sistemas calcinados, aquellos en los que se eliminó el surfactante sometiendo las películas a \SI{350}{\celsius}, la red mesoporosa está más accesible y mejor interconectada que aquellos que no fueron calcinados (ver capítulo \ref{chap:Mesoporosos}). En el voltagrama de la figura \ref{fig:fc_calcinado} se muestra cualitativamente que la accesibilidad de \fc\space sobre \pdmF\space calcinadas es alta, presentando una comportamiento similar al de un electrodo de Au desnudo. 
 
-	 	\begin{figure}[b!]
-				\centering
-		 	    \includegraphics[width=0.70\textwidth]{Graficos/FcOH-F127-Calcinado.pdf}
-		        \caption[Voltagrama para \fc\space en \pdm\space calcinadas]{Voltagramas de \pdmF\space calcinadas tomados a  diferentes velocidades de barrido para \fc\space \SI{1}{\milli\Molar} en solución de KCl \SI{100}{\milli\Molar}. En el recuadro se amplia la VC para una velocidad de barrido de \SI{20}{\milli\volt\per\second}.}
-		        \label{fig:fc_calcinado}
-		      	\end{figure}
+	 Se colocó una solución de \fc\space \SI{1}{\milli\Molar} y se realizaron una serie de voltametrías a diferentes velocidades de barrido, con el propósito de estimar el coeficiente de difusión. En la figura \ref{fig:difusion_calcinado}, donde se graficó la intensidad de pico (i$_p$) en función de la velocidad de barrido ($\nu$), se observa que $\text{i}_p \propto \nu^{1/2}$, lo que indica que se trata de un proceso controlado por difusión. Ahora bien, esta difusión tiene dos contribuciones, una de la sonda en solución y otra de la sonda dentro de los poros. Es posible en primera instancia calcular un coeficiente aparente que contempla ambas contribuciones aplicando el modelo de Randles-Sevcik (ec. \ref{eq:dapp_bajaT}) el cual contempla las siguientes hipótesis: 1) que el coeficiente de difusión es independiente del potencial; 2) que la sonda no interactúa con la matriz y 3) que la intensidad de corriente solo depende de la concentración de la sonda, de la difusión y de la velocidad de 	barrido.  	
 
-	 Se colocó una solución de \fc\space \SI{1}{\milli\Molar} y se realizaron una serie de voltametrías a diferentes velocidades de barrido, con el propósito de estimar el coeficiente de difusión. En la figura \ref{fig:difusion_calcinado}, donde se gráfico la intensidad de pico (i$_p$) en función de la velocidad de barrido ($\nu$), se observa que $\text{i}_p \propto \nu^{1/2}$, lo que indica que se trata de un proceso controlado por difusión. Ahora bien, esta difusión tiene dos contribuciones, una de la sonda en solución y otra de la sonda dentro de los poros. Por lo tanto se calcula un coeficiente aparente que contempla ambas contribuciones. Se puede, en principio aplicar el modelo de Randles-Sevcik (ec. \ref{eq:dapp_bajaT}) el cual supone un coeficiente de difusión independiente del potencial, que la sonda no interactúa con la matriz y que la intensidad de corriente solo depende de la concentración de la sonda, de la difusión y de la velocidad de barrido. En base a este modelo se calculó el coeficiente de difusión aparente ($D_{ap}$) arrojando un valor de $D_{ap}$=\SI{6,1e-6}{\square\cm\per\second}. De acuerdo a la literatura, un coeficiente de difusión $D\approx$\SI{e-6}{\square\cm\per\second} es un valor típico para moléculas en soluciones acuosas. \cite{koryta1993,Otal2006} En particular Longinotti y col.\cite{longinotti2007} estiman el coeficiente del \fc\space en $D=$\SI{7,5e-6}{\square\cm\per\second}. De estas comparaciones se puede concluir que la difusión del \fc\space dentro de \pdmF\space calcinadas tiene un comportamiento similar al que presenta que en solución.
-
-
-		 \begin{equation}
+	 	 \begin{equation}
 					D_{ap}=\frac{RT}{nF\nu}\left(\frac{\text{i}_p}{0.4463FAC}\right)^2
 					\label{eq:dapp_bajaT}
 			\end{equation}  
-	 
 
-		    \begin{figure}[ht!]
-				\centering
-		 	    \includegraphics[width=0.70\textwidth]{Graficos/FcOH-F127-Calcinado-difusion.pdf}
-		        \caption[i$_p$ en función de $\nu$ para \fc\space]{Intensidad de pico en función de la velocidad de barrido. Se observa que $\text{i}_p$ es proporcional a $\nu ^{1/2}$, indicando que se trata de un transporte controlado por difusión semiinfinita.}
+	 En 2006 Otal y col. \cite{Otal2006} depositaron películas mesoporosas de TiO$_2$ estructuradas con F127 sobre electrodos de ITO. Utilizando \fe\space cómo sonda electroqouímica, reportaron dos parámetros importantes, el área de electrodo efectiva (parte del electrodo se encuentra bloqueado por la película) y el índice de tortuosidad $\tau=D_{apa}/D_0$, donde $D_0$ es el coeficiente de difusión de la sonda libre en solución la sonda que usaron fue \fe. 
+	 
+	 Utilizando la corrección del área geométrica reportada de dicho trabajo ($A\!=\!0.70A_0$) se estimó el coeficiente de difusión aparente ($D_{ap}$) arrojando un valor de $D_{ap}$=\SI{2,9e-6}{\square\cm\per\second} magnitud típica para moléculas en soluciones acuosas.\cite{koryta1993,Otal2006,longinotti2007} Usando el valor de $D_0$ (consultar tabla \ref{tabla:sondas}, pág. \pageref{tabla:sondastabla:sondas}) se calculó el coeficiente de tortuosidad el cuál resultó ser de $\tau=0.64$. Dicho valor, teniendo en cuenta las diferencias entre sistemas, es comparable con el reportado para sistemas TiO$_2$-F127, $\tau=0.71$.
+
+	  De estas comparaciones se puede concluir que la difusión del \fc\space dentro de \pdmF\space calcinadas tiene un comportamiento similar al que presenta que en solución afectado, con un coeficiente de difusión afectado por la tortuocidad de la estructura porosa.
+			
+				\begin{figure}[h!]
+				 \begin{subfigure}[t]{0.5\textwidth}
+		 	    \includegraphics[width=0.95\textwidth]{Graficos/FcOH-F127-Calcinado.pdf}
+		        \caption[Voltagrama para \fc\space en \pdm\space calcinadas]{Voltagramas a diferentes velocidades de barrido para. En el recuadro se amplia la VC para una velocidad de barrido de \SI{20}{\milli\volt\per\second}.}
+		        \label{fig:fc_calcinado}
+		      	\end{subfigure}
+		      	  \begin{subfigure}[t]{0.5\textwidth}
+		 	    \includegraphics[width=0.95\textwidth]{Graficos/FcOH-F127-Calcinado-difusion.pdf}
+		        \caption[i$_p$ en función de $\nu$ para \fc\space]{Se observa que $\text{j}_p$ es proporcional a $\nu ^{1/2}$, indicando que se trata de un transporte controlado por difusión semiinfinita.}
 		        \label{fig:difusion_calcinado}
+		      	\end{subfigure}
+		      	\caption{Respuesta para \fc\space \SI{1}{\milli\Molar} sobre \pdmF\space calcinadas en solución de KCl \SI{100}{\milli\Molar} utilizando de referencia ECS. (a) Voltagramas tomados a diferentes velocidades de barrido y (b) intensidad máxima en función de la $v^{1/2}$.}
 		      	\end{figure}
-	      	
+  	
 	\subsection{En sistemas mesoporoso sintetizados a baja temperatura}
 
-		Se exponen en la figura \ref{fig:fcoh_bajaT} los voltagramas resultado de colocar \fc\space (1, 5 y \SI{10}{\milli\Molar}) utilizando como electrodo \pdmF\space condensada y extraída a \SI{130}{\celsius} por el método de alto vacío. 
+		Se exponen en la figura \ref{fig:fcoh_bajaT} los voltagramas obtenidos para \fc\space (1, 5 y \SI{10}{\milli\Molar}) utilizando como electrodo \pdmF\space condensada y extraída a \SI{130}{\celsius} por el método de alto vacío. 
 			
 		Aunque las mediciones se realizaron bajo las las mismas condiciones, en este caso se observa una respuesta diferente que en el caso de las \pdmF\space calcinadas, sugiriendo que la difusión se encuentra disminuida a través estos sistemas porosos. La forma de la curva de los voltagramas de la figura \ref{fig:fcoh_bajaT} remite a una típica respuesta para sistemas en estado estacionario	, formando un gradiente de concentración a lo largo de la sección de la película y alcanzando una corriente límite $\text{i}_l$. 
-		La forma de calcular el coeficiente de difusión en estos sistemas es mediante la ecuación \ref{eq:de-ferroceno-bajaT}, donde se calcula $D$ a partir de $\text{i}_l$, de la diferencia de concentración entre las cercanías del electrodo ($C_{x=0}$) y el seno de la solución $C_s$, el área del electrodo ($A$) y el espesor de la película ($L$).
+		El coeficiente de difusión en estos sistemas se puede calcular mediante la ecuación \ref{eq:de-ferroceno-bajaT}, a partir de la corriente límite $\text{i}_l$, de la diferencia de concentración entre las cercanías del electrodo ($C_{x=0}$) y el seno de la solución $C_s$, el área del electrodo ($A$) y el espesor de la película ($L$).
 
 			\begin{equation}
 					\text{i}_l = \frac{nFAD(C_{s}-C_{x=0})}{L}
@@ -215,7 +228,7 @@
 			\end{equation}
 			  	
 
-		Para una película de \SI{200}{nm} $D$ resultó ser de \SI{2.5e-9}{\square\cm\per\second}, tres ordenes de magnitud menor que en \pdmF\space calcinadas ($D_{ap}$=\SI{6,1e-6}{\square\cm\per\second}) y comparable con los coeficiente de difusión reportados para las permeación de sondas a través de películas poliméricas.\cite{Kolb1993}. Dicho valor sugiere que que la difusión se encuentra muy impedida en estas películas, lo cual se puede atribuir a que son sistemas con una red porosa más cerrada. 
+		Para una película de \SI{200}{nm}, el valor obtenido para el coeficiente de difusión resultó ser $D=\SI{2.5e-9}{\square\cm\per\second}$, tres ordenes de magnitud menor que en \pdmF\space calcinadas ($D_{ap}$=\SI{2,9e-6}{\square\cm\per\second}) y comparable con los coeficiente de difusión reportados para las permeación de sondas a través de películas poliméricas.\cite{Kolb1993}. Dicho valor sugiere que que la difusión se encuentra muy impedida en estas películas, lo cual se puede atribuir a que son sistemas con una red porosa más cerrada. 
 				
 				\begin{figure}[ht!]
 				\centering
@@ -224,30 +237,14 @@
 		        \label{fig:fcoh_bajaT}
 		      	\end{figure}
 
-\section{Caso de estudio: \texorpdfstring{\aminorutenioCompleto}{Ru(NH3)CL3}}
+\section{Estudio detallado de la sonda \texorpdfstring{\aminorutenioCompleto}{Ru(NH3)CL3}}
 	
 	\subsection{Capacidad de preconcentración}\label{sub:capacidad_de_preconcentraci_n}
 
-		Una vez demostrada la adsorción \ru\space de las \pdm, se llevaron a cabo una serie de experimentos adsorbiendo la sonda partiendo de distintas concentraciones en solución, con el objetivo de determinar la capacidad de adsorción de las películas. La metodología es la misma que se aplicó en el experimento de la figura \ref{fig:Ru10mM-resumen}. Se utiliza un electrodo recubierto con la \pdmF, se miden repetidas voltametrías cíclicas hasta alcanzar el máximo de adsorción, lo cual ocurre cuando dos o más voltagramas consecutivos son equivalentes. Una vez alcanzado este punto, se retira la solución con la sonda y se reemplaza con una nueva solución que sólo contienen electrolito soporte (KCl \SI{100}{\milli\Molar}). Se realiza entonces una nueva voltametría cíclica. Los resultados están expuestos en los voltagramas de la figura \ref{fig:preconcentraciones}, donde se ha llevado a cabo un barrido de concentraciones desde \SI{e-2}{\Molar} hasta \SI{e-5}{\Molar}. Cabe destacar que a concentraciones por debajo de \SI{60}{\micro\Molar} (con un área geométrica de \SI{1}{mm}) la sonda ya no es detectada en un electrodo de Au desnudo, mientras que sobre una \pdm\space se observa una señal intensa. Esto sugiere que la sonda catiónica se preconcentra fuertemente en sistemas \pdmF.
+		Una vez demostrada la adsorción \ru\space de las \pdm, se llevó a cabo una serie de experimentos adsorbiendo la sonda partiendo de distintas concentraciones en solución, con el objetivo de determinar cuantitativamente la capacidad de adsorción de las películas. La metodología es la misma que se aplicó en el experimento de la figura \ref{fig:Ru10mM-resumen}. Se utilizó un electrodo recubierto con la \pdmF, se midieron repetidas voltametrías cíclicas hasta alcanzar el máximo de adsorción, lo cual ocurre cuando dos o más voltagramas consecutivos son equivalentes. Una vez alcanzado este punto, se retiró la solución con la sonda y se reemplazó con una nueva solución que sólo contenía electrolito soporte (KCl \SI{100}{\milli\Molar}). Se realizó entonces una nueva voltametría cíclica. Los resultados están expuestos en los voltagramas de la figura \ref{fig:preconcentraciones}, donde se ha llevado a cabo un barrido de concentraciones desde \SI{e-2}{\Molar} hasta \SI{e-5}{\Molar}. Cabe destacar que a concentraciones por debajo de \SI{60}{\micro\Molar} (con un área geométrica de \SI{1}{mm}) la sonda ya no es detectada en un electrodo de Au desnudo, mientras que sobre una \pdm\space se observa una señal intensa. Esto sugiere que la sonda positiva se preconcentra fuertemente en sistemas \pdmF.
 
 
-		Se puede calcular la concentración dentro de la \pdm, es decir la concentración adsorbida de \ru, de acuerdo a la ecuación \ref{eq:concentracion}:
-				\begin{equation}
-					C=\frac{Q}{FAd}
-					\label{eq:concentracion}
-					\end{equation}
-		La concentración dentro de los poros es representada por $C$, $Q$ es la carga eléctrica, $F$ la constante de Faraday, $A$ el área del electrodo y $d$ el espesor de la película, la cual fue medida previamente por las técnicas explicadas en el capítulo \ref{chap:Materiales}, ya sea EPA o FIB.
-
-			
-
-		La carga $Q$ es igual a la integral de la corriente en el tiempo. Se puede desarrollar dicha igualdad y resolver como la integral definida entre dos valores de potencial para una velocidad de barrido constante, tal como se expone en la ecuación \ref{eq:carga}. Por lo tanto, de cada voltagrama de la figura \ref{fig:preconcentraciones}, se puede extraer el valor de $Q$, ya sea para la corriente anódica como para la catódica.
-		
-			\begin{equation}
-					Q=\int i\,dt = \int i\, \frac{dt}{dE} dE = \int i\,\frac{1}{v}dE=\frac{1}{v}\int_{E_{i}}^{E_{f}} i\,dE
-					\label{eq:carga}
-			\end{equation}
-
-			\begin{figure}[b!]
+			\begin{figure}[h!]
 			   	    \begin{subfigure}[t]{0.325\textwidth}
 			        	\includegraphics[width=0.95\textwidth]{Graficos/Ru10mM.pdf}
 			        	\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{10}{\milli\Molar}.}
@@ -295,36 +292,67 @@
 			     		\end{subfigure}	
 		 	   	   	\caption[Preconcentración de \aminorutenio\space en \pdmF]{Adsorción de \ru\space en \pdm\space a diferentes concentraciones de la sonda. Los voltagramas grises (\usebox{\gris}) indican el ingreso de la sonda en la red nanoporosa, los de línea sólida (\usebox{\negro}) corresponden a la sonda adsorbida en solución con electrolito soporte únicamente y los voltagramas de línea punteada (\usebox{\punteado}) son la respuesta en electrodos de Au desnudo. Todos los voltagramas fueron medidos a \SI{50}{\milli\volt\per\second} en solución de KCl \SI{100}{\milli\Molar}.}
 		     		\label{fig:preconcentraciones}
-		     	   	\end{figure} 	
-		Una vez obtenidos estos valores, se puede construir una isoterma de adsorción a T=\SI{25}{\celsius} (figura \ref{fig:langmuir}). De esta curva se obtiene una relación analítica entre la concentración de \ru\space dentro de la \pdm\space y la concentración de \ru\space que colocamos inicialmente. La isoterma resultante se corresponde con una isoterma de Langmuir donde la cantidad adsorbida aumenta hasta alcanzar un valor límite, correspondiente a cubrir la superficie de las \pdm\space por una monocapa, debido a la quimisorción del \ru.\cite{langmuir1918}
+		     		\vspace*{0.40cm}
+		     	   	\end{figure} 
 
-		Para este tipo de isotermas, el grado de recubrimiento ($\theta$) esta determinado por la concentración en solución ($C_{sol}$) y la constante de equilibrio de la adsorción/desorción ($K$), relación conocida como ecuación de Langmuir (ec. \ref{eq:langmuir}).  Del ajuste de los datos a dicha ecuación podemos extraer $K$, la cual para nuestro sistema tiene un valor de $K=$\SI{9e3}{\Molar^{-1}}. Se puede también calcular la concentración de \ru\space dentro de la película delgada en condiciones de saturación. Para un espesor de película de \SI{200}{nm}, la concentración de saturación alcanza el valor de $C\!=$\SI{1.1}{\Molar}.
+		Se puede calcular la concentración dentro de la \pdm, es decir la concentración adsorbida de \ru, de acuerdo a la ecuación \ref{eq:concentracion}:
+				\begin{equation}
+					C=\frac{Q}{FAd}
+					\label{eq:concentracion}
+					\end{equation}
+		La concentración dentro de los poros es representada por $C$, $Q$ es la carga eléctrica, $F$ la constante de Faraday, $A$ el área del electrodo y $d$ el espesor de la película, la cual fue medida previamente por las técnicas explicadas en el capítulo \ref{chap:Materiales}, ya sea EPA o FIB.
+
+		La carga $Q$ es igual a la integral de la corriente en el tiempo. Se puede desarrollar dicha igualdad y resolver como la integral definida entre dos valores de potencial para una velocidad de barrido constante, tal como se expone en la ecuación \ref{eq:carga}. Por lo tanto, de cada voltagrama de la figura \ref{fig:preconcentraciones}, se puede extraer el valor de $Q$, ya sea para la corriente anódica como para la catódica.
+		
 			\begin{equation}
-					\theta = \frac{KC_{sol}}{KC_{sol}+1}
-					\label{eq:langmuir}
+					Q=\frac{1}{v}\int_{E_{i}}^{E_{f}} i\,dE
+					\label{eq:carga}
 			\end{equation}
-		Si bien ya se han reportado la adsorción de sondas positivas en sistemas similares (p. ej. en el trabajo de Etienne y col. \cite{Etienne2007}, donde adsorbe $\text{Ru}(bpy)_3^{2+}$ en una película de sílice mesoporosa sobre ITO a $\text{pH}=4.1$) no se ha reportado, hasta la fecha, cálculos de concentraciones dentro de las películas delgadas.
+	
+		
+		Una vez obtenidos estos valores, se puede construir una isoterma de adsorción de \ru\space sobre \pdmF\space a T=\SI{25}{\celsius}. De esta curva se obtiene una relación analítica entre la concentración de \ru\space dentro de la \pdm\space y la concentración de \ru\space que colocamos inicialmente. La isoterma resultante se presentan en la figura \ref{fig:langmuir}, donde se puede observar que la cantidad adsorbida aumenta hasta alcanzar un valor máximo de adsorción de la sonda.
 
 			\begin{figure}[h!]
 					\centering
 			 	    \includegraphics[width=0.70\textwidth]{Graficos/langmuir.pdf}
 			        \caption[Isoterma de Langmuir]{Isoterma de Langmuir a T=\SI{25}{\celsius} donde se gráfica la concentración de \aminorutenio\space adsorbido en función de la concentración en solución colocada inicialmente.}
 			        \label{fig:langmuir}
-		      	\end{figure} 	
-	
-	\subsection{Mecanismo de transporte de carga}
+		      	\end{figure} 
 
-	 	 Como ya se demostró anteriormente, el sistema adsorbe la sonda positivamente cargada sobre las paredes de la película delgada formando una monocapa. Se genera entonces, un par iónico entre el \ru, de carga positiva (+2 o +3 dependiendo del estado de oxidación), y los silanoatos de las paredes del mesoporoso, cuya carga es negativa al pH al cual se realiza la medición (pH=$5,5$). Los sitios redox ($\phi^{e}$) están parcial o totalmente inmovilizados, sugiriendo que el mecanismo de transferencia de carga es el que se produce a través de saltos electrónicos entre los sitios redox, o como se lo conoce mas comúnmente en inglés, \textit{electron hopping}. \cite{Rohlfing2005,Vila2015,Audebert2015}
+		%La isoterma resultante se presentan en la figura \ref{fig:langmuir}) se corresponde con una isoterma de Langmuir , correspondiente a cubrir la superficie de las \pdm\space por una monocapa, debido a la adsorción del \ru.\cite{langmuir1918}
+
+		Para este tipo de isotermas, el grado de recubrimiento ($\theta$) esta determinado por la concentración en solución ($C_{sol}$) y la constante de equilibrio de la adsorción/desorción ($K$), relación conocida como ecuación de Langmuir. Al\space ajustar los datos con dicha ecuación podemos extraer el valor de $K$.
+
+			\begin{equation}
+				\theta = \frac{K C_{sol}}{K C_{sol}+1}
+				\label{eq:langmuir}
+			\end{equation}
+
+		
+		El cálculo para la concentración de \ru\space dentro la película corresponden al equilibrio $\text{\ru(III)} + e^- \rightleftharpoons \text{\ru(II)}$ (consultar esquema \ref{eq:ciclo}, pág. \pageref{eq:ciclo}), por lo tanto la constante calculada corresponde a la adsorción de la especie oxidada, $K_O$, la cual para nuestro sistema dio un valor de $K_O=$\SI{9e3}{\Molar^{-1}} . Por otro lado, reorganizando la ecuación \ref{eq:kokreq} se obtiene la ecuación \ref{eq:kokreq2}, de la que se puede estimar el valor de la constante de equilibrio para la especie reducida, $K_R$. 
+	
+		\begin{equation}
+				K_R=K_O \exp\left({\frac{E^0_{sol}-E^0_{ads}}{nF/RT}}\right)
+				\label{eq:kokreq2}
+		\end{equation}
+
+		Dicho valor resultó en $K_R=\SI{170}{\per\Molar}$, como es de esperar, es menor que para la especie más oxidada ya que se trata de interacciones electrostáticas. 
+
+		Otro valor de suma importancia que se puede extraer de estos experimentos es el de la concentración de \ru\space dentro de la película delgada en condiciones de saturación. Si bien ya se ha reportado la adsorción de sondas positivas en sistemas similares (p. ej. en el trabajo de Etienne y col. \cite{Etienne2007}, donde adsorbe $\text{Ru}(bpy)_3^{2+}$ en una película de sílice mesoporosa sobre ITO a $\text{pH}=4.1$) no se ha reportado, hasta la fecha, cálculos cuantitativos de concentraciones dentro de las películas delgadas. En estos experimentos, donde el espesor de la película fue de \SI{200}{nm}, la concentración de saturación se estimó en $C\!=$\SI{1.1}{\Molar}. Estas estimaciones y la metodología detrás del cálculo, son de suma importancia analitica para aplicaciones en sensores. También cabe destacar la gran capacidad de preconcentración de estos sistemas, alcanzando concentraciones dentro de las películas de 1000 o más veces que en la solución.
+		
+	\subsection{Mecanismo de transporte de carga de sondas adsorbidas}
+
+	 	 Como ya se demostró anteriormente, el sistema adsorbe una sonda positivamente cargada sobre las paredes de la película delgada. Se genera entonces, un par iónico entre el \ru, de carga positiva (+2 o +3 dependiendo del estado de oxidación), y los silanolatos de las paredes del mesoporoso, cuya carga es negativa al pH al cual se realiza la medición (pH=$5,5$). Los sitios redox ($\phi^{e}$) están parcial o totalmente inmovilizados, sugiriendo que el mecanismo de transferencia de carga es el que se produce a través de saltos electrónicos entre los sitios redox, o como se lo conoce mas comúnmente en inglés, \textit{electron hopping}. \cite{Rohlfing2005,Vila2015,Audebert2015}
 
 	 	 %Una cita por aca. 
-	 	 Si se supone nanoporos esféricos, monodispersos y distribuidos uniformemente en la película (consultar capítulo \ref{chap:Mesoporosos}), se puede estimar la cantidad \ru\space por poro según la ecuación \ref{eq:distancia_redox}. Para ello se multiplica la concentración de \ru\space adsorbido ($C$), por la fracción porosa ($F_p$), por el volumen de un sólo poro ($V_{poro}$) y por el número de Avogadro ($N_{A}$) para calcular el número de moléculas. Y, a su vez, como se encuentran adsorbidos, se puede dividir por la superficie del poro ($S_{poro}$) de forma de obtener el número de sitios redox por unidad de volumen. Finalmente, tomando la raíz cuadrada de la inversa se calcula la distancia promedio entre dos sitios redox ($d_{\phi^{e}}$). Teniendo en cuenta una concentración de \linebreak
+	 	 Si se supone mesoporos esféricos, monodispersos y distribuidos uniformemente en la película (consultar capítulo \ref{chap:Mesoporosos}), se puede estimar la cantidad \ru\space por poro según la ecuación \ref{eq:distancia_redox}. Para ello se multiplica la concentración de \ru\space adsorbido ($C$), por la fracción porosa ($F_p$), por el volumen de un sólo poro ($V_{poro}$) y por el número de Avogadro ($N_{A}$) para calcular el número de moléculas. Y, a su vez, como se encuentran adsorbidos, se puede dividir por la superficie del poro ($S_{poro}$) de forma de obtener el número de sitios redox por unidad de volumen. Finalmente, tomando la raíz cuadrada de la inversa se calcula la distancia promedio entre dos sitios redox ($d_{\phi^{e}}$). Teniendo en cuenta una concentración de \linebreak
 	 		\begin{equation}
 					d_{\phi^{e}}=2\sqrt{\frac{S_{poro}}{\pi\, V_{poro}\, N_A\, C\, F_p}}
 					\label{eq:distancia_redox}
 			\end{equation}
 	     saturación de \SI{1,1}{\Molar} en una película de \SI{200}{nm} con una porosidad $F_p=35\%$, la distancia promedio entre sitios redox resulta de $d_{\phi^{e}}=$\SI{1.25}{nm}. Esta estimación (aún con los suposiciones de poros esféricos e idénticos) es compatible con el modelo de \textit{eletron hopping} propuestos y con la concentración ya calculada. Un valor muy grande, p. ej. $d_{\phi^{e}}>15\, \text{nm}$ sería un indicador de que, o bien la película no esta saturada o bien los sitios redox están muy lejos para que ocurra la trasferencia electrónica entre ellos, mientas que un valor de $d_{\phi^{e}}$ muy pequeño, sería comparable con el radio de la sonda y se solaparían los sitios redox, (para $d_{\phi^{e}} < r_{\phi^{e}}$). 
 	
-	     En el esquema de la figura \ref{fig:sitios_redox} se ejemplifica el mecanismo propuesto. Se puede, entonces, calcular el coeficiente de difusión $D_e$ para la transferencia electrónica. Se abarcó el cálculo de éste parámetro desde dos enfoques diferentes, uno haciendo uso de voltametrías cíclicas (CV) a distintas velocidades de barrido y otro utilizando la técnica de voltametría de corriente alterna (VCA). Los detalles experimentales para ambas técnicas fueron explicados en la sección \ref{sec:medidas_eq}, pág. \pageref{sec:medidas_eq}.
+	     En el esquema de la figura \ref{fig:sitios_redox} se ejemplifica el mecanismo propuesto. Se puede determinar experimentalmente el coeficiente de difusión $D_e$ para la transferencia electrónica. Éste parámetro se determinó con dos técnicas diferentes, voltametrías cíclicas (CV) a distintas velocidades de barrido y otro utilizando la técnica de voltametría de corriente alterna (VCA). Los detalles experimentales para ambas técnicas fueron explicados en la sección \ref{sec:medidas_eq}, pág. \pageref{sec:medidas_eq}.
 			\begin{figure}[ht!]
 					\centering
 			 	    \includegraphics[width=0.60\textwidth]{Esquemas/sitios_redox.pdf}
@@ -332,29 +360,29 @@
 			        \label{fig:sitios_redox}
 			      	\end{figure} 
 
-	 \subsubsection*{Calculo de $D_e$ mediante VC}	
+	 \subsubsection*{Determinación de $D_e$ mediante VC}	
 	 
-	   	 De acuerdo al trabajo de Tagliazucchi y Calvo\cite{Tagliazucchi2010a} donde se calcula el coeficiente de difusión para un complejo de osmio adsorbido en un polímero, es posible, a partir del tiempo de difusión característico, $\tau_{\scriptscriptstyle{D}}$, calcular el $D_e$ según la ecuación \ref{eq:tao_caracteristico}, donde $d$ es el espesor de la película. 
+	   	 De acuerdo al trabajo de Tagliazucchi y Calvo\cite{Tagliazucchi2010a} donde se calculó el coeficiente de difusión para un complejo de osmio adsorbido en un polímero, es posible, a partir del tiempo de difusión característico, $\tau_{\scriptscriptstyle{D}}$, calcular el $D_e$ según la ecuación \ref{eq:tao_caracteristico}, donde $d$ es el espesor de la película. 
 	   		\begin{equation}
 					\tau_{\scriptscriptstyle{D}}=\frac{d^2}{2\ D_e}
 					\label{eq:tao_caracteristico}
 			 \end{equation} 
   	  	  
-  	  	  A su vez, se puede determinar la  velocidad de barrido característica, $\nu_{\scriptscriptstyle{D}}$, para la cual la capa de difusión alcanza la interfase de la solución. Para ello se hace uso de la ecuación \ref{eq:v_caracteristica} donde $F$ es la constante de Faraday, $T$ la temperatura y $R$ la constante universal de los gases.
+  	  	  A su vez, se puede determinar la  velocidad de barrido característica, $\nu_{\scriptscriptstyle{D}}$, para la cual la capa de difusión alcanza la interfaz de la solución. Para ello se hace uso de la ecuación \ref{eq:v_caracteristica} donde $F$ es la constante de Faraday, $T$ la temperatura y $R$ la constante universal de los gases.
 	  	   	 \begin{equation}
 					\nu_{\scriptscriptstyle{D}}=\frac{RT}{\tau_{\scriptscriptstyle{D}}F}
 					\label{eq:v_caracteristica}
 			 \end{equation}
 	     \indent Es a esta velocidad característica donde la respuesta del potencial cambia de un comportamiento de difusión en capa delgada a un comportamiento de difusión en régimen semiinfinito. Para determinar $\nu_{\scriptscriptstyle{D}}$ se tomaron voltametrías cíclicas de \ru\space sobre \pdmF\space a distintas velocidades de barrido, desde \SI{50}{\milli\volt\per\second} a \SI{50}{\volt\per\second}. Luego se graficó el desplazamiento de potencial de pico por un lado, y la corriente de pico por otro, ambas variables en función de la velocidades de barrido (gráficos \ref{fig:corrimiento-potenciales} y \ref{fig:ip-vel} respectivamente).
 	   			
-			 \begin{figure}[b!]
+			 \begin{figure}[t!]
 					\centering
 			 	    \includegraphics[width=0.70\textwidth]{Graficos/MARIO-Ru1mM-Potenciales.pdf}
 			        \caption[Desplazamiento de potenciales]{Desplazamiento de los potenciales en función de la velocidad de barrido. Las flechas rojas indican la velocidad característica para el cambio de régimen, de capa delgada a control difusional.}
 			        \label{fig:corrimiento-potenciales}
 			      	\end{figure}
          
-         	 \begin{figure}[b!]
+         	 \begin{figure}[h!]
 			 	 \begin{subfigure}[t]{0.5\textwidth}
 			 	 \includegraphics[width=1\textwidth]{Graficos/MARIO-Ru1mM-ip-vel.pdf}
 				  \caption{Intensidad de pico  en función de la velocidad de barrido. Las flechas rojas indican la velocidad característica para el cambio de régimen.}
@@ -373,21 +401,25 @@
 		   	 	 
          En el gráfico \ref{fig:ip-vel} se representa la corriente de pico en función de la velocidad de barrido. Para una velocidad $\nu \approx \nu_{\scriptscriptstyle{D}}$ se observa una transición de régimen de difusión en capa delgada ($\text{i}_{p} \propto \nu$) a régimen controlado por difusión semiinfinita($\text{i}_{p} \propto \nu^{1/2}$). Este gráfico permite estimar con menor interferencia el cambio de régimen y por lo tanto la $\nu_{\scriptscriptstyle{D}}$, la cual se ha identificado en el gráfico con flechas rojas. En la figura \ref{fig:logj-logv} donde se graficó log({i$_p$}) vs log({$\nu$}) se hace evidente el cambio de régimen difusión acotada (pendiente=1) a difusión semiinfinita (pendiente=0.5).
 
-		 Una vez que obtenemos el valor de  $\nu_{\scriptscriptstyle{D}}$ se combinan las ecuaciones \ref{eq:tao_caracteristico} y \ref{eq:v_caracteristica} para obtener finalmente el valor del coeficiente de difusión de saltos electrónicos entre sitios redox,  $D_e$ (ecuación \ref{eq:dh}). Para nuestro sistema, con esta metodología resultó $D_e=$\SI{1.6e-9}{\square\cm\per\second}, tres ordenes de magnitud menor que para una sonda típica, libre, en solución acuosa ($D\approx 10^{-6}$).  
-			\begin{equation}
+		 Una vez que obtenemos el valor de  $\nu_{\scriptscriptstyle{D}}$ se combinan las ecuaciones \ref{eq:tao_caracteristico} y \ref{eq:v_caracteristica} para obtener finalmente el valor del coeficiente de difusión de saltos electrónicos entre sitios rédox,  $D_e$ según: 
+
+		 		\begin{equation}
 					D_e= \frac{d^2\nu_{\scriptscriptstyle{D}}F}{2RT}
 					\label{eq:dh}
 			\end{equation}
-     
-	 \subsubsection*{Calculo de $D_e$ mediante AVC}
+
+		 \noindent Para nuestro sistema, con esta metodología resultó $D_e=$\SI{1.6e-9}{\square\cm\per\second}, tres ordenes de magnitud menor que para una sonda típica, libre, en solución acuosa ($D\approx 10^{-6}$).  
+			
+	 \subsubsection*{Determinación de $D_e$ mediante AVC}
 
     	 El segundo enfoque que se utilizó para calcular $D_e$ fue mediante el uso de la técnica de voltametría de corriente alterna (ACV). Esta técnica es muy útil para el estudio de parámetros cinéticos en sistemas reversibles. Permite fácilmente, para pequeñas perturbaciones, discriminar la componente de corriente continua de la de corriente alterna en función del potencial aplicado. Los voltagramas de la figura \ref{fig:acv} muestran la respuesta de una \pdmF\space cargada con \ru. Se aplicó una una perturbación de \SI{10}{\milli\volt} a una frecuencia de 1 y \SI{2}{\hertz}.
 
-	 			\begin{figure}[b!]
+	 			\begin{figure}[h!]
 					\centering
 			 	    \includegraphics[width=0.75\textwidth]{Graficos/ACV-1-2Hz.pdf}
 			        \caption[Voltametrías de corriente alterna]{Voltametría de corriente alterna para una película satura con \ru. Se aplicó una perturbación de 10mV y una frecuencia de 1 y \SI{2}{\hertz} en solución de KCl \SI{100}{\milli\Molar} usando como referencia ECS.}
 			        \label{fig:acv}
+			        \vspace*{3mm}
 			      	\end{figure}
 
     	 El desarrollo de descomponer y combinar las ecuaciones para las componentes de corriente alterna y directa en función de campo eléctrico, deriva en una ecuación (ec. \ref{eq:acv}) que permite calcular el coeficiente de difusión \cite{Wi2000}, el cual dió como resultado $D_e$=\SI{4.5e-9}{\square\cm\per\second}. 
@@ -403,29 +435,29 @@
 	\subsection{Simulaciones por elementos finitos}	
 
 		A partir de la experiencia acumulada, y en base al modelo propuesto sobre el trasporte de carga para estos sistemas preconcentradores, se planteó la posibilidad de utilizarlos como mediadores electroquímicos. 
-    	La mediación en sistemas análogos, basados en polímeros con complejos electroactivos, es bien conocida.\cite{Kolb1993,ybarra2005}. Por lo tanto, para determinar si son sistemas con la capacidad de transportar la carga de una sonda electroquímica (ya sea neutra, positiva o negativa), desde la interfase mesoporoso/solución hasta el electrodo, se diseñó un experimento de mediación electroquímica. El mismo consintió en cargar una \pdmF\space completamente de \ru, retirar la solución y colocar una solución con \fc\space en electrolito soporte, KCl \SI{100}{\milli\Molar}. El voltagrama de la figura \ref{fig:mediacion} muestra la respuesta que se obtuvo de este experimento (negro) y se compara, en el mismo gráfico, con un voltagrama de \fc\space en una \pdmF\space no cargada (gris) y en un electrodo de Au desnudo (punteado).  
+    	La mediación en sistemas análogos, basados en polímeros con complejos electroactivos, es bien conocida.\cite{Kolb1993,ybarra2005}. Por lo tanto, para determinar si son sistemas con la capacidad de transportar la carga de una sonda electroquímica (ya sea neutra, positiva o negativa), desde la interfaz mesoporoso/solución hasta el electrodo, se diseñó un experimento de mediación electroquímica. El mismo consintió en cargar una \pdmF\space completamente con \ru, retirar la solución y colocar una solución con \fc\space en electrolito soporte, KCl \SI{100}{\milli\Molar}. El voltagrama de la figura \ref{fig:mediacion} muestra la respuesta que se obtuvo de este experimento (negro) y se compara, en el mismo gráfico, con un voltagrama de \fc\space en una \pdmF\space no cargada (gris) y en un electrodo de Au desnudo (punteado).  
 
-        	\begin{figure}[b!]	
+        	\begin{figure}[h!]	
 					\centering
 			 	    \includegraphics[width=0.70\textwidth]{Graficos/mediacion.pdf}
 			        \caption[Voltagrama de \ru\space y \fc.]{Mediciones electroquímicas de \fc\space \SI{5}{\milli\Molar} en solución de KCl \SI{100}{\milli\Molar} sobre un electrodo de Au desnudo (\usebox{\punteado}), sobre una \pdmF\space (\usebox{\gris}) y sobre una \pdmF\space con \ru\space adsorbido (\usebox{\negro}).}
 			        \label{fig:mediacion}
 			      	\end{figure}
 
-		Allí se observa que la señal del \fc\space es de una intensidad comparable con la que la que se obtiene en un electrodo de Au desnudo. Se desprenden a partir de estos resultados dos hipótesis: que la señal del \fc\space se debe a una mediación electroquímica entre el \ru\space y el electrodo o bien que el \fc\space está permeando a través de la película por algún cambio debido a la adsorción del \ru\space en la película. Cabe destacar que la señal del \fc\space en la película cargada de \ru\space es mucho mas intensa que la que corresponde a colocar \fc\space en una \pdmF\space sin \ru\space (voltagramas negro y gris respectivamente).
+		Allí se observa que la señal del \fc\space es de una intensidad comparable con la que la que se obtiene en un electrodo de Au desnudo. Se desprenden a partir de estos resultados dos hipótesis: que la señal del \fc\space se debe a una mediación electroquímica entre el \ru\space y el electrodo o bien que el \fc\space está permeando a través de la película por algún cambio debido a la adsorción del \ru\space en la película. Cabe destacar que la señal del \fc\space en la película cargada de \ru\space es mucho más intensa que la que corresponde a colocar \fc\space en una \pdmF\space sin \ru\space (voltagramas negro y gris respectivamente).
 
 		Para poder discriminar e interpretar cuál es el proceso que está dando origen a la señal, se recurrió a experimentos de simulación. Se trabajó en conjunto con el Dr. Tagliazucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía (INQUIMAE) haciendo simulaciones por elementos finitos con el programa \textit{COMSOL Multiphysics\textsuperscript\textregistered}.
 
-		Se utilizó un modelo el cual considera un electrodo recubierto con una película delgada \SI{200}{nm} saturada de  \aminorutenio en una concentración de \SI{1}{\Molar}. Para una descripción detallada de los parámetros utilizados se pueden consultar en la sección \ref{simulacion}, pág. \pageref{simulacion}. 
+		Se utilizó un modelo el cual considera un electrodo recubierto con una película delgada de \SI{200}{nm} de espesor saturada de  \aminorutenio en una concentración de \SI{1}{\Molar}. Para una descripción detallada de los parámetros utilizados se pueden consultar en la sección \ref{simulacion}, pág. \pageref{simulacion}. 
 
 		La primera simulación (figura \ref{fig:sim_mediacion}) tiene en cuenta dos sondas, una adsorbida y otra libre en solución (en los caso experimentales presentados \ru\space y \fc\space respectivamente), y se varía la diferencia del potencial de reducción estándar entre ambas sondas, $\Delta E^\circ$. El objetivo de esta simulación es establecer alguna valor límite de $\Delta E^\circ$ a partir del cual la mediación es posible. 
 
-			\begin{figure}[ht]
+			\begin{figure}[h!]
 					\centering
 					\vspace*{-2mm}
 			 	    \includegraphics[width=0.78\textwidth]{Graficos/FcOH-Simulacion-deltaE.pdf}
 			 	    \vspace*{-3mm}
-			        \caption[Simulación EQ de mediación redox]{Simulación por elementos finitos del voltagrama para la mediación entre una sonda en solución y una \pdmF\space con \ru\space \SI{1}{\milli\Molar}. En el eje de la abscisas se coloca la diferencia de potencial estándar para cada una de las sondas con ECS.}
+			        \caption[Simulación EQ de mediación redox]{Simulación por elementos finitos de voltagramas cíclicos para la mediación entre una sonda en solución y una \pdmF\space con \ru\space \SI{1}{\milli\Molar}. En el eje de la abscisas se coloca la diferencia de potencial estándar para cada una de las sondas con ECS.}
 			        \label{fig:sim_mediacion}\vspace*{3mm}
 			      	\end{figure}
 

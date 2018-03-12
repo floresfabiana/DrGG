@@ -85,7 +85,7 @@ set grid back ls 11
 
 #Ploteo todas las funciones que les digamos
 
-plot 'Ru10mM-Resumen.txt' using 1:($2/0.0314) w lines ls 3 title "SF (adsorbido)", \
-'Ru10mM-Resumen.txt' using 3:($4/0.0314) w lines ls 5 title "SF (libre+ads)", \
+plot 'Ru10mM-Resumen.txt' using 1:($2/0.0314) w lines ls 3 title "SF (libre+ads)", \
+'Ru10mM-Resumen.txt' using 3:($4/0.0314) w lines ls 5 title "SF (adsorbido)", \
 'Ru10mM-Resumen.txt' using 5:($6/0.0314) w lines ls 2 title "Au"
 #plot for [i=1:5:2] 'Ru10mM-Resumen.txt' using i:i+1 w lines title sprintf("column %d", i)
