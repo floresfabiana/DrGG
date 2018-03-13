@@ -84,11 +84,11 @@
 };
 
 \node at (15.5,1.2)[scale=0.70] {
-OH\textsuperscript{-}
+H\textsuperscript{+}
 };
 
 \node at (15.5,0.7)[scale=0.70] {
-H\textsuperscript{+}
+OH\textsuperscript{-}
 };
 
 \end{tikzpicture}
