@@ -53,7 +53,7 @@
 	
 %Estructura del meso
 \node at (13.07,0.93) {
-	\chemfig[scale=0.6][scale=0.6]{Si(-[:340]O|^{-})(-[:50]O|^{-})(-[:220]O(-[:180,1pt,,,,,dash pattern=on 2pt off 1pt]))(-[:140]O(-[:70]Si(-[:30]-[:-30]-[:30]-[:-30]NH_3^+)(-[:180]O(-[:180,0.4pt,,,,,dash pattern=on 2pt off 1pt]))(-[:100]O(-[:60]Zr(-[:320]O|^{-})(-[:60,1.3pt]O|^{-})(-[:130]O(-[:180,1.05pt,,,,,dash pattern=on 2pt off 1pt]))))))
+	\chemfig[scale=0.6][scale=0.6]{Si(-[:340]O|^{-})(-[:50]O|^{-})(-[:220]O(-[:180,1pt,,,,,dash pattern=on 2pt off 1pt]))(-[:140]O(-[:70]Si(-[:30]-[:-30]-[:30]-[:-30]NH_2)(-[:180]O(-[:180,0.4pt,,,,,dash pattern=on 2pt off 1pt]))(-[:100]O(-[:60]Zr(-[:320]O|^{-})(-[:60,1.3pt]O|^{-})(-[:130]O(-[:180,1.05pt,,,,,dash pattern=on 2pt off 1pt]))))))
 	}
 };
 
@@ -79,7 +79,7 @@
 	
 %Estructura del meso
 \node at (17.93,0.93) {
-	\chemfig[scale=0.6][scale=0.6]{Si(-[:340]O|^{-})(-[:50]O|^{-})(-[:220]O(-[:180,1pt,,,,,dash pattern=on 2pt off 1pt]))(-[:140]O(-[:70]Si(-[:30]-[:-30]-[:30]-[:-30]NH_2)(-[:180]O(-[:180,0.4pt,,,,,dash pattern=on 2pt off 1pt]))(-[:100]O(-[:60]Zr(-[:320]O|^{-})(-[:60,1.3pt]O|^{-})(-[:130]O(-[:180,1.05pt,,,,,dash pattern=on 2pt off 1pt]))))))
+	\chemfig[scale=0.6][scale=0.6]{Si(-[:340]O|^{-})(-[:50]O|^{-})(-[:220]O(-[:180,1pt,,,,,dash pattern=on 2pt off 1pt]))(-[:140]O(-[:70]Si(-[:30]-[:-30]-[:30]-[:-30]NH_3^+)(-[:180]O(-[:180,0.4pt,,,,,dash pattern=on 2pt off 1pt]))(-[:100]O(-[:60]Zr(-[:320]O|^{-})(-[:60,1.3pt]O|^{-})(-[:130]O(-[:180,1.05pt,,,,,dash pattern=on 2pt off 1pt]))))))
 	}
 };
 
