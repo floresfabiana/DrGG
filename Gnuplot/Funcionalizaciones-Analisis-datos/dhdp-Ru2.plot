@@ -4,7 +4,7 @@
 
 #Para exportar como latex
 set terminal tikz
-set output "dhdp-Ru.tikz" 
+set output "dhdp-Ru2.tikz" 
 
 
 #Saco la leyenda
@@ -57,9 +57,8 @@ set style line 3 lc rgb 'black' lt 1 lw 0.5 #Azul
 # 'Ru0315mM.txt' using 5:($6/0.0314) w lines ls 3, \
 # 'Ru0315mM.txt' using 13:($14/0.0314) w lines ls 2
 
-plot "DHDP3mM/Ru.txt" u 1:($2/0.0314) every 10  w l ls 1 title "SZF", \
-"DHDP3mM/Ru.txt" u 3:($4/0.0314) every 10  w l ls 1 notitle,\
-
+plot "DHDP3mM/Ru.txt" u 5:($6/0.0314) every 10  w l ls 3 title "SZF$^P_3$",\
+"DHDP3mM/Ru.txt" u 7:($8/0.0314) every 10  w l ls 3 notitle ,\
 
 
 #"Au F127 INTI BajaT Ru1mM.txt" using ($3):($4/0.0314) every ::61633::63033  with lines ls 2, \
