@@ -53,9 +53,10 @@ set rtics format ""
 
 
 set style line 11 lt 1 lw 2 pt 2 ps 2 #set the line style for the plot
+set style fill transparent solid 0.35 
 
 #and finally the plot
-plot "-" u 1:2 t "Max strain" w lp ls 11
+plot "-" u 1:2 t "Max strain" with filledcurve ls 11
 0 3400
 60 5300
 120 4700
