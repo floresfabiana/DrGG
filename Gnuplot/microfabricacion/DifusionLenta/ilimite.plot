@@ -42,7 +42,7 @@ set style line 6 lc rgb 'black' lt 1 dashtype 2 lw 2.5
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\Delta E$ /mV" font ",14" textcolor rgb "gray40" offset  0,-2
+	set xlabel "$\\Delta E^{\circ}$ /mV" font ",14" textcolor rgb "gray40" offset  0,-2
 	set ylabel "$\\text{log}(i_{lim}/i_s)$"	   font ",14" textcolor rgb "gray40" offset -2,0
 	set label "$i_{lim}=i_{s}$" at 420,0.75 font ",12" textcolor rgb "black"
 

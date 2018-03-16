@@ -699,3 +699,132 @@
 
 			\vfill
 	
+	\section{Caracterización de los electrodos}
+
+		 Se dará cuenta en esta sección de las diferentes caracterizaciones y ensayos practicados sobre los electrodos de Au. Fundamentalmente la respuesta electroquímica, ya que la base de los sensores son las reacciones de óxido reducción. Es por ello que es necesario obtener electrodos de respuesta reproducible, confiable y fabricados por un proceso repetible y escalable. 
+
+	\subsection{Respuesta electroquímica}\label{sec:respuesta_sondas_au}
+			 		
+			Una vez que los resultados de la fabricación de los sensores fueron óptimos se evaluó el desempeño electroquímico de los mismos. En el capítulo \ref{chap:Materiales} se describe con detalle el montaje experimental para realizar las mediciones de voltametrías cíclica (VC). Se usaron como sondas electroquímicas ferro y ferricianuro de potasio (\Ferro\space y \Ferri, \fe), cloruro de hexaaminorutenio(III) (\aminorutenioCompleto, \ru) y ferroceno metanol (\ferroceno, \fc). La elección de estas sondas modelo tiene que ver fundamentalmente con la carga neta de cada una de ellas, y con la reversibildiad de los pares redox. Analizaremos ahora como fue la respuesta de los electrodos compuestos por películas delgadas de Au para cada una de estas sondas.
+				
+		\subsubsection*{Respuesta de ferro/ferricianuro de potasio}	 
+			 	
+		   En electroquímica éste par rédox es frecuentemente utilizado para evaluar la calidad de electrodos. Esto se debe a que se trata de par rédox cuyas especies oxidada y reducida son moléculas económicas, fácil de conseguir, solubles en solución acuosa y se compartan de forma cuasireversible frente al intercambio electrónico electrodo-especie. La reacción que tiene lugar es la siguiente:
+			 \begin{equation}
+			 \schemestart 
+			 Fe(CN)$_6^{4-}$  
+			 \arrow{<=>[\scriptsize oxidación][\scriptsize reducción]}[0,1.5] 
+			 Fe(CN)$_6^{3-}+e^-$ \schemestop
+			 \end{equation}
+		   Se espera, en la aproximación más simple, que sigan el comportamiento descrito por Randles-Sevcik, donde la intensidad de pico ($i_p$) es proporcional a la concentración ($C$) y a la raiz cuadrada de la velocidad de barrido $v$ según:
+		  
+		 	\begin{equation}
+			i_p=0.4463nFAC\left(\frac{nFvD}{RT}\right)^{1/2}
+			\label{eq:rs2}
+			\end{equation}
+
+			\begin{figure}[ht]
+	 	    	\begin{subfigure}[t]{0.5\textwidth}
+	         	\includegraphics[width=\textwidth]{Graficos/Concentraciones_Fe.pdf}
+	        	\caption{Voltametrías cíclicas para la cupla \fe\space a diferentes concentraciones. Todas medidas fueron tomadas a \SI{50}{\milli\volt\per\second}.}
+	         	\label{fig:Fe_a}
+	     		\end{subfigure}
+     		 \begin{subfigure}[t]{0.495\textwidth}
+	        	\includegraphics[width=\textwidth]{Graficos/Calibracion_Fe.pdf}
+	       		\caption{Curva de calibración para distintas concentraciones de la cupla \fe. Valores tomados de la figura \ref{fig:Fe_a}.}
+	         	\label{fig:Fe_b}
+	     		\end{subfigure}
+	     		%\vspace*{0.5cm}
+
+ 	     	\begin{subfigure}[t]{0.495\textwidth}
+         		\includegraphics[width=\textwidth]{Graficos/Velocidades_Fe.pdf}
+        	    \caption{Voltametrías cíclicas de una solución \SI{10}{\milli\Molar} de la cupla equimolar \fe\space para diferentes velocidades de barrido.}
+        	    \label{fig:Fe_c}
+     		 	\end{subfigure}
+     	 	\begin{subfigure}[t]{0.495\textwidth}
+        		\includegraphics[width=\textwidth]{Graficos/VelocidadesCal_Fe.pdf}
+       			\caption[Respuesta a diferentes velocidades de barrido para \fe]{Dependencia de la corriente de pcio con la velocidad de barrido para \fe\space \SI{10}{\milli\Molar}. Valores extraidos de la figura \ref{fig:Fe_c}.}
+         		\label{fig:Fe_d}
+     			\end{subfigure}
+     		 \caption[Respuesta electroquímica para \fe]{(a) Respuesta electroquímica de la cupla equimolar \fe\space para distintas concentraciones, (b) curva de calibración para dichas concentraciones. (c) Densidad de corriente en función con la velocidad de barrido, (d) dependencia de la densidad de corriente de pico con la raíz cuadrada de la velocidad de barrido. Todos los voltagramas fueron tomadas con contraelectrodo de Pt, en 0,1M de NaCl como electrolito soporte y utilizando como referencia ECS.}
+     		 \label{fig:ferro-ferri-CV}
+     		 \end{figure}
+
+     		 Con el propósito de corroborar este comportamientos, se realizaron experimentos de VC a diferentes concentraciones de la sonda (figuras \ref{fig:Fe_a} y  \ref{fig:Fe_b}) y a distintas velocidades de barrido (figuras \ref{fig:Fe_c} y  \ref{fig:Fe_d}). Resultaron de especial utilidad la curva de calibración y la respuesta frente a distintas velocidades de barrido. Para cualquiera de estás velocidades los voltagramas conservan constantes los valores de $E^\circ$, indicativo de una buena trasferencia de carga entre el electrodo y la sonda. Además se destaca la relación lineal de j$_p$ con $v^{1/2}$ verificando la ecuación de Randles-Sevcik (ec. \ref{eq:rs2}).		  	  
+  					
+		  	 Con los resultados obtenidos para estas voltametrías se puede sugerir que el sistema responde a un proceso de difusión lineal en un plano semiinfinito, lo cual era lo que se esperaba en primer orden para un sistema en el que el electrodo esta embebido en solución con el analito electroactivo en solución de electrolito soporte {(\SI{0,1}{\milli\Molar} KCl, pH=$5.5$)\cite{Wi2000,Pumera2007,Gewirth2004,Villullas2000}.
+
+	 	\subsubsection*{Respuesta del cloruro de hexaaminorutenio(III)}
+	
+	 	 El cloruro de hexaaminorutenio(III) se utilizó extensivamente en este trabajo, gran parte de la discusión del capítulo \ref{chap:Electroquimica} tiene por eje la adsorción de este complejo en las películas delgadas mesoporosas. Esta molécula en solución se disocia para formar el complejo \aminorutenio. La reacción rédox que tiene lugar es la siguiente:
+	 		 	 	  		\begin{equation}
+	 		 	 	 			\schemestart 
+					 			 Ru(NH$_3$)$_6^{2+}$  
+					 			 \arrow{<=>[\scriptsize oxidación][\scriptsize reducción]}[0,1.5] 
+					 		 	 Ru(NH$_3$)$_6^{3+}+e^-$ \schemestop 
+	 		 	 	 		\end{equation}
+	 	  El intercambio entre los estados de oxidación Ru$^{3+}$/Ru$^{2+}$, responde a un proceso electroquímico reversible, en el cual podemos fácilmente reducir u oxidar el complejo variando el potencial del electrodo de trabajo. Habiendo ya comprobado, con el \fe, el buen desempeño de los electrodos respecto de la velocidad de barrido, se eligió un valor \SI{50}{\milli\volt\per\second} para las voltametrías cíclicas (de uso frecuente para este tipo de mediciones). Se llevaron a cabo una serie de VC para varias concentraciones de la sonda, con el objetivo de elaborar la correspondiente curva de calibración para \aminorutenio. Se verifica de estos voltagramas el buen desempeño EQ de los electrodos referente a la transferencia de electrones.
+		
+			 \begin{figure}[ht]
+	 	     \begin{subfigure}[t]{0.495\textwidth}
+	         	\includegraphics[width=\textwidth]{Graficos/Concentraciones_Ru.pdf}
+	        	\caption{Voltametrías cíclicas para \ru\space a diferentes concentraciones.}
+	         	\label{fig:Ru_a}
+	     		\end{subfigure}
+     		 \begin{subfigure}[t]{0.495\textwidth}
+	        	\includegraphics[width=\textwidth]{Graficos/Calibracion_Ru.pdf}
+	       		\caption{Curva de calibración para la especie \ru. Los valores fueron tomados de la figura \ref{fig:Ru_a}.}
+	         	\label{fig:Ru_b}
+	     		\end{subfigure}
+	     		\label{rutenio}
+	     		\caption[Respuesta electroquímica para \ru]{(a) Voltametrías cíclicas para soluciones de \ru\space de distinta concentración y, (b) curva de calibración para dichas concentraciones. Todos los voltagramas fueron tomados a \SI{50}{\milli\volt\per\second} con contraelectrodo de Pt en una solución \SI{0.1}{\milli\Molar} de NaCl y utilizando de referencia ECS.}
+	     	 \end{figure}
+			 		 	 
+		\subsubsection*{Respuesta del ferroceno metanol}
+ 	 	 
+ 	 	  A diferencia de las sondas anteriores la especie reducida del \fc\space tiene carga neta, por lo que se puede esperar que no tenga interacciones de tipo electrostáticas con las películas delgadas mesopoporosas. Por lo que es de  Es por ello que resultó imprescindible para sacar conclusiones acerca de los fenómenos de transporte y comparar sistemas calcinados con sistemas no clacinados, como ya se discutió ampliamente en el capítulo anterior. 
+ 	 	  La reacción de oxidación/reducción para esta molécula es la siguiente:
+ 	 	 			%Ecuación redox para el Ferroceno
+ 	 				 \begin{equation}
+ 	 	 				\begin{aligned}
+ 	 	 				\includegraphics[scale=0.75]{Esquemas/Redox-Fc.pdf}
+ 	 	 				\end{aligned}
+ 	 	 			 \end{equation}
+ 	 	  
+ 	 	 De la misma forma que se realizó para las otras sondas, se confeccionó una curva de calibración para distintas concentraciones de \fc\space, la figura \ref{Fig:Fc} muestra la respuesta electroquímica correspondiente sobre electrodos de Au.
+ 	 				
+ 	 				%Graficos para el Ferroceno
+		 		 \begin{figure}[ht]
+		 	      \begin{subfigure}[t]{0.495\textwidth}
+		          	\includegraphics[width=\textwidth]{Graficos/Concentraciones_Fc.pdf}
+		         	\caption{Voltametrías cíclicas para \fc\space a diferentes concentraciones, \SI{1}{\milli\Molar}, \SI{5}{\milli\Molar} y \SI{10}{\milli\Molar}.}
+		          	\label{fig:Fc_a}
+		      		\end{subfigure}
+		      	 \begin{subfigure}[t]{0.495\textwidth}
+		          	\includegraphics[width=\textwidth]{Graficos/Calibracion_Fc.pdf}
+		         	\caption{Curva de calibración para la especie \fc. Los valores fueron tomados de la figura \ref{fig:Fc_a}.}
+		          	\label{fig:Fc_b}
+		      		\end{subfigure}
+		      	 \caption[Respuesta electroquímica para \fc]{(a) Voltametrías cíclicas para soluciones de \fc\space de distinta concentración y, (b) curva de calibración para dichas concentraciones. Todos los voltagramas fueron tomadas a \SI{50}{\milli\volt\per\second} con contraelectrodo de Pt en una solución \SI{0.1}{\Molar} de NaCl y utilizando ECS como referencia.}
+		      	 \label{Fig:Fc}
+	      		 \end{figure}
+
+		 En la tabla \ref{tabla:sondas} se resumen las características y los resultados de las voltametrías cíclicas para cada una de las sondas modelo elegidas. Las variables calculadas fueron la diferencia de potenciales entre el pico de corriente anódico y catódico, de forma de evaluar la reversibilidad de la reacción y capacidad de transferencia electrónica de los electrodos y el coeficiente de difusión de una especie libre en un electrodo plano semiinfinito. Durante todo el desarrollo de la tesis se utilizaron estos resultados con ánimos de comparar los voltagramas sobre los electrodos desnudos y sobre los electrodos con la película mesoporosa.
+		  
+		  %Tabla resultados EQ
+		     \begin{table}[ht]
+		     \vspace*{0.5cm}
+	  		  \caption[Sondas electroquímicas]{Características de las sondas electroactivas utilizadas a lo largo de la tesis. Cálculo del coeficiente de difusión ($D$) para difusión en un plano simiinfinito a \SI{25}{\celsius}.}
+	  		  \begin{tabular}{>{\raggedright\arraybackslash}m{2.2cm}>{\centering\arraybackslash}m{2.3cm}>{\centering\arraybackslash}m{2.3cm}>{\centering\arraybackslash}m{1.5cm}>{\centering\arraybackslash}m{1.72cm}}
+	  		  \toprule
+			  \multirow{2}{*}{Sonda}  	& Carga especie  & Carga especie  & \multirow{2}{*}{$\Delta$E(mV)} & \multirow{2}{*}{$D$(cm$^2$s$^{-1}$)} \\
+			     		    & \hspace*{-0.79cm}reducida      & \hspace*{-0.85cm}oxidada  &	   & \\ \midrule
+	    	  \ferroferri	& \multirow{1}{*}{$4-$}  		& $3-$	     			   &  150  &  \num{2.0e-7}\\ \midrule
+	  		  \aminorutenio & $2+$							& $3+$					   &  80   &  \num{5.5e-6} \\ \midrule
+	  		  \raisebox{-.5\height}{\includegraphics[scale=0.5]{Esquemas/Fc.pdf}}   &  \hspace*{-0.29cm}0 & 1+ &  103 & \num{1.9e-6} \ \\   		 
+	  		  \bottomrule
+	    	  \end{tabular}
+	   		  \label{tabla:sondas}
+			  \end{table}
+		
+			\pagebreak			
