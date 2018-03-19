@@ -1,7 +1,7 @@
-Numero Eje	Angulo	Ru(ciclo1)	 Ru(ciclo25)	Ru(Ciclo50)
-1 Ea	18	72	72	72
-2 Ec	90	-83	-83	-83
-3 SZF	162	0.01	0.06	0.16
-4 SZFp	234	0.2	0.07	0.15
-5 SZFn	296	0.21	0.01	0.13
-6 Ea	18	72	72	72
+#Aca se normalizo el eje pontencial entre -400 y 400 mV para que entre en un eje entre 0 y 4. Se suma al potencial 400 y se divide por 200
+Numero Eje	Angulo	FeCN(ciclo1)	 FeCN(ciclo25)	FeCN(Ciclo50)
+1 		Ea		0		2.36		2.36			2.36
+3 		SZF		90		0.016		0.016			0.016
+4 		SZFp	180		0.200		0.200			0.200
+5 		SZFn	270		0.210		0.210			0.210
+6 		Ea		360		2.36		2.36			2.36
