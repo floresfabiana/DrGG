@@ -27,14 +27,13 @@ set key left Left reverse samplen 3 font ",14"   textcolor rgb "gray40" width 2
 	set grid noxtics front ls 11
     set grid ytics back ls 11
 #Coloca los nombre de los ejes
-	set ylabel "j / $\\mu$A.cm$^{-2}$"  font ",16" textcolor rgb "gray40" offset -2,0
+	set ylabel "$\\text{j}_p / \\text{j}^{\\text{Au}}_p$"  font ",16" textcolor rgb "gray40" offset -2,0
     set xlabel "Electrodo / ciclo 25"  font ",16" textcolor rgb "gray40" offset 0,-1.4
 
 #Cambio de aspecto
 #set size square 1,2.2
 #set size ratio 1.8
-set ytics 100
-set yrange[0:600]
+#set yrange[0:600]
 #Leyenda
 
 #Aspecto barras
@@ -59,4 +58,13 @@ set boxwidth 0.95 relative
 #set label 200 at 9.17,0.2 "294" font ",8" rotate by 90
 
 #Grafico
-plot 'histogramas-ciclos25-50.txt' using 2:xtic(1) lc 'gray20' title "Fe", 'histogramas-ciclos25-50.txt' using 4:xtic(1) lc 'orange' title "Fc", 'histogramas-ciclos25-50.txt' using 6:xtic(1) lc 'blue' fs pattern 1 title "ARu",
+plot 'histogramas-ciclos25-50.txt' using ($2/340):xtic(1) lc 'gray20' title "FeCN",\
+'histogramas-ciclos25-50.txt' using ($4/83):xtic(1) lc 'orange' title "FcOH",\
+'histogramas-ciclos25-50.txt' using ($6/168):xtic(1) lc 'blue' fs pattern 1 title "ARu",
+
+
+
+
+
+
+

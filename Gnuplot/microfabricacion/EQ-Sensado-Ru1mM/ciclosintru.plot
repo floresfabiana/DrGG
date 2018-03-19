@@ -8,7 +8,7 @@ set terminal tikz
 set output "ciclosintru.tikz" 
 
 #Saco la leyenda
-	set key top right Left sample -1 spacing 2.6 reverse font ",12" textcolor rgb "black" 
+	set key top right Left sample -1 spacing 2.6 reverse font ",12" textcolor rgb "black"  at 105,3
 
 #Saco el Borde
 	unset border
@@ -16,10 +16,10 @@ set output "ciclosintru.tikz"
 #Saco las marcas
   	unset tics
 
-set style line 1 lc rgb 'gray60' pt 9 lt 1 ps 0.75 lw 0.5 #Marron
-set style line 2 lc rgb 'red' pt 7 lt 1 ps 0.50 lw 2.5 #ROjo
-set style line 3 lc rgb 'blue' pt 5 lt 1 ps 0.5 lw 1 #Azul
-set style line 5 lc rgb 'black' pt 13 lt 1 ps 0.75 lw 1 #Azul
+set style line 1 lc rgb 'gray60' pt 9 lt 1 ps 0.9 lw 0.5 #Marron
+set style line 2 lc rgb 'red' pt 7 lt 1 ps 0.6 lw 2.5 #ROjo
+set style line 3 lc rgb 'blue' pt 1 lt 1 ps 0.9 lw 1 #Azul
+set style line 5 lc rgb 'black' pt 13 lt 1 ps 0.9 lw 1 #Azul
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
@@ -41,7 +41,7 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 0.75 lw 1 #Azul
 
 #Coloca los nombre de los ejes
 	set xlabel "N\'umero de ciclos" font ",16" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}^a_p / \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray40" offset -2,0
+	set ylabel "$\\text{j}_p / \\text{j}^{\\text{Au}}_p$"   font ",16" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -63,14 +63,15 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 0.75 lw 1 #Azul
 # "DHDP-3mM-ciclos-1-45.txt" u 3:4 ls 5, "DHDP-3mM-ciclos-1-45.txt" u 2:5 ls 5, \
 # "DHDP-3mM-ciclos-45-90.txt" u 3:4 ls 5, "DHDP-3mM-ciclos-45-90.txt" u 2:5 ls 5, \
 
-f(x)=168
+#f(x)=168
+f(x)=1
 
 plot [0:125] f(x) w p ls 2 title "Au" ,\
-"APTES-1mM-ciclos-1-45.txt" u 1:($5/0.0314) ls 3 title "SZF$^N_1$", \
-"APTES-1mM-ciclos-45-90.txt" u ($1+45):($5/0.0314) ls 3 notitle, \
-"APTES-1mM-ciclos-90-135.txt" u ($1+90):($5/0.0314) ls 3 notitle, \
-"DHDP-3mM-ciclos-1-45.txt" u 1:($5/0.0314) ls 5 notitle, \
-"DHDP-3mM-ciclos-45-90.txt" u ($1+45):($5/0.0314) ls 5 title "SZF$^P_3$",\
-"Zr-Meso-Bis.txt" u 1:($5/0.0314*1.15) ls 1 title "SZF"
+"APTES-1mM-ciclos-1-45.txt" u 1:($5/0.0314/168) ls 3 title "SZF$^N_1$", \
+"APTES-1mM-ciclos-45-90.txt" u ($1+45):($5/0.0314/168) ls 3 notitle, \
+"APTES-1mM-ciclos-90-135.txt" u ($1+90):($5/0.0314/168) ls 3 notitle, \
+"DHDP-3mM-ciclos-1-45.txt" u 1:($5/0.0314/168) ls 5 notitle, \
+"DHDP-3mM-ciclos-45-90.txt" u ($1+45):($5/0.0314/168) ls 5 title "SZF$^P_3$",\
+"Zr-Meso-Bis.txt" u 1:($5/0.0314*1.15/168) ls 1 title "SZF"
 
 
