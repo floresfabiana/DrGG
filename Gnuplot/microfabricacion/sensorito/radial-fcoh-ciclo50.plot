@@ -25,6 +25,7 @@ set grid polar 30
 #Rangos, restrinjo todo entre -4 y 4 que son los valores tipicos de j/jAu
 set xrange [-4.5:4.5]
 set yrange [-4.5:4.5] 
+set rrange [0:4] 
 
 #Saco todo eje y marca
 set xtics scale 0 #"remove" the tics so that only the y tics are displayed

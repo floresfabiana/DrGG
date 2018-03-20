@@ -413,70 +413,18 @@
    		
 
 			\begin{figure}[h!]
-		 	\begin{subfigure}[t]{0.495\textwidth}
+			\begin{subfigure}[t]{0.329\textwidth}
+		 	 \includegraphics[width=\textwidth]{Graficos/histogramas-ciclo1.pdf}
+		 	  \end{subfigure}
+		 	\begin{subfigure}[t]{0.329\textwidth}
 		 	 \includegraphics[width=\textwidth]{Graficos/histogramas-ciclo25.pdf}
 		 	  \end{subfigure}
-			\begin{subfigure}[t]{0.495\textwidth}
+			\begin{subfigure}[t]{0.329\textwidth}
 		 	   \includegraphics[width=\textwidth]{Graficos/histogramas-ciclo50.pdf}
 		 	   \end{subfigure}
 		      	\caption[Corriente de pico en distintos ciclos voltamperometricos]{Densidad de corriente anódica máxima en los ciclos 25 y 50 para cada uno de los electrodos del sensor. Las sondas probadas fueron \fc \SI{1}{\milli\Molar}, \fe\space \SI{1}{\milli\Molar} y \ru\space \SI{1}{\milli\Molar} en KCl \SI{100}{\milli\Molar} a una velocidad de barrido de \SI{50}{\milli\volt\per\second}.}
 		      	\label{fig:barras}
 		      	\end{figure}
-
-\section{Más allá de la microfabración}
-	
-	  Esta sección tiene por motivación mostrar y ejemplificar muy brevemente algunos experimentos, reflexiones y pruebas de concepto derivadas del presente trabajo. Estos experimentos generan nuevas incógnitas y abren líneas de investigación y desarrollo en el área de sensores. No es el propósito de este apartado realizar demostraciones formales o hacer discusiones profundas de los resultados, sino mostrar los avances y conceptos surgidos de los conocimientos y experiencia adquieridas durante esta tesis con perspectivas a futuros desarrollos e investigaciones.
-
-	\subsection{Integración en microchips de silicio}
-
-	  La ventaja de fabricar electrodos por técnicas de microelectrónica es indiscutible. Hay muchas fabricas a nivel global de microsistemas (MEMS) y circuitos integrados (IC) (conocidas en ingles simplemente como \textit{foundry}). Dichas fabricadas elaboran sus productos con procesos estándar de fabricación, por cada nodo tecnológico, con reglas de diseño claras, rígidas y bien establecidas. La integración de sensores en circuitos integrados no es algo nuevo, y, dado el nivel de integración de la electrónica de las últimas décadas, es algo que siempre se debe tener en cuenta en la etapa de prototipado de sensores.\cite{Wang2012,Liu1993,Novell2012,Yu2013,Sarkar2014} Debido al desarrollo y optimización de los procesos para depositar \pdm\space a bajas temperaturas se podría fácilmente integrar los sensores EQ en un solo chip con potenciostato integrado en la lógica del IC.
- 	
- 	\subsection{Sensores y electrodos flexibles e impresos}
-
- 	  Se realizaron pruebas conceptuales sobre impresión de mesoporosos, con el objetivo de realizar cualquier diseño arbitrario en la película mesoporosas. Se usaron los soles como tintas y se imprimieron sobre diversos sustratos, además, de esta forma se podrían imprimir \pdm\space de igual o distintos óxidos en un mismo sustrato. Se trabajó en colaboración con el grupo del Dr. Baumann, del \textit{Department of Digital Printing and Imaging Technology} de la \textit{Technische Universität Chemnitz} de Alemania (\url{https://www.tu-chemnitz.de/mb/DigiTech/professorship.php}). Allí imprimieron soles modificados con etilenglicol con un equipo de inyección de tinta. Los procesos a baja temperatura desarrollos en este trabajo, no solo hacen que disminuya la difusión entre las capas metálicas, permitiendo la integración en chips de silicio, sino que permite depositar las \pdm\space sobre sustratos térmicamente menos estables. Los resultados fueron sistemas porosos de soles de SiO$_2$, estructurados con F127 impresos sobre silicio, oro, microelectrodos y poliestireno de alto impacto (PAI). Se muestran, en la figura \ref{fig:flexibles}, patrones cuadrados impresos sobre una diversidad de sustratos variando los parámetros de impresión, con el objetivo de encontrar las condiciones óptimas para una correcta transferencia.
-
- 		%imagenes Meso en Au, Meso en Silicio, Meso en Au con patrones, SEM
- 	  		\begin{figure}[th]
-			 	   	    \centering
-			 	   	    \begin{subfigure}[t]{0.495\textwidth}
-			        	\includegraphics[width=\textwidth]{Imagenes/Inkjet-02-escala-fondo.jpg}
-			        	\caption{\pdmF\space impresos sobre oblea de silicio.}
-			       		\end{subfigure}
-			     		\centering
-			     		\begin{subfigure}[t]{0.495\textwidth}
-			     		\includegraphics[width=0.85\textwidth]{Imagenes/Inkjet-05-escala-fondo.jpg}
-			    		\caption{\pdmF\space impresos sobre oblea de silicio con un depósito de Ti\textbar Au.}
-			    		\end{subfigure}
-			    		\centering
-			    		\begin{subfigure}[t]{0.495\textwidth}
-			         	\includegraphics[width=0.80\textwidth]{Imagenes/Inkjet-04-escala-fondo.jpg}
-			        	\caption{\pdmF\space impresos sobre microelectrodos.}
-			        	\end{subfigure}
-			        	\centering
-			        	\begin{subfigure}[t]{0.495\textwidth}
-			     		\includegraphics[width=\textwidth]{Imagenes/Inkjet-03-escala-fondo.jpg}
- 			        	\caption{\pdmF\space impresos en Ti\textbar	Au en soporte de poliestireno de alto impacto.}
-			        	\end{subfigure}
-			     		\caption[Electrodos impresos]{Fotografías de patrones impresos de óxido de silicio mesoporoso por inyección de tinta. Los poros fueron moldeados con F127 y la condensación se realizó por el método de alto vacío. La extracción se llevó a cabo con 2-propanol y agua.}
-			     		\label{fig:flexibles}
-			     	   	\end{figure}
-			     	  
- 	  Con la expectativa de poder realizar todo el proceso de fabricación de los sensores con técnicas de impresión, se muestran en la figura \ref{fig:tintas}, electrodos impresos por inyección con tintas a base a nanotubos de carbono desarrolladas en el INTI-CMNB. Actualmente estas tintas están en desarrollo y en proceso de optimización para uso en sensores EQ y enzimáticos\cite{longinotti2010,Mass2016}. En la figura \ref{fig:tintas} también se muestra la respuesta EQ para \fe\space \SI{2.5}{\nm}, si bien no es la misma que en electrodos de Au, es una respuesta reproducible y confiable. Se prevé próximamente imprimir ambos componentes en un solo sustrato, los electrodos y películas delgadas mesoporosos.
-
- 	  	%imagenes flexo + voltagrama
- 	  			\begin{figure}[th]
-		 	   	    \begin{subfigure}[t]{0.25\textwidth}
-			       	\includegraphics[width=\textwidth]{Imagenes/NTC1-fondo.jpg}
-			   		\end{subfigure}
-			   		\begin{subfigure}[t]{0.25\textwidth}
-			       	\includegraphics[width=\textwidth]{Imagenes/NTC2-fondo.jpg}
-			   		\end{subfigure}
-			   		\begin{subfigure}[t]{0.43\textwidth}
-			   	    \includegraphics[width=\textwidth]{Graficos/TintaNTC-FeCN2-5mM.pdf}
-			   		\end{subfigure}
-					 \caption[Electrodos de NTC flexibles.]{Electrodos impresos por inyección de tinta en base a nanotubos de carbono donde se muestra la flexibilidad de la tinta y su respuesta electroquímica con una sonda de \fe\space \SI{2.5}{\milli\Molar} en solución de KCl \SI{100}{\milli\Molar} a \SI{50}{\milli\volt\per\second}.}
-					 \label{fig:tintas}	
-				     \end{figure}
  
 \section{Conclusiones parciales}
 
