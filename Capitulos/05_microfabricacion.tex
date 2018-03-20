@@ -362,28 +362,28 @@
 
 \section{Sensores de respuesta selectiva}
 
-	Una vez hallado el motivo de la respuesta electroquímica no deseada, surgieron, naturalmente, dos vías de acción: 1) cambiar el material de los electrodos por Au o Pt de mayor calidad, y 2) sustituir o evitar la etapa de calcinación en la condensación y extracción de películas delgadas mesoporosas.
+	Una vez hallado el motivo de la respuesta electroquímica no deseada, surgieron, naturalmente, dos vías de acción: 1) cambiar el material de los electrodos por Pt u Au de mayor calidad, y 2) sustituir o evitar la etapa de calcinación en la condensación y extracción de películas delgadas mesoporosas.
 
-	Ambas alternativas fueron puestas en prácticas con resultados exitosos. Se consideró la segunda opción mucho mas rica, tanto científica como tecnológicamente, ya que permitió minimizar los procesos difusivos y, a su vez, desarrollar un método de condensación y extracción para sintetizar películas delgadas mesoporosas de óxido de silicio a bajas temperaturas (\SI{130}{\celsius}). El desarrollo de los métodos alternativos ya fue extensamente tratado en el capítulo \ref{chap:Mesoporosos}.
+	Ambas alternativas fueron puestas en prácticas con resultados exitosos. Se consideró la segunda opción mucho mas rica, tanto científica como tecnológicamente, ya que permite minimizar los procesos difusivos, disminuir costos y, a su vez, desarrollar un método de condensación y extracción para sintetizar películas delgadas mesoporosas de óxido de silicio a temperaturas menores a \SI{130}{\celsius}). En este tópico, la literatura especializada es escasa, y dicho desarrollo condujo al estudio de las matrices porosas resultantes, de la condensación de la fase inorgánica y de la extracción de la fase orgánica, así como también al estudio sobre la termodinámica y la cinética de transporte con sondas electroquímicas, temas tratados extensamente en los capítulos  \ref{chap:Mesoporosos} y \ref{chap:Electroquimica}. 
 
-			\begin{figure}[ht!]
+    En esta sección se capitalizan las herramientas y conocimientos adquiridos sobre estos temas aplicados al uso de los multisensores, conceptualizando el uso de electrodos con diferentes respuestas que funcionan cooperativamente en la detección de las sonda modelos que se utilizaron a lo largo del trabajo de tesis. 
+
+	Sobre un multisensor fabricado a partir del diseño <<calesita>>, se depositaron películas delgadas mesoporosas de Si$_{0.9}$Zr$_{0.1}$O$_2$ por el método de alto vacío (Vac\pdmZ). Uno de los seis electrodos de trabajo se enjuagó con un hisopo con etanol para remover la película de óxido. Luego se llevaron a cabo, individualmente sobre dos electrodos, las funcionalizaciones con DHDP y APTES descritas en la sección \ref{sub:funcionalizaci_n_de_las_pdm}, pág. \pageref{sub:funcionalizaci_n_de_las_pdm}. Sobre ese mismo sensor se tomaron las mediciones electroquímicas, de las cuales se pueden obtener cuatro respuestas por sensor: la del electrodo de Au sin recubrir, el recubierto con Vac\pdmZ\space y los dos recubiertos con Vac\pdmZ\space y funcionalizados con APTES y DHDP (Vac\pdmZ$^N_1$\space y  Vac\pdmZ$^P_3$). El diagrama de la figura \ref{fig:sensor-calesita} representa en forma esquemática esta situación mostrando el tipo de recubrimiento de cada electrodo y las posibles respuesta que podrían obtenerse al colocar un analito electroactivo. 
+
+	En las próximas secciones se analizará la respuesta del multisensor para cada una de las sondas ensayadas y se discutirán algunas formas de análisis multivariable para el tratamiento de los datos. 
+
+
+			\begin{figure}[h!]
 		 	       	\begin{center}
 		 	       	\includegraphics[width=\textwidth]{Esquemas/sensorito-esquema.pdf}
-		        	\caption[Esquema de sensores EQ selectivos]{Microscopía óptica de un sensor con multiples electrodos recubiertos con películas delagadas mesoporosas de Si$_{0.9}$Zr$_{0.1}$O$_2$. Uno se dejó sin recubrir mientras que dos fueron funciolizados con DHDP y APTES respectivamente. A modo ilustrativo se muestra un esquema de la estructura de las películas en cada caso y una posible respuesta EQ para cada uno de ellos.}
+		        	\caption[Esquema de sensores EQ selectivos]{Microscopía óptica de un sensor con múltiples electrodos recubiertos con películas delagadas mesoporosas de Si$_{0.9}$Zr$_{0.1}$O$_2$. Uno se dejó sin recubrir mientras que dos fueron funciolizados con DHDP y APTES respectivamente. A modo ilustrativo se muestra un esquema de la estructura de las películas en cada caso y una posible respuesta EQ para cada uno de ellos.}
 		         	\label{fig:sensor-calesita}
 		         	\end{center}
 		     		\end{figure}
 
-    En esta sección se aplican las herramientas y conocimientos desarrollados en los capítulos \ref{chap:Mesoporosos} y \ref{chap:Electroquimica} y se conceptualiza cómo utilizar los electrodos en su conjunto, para que funcionan cooperativamente en la detección de las sonda modelos que se utilizaron en la tesis. 
-
-	Sobre electrodos de Au microfabricados (diseño <<calesita>>), se depositaron películas delgadas mesoporosas de Si$_{0.9}$Zr$_{0.1}$O$_2$ por el método de alto vacío (Vac\pdmZ). Uno de los seis electrodos de trabajo se enjuagó con un hisopo con etanol para remover la película de óxido. Luego se llevaron a cabo, individualmente sobre dos electrodos, las funcionalizaciones con DHDP y APTES descritas en la sección \ref{sub:funcionalizaci_n_de_las_pdm}, pág. \pageref{sub:funcionalizaci_n_de_las_pdm}. Sobre ese mismo sensor se llevaron a cabo las mediciones electroquímicas, de las cuales se pueden obtener cuatro respuestas por sensor: la del electrodo de Au sin recubrir, el recubierto con Vac\pdmZ\space y los dos recubiertos con Vac\pdmZ\space y funcionalizados con APTES y DHDP (Vac\pdmZ$^N_1$\space y  Vac\pdmZ$^P_3$). El diagrama de la figura \ref{fig:sensor-calesita} representa en forma esquemática esta situación mostrando en forma pictórica el recubrimiento de cada electrodo y las hipotéticas respuesta que podrían al colocar un analito electroactivo. En las próximas secciones se analiza la respuesta del sensor para cada una de las sondas ensayadas.
-
-
 	\subsection{Respuesta para \ru, \fe\space y \fc}	
 
-		Se analizó la respuesta electroquímica de \aminorutenio, \ferroferri\space y \ferroceno\space para cada uno de los electrodos de un sensor EQ similar al mostrado en el esquema de la figura \ref{fig:sensor-calesita}. La medición consiste en ciclar electroquímicamente, en un rango de potencial adecuado para cada sonda, utilizando cada uno de los electrodos de un mismo sensor. Una vez que se colectaron los $n$ voltagramas se extrae de cada uno de ellos el pico de máxima de corriente anódica, luego se grafica dicho valor en función de la cantidad de ciclos. 
-
-
+		Se analizó la respuesta electroquímica de \aminorutenio, \ferroferri\space y \ferroceno\space para cada uno de los electrodos de un multisensor EQ similar al mostrado en el esquema de la figura \ref{fig:sensor-calesita}. La medición consiste en ciclar electroquímicamente, en un rango de potencial adecuado para cada sonda, utilizando cada uno de los electrodos de un mismo multisensor. Una vez que se colectaron los $n$ voltagramas se extrae de cada uno de ellos el pico de máxima densidad de corriente anódica, luego se gráfica dicho valor en función de la cantidad de ciclos normalizado por la densidad de corriente del electrodo de Au desnudo $j_p/j_p^\text{Au}$.
 
 		\begin{figure}[b!]
 		 	\begin{subfigure}[t]{0.495\textwidth}
@@ -392,7 +392,7 @@
 			\begin{subfigure}[t]{0.495\textwidth}
 		 	    \includegraphics[width=\textwidth]{Graficos/ciclosintfecn.pdf}
 			\end{subfigure}
-		      	\caption[Corriente de pico de \fc\space y \fe\space en función del número de ciclos]{Corriente de pico anódico para \fc\space \SI{1}{\milli\Molar} (izquierda) y  \fe\space \SI{1}{\milli\Molar} (derecha) en función de la cantidad de ciclos. Los datos fueron tomados a una velocidad de barrido de \SI{50}{\milli\volt\per\second} en solución de KCl \SI{100}{\milli\Molar} en un sensor compuesto por cuatro electrodos diferentes: de Au (Au), recubierto con una pelicula mesoporosa sin funcionalizar (\pdmZ), con una funcionalizada con DHDP (\pdmZ$^P_3$) y con una funcionalizada con APTES (\pdmZ$^N_1$).}
+		      	\caption[Corriente de pico de \fc\space y \fe\space en función del número de ciclos]{Corriente de pico anódico normalizada para \fc\space \SI{1}{\milli\Molar} (izquierda) y  \fe\space \SI{1}{\milli\Molar} (derecha) en función de la cantidad de ciclos. Los datos fueron tomados a una velocidad de barrido de \SI{50}{\milli\volt\per\second} en solución de KCl \SI{100}{\milli\Molar} en un multisensor compuesto por cuatro electrodos diferentes: de Au (Au), recubierto con una pelicula mesoporosa sin funcionalizar (\pdmZ), con una funcionalizada con DHDP (\pdmZ$^P_3$) y con una funcionalizada con APTES (\pdmZ$^N_1$).}
 		      	\label{fig:ciclos-fe-fcoh}
 		      	\end{figure}
 		     		
@@ -440,3 +440,53 @@
 	Se analizaron las respuestas amperométrica de cada electrodo de este sensor en función del ciclado electroquímico, obteniéndose patrones de respuesta para cada una de las sondas en función de la interacción entre la sonda y la película. 
 	
 	Finalmente se exploraron algunas técnicas de depósito mediante impresión por inyección de tinta con el objetivo de poder transferir algún diseño a las películas mesoporosas.
+
+	\pagebreak
+	\begin{figure}[t!]
+			   	    \begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[width=\textwidth]{Graficos/radial-ru-ciclo1.pdf}
+			        	%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{10}{\milli\Molar}.}
+			         	%\label{fig:Ru10mM}
+			     		\end{subfigure}
+			   	    \begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[width=\textwidth]{Graficos/radial-ru-ciclo25.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{6}{\milli\Molar}.}
+			         	%\label{fig:Ru63mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[width=\textwidth]{Graficos/radial-ru-ciclo50.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{3}{\milli\Molar}.}
+			         	%\label{fig:Ru315mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[width=\textwidth]{Graficos/radial-fecn-ciclo1.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{1.5}{\milli\Molar}.}
+			         	%\label{fig:Ru1575M}
+			     		\end{subfigure}
+		 	   	   	\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[width=\textwidth]{Graficos/radial-fecn-ciclo25.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{0.6}{\milli\Molar}.}
+			         	%\label{fig:Ru063mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[width=\textwidth]{Graficos/radial-fecn-ciclo50.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{0.3}{\milli\Molar}.}
+			         	%\label{fig:Ru0315mM}
+			     		\end{subfigure}
+			     	\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[width=\textwidth]{Graficos/radial-fcoh-ciclo1.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{60}{\micro\Molar}.}
+			         	%\label{fig:Ru0063mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\hspace*{0.5mm}\includegraphics[width=\textwidth]{Graficos/radial-fcoh-ciclo25.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{30}{\micro\Molar}.}
+			         	%\label{fig:Ru00315mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\hspace*{1mm}\includegraphics[width=\textwidth]{Graficos/radial-fcoh-ciclo50.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{15}{\micro\Molar}.}
+			         	%\label{fig:Ru001575mM}
+			     		\end{subfigure}	
+		     		\label{fig:preconcentraciones}
+		      	   	\end{figure} 
