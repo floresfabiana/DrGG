@@ -100,18 +100,18 @@
 			    	  \label{tabla:soles}
 			   		  \end{table}
 
-	\vspace*{-0.7cm}\subsection{Depósitos de las películas delgadas mesoporosas}\label{sec:deposito_pdm}
+	\subsection{Depósitos de las películas delgadas mesoporosas}\label{sec:deposito_pdm}
 
 			Las películas mesoporosas utilizadas en esta tesis fueron depositadas en el Laboratorio de Fotolitografía del INTI-CMNB por \textit{spin-coating}. Dicha técnica consiste en 
 			dispensar el sol sobre el sustrato, el cual está sujeto a un portamuestras que a su vez se encuentra acoplado a un cabezal rotatorio. Al hacer rotar el cabezal, se aplica sobre el líquido una fuerza proporcional a la velocidad angular, dispersando el sol para formar un recubrimiento homogéneo sobre la muestra. El espesor del depósito está regulado, entre otras variables, por la velocidad del angular y la viscosidad del sol.
 
 			Como sustrato para realizar los depósitos se utilizaron: vidrio, silicio, oro sobre silicio, microelectrodos y sustratos poliméricos como  polimetilmetacrilato (PMMA) y poliestireno de alto impacto (PAI). Cada uno de ellos fue escogido para una función particular (p. ej. sustrato para reacciones electroquímicas) o por alguna característica distintiva (p. ej. transparente en el IR). En la tabla \ref{tabla:sustratos} se agrupan los sustratos utilizados y se resumen algunas características y funciones destacadas.
 
-			Las dimensiones de las muestras fueron típicamente de \SI{1x1}{\cm} a \linebreak \SI{2x2}{\cm}, aunque la técnica permite depositar películas continuas de hasta \SI{15}{cm} de diámetro. En algunos casos, para obtener lotes de 32 o 46 sensores (dependiendo del diseño), se utilizaron obleas de silicio de \SI{10}{\cm} de diámetro. Antes de hacer el depósito, el sol se pasa a través de un filtro de jeringa de nailon de \SI{0.45}{\um} (\textit{GAMAFIL}) para evitar la presencia de partículas que puedan generar discontinuidades y/o <<cometas>> en los depósitos\cite{Franssila2004}. Luego, para dispensar el sol en el sustrato, se utilizaron pipetas tipo Pasteur o pipetas automáticas dependiendo del volumen requerido, el cual varió de 80 a \SI{100}{\uL.\cm^{-2}}. 
+			Las dimensiones de las muestras fueron típicamente de \SI{1x1}{\cm} a \linebreak \SI{2x2}{\cm}, aunque la técnica permite depositar películas continuas de hasta \SI{15}{cm} de diámetro. En la mayoría de los casos, para obtener lotes de 32 o 46 sensores (dependiendo del diseño), se utilizaron obleas de silicio de \SI{10}{\cm} de diámetro. Antes de hacer el depósito, el sol se pasa a través de un filtro de jeringa de nailon de \SI{0.45}{\um} (\textit{GAMAFIL}) para evitar la presencia de partículas que puedan generar discontinuidades y/o <<cometas>> en los depósitos\cite{Franssila2004}. Luego, para dispensar el sol en el sustrato, se utilizaron pipetas tipo Pasteur o pipetas automáticas dependiendo del volumen requerido, el cual varió de 80 a \SI{100}{\uL.\cm^{-2}}. 
 
 			Las condiciones del laboratorio durante el depósito se mantuvieron en \SI{25}{\celsius} y a una HR entre 30\% y 50\%. Una vez dispensado el sol, se da comienzo a la rotación que dispersa la solución de manera homogénea sobre el sustrato y, a su vez, la evaporación del solvente promueve la formación del cristal líquido por el mecanismo de AEIE\cite{Brinker1999}.
 
-				 \begin{table}[ht!]
+				 \begin{table}[t!]
 			  		   \caption[Sustratos utilizados para el depósito de \pdm]{Sustratos utilizados para el depósito de \pdm.} 
 			  		   \begin{tabular}{>{\raggedright\arraybackslash}m{2.4cm}>{\raggedright\arraybackslash}m{2.5cm}>{\raggedright\arraybackslash}m{2cm}>{\raggedright\arraybackslash}m{3.55cm}} 
 			  		   \toprule
@@ -129,33 +129,28 @@
 			    	   \label{tabla:sustratos}
 			   		   \end{table}
 
-			Los mejores resultados se obtienen aplicando al inicio una rampa de velocidad moderada para formar un depósito relativamente grueso y uniforme. Una vez formada esta capa uniforme se lleva a la velocidad final para favorecer la corriente de aire sobre el depósito y llegar al espesor final. Bajo estas condiciones el espsor puede ser calculado por la ecuación \ref{eq:espesor_pdm}\cite{zhang2010}, donde $d(t)$ es el espesor en función del tiempom.......
+			Los mejores resultados se obtienen aplicando al inicio una rampa de velocidad moderada para formar un depósito relativamente grueso y uniforme. Una vez formada esta capa uniforme se lleva a la velocidad final para llevarlo al espesor final requerido y para favorecer la evaporación del solvente mediante la corriente de aire generada sobre el depósito. Bajo estas condiciones el espesor puede ser calculado por la ecuación \ref{eq:espesor_pdm}\cite{zhang2010}, donde $d(t)$ es el espesor en función del tiempo, $d_0$ es el espesor a $t=0$, $\rho$ es la densidad del sol, $\eta$ la viscosidad y $\omega$ la velocidad angular, la cual es para los casos tratados en este trabajo la principal variable para ajustar el espesor de los depósitos.\cite{sahu2009,zhang2010a,emslie1958}
 
+			   		\begin{equation}
+						d(t)=\dfrac{d_0}{\sqrt{1+\dfrac{4 \rho \omega^2 d_0^2 t}{3 \eta}}}
+						\label{eq:espesor_pdm}
+					\end{equation}
 
-			   		   \begin{figure}[b!]
+			En la mayoría de los caso dicha ecuación es difícil de aplicar en la práctica y en general se establece relación empírica entre el espesor resultante y las condiciones experimentales.
+			En este trabajo se  optimizaron las rampas de velocidad y aceleración para obtener \pdm\space con espesores entre 150 y \SI{300}{\nm}\cite{Meyerhofer1978,Hall1998,Brinker1990}. Los esquemas aplicados se muestran en gráfico de la figura \ref{fig:rampa-spin}.			
+
+			 El equipo utilizado fue un \textit{Suss MicroTec Delta 20BM}, el cual consiste en un cabezal rotatorio con control de aceleración (0 a  \SI{1000}{\minute^{-1}.\second^{-1}}) y velocidad angular (0 a \SI{10000}{\minute^{-1}}). Posee portamuestras con entrada de vacío para sujetar las muestras y de diferentes tamaños para adaptarse a sustratos de diversos tamaños y geometrías (figura \ref{fig:spin}).   		   
+
+			 	\clearpage
+			 	\begin{figure}[th!]
 						 \begin{center}
 						 \includegraphics[width=0.80\textwidth]{Graficos/rotacion_meso.pdf}
-						 \caption[Parámetros de depósito para las \pdm]{Esquema con las rampas más frecuentes de aceleración, velocidad y tiempo utilizadas para el depósito de \pdm.}
+						 \caption[Parámetros de depósito para las \pdm]{Esquema con las rampas de velocidad de rotación o velocidad angular mas frecuentemente utilizadas para el depósito de \pdm. A mayor velocidad y mayor tiempo, menor es el espesor de los depósitos resultantes.}
 						 \label{fig:rampa-spin}
 						 \end{center}
 						 \end{figure}
 
-					\begin{equation}
-						d(t)=\frac{h_0}{\sqrt{1+\frac{4 \rho \omega^2 h_0^2 t}{3 \eta}}}
-						\label{eq:espesor_pdm}
-					\end{equation}
-
-			Dicha ecuación no siempre es fácil de aplicar en la práctica y en general se establece relación entre el espesor resultante y las condiciones experimentales.
-			En este trabajo se  optimizaron las rampas de velocidad y aceleración para obtener \pdm\space con espesores entre 150 y \SI{300}{\nm}\cite{Meyerhofer1978,Hall1998,Brinker1990}. Los esquemas aplicados se muestran en gráfico de la figura \ref{fig:rampa-spin}.			
-
-
-			 	   
-
-			
-			 El equipo utilizado fue un \textit{Suss MicroTec Delta 20BM}, el cual consiste en un cabezal rotatorio con control de aceleración (0 a  \SI{1000}{\minute^{-1}.\second^{-1}}) y velocidad angular (0 a \SI{10000}{\minute^{-1}}). Posee múltiples portamuestras para sustratos de diferentes tamaños con entrada de vacío para sujetar las muestras (figura \ref{fig:spin}).   		   
-
-
-				\begin{figure}[t!]
+				\begin{figure}[th!]
 					  \begin{center}
 					  \includegraphics[width=\textwidth]{Imagenes/Spin.jpg}
 					  \caption[Equipo para el depósito de películas delgadas, \textit{spin-coater}]{\textit{Spin-coater} ubicado en el Laboratorio de Fotolitografía del INTI-CMNB utilizado para el depósito de las películas delgadas mesoporosas, Marca \textit{Suss MicroTec}, modelo \textit{Delta 20BM}.}
@@ -165,15 +160,15 @@
 	
 	\subsection{Métodos de condensación y extracción}\label{sec:cond_y_extr}
 
-		Una vez realizado el depósito, se debe conservar la estructura del cristal líquido obtenido, y evitar el deterioro durante la eliminación del surfactante. Para ello se estabiliza la película durante \SI{1}{\hour} en cámara de humedad controlada a una HR constante de 50\%. Para mantener dicho valor de humedad se utilizó una solución saturada de Ca(NO$_3$)$_2$.5H$_2$O (\textit{Biopack}). Controlar la presión parcial de agua (P$_{\text{H}_2\text{O}}$) permite optimizar el grado de condensación del óxido y ayuda a la separación de fases entre el agente moldeante y el óxido\cite{Crepaldi2003}. El proceso de estabilización y condensación del óxido continúa con un calentamiento en plancha calefactora, (\textit{Cimarec}) una hora a \SI{60}{\celsius} y una hora más a \SI{130}{\celsius}\cite{Crepaldi2003,Crepaldi2002a}. 
+		Una vez realizado el depósito, se debe conservar la estructura del cristal líquido obtenido y evitar el deterioro durante la eliminación del surfactante. Para ello se estabilizó la película durante \SI{1}{\hour} en cámara de humedad controlada a una HR constante de 50\%. Para mantener dicho valor de humedad se utilizó una solución saturada de Ca(NO$_3$)$_2$.5H$_2$O (\textit{Biopack}). Controlar la presión parcial de agua (P$_{\text{H}_2\text{O}}$) permite optimizar el grado de condensación del óxido y ayuda a la separación de fases entre el agente moldeante y el óxido\cite{Crepaldi2003}. El proceso de estabilización y condensación del óxido continúa con un calentamiento en plancha calefactora (\textit{Cimarec}) una hora a \SI{60}{\celsius} y una hora más a \SI{130}{\celsius}\cite{Crepaldi2003,Crepaldi2002a}. 
 				
-		Posteriormente a la estabilización de la película se experimentaron varios tratamientos para completar el proceso de condensación de la fase inorgánica y extraer el surfactante para dar lugar a la película nanoporosa, a saber:
+		Posteriormente a la estabilización de la película se experimentaron varios tratamientos pos-depósito para completar el proceso de condensación de la fase inorgánica y extraer el surfactante para dar lugar finalmente a la película nanoporosa. A continuación se enumeran y describen brevemente los métodos ensayados:
 
 				\begin{itemize}
 
 				\item \textit{Calcinación.} Este es el proceso clásico en el cual se somete a la película a una temperatura de \SI{350}{\celsius} durante \SI{2}{\hour} con una rampa de \SI{1}{\celsius.\minute^{-1}} (Horno \textit{Indef 337}). De esta forma se condensa el óxido, se elimina el surfactante y se minimiza el daño de la estructura tridimensional de la red nanoporosa \cite{Crepaldi2003}.
 
-				\item \textit{Condensación ácida.} En este método se busca promover la condensación de la matriz inorgánica mediante la exposición de las películas a una atmósfera de vapores de HCl \cite{Doshi2000a}. El arreglo para tal fin consiste en sujetar las muestras al fondo de un vaso de precipitados y colocarlo invertido sobre un cristalizador con HCl concentrado (\textit{Biopack}) durante \SI{10}{\minute}. 
+				\item \textit{Condensación ácida.} En este método se busca promover la condensación de la matriz de sílice mediante la exposición de las películas a una atmósfera de vapores de HCl \cite{Doshi2000a}. El arreglo para tal fin consiste en sujetar las muestras al fondo de un vaso de precipitados y colocarlo invertido sobre un cristalizador con HCl concentrado (\textit{Biopack}) durante \SI{10}{\minute}. 
 
 				\item \textit{Condensación alcalina.} Al igual que el método anterior, se busca promover la condensación del óxido cambiando las condiciones del entorno químico, en este caso someter las películas a una atmósfera de pH alcalino generada con vapores de NH$_3$ (\textit{Biopack}) \cite{Soler-Illia2012,Soler-Illia2011}. El armado experimental fue igual que el descripto para el método ácido.
 
@@ -193,17 +188,13 @@
 						  \end{center}
 						  \end{figure}
     	
-    	\vspace*{-0.3cm}
-	
 	\subsection{Funcionalización de las \pdm}\label{sub:funcionalizaci_n_de_las_pdm}
 	
-		Se realizaron una serie de reacciones químicas con el propósito de funcionalizar las paredes de los poros de la \pdm\space y con el objetivo de conferir a cada electrodo, de un mismo sensor, alguna característica distintiva. Las funcionalizaciones se llevaron a cabo sobre películas mixtas Si$_{0.9}$Zr$_{0.1}$O$_2$ sintetizadas por el método de alto vacío. Esta elección está fundamentada en los buenos resultados obtenidos para estos sistemas, los cuales se discuten a lo largo de los capítulos \ref{chap:Mesoporosos} y \ref{chap:Electroquimica}.
+		Se realizaron una serie de reacciones químicas con el propósito de funcionalizar las paredes de los poros de la \pdm\space y con el objetivo de conferir a cada electrodo, de un mismo sensor, alguna característica distintiva, p. ej. aumentar carácter el hidrofóbico o hidrofílico, cambiar el estado de la carga eléctrica superficial, etc. Las funcionalizaciones se llevaron a cabo sobre películas mixtas Si$_{0.9}$Zr$_{0.1}$O$_2$ sintetizadas por el método de alto vacío. Esta elección está fundamentada en los buenos resultados obtenidos para estos sistemas, los cuales se discutirán a lo largo de los capítulos \ref{chap:Mesoporosos} y \ref{chap:Electroquimica}.
 
-		Las moléculas elegidas para incorporar a las \pdmZ\space se exponen en la tabla \ref{tabla:funciones}. Allí se indica la denominación, estructura, concentración y condiciones bajo las cuales se realizaron las reacciones y nomenclatura de los sistemas resultantes.
+		Las moléculas elegidas para incorporar a las \pdmZ\space se exponen en la tabla \ref{tabla:funciones}. Allí se indica la denominación, estructura, concentración y condiciones bajo las cuales se realizaron las reacciones así como la nomenclatura de los sistemas resultantes.
 
-		Las funcionalizaciones se llevaron a cabo en una región estrecha del sensor, de forma de abarcar un sólo electrodo por cada reacción. Para delimitar la zona de reacción se utilizó un recipiente de polipropileno con un sello contra la \pdm, evitando derrames laterales. Las condiciones experimentales fueron adaptaciones de las utilizadas por Angelomé\cite{Angelome2008} y Calvo\cite{Calvo20210}, utilizando como solvente tetrahidrofurano(\textit{Sintorgan}) para el DHDP(\textit{Fluka}) y tolueno(\textit{DORWIL}) para el APTES(\textit{Aldrich}). Se normalizó el tiempo y la temperatura de ambas reacciones con el propósito de poder funcionalizar dos o más electrodos en simultáneo. Una vez termianda la reacción se realizó un enjuague con abundante etanol seguido de secado con flujo de aire o N$_2$.
-
-		 \begin{table}[ht!]
+			\begin{table}[b!]
   		   \caption[Moléculas funcionalizantes]{Moléculas utilizadas para funcionalizar los electrodos, condiciones experimentales y nomenclatura.} 
   		   \begin{tabular}{>{\raggedright\arraybackslash}m{2cm}>{\centering\arraybackslash}m{4.2cm}>{\centering\arraybackslash}m{2.25cm}>{\centering\arraybackslash}m{2cm}} 
   		   \toprule
@@ -215,7 +206,9 @@
 		   	 & &\hspace*{-1.8mm}\SI{10}{\milli\Molar}\textbar\SI{80}{\celsius}\textbar\SI{20}{h}&\pdmZ$^N_{10}$\\ \\[-3mm] \bottomrule       	   
     	   \end{tabular}
     	   \label{tabla:funciones}
-   		   \end{table}
+   		   \end{table}	
+
+		Las funcionalizaciones se llevaron a cabo en una región estrecha del sensor, de forma de abarcar un sólo electrodo para cada reacción. Con el fin de delimitar la zona de reacción se utilizó un recipiente de polipropileno con un sello contra la \pdm, evitando derrames laterales. Las condiciones experimentales fueron adaptaciones de las utilizadas por Angelomé\cite{Angelome2008} y Calvo\cite{Calvo20210}, utilizando como solvente tetrahidrofurano(\textit{Sintorgan}) para el DHDP(\textit{Fluka}) y tolueno(\textit{DORWIL}) para el APTES(\textit{Aldrich}). Se normalizó el tiempo y la temperatura de ambas reacciones con el propósito de poder funcionalizar dos o más electrodos en simultáneo. Una vez terminada la reacción se realizó un enjuague con abundante etanol seguido de secado con flujo de aire o N$_2$. 
 
 	\subsection{Espectroscopía IR}\label{sec:IR}
 
@@ -225,7 +218,7 @@
 
 	\subsection{Ángulo de contacto}
 
-		Medir el ángulo de contacto (AC) de un líquido permite evaluar la energía superficial ($\gamma$). La teoría vincula el AC con $\gamma$ mediante el análisis del equilibrio químico de tres fases: La fase líquida de la gota, la fase gaseosa del aire y la sólida del sustrato. El valor del AC depende principalmente de la relación que existe entre las fuerzas adhesivas entre el líquido y el sólido y las fuerzas cohesivas del líquido. Se puede, así, cuantificar la mojabilidad de un líquido en aire, en una determinada superficie.\cite{findenegg1997} Tomando dos caso extremos, cuando la superficie interactúa fuertemente con el líquido y se moja, el AC se aproxima a $0^{\circ}$; en cambio si la superficie y el líquido se repelen, el AC tenderá a $180^{\circ}$. En términos de equilibrio termodinámico, el potencial químico de las tres fases  debe ser igual. Quien dió la primera descripción en términos de energías interfasiales fue Young en 1805\cite{young1805}, donde postuló que la energía superficial líquido-vapor ($\gamma$) por el coseno del angulo de contacto($\theta$) es igual a diferencia de las energías superficiales sólido-líquido $\gamma_{_{SL}}$ y sólido-vapor $\gamma_{_{SV}}$s. Tal relación se la conoce como ecuación de Young (ecuación \ref{eq:young}).
+		La medición del ángulo de contacto (AC) de un líquido sobre una superficie permite evaluar la energía superficial ($\gamma$) entre ambos. La teoría vincula el AC con $\gamma$ mediante el análisis del equilibrio químico de tres fases: La fase líquida de la gota, la fase gaseosa del aire y la sólida del sustrato. El valor del AC depende principalmente de la relación que existe entre las fuerzas adhesivas entre el líquido y el sólido y las fuerzas cohesivas del líquido. Se puede, así, cuantificar la mojabilidad de un líquido en aire, en una determinada superficie.\cite{findenegg1997} Tomando dos caso extremos, cuando la superficie interactúa fuertemente con el líquido y se moja, el AC se aproxima a $0^{\circ}$; en cambio si la superficie y el líquido se repelen, el AC tenderá a $180^{\circ}$. En términos de equilibrio termodinámico, el potencial químico de las tres fases  debe ser igual. Quien dió la primera descripción en términos de energías interfasiales fue Young en 1805\cite{young1805}, donde postuló que la energía superficial líquido-vapor ($\gamma$) por el coseno del angulo de contacto($\theta$) es igual a diferencia de las energías superficiales sólido-líquido $\gamma_{_{SL}}$ y sólido-vapor $\gamma_{_{SV}}$s. Tal relación se la conoce como ecuación de Young (ecuación \ref{eq:young}).
 
 			\begin{equation}
 				\gamma\, cos(\theta) = \gamma_{_{SL}} - \gamma_{_{SV}}
@@ -239,7 +232,7 @@
 
 		La elipsometría es una técnica de análisis óptico que se basa en el cambio del estado de polarización de la luz que incide sobre una o más películas delgadas soportadas sobre un material reflectivo. Dicho análisis es no destructivo y es útil para la determinación de espesores y constantes ópticas (índices de refracción y constante de absorción) de dichas películas.\cite{TompkinsHarlandG.1999,Rothen1945} El parámetro medido es el cociente complejo $\rho$ de la amplitud de la reflexión de los componentes paralelo ($r_p$) y perpendicular ($r_s$) del haz polarizado incidente. Este cociente se expresa como función de los parámetros elipsométricos $\Delta(\lambda)$ y $\Psi(\lambda)$. 
 
-		Debido a que las ecuaciones involucradas en el proceso no poseen resolución analítica, es necesario recurrir a modelos que describan el material para obtener las propiedades de interés, es decir, el índice de refracción real, $n$, el espesor, $t$, y el coeficiente de absorción $k$. Mediante un ajuste iterativo por cuadrados mínimos de $\Delta(\lambda)$ y $\Psi(\lambda)$ (para el cual se proponen valores iniciales para $n$, $k$ y $t$ de la muestra) se minimiza la diferencia entre el modelo y los datos experimentales. De esta forma se extrae el espesor y el índice de refracción. \cite{TompkinsHarlandG.1999}
+		Debido a que las ecuaciones involucradas en el proceso no poseen resolución analítica, es necesario recurrir a modelos que describan el material para obtener las propiedades de interés, es decir, el índice de refracción real, $n(\lambda)$, el espesor, $t$, y el coeficiente de absorción $k(\lambda)$. Mediante un ajuste iterativo por cuadrados mínimos de $\Delta(\lambda)$ y $\Psi(\lambda)$ (para el cual se proponen valores iniciales para $n$, $k$ y $t$ de la muestra) se minimiza la diferencia entre el modelo y los datos experimentales. De esta forma se extrae el espesor y el índice de refracción. \cite{TompkinsHarlandG.1999}
 
 		Cuando se adapta al equipo una cámara, en la que se puede variar la presión parcial de H$_2$O, es posible medir los cambios de las propiedades ópticas (p. ej. espesor e índice de refracción) de las \pdm\space durante la adsorción y desorción de H$_2$O. A esta técnica se la conoce con el nombre de porosimetría elipsométrica ambiental (PEA) \cite{Boissiere2005}. La figura \ref{fig:elipso} muestra un esquema de los principales componentes de un elipsómetro con cámara de humedad controlada.
 
@@ -260,14 +253,14 @@
 			     \label{eq:bruggeman}
 				 \end{equation}
 		
-		El índice de refracción se define según la ecuación \ref{eq:indice} donde $\mu$ es permeabilidad electromagnética relativa. Para la mayoría de los materiales, y cerca del rango visible, $\mu$ es muy cercana a la unidad, por lo tanto es común aproximar $\mathcal{E}_e=n_e^2$.
+		\vspace*{2mm}El índice de refracción se define según la ecuación \ref{eq:indice} donde $\mu$ es permeabilidad electromagnética relativa. Para la mayoría de los materiales, y cerca del rango visible, $\mu$ es muy cercana a la unidad, por lo tanto es común aproximar $\mathcal{E}_e=n_e^2$.
 		
 						\begin{equation}
 					 	   n=\sqrt{\mathcal{E}\mu}
 					 	   \label{eq:indice}
 						\end{equation}
 		
-		La aproximación de Maxwell-Garnett considera al material compuesto por al menos dos especies, la matriz y la inclusión. En el caso de los óxidos porosos, la matriz es el óxido y el aire o el surfactante la inclusión. Se deben satisfacer en este caso las ecuaciones \ref{eq:maxwall1} y \ref{eq:maxwall2}.
+		\vspace*{2mm}La aproximación de Maxwell-Garnett considera al material compuesto por al menos dos especies, la matriz y la inclusión. En el caso de los óxidos porosos, la matriz es el óxido y el aire o el surfactante la inclusión. Se deben satisfacer en este caso las ecuaciones \ref{eq:maxwall1} y \ref{eq:maxwall2}.
 				
 							\begin{equation}
 					 		   	 f_1\left(\frac{\mathcal{E}_1-\mathcal{E}_2}{\mathcal{E}_1+1\mathcal{E}_2}\right)-
@@ -281,7 +274,7 @@
 					 		     \label{eq:maxwall2}
 								\end{equation}
 		
-		El volumen total ocupado por los poros, V$_p$, y el volumen de agua adsorbido para cada HR, V$_{ads}$, se calcularon aplicando indistintamente dichas aproximaciones (ya que para \pdm\space dan resultados equivalentes) a las constantes dieléctricas (o índices de refracción) medidas del film seco y lleno de agua, luego de la condensación capilar.\cite{Angelome2008,Fuertes2009,Nano-compuestas2013}. Se construye de esta forma una isoterma de adsorción/desorción de H$_2$O en función del índice de refracción (o volumen poroso) de las películas porosas. Los distintos tipos de isortermas para la adsorción de sobre materiales absorbentes porosos fue clasificada por la IUPAC en ocho grupos (Ia, Ib, II, III, IVa, IVb, V y VI) y seis ciclos de histéresis para los tipos IVa y V (H1, H2a, H2b, H3, H4 y H5). \cite{Thommes2015}
+		\vspace*{2mm}El volumen total ocupado por los poros, V$_p$, y el volumen de agua adsorbido para cada HR, V$_{ads}$, se calcularon aplicando indistintamente dichas aproximaciones (ya que para \pdm\space dan resultados equivalentes) a las constantes dieléctricas (o índices de refracción) medidas del film seco y lleno de agua, luego de la condensación capilar.\cite{Angelome2008,Fuertes2009,Nano-compuestas2013}. Se construye de esta forma una isoterma de adsorción/desorción de H$_2$O en función del índice de refracción (o volumen poroso) de las películas porosas. Los distintos tipos de isotermas para la adsorción sobre materiales absorbentes porosos fue clasificada por la IUPAC en ocho grupos (Ia, Ib, II, III, IVa, IVb, V y VI) y seis ciclos de histéresis para los tipos IVa y V (H1, H2a, H2b, H3, H4 y H5). \cite{Thommes2015}
 
 		La figura \ref{fig:pea_ej}a muestra un resultado típico para adsorción de agua en una película de óxido de silicio estructurada con CTAB medida por PEA. La curva resultante corresponde a una isoterma tipo IVa/H2b. El ciclo de histéresis indica la presencia de mesoporos, cuyo llenado se produce por condensación capilar. \cite{Gregg1967}La gran mayoría de las isotermas obtenidas fueron de este tipo (IVa con ciclo H2b) y, consecuentemente, son las más dicutidas y analizadas a lo largo de este trabajo. 
 
@@ -306,12 +299,11 @@
 			     \label{eq:kelvin}
 			 	 \end{equation}					
 	
-		Todas las medidas fueron tomadas en la Gerencia Química, CAC-CNEA con un elipsómetro espectroscópico marca \textit{SOPRA}, modelo \textit{GES 5E}. El rango espectral del equipo va de 190 a \SI{900}{\nm}, pose una cámara para realizar las mediciones en condiciones de humedad controlada y también permite configuración en modo \textit{micro-spot} que permite reducir el área de medición a una región de aproximadamente \SI{1}{\mm^2}. El modelado de los parámetros se hizo mediante el \textit{software Winelli II} también de la marca \textit{SOPRA}.
+		Todas las medidas fueron tomadas en la Gerencia Química, CAC-CNEA con un elipsómetro espectroscópico marca \textit{SOPRA}, modelo \textit{GES 5E}. El rango espectral del equipo va de 190 a \SI{900}{\nm}, posee una cámara para realizar las mediciones en condiciones de humedad controlada y también permite configuración en modo \textit{micro-spot} que permite reducir el área de medición a una región de aproximadamente \SI{1}{\mm^2}. El modelado de los parámetros se hizo mediante el \textit{software Winelli II} también de la marca \textit{SOPRA}.
 			
-
 \section{Microfabricación de los electrodos}
 		
-	 En esta sección se dará cuenta de los detalles experimentales para la fabricación de los electrodos, los cuales son una parte fundamental de los sensores. Es en la superficie de los electrodos donde se llevan a cabo las reacciones de óxido-reducción de los analitos de interés y donde se depositan la película delgada mesoporosa. Por estos motivos resulta fundamental contar con un diseño funcional y compacto y, además, controlar los aspectos superficiales tales como la rugosidad, control de impurezas, espesor, y funcionalización en los caso que sea necesario.
+	 En esta sección se dará cuenta de los detalles experimentales para la fabricación de los electrodos, los cuales son una parte fundamental de los sensores. Es en la superficie de los electrodos donde tienen lugar las reacciones de óxido/reducción de los analitos de interés, y donde se depositaron las diferentes películas delgadas mesoporosas. Por estos motivos resulta fundamental contar con un diseño funcional y compacto y, además, controlar los aspectos superficiales tales como la rugosidad, control de impurezas, espesor, y funcionalización en los casos que sea necesario.
 
 	 Los electrodos fueron enteramente diseñados y fabricados en los laboratorios del CMNB-INTI. 
 		
@@ -331,7 +323,27 @@
 
 		El primer paso necesario en la fabricación de los sensores es el diseño. Como todo diseño en microelectrónica, se diagramó en función de las tecnologías disponibles, de la calidad de las máscaras y de la aplicación final en la cual se emplearán. Todos estos aspectos ya fueron expuestos en el capítulo \ref{chap:Introduccion}, por lo que aquí nos remitiremos a describir los detalles técnicos.
 
-		Los diseños fueron realizados para obleas de \SI{10}{\cm} de diámetro. El primer diseño se mandó a imprimir en filmina de \SI{13x13}{\cm} en una filmadora de películas \textit{Agfa Accuset 1000}, a una resolución de \SI{3600}{dpi}, perteneciente a la firma $Imacrom$. Esto ha permitido obtener resoluciones de línea de \SI{50}{\um}, muy por encima de la resolución de la tecnología de la cual disponemos (transferencia por UV, $\lambda=365nm$). El segundo diseño, más completo e integrado, también fue diagramado para obleas de \SI{10}{\cm} de diámetro. Éste contempló la integración del contraelectrodo y el electrodo de referencia, además de incluir 6 electrodos de trabajo. Las máscaras correspondientes a éste diseño se mandaron a imprimir en filminas de \SI{13x13}{\cm} a la empresa \textit{International Phototool Company} a una resolución de \SI{48000}{dpi}, logrando mejor resolución y lineas más definidas que en el primer diseño, hasta de \SI{7}{\um}. Todos los diseños se llevaron a cabo con el \textit{software CAD electric} (\url{http://www.staticfreesoft.com/productsFree.html}) de licencia pública general de GNU, \url{https://www.gnu.org/licenses/gpl.html}. 
+		Los diseños fueron realizados para obleas de \SI{10}{\cm} de diámetro. El primer diseño se mandó a imprimir en filmina de \SI{13x13}{\cm} en una filmadora de películas \textit{Agfa Accuset 1000}, a una resolución de \SI{3600}{dpi}, perteneciente a la firma $Imacrom$. Esto ha permitido obtener resoluciones de línea de \SI{50}{\um}, muy por encima de la resolución de la tecnología de la cual disponemos (transferencia por UV, $\lambda=365nm$). El segundo diseño, más completo e integrado, también fue diagramado para obleas de \SI{10}{\cm} de diámetro. Éste contempló la integración del contraelectrodo y el electrodo de referencia, además de incluir 6 electrodos de trabajo. Las máscaras correspondientes a éste diseño se mandaron a imprimir en filminas de \SI{13x13}{\cm} a la empresa \textit{International Phototool Company} a una resolución de \SI{48000}{dpi}, logrando mejor resolución y lineas más definidas que en el primer diseño, hasta de \SI{7}{\um}. Todos los diseños se llevaron a cabo con el \textit{software CAD electric} (\url{http://www.staticfreesoft.com/productsFree.html}) de licencia pública general de GNU, \url{https://www.gnu.org/licenses/gpl.html}.
+
+		En las imágenes de la figura \ref{fig:mask_ejemplos} se exponen algunos de los muchos diseños que se probaron para los multisensores, en el capítulo \ref{chap:Microfabracacion} se expondrán las consideraciones que se tuvieron en cuanta a la hora de diseñarlos y se discutirán los resultados que se obtuvieron con ellos.
+
+			\begin{figure}[b!]
+			  		  \begin{subfigure}[t]{0.16\textwidth}
+			  		  \centering\includegraphics[width=\textwidth]{Imagenes/electrodo1.pdf}
+			  		  \end{subfigure}
+			  		  \begin{subfigure}[t]{0.28\textwidth}
+			  		  \includegraphics[width=\textwidth]{Imagenes/electrodo2.pdf}
+			  		  \end{subfigure}
+			  		  \begin{subfigure}[t]{0.28\textwidth}
+			  		  \includegraphics[width=\textwidth]{Imagenes/electrodo3.pdf}
+			  		  \end{subfigure}
+			  		  \begin{subfigure}[t]{0.28\textwidth}
+			  		  \includegraphics[width=\textwidth]{Imagenes/electrodo4.pdf}
+			  		  \end{subfigure}
+			  		  \caption{asdasd}
+			  		  \label{fig:mask_ejemplos}
+			  		  \end{figure}
+
 				
 	\subsection{Limpieza de los sustratos}\label{sec:limpieza}
 			
