@@ -1,0 +1,68 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[paperwidth=3.97cm,paperheight=2.4cm,hmargin=-0.64cm,vmargin=-0.07cm,bottom=-1cm]{geometry}
+
+
+%Sección de Plugins
+%--------------------------------------------------------------------------
+   %Idioma, fuentes y entrada de teclado
+   \usepackage[spanish,activeacute,es-tabla]{babel}
+   \usepackage[utf8]{inputenc}
+   \usepackage{lmodern}
+
+   % Paquete para gestionar imágenes jpg
+   \usepackage{graphicx}
+
+   %Paquete para colocar imagenes en el medio del texto
+   \usepackage{wrapfig}
+
+   %paquete para lenguaje matematico y símbolos
+   \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+
+   % Paquete para poner colores
+   \usepackage[usenames,dvipsnames]{color}
+   
+   %Para hacer graficos cons tikz, con gnuplot y poder exportarlos como pdf
+   \usepackage{tikz}
+
+     %Paquete gestor de unidades
+   \usepackage[version-1-compatibility]{siunitx}
+   \sisetup{output-decimal-marker = {,}}
+
+    %Librerias Tikz Extra
+   \usetikzlibrary{shapes,arrows,arrows.meta}
+   \usetikzlibrary{shapes.arrows, fadings}
+   \usetikzlibrary{shadows.blur}
+   \usetikzlibrary{arrows}
+   \usetikzlibrary{shapes.symbols}
+   \usetikzlibrary{decorations.pathreplacing,decorations.markings}
+   \usetikzlibrary{decorations.text}
+   \usetikzlibrary{fit}
+   \usetikzlibrary{calc}
+   \usetikzlibrary{positioning}
+   \usetikzlibrary{matrix}
+   \usetikzlibrary{decorations.pathmorphing}
+   \usetikzlibrary{fadings}
+   \usetikzlibrary{shadings}
+   \usetikzlibrary{decorations}
+   \usepackage{pgfplots}
+   \usepackage{gnuplot-lua-tikz}
+   
+
+\begin{document}
+	
+	\begin{tikzpicture}
+    \node (X) at (0,0) {\includegraphics{../electrodo1.pdf}};
+    \node (X) at (1.1,-0.7) {\includegraphics{../electrodo2.pdf}};
+    \node (X) at (1.1,0.4) {\includegraphics{../electrodo3.pdf}};
+    \node (X) at (-1,-0.3) {\includegraphics{../electrodo5.pdf}};
+    \node (X) at (2.1,-0.3) {\includegraphics{../electrodo6.pdf}};
+    \node[scale=0.5] (F) at (-0.03,-1) {\
+    \begin{tikzpicture}
+    \draw[draw=black,|-|] (0,0) -- (1,0); 
+    \end{tikzpicture}
+    };
+    \node[scale=0.5] (T) at (0,-0.85) {\SI{5}{mm}};
+  \end{tikzpicture}
+ 
+
+\end{document}

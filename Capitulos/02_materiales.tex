@@ -311,7 +311,7 @@
 
 	 El flujo general de trabajo para la transferencias de diseños en una o más capas se presenta en la figura \ref{esq:micro}.
 			
-			 \begin{figure}[h!]
+			 \begin{figure}[t!]
 			  \begin{center}
 			  \includegraphics[width=0.85\textwidth]{Esquemas/Resumen_micro.pdf}
 			  \caption[Esquema para la transferencia de diseños]{Diagrama general para la transferencias y fabricaciones de diseños de una o más capas. Este esquema contempla el uso de las técnicas de \textit{lift-off }o grabado según se requiera dependiendo de las características de los materiales empleados para esa capa.}
@@ -325,31 +325,22 @@
 
 		Los diseños fueron realizados para obleas de \SI{10}{\cm} de diámetro. El primer diseño se mandó a imprimir en filmina de \SI{13x13}{\cm} en una filmadora de películas \textit{Agfa Accuset 1000}, a una resolución de \SI{3600}{dpi}, perteneciente a la firma $Imacrom$. Esto ha permitido obtener resoluciones de línea de \SI{50}{\um}, muy por encima de la resolución de la tecnología de la cual disponemos (transferencia por UV, $\lambda=365nm$). El segundo diseño, más completo e integrado, también fue diagramado para obleas de \SI{10}{\cm} de diámetro. Éste contempló la integración del contraelectrodo y el electrodo de referencia, además de incluir 6 electrodos de trabajo. Las máscaras correspondientes a éste diseño se mandaron a imprimir en filminas de \SI{13x13}{\cm} a la empresa \textit{International Phototool Company} a una resolución de \SI{48000}{dpi}, logrando mejor resolución y lineas más definidas que en el primer diseño, hasta de \SI{7}{\um}. Todos los diseños se llevaron a cabo con el \textit{software CAD electric} (\url{http://www.staticfreesoft.com/productsFree.html}) de licencia pública general de GNU, \url{https://www.gnu.org/licenses/gpl.html}.
 
-		En las imágenes de la figura \ref{fig:mask_ejemplos} se exponen algunos de los muchos diseños que se probaron para los multisensores, en el capítulo \ref{chap:Microfabracacion} se expondrán las consideraciones que se tuvieron en cuanta a la hora de diseñarlos y se discutirán los resultados que se obtuvieron con ellos.
+		En las imágenes de la figura \ref{fig:mask_ejemplos} se exponen algunos de los muchos diseños con los cuales se fabricaron y se probaron funcionalmente los multisensores. En el capítulo \ref{chap:Microfabricacion} se expondrán las consideraciones que se tuvieron en cuanta a la hora de confeccionar dichos diseños y se discutirán los resultados que se obtuvieron con ellos.
 
-			\begin{figure}[b!]
-			  		  \begin{subfigure}[t]{0.16\textwidth}
-			  		  \centering\includegraphics[width=\textwidth]{Imagenes/electrodo1.pdf}
-			  		  \end{subfigure}
-			  		  \begin{subfigure}[t]{0.28\textwidth}
-			  		  \includegraphics[width=\textwidth]{Imagenes/electrodo2.pdf}
-			  		  \end{subfigure}
-			  		  \begin{subfigure}[t]{0.28\textwidth}
-			  		  \includegraphics[width=\textwidth]{Imagenes/electrodo3.pdf}
-			  		  \end{subfigure}
-			  		  \begin{subfigure}[t]{0.28\textwidth}
-			  		  \includegraphics[width=\textwidth]{Imagenes/electrodo4.pdf}
-			  		  \end{subfigure}
-			  		  \caption{asdasd}
+			\begin{figure}[t!]
+					  \begin{center}
+			  		  \includegraphics[width=\textwidth]{Imagenes/disenos-capitulo2.pdf}
+			  		  \vspace*{-7mm}
+			  		  \caption{Algunos ejemplos de los diseños de los multisensores que se utilizaron a lo largo de este trabajo de tesis. Cada diseño corresponde a un dispositivo que forma parte de un lote de fabricación de al menos 40 unidades.}
 			  		  \label{fig:mask_ejemplos}
+			  		  \end{center}
 			  		  \end{figure}
-
 				
 	\subsection{Limpieza de los sustratos}\label{sec:limpieza}
 			
 			Una vez terminado el diseño, comienza la etapa de transferencia del mismo. El primer paso es la limpieza de los sustratos para evitar problemas de falta de adhesión y eliminar impurezas superficiales adsorbidas. 
 
-			\begin{table}[!ht]
+			\begin{table}[b!]
 					  \caption[Soluciones para la limpieza de los sustratos]{Soluciones utilizadas para hacer la limpieza antes de realizar cualquier proceso de fotolitografía o pulverización catódica.\cite{Franssila2004,Kern1990}}
 			  		  \begin{tabular}{>{\raggedright\arraybackslash}m{1.02cm}>{\centering\arraybackslash}m{2.8cm}>{\centering\arraybackslash}m{1.9cm}>{\centering\arraybackslash}m{1.9cm}>{\raggedright\arraybackslash}m{2.4cm}} 
 			  		  \toprule
@@ -363,7 +354,7 @@
 			      	  Piraña &  H$_2$SO$_4$:H$_2$O$_2$ & 2:1 & \SI{25}{\celsius}/\SI{10}{\minute}  & residuos orgánicos  \\
 			      	  \bottomrule
 			    	  \end{tabular}
-			    	  \footnotesize{$^*$}No apta para silicio, racciona con el mismo para formar Si(OH)$_4$ e H$_2$. \\
+			    	  \footnotesize{$^*$}No apta para silicio, reacciona formando Si(OH)$_4$ y liberando H$_2$. \\
 				      \footnotesize{$^\dagger$}Crece una capa de SiO$_2$ de 10 a \SI{15}{\angstrom} de espesor. \\
 				      \footnotesize{$^\mathsection$}Grado analítico o superior. \\
 			    	  \footnotesize{$^\ddagger$}Resistividad de \SI{18}{\mega\ohm\per\cm} o mayor.
@@ -373,7 +364,7 @@
 							
 			La tabla \ref{tabla:limpieza} resume cuales fueron las soluciones utilizadas para limpieza, su composición y cuál es la finalidad de cada una. Al finalizar cada etapa de limpieza siempre se hace un lavado con H$_2$O DI seguido de un secado con aire o N$_2$. 
 
-			\pagebreak El porqué de los materiales elegidos para usar de sustratos ya fueron discutidos en el capítulo \ref{chap:Introduccion}, aquí solo se mencionan los protocolos de limpieza\cite{Franssila2004,Kern1990} utilizados para cada uno de ellos:
+			El porqué de los materiales elegidos para usar de sustratos ya fueron discutidos en el capítulo \ref{chap:Introduccion}, aquí solo se mencionan los protocolos de limpieza\cite{Franssila2004,Kern1990} utilizados para cada uno de ellos:
 
 				\begin{itemize}
 					\item{Vidrio: KOH}
@@ -383,22 +374,22 @@
 
     \subsection{Transferencia de los diseños por fotolitografía}\label{sec:fotolito}
 
-		La transferencia de los diseños se realizó por fotolitografía, técnica que también se conoce con los nombres de litografía óptica o litografía ultravioleta (UV). La técnica consiste en depositar una resina fotosensible sobre un sustrato, irradiar con luz UV de $\lambda\!=$\SI{365}{nm} a través de una máscara y por último revelar la fotorresina. Dependiendo si esta es negativa, positiva o de doble exposición, se disolverá la parte expuesta (positiva) o la no expuesta a la luz (negativa). \cite{Jaeger2001,Franssila2004,Mack2007,Mack2006}
+		La transferencia de los diseños se realizó por fotolitografía, técnica que también se conoce con los nombres de litografía óptica o litografía ultravioleta (UV). La técnica consiste en depositar una resina fotosensible sobre un sustrato, irradiar con luz UV de $\lambda\!=$\SI{365}{nm} a través de una máscara y por último revelar la fotorresina. Dependiendo si la misma es negativa, positiva o de doble exposición, se disolverá la parte expuesta (positiva) o la no expuesta a la luz (negativa). \cite{Jaeger2001,Franssila2004,Mack2007,Mack2006}
 				
 
 			  \begin{figure}[b!]
 			  \begin{center}
 			  \includegraphics[width=0.70\textwidth]{Esquemas/fotolito.pdf}
-			  \caption[Esquema fotolitografía]{Proceso de fotolitografía para una resina de doble exposición. 1) Depósito de la resina, 2) Calentamiento suave, mejora la adherencia y evapora solventes, 3) 1$a$ exposición, 4) Calentamiento para invertir la polaridad de la resina, 5) 2$a$ exposición sin máscara, 6) Revelado, notese el perfil invertido, especialmente útil para aplicar en procesos de\textit{ lift-off}.}
+			  \caption[Esquema fotolitografía]{Proceso de fotolitografía para una resina de doble exposición. 1) Depósito de la resina, 2) Calentamiento suave, mejora la adherencia y evapora solventes, 3) 1$^a$ exposición, 4) Calentamiento para invertir la polaridad de la resina, 5) 2$^a$ exposición sin máscara, 6) Revelado, notese el perfil invertido, especialmente útil para aplicar en procesos de\textit{ lift-off}.}
 			  \label{esq:fotolito}
 			  \end{center}
 			  \end{figure}	
 
-		Antes de depositar la fotorresina se calienta el sustrato hasta \SI{120}{\celsius} con el objetivo de desorber H$_2$O. Los depósitos de las resinas se realizaron mediante \textit{spin-coating} con el equipo descrito en la sección \ref{sec:deposito_pdm}, pág. \pageref{sec:deposito_pdm}. Para cubrir una oblea completa de \SI{10}{\cm} de diámetro se necesitan colocar un mínimo de \SI{5}{\ml} de fotorresina \textit{TI35E image reversal} de la marca \textit{Microchemicals}, la cual es de doble exposición, especialmente elegida por formar un perfil negativo, particularmente útil para el proceso \textit{lift-off} el cúal es explicado en la sección \ref{sec:liffff}.\cite{MicrochemicalsTeam2009} 
+		Antes de depositar la fotorresina se calienta el sustrato hasta \SI{120}{\celsius} con el objetivo de desorber H$_2$O. Los depósitos de las resinas se realizaron mediante \textit{spin-coating} con el equipo descrito en la sección \ref{sec:deposito_pdm}, pág. \pageref{sec:deposito_pdm}. Para cubrir una oblea completa de \SI{10}{\cm} de diámetro se necesitan colocar un mínimo de \SI{5}{\ml} de fotorresina \textit{TI35E image reversal} de la marca \textit{Microchemicals}, la cual es de doble exposición, especialmente elegida por formar un perfil negativo, particularmente útil para el proceso \textit{lift-off} el cúal es tratado en detalle en la sección \ref{sec:liffff}.\cite{MicrochemicalsTeam2009} 
 	
-		El deposito se hizo por \textit{spin-coating}, a una velocidad final de \SI{4000}{\minute^{-1}} durante \SI{40}{\second}, con una aceleración de \SI{400}{\minute^{-1}.\second^{-1}} para obtener un espesor final de \SI{4}{\um}. Luego se realiza un calentamiento durante \SI{2}{\minute} a \SI{95}{\celsius} para evaporar el exceso de solvente y promover la adhesión de la resina al sustrato. Seguidamente se cargan el sustrato y la máscara en la alineadora de máscaras (\textit{EVG 620}, figura \ref{fig:alineadora}), la cual cuenta con un microscopio incorporado para hacer la alineación máscara/sustrato y una lámpara de Hg para el sistema de irradiación UV ($\lambda=$\SI{365}{\nm}). 
+		El esquema de una típica transferencia con resina de doble exposición se ilustra en la figura \ref{esq:fotolito}. El proceso comienza con el depósito de la resina mediante \textit{spin-coating} a una velocidad final de \SI{4000}{\minute^{-1}} durante \SI{40}{\second} y con una aceleración de \SI{400}{\minute^{-1}.\second^{-1}}. Bajo estas condiciones se obtuvo un espesor final de aproximadamente \SI{4}{\um}. Luego se realiza un calentamiento durante \SI{2}{\minute} a \SI{95}{\celsius} para evaporar el exceso de solvente y promover la adhesión de la resina al sustrato. Seguidamente se cargan el sustrato y la máscara en la alineadora de máscaras (\textit{EVG 620}, figura \ref{fig:alineadora}), la cual cuenta con un microscopio incorporado para hacer la alineación máscara/sustrato y una lámpara de Hg para el sistema de irradiación UV ($\lambda=$\SI{365}{\nm}). 
 				
-		Después de alinear, se realiza la primera exposición con una densidad de energía de \SI{140}{mJ.\cm^{-2}} y se deja reposar \SI{10}{\minute} para dar tiempo a la difusión de N$_2$ liberado durante la reacción. Se realiza ahora el calentamiento para invertir el perfil (las zonas expuestas polimerizan volviéndose inerte al solvente) de la resina a una temperatura de \SI{120}{\celsius} durante \SI{2}{\minute}  y se expone por segunda vez a una densidad de energía de \SI{540}{mJ.cm^{-2}}, esta vez sin máscara. En esta segunda exposición las partes polimerizadas no se afectan, mientras las no expuestas en la primera iluminación se vuelven solubles en el medio revelador. Para finalizar, se hace el revelado sumergiendo la oblea en un cristalizador con una solución de revelador \textit{AZ General} (\textit{Microchemicals}) y H$_2$O 1:1. La evolución del revelado se siguió mediante microscopía óptica y se determinó el tiempo óptimo de inmersión en aproximadamente unos \SI{7}{\minute}, dependiendo del espesor de la fotoresina. De esta forma quedan transferidos los diseños. El flujo de trabajo se sintetiza en el esquema \ref{esq:fotolito}.
+		Después de alinear, se realiza la primera exposición con una densidad de energía de \SI{140}{mJ.\cm^{-2}} y se deja reposar \SI{10}{\minute} para dar tiempo a la difusión de N$_2$ liberado durante la reacción. Se realiza ahora el calentamiento para invertir el perfil (las zonas expuestas polimerizan volviéndose inerte al solvente) de la resina a una temperatura de \SI{120}{\celsius} durante \SI{2}{\minute}  y se expone por segunda vez a una densidad de energía de \SI{540}{mJ.cm^{-2}}, esta vez sin máscara. En esta segunda exposición las partes polimerizadas no se afectan, mientras las no expuestas en la primera iluminación se vuelven solubles en el medio revelador. Para finalizar, se hace el revelado sumergiendo la oblea en un cristalizador con una solución de revelador \textit{AZ General} (\textit{Microchemicals}) y H$_2$O 1:1. La evolución del revelado se siguió mediante microscopía óptica y se determinó el tiempo óptimo de inmersión en aproximadamente unos \SI{7}{\minute}, dependiendo del espesor de la fotoresina. De esta forma los diseños quedan completamente transferidos.
 				
 			  \begin{figure}[h!]
 			  \begin{center}
@@ -408,21 +399,17 @@
 			  \end{center}
 			  \end{figure}
 
-	\subsection{Depósito películas delgadas metálicas}\label{sec:sputt}
+	\subsection{Depósito de películas delgadas metálicas}\label{sec:sputt}
 
 			En esta sección se describe el proceso de fabricación de las películas delgadas de Au, cuya función es ser usadas como electrodos en los sensores. Las mismas se depositaron utilizando técnica de pulverización catódica, la cual es comúnmente conocida por su nombre en ingles, \textit{sputtering}\cite{sigmund1968}. Los fundamentos básicos de la técnica se discutieron en el capitulo \ref{chap:Introduccion}, pág. \pageref{sec:microfabricacion}.
 							
-			Los sustratos utilizados para depositar los electrodos fueron principalmente obleas de silicio monocristalinas (vírgenes o fotolitografiadas) y portaobjetos de vidrio. Estos soportes fueron elegidos debido a la baja rugosidad de su superficie y por ser materiales que pueden ser sometidos a temperaturas altas, en particular \SI{350}{\celsius}, que es la temperatura de calcinación para la ruta de síntesis clásica de óxidos mesoporosos. Previo a realizar el depósito, los sustratos fueron tratados con los procesos de limpieza descritos en la sección \ref{sec:limpieza}, pág. \pageref{sec:limpieza} y una vez dentro de la cámara se realizó una limpieza por plasma para promover una mayor adherencia del depósito al sustrato.
+			Los sustratos utilizados para depositar los electrodos fueron principalmente obleas de silicio monocristalinas (vírgenes o fotolitografiadas) y portaobjetos de vidrio. Estos soportes fueron elegidos debido a la baja rugosidad de su superficie y por ser materiales que pueden ser sometidos a temperaturas altas, en particular \SI{350}{\celsius} que es la temperatura de calcinación para la ruta de síntesis clásica de óxidos mesoporosos. Previo a realizar el depósito, los sustratos fueron tratados con los procesos de limpieza descritos en la sección \ref{sec:limpieza}, pág. \pageref{sec:limpieza}, y una vez dentro de la cámara se realizó una limpieza por plasma para promover una mayor adherencia del depósito al sustrato.
 
-			Cabe destacar que si se trabaja sobre obleas de silicio, estas tienen que estar recubiertas con una capa dieléctrica para que no haya fugas eléctricas a través del silicio. A lo largo de este tesis se utilizó indistintamente obleas que ya venían con capa aislante u obleas a las cuales se le depositó una película delgada de SiO$_2$, también por pulverización catódica.
+			Cabe destacar que si se trabaja sobre obleas de silicio, estas tienen que estar recubiertas con una capa dieléctrica para que no haya fugas eléctricas a través del silicio. A lo largo de este tesis se utilizó indistintamente obleas que ya venían con capa aislante u obleas a las cuales se le depositó una película delgada de SiO$_2$, también mediante pulverización catódica.
 
-			Para promover la adherencia del Au, se deposita una capa de al menos \SI{20}{\nm} de espesor, indistintamente de Ti o Cr. Sin esta capa, el Au no adhiere sobre superficies no metálicas\cite{Hieber1976}. Una vez depositada esta capa de adherente y sin romper el vacío de la cámara del equipo, se depositan un mínimo \SI{150}{\nm} de Au, para lograr un electrodo mecánicamente robusto y con buenas propiedades de conducción eléctrica. En los casos que se depositó una capa dieléctrica de SiO$_2$ se utilizó la fuente de radiofrecuencia (RF) a potencia constante, P=\SI{400}{W}. Mientras que los depósitos de las películas metálicas se realizaron todos con la fuente de corriente directa (DC) también configurada a P=\SI{400}{W}, dejando la tensión y la corriente libre, parámetros que dependen a su vez del vacío en la cámara, de la distancia entre el cátodo y el ánodo y el caudal de argón. 
+			Para promover la adherencia del Au, se deposita una capa de al menos \SI{20}{\nm} de espesor, indistintamente de Ti o Cr. Sin ésta capa, el Au no adhiere sobre superficies no metálicas\cite{Hieber1976}. Una vez depositada esta capa de adherente y sin romper el vacío de la cámara del equipo, se depositan un mínimo \SI{150}{\nm} de Au, para lograr un electrodo mecánicamente robusto y con buenas propiedades de conducción eléctrica. En los casos que se depositó una capa dieléctrica de SiO$_2$ se utilizó la fuente de radiofrecuencia (RF) a potencia constante, P=\SI{400}{W}. Mientras que los depósitos de las películas metálicas se realizaron todos con la fuente de corriente directa (DC) también configurada a P=\SI{400}{W}, dejando la tensión y la corriente libre, parámetros que dependen a su vez del vacío en la cámara, de la distancia entre el cátodo y el ánodo y el caudal de argón. 
 
-			
-			Las condiciones óptimas de depósito de cada una de las capas se detallan en las tablas \ref{tabla:sputt1} y \ref{tabla:sputt2}. La primera contienen las condiciones para las películas metálicas y la segunda para la película de SiO$_2$ y el proceso de limpieza por plasma previo a los depósitos. Manteniendo las condiciones experimentales constantes se construyó, para cada material, una curva de calibración del espesor en función del tiempo de depósito. De esta forma se obtuvieron las tasas de depósitos que figuran en la última columna en las tablas \ref{tabla:sputt1} y \ref{tabla:sputt2}, esencial para controlar el espesor de cada películas. Las mediciones de espesores se realizaron mediante microscopía FIB, técnica que se describe en la sección \ref{sec:micros}.
-
-		
-		  		\begin{table}[ht]
+				\begin{table}[b!]
 		  		\caption[Parámetros de depósito películas metálicas]{Parámetros de depósito de las distintas películas delgadas metálicas para su uso como electrodos de trabajo.}
 		  		\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} lcccccc} 
 		  		\toprule
@@ -435,8 +422,8 @@
 		    	 \end{tabular*}
 		   		\label{tabla:sputt1}
 		   		\end{table}
-		   		\vspace{-0.6cm}
-		  		\begin{table}[ht]
+		   		
+		  		\begin{table}[b!]
 		  		\caption[Parámetros de depósito películas dieléctricas]{Parámetros de depósito utilizado para el depósito de $SiO_2$.}
 		  		\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} lccccc} 
 		  		 		\toprule
@@ -448,8 +435,10 @@
 		  		\end{tabular*}
 		   		\label{tabla:sputt2}
 		   		\end{table}
-		   	
-		   	Todos los depósitos fueron realizados en el equipo de \textit{sputtering} del INTI-CMNB. El mismo cuenta, entre sus principales capacidades, con una fuente DC (hasta \SI{1.5}{\kW}) una fuente de RF (\SI{600}{W} a \SI{13.56}{\MHz}), posibilidad de depositar 3 materiales consecutivamente y capacidad para colocar sustratos de hasta \SI{250}{\nm}. El mismo es de la marca \textit{Boc Edwards}. En la figura \ref{fig:sputt} se muestra el equipo y un detalle al momento de hacer los depósitos.
+			
+			Las condiciones óptimas de depósito de cada una de las capas se detallan en las tablas \ref{tabla:sputt1} y \ref{tabla:sputt2}. La primera contienen las condiciones para las películas metálicas y la segunda para la película de SiO$_2$ y para el proceso de limpieza por plasma previo a los depósitos. Manteniendo las condiciones experimentales constantes se construyó, para cada material, una curva de calibración del espesor en función del tiempo de depósito. De esta forma se obtuvieron las tasas de depósitos que figuran en la última columna en las tablas \ref{tabla:sputt1} y \ref{tabla:sputt2}, esencial para controlar el espesor de cada películas. Las mediciones de espesores se realizaron mediante microscopía FIB, técnica que se describe en la sección \ref{sec:micros}.
+
+		  	Todos los depósitos fueron realizados en el equipo de \textit{sputtering} del INTI-CMNB. El mismo cuenta, entre sus principales capacidades, con una fuente DC (hasta \SI{1.5}{\kW}) una fuente de RF (\SI{600}{W} a \SI{13.56}{\MHz}), posibilidad de depositar 3 materiales consecutivamente y capacidad para colocar sustratos de hasta \SI{250}{\nm}. El mismo es de la marca \textit{Boc Edwards}. En la figura \ref{fig:sputt} se muestra el equipo y un detalle al momento de hacer los depósitos.
 
 
 		   		  \begin{figure}[h!]
@@ -460,16 +449,16 @@
 				  \end{center}
 				  \end{figure}
 
-	\vspace*{-1.0cm}\subsection{Proceso de\textit{ lift-off}}\label{sec:liffff}
+	\subsection{Proceso de\textit{ lift-off}}\label{sec:liffff}
 
    	     Una vez finalizados los procesos de fotolitografía y pulverización de cada una de las capas es necesario remover el excedente de material. Este proceso de remoción, que se explica aquí, se conoce por su nombre en inglés \textit{lift-off}.
 
 		 La bicapa Ti\textbar Au o Cr\textbar Au se pulverizó sobre toda la superficie de la oblea, tanto en las partes donde estaba el silicio descubierto como en las partes donde quedó la fotorresina sin revelar. 
 		
 		 De esta forma, al estar el metal sobre la resina, disolviendo ésta, se desvincula la capa Ti\textbar Au del sustrato y queda completa la transferencia de los diseños. 
-		 La disolución de la fotoresina se lleva a cabo en acetona (\textit{Sigma}) dentro de un baño de ultrasonido (\textit{TESTLAB} Modelo \textit{tb02}) a \SI{22}{\kHz}. En la figura \ref{esq:liftoff} se esquematiza todo el proceso completo.
+		 La disolución de la fotoresina se lleva a cabo en acetona (\textit{Sigma}) dentro de un baño de ultrasonido (\textit{TESTLAB} Modelo \textit{tb02}) a \SI{22}{\kHz}. En la figura \ref{esq:liftoff} se esquematiza todo el proceso completo.\vspace*{-5mm}
 
-		 	\begin{figure}[t!]
+		 	\begin{figure}[h!]
 			  \begin{center}
 			  \includegraphics[width=\textwidth]{Esquemas/liftoff.pdf}
 			  \caption[Esquema del proceso de\textit{ lift-off}]{Esquema del proceso de\textit{ lift-off} en el cual se decapa la fotorresina. 1) Fotorresina transferida en base a un diseño, 2) depósito metálico, 3) disolución de la fotorresina con un solvente adecuado, 4) diseño completamente trasferido.}
@@ -477,64 +466,66 @@
 			  \end{center}
 			  \end{figure}
 
-	\subsection{Modificación superficial}\label{sec:silanizacion}
+	\vspace*{-4mm}\subsection{Modificación superficial}\label{sec:silanizacion}
 		
 		A lo largo del trabajo surgió la necesidad de mejorar la adherencia de las \pdm\space sobre los electrodos de Au. Para lograr ésto, se realizó sobre los electrodos una modificación superficial, de forma de generar puntos de anclaje para promover la adherencia del óxido de silicio sobre la superficie de los electrodos.
-		El proceso consistió en vincular covalentemente una molécula a la superficie de Au y, por otro lado, que ésta misma molécula sea parte estructural de las \pdm. Para lograr ésto se preparó una solución \SI{10}{\milli\Molar} de 3-mercaptopropil trimetoxisilano (MPTMS) en tolueno (se eligió tolueno de forma de minimizar la hidrólisis y condensación del MPTMS) y se dejó reaccionar durante 2 horas en cristalizador cubierto con un vidrio de reloj. \cite{Goss1991,Herzog2013} Luego se realiza un enjuague con acetona y se seca en flujo de N$_2$.
+		El proceso consistió en vincular covalentemente una molécula a la superficie de Au y, por otro lado, que ésta misma molécula sea parte estructural de las \pdm. Para lograr ésto se preparó una solución \SI{10}{\milli\Molar} de 3-mercaptopropil trimetoxisilano (MPTMS) en tolueno (se eligió tolueno de forma de minimizar la hidrólisis y condensación del MPTMS) y se dejó reaccionar durante 2 horas en cristalizador cubierto con un vidrio de reloj. \cite{Goss1991,Herzog2013} Luego se realizó un enjuague con acetona y se secó en flujo de N$_2$.
 
 	\subsection{Encapsulado y corte}\label{sec:corte}
 
 		Sobre los electrodos depositados se deposita una resina negativa, epoxi y fotocurable, \textit{SU8-100} de \textit{MicroChemical}\cite{MicrochemicalsTeam2009}. Dicha resina es ópticamente transparente y de alta viscosidad, lo que permite generar capas de hasta \SI{100}{\um} de espesor. 
 
-		\begin{figure}[b!]
+		Fue utilizada con un doble propósito: proteger mecánicamente los sensores y hacer un reservorio o celda con un volumen  $V \approx$ \SI{2}{\ul}, el cual contendrá la solución con los analitos que se desean detectar.  
+			
+					\begin{figure}[hb!]
 			 		  \begin{center}
-			 		  \includegraphics[width=0.70\textwidth]{Graficos/rotacion_su8.pdf}
+			 		  \includegraphics[width=0.73\textwidth]{Graficos/rotacion_su8.pdf}
 			 		  \caption[Parámetros de depósito para la resina epoxi]{Esquema de aceleración y velocidad de rotación para el depósito de la fotorresina epoxi SU8.}
 			 		  \label{fig:spin-su8}
+			 		  \vspace*{-2mm}
 			 		  \end{center}
 			 		  \end{figure}
 
-		Fue utilizada con un doble propósito, proteger mecánicamente los sensores y hacer un reservorio o celda con un volumen  $V \approx$ \SI{2}{\ul}, el cual contendrá la solución con los analitos que se desean detectar.  
-			
-		Para controlar el espesor mediante \textit{spin-coating} se utilizó el esquema de rotación que de la figura \ref{fig:spin-su8}. Luego se realizó un secado para evaporar solventes a \SI{65}{\celsius} durante \SI{1}{\minute} y \SI{95}{\celsius} durante \SI{10}{\minute}. Seguidamente, se expone al UV a través de la máscara con una densidad de energía de \SI{680}{mJ.cm^{-2}}, para activar los iniciadores de la polimerización sólo en las zonas iluminadas. Se realiza un segundo calentamiento gradual de \SI{1}{\minute} a \SI{65}{\celsius} y \SI{12}{\minute} a \SI{95}{\celsius} para incrementar el grado de polimerización y finalmente se lleva a cabo el revelado (revelador para resina SU-8 de \textit{MicroChemical}), el cual requiere un tiempo de \SI{10}{\minute} para disolver completamente las partes que no fueron expuestas a la luz UV. 
-		
-		Para concluir la fabricación de los sensores se corta la oblea en cuadrados de \SI{1x1}{\cm} con el propósito de obtener así cada dispositivo individual con 6 electrodos de trabajo cada uno. El corte se realiza con un disco de carburo de silicio de la marca \textit{Loadpoint} a con una velocidad de rotación de \SI{44000}{\minute^{-1}} y una de avance de \SI{0.5}{\mm\per\second}. El mismo fue montado en una cortadora de obleas marca \textit{Laser Optics} ubicada en los laboratorios del INTI-CMNB (ver figura \ref{fig:dicer}).
-
-			\begin{figure}[h!]
+			 		  \begin{figure}[bh!]
 			 		  \begin{center}
 			 		  \includegraphics[width=\textwidth]{Imagenes/dicer.jpg}
 			 		  \caption[Cortadora de obleas]{Cortadora de obleas de la marca \textit{Laser Optics}, ubicada en los laboratorios del INTI-CMNB}
 			 		  \label{fig:dicer}
 			 		  \end{center}
 			 		  \end{figure}
-	 	
+
+		Para controlar el espesor mediante \textit{spin-coating} se utilizó el esquema de rotación que se presenta en la figura \ref{fig:spin-su8}. Luego se realizó un secado para evaporar solventes a \SI{65}{\celsius} durante \SI{1}{\minute} y \SI{95}{\celsius} durante \SI{10}{\minute}. Seguidamente, se expone al UV a través de la máscara con una densidad de energía de \SI{680}{mJ.cm^{-2}} para activar los iniciadores de la polimerización sólo en las zonas iluminadas. Se realiza un segundo calentamiento gradual de \SI{1}{\minute} a \SI{65}{\celsius} y \SI{12}{\minute} a \SI{95}{\celsius} para incrementar el grado de polimerización y finalmente se lleva a cabo el revelado (revelador para resina SU-8 de \textit{MicroChemical}), el cual requiere un tiempo de \SI{10}{\minute} para disolver completamente las partes que no fueron expuestas a la luz UV. 
+		
+		Para concluir la fabricación de los sensores se corta la oblea en cuadrados de \SI{1x1}{\cm} con el propósito de obtener así cada dispositivo individual con 6 electrodos de trabajo cada uno. El corte se realiza con un disco de carburo de silicio de la marca \textit{Loadpoint} a con una velocidad de rotación de \SI{44000}{\minute^{-1}} y una de avance de \SI{0.5}{\mm\per\second}. El mismo fue montado en una cortadora de obleas marca \textit{Laser Optics} ubicada en los laboratorios del INTI-CMNB (ver figura \ref{fig:dicer}).
+
 	\subsection{Espectroscopía de fotoelectrones de rayos X}
 
-		La técnica de XPS (del inglés, \textit {X-ray photoelectron spectroscopy}) es una espectroscopía semicuantitativa y de baja resolución espacial que habitualmente se utiliza para estimar la estequiometría, estado de oxidación de algún elemento en particular y la estructura electrónica de los elementos en superficie.\cite{siegbahn1956,siegbahn1981}
+		La técnica de XPS (del inglés, \textit {X-ray photoelectron spectroscopy}) es una espectroscopía semicuantitativa y de baja resolución espacial que habitualmente se utiliza para caracterizar la estequiometría, estado de oxidación de algún elemento en particular y la estructura electrónica de los elementos en superficie.\cite{siegbahn1956,siegbahn1981}
 
 		Se hizo uso de esta técnica para evaluar estados de oxidación del Au y comprobar difusión de contaminantes hacia la superficie de los electrodos.  Los equipos constan de diferentes componentes; una cámara de ultra alto vacío (UHV) con presiones del orden de \SI{1e-9}{mbar} para disminuir la cantidad de contaminantes superficiales y asegurar a los electrones eyectados un camino libre medio lo suficientemente grande como para alcanzar el analizador. La cámara está construida en acero inoxidable y posee ventanas de vidrio para poder observar su interior. A ella se acoplan diferentes elementos necesarios para el análisis superficial como la fuente de rayos X, el analizador de electrones, el cañón de iones, entre otros.\cite{XPS1978,Corthey2012}
 
 		Las medidas de XPS se llevaron a cabo en el Instituto de Investigaciones Fisicoquímicas Teóricas y Aplicadas (INIFTA). Se utilizó una fuente de Mg K$\alpha$ (\textit{XR50, Specs GmbH}) y un analizador hemisferio (\textit{PHOIBOS 100, Specs GmbH}). La presión dentro de la cámara de UHV fue menor a \SI{1e-9}{mbar}. El ángulo entre la fuente de rayos X y el eje del analizador está fijado en \ang{54;44;00}. Los valores de sección eficaz de fotoionización están tabulados para esta geometría. Se realizó una calibración de la escala de energía de dos puntos utilizando Au evaporado ($E_B$ de Au$f_{7/2}$ = \SI{84}{\electronvolt}) y Cu ($E_B$ de Cu $2_{p3/2}$ = \SI{932.67}{\electronvolt}).
 		
-\vspace*{-0.2cm}\section{Microscopías}\label{sec:micros}
+\vspace*{-0.11cm}\section{Microscopías}\label{sec:micros}
 		
 	 En este apartado haremos un breve resumen de los diferentes técnicas de microscopías utilizadas durante la tesis.
 
-	\subsection{Microscopía óptica}
+	\vspace*{-0.12cm}\subsection{Microscopía óptica}
 
 		Se utilizó microscopía óptica en modo reflexión, fundamentalmente para evaluar la superficie (homogeneidad, fracturas, grietas, etc), tanto de las películas metálicas como de las mesoporosas. También para determinar la calidad de las máscaras impresas y para establecer los tiempos de revelado en los procesos fotolitográficos. Se hizo uso de un microscopio \textit{Olympus} modelo \textit{BX51} configurado tanto para trasmisión como para reflexión. Como fuente de luz el equipo cuenta con lámpara halógena y, en los casos que hizo falta, se intercaló un filtro ultravioleta de forma de no exponer las fotorresinas durante la inspección y evaluación de los tiempos de revelado.
 	
-	\subsection{Microscopía electrónica de barrido (MEB)}\label{sec:SEM}
+	\vspace*{-0.12cm}\subsection{Microscopía electrónica de barrido (MEB)}\label{sec:SEM}
 
 		La microscopia electrónica de barrido (MEB) nos permitió ver y caracterizar las películas delgadas, ya sean los electrodos o las \pdm. Tamaño de poro, homogeneidad, tamaño de cristales, microfisuras y espesores son algunas las características que se pudieron evaluar con esta técnica. Además, el equipo utilizado nos permitió hacer análisis por espectroscopia de rayos X dispersiva en energía (EDS, del inglés \textit{Energy Dispersive Spectroscopy}) y tomar imágenes tanto de electrones secundarios como de electrones retrodifundidos. \cite{Goodhew2000,Watt1997}
 
 
-			\begin{figure}[t!]
+			\begin{figure}[b!]
 			 		  \begin{center}
 			 		  \includegraphics[width=\textwidth]{Imagenes/sem-fib.jpg}
 			 		  \caption[Microscopio de doble haz FIB/SEM]{Equipo de FIB/SEM utilizados para realizar las observaciones, cortes y caracterizaciones de los sensores. Consta de un microscopio de barrido electrónico de alta resolución y de una fuente de galio líquido para realizar, entre otras cosas, cortes en la micro y nanoescala.}
 			 		  \label{fig:sem-fib}
 			 		  \end{center}
+			 		  \vspace*{-2mm}
 			 		  \end{figure}
 
 
@@ -544,7 +535,7 @@
 					
 	\subsection{Microscopía con iones de galio focalizados (FIB)}\label{sec:FIB}
 
-		El bombardeo con haz de iones (FIB, del inglés \textit{focused ion beam}) es una técnica que se utiliza fundamentalmente para el análisis de materiales en general, y en particular para materiales propios de la industria de la microelectrónica, más específicamente para análisis de microsistemas (MEMS, del inglés \textit{Micro Electro Mechanical Systems}) y circuitos integrados (IC, del inglés \textit{Integrated Circuits}). 
+		El bombardeo con haz de iones (FIB, del inglés \textit{focused ion beam}) es una técnica que se utiliza fundamentalmente para el análisis de materiales, y en particular para materiales propios de la industria de la microelectrónica, más específicamente para análisis de microsistemas (MEMS, del inglés \textit{Micro Electro Mechanical Systems}) y circuitos integrados (IC, del inglés \textit{Integrated Circuits}). 
 
 		Consiste en el bombardeo de la muestra con iones de galio para desplazar los átomos de la misma. El Ga$^{\circ}$ (que se almacena en un	reservorio en la cabeza de la columna) se licua y se ioniza para dar lugar a los iones de Ga${^+}$, los cuales mediante un sistema de lentes electromagnéticas (similar al usado en MEB) son acelerados y focalizados sobre la muestra. 
 
@@ -558,82 +549,39 @@
 			  		  \begin{subfigure}[t]{0.498\textwidth}
 			  		  \includegraphics[width=\textwidth]{Imagenes/FIB-panel-c.jpg}
 			  		  \end{subfigure}
-			  		  \caption[Esquema de las microscopias FIB/SEM]{(a) Esquema donde se muestra la disposición de las columnas de electrones y de átomos de galio del \textit{Helios NanoLab 650} y los principales eventos que ocurren al impactar los haces sobre la muestra.(b) Corte en sección trasversal de un dispositivo mesoporoso multicapa. (c) Imagen de alta resolución de la sección trasnversal enmarcada en (b).}
+			  		  \caption[Esquema de las microscopias FIB/SEM]{(a) Esquema donde se muestra la disposición de las columnas de electrones y de átomos de galio del \textit{Helios NanoLab 650} y los principales eventos que ocurren al impactar los haces sobre la muestra.(b) Corte en sección trasversal de un dispositivo mesoporoso multicapa. (c) Imagen de alta resolución de la sección transversal enmarcada en (b).}
 			  		  \label{esq:sem-fib}
 			  		  \end{figure}
 
 		El impacto de los iones Ga${^+}$ desplaza los átomos de la muestra generando así <<cortes>> sobre la misma. Previo al tratamiento, sin romper vacío y dentro de la cámara del FIB, se deposita sobre la muestra una delgada capa de Pt ($\sim$\SI{150}{\nm}). La misma actúa como protección de la muestra y para generar un borde de corte mas abrupto, ya que la tasa de desplazamiento de los átomos de Pt con iones Ga${^+}$ es extremadamente baja.\cite{Giannuzzi2005,Orloff1996} 
 
-			
-
-		La técnica es de especial utilidad para examinar secciones transversales de muestras, calcular espesores, reconstruir volumenes en 3D, preparar láminas para microscopía electrónica de trasmisión, entre otros tantos ejemplos. El diagrama de la figura \ref{esq:sem-fib}a representa la disposición espacial de las columnas (de iones y electrones), detectores y muestra del equipo. En en el panel (b) de la misma figura se muestra una imagen de electrones secundarios, rotada \SI{52}{\degree}, de un corte realizado para examinar la sección transversal de un dispositivo. El panel (c) es una imagen de alta resolución de la sección remarcada del panel (b). La muestra es de un cristal fotónico compuesto por capas alternadas de mesoporosos de TiO$_2$ y SiO$_2$, estructurados con F127 y CTAB respectivamente.\cite{Gimenez2017}
+		\pagebreak La técnica es de especial utilidad para examinar secciones transversales de muestras, calcular espesores, reconstruir volúmenes en 3D, preparar láminas para microscopía electrónica de trasmisión, entre otros tantos ejemplos. El diagrama de la figura \ref{esq:sem-fib}a representa la disposición espacial de las columnas (de iones y electrones), detectores y muestra del equipo. En en el panel (b) de la misma figura se muestra una imagen de electrones secundarios, rotada \SI{52}{\degree}, de un corte realizado para examinar la sección transversal de un dispositivo. El panel (c) es una imagen de alta resolución de la sección remarcada del panel (b). La muestra es de un cristal fotónico compuesto por capas alternadas de películas delgadas mesoporosos de TiO$_2$ y SiO$_2$, estructurados con F127 y CTAB respectivamente.\cite{Gimenez2017}
 
 		Prácticamente en todos los casos se requiere una aceleración de iones de \SI{30}{\kilo\electronvolt} para que sea efectiva la trasferencia de momento. El flujo de iones varía de acuerdo a una realción de compromiso entre tiempo y calidad de corte, siendo las corriente mas utilizadas entre \SI{2.5}{\nano\ampere} y \SI{40}{\pico\ampere} \cite{Orloff2003,Reyntjens2001}.
 
 \section{Mediciones electroquímicas}\label{sec:medidas_eq}
 			
+			Las mediciones electroquímicas constituyen una parte central de este trabajo. Se hizo uso de dos tipos de técnicas voltamperométricas: de corriente continua y de corriente alterna. Para algunos de los caso de más difícil interpretación se recurrió a la simulación de voltametrías por elementos finitos. 
 
-			%FALTA agregar esto:
-			%La diferencia de potencial absoluto entre los picos catódico y anódico es fruto de una combinación entre los diferentes coeficientes de difusión del par y el sobrepotencial necesario para transferir electrones entre la superficie del electrodo y el analito. Esta diferencia de potencial está relacionada directamente con el número de electrones que interviene en la reacción según la siguiente ecuación.
-			%(𝐸𝑝𝑎 − 𝐸𝑝𝑐) = 2.218 ∗ 𝑅𝑇 𝑛𝐹
-
-			%De este modo, a temperatura de 25°C, la separación teórica debería ser aproximadamente de 59mV para parejas redox en que la transferencia sea de un único electrón, independiente de la concentración o la velocidad de barrido. A mayor separación de picos se tendrá un proceso cada vez más irreversible.
-
-			Las mediciones electroquímicas fueron una parte central de este trabajo. Se utilizaron dos tipos de técnicas voltamperométricas, de corriente continua y de corriente alterna. 	
-
-			Para ambas técnicas se utilizó la configuración típica para celda de tres electrodos.\cite{Wi2000} El electrodo de trabajo (ET) es donde ocurre la reacción electroquímica, para lo cúal se le aplica un potencial variable respecto de otro electrodo de potencial fijo, denominado electrodo de referencia (ER). La corriente resultante de la reacción química circula entre el electrodo de trabajo y el electrodo auxiliar o contraelectrodo (CE). 
+			En todos los casos (tanto para los experimentales como los simulados) se utilizó la configuración típica para celda de tres electrodos.\cite{Wi2000} El electrodo de trabajo (ET) es donde ocurre la reacción electroquímica, para lo cúal se le aplica un potencial variable respecto de otro electrodo de potencial fijo, denominado electrodo de referencia (ER). La corriente resultante de la reacción química circula entre el electrodo de trabajo y el electrodo auxiliar o contraelectrodo (CE). 
 		
 			La variación del potencial aplicado y la medición de la corriente se controlan mediante un potenciostato. El diagrama eléctrico se encuentra esquematizado en la figura \ref{fig:eq-circuito}.
 
-				\begin{figure}[h!]
+				\begin{figure}[b!]
 			 		  \begin{center}
-			 		  \includegraphics[width=0.80\textwidth]{Esquemas/esquema-eq.pdf}
+			 		  \includegraphics[width=0.85\textwidth]{Esquemas/esquema-eq.pdf}
 			 		  \caption[Circuito eléctrico EQ]{Esquema eléctrico correspondiente al armado experimental utilizado para realizar las voltametrías cíclicas.}
 			 		  \label{fig:eq-circuito}
 			 		  \end{center}
 			 		  \end{figure}
-
-			Las mediciones se llevaron a cabo sobre dos ensamblados experimentales diferentes. El primero de ellos fué utilizado durante los estadios más tempranos de la tesis, sobre electrodos sin diseño transferido. Para este armado se preparó una celda fabricada en acrílico, con un volumen aproximado de \SI{3}{\ml} y un orificio en la parte inferior. La celda se llena con la solución que contiene la sonda por la parte superior. Para sellar la parte en contacto con el sustrato de forma de evitar perdidas, se utilizó un sello de \SI{1}{\mm} de radio, el cual determina el área geométrica utilizada en \SI{3.15}{\mm^{2}}. Éste preparado experimental precisó de ER y CE externos. En la figura \ref{fig:celda}a se expone una fotografía para este sistema. 
-
-					 \begin{figure}[t!]
-			  		 \begin{subfigure}[t]{0.495\textwidth}
-			  		  \includegraphics[width=\textwidth]{Imagenes/EQ1.jpg}
-			  		  \end{subfigure}
-			  		  \begin{subfigure}[t]{0.495\textwidth}
-			  		  \includegraphics[width=\textwidth]{Imagenes/EQ2.jpg}
-			  		  \end{subfigure}
-			  \caption[Equipo para realizar la medidas electroquímicas]{Fotografía del instrumental que se utilizó a lo largo de la tesis para tomar las medidas electroquímicas. Izquierda: celda de acrílico sobre electrodos de Au recubierto con una \pdm\space utilizando CE y ER externos. Derecha: oblea con 6 ET por sensor, celda fabricada con resina epoxi SU8, CE integrado y utilizando un ER externo.}
-			  		 \label{fig:celda}
-			 		 \end{figure}
-
-				     \begin{table}[b!]
-			  		  \caption[Reactivos utilizados para las mediciones electroquímicas]{Reactivos y sondas electroquímicas utilizados para las mediciones electroquímicas}
-			  		   \begin{tabular}{>{\raggedright\arraybackslash}m{5.1cm}>{\centering\arraybackslash}m{1.3cm}>{\centering\arraybackslash}m{2.65cm}>{\raggedright\arraybackslash}m{1.4cm}} 
-			  		  \toprule
-					  Reactivo \hspace{3cm}Nombre& Marca & Peso Molecular (\si{g.mol^{-1}}) & Función  \\ \midrule
-			    	  \ferroCompleto \hspace{3cm} ferrocianuro de potasio & \textit{Sigma} & 422,41  & Sonda \\ \midrule
-			    	  \ferriCompleto \hspace{3cm} ferricianuro de potasio & \textit{Sigma} & 329,27  & Sonda  \\ \midrule
-			  		  \aminorutenioCompleto  \hspace{3cm}  cloruro de hexaaminorutenio(III)& \textit{Aldrich} &  309,61  & Sonda  \\ \midrule
-			  		  \raisebox{-.5\height}{\includegraphics[scale=0.4]{Esquemas/Fc.pdf}}  \hspace{3cm} ferroceno metanol   & \textit{Aldrich} &  216,06 & Sonda  \\ \midrule
-			  		  H$_2$O \hspace{4cm} agua &  \SI{18}{\mega\ohm\per\cm}  &  18,02 & Solvente \\ \midrule
-			  		  KCl  \hspace{4cm} cloruro de potasio   & \textit{Biopack} & 74,56 & Electrolito Soporte \\
- 			  		  \bottomrule
-			    	  \end{tabular}
-			   		  \label{tabla:eq}
-			   		  \end{table} 		 	
-
-             En el segundo ensamblado experimental, cuya fotografía se muestran en la figura \ref{fig:celda}b, las mediciones se llevan a cabo sobre electrodos con un diseño transferido, en el cúal el CE se encuentra integrado en los sensores. Como referencia se utilizó un electrodo externo. El área, en este caso, queda determinada por el diseño (consultar sección \ref{sec:diseno}) de los electrodos. En todos los voltagramas presentados en este trabajo, con el objetivo de hacer las comparaciones más simples, las intensidades fueron normalizados por el área geométrica de cada electrodo y los potenciales referidos al potencial de un electrodo estándar de calomel saturado (\SI{0.248}{\volt} contra electrodo normal de hidrógeno a \SI{20}{\celsius})\cite{BANUS1941}.
-					 		  
-			 Las mediciones electroquímicas fueron tomadas con un potenciostato \textit{Teq4}, o un potenciostato \textit{Autolab} de la firma \textit{Ecochemie} para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second}. Como electrodo de referencia se empleó un electrodo de calomel saturado (ECS) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de \SI{2}{\square\cm}. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímicas. 
-			
-			 A continuación se hace una breve reseña sobre las técnicas utilizadas, los parámetros empleados y las configuraciones experimentales.
-
-	 \subsection{Voltametría cíclica}
+		
+	 \subsection{Voltametría cíclica de corriente continua}
 	 		
-	 		La voltamperometría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo de trabajo respecto de un electrodo de referencia. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante que circula por el electrodo de trabajo. La señal de excitación es un barrido de potencial lineal con una onda de forma triangular, la cual parte de un potencial E$_1$, evoluciona linealmente hasta un potencial E$_2$ para luego volver a E$_1$. Las velocidades de este barrido pueden variar desde menos de \SI{1}{\milli\volt.\second^{-1}} hasta cientos de volts por segundo; en nuestro caso se utilizaron velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}; se escogieron estas velocidades para llevar a cabo experimentos de una duración aceptable y que no se observe desplazamiento de potenciales para los picos de máxima oxidación y/o reducción, debido a limitaciones en la transferencia de carga por altas velocidades de barrido. \cite{nicholson1964,Gewirth2004}
+	 		La voltamperometría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo de trabajo respecto de un electrodo de referencia. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante que circula por el electrodo de trabajo. La señal de excitación es un barrido de potencial lineal con una onda de forma triangular, la cual parte de un potencial E$_1$, evoluciona linealmente en el tiempo hasta un potencial E$_2$ para luego volver a E$_1$ (figura \ref{fig:CV_ideal}. Las velocidades de este barrido pueden variar desde menos de \SI{1}{\milli\volt.\second^{-1}} hasta cientos de volts por segundo; en nuestro caso se utilizaron velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}; se escogieron estas velocidades para llevar a cabo experimentos de una duración aceptable y que no se observe desplazamiento de potenciales para los picos de máxima oxidación y/o reducción, debido a limitaciones en la transferencia de carga por altas velocidades de barrido. \cite{nicholson1964,Gewirth2004}
 
-	 		Como ya se dijo anteriormente se barre el potencial del electrodo de trabajo en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajó a un pH$\sim 5$, para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo de calomel saturado.\cite{wang2014} 
+	 		Como ya se dijo anteriormente, se barre el potencial del electrodo de trabajo en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajó a un pH$\sim 5$, para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo de calomel saturado.\cite{wang2014} 
 
+			En la figura \ref{fig:CV_ideal} se muestra la onda triangular de excitación aplicada y la curva obtenida para una sonda electroquímica idealmente reversible, donde se destacan los parámetros mas importantes. 
 
 	 			 \begin{figure}[h!]
 			  		  \begin{subfigure}[t]{0.495\textwidth}
@@ -647,8 +595,14 @@
 			  		  \label{fig:CV_ideal}
 			  		  \end{figure}
 
-			\vspace*{0.2cm}		  
-	 		En la figura \ref{fig:CV_ideal} se muestra la onda triangular de excitación aplicada y la curva obtenida para una sonda electroquímica idealmente reversible, donde se destacan los parámetros mas importantes.
+			\vspace*{4mm}La diferencia de potencial absoluto entre los picos catóico y anódico es fruto de una combinación entre los diferentes coeficientes de difusión del par rédox y el sobrepotencial necesario para transferir electrones entre la superficie del electrodo y el analito. Esta diferencia de potencial está relacionada directamente con el número de electrones que interviene en la reacción según la ecuación\ref{ec:deltadepico}.
+
+			\begin{equation}	
+			E_{pa} - E_pc = 2.218 RTnF
+			\label{ec:deltadepico}
+			\end{equation}
+
+			De este modo, a \SI{25}{\celsius}, la separación teórica debería ser aproximadamente de \SI{59}{\milli\volt} para cuplas rédox en que la transferencia sea de un único electrón, independiente de la concentración o la velocidad de barrido. A mayor separación de picos se tendrá un proceso cada vez más irreversible mientras que separaciones menores a \SI{59}{\milli\volt} sugieren sitios rédox anclados o sondas adsorbidas.\cite{Wi2000,Bockris1974,Gewirth2004}  
 	 		
 	 		Esta técnica se utilizó para evaluar fenómenos de exclusión, permeación y preconcentración. También para determinar concentración de las sondas electroactivas dentro y fuera de los poros, calcular coeficientes de difusión y estimar distancias de sitios redox así como chequear accesibilidad y estructura de las películas delgadas mesoporosas.
 
@@ -696,10 +650,7 @@
 			 		  \end{center}
 			 		  \end{figure}	
 	 		
-	 	
-	 		\pagebreak	
-			
-			 Las simulaciones se realizaron en colaboración con el Dr. Tagliasucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía\linebreak  (INQUIMAE) con el software \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual cuanta con un módulo electroquímico (\url{https://www.comsol.com/electrochemistry-module}).
+	 	 Las simulaciones se realizaron en colaboración con el Dr. Tagliasucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía\linebreak  (INQUIMAE) con el software \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual cuanta con un módulo electroquímico (\url{https://www.comsol.com/electrochemistry-module}).
 
 	    	\begin{table}[hb!]
 	 	    \caption[Parámetros de las simulaciones]{Parámetros y valores de entrada usadas durante las simulaciones de las voltametrías cíclicas.}
@@ -720,16 +671,52 @@
 	 	     \bottomrule
 			\end{tabular}
 			\label{tabla:simulacion}
-			\end{table} 
+			\end{table}	  
+			
+	 \subsection{Celdas electroquímicas}	
 
-			\vfill
-	
-	\section{Caracterización de los electrodos}
+			Las mediciones se llevaron a cabo sobre dos ensamblados experimentales diferentes. El primero de ellos fue utilizado durante los estadios más tempranos de la tesis, sobre electrodos sin diseño transferido. Para este armado se preparó una celda fabricada en acrílico, con un volumen aproximado de \SI{3}{\ml} y un orificio en la parte inferior al cual se le pueden adaptar sellos de polipropileno de diferentes diámetros para evitar fugas de la fase líquida. Se utilizó un sello de \SI{1}{\mm} de radio el cual determinó el área geométrica en \SI{3.15}{\mm^{2}}. La celda se llena con la solución que contiene la sonda electroquímica por la parte superior y de forma entrar contacto con el electrodo. Éste montaje experimental precisó utilizar ER y CE externos. En la figura \ref{fig:celda}a se expone una fotografía de este sistema. 
 
-		 Se dará cuenta en esta sección de las diferentes caracterizaciones y ensayos practicados sobre los electrodos de Au. Fundamentalmente la respuesta electroquímica, ya que la base de los sensores son las reacciones de óxido reducción. Es por ello que es necesario obtener electrodos de respuesta reproducible, confiable y fabricados por un proceso repetible y escalable. 
+					 \begin{figure}[t!]
+			  		 \begin{subfigure}[t]{0.495\textwidth}
+			  		  \includegraphics[width=\textwidth]{Imagenes/EQ1.jpg}
+			  		  \end{subfigure}
+			  		  \begin{subfigure}[t]{0.495\textwidth}
+			  		  \includegraphics[width=\textwidth]{Imagenes/EQ2.jpg}
+			  		  \end{subfigure}
+			  \caption[Equipo para realizar la medidas electroquímicas]{Fotografía del instrumental que se utilizó a lo largo de la tesis para tomar las medidas electroquímicas. Izquierda: celda de acrílico sobre electrodos de Au recubierto con una \pdm\space utilizando CE y ER externos. Derecha: oblea con 6 ET por sensor, celda fabricada con resina epoxi SU8, CE integrado y utilizando un ER externo.}
+			  		 \label{fig:celda}
+			 		 \end{figure}
 
-	\subsection{Respuesta electroquímica}\label{sec:respuesta_sondas_au}
-			 		
+				     \begin{table}[b!]
+			  		  \caption[Reactivos utilizados para las mediciones electroquímicas]{Reactivos y sondas electroquímicas utilizados para las mediciones electroquímicas}
+			  		   \begin{tabular}{>{\raggedright\arraybackslash}m{5.1cm}>{\centering\arraybackslash}m{1.3cm}>{\centering\arraybackslash}m{2.65cm}>{\raggedright\arraybackslash}m{1.4cm}} 
+			  		  \toprule
+					  Reactivo \hspace{3cm}Nombre& Marca & Peso Molecular (\si{g.mol^{-1}}) & Función  \\ \midrule
+			    	  \ferroCompleto \hspace{3cm} ferrocianuro de potasio & \textit{Sigma} & 422,41  & Sonda \\ \midrule
+			    	  \ferriCompleto \hspace{3cm} ferricianuro de potasio & \textit{Sigma} & 329,27  & Sonda  \\ \midrule
+			  		  \aminorutenioCompleto  \hspace{3cm}  cloruro de hexaaminorutenio(III)& \textit{Aldrich} &  309,61  & Sonda  \\ \midrule
+			  		  \raisebox{-.5\height}{\includegraphics[scale=0.4]{Esquemas/Fc.pdf}}  \hspace{3cm} ferroceno metanol   & \textit{Aldrich} &  216,06 & Sonda  \\ \midrule
+			  		  H$_2$O \hspace{4cm} agua &  \SI{18}{\mega\ohm\per\cm}  &  18,02 & Solvente \\ \midrule
+			  		  KCl  \hspace{4cm} cloruro de potasio   & \textit{Biopack} & 74,56 & Electrolito Soporte \\
+ 			  		  \bottomrule
+			    	  \end{tabular}
+			   		  \label{tabla:eq}
+			   		  \end{table} 		 	
+
+             En el segundo ensamblado experimental, cuya fotografía se muestran en la figura \ref{fig:celda}b, las mediciones se llevan a cabo sobre electrodos con un diseño transferido, en el cual el CE se encuentra integrado en los sensores. Como referencia se utilizó un electrodo externo. El área, en este caso, queda determinada por el diseño (consultar sección \ref{sec:diseno}) de los electrodos. En todos los voltagramas presentados en este trabajo, con el objetivo de simplificar las comparaciones, las intensidades fueron normalizados por el área geométrica de cada electrodo y los potenciales referidos al potencial de un electrodo estándar de calomel saturado (\SI{0.248}{\volt} contra electrodo normal de hidrógeno a \SI{20}{\celsius})\cite{BANUS1941}.
+					 		  
+			 Las mediciones electroquímicas fueron tomadas con un potenciostato \textit{Teq4}, o un potenciostato \textit{Autolab} de la firma \textit{Ecochemie} para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second}. Como electrodo de referencia se empleó un electrodo de calomel saturado (ECS) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de \SI{2}{\square\cm}. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímicas. 
+			
+			 A continuación se hace una breve reseña sobre las técnicas utilizadas, los parámetros empleados y las configuraciones experimentales.
+ 
+     %\subsection{Caracterización de los electrodos}
+
+		 %Se dará cuenta en esta sección de las diferentes caracterizaciones y ensayos practicados sobre los electrodos de Au. Fundamentalmente la respuesta electroquímica, ya que la base de los sensores son las reacciones de óxido reducción. Es por ello que es necesario obtener electrodos de respuesta reproducible, confiable y fabricados por un proceso repetible y escalable. 
+
+	%\subsection{Respuesta electroquímica}\label{sec:respuesta_sondas_au}
+	 \subsection{Sondas}\label{sec:respuesta_sondas_au} 
+
 			Una vez que los resultados de la fabricación de los sensores fueron óptimos se evaluó el desempeño electroquímico de los mismos. En el capítulo \ref{chap:Materiales} se describe con detalle el montaje experimental para realizar las mediciones de voltametrías cíclica (VC). Se usaron como sondas electroquímicas ferro y ferricianuro de potasio (\Ferro\space y \Ferri, \fe), cloruro de hexaaminorutenio(III) (\aminorutenioCompleto, \ru) y ferroceno metanol (\ferroceno, \fc). La elección de estas sondas modelo tiene que ver fundamentalmente con la carga neta de cada una de ellas, y con la reversibildiad de los pares redox. Analizaremos ahora como fue la respuesta de los electrodos compuestos por películas delgadas de Au para cada una de estas sondas.
 				
 		\subsubsection*{Respuesta de ferro/ferricianuro de potasio}	 
