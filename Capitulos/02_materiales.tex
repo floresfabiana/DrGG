@@ -561,11 +561,9 @@
 
 \section{Mediciones electroquímicas}\label{sec:medidas_eq}
 			
-			Las mediciones electroquímicas constituyen una parte central de este trabajo. Se hizo uso de dos tipos de técnicas voltamperométricas: de corriente continua y de corriente alterna. Para algunos de los caso de más difícil interpretación se recurrió a la simulación de voltametrías por elementos finitos. 
+			Las mediciones electroquímicas constituyen una parte central de este trabajo. Se hizo uso de dos tipos de técnicas voltamperométricas: de corriente continua y de corriente alterna, así cómo simulaciones de voltametrías por el método de elementos finitos. En las próximas secciones se introducen algunos principios teóricos sobre las técnicas empleadas y cual fue su relevancia para el presente trabajo.
 
-			En todos los casos (tanto para los experimentales como los simulados) se utilizó la configuración típica para celda de tres electrodos.\cite{Wi2000} El electrodo de trabajo (ET) es donde ocurre la reacción electroquímica, para lo cúal se le aplica un potencial variable respecto de otro electrodo de potencial fijo, denominado electrodo de referencia (ER). La corriente resultante de la reacción química circula entre el electrodo de trabajo y el electrodo auxiliar o contraelectrodo (CE). 
-		
-			La variación del potencial aplicado y la medición de la corriente se controlan mediante un potenciostato. El diagrama eléctrico se encuentra esquematizado en la figura \ref{fig:eq-circuito}.
+			En todos los casos (tanto para los experimentales como los simulados) se utilizó la configuración típica para celda de tres electrodos.\cite{Wi2000} El electrodo de trabajo (ET) es donde ocurre la reacción electroquímica, para lo cúal se le aplica un potencial variable respecto de otro electrodo de potencial fijo, denominado electrodo de referencia (ER). La corriente resultante de la reacción química circula entre el electrodo de trabajo y el electrodo auxiliar o contraelectrodo (CE). La variación del potencial aplicado y la medición de la corriente se controlan mediante un potenciostato. En la figura \ref{fig:eq-circuito} se presenta el esquema eléctrico empleado para tomar los voltagramas. 
 
 				\begin{figure}[b!]
 			 		  \begin{center}
@@ -588,7 +586,7 @@
 			  		  \includegraphics[width=\textwidth]{Graficos/onda-triangular.pdf}
 			  		  \end{subfigure}
 			  		  \begin{subfigure}[t]{0.495\textwidth}
-			  		  \includegraphics[width=\textwidth]{Esquemas/CV-ideal.pdf}
+			  		  \includegraphics[width=\textwidth]{Esquemas/CV_ideal.pdf}
 			  		  \end{subfigure}
 			  		  \caption[Voltamperometría ideal reversible]{Curva de excitación y voltagrama típico para una especie redox reversible. Se destaca en el voltagrama (derecha) los típicos parámetros que se extraen de la curva, picos máximos de corriente anódica y catódica 
 			  		  sus correspondientes potenciales.}
@@ -598,7 +596,7 @@
 			\vspace*{4mm}La diferencia de potencial absoluto entre los picos catóico y anódico es fruto de una combinación entre los diferentes coeficientes de difusión del par rédox y el sobrepotencial necesario para transferir electrones entre la superficie del electrodo y el analito. Esta diferencia de potencial está relacionada directamente con el número de electrones que interviene en la reacción según la ecuación\ref{ec:deltadepico}.
 
 			\begin{equation}	
-			E_{pa} - E_pc = 2.218 RTnF
+			E_{pa} - E_pc = 2.218 \, RTnF
 			\label{ec:deltadepico}
 			\end{equation}
 
@@ -608,7 +606,7 @@
 
 	 \subsection{Voltametría cíclica de corriente alterna}
 
-	 		La técnica de voltametría cíclica de corriente alterna (VCA) consta en aplicar una oscilación sinusoidal de voltaje a la celda electroquímica. A la onda triangular clásica usada en VC se le suma, montando sobre ella, una pequeña onda de corriente alterna. En los experimentos presentados en este trabajo la amplitud de la onda adicionada fue de de \SI{10}{\milli\volt} y la frecuencia de la misma de 1 y \SI{2}{\hertz}. Esta técnica se emplea en conjunto con un analizador de frecuencias para filtrar la componente continua de la alterna, de este modo, ofrece un limite de detección menor e incrementa la sensibilidad respecto de la CV tradicional.\cite{Wi2000,Skoog1995}
+	 		La técnica de voltametría cíclica de corriente alterna (VCA) consta en aplicar una oscilación sinusoidal de potencial a la celda electroquímica. A la onda triangular clásica usada en VC se le suma, montando sobre ella, una pequeña onda de corriente alterna. En los experimentos presentados en este trabajo la amplitud de la onda adicionada fue de de \SI{10}{\milli\volt} y la frecuencia de la misma de 1 y \SI{2}{\hertz}. Esta técnica se emplea en conjunto con un analizador de frecuencias para filtrar la componente continua de la alterna, de este modo, ofrece un limite de detección menor e incrementa la sensibilidad respecto de la CV tradicional.\cite{Wi2000,Skoog1995}
 
 	 		En la figura \ref{fig:ACV_ideal} se muestra la onda triangular con la perturbación, y la curva obtenida para una sonda electroquímica idealmente reversible, luego del filtrado de la componente continua.
 
@@ -625,7 +623,7 @@
 			  		  \label{fig:ACV_ideal}
 			  		  \end{figure}
 			
-	 \subsection{Simulaciones electroquímicas}\label{simulacion}
+	 \subsection{Simulaciones por el método de elementos finitos}\label{simulacion}
 
 	 	 Con la finalidad de validar las hipótesis de transporte planteadas en el capítulo \ref{chap:Electroquimica} y establecer las condiciones en las que se pueden o no observar fenómenos de mediación electroquímica, se llevaron a cabo simulaciones numéricas por computadora de algunos experimentos relevantes para tal fin.
 
@@ -636,20 +634,20 @@
 	 	 	\label{eq:fick}
 	 	 \end{equation}
 
-	 	 Esta ecuación es la base para simular los fenómenos de transporte, a la cual se le suman variables y complicaciones derivadas de las condiciones particulares de cada sistema que se quiera simular. Convección, reacciones químicos, fenómenos de adsorción son sólo algunas de estas complicaciones que producen cambios en el perfil de concentraciones y en la difusión en sí, agregando complejidad al sistema de ecuaciones diferenciales.  
+	 	 Esta ecuación es la base para simular los fenómenos de transporte, a la cual se le suman variables y complicaciones derivadas de las condiciones de contorno de cada sistema que se quiera simular. Convección, reacciones químicos, fenómenos de adsorción son sólo algunas de estas complicaciones que producen cambios en el perfil de concentraciones y en la difusión en sí, agregando complejidad al sistema de ecuaciones diferenciales.  
 
-	 	 El modelo aplicado en este trabajo utiliza condiciones de contorno de equilibrio en la superficie del electrodo, descriptas por la ecuación de Nerst. Dichas condiciones se aplican tanto para la sonda (\fc) como para el mediador(\ru), lo cual es válido siempre que la cinética de electrodo sea suficientemente rápida. Todos los procesos difusivos (para la sonda y el mediador) son descriptos según la segunda ley de Fick (ec. \ref{eq:fick}) ya sea en la película mesoporosa o en la solución, en la cual se considera solo la presencia de la sonda. Los coeficientes de cada especie fueron variando en función las condiciones de cada experimento simulado. En los caso en los que se simuló una mediación rédox, la reacción entre entre la sonda y el mediador fue descripta como una reacción bimolecular de orden uno en cada especie. En ningún caso se considera migración, lo cual es valido siempre y cuando la concentración del electrolito soporte sea suficientemente alta. El modelo asume que el sistema es homogéneo (tanto en la solución como en la película) en planos paralelos al electrodo y por lo tanto solo existen gradientes en la dirección normal al electrodo. 
+	 	 El modelo aplicado en este trabajo utilizaron condiciones de contorno de equilibrio en la superficie del electrodo, descriptas por la ecuación de Nernst. Dichas condiciones se aplicaron tanto para sistemas con una o más sondas en solución cómo para sistemas más complejos donde se pueden observar fenómenos de mediación rédox o permeación, y son válidas siempre y cuando la cinética de electrodo sea suficientemente rápida. Todos los procesos difusivos, ya sean dentro de la película mesoporosa o en la solución, fueron descriptos según la segunda ley de Fick (ec. \ref{eq:fick}). Los coeficientes de cada especie fueron variando en función las condiciones de cada experimento simulado. En los caso en los que se simuló una mediación rédox, la reacción entre entre la sonda y el mediador fue descripta como una reacción bimolecular de orden uno en cada especie, representando a las moléculas utilizadas en los experimentos que fueron \aminorutenio\space (\ru) y ferroceno metanol (\fc) como mediador y sonda respectivamente. En ningún caso se considera migración, lo cual es valido siempre y cuando la concentración del electrolito soporte sea suficientemente alta. El modelo asume que el sistema es homogéneo (tanto en la solución como en la película) en planos paralelos al electrodo y por lo tanto solo existen gradientes en la dirección normal al electrodo. 
 
-	 	 La figura \ref{esq:simulacion} es un diagrama esquemático representativo del modelo con las varibles químicas y físicas que se tuvieron en cuenta. En la tabla \ref{tabla:simulacion} se resumen dichas variables, sus valores y su descripción.
-
-	 			 \begin{figure}[b!]
+	 	 		\begin{figure}[b!]
 			 		  \begin{center}
 			 		  \includegraphics[width=0.80\textwidth]{Esquemas/modelo-simulacion.pdf}
 			 		  \caption[Modelos para simulación por MEF]{Esquema del modelo utilizado para las simulaciones por el MEF y las variables que se emplearon para evaluar fenómenos de trasporte y mediación redox.}
 			 		  \label{esq:simulacion}
 			 		  \end{center}
-			 		  \end{figure}	
-	 		
+			 		  \end{figure}
+
+	 	 La figura \ref{esq:simulacion} es un diagrama esquemático representativo del modelo con las variables químicas y físicas que se tuvieron en cuenta en el caso de un sistema que presenta simultáneamente mediación rédox y permeación a través de la película delgada mesoporosa. Las moléculas (\ru\space como mediador y \fc\space como sonda) y concentraciones utilizadas son reflejo de los experimentos en laboratorio cuyos resultados se discutirá en el capítulo \ref{chap:Electroquimica}.  En la tabla \ref{tabla:simulacion} se resumen las condiciones de contorno impuestas para las simulaciones, los valores de las variables utilizadas y la descripción de cada una de ellas.
+		
 	 	 Las simulaciones se realizaron en colaboración con el Dr. Tagliasucchi del Instituto de Química Física de los Materiales, Medio Ambiente y Energía\linebreak  (INQUIMAE) con el software \textit{COMSOL Multiphysics\textsuperscript\textregistered} (\url{https://www.comsol.com/}) el cual cuanta con un módulo electroquímico (\url{https://www.comsol.com/electrochemistry-module}).
 
 	    	\begin{table}[hb!]
@@ -657,13 +655,13 @@
 	 	    \begin{tabular}{>{\raggedright\arraybackslash}m{1.4cm}>{\centering\arraybackslash}m{2.8cm}>{\raggedright\arraybackslash}m{6.7cm}} 
 	 	    \toprule
 	 	    Variable  & 	Valor  &   descripción      \\ \midrule
-	 	    $h$  	  &  \hspace{-5mm} \SI{200}{nm}	& 	   espesor de las películas delgadas mesoporosas 	    \\ \midrule
+	 	    $d$  	  &  \hspace{-5mm} \SI{200}{nm}	& 	   espesor de las películas delgadas mesoporosas 	    \\ \midrule
 	 	    $C_{\fc}$  & \SI{5}{\milli\Molar}  & concentración de FeOH en solución    \\ \midrule
 	 	    $C_{\ru}$ & \SI{1}{\Molar}  & concentración de \ru\space en las películas    \\ \midrule
 	 	    $C_{KCl}$ & \hspace{-5mm}  \SI{100}{\milli\Molar}  & concentración de electrolito soporte    \\ \midrule
-	 	    $k$ 		   & variable 	 & 	constante de mediación redox    \\ \midrule
-	 	    $E^\circ_{\ru}$  & \hspace{-3mm}\SI{-0.3}{\volt} vs ECS & potencial reducción estandar el \ru \\ \midrule
-	 	    $E^\circ_{\fc}$  & \SI{0.3}{\volt} vs ECS & potencial reducción estandar el \fc \\ \midrule
+	 	    $k$ 		   & variable 	 & 	constante de mediación rédox    \\ \midrule
+	 	    $E^\circ_{\ru}$  & \hspace{-3mm}\SI{-0.3}{\volt} vs ECS & potencial reducción estándar el \ru \\ \midrule
+	 	    $E^\circ_{\fc}$  & \SI{0.3}{\volt} vs ECS & potencial reducción estándar el \fc \\ \midrule
 	 	    $D_{\fc}^{pel} $  & variable & coeficiente de difusión del \fc\space en la película \\ \midrule
 	 	    $D_{\fc}^{sol} $  & variable & coeficiente de difusión del \fc\space en la solución \\ \midrule
 	 	    $D_{e}$  & variable & coeficiente de difusión por \textit{electron hopping }del \ru\space en el film \\ \midrule
@@ -675,7 +673,7 @@
 			
 	 \subsection{Celdas electroquímicas}	
 
-			Las mediciones se llevaron a cabo sobre dos ensamblados experimentales diferentes. El primero de ellos fue utilizado durante los estadios más tempranos de la tesis, sobre electrodos sin diseño transferido. Para este armado se preparó una celda fabricada en acrílico, con un volumen aproximado de \SI{3}{\ml} y un orificio en la parte inferior al cual se le pueden adaptar sellos de polipropileno de diferentes diámetros para evitar fugas de la fase líquida. Se utilizó un sello de \SI{1}{\mm} de radio el cual determinó el área geométrica en \SI{3.15}{\mm^{2}}. La celda se llena con la solución que contiene la sonda electroquímica por la parte superior y de forma entrar contacto con el electrodo. Éste montaje experimental precisó utilizar ER y CE externos. En la figura \ref{fig:celda}a se expone una fotografía de este sistema. 
+			Las mediciones electroquímicas se llevaron a cabo sobre dos ensambles experimentales diferentes. El primero de ellos fue utilizado durante los estadios más tempranos de la tesis, sobre electrodos metálicos no litografiados. Para este armado se preparó una celda fabricada en acrílico, con un volumen aproximado de \SI{3}{\ml}, y un orificio en la parte inferior al cual se le pueden adaptar sellos de polipropileno de diferentes diámetros para evitar fugas de la fase líquida. Se utilizó un sello de \SI{1}{\mm} de radio el cual determinó el área geométrica del electrodo en \SI{3.15}{\mm^{2}}. Una vez puesto en contacto el sello con el electrodo, se llenó la celda por la parte superior con la solución que contiene la sonda electroquímica y se verificó, en cada una de las mediciones, que no se haya perdidas de líquido. Éste montaje experimental precisó utilizar ER y CE externos. En la figura \ref{fig:celda}a se expone una fotografía de este sistema. 
 
 					 \begin{figure}[t!]
 			  		 \begin{subfigure}[t]{0.495\textwidth}
@@ -688,8 +686,18 @@
 			  		 \label{fig:celda}
 			 		 \end{figure}
 
-				     \begin{table}[b!]
-			  		  \caption[Reactivos utilizados para las mediciones electroquímicas]{Reactivos y sondas electroquímicas utilizados para las mediciones electroquímicas}
+             En el segundo ensamble experimental, cuya fotografía se muestran en la figura \ref{fig:celda}b, las mediciones se llevaron a cabo sobre electrodos litografiados, en los cuales se encuentran integrados en los multisensores el contraelectrodo y un electrodo de pseudoreferencia. En los casos que no fue posible usar la pseudoreferencia se utilizó un electrodo de referencia externo. En esta configuración el área geométrica quedó determinada por los electrodos, variando desde $0.1$ a \SI{0.01}{\square\mm} según el diseño (consultar sección \ref{sec:diseno}). En todos los voltagramas presentados en este trabajo, con el objetivo de simplificar las comparaciones, las intensidades fueron normalizados por el área y los potenciales fueron referidos al potencial de un electrodo estándar de calomel saturado (\SI{0.248}{\volt} contra el electrodo normal de hidrógeno a \SI{20}{\celsius})\cite{BANUS1941}. 
+					 		  
+			 Las mediciones electroquímicas fueron tomadas con un potenciostato \textit{Teq4}, o un potenciostato \textit{Autolab} de la firma \textit{Ecochemie} para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second}. Como electrodo de referencia se empleó un electrodo de calomel saturado (ECS) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de \SI{2}{\square\cm} de área.  
+	
+	 \subsection{Sondas}\label{sec:respuesta_sondas_au} 
+
+	 		En esta sección se dará cuenta de la caracterización electroquímica de los electrodos de Au para cada una de las sondas utilizadas a lo largo de la tesis. Los multisensores basan su principio de detección en reacciones de óxido/reducción, es por ello que es necesario obtener electrodos de respuesta reproducible, confiable y fabricados por un proceso repetible y escalable. 
+
+			Una vez que los resultados de la fabricación de los sensores fueron óptimos (consultar capítulo \ref{chap:Microfabricaciones}) se evaluó el desempeño electroquímico de los mismos. Se usaron como sondas electroquímicas ferrocianuro y ferricianuro de potasio (\Ferro\space y \Ferri, \fe), cloruro de hexaaminorutenio(III) (\aminorutenioCompleto, \ru) y ferroceno metanol (\ferroceno, \fc). La elección de estas sondas modelo tiene que ver fundamentalmente con la carga neta de cada una de ellas, y con la reversibildiad de los pares redox. En la tabla \ref{tabla:eq} se resumen las sondas electroquímicas utilizadas en las mediciones y los reactivos utilizados para preparar las soluciones. 
+			
+			     \begin{table}[h!]
+			  		  \caption{Reactivos y sondas electroquímicas utilizados para las mediciones electroquímicas.}
 			  		   \begin{tabular}{>{\raggedright\arraybackslash}m{5.1cm}>{\centering\arraybackslash}m{1.3cm}>{\centering\arraybackslash}m{2.65cm}>{\raggedright\arraybackslash}m{1.4cm}} 
 			  		  \toprule
 					  Reactivo \hspace{3cm}Nombre& Marca & Peso Molecular (\si{g.mol^{-1}}) & Función  \\ \midrule
@@ -703,39 +711,28 @@
 			    	  \end{tabular}
 			   		  \label{tabla:eq}
 			   		  \end{table} 		 	
-
-             En el segundo ensamblado experimental, cuya fotografía se muestran en la figura \ref{fig:celda}b, las mediciones se llevan a cabo sobre electrodos con un diseño transferido, en el cual el CE se encuentra integrado en los sensores. Como referencia se utilizó un electrodo externo. El área, en este caso, queda determinada por el diseño (consultar sección \ref{sec:diseno}) de los electrodos. En todos los voltagramas presentados en este trabajo, con el objetivo de simplificar las comparaciones, las intensidades fueron normalizados por el área geométrica de cada electrodo y los potenciales referidos al potencial de un electrodo estándar de calomel saturado (\SI{0.248}{\volt} contra electrodo normal de hidrógeno a \SI{20}{\celsius})\cite{BANUS1941}.
-					 		  
-			 Las mediciones electroquímicas fueron tomadas con un potenciostato \textit{Teq4}, o un potenciostato \textit{Autolab} de la firma \textit{Ecochemie} para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second}. Como electrodo de referencia se empleó un electrodo de calomel saturado (ECS) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de \SI{2}{\square\cm}. En la tabla \ref{tabla:eq} se resumen los reactivos utilizados para llevar a cabo las mediciones electroquímicas. 
-			
-			 A continuación se hace una breve reseña sobre las técnicas utilizadas, los parámetros empleados y las configuraciones experimentales.
- 
-     %\subsection{Caracterización de los electrodos}
-
-		 %Se dará cuenta en esta sección de las diferentes caracterizaciones y ensayos practicados sobre los electrodos de Au. Fundamentalmente la respuesta electroquímica, ya que la base de los sensores son las reacciones de óxido reducción. Es por ello que es necesario obtener electrodos de respuesta reproducible, confiable y fabricados por un proceso repetible y escalable. 
-
-	%\subsection{Respuesta electroquímica}\label{sec:respuesta_sondas_au}
-	 \subsection{Sondas}\label{sec:respuesta_sondas_au} 
-
-			Una vez que los resultados de la fabricación de los sensores fueron óptimos se evaluó el desempeño electroquímico de los mismos. En el capítulo \ref{chap:Materiales} se describe con detalle el montaje experimental para realizar las mediciones de voltametrías cíclica (VC). Se usaron como sondas electroquímicas ferro y ferricianuro de potasio (\Ferro\space y \Ferri, \fe), cloruro de hexaaminorutenio(III) (\aminorutenioCompleto, \ru) y ferroceno metanol (\ferroceno, \fc). La elección de estas sondas modelo tiene que ver fundamentalmente con la carga neta de cada una de ellas, y con la reversibildiad de los pares redox. Analizaremos ahora como fue la respuesta de los electrodos compuestos por películas delgadas de Au para cada una de estas sondas.
-				
-		\subsubsection*{Respuesta de ferro/ferricianuro de potasio}	 
+		
+		\subsubsection{Respuesta de ferrocianuro/ferricianuro de potasio}	 
 			 	
-		   En electroquímica éste par rédox es frecuentemente utilizado para evaluar la calidad de electrodos. Esto se debe a que se trata de par rédox cuyas especies oxidada y reducida son moléculas económicas, fácil de conseguir, solubles en solución acuosa y se compartan de forma cuasireversible frente al intercambio electrónico electrodo-especie. La reacción que tiene lugar es la siguiente:
+		   En electroquímica éste par rédox es frecuentemente utilizado para evaluar la calidad de electrodos. Esto se debe a que se trata de par rédox cuyas especies oxidada y reducida son económicas, fáciles de conseguir, solubles en solución acuosa y se comportan de forma cuasireversible frente al intercambio electrónico. La reacción que tiene lugar es la siguiente:
+		
 			 \begin{equation}
-			 \schemestart 
-			 Fe(CN)$_6^{4-}$  
-			 \arrow{<=>[\scriptsize oxidación][\scriptsize reducción]}[0,1.5] 
-			 Fe(CN)$_6^{3-}+e^-$ \schemestop
-			 \end{equation}
-		   Se espera, en la aproximación más simple, que sigan el comportamiento descrito por Randles-Sevcik, donde la intensidad de pico ($i_p$) es proporcional a la concentración ($C$) y a la raiz cuadrada de la velocidad de barrido $v$ según:
+			   \schemestart 
+			   Fe(CN)$_6^{4-}$  
+			   \arrow{<=>[\scriptsize oxidación][\scriptsize reducción]}[0,1.5] 
+			   Fe(CN)$_6^{3-}+e^-$ \schemestop
+			   \end{equation}
+		
+		   Se espera, en la aproximación más simple, que sigan el comportamiento descrito por Randles-Sevcik, donde la corriente de pico ($i_p$) es proporcional a la concentración ($C$) y a la raíz cuadrada de la velocidad de barrido $v$ según:
 		  
 		 	\begin{equation}
-			i_p=0.4463nFAC\left(\frac{nFvD}{RT}\right)^{1/2}
-			\label{eq:rs2}
+			   i_p=0.4463nFAC\left(\frac{nFvD}{RT}\right)^{1/2}
+		     	\label{eq:rs2}
 			\end{equation}
 
-			\begin{figure}[ht]
+     		 Con el propósito de corroborar este comportamiento, se realizaron experimentos de VC a diferentes concentraciones de la sonda (figuras \ref{fig:Fe_a} y  \ref{fig:Fe_b}) y a distintas velocidades de barrido (figuras \ref{fig:Fe_c} y  \ref{fig:Fe_d}). Resultaron de especial utilidad la curva de calibración y la respuesta frente a distintas velocidades de barrido. Para cualquiera de estás velocidades los voltagramas conservan constantes los valores de $E_p$, indicativo de una óptima trasferencia de carga entre el electrodo y la sonda. Además se destaca la relación lineal de j$_p$ con $v^{1/2}$ verificando la ecuación de Randles-Sevcik (ec. \ref{eq:rs2}) y que el sistema responde a un proceso de difusión lineal semiinfinita, lo cual es esperable  para un experimento en el que el electrodo esta en contacto directo con la solución que contiene el analito electroactivo y el electrolito soporte {(\SI{0,1}{\milli\Molar} KCl, pH=$5.5$)\cite{Wi2000,Pumera2007,Gewirth2004,Villullas2000}.
+
+     		 \begin{figure}[h!]
 	 	    	\begin{subfigure}[t]{0.5\textwidth}
 	         	\includegraphics[width=\textwidth]{Graficos/Concentraciones_Fe.pdf}
 	        	\caption{Voltametrías cíclicas para la cupla \fe\space a diferentes concentraciones. Todas medidas fueron tomadas a \SI{50}{\milli\volt\per\second}.}
@@ -746,8 +743,6 @@
 	       		\caption{Curva de calibración para distintas concentraciones de la cupla \fe. Valores tomados de la figura \ref{fig:Fe_a}.}
 	         	\label{fig:Fe_b}
 	     		\end{subfigure}
-	     		%\vspace*{0.5cm}
-
  	     	\begin{subfigure}[t]{0.495\textwidth}
          		\includegraphics[width=\textwidth]{Graficos/Velocidades_Fe.pdf}
         	    \caption{Voltametrías cíclicas de una solución \SI{10}{\milli\Molar} de la cupla equimolar \fe\space para diferentes velocidades de barrido.}
@@ -762,20 +757,18 @@
      		 \label{fig:ferro-ferri-CV}
      		 \end{figure}
 
-     		 Con el propósito de corroborar este comportamientos, se realizaron experimentos de VC a diferentes concentraciones de la sonda (figuras \ref{fig:Fe_a} y  \ref{fig:Fe_b}) y a distintas velocidades de barrido (figuras \ref{fig:Fe_c} y  \ref{fig:Fe_d}). Resultaron de especial utilidad la curva de calibración y la respuesta frente a distintas velocidades de barrido. Para cualquiera de estás velocidades los voltagramas conservan constantes los valores de $E^\circ$, indicativo de una buena trasferencia de carga entre el electrodo y la sonda. Además se destaca la relación lineal de j$_p$ con $v^{1/2}$ verificando la ecuación de Randles-Sevcik (ec. \ref{eq:rs2}).		  	  
-  					
-		  	 Con los resultados obtenidos para estas voltametrías se puede sugerir que el sistema responde a un proceso de difusión lineal en un plano semiinfinito, lo cual era lo que se esperaba en primer orden para un sistema en el que el electrodo esta embebido en solución con el analito electroactivo en solución de electrolito soporte {(\SI{0,1}{\milli\Molar} KCl, pH=$5.5$)\cite{Wi2000,Pumera2007,Gewirth2004,Villullas2000}.
-
-	 	\subsubsection*{Respuesta del cloruro de hexaaminorutenio(III)}
+	 	\subsubsection{Respuesta del cloruro de hexaaminorutenio(III)}
 	
-	 	 El cloruro de hexaaminorutenio(III) se utilizó extensivamente en este trabajo, gran parte de la discusión del capítulo \ref{chap:Electroquimica} tiene por eje la adsorción de este complejo en las películas delgadas mesoporosas. Esta molécula en solución se disocia para formar el complejo \aminorutenio. La reacción rédox que tiene lugar es la siguiente:
+	 	 El cloruro de hexaaminorutenio(III) se utilizó extensivamente en este trabajo, gran parte de la discusión del capítulo \ref{chap:Electroquimica} tiene por eje la adsorción de este complejo en las películas delgadas mesoporosas. Esta molécula se disocia en solución para formar el complejo \aminorutenio. La reacción rédox que tiene lugar es la siguiente:
+	 		 	 	  	
 	 		 	 	  		\begin{equation}
 	 		 	 	 			\schemestart 
-					 			 Ru(NH$_3$)$_6^{2+}$  
-					 			 \arrow{<=>[\scriptsize oxidación][\scriptsize reducción]}[0,1.5] 
-					 		 	 Ru(NH$_3$)$_6^{3+}+e^-$ \schemestop 
+					 			 Ru(NH$_3$)$_6^{3+}+e^-$  
+					 			 \arrow{<=>[\scriptsize reducción][\scriptsize oxidación]}[0,1.5] 
+					 		 	 Ru(NH$_3$)$_6^{2+}$ \schemestop 
 	 		 	 	 		\end{equation}
-	 	  El intercambio entre los estados de oxidación Ru$^{3+}$/Ru$^{2+}$, responde a un proceso electroquímico reversible, en el cual podemos fácilmente reducir u oxidar el complejo variando el potencial del electrodo de trabajo. Habiendo ya comprobado, con el \fe, el buen desempeño de los electrodos respecto de la velocidad de barrido, se eligió un valor \SI{50}{\milli\volt\per\second} para las voltametrías cíclicas (de uso frecuente para este tipo de mediciones). Se llevaron a cabo una serie de VC para varias concentraciones de la sonda, con el objetivo de elaborar la correspondiente curva de calibración para \aminorutenio. Se verifica de estos voltagramas el buen desempeño EQ de los electrodos referente a la transferencia de electrones.
+
+	 	  \pagebreak \noindent El intercambio entre los estados de oxidación Ru$^{3+}$/Ru$^{2+}$ responde a un proceso electroquímico reversible en el cual podemos fácilmente reducir u oxidar el complejo variando el potencial del electrodo de trabajo. Habiendo ya comprobado, con el \fe, el buen desempeño de los electrodos respecto de la velocidad de barrido, se eligió un valor \SI{50}{\milli\volt\per\second} para las voltametrías cíclicas (de uso frecuente para este tipo de mediciones). Se llevaron a cabo una serie de VC para varias concentraciones de la sonda, con el objetivo de elaborar la correspondiente curva de calibración para \aminorutenio. Con estas mediciones se verificó nuevamente el buen desempeño EQ de los electrodos y el modelo de difusión semiinfinita.
 		
 			 \begin{figure}[ht]
 	 	     \begin{subfigure}[t]{0.495\textwidth}
@@ -789,12 +782,12 @@
 	         	\label{fig:Ru_b}
 	     		\end{subfigure}
 	     		\label{rutenio}
-	     		\caption[Respuesta electroquímica para \ru]{(a) Voltametrías cíclicas para soluciones de \ru\space de distinta concentración y, (b) curva de calibración para dichas concentraciones. Todos los voltagramas fueron tomados a \SI{50}{\milli\volt\per\second} con contraelectrodo de Pt en una solución \SI{0.1}{\milli\Molar} de NaCl y utilizando de referencia ECS.}
+	     		\caption[Respuesta electroquímica para \ru]{(a) Voltametrías cíclicas para soluciones de \ru\space de distinta concentración y, (b) curva de calibración para dichas concentraciones. Todos los voltagramas fueron tomados a \SI{50}{milli\volt\per\second} con contraelectrodo de Pt en una solución \SI{0.1}{\milli\Molar} de NaCl y utilizando de referencia ECS.}
 	     	 \end{figure}
 			 		 	 
-		\subsubsection*{Respuesta del ferroceno metanol}
+		\subsubsection{Respuesta del ferroceno metanol}
  	 	 
- 	 	  A diferencia de las sondas anteriores la especie reducida del \fc\space tiene carga neta, por lo que se puede esperar que no tenga interacciones de tipo electrostáticas con las películas delgadas mesopoporosas. Por lo que es de  Es por ello que resultó imprescindible para sacar conclusiones acerca de los fenómenos de transporte y comparar sistemas calcinados con sistemas no clacinados, como ya se discutió ampliamente en el capítulo anterior. 
+ 	 	  A diferencia de las sondas anteriores, la especie reducida del \fc\space no tiene carga neta, por lo que se puede esperar que no tenga interacciones de tipo electrostáticas con las películas delgadas mesopoporosas, es por ello que resultó especialmente útil para sacar conclusiones y comparar como varía el transporte en sistemas calcinados y sistemas no calcinados. En el capítulo \ref{chap:Electroquimica} se realizará una discusión detallada sobre este tema. 
  	 	  La reacción de oxidación/reducción para esta molécula es la siguiente:
  	 	 			%Ecuación redox para el Ferroceno
  	 				 \begin{equation}
@@ -803,7 +796,7 @@
  	 	 				\end{aligned}
  	 	 			 \end{equation}
  	 	  
- 	 	 De la misma forma que se realizó para las otras sondas, se confeccionó una curva de calibración para distintas concentraciones de \fc\space, la figura \ref{Fig:Fc} muestra la respuesta electroquímica correspondiente sobre electrodos de Au.
+ 	 	 De la misma forma que se realizó para las otras sondas, se confeccionó una curva de calibración para distintas concentraciones de \fc\space. En la figura \ref{Fig:Fc} sen presenta la respuesta electroquímica correspondiente sobre electrodos de Au.
  	 				
  	 				%Graficos para el Ferroceno
 		 		 \begin{figure}[ht]
@@ -821,22 +814,22 @@
 		      	 \label{Fig:Fc}
 	      		 \end{figure}
 
-		 En la tabla \ref{tabla:sondas} se resumen las características y los resultados de las voltametrías cíclicas para cada una de las sondas modelo elegidas. Las variables calculadas fueron la diferencia de potenciales entre el pico de corriente anódico y catódico, de forma de evaluar la reversibilidad de la reacción y capacidad de transferencia electrónica de los electrodos y el coeficiente de difusión de una especie libre en un electrodo plano semiinfinito. Durante todo el desarrollo de la tesis se utilizaron estos resultados con ánimos de comparar los voltagramas sobre los electrodos desnudos y sobre los electrodos con la película mesoporosa.
+		 En la tabla \ref{tabla:sondas} se resumen las características y los resultados de las voltametrías cíclicas para cada una de las sondas modelo que se utilizarán a lo largo de todo el trabajo. Las variables calculadas fueron la diferencia de potenciales entre el pico de corriente anódico y catódico, de forma de evaluar la reversibilidad de la reacción y capacidad de transferencia electrónica de los electrodos y el coeficiente de difusión plano semiinfinito de una especie libre. Durante todo el desarrollo de la tesis se utilizaron estos resultados con ánimos de comparar resultados sobre transporte y propiedades permeoselectiva sobre los electrodos desnudos y sobre los electrodos recubiertos con películas delgadas mesoporosas.\cite{koryta1993,Otal2006,longinotti2007}
 		  
 		  %Tabla resultados EQ
 		     \begin{table}[ht]
 		     \vspace*{0.5cm}
-	  		  \caption[Sondas electroquímicas]{Características de las sondas electroactivas utilizadas a lo largo de la tesis. Cálculo del coeficiente de difusión ($D$) para difusión en un plano simiinfinito a \SI{25}{\celsius}.}
-	  		  \begin{tabular}{>{\raggedright\arraybackslash}m{2.2cm}>{\centering\arraybackslash}m{2.3cm}>{\centering\arraybackslash}m{2.3cm}>{\centering\arraybackslash}m{1.5cm}>{\centering\arraybackslash}m{1.72cm}}
+	  		  \caption[Sondas electroquímicas]{Características de las sondas electroactivas utilizadas a lo largo de la tesis. Cálculo del coeficiente de difusión ($D$) plano simiinfinito a \SI{25}{\celsius}.}
+	  		  \begin{tabular}{>{\raggedright\arraybackslash}m{2.9cm}>{\centering\arraybackslash}m{2.1cm}>{\centering\arraybackslash}m{2.1cm}>{\centering\arraybackslash}m{1.35cm}>{\centering\arraybackslash}m{1.57cm}}
 	  		  \toprule
-			  \multirow{2}{*}{Sonda}  	& Carga especie  & Carga especie  & \multirow{2}{*}{$\Delta$E(mV)} & \multirow{2}{*}{$D$(cm$^2$s$^{-1}$)} \\
+			  \multirow{2}{*}{Sonda}  	& Carga especie  & Carga especie  & \multirow{2}{*}{$\Delta E_p$(mV)} & \multirow{2}{*}{$D$(cm$^2$s$^{-1}$)} \\
 			     		    & \hspace*{-0.79cm}reducida      & \hspace*{-0.85cm}oxidada  &	   & \\ \midrule
-	    	  \ferroferri	& \multirow{1}{*}{$4-$}  		& $3-$	     			   &  150  &  \num{2.0e-7}\\ \midrule
-	  		  \aminorutenio & $2+$							& $3+$					   &  80   &  \num{5.5e-6} \\ \midrule
+	    	  \ferroCompleto	& 	$4-$	& $3-$	     			   &  150  &  \num{2.0e-7}\\ \midrule
+	    	  \ferriCompleto	&   $3-$	& $4-$	     			   &  150  &  \num{2.0e-7}\\ \midrule
+	  		  \aminorutenioCompleto	& 	$2+$	& $3+$					   &  80   &  \num{5.5e-6} \\ \midrule
 	  		  \raisebox{-.5\height}{\includegraphics[scale=0.5]{Esquemas/Fc.pdf}}   &  \hspace*{-0.29cm}0 & 1+ &  103 & \num{1.9e-6} \ \\   		 
 	  		  \bottomrule
 	    	  \end{tabular}
 	   		  \label{tabla:sondas}
 			  \end{table}
-		
-			\pagebreak			
+				

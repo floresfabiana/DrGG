@@ -38,6 +38,7 @@ set grid front ls 11
 
 #Fuerza a establecer un rango
 	 
+	 
 	set xrange [0:10]
 #	set yrange [-1000:1000]
 #FITEO

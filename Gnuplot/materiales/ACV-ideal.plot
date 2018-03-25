@@ -51,9 +51,8 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'red' lt 0 lw 1 
+	set style line 11 lc rgb 'red' lt 1 dashtype 2 lw 1.5
 	#et grid back ls 11
-
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
 	#set ytics 500 
@@ -64,8 +63,8 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial vs referencia}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{Intensidad de corriente}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial vs referencia}$" font ",18" textcolor rgb "gray40" offset  0,-2
+	set ylabel "$\\text{Intensidad de corriente}$"	   font ",18" textcolor rgb "gray40" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -96,7 +95,7 @@ set yrange[0:0.21]
 Gauss(x,mu,sigma) = 1./(sigma*sqrt(2*pi)) * exp( -(x-mu)**2 / (2*sigma**2) )
 
 set arrow 1 from 2,0 to 2,0.205 nohead ls 11
-set label 1002 at 1.3,-0.01 "E$^\\circ$" font ",12" textcolor rgb 'black' front
+set label 1002 at 1.3,-0.011 "E$^\\circ$" font ",16" textcolor rgb 'black' front
 
 f(x) = Gauss(x,2,2)
 

@@ -57,8 +57,8 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
     unset ytics
 
 #Coloca los nombre de los ejes
-set xlabel "tiempo" font ",16" textcolor rgb "gray40" offset  0,-2
-set ylabel "potencial" font ",16" textcolor rgb "gray40" offset  -2,0
+set xlabel "tiempo" font ",18" textcolor rgb "gray40" offset  0,-2
+set ylabel "potencial" font ",18" textcolor rgb "gray40" offset  -2,0
 
 set label 1001 at  -8,0 "E$_1$" font ",16" textcolor rgb 'black' front
 set label 1002 at  -8,50 "E$_2$" font ",16" textcolor rgb 'black' front

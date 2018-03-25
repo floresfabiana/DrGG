@@ -6,16 +6,16 @@
 \gpsetlinetype{gp lt border}
 \gpsetlinewidth{1.50}
 \draw[gp path] (0.922,8.781)--(0.922,1.139)--(11.947,1.139)--(11.947,8.781)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.760) {$\text{Intensidad de corriente}$};
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.434,0.215) {$\text{Potencial vs referencia}$};
-\node[gp node center,font={\fontsize{10pt}{16.8pt}\selectfont}] at (5.42,1.7) {$E_{pc}$};
-\node[gp node center,font={\fontsize{10pt}{16.8pt}\selectfont}] at (7.09,8.3) {$E_{pa}$};
-\node[gp node center,font={\fontsize{10pt}{16.8pt}\selectfont}] at (5.7,3.2) {$i_{pc}$};
-\node[gp node center,font={\fontsize{10pt}{16.8pt}\selectfont}] at (7.4,6.5) {$i_{pa}$};
-\node[gp node center,font={\fontsize{10pt}{16.8pt}\selectfont}] at (10,7.3) {$\text{corriente anódica}$};
-\node[gp node center,font={\fontsize{10pt}{16.8pt}\selectfont}] at (10,6.9) {$\text{(oxidación)}$};
-\node[gp node center,font={\fontsize{10pt}{16.8pt}\selectfont}] at (2.7,2.2) {$\text{corriente catódica}$};
-\node[gp node center,font={\fontsize{10pt}{16.8pt}\selectfont}] at (2.7,1.8) {$\text{(reducción)}$};
+\node[gp node center,rotate=-270,font={\fontsize{16pt}{16.8pt}\selectfont}] at (0.246,4.760) {$\text{Intensidad de corriente}$};
+\node[gp node center,font={\fontsize{16pt}{16.8pt}\selectfont}] at (6.434,0.215) {$\text{Potencial vs referencia}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (5.42,1.6) {$E_{pc}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.09,8.4) {$E_{pa}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (5.75,3.2) {$i_{pc}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.45,6.5) {$i_{pa}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (10,7.4) {$\text{corriente anódica}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (10,6.9) {$\text{(oxidación)}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (2.9,2.1) {$\text{corriente catódica}$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (2.9,1.6) {$\text{(reducción)}$};
 
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{2.00}
