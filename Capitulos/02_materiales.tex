@@ -411,9 +411,9 @@
 
 				\begin{table}[b!]
 		  		\caption[Parámetros de depósito películas metálicas]{Parámetros de depósito de las distintas películas delgadas metálicas para su uso como electrodos de trabajo.}
-		  		\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} lcccccc} 
+		  		\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} ccccccc} 
 		  		\toprule
-		    	 Depósito&$P_{_{\text{DC}}}$(W) & $T$(V)  &  $I$(A)   & $p$(mbar) & $Q_{Ar}$(sccm) & $T$(nm/min) \\
+		    	 Depósito &\hspace*{3mm}P$_{_{\text{DC}}}$(W) & T(V)  &  I(A)   & $p$(mbar) & Q$_{Ar}$(sccm) & $\nu$(nm/min) \\
 		    	 		\midrule
 		  		 Ti 	 & $400$ & $750$ & $0.53$ & \num{1.70e-3} & $5$ & $50$ \\
 		  		 Cr 	 & $400$ & $453$ & $0.84$ & \num{1.70e-3} & $5$ & $55$ \\
@@ -424,19 +424,19 @@
 		   		\end{table}
 		   		
 		  		\begin{table}[b!]
-		  		\caption[Parámetros de depósito películas dieléctricas]{Parámetros de depósito utilizado para el depósito de $SiO_2$.}
-		  		\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} lccccc} 
+		  		\caption[Parámetros de depósito películas dieléctricas]{Parámetros de depósito utilizado para el depósito de SiO$_2$.}
+		  		\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} cccccc} 
 		  		 		\toprule
-		       	Depósito&$P_{_{\text{RF}}}$(W)  &$P_{ref}$(W)  &$p$(mbar) & $Q_{Ar}$(sccm) &$T$(nm/min)\\
+		       	Depósito  &\hspace*{3mm} P$_{_{\text{RF}}}$(W)  &P$_{\text{ref}}$(W)  &$p$(mbar) & Q$_{Ar}$(sccm) &$\nu$(nm/min)\\
 		    	 		\midrule
-		  		 $SiO_2$  & $400$ & $23$ & \num{1.23e-2} & $80$ & $1.18$ \\
-		  		 Limpieza & 150   & 3    & \num{2.04e-3} & 10   & -      \\
+		  		 SiO$_2$  & $400$ & $23$ & \num{1.23e-2} & $80$ & $1.18$ \\
+		  		 Limpieza\space & 150   & 3    & \num{2.04e-3} & 10   & -      \\
 		  		\bottomrule
 		  		\end{tabular*}
 		   		\label{tabla:sputt2}
 		   		\end{table}
 			
-			Las condiciones óptimas de depósito de cada una de las capas se detallan en las tablas \ref{tabla:sputt1} y \ref{tabla:sputt2}. La primera contienen las condiciones para las películas metálicas y la segunda para la película de SiO$_2$ y para el proceso de limpieza por plasma previo a los depósitos. Manteniendo las condiciones experimentales constantes se construyó, para cada material, una curva de calibración del espesor en función del tiempo de depósito. De esta forma se obtuvieron las tasas de depósitos que figuran en la última columna en las tablas \ref{tabla:sputt1} y \ref{tabla:sputt2}, esencial para controlar el espesor de cada películas. Las mediciones de espesores se realizaron mediante microscopía FIB, técnica que se describe en la sección \ref{sec:micros}.
+			Las condiciones óptimas de depósito de cada una de las capas se detallan en las tablas \ref{tabla:sputt1} y \ref{tabla:sputt2}. La primera contienen las condiciones para las películas metálicas y la segunda para la película de SiO$_2$ y para el proceso de limpieza por plasma previo a los depósitos. Manteniendo las condiciones experimentales constantes se construyó, para cada material, una curva de calibración del espesor en función del tiempo de depósito. De esta forma se obtuvieron las velocidades de depósito que figuran en la última columna en las tablas \ref{tabla:sputt1} y \ref{tabla:sputt2}, esencial para controlar el espesor de cada películas. Las mediciones de espesores se realizaron mediante microscopía FIB, técnica que se describe en la sección \ref{sec:micros}.
 
 		  	Todos los depósitos fueron realizados en el equipo de \textit{sputtering} del INTI-CMNB. El mismo cuenta, entre sus principales capacidades, con una fuente DC (hasta \SI{1.5}{\kW}) una fuente de RF (\SI{600}{W} a \SI{13.56}{\MHz}), posibilidad de depositar 3 materiales consecutivamente y capacidad para colocar sustratos de hasta \SI{250}{\nm}. El mismo es de la marca \textit{Boc Edwards}. En la figura \ref{fig:sputt} se muestra el equipo y un detalle al momento de hacer los depósitos.
 
@@ -690,11 +690,11 @@
 					 		  
 			 Las mediciones electroquímicas fueron tomadas con un potenciostato \textit{Teq4}, o un potenciostato \textit{Autolab} de la firma \textit{Ecochemie} para las medidas que se necesitaron velocidades de barrido mayores a \SI{1}{\volt\per\second}. Como electrodo de referencia se empleó un electrodo de calomel saturado (ECS) de la firma \textit{Cole-Parmer} y como contraelectrodo (CE) se utilizaron indistintamente electrodos de Au depositados por pulverización catódica o una pieza de Pt de \SI{2}{\square\cm} de área.  
 	
-	 \subsection{Sondas}\label{sec:respuesta_sondas_au} 
+	 \subsection{Sondas electroquímicas}\label{sec:respuesta_sondas_au} 
 
 	 		En esta sección se dará cuenta de la caracterización electroquímica de los electrodos de Au para cada una de las sondas utilizadas a lo largo de la tesis. Los multisensores basan su principio de detección en reacciones de óxido/reducción, es por ello que es necesario obtener electrodos de respuesta reproducible, confiable y fabricados por un proceso repetible y escalable. 
 
-			Una vez que los resultados de la fabricación de los sensores fueron óptimos (consultar capítulo \ref{chap:Microfabricaciones}) se evaluó el desempeño electroquímico de los mismos. Se usaron como sondas electroquímicas ferrocianuro y ferricianuro de potasio (\Ferro\space y \Ferri, \fe), cloruro de hexaaminorutenio(III) (\aminorutenioCompleto, \ru) y ferroceno metanol (\ferroceno, \fc). La elección de estas sondas modelo tiene que ver fundamentalmente con la carga neta de cada una de ellas, y con la reversibildiad de los pares redox. En la tabla \ref{tabla:eq} se resumen las sondas electroquímicas utilizadas en las mediciones y los reactivos utilizados para preparar las soluciones. 
+			Una vez que los resultados de la fabricación de los sensores fueron óptimos (consultar capítulo \ref{chap:Microfabricacion}) se evaluó el desempeño electroquímico de los mismos. Se usaron como sondas electroquímicas ferrocianuro y ferricianuro de potasio (\Ferro\space y \Ferri, \fe), cloruro de hexaaminorutenio(III) (\aminorutenioCompleto, \ru) y ferroceno metanol (\ferroceno, \fc). La elección de estas sondas modelo tiene que ver fundamentalmente con la carga neta de cada una de ellas, y con la reversibildiad de los pares redox. En la tabla \ref{tabla:eq} se resumen las sondas electroquímicas utilizadas en las mediciones y los reactivos utilizados para preparar las soluciones. 
 			
 			     \begin{table}[h!]
 			  		  \caption{Reactivos y sondas electroquímicas utilizados para las mediciones electroquímicas.}
@@ -814,10 +814,11 @@
 		      	 \label{Fig:Fc}
 	      		 \end{figure}
 
-		 En la tabla \ref{tabla:sondas} se resumen las características y los resultados de las voltametrías cíclicas para cada una de las sondas modelo que se utilizarán a lo largo de todo el trabajo. Las variables calculadas fueron la diferencia de potenciales entre el pico de corriente anódico y catódico, de forma de evaluar la reversibilidad de la reacción y capacidad de transferencia electrónica de los electrodos y el coeficiente de difusión plano semiinfinito de una especie libre. Durante todo el desarrollo de la tesis se utilizaron estos resultados con ánimos de comparar resultados sobre transporte y propiedades permeoselectiva sobre los electrodos desnudos y sobre los electrodos recubiertos con películas delgadas mesoporosas.\cite{koryta1993,Otal2006,longinotti2007}
+		 En la tabla \ref{tabla:sondas} se resumen las características y los resultados de las voltametrías cíclicas para cada una de las sondas modelo que se utilizarán a lo largo de todo el trabajo de tesis. Las variables calculadas fueron: 1) la diferencia de potenciales entre el pico de corriente anódico y catódico, de forma de evaluar el grado de reversibilidad de la reacción y la capacidad de transferencia electrónica de los electrodos y 2) el coeficiente de difusión plano semiinfinito de una especie libre ensolución. Durante todo el desarrollo de la tesis se utilizaron estos resultados con ánimos de comparar resultados sobre transporte y propiedades permeoselectiva sobre los electrodos desnudos y sobre los electrodos recubiertos con películas delgadas mesoporosas.\cite{koryta1993,Otal2006,longinotti2007}
 		  
 		  %Tabla resultados EQ
 		     \begin{table}[ht]
+		     \renewcommand{\arraystretch}{1.1}
 		     \vspace*{0.5cm}
 	  		  \caption[Sondas electroquímicas]{Características de las sondas electroactivas utilizadas a lo largo de la tesis. Cálculo del coeficiente de difusión ($D$) plano simiinfinito a \SI{25}{\celsius}.}
 	  		  \begin{tabular}{>{\raggedright\arraybackslash}m{2.9cm}>{\centering\arraybackslash}m{2.1cm}>{\centering\arraybackslash}m{2.1cm}>{\centering\arraybackslash}m{1.35cm}>{\centering\arraybackslash}m{1.57cm}}
@@ -825,9 +826,9 @@
 			  \multirow{2}{*}{Sonda}  	& Carga especie  & Carga especie  & \multirow{2}{*}{$\Delta E_p$(mV)} & \multirow{2}{*}{$D$(cm$^2$s$^{-1}$)} \\
 			     		    & \hspace*{-0.79cm}reducida      & \hspace*{-0.85cm}oxidada  &	   & \\ \midrule
 	    	  \ferroCompleto	& 	$4-$	& $3-$	     			   &  150  &  \num{2.0e-7}\\ \midrule
-	    	  \ferriCompleto	&   $3-$	& $4-$	     			   &  150  &  \num{2.0e-7}\\ \midrule
+	    	  \ferriCompleto	&   $3-$	& $4-$	     			   &  150  &  \num{1.5e-7}\\ \midrule
 	  		  \aminorutenioCompleto	& 	$2+$	& $3+$					   &  80   &  \num{5.5e-6} \\ \midrule
-	  		  \raisebox{-.5\height}{\includegraphics[scale=0.5]{Esquemas/Fc.pdf}}   &  \hspace*{-0.29cm}0 & 1+ &  103 & \num{1.9e-6} \ \\   		 
+	  		  \raisebox{-.5\height}{\includegraphics[scale=0.6]{Esquemas/Fc.pdf}}   &  \hspace*{-0.29cm}0 & 1+ &  103 & \num{1.9e-6} \ \\   		 
 	  		  \bottomrule
 	    	  \end{tabular}
 	   		  \label{tabla:sondas}

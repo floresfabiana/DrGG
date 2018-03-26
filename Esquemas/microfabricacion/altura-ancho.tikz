@@ -54,8 +54,8 @@
 
 %Medidas
 \tikzstyle{medida} = [densely dashed,color=black,ultra thin]
-\draw[medida] (3,1) -- (4.4,1);
-\draw[medida] (3,1.5) -- (4.4,1.5);
+\draw[medida] (3,1) -- (4,1);
+\draw[medida] (3,1.5) -- (4,1.5);
 
 \draw[medida] (2.35,1) -- (2.35,2.2);
 \draw[medida] (2.15,1) -- (2.15,2.2);
@@ -64,13 +64,13 @@
 \node at ([yshift=1.85cm,xshift=-1.5cm]B.center) {\scriptsize{sobrerevelado}};
 \node at ([yshift=0.7cm,xshift=-3cm]B.center) {\scriptsize{fotoresina}};
 \node at ([yshift=0cm,xshift=-3.1cm]B.center) {\scriptsize{sustrato}};
-\node at (4.45,1.25) {\scriptsize{$e$}};
+\node at (4,1.25) {\scriptsize{$e$}};
 \node at (1.6,2.23) {\scriptsize{$L$}};
 \node  at (2.25,2.23) {\scriptsize{$\beta$}};
 
 \tikzstyle{dimen} = [<->,>={Stealth[scale=0.5]},very thin]
 \draw[dimen] (0.85,2.1) -- (2.15,2.1); %L
-\draw[dimen] (4.3,1) -- (4.3,1.5); %h
+\draw[dimen] (3.9,1) -- (3.9,1.5); %h
 \draw[dimen] (2.15,2.1) -- (2.35,2.1); %beta
 %\draw[-{Stealth[scale=5]}] (0,0) -- (1,0);
 
