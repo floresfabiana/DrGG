@@ -47,7 +47,7 @@ set style data histograms
 
 #separacion
 set style histogram gap 1
-set xrange[-0.5:2.5]1
+set xrange[-0.5:2.5]
 
 #Nombre de los paises rotados
 #set xtics font ",12" offset 0, 0.6, 0 right
@@ -59,9 +59,7 @@ set boxwidth 0.95 relative
 #set label 200 at 9.17,0.2 "294" font ",8" rotate by 90
 
 #Grafico
-plot 'histogramas-ciclos25-50.txt' using ($2/340):xtic(1) lc 'gray20' title "FeCN",\
-'histogramas-ciclos25-50.txt' using ($4/83):xtic(1) lc 'orange' title "FcOH",\
-'histogramas-ciclos25-50.txt' using ($6/168):xtic(1) lc 'blue' fs pattern 1 title "ARu",
+plot 'histogramas-ciclos25-50.txt' using ($2):xtic(1) lc 'gray20' title "FeCN", 'histogramas-ciclos25-50.txt' using ($4):xtic(1) lc 'orange' title "FcOH", 'histogramas-ciclos25-50.txt' using ($6):xtic(1) lc 'blue' fs pattern 1 title "ARu",
 
 
 

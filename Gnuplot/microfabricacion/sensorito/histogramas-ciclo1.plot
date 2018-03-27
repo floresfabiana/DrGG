@@ -59,5 +59,5 @@ set boxwidth 0.95 relative
 #set label 200 at 9.17,0.2 "294" font ",8" rotate by 90
 
 #Grafico
-plot 'histogramas-ciclo1.txt' using ($2):xtic(1) lc 'gray20' title "FeCN", 'histogramas-ciclo1.txt' using ($3):xtic(1) lc 'orange' title "FcOH", 'histogramas-ciclo1.txt' using ($4):xtic(1) lc 'blue' fs pattern 1 title "ARu",
+plot 'histogramas-ciclo1.txt' using ($2):xtic(1) lc 'gray20' title "FeCN", 'histogramas-ciclo1.txt' using ($3):xtic(1) lc 'orange' title "FcOH", 'histogramas-ciclo1.txt' using ($4):xtic(1) lc 'blue' fs pattern 1 title "ARu"
 

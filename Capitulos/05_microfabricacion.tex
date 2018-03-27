@@ -63,11 +63,11 @@
 
      	     Se trabajó con dimensiones relativamente grandes, con dos geometrías distintas, electrodos circulares con un radio R=\SI{300}{\um} y electrodos cuadrados de lado L=\SI{500}{\um}. Este primer diseño, aunque simple y con un aprovechamiento del espacio poco eficiente, cuenta con algunas ventajas destacadas. Resulta muy económico para la impresión de las máscaras, áreas de electrodos y pistas relativamente grandes (para poder colocar fácilmente puntas de prueba y obtener valores altos de intensidad de modo de familiarizarse con las primeras respuestas EQ), y es sencillo de transferir debido a las dimensiones utilizadas, minimizando problemas de discontinuidades o desperfectos en los electrodos.
 		     		
-		     La figura \ref{fig:diseno_mascara_v1} muestra el resultado de la impresión de este primer diseño. Se puede observar que la impresión de la máscara no es exactamente igual al diseño (\ref{{fig:diseno_mascara_v1}}c), se destaca una deformación del diseño originada por la baja resolución de la impresora, estableciendo de esta forma limitaciones a la hora de diseñar cuando se imprimen con este tipo de impresoras. La contrapartida es el muy bajo costo de las mismas y la facilidad para obtenerlas en algunas librerías gráficas especializadas, con un costo asociado equivalente a una impresión de alta calidad sobre filminas de tamaño A4.
+		     La figura \ref{fig:diseno_mascara_v1} muestra el resultado de la impresión de este primer diseño. Se puede observar que la impresión de la máscara no es exactamente igual al diseño (\ref{fig:diseno_mascara_v1}c), se destaca una deformación del diseño originada por la baja resolución de la impresora, estableciendo de esta forma limitaciones a la hora de diseñar cuando se imprimen con este tipo de impresoras. La contrapartida es el muy bajo costo de las mismas y la facilidad para obtenerlas en algunas librerías gráficas especializadas, con un costo asociado equivalente a una impresión de alta calidad sobre filminas de tamaño A4.
 					
 					\begin{figure}[h!]
 		 	       	\includegraphics[width=\textwidth]{Imagenes/diseno_mascara_v1.pdf}
- 		       		\caption[Primer diseño y máscara de los sensores]{Diseño y máscara para la primera versión de los electrodos. A) diseño completo con 32 sensores de 4 ET cada uno, B) Detalles de las marcas de alineación empleadas, C) microscopía óptica de la máscara donde se ven las imperfecciones de la impresión.}
+ 		       		\caption[Primer diseño y máscara de los sensores]{Diseño y máscara para la primera versión de los electrodos. (A) diseño completo con 32 sensores de 4 ET cada uno, (B) Detalles de las marcas de alineación empleadas, (C) microscopía óptica de la máscara donde se ven las imperfecciones de la impresión.}
  		         	\label{fig:diseno_mascara_v1}
  		     		\end{figure}
 
@@ -75,7 +75,7 @@
 
 		 	 El segundo diseño es más compacto y complejo, con un aprovechamiento espacial optimizado y compuesto por sensores cuadrados de \SI{1}{\cm} de lado. Cada uno de ellos tiene, a su vez, 6 ET circulares dispuestos sobre una circunferencia imaginaria, de manera que queden equiangulares entre ellos (ver figuras \ref{fig:impresion_diseno_V2} y \ref{fig:mascara_diseno_v2}). Se hicieron seis tipos de multisensores diferentes, variando el diámetro de los electrodos (con R=\SI{300}{\um}, \SI{200}{\um}, \SI{150}{\um},\SI{100}{\um} y \SI{20}{\um}). Además, este diseño contempla la integración del CE y uno para pseudoreferencia en el mismo sensor. El CE se ubica en el centro del diseño y tiene un área 5 veces mayor a la de los ET para no limitar la velocidad de reacción respecto del ET \cite{Wi2000}. El ER se ubica rodeando el CE. Esta configuración de <<electrodos calesita>>, en donde los ET se encuentren equidistantes tanto del CE como del ER, asegura que los valores de resistencia, capacidad y los procesos difusivos sean equivalentes para cada electrodo.\cite{Bockris1974}  En la figura \ref{fig:mascara_diseno_v2} se muestra en detalle el diseño de uno de los multisensores y el modelado por computadora del mismo con la celda electroquímica incorporada. 
 
-		    	    \begin{figure}[h!]
+		    	    \begin{figure}[t!]
 			 	    \begin{subfigure}[t]{0.395\textwidth}
 			       	\includegraphics[width=\textwidth]{Imagenes/SistemaA.pdf}
 			    	\end{subfigure}
@@ -178,11 +178,11 @@
  				\vspace*{6mm}
  				\end{figure}
  		
- 				\begin{figure}[h!]
+ 				\begin{figure}[th!]
 			 	   	    \centering
 			 	   	    \begin{subfigure}[t]{0.495\textwidth}
 			        	\includegraphics[width=\textwidth]{Imagenes/alineacionSU8.pdf}
-			       		\caption{Alineación de la segunda máscara con la pelicula de Ti\textbar Au ya depositada.}
+			       		\caption{Alineación de la segunda máscara con la película de Ti\textbar Au ya depositada.}
 			         	\label{fig:alineacion}
 			     		\end{subfigure}
 			     		\begin{subfigure}[t]{0.495\textwidth}
@@ -213,7 +213,7 @@
 
 
 		 		%figura FIB de los electrodos
-						  \begin{figure}[h!]
+						  \begin{figure}[th!]
 						  \begin{center}
 						  \includegraphics[width=0.80\textwidth]{Imagenes/Perfil.jpg}
 						  \caption[Sección trasversal de los eletrodos]{Corte transversal de los electrodos, donde se observan detalles de la bicapa Cr\textbar Au depositada sobre una oblea de silicio con un depósito aislante de SiO$_2$.}
@@ -222,7 +222,7 @@
 						  \end{figure} 	
 
 				%Grafico de la curva de calibración para el Au
-					   		\begin{figure}[h!]
+					   		\begin{figure}t[h!]
 					   		\begin{center}
 							\includegraphics[width=0.75\textwidth]{Graficos/Espesor_Au.pdf}
 							\caption[Curva de calibración para el espesor de los electrodos]{Curva de calibración para establecer la velocidad de de depósito de la capa de Au. La misma se realizó por pulverización catódica en las condiciones experimentales detalladas en la tabla \ref{tabla:sputt1}.}
@@ -394,7 +394,7 @@
 		En el caso del \fe\space se tiene una fuerte exclusión por parte de las películas sin funcionalizar y una mínima permeación en las películas con APTES y DHDP. 
 		En el caso del \fc\space en todos las casos el fenómeno dominante es la permeación, como es de esperar para una sonda de carga neutra. Debido a que las membranas fueron condensadas y extraídas a bajas temperaturas la difusión es lenta y la corriente resultante es bastante menor que la obtenida en electrodos de Au desnudo (consultar sección \ref{sec:difusion}, pág. \pageref{sec:difusion}). Las corriente de pico a lo largo de los ciclos para estas dos sondas es prácticamente invariante tal como se puede observar en los gráficos de la figura \ref{fig:ciclos-fe-fcoh}.\vspace*{-4mm}
 
-			\begin{figure}[h!]
+			\begin{figure}[t!]
 		 	\begin{subfigure}[t]{0.495\textwidth}
 		 	  \includegraphics[width=\textwidth]{Graficos/ciclosintferroceno.pdf}
 		      \end{subfigure}
@@ -417,90 +417,94 @@
 
 	\subsection{Análisis multivariable de la respuesta electroquímica}	     		
 
-	Con el objetivo de utilizar los sensores en aplicaciones analíticas se pueden sintetizar aún más los datos presentados en los gráficos \ref{fig:ciclos-fe-fcoh} y \ref{fig:ruciclos}. Durante la recolección de datos se pueden escoger aquellos que devuelve cada electrodo en un número de ciclo dado; luego se exponen estos resultados en un histograma como los que se muestra en la figura \ref{fig:barras}. En estos gráficos se volcaron los valores obtenidos en los ciclos 1, 25 y 50 en cada uno de los cuatro electrodos diferentes, para cada una de los analitos electroactivos. Es interesante recalcar que quedan dos electrodos que pueden ser empleados como sistema de redundancia para verificar integridad de los electrodos o la respuesta de los analitos. De los histogramas se pueden establecer perfiles de respuestas para las sondas de concentración conocida, de forma que el sistema vaya almacenando las respuestas de cada electrodo en una base de datos, para luego comparar la respuesta de una muestra incógnita con la almacenada en la base. Mientras mayor sea la variabilidad de funcionalizaciones de las películas delgadas mesoporosas y la cantidad de electrodos diferentes por sensor, más inequívoca será la identificación del analito, aún en matrices complejas, ya que la detección estará determinada por la respuesta de un conjunto de electrodos, limitado por las funcionalizaciones que se puedan llevar a cabo o por la cantidad de electrodos contemplada en el diseño.
+	 Con el objetivo de utilizar los sensores en aplicaciones analíticas se sintetizaron aún más los datos presentados en los gráficos \ref{fig:ciclos-fe-fcoh} y \ref{fig:ruciclos}. Durante la recolección de datos se escogieron algunos valores, de cada electrodo, y luego se volcaron estos resultados en un histograma como los que mostrados en la figura \ref{fig:barras}. En estos gráficos se presentan los valores obtenidos en los ciclos 1, 25 y 50 en cada uno de los cuatro electrodos diferentes, para cada una de los analitos electroactivos. Es interesante recalcar que quedan dos electrodos que pueden ser empleados como sistema de redundancia para verificar integridad de los electrodos o la respuesta de los analitos. De los histogramas se pueden establecer perfiles de respuestas para las sondas de concentración conocida, de forma que el sistema vaya almacenando las respuestas de cada electrodo en una base de datos, para luego comparar la respuesta de una muestra incógnita con la almacenada en la base. Mientras mayor sea la variabilidad de funcionalizaciones de las películas delgadas mesoporosas y la cantidad de electrodos diferentes por sensor, más inequívoca será la identificación del analito, aún en matrices complejas, ya que la detección estará determinada por la respuesta de un conjunto de electrodos, limitado por las funcionalizaciones que se puedan llevar a cabo o por la cantidad de electrodos contemplada en el diseño.
    		
 
-			\begin{figure}[ht!]
-			\begin{subfigure}[t]{0.329\textwidth}
+			\begin{figure}[b!]
+			\centering
+			\begin{subfigure}[t]{0.495\textwidth}
 		 	 \includegraphics[width=\textwidth]{Graficos/histogramas-ciclo1.pdf}
 		 	  \end{subfigure}
-		 	\begin{subfigure}[t]{0.329\textwidth}
+		 	\begin{subfigure}[t]{0.495\textwidth}
 		 	 \includegraphics[width=\textwidth]{Graficos/histogramas-ciclo25.pdf}
 		 	  \end{subfigure}
-			\begin{subfigure}[t]{0.329\textwidth}
+			\begin{subfigure}[t]{0.495\textwidth}
 		 	   \includegraphics[width=\textwidth]{Graficos/histogramas-ciclo50.pdf}
 		 	   \end{subfigure}
-		      	\caption[Corriente de pico en distintos ciclos voltamperometricos]{Densidad de corriente anódica máxima en los ciclos 25 y 50 para cada uno de los electrodos del sensor. Las sondas probadas fueron \fc \SI{1}{\milli\Molar}, \fe\space \SI{1}{\milli\Molar} y \ru\space \SI{1}{\milli\Molar} en KCl \SI{100}{\milli\Molar} a una velocidad de barrido de \SI{50}{\milli\volt\per\second}.}
+		      	\caption[Corriente de pico en distintos ciclos voltamperometricos]{Densidad de corriente anódica máxima en los ciclos 1, 25 y 50 para cada uno de los electrodos del sensor. Las sondas probadas fueron \fc \SI{1}{\milli\Molar}, \fe\space \SI{1}{\milli\Molar} y \ru\space \SI{1}{\milli\Molar} en KCl \SI{100}{\milli\Molar} a una velocidad de barrido de \SI{50}{\milli\volt\per\second}.}
 		      	\label{fig:barras}
 		      	\end{figure}
-     
-	Se puede ampliar aún más el análisis anterior agregando otras variables para la identificación de los analitos, el potencial formal medio de cada sonda ($E^{\circ}$) y la separación de potenciales de pico anódico y catódico ($\Delta E$). Estos dos valores son tomados directamente de los voltagramas correspondientes al electrodo de Au desnudo y permite cuantificar dos variables electroquímicas propias de cada sonda para comprarlas con bases de datos bibliográficas. Para aprovechar la información que brindan estos datos se ha recurrido a una representación mediante gráficos radiales (figura \ref{fig:radiales}), ya que se tienen que representar variables con distintas unidades asociadas, densidad de corriente normalizada (j$_p$){Au}) y potenciales de óxidos/reducción. Estos gráficos generan una firma dinámica a lo largo de los ciclos electroquímicos  para cada sonda y demuestran la potencialidad que tienen los multisensores para ser utilizados en la identificación analitos electroactivos.
-		
-			\begin{figure}[t!]
+     	
+	 Se puede ampliar aún más el análisis anterior agregando otras variables para la identificación de los analitos, el potencial formal medio de cada sonda ($E^{\circ}$) y la separación de potenciales de pico anódico y catódico ($\Delta E$). Estos dos valores son tomados directamente de los voltagramas correspondientes al electrodo de Au desnudo y permite cuantificar dos variables electroquímicas propias de cada sonda comparables con bases de datos bibliográficas.
+		\begin{figure}[b!]
 			   	    \begin{subfigure}[t]{0.325\textwidth}
-			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-ru-ciclo1-2.pdf}
+			        	\includegraphics[trim=1.1cm 0cm 2.2cm 0cm,width=\textwidth]{Graficos/radial-ru-ciclo1-2.pdf}
 			        	%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{10}{\milli\Molar}.}
 			         	%\label{fig:Ru10mM}
 			     		\end{subfigure}
 			   	    \begin{subfigure}[t]{0.325\textwidth}
-			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-ru-ciclo25-2.pdf}
+			        	\includegraphics[trim=1.1cm 0cm 2.2cm 0cm,width=\textwidth]{Graficos/radial-ru-ciclo25-2.pdf}
 			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{6}{\milli\Molar}.}
 			         	%\label{fig:Ru63mM}
 			     		\end{subfigure}
 		     		\begin{subfigure}[t]{0.325\textwidth}
-			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-ru-ciclo50-2.pdf}
+			        	\includegraphics[trim=1.1cm 0cm 2.2cm 0cm,width=\textwidth]{Graficos/radial-ru-ciclo50-2.pdf}
 			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{3}{\milli\Molar}.}
 			         	%\label{fig:Ru315mM}
 			     		\end{subfigure}
 		     		\begin{subfigure}[t]{0.325\textwidth}
-			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fecn-ciclo1-2.pdf}
+			        	\includegraphics[trim=1.1cm 0cm 2.2cm 0cm,width=\textwidth]{Graficos/radial-fecn-ciclo1-2.pdf}
 			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{1.5}{\milli\Molar}.}
 			         	%\label{fig:Ru1575M}
 			     		\end{subfigure}
 		 	   	   	\begin{subfigure}[t]{0.325\textwidth}
-			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fecn-ciclo25-2.pdf}
+			        	\includegraphics[trim=1.1cm 0cm 2.2cm 0cm,width=\textwidth]{Graficos/radial-fecn-ciclo25-2.pdf}
 			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{0.6}{\milli\Molar}.}
 			         	%\label{fig:Ru063mM}
 			     		\end{subfigure}
 		     		\begin{subfigure}[t]{0.325\textwidth}
-			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fecn-ciclo50-2.pdf}
+			        	\includegraphics[trim=1.1cm 0cm 2.1cm 0cm,width=\textwidth]{Graficos/radial-fecn-ciclo50-2.pdf}
 			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{0.3}{\milli\Molar}.}
 			         	%\label{fig:Ru0315mM}
 			     		\end{subfigure}
 			     	\begin{subfigure}[t]{0.325\textwidth}
-			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fcoh-ciclo1-2.pdf}
+			        	\includegraphics[trim=1.1cm 0cm 2.2cm 0cm,width=\textwidth]{Graficos/radial-fcoh-ciclo1-2.pdf}
 			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{60}{\micro\Molar}.}
 			         	%\label{fig:Ru0063mM}
 			     		\end{subfigure}
 		     		\begin{subfigure}[t]{0.325\textwidth}
-			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fcoh-ciclo25-2.pdf}
+			        	\includegraphics[trim=1.1cm 0cm 2.2cm 0cm,width=\textwidth]{Graficos/radial-fcoh-ciclo25-2.pdf}
 			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{30}{\micro\Molar}.}
 			         	%\label{fig:Ru00315mM}
 			     		\end{subfigure}
 		     		\begin{subfigure}[t]{0.325\textwidth}
-			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fcoh-ciclo50-2.pdf}
+			        	\includegraphics[trim=1.1cm 0cm 2.2cm 0cm,width=\textwidth]{Graficos/radial-fcoh-ciclo50-2.pdf}
 			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{15}{\micro\Molar}.}
 			         	%\label{fig:Ru001575mM}
 			     		\end{subfigure}	
-			     	\caption{Gráficos radiales para \ru\space \fe\space y \fc\space 1mM en función de los ciclos para distintos ciclos electroquímicos...... Notar el cambio de escala para el ru producto del alto poder preconcentrador de las SZF y SZFP }
+			     	\caption{Marcas sensoriales para \ru\space \fe\space y \fc\space para los ciclos electroquímicos 1, 25 y 50. Cabe destacar que para las sondas neutra y negativa (\fc\space y \fe) la marca permanece constante a lo largo de los ciclos. Para la sonda positiva (\ru) la marca va mudando en función de las propiedades permeoselectivas de cada electrodo del multisensor. Notar el cambio de escala para \ru\space en los electrodos \pdmZ\space y \pdmZ$^P_3$\space debido a la alta capacidad preconcentradora de estas películas.} 
 		     		\label{fig:radiales}
-		      	   	\end{figure} 
+		      	   	\end{figure}
+		 Para poder representar graficamente todas estas variables se ha recurrido a gráficos radiales (figura \ref{fig:radiales}), ya que se son variables con distintas unidades y escalas asociadas. Los valores representados fueron distribuidos a lo largo de cinco ejes: densidad de corriente normalizada para los electrodos \pdmZ, \pdmZ$^P_3$, \pdmZ$^N_1$, diferencia entre el potencial anódico y catódico ($\Delta E$) y potencia formal medio ($E^{\circ}$) de cada sonda. De estos gráficos se puede visualizar rápidamente tanto información termodinámica como cinética. El área especifica, o marca sensorial, que queda delimitada para los gráficos de las sondas \fc\space y \fe, permanece inalterable de ciclo en ciclo, indicando un estado de equilibrio desde el primer ciclo para ambos analitos. El área para la sonda positiva evoluciona con los sucesivos ciclos debido a la cinética de adsorción, incluyendo el tiempo como un parámetro más que se suma para construir la marca sensorial. 
 
+		 Estos experimentos, sobre la base de un multisensor, muestran el gran potencial de los dispositivos para identificar y cuantificar analitos electroactivos, generando marcas sensoriales para cada uno de ellos. 
 					     
 \section{Conclusiones parciales}
 
-	Se presentaron en este capítulo los resultados obtenidos durante el proceso de fabricación de los sensores. Se idearon dos diseños, de los cuales el segundo (retroalimentado de la experiencia del primero) es más compacto, incorpora más electrodos por sensor y prevé el uso de contraeletrodo y pseidoreferencia integrados en el mismo dispositivo.
+	Se presentaron en este capítulo los resultados obtenidos durante el proceso de fabricación de los multisensores. Se idearon dos diseños, de los cuales el segundo (retroalimentado de la experiencia del primero) es más compacto, incorpora más electrodos por multisensor y prevé el uso de contraeletrodo y pseidoreferencia integrados en el mismo dispositivo.
 	
-	Los mismos fueron fabricados por un conjunto de técnicas conocidas como \textit{top-down}, propios de la microelectrónica como: fotolitografía óptica, deposición por pulverización catódica y \textit{lift-off}, entre otras. Se establecieron las condiciones óptimas de proceso para cada etapa, y, una vez conseguido resultados satisfactorios, se evaluó el desempeño electroquímico de los sensores, el cuál resulto óptimo. 
+	Los mismos fueron fabricados por un conjunto de técnicas conocidas como \textit{top-down}, propios de la microelectrónica como: fotolitografía óptica, deposición por pulverización catódica y \textit{lift-off}, entre otras. Se establecieron las condiciones óptimas de proceso para cada etapa, y, una vez conseguido resultados satisfactorios, se evaluó el desempeño electroquímico de los sensores, el cual resulto satisfactorio, los resultados obtenidos en la caracterización de los mismos fueron presentados en la sección \ref{sec:respuesta_sondas_au}, pág. \pageref{sec:respuesta_sondas_au}. 
 
-	Sobre los electrodos de (Ti,Cr)\textbar Au se realizaron los primeros depósitos de películas delgadas mesoporosas de sílice. En esta etapa surgieron algunas dificultades, en particular, en lo referente al sensado electroquímico. Se realizó un estudio meticuloso sobre la superficie de los electrodos.  Se discutió como se vió afectado el desempeño electroquímico durante los procesos de calcinación debido a fenómenos de difusión de interferentes hacia la superficie de lo electrodos, afectando sensiblemente la trasferencia de carga entre la sonda y el electrodo. 
+	Sobre los electrodos de (Ti,Cr)\textbar Au se realizaron los primeros depósitos de películas delgadas mesoporosas de sílice. En esta etapa surgieron algunas dificultades, en particular, en lo referente al sensado electroquímico. Se realizó un estudio meticuloso en el cual se discutió cómo se afectó el desempeño electroquímico luego de los procesos de calcinación. Se llegó a la conclusión de que se ve impedida sensiblemente la trasferencia de carga entre la sonda y el electrodo debido a fenómenos de difusión de interferencias hacia la superficie de los electrodos, y por lo tanto, también disminuye la calidad analítica de los multisensores.
 
-	Éste fue uno de los motivos (junto con con otros como utilizar polímeros, evitar calcinaciones y reducir costos) para el desarrollo de procesos de síntesis de películas mesoporosas de SiO$_2$ a temperaturas menores que las clásicas de calcinación, donde se minimizan los procesos difusivos y no es necesario recurrir a metales de ultra pureza. Las consecuencias directas de este desarrollo fueron que se pudo depositar los óxidos sobre Au metalúrgico (Au3N) sin perder desempeño analítico y, a su vez, permitió depositar las \pdm\space sobre sustratos que sean estables a \SI{130}{\celsius}. Dicho desarrollo se estudia extensamente en el capítulo \ref{chap:Mesoporosos}, mientras que en el capítulo \ref{chap:Electroquimica} se estudia la estabilidad química y mecánica de la películas sintetizadas.
+	Éste fue el motivo principal para el desarrollo de procesos de síntesis de películas mesoporosas de SiO$_2$ a temperaturas menores que las clásicas de calcinación. Tiene como enormes ventajas minimizar los procesos difusivos y no recurrir a metales de ultra pureza, reduciendo sensiblemente los costos de los sensores. Las consecuencias directas del desarrollo fueron que se logró depositar óxidos sobre Au metalúrgico (Au3N) sin perder desempeño analítico y, a su vez, permitió depositar las \pdm\space sobre sustratos que sean estables a \SI{130}{\celsius}. Dicho desarrollo se estudia extensamente en el capítulo \ref{chap:Mesoporosos}, mientras que en el capítulo \ref{chap:Electroquimica} se estudia la estabilidad química y mecánica de la películas resultantes. Por otra parte el tratamientos a baja temperatura permite integrar la plataforma mesoporosa a una mayor variedad de electrodos, incluso utilizar sustratos poliméricos o térmicamente lábiles.
 
-	Ya con el proceso de síntesis optimizado se escogieron las películas más estables para la fabricación de un sensor prototipo. Se fabricaron nuevamente electrodos con el diseño en forma de calesita y se depositaron sobre ellas películas mesoporosas de Si$_{0.9}$Zr$_{0.1}$O$_2$ mediante el método de alto vacío. Sobre uno de los sensores se funcionalizaron estás películas porosas con dihexadecilfosfato (DHDP) y 3-aminopropil trietoxisilano (APTES), específicamente sobre el área de cada electrodo.
-	Se analizaron las respuestas amperométrica de cada electrodo de este sensor en función del ciclado electroquímico, obteniéndose patrones de respuesta para cada una de las sondas en función de la interacción entre la sonda y la película. 
+	Ya con el proceso de síntesis optimizado se escogieron las películas más estables para la fabricación de un multisensor prototipo. Se fabricaron nuevamente electrodos con el diseño <<calesita>> y se depositaron sobre ellas películas mesoporosas de Si$_{0.9}$Zr$_{0.1}$O$_2$ mediante el método de alto vacío. Sobre un multisensor se funcionalizaron localmente estás películas porosas con dihexadecilfosfato (DHDP) y 3-aminopropil trietoxisilano (APTES), específicamente sobre el área de dos electrodos, uno por cada funcionalización.
 	
-	Finalmente se exploraron algunas técnicas de depósito mediante impresión por inyección de tinta con el objetivo de poder transferir algún diseño a las películas mesoporosas.
+	Se analizaron las respuestas electroquímica de cada electrodo de este multisensor en función del ciclado electroquímico, obteniéndose patrones de respuesta para cada una de las sondas en función de la interacción entre la sonda y la película. Con el propósito de obtener una identificación inequívoca para cada sonda se amplió el análisis multivariable agregando dos variables más al sistema de datos: la diferencia entre el potencial de pico anódico y catódico y el potencial formal de cada sonda. De esta forma se confeccionaron gráficos radiales en función de la cantidad de ciclos electroquímicos con los valores para cada sonda, generando una marca sensorial cuantificable para cada uno de los analitos estudiados.
 
-	% %\pagebreak
+
+
+
+
 	

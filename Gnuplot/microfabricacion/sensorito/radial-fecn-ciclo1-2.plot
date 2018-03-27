@@ -33,11 +33,6 @@ set ytics scale 0 format ""
 set rtics 0.2 scale 0 format ""
 unset raxis
 
-set lmargin at screen 0;
-set rmargin at screen 1;
-set bmargin at screen 0;
-set tmargin at screen 0.95;
-
 		#set xtics ("" 1000, "" 2000, "" 3000, "" 4000, "" 5000, "" 6000) #set the xtics only go from 0 to 6000 with increment of1000 but do not display anything. This has to be done otherwise the grid will not be displayed correctly.
 		#set ytics 0, 1000, 6000 #make the ytics go from the center (0) to 6000 with incrment of 1000
 

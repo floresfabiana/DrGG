@@ -65,6 +65,9 @@ set label "SZF$^N_1$ \\textbar $\\;\\text{j}_p / \\text{j}^{\\text{Au}}_p$" at 1
 set label "$E^{\\circ}$\\textbar mV" at 1.1*cos(45) , 1.1*sin(45) center offset -2,2.5
 set label "$\\Delta E$\\textbar mV" at 1.1*cos(315) , 1.1*sin(315) center offset -2,-1
 
+set label "ARu" at 1.2*cos(135),1.2*sin(120) center font ",26"
+set label "Ciclo 1" at 1.5*cos(90),1.5*sin(90) center font ",26"
+
 #Estilo de los plots
 set style line 11 lt 1 lw 2 pt 2 ps 2 #set the line style for the plot
 set style line 12 lt 1 lw 2 pt 2 ps 2 #set the line style for the plot
