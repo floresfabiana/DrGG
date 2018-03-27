@@ -47,6 +47,7 @@ set style data histograms
 
 #separacion
 set style histogram gap 1
+set xrange[-0.5:2.5]
 
 #Nombre de los paises rotados
 #set xtics font ",12" offset 0, 0.6, 0 right

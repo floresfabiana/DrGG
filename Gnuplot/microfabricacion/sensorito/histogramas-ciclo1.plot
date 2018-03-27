@@ -5,7 +5,7 @@
 #Para exportar como latex
 set terminal tikz tikzarrows
 set output "histogramas-ciclo1.tikz" 
-set key left Left reverse samplen 3 font ",14"   textcolor rgb "gray40" width 2
+set key left Left reverse samplen 3 font ",14" spacing 2 textcolor rgb "gray40" width 3
 
 #Leyenda
 
@@ -47,6 +47,7 @@ set style data histograms
 
 #separacion
 set style histogram gap 1
+set xrange[-0.5:2.5]
 
 #Nombre de los paises rotados
 #set xtics font ",12" offset 0, 0.6, 0 right

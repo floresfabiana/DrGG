@@ -376,7 +376,7 @@
 		         	\end{center}
 		     		\end{figure}
 
-			Ambas alternativas fueron puestas en prácticas con resultados exitosos. Se consideró la segunda opción mucho más rica, tanto científica como tecnológicamente, ya que permite minimizar los procesos difusivos, disminuir costos y, a su vez, desarrollar un método de condensación y extracción para sintetizar películas delgadas mesoporosas de óxido de silicio a temperaturas menores a \SI{130}{\celsius}). En este tópico, la literatura especializada es escasa, y dicho desarrollo condujo al estudio de las matrices porosas resultantes, de la condensación de la fase inorgánica y de la extracción de la fase orgánica, así como también al estudio sobre la termodinámica y la cinética de transporte con sondas electroquímicas, temas tratados extensamente en los capítulos  \ref{chap:Mesoporosos} y \ref{chap:Electroquimica}. 
+			Ambas alternativas fueron puestas en prácticas con resultados exitosos. Se consideró la segunda opción mucho más rica, tanto científica como tecnológicamente, ya que permite minimizar los procesos difusivos, disminuir costos y, a su vez, desarrollar un método de condensación y extracción para sintetizar películas delgadas mesoporosas de óxido de silicio a temperaturas menores a \SI{130}{\celsius}. En este tópico, la literatura especializada es escasa, y dicho desarrollo condujo al estudio de las matrices porosas resultantes, de la condensación de la fase inorgánica y de la extracción de la fase orgánica, así como también al estudio sobre la termodinámica y la cinética de transporte con sondas electroquímicas, temas tratados extensamente en los capítulos  \ref{chap:Mesoporosos} y \ref{chap:Electroquimica}. 
 
     		En esta sección se capitalizan las herramientas y conocimientos adquiridos sobre estos temas aplicados al uso de los multisensores, conceptualizando el uso de electrodos con diferentes respuestas que funcionan cooperativamente en la detección de las sonda modelos que se utilizaron a lo largo del trabajo de tesis. 
 
@@ -384,35 +384,40 @@
 
 			En las próximas secciones se analizará la respuesta del multisensor para cada una de las sondas ensayadas y se discutirán algunas formas de análisis multivariable para el tratamiento de los datos. 
 
-	\subsection{Análisis multivariable para \ru, \fe\space y \fc}	
+	\subsection{Respuesta para \ru, \fe\space y \fc\space sobre multisensores}	
+
+		Durante el desarrollo del capítulo \ref{chap:Electroquimica} se estudió e interpretaron los voltagramas para cada una de estas sondas, cabe destacar que en dicho capítulo la mayoría de los datos fueron tomados sobre electrodos sin litografiar, mientras que en esta sección los datos fueron medidos sobre un único multisensor. Ya sea que estén o no litografiados los voltagramas son equivalente para ambas plataformas. En esta sección se explota la información que se pueda extraer de cada voltagrama, resumiendo los datos en graficos de distintos tipos.
 
 		Se analizó la respuesta electroquímica de \aminorutenio, \ferroferri\space y \ferroceno\space para cada uno de los electrodos de un multisensor EQ similar al mostrado en el esquema de la figura \ref{fig:sensor-calesita}. La medición consiste en ciclar electroquímicamente, en un rango de potencial adecuado para cada sonda, utilizando cada uno de los electrodos de un mismo multisensor. Una vez que se colectaron los $n$ voltagramas se extrae de cada uno de ellos el pico de máxima densidad de corriente anódica, luego se gráfica dicho valor en función de la cantidad de ciclos normalizado por la densidad de corriente del electrodo de Au desnudo $j_p/j_p^\text{Au}$.
 
-		\begin{figure}[b!]
+		
+		En el caso del \fe\space se tiene una fuerte exclusión por parte de las películas sin funcionalizar y una mínima permeación en las películas con APTES y DHDP. 
+		En el caso del \fc\space en todos las casos el fenómeno dominante es la permeación, como es de esperar para una sonda de carga neutra. Debido a que las membranas fueron condensadas y extraídas a bajas temperaturas la difusión es lenta y la corriente resultante es bastante menor que la obtenida en electrodos de Au desnudo (consultar sección \ref{sec:difusion}, pág. \pageref{sec:difusion}). Las corriente de pico a lo largo de los ciclos para estas dos sondas es prácticamente invariante tal como se puede observar en los gráficos de la figura \ref{fig:ciclos-fe-fcoh}.\vspace*{-4mm}
+
+			\begin{figure}[h!]
 		 	\begin{subfigure}[t]{0.495\textwidth}
 		 	  \includegraphics[width=\textwidth]{Graficos/ciclosintferroceno.pdf}
 		      \end{subfigure}
 			\begin{subfigure}[t]{0.495\textwidth}
 		 	    \includegraphics[width=\textwidth]{Graficos/ciclosintfecn.pdf}
 			\end{subfigure}
-		      	\caption[Corriente de pico de \fc\space y \fe\space en función del número de ciclos]{Corriente de pico anódico normalizada para \fc\space \SI{1}{\milli\Molar} (izquierda) y  \fe\space \SI{1}{\milli\Molar} (derecha) en función de la cantidad de ciclos. Los datos fueron tomados a una velocidad de barrido de \SI{50}{\milli\volt\per\second} en solución de KCl \SI{100}{\milli\Molar} en un multisensor compuesto por cuatro electrodos diferentes: de Au (Au), recubierto con una pelicula mesoporosa sin funcionalizar (\pdmZ), con una funcionalizada con DHDP (\pdmZ$^P_3$) y con una funcionalizada con APTES (\pdmZ$^N_1$).}
+		      	\caption[Corriente de pico de \fc\space y \fe\space en función del número de ciclos]{Corriente de pico anódico normalizada para \fc\space \SI{1}{\milli\Molar} (izquierda) y  \fe\space \SI{1}{\milli\Molar} (derecha) en función de la cantidad de ciclos. Los datos fueron tomados a una velocidad de barrido de \SI{50}{\milli\volt\per\second} en solución de KCl \SI{100}{\milli\Molar} en un multisensor compuesto por cuatro electrodos diferentes: de Au (Au), recubierto con una película mesoporosa sin funcionalizar (\pdmZ), con una funcionalizada con DHDP (\pdmZ$^P_3$) y con una funcionalizada con APTES (\pdmZ$^N_1$).}
 		      	\label{fig:ciclos-fe-fcoh}
 		      	\end{figure}
-		     		
-	Ya se estudió en detalle en el capítulo \ref{chap:Electroquimica} la respuesta de los voltagramas para cada una de estas sondas. En el caso del \fe\space se tiene una fuerte exclusión por parte de las películas sin funcionalizar y una mínima permeación en las películas con APTES y DHDP. 
-	En el caso del \fc\space en todos las casos el fenómeno dominante es la permeación, como es de esperar para una sonda de carga neutra. Debido a que las membranas fueron condensadas y extraídas a bajas temperaturas la difusión es lenta y la corriente resultante es bastante menor que la obtenida en electrodos de Au desnudo (consulta sección \ref{sec:difusion}, pág. \pageref{sec:difusion}). Las corriente de pico a lo largo de los ciclos para estas dos sondas es prácticamente invariante tal como se puede observar en los gráficos de la figura \ref{fig:ciclos-fe-fcoh}.
 
-	El caso más interesante es de la sonda positiva, el \ru. La intensidad de pico anódico, para condiciones de contorno constante (velocidad de barrido, pH, fuerza iónica, concentración de \ru\space en solución), evoluciona en cada ciclo de forma diferente según se va adsorbiendo en las películas delgadas mesoporosas. La interpretación de las distintas respuestas ya discutieron en la sección \ref{sub_sec_funcionalizaciones_chap_4}, pág. \pageref{sub_sec_funcionalizaciones_chap_4}. Al igual que para las otras sondas, en el gráfico \ref{fig:ruciclos}  se muestra como va cambiando la intensidad de pico, para cada electrodo, a medida que se aumenta la cantidad de ciclos electroquímicos. 
-
-			\begin{figure}[ht!]
+		     \begin{figure}[b!]
 		 	       	\begin{center}
-		 	       	\includegraphics[width=0.85\textwidth]{Graficos/ciclosintru.pdf}
+		 	       	\includegraphics[width=0.82\textwidth]{Graficos/ciclosintru.pdf}
 		        	\caption[Corriente de pico de \ru\space en función del número de ciclos]{Corriente de pico anódico para \ru\space \SI{1}{\milli\Molar} en función de la cantidad de ciclos. Los datos fueron tomados a una velocidad de barrido de \SI{50}{\milli\volt\per\second} en solución de KCl \SI{100}{\milli\Molar} en un sensor compuesto por cuatro electrodos diferentes: de Au (Au), recubierto con una película mesoporosa sin funcionalizar (\pdmZ), con una funcionalizada con DHDP (\pdmZ$^P_3$) y con una funcionalizada con APTES (\pdmZ$^N_1$).}
 		         	\label{fig:ruciclos}
 		         	\end{center}
 		     		\end{figure}
-	
-	Con el objetivo de utilizar los sensores en aplicaciones analíticas se pueden sintetizar aún más los datos presentados en los gráficos \ref{fig:ciclos-fe-fcoh} y \ref{fig:ruciclos}. Durante la recolección de datos se pueden escoger aquellos que devuelve cada electrodo en un número de ciclo dado; luego se exponen estos resultados en un histograma como los que se muestra en la figura \ref{fig:barras}. En estos gráficos se volcaron los valores obtenidos en los ciclos 25 y 50 en cada uno de los cuatro electrodos diferentes, para cada una de los analitos electroactivos. De los histogramas se pueden establecer perfiles de respuestas para las sondas de concentración conocida, de forma que el sistema vaya almacenando las respuestas de cada electrodo en una base de datos, para luego comparar la respuesta de una muestra incógnita con la almacenada en la base. Mientras mayor sea la variabilidad de funcionalizaciones de las películas delgadas mesoporosas y la cantidad de electrodos diferentes por sensor, más inequívoca será identificación del analito, aún en matrices complejas, ya que la detección estará determinada por la respuesta de un conjunto de electrodos, limitado por las funcionalizaciones que se puedan llevar a cabo o por la cantidad de electrodos contemplada en el diseño.
+
+	    El caso más interesante es de la sonda positiva, el \ru. La intensidad de pico anódico, para condiciones de contorno constante (velocidad de barrido, pH, fuerza iónica, concentración de \ru\space en solución), evoluciona en cada ciclo de forma diferente según se va adsorbiendo en las películas delgadas mesoporosas. La interpretación de las distintas respuestas ya se discutieron en la sección \ref{sub_sec_funcionalizaciones_chap_4}, pág. \pageref{sub_sec_funcionalizaciones_chap_4}. Al igual que para las otras sondas, en el gráfico \ref{fig:ruciclos}  se muestra cómo va cambiando la intensidad de pico, para cada electrodo, a medida que se aumenta la cantidad de ciclos electroquímicos. 
+
+	\subsection{Análisis multivariable de la respuesta electroquímica}	     		
+
+	Con el objetivo de utilizar los sensores en aplicaciones analíticas se pueden sintetizar aún más los datos presentados en los gráficos \ref{fig:ciclos-fe-fcoh} y \ref{fig:ruciclos}. Durante la recolección de datos se pueden escoger aquellos que devuelve cada electrodo en un número de ciclo dado; luego se exponen estos resultados en un histograma como los que se muestra en la figura \ref{fig:barras}. En estos gráficos se volcaron los valores obtenidos en los ciclos 1, 25 y 50 en cada uno de los cuatro electrodos diferentes, para cada una de los analitos electroactivos. Es interesante recalcar que quedan dos electrodos que pueden ser empleados como sistema de redundancia para verificar integridad de los electrodos o la respuesta de los analitos. De los histogramas se pueden establecer perfiles de respuestas para las sondas de concentración conocida, de forma que el sistema vaya almacenando las respuestas de cada electrodo en una base de datos, para luego comparar la respuesta de una muestra incógnita con la almacenada en la base. Mientras mayor sea la variabilidad de funcionalizaciones de las películas delgadas mesoporosas y la cantidad de electrodos diferentes por sensor, más inequívoca será la identificación del analito, aún en matrices complejas, ya que la detección estará determinada por la respuesta de un conjunto de electrodos, limitado por las funcionalizaciones que se puedan llevar a cabo o por la cantidad de electrodos contemplada en el diseño.
    		
 
 			\begin{figure}[ht!]
@@ -428,10 +433,63 @@
 		      	\caption[Corriente de pico en distintos ciclos voltamperometricos]{Densidad de corriente anódica máxima en los ciclos 25 y 50 para cada uno de los electrodos del sensor. Las sondas probadas fueron \fc \SI{1}{\milli\Molar}, \fe\space \SI{1}{\milli\Molar} y \ru\space \SI{1}{\milli\Molar} en KCl \SI{100}{\milli\Molar} a una velocidad de barrido de \SI{50}{\milli\volt\per\second}.}
 		      	\label{fig:barras}
 		      	\end{figure}
- 
+     
+	Se puede ampliar aún más el análisis anterior agregando otras variables para la identificación de los analitos, el potencial formal medio de cada sonda ($E^{\circ}$) y la separación de potenciales de pico anódico y catódico ($\Delta E$). Estos dos valores son tomados directamente de los voltagramas correspondientes al electrodo de Au desnudo y permite cuantificar dos variables electroquímicas propias de cada sonda para comprarlas con bases de datos bibliográficas. Para aprovechar la información que brindan estos datos se ha recurrido a una representación mediante gráficos radiales (figura \ref{fig:radiales}), ya que se tienen que representar variables con distintas unidades asociadas, densidad de corriente normalizada (j$_p$){Au}) y potenciales de óxidos/reducción. Estos gráficos generan una firma dinámica a lo largo de los ciclos electroquímicos  para cada sonda y demuestran la potencialidad que tienen los multisensores para ser utilizados en la identificación analitos electroactivos.
+		
+			\begin{figure}[t!]
+			   	    \begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-ru-ciclo1-2.pdf}
+			        	%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{10}{\milli\Molar}.}
+			         	%\label{fig:Ru10mM}
+			     		\end{subfigure}
+			   	    \begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-ru-ciclo25-2.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{6}{\milli\Molar}.}
+			         	%\label{fig:Ru63mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-ru-ciclo50-2.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{3}{\milli\Molar}.}
+			         	%\label{fig:Ru315mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fecn-ciclo1-2.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{1.5}{\milli\Molar}.}
+			         	%\label{fig:Ru1575M}
+			     		\end{subfigure}
+		 	   	   	\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fecn-ciclo25-2.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{0.6}{\milli\Molar}.}
+			         	%\label{fig:Ru063mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fecn-ciclo50-2.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{0.3}{\milli\Molar}.}
+			         	%\label{fig:Ru0315mM}
+			     		\end{subfigure}
+			     	\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fcoh-ciclo1-2.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{60}{\micro\Molar}.}
+			         	%\label{fig:Ru0063mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fcoh-ciclo25-2.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{30}{\micro\Molar}.}
+			         	%\label{fig:Ru00315mM}
+			     		\end{subfigure}
+		     		\begin{subfigure}[t]{0.325\textwidth}
+			        	\includegraphics[trim=1cm 0cm 2cm 0cm,width=\textwidth]{Graficos/radial-fcoh-ciclo50-2.pdf}
+			       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{15}{\micro\Molar}.}
+			         	%\label{fig:Ru001575mM}
+			     		\end{subfigure}	
+			     	\caption{Gráficos radiales para \ru\space \fe\space y \fc\space 1mM en función de los ciclos para distintos ciclos electroquímicos...... Notar el cambio de escala para el ru producto del alto poder preconcentrador de las SZF y SZFP }
+		     		\label{fig:radiales}
+		      	   	\end{figure} 
+
+					     
 \section{Conclusiones parciales}
 
-	Se presentaron en este capítulo los resultados obtenidos durante el proceso de fabricación de los sensores. Se idearon dos diseños, de los cuales el segundo (retroalimentado de la experiencia del primero) es más compacto, incorpora más electrodos por sensor y prevé el uso de contraeletrodo y referencia integrados en el mismo dispositivo.
+	Se presentaron en este capítulo los resultados obtenidos durante el proceso de fabricación de los sensores. Se idearon dos diseños, de los cuales el segundo (retroalimentado de la experiencia del primero) es más compacto, incorpora más electrodos por sensor y prevé el uso de contraeletrodo y pseidoreferencia integrados en el mismo dispositivo.
 	
 	Los mismos fueron fabricados por un conjunto de técnicas conocidas como \textit{top-down}, propios de la microelectrónica como: fotolitografía óptica, deposición por pulverización catódica y \textit{lift-off}, entre otras. Se establecieron las condiciones óptimas de proceso para cada etapa, y, una vez conseguido resultados satisfactorios, se evaluó el desempeño electroquímico de los sensores, el cuál resulto óptimo. 
 
@@ -445,51 +503,4 @@
 	Finalmente se exploraron algunas técnicas de depósito mediante impresión por inyección de tinta con el objetivo de poder transferir algún diseño a las películas mesoporosas.
 
 	% %\pagebreak
-	% %\begin{figure}[t!]
-	% 		   	    \begin{subfigure}[t]{0.325\textwidth}
-	% 		        	\includegraphics[width=\textwidth]{Graficos/radial-ru-ciclo1.pdf}
-	% 		        	%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{10}{\milli\Molar}.}
-	% 		         	%\label{fig:Ru10mM}
-	% 		     		\end{subfigure}
-	% 		   	    \begin{subfigure}[t]{0.325\textwidth}
-	% 		        	\includegraphics[width=\textwidth]{Graficos/radial-ru-ciclo25.pdf}
-	% 		       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{6}{\milli\Molar}.}
-	% 		         	%\label{fig:Ru63mM}
-	% 		     		\end{subfigure}
-	% 	     		\begin{subfigure}[t]{0.325\textwidth}
-	% 		        	\includegraphics[width=\textwidth]{Graficos/radial-ru-ciclo50.pdf}
-	% 		       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{3}{\milli\Molar}.}
-	% 		         	%\label{fig:Ru315mM}
-	% 		     		\end{subfigure}
-	% 	     		\begin{subfigure}[t]{0.325\textwidth}
-	% 		        	\includegraphics[width=\textwidth]{Graficos/radial-fecn-ciclo1.pdf}
-	% 		       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{1.5}{\milli\Molar}.}
-	% 		         	%\label{fig:Ru1575M}
-	% 		     		\end{subfigure}
-	% 	 	   	   	\begin{subfigure}[t]{0.325\textwidth}
-	% 		        	\includegraphics[width=\textwidth]{Graficos/radial-fecn-ciclo25.pdf}
-	% 		       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{0.6}{\milli\Molar}.}
-	% 		         	%\label{fig:Ru063mM}
-	% 		     		\end{subfigure}
-	% 	     		\begin{subfigure}[t]{0.325\textwidth}
-	% 		        	\includegraphics[width=\textwidth]{Graficos/radial-fecn-ciclo50.pdf}
-	% 		       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{0.3}{\milli\Molar}.}
-	% 		         	%\label{fig:Ru0315mM}
-	% 		     		\end{subfigure}
-	% 		     	\begin{subfigure}[t]{0.325\textwidth}
-	% 		        	\includegraphics[width=\textwidth]{Graficos/radial-fcoh-ciclo1.pdf}
-	% 		       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{60}{\micro\Molar}.}
-	% 		         	%\label{fig:Ru0063mM}
-	% 		     		\end{subfigure}
-	% 	     		\begin{subfigure}[t]{0.325\textwidth}
-	% 		        	\hspace*{0.5mm}\includegraphics[width=\textwidth]{Graficos/radial-fcoh-ciclo25.pdf}
-	% 		       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{30}{\micro\Molar}.}
-	% 		         	%\label{fig:Ru00315mM}
-	% 		     		\end{subfigure}
-	% 	     		\begin{subfigure}[t]{0.325\textwidth}
-	% 		        	\hspace*{1mm}\includegraphics[width=\textwidth]{Graficos/radial-fcoh-ciclo50.pdf}
-	% 		       		%\vspace*{-0.40cm}\caption{\aminorutenio\space \SI{15}{\micro\Molar}.}
-	% 		         	%\label{fig:Ru001575mM}
-	% 		     		\end{subfigure}	
-	% 	     		%\label{fig:preconcentraciones}
-	% 	      	   	\end{figure} 
+	

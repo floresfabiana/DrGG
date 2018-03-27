@@ -1,0 +1,8 @@
+#Aca se normalizo el eje pontencial entre -400 y 400 mV para que entre en un eje entre 0 y 4. Se suma al potencial 400 y se divide por 200
+Numero Eje	Angulo	Ru(ciclo1)	 Ru(ciclo25)	Ru(Ciclo50)
+1		Ecero	  45		 0.26		 0.26		 0.26
+2 		SZF	 	  90	 	0.03	 	 0.20		 0.78
+3 		SZFp     180	 	0.3		 	 0.72		 0.78
+4 		SZFn  	 270	 	0.0005		 0.05		 0.26
+5		DeltaE   315		0.43		 0.43		 0.43
+6		Ecero	  45        0.26		 0.26		 0.26      

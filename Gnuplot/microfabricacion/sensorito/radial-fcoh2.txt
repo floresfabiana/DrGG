@@ -1,0 +1,8 @@
+#Aca se normalizo el eje pontencial entre -400 y 400 mV para que entre en un eje entre 0 y 4. Se suma al potencial 400 y se divide por 200
+Numero Eje	Angulo	FcOH(ciclo1)	 FcOH(ciclo25)	FcOH(Ciclo50)
+1		Ecero	  45		0.73		0.73			0.73	
+2		SZF	  	  90	    0.13	 	0.12			0.13
+3		SZFp     180		0.16		0.15			0.17
+4		SZFn  	 270		0.12		0.14			0.15
+5		DeltaE   315		0.525		0.525			0.525
+6		Ecero	  45       0.73		0.73			0.73
