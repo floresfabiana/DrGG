@@ -43,7 +43,7 @@ set style arrow 200 head filled size screen 0.03,15 ls 100
 	set style line 5 lc rgb '#006400' lt 1 lw 2 #Verde
 	set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
 	set style line 7 lc rgb '#9400d3' lt 1 lw 2 #Violeta
-	set style line 8 lc rgb 'black' lt 1 dashtype 8 lw 1.5 #Rojo
+	set style line 8 lc rgb 'black' lt 1 dashtype 2 lw 2.5
 	set style line 9 lc rgb 'gray30' lt 1 lw 1.5 #Negro
 
 
@@ -100,12 +100,16 @@ set style arrow 200 head filled size screen 0.03,15 ls 100
 
 #plot 'Adherencia_F127.txt' u 1:2 with lines ls 9, 'Adherencia_F127.txt' u 1:12 with lines ls 8
 
-plot 'Adherencia_F127.txt' using 1:3 with lines ls 9,\
-'Adherencia_F127.txt' using 1:5 with lines ls 9,\
-'Adherencia_F127.txt' using 1:7 with lines ls 9,\
-'Adherencia_F127.txt' u 1:2 with lines ls 8,\
-'Adherencia_F127-flecha.txt' u 1:2 smooth bezier ls 100, 'Adherencia_F127-flecha.txt' u 5:6:7:8 w vectors arrowstyle 200,\
-'Adherencia_F127-flecha.txt' u 3:4 smooth bezier ls 100, 'Adherencia_F127-flecha.txt' u 9:10:11:12 w vectors arrowstyle 200
+#Pongo la leyenda
+set key top left Left reverse samplen -2  font ",14" textcolor rgb "black" at -610,260
+
+
+plot 'Adherencia_F127.txt' using 1:3 with lines ls 9 title "SF" ,\
+'Adherencia_F127.txt' using 1:5 with lines ls 9 notitle ,\
+'Adherencia_F127.txt' using 1:7 with lines ls 9 notitle ,\
+'Adherencia_F127.txt' u 1:2 with lines ls 8 notitle ,\
+'Adherencia_F127-flecha.txt' u 1:2 smooth bezier ls 100 notitle, 'Adherencia_F127-flecha.txt' u 5:6:7:8 w vectors arrowstyle 200 notitle ,\
+'Adherencia_F127-flecha.txt' u 3:4 smooth bezier ls 100 notitle, 'Adherencia_F127-flecha.txt' u 9:10:11:12 w vectors arrowstyle 200 notitle	
 
 
  #"flecha.txt" u 3:4:($5*3):($6*3) w vectors arrowstyle 200

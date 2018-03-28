@@ -31,6 +31,8 @@
 \end{tikzpicture}
 };,,,,,,dash pattern=on 2pt off 1pt
 
+\node at (6.1,-1.6) {\large{Au}};
+
 %Molecula de MPTMS ligada
 \node at (6,1) {
 \chemfig[scale=0.6][scale=0.6]{Si
