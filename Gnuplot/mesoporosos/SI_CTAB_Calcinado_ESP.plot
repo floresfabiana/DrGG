@@ -15,8 +15,8 @@ unset border
 unset tics
 
 #Defino estilos para cada tipo de linea
-set style line 1 lc rgb '#800000' lt 1 lw 2 pt 7 ps 1 #Marron
-set style line 3 lc rgb '#ff4500' lt 1 lw 2 pt 7 ps 1 #Naranja
+set style line 1 lt -1 lw 2 pi -3 pt 6 ps 1.5 lc  rgb '#800000'
+set style line 3 lt -1 lw 2 pi -5 pt 7 ps 1.5 lc  rgb '#ff4500'
 
 #Estilos de los ejes 
 set style line 10 lc rgb 'gray40' lt 1 lw 5 

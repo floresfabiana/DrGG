@@ -74,12 +74,13 @@ set label 101 sprintf("+ciclos") at -305,-420 font ",10" textcolor rgb "black"
 	#set mytics 2
 
 #Pongo la leyenda
-set key top left Left reverse samplen 3 font ",12" textcolor rgb "gray40"
+#Pongo la leyenda
+set key top left Left reverse samplen -2  font ",14" textcolor rgb "black" at -610,360
  
 
 #Ploteo todas las funciones que les digamos
 
-plot 'Adherencia/F127-MPTMS-135 cilclos.txt' u 5:($6/0.0314) every 2 w l ls 3 notitle,\
+plot 'Adherencia/F127-MPTMS-135 cilclos.txt' u 5:($6/0.0314) every 2 w l ls 3 title "SF",\
 "Adherencia/flecha-ru1mM.txt" u 1:2 smooth bezier ls 100  notitle,\
 "Adherencia/flecha2-ru1mM.txt" u 1:2 smooth bezier ls 100 notitle,\
 "Adherencia/flecha-ru1mM.txt" u 3:4:5:6 w vectors arrowstyle 200 notitle,\

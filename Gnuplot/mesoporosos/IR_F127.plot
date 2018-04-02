@@ -52,8 +52,8 @@ set size ratio 0.6
 
 #Leyenda de los Picos
 set label "$\\nu_{\\text{\\tiny{C-H}}}$" at 3000,0.01 font ",10" textcolor rgb "gray40"
-set label "SF luego de calcinar" at 4000,-0.03 font ",8" textcolor rgb "black"
-set label "SF antes de calcinar" at 4000,0.13 font ",8" textcolor rgb "black"
+set label "SF antes de calcinar" at 4000,-0.03 font ",8" textcolor rgb "black"
+set label "SF luego de calcinar" at 4000,0.13 font ",8" textcolor rgb "black"
 
 #Ploteo todas las funciones que les digamos
 plot "IR_Si_CF127.csv" using ($1):($2+0.12) with lines ls 3, "IR_Si_FF127.csv" using 1:2 with lines ls 1 title "SF antes de calcinar"

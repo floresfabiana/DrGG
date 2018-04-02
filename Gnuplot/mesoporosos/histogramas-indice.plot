@@ -27,7 +27,7 @@ set key top left Left reverse samplen 3 font ",14" textcolor rgb "gray40"
 	set grid noxtics front ls 11
     set grid ytics back ls 11
 #Coloca los nombre de los ejes
-	set ylabel "índice de refracción"  font ",16" textcolor rgb "gray40" offset -2,0
+	set ylabel "$n_p$"  font ",16" textcolor rgb "gray40" offset -2,0
     set xlabel "Método"  font ",16" textcolor rgb "gray40" offset 0,-1.4
 
 #Cambio de aspecto
