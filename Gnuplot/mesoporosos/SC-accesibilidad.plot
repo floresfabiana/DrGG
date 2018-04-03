@@ -7,7 +7,7 @@ set terminal tikz
 set output "SC-accesibilidad.tikz" 
 
 #Saco la leyenda
-set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -600,72
+set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -600,150
 
 
 #Saco el Borde
@@ -68,14 +68,14 @@ red_100 = "#ff0000"
 #Fuerza a establecer un rango
 	 
 	set xrange [-600:100]
-	
+	set yrange [-400:200]
 
 #Graduacion del eje x e Intervalos entre las marcas mayores
-	#set xtics 200
+	set xtics 100
 	#set mxtics 2
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
-	#set ytics 250
+	set ytics 100
 	#set mytics 2
 
 #FITEO

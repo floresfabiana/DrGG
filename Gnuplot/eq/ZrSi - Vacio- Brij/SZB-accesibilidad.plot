@@ -7,7 +7,7 @@ set terminal tikz
 set output "SZB-accesibilidad.tikz" 
 
 #Saco la leyenda
-	set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -500,260
+	set key reverse samplen -1 font ",14" textcolor rgb "black" at -400,375
 
 #Saco el Borde
 	unset border
@@ -34,7 +34,7 @@ set style line 3 lc rgb 'blue' lt 1 lw 2.5 #Azul
 #Fuerza a establecer un rango
 	 
 	set xrange [-500:0]
-	#set yrange [10:60]
+	set yrange [-500:400]
 
 
 #Para graficar todas
