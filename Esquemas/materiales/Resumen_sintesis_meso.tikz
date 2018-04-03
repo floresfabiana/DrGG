@@ -22,6 +22,9 @@
     \node [block4, above of=bloque4, node distance=-1cm] (bloque6) {Condensación del óxido};
     \node [block5, right of=bloque6] (bloque7) {Eliminación del surfactante};
 
+    \node [right of=bloque3,xshift=1cm,yshift=1cm] (altaT) {AT};
+    \node [right of=bloque3,xshift=1cm,yshift=-1cm] (bajT)  {BT};
+
     %Bloques al final para que me entren las sombras
     %Colocar abajo del bloque mas inferior
     \node [margen_abajo, below of=bloque6] (bloque_margen_inferior) {};
