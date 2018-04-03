@@ -5,8 +5,8 @@
 %Gradiente de grises para cada bloque y entre los bloques
 \tikzstyle{block1} = [rectangle, blur shadow, draw=gray, top color=orange, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
 \tikzstyle{block2} = [rectangle, blur shadow, draw=gray, top color=orange!80, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
-\tikzstyle{block3} = [rectangle, blur shadow, draw=gray, top color=orange!70, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
-\tikzstyle{block4} = [rectangle, blur shadow, draw=gray, top color=orange!50, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=4cm]
+\tikzstyle{block3} = [rectangle, blur shadow, draw=gray, top color=orange!70, bottom color=white, text width=3.1cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
+\tikzstyle{block4} = [rectangle, blur shadow, draw=gray, top color=orange!50, bottom color=white, text width=2.9cm, minimum height=1.4cm, text centered, rounded corners, node distance=4cm]
 \tikzstyle{block5} = [rectangle, blur shadow, draw=gray, top color=orange!25, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
 
 %Estilo de las flechas
@@ -16,27 +16,28 @@
     % Ubico los nodos
     \node [block1] (bloque1)                   {\textbf{Estabilización} $50\%$HR, \SI{1}{\hour}};
     \node [block2, right of=bloque1] (bloque2) {\textbf{Calentamiento} \SI{60}{\celsius}, \SI{1}{\hour}};
-    \node [block3, right of=bloque2] (bloque3) {\textbf{Calentamiento} \SI{130}{\celsius}, \SI{1}{\hour}};
+    \node [block3, right of=bloque2,xshift=0.3cm] (bloque3) {\textbf{Simplificado(Sim)} \SI{130}{\celsius}, \SI{1}{\hour}};
        
-    \node [block4, right of=bloque3,xshift=1.1cm] (bloque4) {\textbf{Alcalino} Atmósfera NH$_3$, \SI{10}{\min}};
-    \node [block4, below of=bloque4,node distance=-2.2cm] (bloque5) {\textbf{Ácido} Atmósfera HCl, \SI{10}{\min}};
-    \node [block4, below of=bloque5,node distance=-2.2cm] (bloque6) {\textbf{Tratamiento}  \SI{130}{\celsius}, \SI{7}{\day}};
-    \node [block4, above of=bloque4,node distance=-2.2cm] (bloque7) {\textbf{Vacío} \SI{1e-5}{\milli\bar} \SI{130}{\celsius},7d};
-    \node [block4, above of=bloque7,node distance=-2.2cm] (bloque8) {\textbf{Calcinación}  \SI{350}{\celsius},\SI{2}{\hour}  \SI{1}{\celsius.\min^{-1}}};
+    \node [block4, right of=bloque3,xshift=1.1cm] (bloque4) {\textbf{Alcalino(Alc)} Atmósfera NH$_3$, \SI{10}{\min}};
+    \node [block4, below of=bloque4,node distance=-2.2cm] (bloque5) {\textbf{Ácido(Áci)} Atmósfera HCl, \SI{10}{\min}};
+    \node [block4, below of=bloque5,node distance=-2.2cm] (bloque6) {\textbf{Prolongado(Pro)}  \SI{130}{\celsius}, \SI{7}{\day}};
+    \node [block4, above of=bloque4,node distance=-2.2cm] (bloque7) {\textbf{Vacío(Vac)} \SI{1e-5}{\milli\bar} \SI{130}{\celsius},7d};
+    \node [block4, above of=bloque7,node distance=-2.2cm] (bloque8) {\textbf{Calcinación(Cal)}  \SI{350}{\celsius},\SI{2}{\hour}  \SI{1}{\celsius.\min^{-1}}};
     
     %Conecto los nodos
-    \path [line] (bloque1) -- (bloque2);
-    \path [line] (bloque2) -- (bloque3);
-    \path [line] (bloque3) -- (bloque4);
-    \path [line] (bloque3) -- (bloque5);
-    \path [line] (bloque3) -- (bloque6); 
-    \path [line] (bloque3) -- (bloque7);  
-    \path [line] (bloque3) -- (bloque8); 
-
+    
+    \path [line] (bloque1.center) -- (bloque2);
+    \path [line] (bloque2.center) -- (bloque3);
+    \path [line] (bloque3.center) -- (bloque4);
+    \path [line] (bloque3.center) -- (bloque5);
+    \path [line] (bloque3.center) -- (bloque6); 
+    \path [line] (bloque3.center) -- (bloque7);  
+    \path [line] (bloque3.center) -- (bloque8);     
+    
     %Parentesis grande
     \draw [decorate,decoration={brace,amplitude=8pt},line width=4pt,color=gray,ultra thick] ([xshift=2mm] bloque6.north east) -- ([xshift=2mm] bloque7.south east);
 
-    \node [block5, right of=bloque4,xshift=-1mm,yshift=11mm] (bloque9) {\textbf{Reflujo IpOH}\hspace{1cm}\SI{15}{\min} Lavado H$_2$O \hspace{1cm} \hspace{1cm} pH=2,\SI{10}{\min}};
+    \node [block5, right of=bloque4,xshift=0.7mm,yshift=11mm] (bloque9) {\textbf{Reflujo IpOH}\hspace{1cm}\SI{15}{\min} Lavado H$_2$O \hspace{1cm} \hspace{1cm} pH=2,\SI{10}{\min}};
 
      %Bloques al final para que me entren las sombras
     %Colocar abajo del bloque mas inferior
@@ -45,4 +46,14 @@
     %Colocar a la derecha del bloque que este mas a la derecha
     \node [margen_derecha, right of=bloque9] (bloque_margen_derecho) {};
 
+     \node [block1] (bloque1)                   {\textbf{Estabilización} $50\%$HR, \SI{1}{\hour}};
+    \node [block2, right of=bloque1] (bloque2) {\textbf{Calentamiento} \SI{60}{\celsius}, \SI{1}{\hour}};
+    \node [block3, right of=bloque2,xshift=0.3cm] (bloque3) {\textbf{Simplificado(Sim)} \SI{130}{\celsius}, \SI{1}{\hour}};
+       
+    \node [block4, right of=bloque3,xshift=1.1cm] (bloque4) {\textbf{Alcalino(Alc)} Atmósfera NH$_3$, \SI{10}{\min}};
+    \node [block4, below of=bloque4,node distance=-2.2cm] (bloque5) {\textbf{Ácido(Áci)} Atmósfera HCl, \SI{10}{\min}};
+    \node [block4, below of=bloque5,node distance=-2.2cm] (bloque6) {\textbf{Prolongado(Pro)}  \SI{130}{\celsius}, \SI{7}{\day}};
+    \node [block4, above of=bloque4,node distance=-2.2cm] (bloque7) {\textbf{Vacío(Vac)} \SI{1e-5}{\milli\bar} \SI{130}{\celsius},7d};
+    \node [block4, above of=bloque7,node distance=-2.2cm] (bloque8) {\textbf{Calcinación(Cal)}  \SI{350}{\celsius},\SI{2}{\hour}  \SI{1}{\celsius.\min^{-1}}};
+    
 \end{tikzpicture}
