@@ -8,7 +8,7 @@ set terminal tikz
 set output "ciclosintferroceno.tikz" 
 
 #Saco la leyenda
-	set key center left Left sample -1 spacing 2.6 reverse font ",12" textcolor rgb "black" at 77,0.6
+	set key center right Left sample -1 spacing 3 reverse font ",16" textcolor rgb "black" 
 
 #Saco el Borde
 	unset border
@@ -16,10 +16,10 @@ set output "ciclosintferroceno.tikz"
 #Saco las marcas
   	unset tics
 
-set style line 1 lc rgb 'gray60' pt 9 lt 1 ps 0.9 lw 0.5 #Marron
-set style line 2 lc rgb 'red' pt 7 lt 1 ps 0.6 lw 2.5 #ROjo
-set style line 3 lc rgb 'blue' pt 1 lt 1 ps 0.9 lw 1 #Azul
-set style line 5 lc rgb 'black' pt 13 lt 1 ps 0.9 lw 1 #Azul
+set style line 1 lc rgb 'gray60' pt 9 lt 1 ps 1.2 lw 0.5 #Marron
+set style line 2 lc rgb 'red' pt 7 lt 1 ps 0.9 lw 2.5 #ROjo
+set style line 3 lc rgb 'blue' pt 1 lt 1 ps 1.2 lw 1 #Azul
+set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.2 lw 1 #Azul
 
 #Estilos de los ejes 
 	set style line 10 lc rgb 'gray40' lt 1 lw 5 
