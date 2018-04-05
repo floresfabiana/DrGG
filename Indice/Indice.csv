@@ -1,3 +1,4 @@
+ germanio ; germanio \index{germanio}
 cometa;cometa\index{cometa}
  lenguas electrónicas; lenguas electrónicas\index{lengua electrónica}
  redes neuronales; redes neuronales\index{redes neuronales}
@@ -15,7 +16,7 @@ cometa;cometa\index{cometa}
  fosfonato; fosfonato\index{fosfonato}
  Butler; Butler\index{Butler}
  Volmer; Volmer\index{Volmer}
- Bardeen; Bardeen\index{Bardeen} 
+ Bardeen; Bardeen\index{Bardeen}
  Brattain; Brattain\index{Brattain} 
  Shockley; Shockley\index{Shockley}
  Heyrovský; Heyrovský\index{Heyrovský}
@@ -65,6 +66,7 @@ cometa;cometa\index{cometa}
  poro ; poro\index{poro} 
  transporte ; transporte\index{transporte} 
  voltametría de corriente alterna; voltametría de corriente alterna\index{voltametría!de corriente alterna}
+ voltametría de corriente continua; voltametría de corriente continua\index{voltametría!de corriente continua}
  espectroscopía; espectroscopía\index{espectroscopía}
  fotolitografía; fotolitografía\index{fotolitografía}
  litografía ; litografía\index{litografía} 
@@ -110,7 +112,8 @@ cometa;cometa\index{cometa}
  energía ; energía\index{energía} 
  etanol ; etanol \index{etanol}
  hisopo; hisopo\index{hisopo} 
- voltametría cíclica ; voltametría cíclica\index{voltametria!cíclica} 
+ voltametría cíclica ; voltametría cíclica \index{voltametría!cíclica}
+ voltametría; voltametría\index{voltametría}
  nanoporosa ; nanoporosa\index{película!nanoporosa} 
  mesoporosa ; mesoporosa\index{película!mesoporosa} 
  oblea ; oblea\index{oblea} 
@@ -246,7 +249,6 @@ ultrasonido ;ultrasonido\index{ultrasonido}
 espectro electromagnético; espectro electromagnético\index{espectro electromagnético}
 \lambda;\lambda\index{longitud de onda}
 coeficiente de absorción;coeficiente de absorción\index{coeficiente de absorción}
-polarización;polarización\index{polarización}
 polarización de la luz;polarización de la luz\index{polarización!de la luz}
 poroelipsometría;poroelipsometría\index{poroelipsometría ambiental}
 elipsoporosimetría;elipsoporosimetría\index{elipsoporosimetría ambiental}
@@ -257,7 +259,7 @@ resina positiva;resina positiva\index{resina!positiva}
 resina negativa;resina negativa\index{resina!negativa}
 resina de doble exposición;resina de doble exposición\index{resina!de doble exposición}
 resina epoxi;resina expoxi\index{resina!expoxi}
-silice;silice\index{silicio!oxido de}
+sílice;sílice\index{silicio!oxido de}
 punto isoeléctrico;punto isoeléctrico\index{punto isoeléctrico}
 Wu ;Wu\index{Wu} 
  calomel; calomel\index{electrodo!de calomel}
@@ -267,8 +269,7 @@ Langmuir;Langmuir\index{Langmuir}
  \textit{electron hopping}; \textit{electron hopping}\index{electron hopping@\textit{electron hopping}}
  Avogadro; Avogrado\index{Avogadro}
  silanolato; silanolato\index{silanolato}
-sitio redox;sitio redox\index{sitio redox}
-sitios redox;sitios redox\index{sitio redox}
+sitio rédox;sitio rédox\index{sitios rédox}
  Tagliazucchi; Tagliazucchi\index{Tagliazucchi}
  Calvo; Calvo\index{Calvo}
 INQUIMAE;INQUIMAE\index{INQUIMAE}
@@ -283,7 +284,7 @@ Pasteur;Pasteur\index{Pasteur}
  hidrólisis; hidrólisis\index{hidrolisis@hidrólisis}
  mojabilidad; mojabilidad\index{mojabilidad}
  polimerización; polimerización\index{polimerización}
- rayos X; rayos X\index{rayos Xssh}
+ rayos X; rayos X\index{rayos X}
  concentración micelar crítica; concentración micelar crítica\index{concentración micelar crítica}
 IUPAC;IUPAC\index{IUPAC}
  histéresis; histéresis\index{histéresis}
@@ -351,7 +352,7 @@ elementos finitos;elementos finitos\index{metodo de elementos finitos@método de
 silanización;silanización\index{silanización}
  polipropileno; polipropileno\index{polipropileno}
  funcionalización; funcionalización\index{funcionalización}
- funcionalizar; funcionalizar\index{funcionalizar}
+ funcionalizar; funcionalizar\index{funcionalización}
  dihexadecilfosfato; dihexadecilfosfato\index{dihexadecilfosfato}
 APTES;APTES\index{aminopropil@3-aminopropil trietoxisilano}
 oxolación;oxolación\index{oxolación}

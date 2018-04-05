@@ -561,7 +561,7 @@
 
 \section{Mediciones electroquímicas}\label{sec:medidas_eq}
 			
-			Las mediciones electroquímicas constituyen una parte central de este trabajo. Se hizo uso de dos tipos de técnicas voltamperométricas: de corriente continua y de corriente alterna, así cómo simulaciones de voltametrías por el método de elementos finitos. En las próximas secciones se introducen algunos principios teóricos sobre las técnicas empleadas y cuál fue su relevancia para el presente trabajo.
+			Las mediciones electroquímicas constituyen una parte central de este trabajo. Se hizo uso de dos tipos de técnicas voltamétricas: de corriente continua y de corriente alterna, así cómo simulaciones de voltametrías por el método de elementos finitos. En las próximas secciones se introducen algunos principios teóricos sobre las técnicas empleadas y cuál fue su relevancia para el presente trabajo.
 
 			En todos los casos (tanto para los experimentales como los simulados) se utilizó la configuración típica para celda de tres electrodos.\cite{Wi2000} El electrodo de trabajo (ET) es donde ocurre la reacción electroquímica, para lo cúal se le aplica un potencial variable respecto de otro electrodo de potencial fijo, denominado electrodo de referencia (ER). La corriente resultante de la reacción química circula entre el electrodo de trabajo y el electrodo auxiliar o contraelectrodo (CE). La variación del potencial aplicado y la medición de la corriente se controlan mediante un potenciostato. En la figura \ref{fig:eq-circuito} se presenta el esquema eléctrico empleado para tomar los voltagramas. 
 
@@ -575,7 +575,7 @@
 		
 	 \subsection{Voltametría cíclica de corriente continua}
 	 		
-	 		La voltamperometría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo de trabajo respecto de un electrodo de referencia. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante que circula por el electrodo de trabajo. La señal de excitación es un barrido de potencial lineal con una onda de forma triangular, la cual parte de un potencial E$_1$, evoluciona linealmente en el tiempo hasta un potencial E$_2$ para luego volver a E$_1$ (figura \ref{fig:CV_ideal}). Las velocidades de este barrido pueden variar desde menos de \SI{1}{\milli\volt.\second^{-1}} hasta cientos de volts por segundo. En este trabajo en particular se utilizaron principalemente velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}, se escogieron estas velocidades para llevar a cabo experimentos de una duración aceptable y evitar el desplazamiento de potenciales para los picos oxidación y/o reducción, debido a limitaciones en la transferencia de carga por altas velocidades de barrido. \cite{nicholson1964,Gewirth2004}
+	 		La voltametría cíclica (VC) consiste en variar, de una manera cíclica, el potencial de un electrodo de trabajo respecto de un electrodo de referencia. Ambos se encuentran inmersos en una solución en reposo y se mide la corriente resultante que circula por el electrodo de trabajo. La señal de excitación es un barrido de potencial lineal con una onda de forma triangular, la cual parte de un potencial E$_1$, evoluciona linealmente en el tiempo hasta un potencial E$_2$ para luego volver a E$_1$ (figura \ref{fig:CV_ideal}). Las velocidades de este barrido pueden variar desde menos de \SI{1}{\milli\volt.\second^{-1}} hasta cientos de volts por segundo. En este trabajo en particular se utilizaron principalemente velocidades próximas a los \SI{50}{\milli\volt.\second^{-1}}, se escogieron estas velocidades para llevar a cabo experimentos de una duración aceptable y evitar el desplazamiento de potenciales para los picos oxidación y/o reducción, debido a limitaciones en la transferencia de carga por altas velocidades de barrido. \cite{nicholson1964,Gewirth2004}
 
 	 		Como ya se dijo anteriormente, se barre el potencial del electrodo de trabajo en dirección de ida y vuelta entre dos valores arbitrarios, E$_1$ y E$_2$. Al\space usar soluciones en base acuosa se debe trabajar en la región de estabilidad electroquímica del H$_2$O, para evitar reducción u oxidación de la misma, que genera H$_2$ u O$_2$ respectivamente. En la gran mayoría de los experimentos presentados en este trabajo se trabajó a un pH$\sim 5$, para el cual el rango de estabilidad del agua es entre \SI{-0.5}{\volt} y \SI{0.7}{\volt}, usando como referencia un electrodo de calomel saturado.\cite{wang2014} 
 
@@ -588,7 +588,7 @@
 			  		  \begin{subfigure}[t]{0.495\textwidth}
 			  		  \includegraphics[width=\textwidth]{Esquemas/CV_ideal.pdf}
 			  		  \end{subfigure}
-			  		  \caption[Voltamperometría ideal reversible]{Curva de excitación y voltagrama típico para una especie redox reversible. Se destaca en el voltagrama (derecha) los típicos parámetros que se extraen de la curva, picos máximos de corriente anódica y catódica 
+			  		  \caption[Voltamperometría ideal reversible]{Curva de excitación y voltagrama típico para una especie rédox reversible. Se destaca en el voltagrama (derecha) los típicos parámetros que se extraen de la curva, picos máximos de corriente anódica y catódica 
 			  		  sus correspondientes potenciales.}
 			  		  \label{fig:CV_ideal}
 			  		  \end{figure}
@@ -602,7 +602,7 @@
 
 			De este modo, a \SI{25}{\celsius}, para cuplas rédox en que la transferencia involucre un único electrón ($n=1$), la separación teórica debería ser aproximadamente de \SI{57}{\milli\volt}, independiente de la concentración o la velocidad de barrido. A mayor separación de picos se tendrá un proceso cada vez más irreversible mientras que separaciones menores a \SI{57}{\milli\volt} sugieren sitios rédox anclados o sondas adsorbidas.\cite{Wi2000,Bockris1974,Gewirth2004}  
 	 		
-	 		Esta técnica se utilizó para evaluar fenómenos de exclusión, permeación y preconcentración. También para determinar concentración de las sondas electroactivas dentro y fuera de los poros, calcular coeficientes de difusión y estimar distancias de sitios redox así como chequear accesibilidad y estructura de las películas delgadas mesoporosas.
+	 		Esta técnica se utilizó para evaluar fenómenos de exclusión, permeación y preconcentración. También para determinar concentración de las sondas electroactivas dentro y fuera de los poros, calcular coeficientes de difusión y estimar distancias de sitios rédox así como chequear accesibilidad y estructura de las películas delgadas mesoporosas.
 
 	 \subsection{Voltametría cíclica de corriente alterna}
 
@@ -619,7 +619,7 @@
 			  		  \begin{subfigure}[t]{0.495\textwidth}
 			  		  \includegraphics[width=\textwidth]{Graficos/ACV-ideal.pdf}
 			  		  \end{subfigure}
-			  		  \caption[Voltamperometria ideal reversible]{Curva de excitación utilizada en un voltametría de corriente alterna y el típico voltagrama que se obtiene para una especie redox reversible.}
+			  		  \caption[Voltamperometria ideal reversible]{Curva de excitación utilizada en un voltametría de corriente alterna y el típico voltagrama que se obtiene para una especie rédox reversible.}
 			  		  \label{fig:ACV_ideal}
 			  		  \end{figure}
 			
@@ -796,7 +796,7 @@
  	 	 
  	 	  A diferencia de las sondas anteriores, la especie reducida del \fc\space no tiene carga neta, por lo que se puede esperar que no tenga interacciones de tipo electrostáticas con las películas delgadas mesopoporosas, es por ello que resultó especialmente útil para sacar conclusiones y comparar como varía el transporte en sistemas calcinados y sistemas no calcinados. En el capítulo \ref{chap:Electroquimica} se realizará una discusión detallada sobre este tema. 
  	 	  La reacción de oxidación/reducción para esta molécula es la siguiente:
- 	 	 			%Ecuación redox para el Ferroceno
+ 	 	 			
  	 				 \begin{equation}
  	 	 				\begin{aligned}
  	 	 				\includegraphics[scale=0.75]{Esquemas/Redox-Fc.pdf}

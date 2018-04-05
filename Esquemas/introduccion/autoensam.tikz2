@@ -48,9 +48,9 @@
 \begin{tikzpicture}
 
     %Sustrato
-    \node at (-2,-2) {
+    \node at (-2.25,-2) {
     \begin{tikzpicture}
-    \draw[draw=none,right color=darkgray,left color=white] (0,0) rectangle (2,16);
+    \draw[draw=none,right color=darkgray,left color=white] (0,0) rectangle (1.5,16);
     \end{tikzpicture}
     };
 
