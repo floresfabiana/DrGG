@@ -28,7 +28,7 @@ set style line 3 lc rgb 'black' lt 1 lw 0.5 #Azul
 #Estilo de la grilla
 	set style line 111 lc rgb 'gray70' lt 0 lw 1 
 	set grid back ls 111
-
+    set tics nomirror font ",14"
 
 #Graduacion del eje y e Intervalos entre las marcas mayores
 	#set ytics 10 
@@ -47,14 +47,12 @@ set style line 3 lc rgb 'black' lt 1 lw 0.5 #Azul
 	set xrange [-600:100]
 	set xtics offset 0,-0.5
 	set ytics offset -0.3,0
-	#set yrange [10:60]
+	set yrange [-500:500]
 
 #Para graficar todas
 plot "APTES/Ru.txt" using 1:($2/0.0314) every 10 with lines ls 1 title "SZF",\
 "APTES/Ru.txt" using 3:($4/0.0314) every 10 with lines ls 1 notitle,\
-"APTES/Ru.txt" using 5:($6/0.0314) every 10 with lines ls 3 title "SZF$^N_{10}$",\
-"APTES/Ru.txt" using 7:($8/0.0314) every 10 with lines ls 3 notitle,\
-"APTES/Ru.txt" using 9:($10/0.0314) every 10 with lines ls 3 notitle,\
+
 
 #"APTES/Ru.txt" using 7:($8/0.0314) every 7 with lines ls 3,\
 #"APTES/Ru.txt" using 9:($10/0.0314) every 7 with lines ls 3,\

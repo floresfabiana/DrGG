@@ -1,6 +1,7 @@
  germanio ; germanio \index{germanio}
 cometa;cometa\index{cometa}
- lenguas electrónicas; lenguas electrónicas\index{lengua electrónica}
+lenguas electrónicas;lenguas electrónicas\index{lengua electrónica}
+lengua electrónica;lengua electrónica\index{lengua electrónica}
  redes neuronales; redes neuronales\index{redes neuronales}
  \textit{big data}; \textit{big data}\index{bigdata@\textit{big data}}
  microfabricación; microfabricación\index{microfabricación}
@@ -65,8 +66,10 @@ cometa;cometa\index{cometa}
  óxido de silicio; óxido de silicio\index{silicio!oxido de}
  poro ; poro\index{poro} 
  transporte ; transporte\index{transporte} 
+ voltametrías de corriente alterna; voltametrías de corriente alterna\index{voltametría!de corriente alterna}
  voltametría de corriente alterna; voltametría de corriente alterna\index{voltametría!de corriente alterna}
  voltametría de corriente continua; voltametría de corriente continua\index{voltametría!de corriente continua}
+ voltametrías de corriente continua; voltametrías de corriente continua\index{voltametría!de corriente continua}
  espectroscopía; espectroscopía\index{espectroscopía}
  fotolitografía; fotolitografía\index{fotolitografía}
  litografía ; litografía\index{litografía} 
@@ -113,7 +116,11 @@ cometa;cometa\index{cometa}
  etanol ; etanol \index{etanol}
  hisopo; hisopo\index{hisopo} 
  voltametría cíclica ; voltametría cíclica \index{voltametría!cíclica}
- voltametría; voltametría\index{voltametría}
+ voltametrías cíclicas ; voltametría cíclica \index{voltametría!cíclica}
+ escalonada; escalonada\index{voltametría!escalonada}
+ de onda cuadrada; de onda cuadrada\index{voltametría!de onda cuadrada}
+ de corriente continua; de corriente continua\index{voltametría!de corriente continua}
+ voltagrama; voltagrama\index{voltagrama}
  nanoporosa ; nanoporosa\index{película!nanoporosa} 
  mesoporosa ; mesoporosa\index{película!mesoporosa} 
  oblea ; oblea\index{oblea} 
@@ -168,16 +175,16 @@ Ybarra;Ybarra\index{Ybarra}
  argón; argón\index{argón}
 MEMS;MEMS\index{MEMS}
  aluminio; aluminio\index{aluminio}
- Zr ; Zr\index{circonio}
+ Zr; Zr\index{circonio}
  circonio ; circonio\index{circonio} 
- Cr ; Cr \index{cromo}
- Al$; Al$\index{aluminio}
- Au ; Au \index{oro}
- Ar ; Ar \index{argón}
- Pt ; Pt \index{platino}
- Ti ; Ti \index{titanio}
- Ce ; Ce \index{cerio}
- Hf ; Hf \index{hafmio}
+Cr ;Cr \index{cromo}
+Al$;Al$\index{aluminio}
+Au ;Au \index{oro}
+Ar ;Ar \index{argón}
+Pt;Pt\index{platino}
+ Ti; Ti\index{titanio}
+ Ce; Ce\index{cerio}
+Hf;Hf\index{hafmio}
  Si ; Si \index{silicio}
 HCl;HCl\index{acido@ácido!clohídrico}
 NH;NH\index{amoniaco}
@@ -310,7 +317,7 @@ IUPAC;IUPAC\index{IUPAC}
  flexografía; flexografía\index{flexografía}
  poliestireno; poliestireno\index{poliestireno}
  Baumann; Baumann\index{Baumann}
- chip; chip\index{chip}
+ microchip; microchip\index{microchip}
  tintas; tintas\index{tintas}
 Soler-Illia ; Soler-Illia \index{Soler-Illia}
  monocapa; monocapa\index{monocapa}

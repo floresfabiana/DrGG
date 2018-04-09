@@ -4,7 +4,7 @@
 
 #Para exportar como latex
 set terminal tikz
-set output "aptesru-1mM.tikz" 
+set output "aptesru-1mM-2.tikz" 
 
 #Saco la leyenda
 set key top left Left reverse samplen 3 spacing 2.1 font ",14" textcolor rgb "black" 
@@ -50,9 +50,9 @@ set style line 3 lc rgb 'black' lt 1 lw 0.5 #Azul
 	set yrange [-500:500]
 
 #Para graficar todas
-plot "APTES/Ru.txt" using 1:($2/0.0314) every 10 with lines ls 1 title "SZF",\
-"APTES/Ru.txt" using 3:($4/0.0314) every 10 with lines ls 1 notitle,\
-
+plot "APTES/Ru.txt" using 11:($12/0.0314) every 10 with lines ls 3 title "SZF$^N_1$",\
+"APTES/Ru.txt" using 13:($14/0.0314) every 10 with lines ls 3 notitle,\
+"APTES/Ru.txt" using 15:($16/0.0314) every 10 with lines ls 3 notitle,\
 
 #"APTES/Ru.txt" using 7:($8/0.0314) every 7 with lines ls 3,\
 #"APTES/Ru.txt" using 9:($10/0.0314) every 7 with lines ls 3,\
