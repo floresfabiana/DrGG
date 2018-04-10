@@ -36,13 +36,13 @@ set xrange [0:6]
 set yrange [0:3.6]
 
 #Leyenda
-set label "cuellos" at 1.1,2.75  font ",12" textcolor rgb "black"
-set label "poros" at 2.9,2.75  font ",12" textcolor rgb "black"
+set label "cuellos" at 0.9,2.75  font ",16" textcolor rgb "black"
+set label "poros" at 2.9,2.75  font ",16" textcolor rgb "black"
 #set label "b" at 0.1,3.2  font ",24" textcolor rgb "black"
 
 #Coloca los nombre de los ejes
-set xlabel "Di\'ametro" font ",14" textcolor rgb "gray40" offset  0,-2
-set ylabel "Poblaci\'on relativa" font ",14" textcolor rgb "gray40" offset  -2,0
+set xlabel "Di\'ametro" font ",18" textcolor rgb "gray40" offset  0,-2
+set ylabel "Poblaci\'on relativa" font ",18" textcolor rgb "gray40" offset  -2,0
 
 #Ploteo todas las funciones que les digamos
 plot "CTAB_M2_Modelo_distribucion.txt" using ($1*2-0.2):($2+0.1) with linespoints ls 3 notitle,\

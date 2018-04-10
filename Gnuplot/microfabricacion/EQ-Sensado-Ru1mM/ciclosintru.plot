@@ -8,7 +8,7 @@ set terminal tikz
 set output "ciclosintru.tikz" 
 
 #Saco la leyenda
-	set key top right Left sample -1 spacing 2.6 reverse font ",12" textcolor rgb "black"  at 105,3
+	set key top right Left sample -1 spacing 2.6 reverse font ",12" textcolor rgb "black" 
 
 #Saco el Borde
 	unset border

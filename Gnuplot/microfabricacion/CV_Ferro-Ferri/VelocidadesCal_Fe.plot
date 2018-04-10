@@ -45,14 +45,14 @@ set grid front ls 11
 	 f(x) = a*x + b
 	 fit f(x) "VelocidadesCal_Fe.txt" using (sqrt($1)):($3) via a,b
 	 stat "VelocidadesCal_Fe.txt" using (sqrt($1)):($3)
-	 set label 1 sprintf("y=%3.3fx%3.2f",a,b) at 6.95,2500 font ",12" textcolor rgb "black"
-	 set label 2 sprintf("R=%3.4f",STATS_correlation) at 6.95,1500 font ",12" textcolor rgb "black"
+	 set label 1 sprintf("y=%3.3fx%3.2f",a,b) at 6.25,2200 font ",12" textcolor rgb "black"
+	 set label 2 sprintf("R=%3.4f",STATS_correlation) at 6.25,1500 font ",12" textcolor rgb "black"
 
 	 g(x) = c*x + d
 	 fit g(x) "VelocidadesCal_Fe.txt" using (sqrt($1)):($5) via c,d
 	 stat "VelocidadesCal_Fe.txt" using (sqrt($1)):($5)
-	 set label 5 sprintf("y=%3.3fx%3.2f",c,d) at 6.95,-1500 font ",12" textcolor rgb "black"
-	 set label 6 sprintf("R=%3.4f",STATS_correlation) at 6.95,-2500 font ",12" textcolor rgb "black"	
+	 set label 5 sprintf("y=%3.3fx%3.2f",c,d) at 6.25,-1200 font ",12" textcolor rgb "black"
+	 set label 6 sprintf("R=%3.4f",STATS_correlation) at 6.25,-1900 font ",12" textcolor rgb "black"	
 
 	 # h(x) = e*x + f
 	 # fit h(x) "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5)) every ::5::8 via e,f

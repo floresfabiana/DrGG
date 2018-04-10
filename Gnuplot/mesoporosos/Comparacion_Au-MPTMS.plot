@@ -78,7 +78,7 @@ red_100 = "#ff0000"
 	#set mytics 2
 
 #Pongo la leyenda
-set key top left Left reverse samplen 3 spacing 2 font ",14" textcolor rgb "black"
+set key top left Left reverse samplen 1.2 spacing 2 font ",14" textcolor rgb "black"
  
 
 #Ploteo todas las funciones que les digamos

@@ -5,7 +5,7 @@
 #Para exportar como latex
 set terminal tikz tikzarrows
 set output "histogramas-ciclo1.tikz" 
-set key left Left reverse samplen 3 font ",14" spacing 2 textcolor rgb "gray40" width 3
+set key left Left reverse samplen 2 font ",14" spacing 2 textcolor rgb "gray40"
 
 #Leyenda
 

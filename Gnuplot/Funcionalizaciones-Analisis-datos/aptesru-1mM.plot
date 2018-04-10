@@ -46,7 +46,7 @@ set style line 3 lc rgb 'black' lt 1 lw 0.5 #Azul
 	 
 	set xrange [-600:100]
 	set xtics offset 0,-0.5
-	set ytics offset -0.3,0
+	set ytics 125 offset 0.7,0
 	set yrange [-500:500]
 
 #Para graficar todas

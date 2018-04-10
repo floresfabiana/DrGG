@@ -41,21 +41,20 @@ set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Leyendas
 #set label "a" at 0.016,1.423 font ",28" textcolor rgb 'black'
-set label "adsorción" at 0.48,1.35 rotate by 76 font ",14" textcolor rgb 'gray40'
-set label "desorción" at 0.34,1.353 rotate by 76 font ",14" textcolor rgb 'gray40'
-
+set label "adsorción" at 0.50,1.35 rotate by 76 font ",16" textcolor rgb 'gray40'
+set label "desorción" at 0.33,1.348 rotate by 76 font ",16" textcolor rgb 'gray40'
 #Coloca los nombre de los ejes
-set xlabel "$\\text{P/P}_s$" font ",14" textcolor rgb "gray40" offset  0,-2
-set ylabel "\'Indice de refracci\'on" font ",14" textcolor rgb "gray40" offset  -2,0
+set xlabel "$\\text{P/P}_s$" font ",16" textcolor rgb "gray40" offset  0,-2
+set ylabel "\'Indice de refracci\'on" font ",16" textcolor rgb "gray40" offset  -2,0
 
 
 #Ploteo todas las funciones que les digamos
 plot "CTAB_M2_Modelo_isoterma.txt" using 1:2 with linespoints ls 3 notitle,\
 "CTAB_M2_Modelo_isoterma.txt" using 1:2  with points ls 300 notitle,\
 "CTAB_M2_Modelo_isoterma.txt" using 4:5 axes x1y1 with linespoints ls 1 notitle,\
-"CTAB_M2_Modelo_flecha1.txt" u 1:2 smooth bezier ls 100,\
-"CTAB_M2_Modelo_flecha1.txt" u 3:4:5:6 w vectors arrowstyle 200,\
-"CTAB_M2_Modelo_flecha2.txt" u 1:2 smooth bezier ls 100,\
-"CTAB_M2_Modelo_flecha2.txt" u 3:4:5:6 w vectors arrowstyle 200,\
+"CTAB_M2_Modelo_flecha1.txt" u ($1+0.018):2 smooth bezier ls 100,\
+"CTAB_M2_Modelo_flecha1.txt" u ($3+0.018):4:5:6 w vectors arrowstyle 200,\
+"CTAB_M2_Modelo_flecha2.txt" u ($1-0.01):2 smooth bezier ls 100,\
+"CTAB_M2_Modelo_flecha2.txt" u ($3-0.01):4:5:6 w vectors arrowstyle 200,\
 
 #"CTAB_M2_Modelo_flecha1.txt" u 1:2 with points ls 100,\

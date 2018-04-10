@@ -4,7 +4,7 @@
 
 #Para exportar como latex
 set terminal tikz 
-set output "radial-ru.tikz" 
+set output "radial4puntos.tikz" 
 
 #Tipo de grafico
 set polar
