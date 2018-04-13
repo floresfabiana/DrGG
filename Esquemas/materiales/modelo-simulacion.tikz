@@ -23,7 +23,7 @@
 \node at (-4.3,4.2) {soluci\'on};
 \node at (-4.05,3.8) {\footnotesize{[FcOH]=\SI{5}{\milli\Molar}}};
 \node at (-4.5,2.2) {PDM};
-\node at (-4.1,1.8) {\footnotesize{[ARu]=\SI{1}{\milli\Molar}}};
+\node at (-4.1,1.8) {\footnotesize{[ARu]=\SI{1}{\Molar}}};
 \node at (-4.2,0.5) {electrodo};
 
 
