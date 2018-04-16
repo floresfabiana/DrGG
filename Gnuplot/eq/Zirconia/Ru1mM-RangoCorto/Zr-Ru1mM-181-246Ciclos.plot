@@ -7,7 +7,7 @@ set terminal tikz
 set output "Zr-Ru1mM-181-246Ciclos.tikz" 
 
 #Saco la leyenda
-	set key top left Left reverse sample 3 font ",14" textcolor rgb "black" 
+	set key top left Left reverse sample 2.3 font ",14" textcolor rgb "black" 
 
 
 #Saco el Borde
