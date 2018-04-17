@@ -554,15 +554,8 @@
    \newcommand{\pdmZ}{SZF\index{película!mesoporosa Zr/Si(F127)}}
    \newcommand{\pdmZB}{SZB\index{película!mesoporosa Zr/Si(Brij58)}}
 
-
 %Leyendas para los graficos
 %------------------------------------------------------------
-	%Para los graficos de los problemas tecnologicos Circulitos con Colores
-	%\newcommand{\unorojo}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=red!80,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{1}};\end{tikzpicture}\space}
-	%\newcommand{\dosvioleta}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=violet!70,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{2}};\end{tikzpicture}\space}
-	%\newcommand{\tresamarillo}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=yellow,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{3}};\end{tikzpicture}\space}
-	%\newcommand{\cuatronaranja}{\begin{tikzpicture}[baseline={([yshift=-0.8mm]current bounding box.center)}]\node[circle,fill=orange!80,text=white,inner sep=1,anchor=mid] at (0,0) {\scriptsize{4}};\end{tikzpicture}\space}
-
 	%Las rayas con los colores mas comunes
    	\newbox{\negro}
   		\savebox{\negro}{\raisebox{2pt}{\tikz{\draw[black,solid,line width=0.8pt](0,0) -- (4mm,0);}}}
@@ -581,9 +574,18 @@
 	\newbox{\punteado}
 		\savebox{\punteado}{\raisebox{2pt}{\tikz{\draw[black,dashed,line width=0.8pt](0,0) -- (3.2mm,0);}}}
 	  	  
-
 %Separación de las sílabas
 %------------------------------------------------------------
 	\hyphenation{Pasteur Kelvin PMMA Biopack sonda-electrodo hexadeciltrimetilamonio INTI telluride adherencia Fourier}
 
  %-----------------------------------------------------------
+
+%Seccion de parrafos sin sangria 
+%------------------------------------------------------------
+	
+  \newenvironment{sangria_pers}[1]%
+  		{\begin{list}{}%
+          {\setlength{\leftmargin}{#1}}%
+          \item[]%
+  			}
+  		{\end{list}}
