@@ -35,7 +35,7 @@ red_100 = "#ff0000"
 	# set style line 4 lc rgbcolor red_075 pt 1 ps 2 lw 2
 	# set style line 5 lc rgbcolor red_100 pt 1 ps 2 lw 2
 	# set style line 6 lc rgbcolor 'red' lt -1 pt -1
-set style line 1 lc rgb 'gray80' lt 1 lw 0.5 #Marron
+set style line 1 lc rgb 'gray40' lt 1 lw 0.5 #Marron
 set style line 2 lc rgb 'black' lt 1 dashtype 2 lw 2.5
 set style line 3 lc rgb 'black' lt 1 lw 2.5 #Azul
 
@@ -44,12 +44,13 @@ set style line 100  lc rgbcolor 'black' lw 1.5
 set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
-	set tics nomirror
+	set tics nomirror  font ",16" textcolor rgb 'gray20'
+	set xtics offset 0,-0.5
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray70' lt 0 lw 1 
+	set style line 11 lc rgb 'gray50' lt 0 lw 1 
 	set grid back ls 11
 
 
@@ -62,8 +63,8 @@ set style arrow 200 head filled size screen 0.02,10 ls 100
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",16" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",18" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",18" textcolor rgb "gray20" offset --3.2,0
 
 #Fuerza a establecer un rango
 	 
@@ -86,15 +87,15 @@ set style arrow 200 head filled size screen 0.02,10 ls 100
 	#fit g(x)"datos.txt" using ($4):($3*1e6) via c,d
 	#stat "ConcentracionesCal.txt" using 1:2 
 
-	#set label 1 sprintf("y=%3.3f",a) at 22,55 font "Times Italic,12" textcolor rgb "gray40"
-	#set label 2 sprintf("+%3.3f",b) at 27,55 font "Times Italic,12" textcolor rgb "gray40"
-	#set label 3 sprintf("R=%3.4f",STATS_correlation) at 22,52 font "Times Italic,12" textcolor rgb "gray40"
+	#set label 1 sprintf("y=%3.3f",a) at 22,55 font "Times Italic,12" textcolor rgb "gray20"
+	#set label 2 sprintf("+%3.3f",b) at 27,55 font "Times Italic,12" textcolor rgb "gray20"
+	#set label 3 sprintf("R=%3.4f",STATS_correlation) at 22,52 font "Times Italic,12" textcolor rgb "gray20"
  	
  # 	stat "ConcentracionesCal.txt" using ($1*1000):($3*1e6) 
 
- # 	set label 1 sprintf("y=%3.3f",a) at 22,55 font "Times Italic,12" textcolor rgb "gray40"
-	# set label 2 sprintf("+%3.3f",b) at 27,55 font "Times Italic,12" textcolor rgb "gray40"
-	# set label 3 sprintf("R=%3.4f",STATS_correlation) at 22,52 font "Times Italic,12" textcolor rgb "gray40"
+ # 	set label 1 sprintf("y=%3.3f",a) at 22,55 font "Times Italic,12" textcolor rgb "gray20"
+	# set label 2 sprintf("+%3.3f",b) at 27,55 font "Times Italic,12" textcolor rgb "gray20"
+	# set label 3 sprintf("R=%3.4f",STATS_correlation) at 22,52 font "Times Italic,12" textcolor rgb "gray20"
 
  
 

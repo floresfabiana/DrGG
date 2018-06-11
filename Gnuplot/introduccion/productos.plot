@@ -8,8 +8,8 @@
 
 #Leyenda
 #set key at graph 0.95, 0.80 samplen 0.3 spacing 6
-#set label 2 'Nanociencia' at graph 0.85, 0.78 left rotate by 90  font ",14"   textcolor rgb "gray40"
-#set label 3 'Nanotecnología' at graph 0.93, 0.78 left rotate by 90  font ",14"  textcolor rgb "gray40"
+#set label 2 'Nanociencia' at graph 0.85, 0.78 left rotate by 90  font ",14"   textcolor rgb "gray20"
+#set label 3 'Nanotecnología' at graph 0.93, 0.78 left rotate by 90  font ",14"  textcolor rgb "gray20"
 
 #Saco el Borde
 	unset border
@@ -18,16 +18,16 @@
  # 	unset tics
  	unset mxtics
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 15 back ls 10 lw 1.5 
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray70' lt 0 lw 1 
+	set style line 11 lc rgb 'gray50' lt 0 lw 1 
 	set grid noxtics front ls 11
     set grid ytics back ls 11
 #Coloca los nombre de los ejes
-	#set y2label "N\'umero de publicaciones"  font ",14" textcolor rgb "gray40" offset 2,0
+	#set y2label "N\'umero de publicaciones"  font ",14" textcolor rgb "gray20" offset 2,0
 
 #Cambio de aspecto
 #set size square 1,2.2

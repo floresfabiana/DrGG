@@ -97,12 +97,13 @@
   %Agrego marcas laterales en los capitulos
   \AddLabelsCap
 
+
 	%Incluyo Los capitulos
 	\input{Capitulos.indexados/01_introduccion.tex}
-  	\input{Capitulos.indexados/02_materiales.tex}    
-  	\input{Capitulos.indexados/03_mesoporosos.tex}
-  	\input{Capitulos.indexados/04_electroquimica.tex}
-  	\input{Capitulos.indexados/05_microfabricacion.tex}
+  \input{Capitulos.indexados/02_materiales.tex}    
+  \input{Capitulos.indexados/03_mesoporosos.tex}
+  \input{Capitulos.indexados/04_electroquimica.tex}
+  \input{Capitulos.indexados/05_microfabricacion.tex}
 	\input{Capitulos.indexados/06_conclusiones.tex}
   
   %----------------------------------------------------------------------------------------------
@@ -148,9 +149,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Cosas que a revisar:    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    1. Revisar indexacion, bibliografia, url de biblio, nombres, caracteres raros, links y siglas.
-    2. Revisar todos los warning y bad blocks! 
-    3. Evaluar peso de las imagenes
+   1. Aumentar el gris de todos los graficos --> Grilla de gris70 a gris50? y Leyenda a gris40 a gris20?   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %LOGS 10/04/2018               % 
@@ -159,6 +158,7 @@
 [Compile ~/Dropbox/Tesis/Tesis.tex]
 
 B: /home/gustavo/Dropbox/Tesis/PreCapitulos/portada.tex:33 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/PreCapitulos/agradecimientos.tex:0 Underfull \vbox (badness 1603) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:0 Underfull \vbox (badness 3386) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/01_introduccion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:58 Overfull \hbox (31.79701pt too wide) in paragraph
@@ -177,6 +177,7 @@ B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:205 Overful
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:205 Overfull \hbox (0.99646pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:205 Overfull \hbox (4.35883pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:206 Overfull \hbox (4.23734pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 1019) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:347 Overfull \hbox (5.44995pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:347 Overfull \hbox (2.57881pt too wide) in paragraph
@@ -185,6 +186,7 @@ B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:349 Overful
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:349 Overfull \hbox (2.33168pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:350 Overfull \hbox (2.33168pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:354 Overfull \hbox (2.33168pt too wide) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:414 Overfull \hbox (5.20825pt too wide) in alignment
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:0 Underfull \vbox (badness 3701) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/02_materiales.tex:543 Overfull \hbox (0.84297pt too wide) in paragraph
@@ -214,19 +216,20 @@ B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Under
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:189 Overfull \hbox (2.22221pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:341 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 4366) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:386 Overfull \hbox (2.22221pt too wide) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 4416) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:742 Underfull \hbox (badness 1348) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/04_electroquimica.tex:0 Underfull \vbox (badness 1975) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 1953) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:137 Overfull \hbox (8.2511pt too wide) in paragraph
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 6708) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 1147) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 2818) has occurred while \output is active []
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:313 Underfull \hbox (badness 10000) in paragraph
+B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:314 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/05_microfabricacion.tex:0 Underfull \vbox (badness 10000) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/06_conclusiones.tex:0 Underfull \vbox (badness 1845) has occurred while \output is active []
-B: /home/gustavo/Dropbox/Tesis/Capitulos.indexados/06_conclusiones.tex:0 Underfull \vbox (badness 1281) has occurred while \output is active []
 B: /home/gustavo/Dropbox/Tesis/PostCapitulos/abreviaturas.tex:22 Overfull \hbox (5.16283pt too wide) in paragraph
 B: /home/gustavo/Dropbox/Tesis/PostCapitulos/publicaciones.tex:25 Underfull \hbox (badness 10000) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:183 Underfull \hbox (badness 1215) in paragraph
@@ -276,6 +279,6 @@ B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:2665 Underfull \hbox (badness 1430) in 
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:3106 Underfull \hbox (badness 3557) in paragraph
 B: /home/gustavo/Dropbox/Tesis/Tesis.bbl:3106 Underfull \hbox (badness 10000) in paragraph
 
-0 errors, 0 warnings, 117 badboxes
+0 errors, 0 warnings, 121 badboxes
 
-[Finished in 17.75s]
+[Finished in 17.73s]

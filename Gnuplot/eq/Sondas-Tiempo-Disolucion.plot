@@ -7,7 +7,7 @@ set terminal tikz
 set output "Sondas-Tiempo-Disolucion.tikz"
  
 #leyenda
-set key top left Left reverse font ",8" textcolor rgb "gray40"
+set key top left Left reverse font ",8" textcolor rgb "gray20"
 
 #Saco el Borde
 	unset border
@@ -22,17 +22,17 @@ set style line 3 lc rgb 'blue' pt 7 ps 1 lw 1#Cuadrado 9 #Triangulo
 set style line 4 lc rgb 'green' pt 7 ps 1 lw 1#Cuadrado
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
 set tics nomirror
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray20' lt 0 lw 1 
 set grid front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "tiempo / min"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{I}_p^{np}/\\text{I}_p^{\\text{Au}}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "tiempo / min"  font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{I}_p^{np}/\\text{I}_p^{\\text{Au}}$"	font ",14" textcolor rgb "gray20" offset -2,0
 
 #Fuerza a establecer un rango
 	 

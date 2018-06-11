@@ -22,12 +22,13 @@ set style line 3 lc rgb 'blue' pt 1 lt 1 ps 1.2 lw 1 #Azul
 set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.2 lw 1 #Azul
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
-	set tics nomirror
+	set tics nomirror font ",16" textcolor rgb "gray20" 
+	set xtics offset 0,-0.5
 
 #Estilo de la grilla
-	set style line 111 lc rgb 'gray70' lt 0 lw 1 
+	set style line 111 lc rgb 'gray50' lt 0 lw 1 
 	set grid back ls 111
 
 
@@ -41,8 +42,8 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.2 lw 1 #Azul
 
 
 #Coloca los nombre de los ejes
-	set xlabel "N\'umero de ciclos" font ",16" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}_p / \\text{j}^{\\text{Au}}_p$"	   font ",16" textcolor rgb "gray40" offset -2,0
+	set xlabel "N\'umero de ciclos" font ",18" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{j}_p / \\text{j}^{\\text{Au}}_p$"	   font ",18" textcolor rgb "gray20" offset -2.5,0
 
 
 #densidad de corriente en Au

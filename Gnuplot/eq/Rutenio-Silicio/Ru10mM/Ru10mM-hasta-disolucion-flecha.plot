@@ -27,7 +27,7 @@ red_075 = "#e30101"
 red_100 = "#ff0000"
 
 #Flecha
-set style line 100  lc rgbcolor 'gray40' lw 1.5
+set style line 100  lc rgbcolor 'gray20' lw 1.5
 set style arrow 200 head filled size screen 0.03,15 ls 100
 
 #Lo saque de http://www.perbang.dk/rgbgradient/
@@ -86,12 +86,12 @@ set style line 49 lc rgb '#006400' lt 1 lw 3 # --- vede Oscuro
 
 
 #Estilos de los ejes 
-set style line 300 lc rgb 'gray40' lt 1 lw 5 
+set style line 300 lc rgb 'gray20' lt 1 lw 5 
 set border 3 back ls 300 lw 1.5 
 set tics nomirror
 
 #Estilo de la grilla
-set style line 400 lc rgb 'gray40' lt 0 lw 1 
+set style line 400 lc rgb 'gray20' lt 0 lw 1 
 set grid back ls 400
 
 
@@ -103,8 +103,8 @@ set grid back ls 400
 	#set title "Grafico 1"
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",16" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",16" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray20" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -129,12 +129,12 @@ set grid back ls 400
 #Curva 55 --> desubicada
 #Texto
 #set label 1 at  50, 250 '\hl{\small $t_\textrm{Nc}$}' center rotate by 45 front
-set label at -310,755 "t" font ",8" rotate by 62 textcolor rgb "gray40" front
-set label at -307,830 "i" font ",8" rotate by 50 textcolor rgb "gray40" front
-set label at -304,870 "e" font ",8" rotate by 45 textcolor rgb "gray40" front
-set label at -297,930 "m" font ",8" rotate by 41 textcolor rgb "gray40" front
-set label at -284,1020 "p" font ",8" rotate by 34 textcolor rgb "gray40" front
-set label at -275,1090 "o" font ",8" rotate by 16 textcolor rgb "gray40" front
+set label at -310,755 "t" font ",8" rotate by 62 textcolor rgb "gray20" front
+set label at -307,830 "i" font ",8" rotate by 50 textcolor rgb "gray20" front
+set label at -304,870 "e" font ",8" rotate by 45 textcolor rgb "gray20" front
+set label at -297,930 "m" font ",8" rotate by 41 textcolor rgb "gray20" front
+set label at -284,1020 "p" font ",8" rotate by 34 textcolor rgb "gray20" front
+set label at -275,1090 "o" font ",8" rotate by 16 textcolor rgb "gray20" front
 
 #Para graficar todas
 plot for [i=7:25:2] 'Ru10mM.txt' using i:(column(i+1)/0.0314) w lines ls i-4, \

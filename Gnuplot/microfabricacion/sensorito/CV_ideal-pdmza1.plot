@@ -12,7 +12,7 @@ set output "CV_ideal-pdmza1.tikz"
 set style line 1 lc rgb 'black' lt 1 lw 2
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 15	 back ls 10 lw 1.5 
 	#set border 2	 back ls 10 lw 1.5 
 

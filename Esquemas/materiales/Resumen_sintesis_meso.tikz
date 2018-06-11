@@ -3,16 +3,16 @@
 \tikzstyle{margen_derecha} = [node distance=1.5cm]
 
 %Gradiente de grises para cada bloque y entre los bloques
-\tikzstyle{block1} = [rectangle, blur shadow, draw=gray, top color=orange, bottom color=white, text width=2.2cm, minimum height=1.2cm, text centered, rounded corners, node distance=3.5cm]
-\tikzstyle{block2} = [rectangle, blur shadow, draw=gray,  top color=orange!80, bottom color=white, text width=2.4cm, minimum height=1.2cm, text centered, rounded corners, node distance=3.5cm]
-\tikzstyle{block3} = [rectangle, blur shadow, draw=gray,  top color=orange!70, bottom color=white, text width=2.7cm, minimum height=1.2cm, text centered, rounded corners, node distance=4cm]
-\tikzstyle{block4} = [rectangle, blur shadow, draw=gray,  top color=orange!50, bottom color=white, text width=2.7cm, minimum height=1.2cm, text centered, rounded corners, node distance=4cm]
-\tikzstyle{block5} = [rectangle, blur shadow, draw=gray,  top color=orange!25, bottom color=white, text width=2.7cm, minimum height=1.2cm, text centered, rounded corners, node distance=4cm]
+\tikzstyle{block1} = [rectangle, blur shadow, draw=darkgray, top color=orange, bottom color=white, text width=2.2cm, minimum height=1.2cm, text centered, rounded corners, node distance=3.5cm]
+\tikzstyle{block2} = [rectangle, blur shadow, draw=darkgray,  top color=orange!80, bottom color=white, text width=2.4cm, minimum height=1.2cm, text centered, rounded corners, node distance=3.5cm]
+\tikzstyle{block3} = [rectangle, blur shadow, draw=darkgray,  top color=orange!70, bottom color=white, text width=2.7cm, minimum height=1.2cm, text centered, rounded corners, node distance=4cm]
+\tikzstyle{block4} = [rectangle, blur shadow, draw=darkgray,  top color=orange!50, bottom color=white, text width=2.7cm, minimum height=1.2cm, text centered, rounded corners, node distance=4cm]
+\tikzstyle{block5} = [rectangle, blur shadow, draw=darkgray,  top color=orange!25, bottom color=white, text width=2.7cm, minimum height=1.2cm, text centered, rounded corners, node distance=4cm]
 
 %Estilo de las flechas
-\tikzstyle{line} = [draw,-latex',color=gray,ultra thick]
+\tikzstyle{line} = [draw,-latex',color=darkgray,ultra thick]
 
-\begin{tikzpicture}[every node/.append style={font=\bfseries,color=darkgray!85,thick}]
+\begin{tikzpicture}[every node/.append style={font=\bfseries,color=darkgray,thick}]
     % Ubico los nodos
     \node [block1] (bloque1) {Preparación de los soles};
     \node [block2, right of=bloque1] (bloque2) {Depósito de las películas};

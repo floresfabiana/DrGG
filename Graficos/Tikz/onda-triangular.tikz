@@ -1,19 +1,19 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Tue Jun  6 17:27:10 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% lun 11 jun 2018 09:41:15 -03
 \path (0.000,0.000) rectangle (12.500,8.750);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (0.922,8.381)--(0.922,1.139)--(11.947,1.139);
-\node[gp node center,rotate=-270,font={\fontsize{16.0pt}{19.2pt}\selectfont}] at (0.246,4.760) {potencial};
-\node[gp node center,font={\fontsize{16.0pt}{19.2pt}\selectfont}] at (6.434,0.215) {tiempo};
+\node[gp node center,rotate=-270,font={\fontsize{18pt}{21.6pt}\selectfont}] at (0.246,4.760) {potencial};
+\node[gp node center,font={\fontsize{18pt}{21.6pt}\selectfont}] at (6.434,0.215) {tiempo};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{2.00}
 \draw[gp path] (0.922,1.743)--(6.435,7.778)--(11.947,1.743);
-\node[gp node left,font={\fontsize{16.0pt}{19.2pt}\selectfont}] at (0.095,7.778) {E$_2$};
-\node[gp node left,font={\fontsize{16.0pt}{19.2pt}\selectfont}] at (0.095,1.743) {E$_1$};
+\node[gp node left,font={\fontsize{16pt}{19.2pt}\selectfont}] at (0.095,7.778) {E$_2$};
+\node[gp node left,font={\fontsize{16pt}{19.2pt}\selectfont}] at (0.095,1.743) {E$_1$};
 %% coordinates of the plot area
 \gpdefrectangularnode{gp plot 1}{\pgfpoint{0.922cm}{1.139cm}}{\pgfpoint{11.947cm}{8.381cm}}
 \end{tikzpicture}

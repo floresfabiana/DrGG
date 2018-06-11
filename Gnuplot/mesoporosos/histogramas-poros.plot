@@ -5,7 +5,7 @@
 #Para exportar como latex
 set terminal tikz tikzarrows
 set output "histogramas-poros.tikz" 
-set key top left Left reverse samplen 3 font ",14" textcolor rgb "gray40"
+set key top left Left reverse samplen 3 font ",14" textcolor rgb "gray20"
 
 #Leyenda
 
@@ -17,18 +17,18 @@ set key top left Left reverse samplen 3 font ",14" textcolor rgb "gray40"
  	unset mxtics
  	set xtics scale 0 offset 0,-0.4
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 15 back ls 10 lw 1.5 
 	set tics nomirror font ",14"
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray70' lt 0 lw 1 
+	set style line 11 lc rgb 'gray50' lt 0 lw 1 
 	#unset grid
 	set grid noxtics front ls 11
     set grid ytics back ls 11
 #Coloca los nombre de los ejes
-	set ylabel "diámetro de poro / nm"  font ",16" textcolor rgb "gray40" offset -2,0
-    set xlabel "Método"  font ",16" textcolor rgb "gray40" offset 0,-1.4
+	set ylabel "diámetro de poro / nm"  font ",16" textcolor rgb "gray20" offset -2,0
+    set xlabel "Método"  font ",16" textcolor rgb "gray20" offset 0,-1.4
 
 #Cambio de aspecto
 #set size square 1,2.2

@@ -1,457 +1,457 @@
 \begin{tikzpicture}[gnuplot]
 %% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
-%% lun 15 ene 2018 10:20:57 ART
+%% lun 11 jun 2018 12:16:03 -03
 \path (0.000,0.000) rectangle (12.500,8.750);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,8.381)--(1.688,1.601)--(11.947,1.601);
-\gpfill{color=gp lt color border,color=.!15} (5.108,1.601)--(5.678,1.601)--(5.678,8.380)--(5.108,8.380)--cycle;
-\node[gp node center,rotate=-270,font={\fontsize{16pt}{19.2pt}\selectfont}] at (0.246,4.991) {$\text{i}_p/\text{i}_p^{\text{Au}}$};
-\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (6.817,0.215) {N'umero de ciclos};
+\draw[gp path] (1.908,8.381)--(1.908,1.601)--(11.947,1.601);
+\gpfill{color=gp lt color border,color=.!15} (5.254,1.601)--(5.812,1.601)--(5.812,8.380)--(5.254,8.380)--cycle;
+\node[gp node center,rotate=-270,font={\fontsize{18pt}{21.6pt}\selectfont}] at (0.246,4.991) {$\text{i}_p/\text{i}_p^{\text{Au}}$};
+\node[gp node center,font={\fontsize{18pt}{21.6pt}\selectfont}] at (6.927,0.215) {N'umero de ciclos};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{1.00}
 \gpsetpointsize{2.00}
-\gppoint{gp mark 7}{(1.745,1.905)}
-\gppoint{gp mark 7}{(1.802,1.956)}
-\gppoint{gp mark 7}{(1.859,2.018)}
-\gppoint{gp mark 7}{(1.916,2.087)}
-\gppoint{gp mark 7}{(1.973,2.147)}
-\gppoint{gp mark 7}{(2.030,2.196)}
-\gppoint{gp mark 7}{(2.087,2.240)}
-\gppoint{gp mark 7}{(2.144,2.290)}
-\gppoint{gp mark 7}{(2.201,2.335)}
-\gppoint{gp mark 7}{(2.258,2.372)}
-\gppoint{gp mark 7}{(2.315,2.416)}
-\gppoint{gp mark 7}{(2.372,2.458)}
-\gppoint{gp mark 7}{(2.429,2.527)}
-\gppoint{gp mark 7}{(2.486,2.612)}
-\gppoint{gp mark 7}{(2.543,2.701)}
-\gppoint{gp mark 7}{(2.600,2.794)}
-\gppoint{gp mark 7}{(2.657,2.885)}
-\gppoint{gp mark 7}{(2.714,2.982)}
-\gppoint{gp mark 7}{(2.771,3.084)}
-\gppoint{gp mark 7}{(2.828,3.188)}
-\gppoint{gp mark 7}{(2.885,3.302)}
-\gppoint{gp mark 7}{(2.942,3.412)}
-\gppoint{gp mark 7}{(2.999,3.531)}
-\gppoint{gp mark 7}{(3.056,3.663)}
-\gppoint{gp mark 7}{(3.113,3.797)}
-\gppoint{gp mark 7}{(3.170,3.942)}
-\gppoint{gp mark 7}{(3.227,4.091)}
-\gppoint{gp mark 7}{(3.284,4.252)}
-\gppoint{gp mark 7}{(3.341,4.425)}
-\gppoint{gp mark 7}{(3.398,4.605)}
-\gppoint{gp mark 7}{(3.455,4.784)}
-\gppoint{gp mark 7}{(3.512,4.971)}
-\gppoint{gp mark 7}{(3.569,5.158)}
-\gppoint{gp mark 7}{(3.626,5.346)}
-\gppoint{gp mark 7}{(3.683,5.540)}
-\gppoint{gp mark 7}{(3.740,5.731)}
-\gppoint{gp mark 7}{(3.797,5.919)}
-\gppoint{gp mark 7}{(3.854,6.092)}
-\gppoint{gp mark 7}{(3.911,6.262)}
-\gppoint{gp mark 7}{(3.968,6.428)}
-\gppoint{gp mark 7}{(4.025,6.584)}
-\gppoint{gp mark 7}{(4.082,6.729)}
-\gppoint{gp mark 7}{(4.139,6.864)}
-\gppoint{gp mark 7}{(4.196,6.989)}
-\gppoint{gp mark 7}{(4.253,7.113)}
-\gppoint{gp mark 7}{(4.310,7.225)}
-\gppoint{gp mark 7}{(4.367,7.463)}
-\gppoint{gp mark 7}{(4.424,7.621)}
-\gppoint{gp mark 7}{(4.481,7.685)}
-\gppoint{gp mark 7}{(4.538,7.760)}
-\gppoint{gp mark 7}{(4.595,7.825)}
-\gppoint{gp mark 7}{(4.652,7.894)}
-\gppoint{gp mark 7}{(4.709,7.954)}
-\gppoint{gp mark 7}{(4.766,8.009)}
-\gppoint{gp mark 7}{(4.823,8.061)}
-\gppoint{gp mark 7}{(4.880,8.103)}
-\gppoint{gp mark 7}{(4.937,8.144)}
-\gppoint{gp mark 7}{(4.994,8.182)}
-\gppoint{gp mark 7}{(5.051,8.221)}
-\gppoint{gp mark 7}{(5.108,8.245)}
-\gppoint{gp mark 7}{(5.165,8.275)}
-\gppoint{gp mark 7}{(5.222,8.286)}
-\gppoint{gp mark 7}{(5.279,8.289)}
-\gppoint{gp mark 7}{(5.336,8.280)}
-\gppoint{gp mark 7}{(5.393,8.280)}
-\gppoint{gp mark 7}{(5.450,8.273)}
-\gppoint{gp mark 7}{(5.507,8.259)}
-\gppoint{gp mark 7}{(5.564,8.217)}
-\gppoint{gp mark 7}{(5.621,8.210)}
-\gppoint{gp mark 7}{(5.678,8.177)}
-\gppoint{gp mark 7}{(5.735,8.127)}
-\gppoint{gp mark 7}{(5.792,8.091)}
-\gppoint{gp mark 7}{(5.849,8.026)}
-\gppoint{gp mark 7}{(5.906,7.978)}
-\gppoint{gp mark 7}{(5.963,7.899)}
-\gppoint{gp mark 7}{(6.020,7.848)}
-\gppoint{gp mark 7}{(6.077,7.818)}
-\gppoint{gp mark 7}{(6.134,7.758)}
-\gppoint{gp mark 7}{(6.191,7.688)}
-\gppoint{gp mark 7}{(6.248,7.611)}
-\gppoint{gp mark 7}{(6.305,7.524)}
-\gppoint{gp mark 7}{(6.362,7.435)}
-\gppoint{gp mark 7}{(6.419,7.341)}
-\gppoint{gp mark 7}{(6.476,7.250)}
-\gppoint{gp mark 7}{(6.533,7.160)}
-\gppoint{gp mark 7}{(6.590,7.063)}
-\gppoint{gp mark 7}{(6.647,6.968)}
-\gppoint{gp mark 7}{(6.704,6.873)}
-\gppoint{gp mark 7}{(6.761,6.794)}
-\gppoint{gp mark 7}{(6.818,6.700)}
-\gppoint{gp mark 7}{(6.874,6.601)}
-\gppoint{gp mark 7}{(6.931,6.526)}
-\gppoint{gp mark 7}{(6.988,6.489)}
-\gppoint{gp mark 7}{(7.045,6.391)}
-\gppoint{gp mark 7}{(7.102,6.319)}
-\gppoint{gp mark 7}{(7.159,6.270)}
-\gppoint{gp mark 7}{(7.216,6.230)}
-\gppoint{gp mark 7}{(7.273,6.189)}
-\gppoint{gp mark 7}{(7.330,6.162)}
-\gppoint{gp mark 7}{(7.387,6.123)}
-\gppoint{gp mark 7}{(7.444,6.098)}
-\gppoint{gp mark 7}{(7.501,6.081)}
-\gppoint{gp mark 7}{(7.558,6.055)}
-\gppoint{gp mark 7}{(7.615,6.034)}
-\gppoint{gp mark 7}{(7.672,6.015)}
-\gppoint{gp mark 7}{(7.729,5.997)}
-\gppoint{gp mark 7}{(7.786,5.962)}
-\gppoint{gp mark 7}{(7.843,5.951)}
-\gppoint{gp mark 7}{(7.900,5.939)}
-\gppoint{gp mark 7}{(7.957,5.924)}
-\gppoint{gp mark 7}{(8.014,5.902)}
-\gppoint{gp mark 7}{(8.071,5.889)}
-\gppoint{gp mark 7}{(8.128,5.873)}
-\gppoint{gp mark 7}{(8.185,5.869)}
-\gppoint{gp mark 7}{(8.242,5.851)}
-\gppoint{gp mark 7}{(8.299,5.836)}
-\gppoint{gp mark 7}{(8.356,5.832)}
-\gppoint{gp mark 7}{(8.413,5.823)}
-\gppoint{gp mark 7}{(8.470,5.816)}
-\gppoint{gp mark 7}{(8.527,5.809)}
-\gppoint{gp mark 7}{(8.584,5.802)}
-\gppoint{gp mark 7}{(8.641,5.788)}
-\gppoint{gp mark 7}{(8.698,5.782)}
-\gppoint{gp mark 7}{(8.755,5.773)}
-\gppoint{gp mark 7}{(8.812,5.765)}
-\gppoint{gp mark 7}{(8.869,5.757)}
-\gppoint{gp mark 7}{(8.926,5.751)}
-\gppoint{gp mark 7}{(8.983,5.738)}
-\gppoint{gp mark 7}{(9.040,5.733)}
-\gppoint{gp mark 7}{(9.097,5.735)}
-\gppoint{gp mark 7}{(9.154,5.727)}
-\gppoint{gp mark 7}{(9.211,5.721)}
-\gppoint{gp mark 7}{(9.268,5.720)}
-\gppoint{gp mark 7}{(9.325,5.713)}
-\gppoint{gp mark 7}{(9.382,5.709)}
-\gppoint{gp mark 7}{(9.439,5.700)}
-\gppoint{gp mark 7}{(9.496,5.697)}
-\gppoint{gp mark 7}{(9.553,5.696)}
-\gppoint{gp mark 7}{(9.610,5.689)}
-\gppoint{gp mark 7}{(9.667,5.669)}
-\gppoint{gp mark 7}{(9.724,5.654)}
-\gppoint{gp mark 7}{(9.781,5.653)}
-\gppoint{gp mark 7}{(9.838,5.654)}
-\gppoint{gp mark 7}{(9.895,5.654)}
-\gppoint{gp mark 7}{(9.952,5.651)}
-\gppoint{gp mark 7}{(10.009,5.642)}
-\gppoint{gp mark 7}{(10.066,5.645)}
-\gppoint{gp mark 7}{(10.123,5.646)}
-\gppoint{gp mark 7}{(10.180,5.640)}
-\gppoint{gp mark 7}{(10.237,5.638)}
-\gppoint{gp mark 7}{(10.294,5.629)}
-\gppoint{gp mark 7}{(10.351,5.625)}
-\gppoint{gp mark 7}{(10.408,5.622)}
-\gppoint{gp mark 7}{(10.465,5.619)}
-\gppoint{gp mark 7}{(10.522,5.606)}
-\gppoint{gp mark 7}{(10.579,5.613)}
-\gppoint{gp mark 7}{(10.636,5.603)}
-\gppoint{gp mark 7}{(10.693,5.599)}
-\gppoint{gp mark 7}{(10.750,5.597)}
-\gppoint{gp mark 7}{(10.807,5.594)}
-\gppoint{gp mark 7}{(10.864,5.582)}
-\gppoint{gp mark 7}{(10.921,5.582)}
-\gppoint{gp mark 7}{(10.978,5.579)}
-\gppoint{gp mark 7}{(11.035,5.574)}
-\gppoint{gp mark 7}{(11.092,5.570)}
-\gppoint{gp mark 7}{(11.149,5.565)}
-\gppoint{gp mark 7}{(11.206,5.560)}
-\gppoint{gp mark 7}{(11.263,5.563)}
-\gppoint{gp mark 7}{(11.320,5.558)}
-\gppoint{gp mark 7}{(11.377,5.551)}
-\gppoint{gp mark 7}{(11.434,5.549)}
-\gppoint{gp mark 7}{(11.491,5.552)}
-\gppoint{gp mark 7}{(11.548,5.544)}
-\gppoint{gp mark 7}{(11.605,5.544)}
-\gppoint{gp mark 7}{(11.662,5.536)}
-\gppoint{gp mark 7}{(11.719,5.538)}
-\gppoint{gp mark 7}{(11.776,5.539)}
-\gppoint{gp mark 7}{(11.833,5.537)}
-\gppoint{gp mark 7}{(11.890,5.528)}
+\gppoint{gp mark 7}{(1.964,1.905)}
+\gppoint{gp mark 7}{(2.020,1.956)}
+\gppoint{gp mark 7}{(2.075,2.018)}
+\gppoint{gp mark 7}{(2.131,2.087)}
+\gppoint{gp mark 7}{(2.187,2.147)}
+\gppoint{gp mark 7}{(2.243,2.196)}
+\gppoint{gp mark 7}{(2.298,2.240)}
+\gppoint{gp mark 7}{(2.354,2.290)}
+\gppoint{gp mark 7}{(2.410,2.335)}
+\gppoint{gp mark 7}{(2.466,2.372)}
+\gppoint{gp mark 7}{(2.521,2.416)}
+\gppoint{gp mark 7}{(2.577,2.458)}
+\gppoint{gp mark 7}{(2.633,2.527)}
+\gppoint{gp mark 7}{(2.689,2.612)}
+\gppoint{gp mark 7}{(2.745,2.701)}
+\gppoint{gp mark 7}{(2.800,2.794)}
+\gppoint{gp mark 7}{(2.856,2.885)}
+\gppoint{gp mark 7}{(2.912,2.982)}
+\gppoint{gp mark 7}{(2.968,3.084)}
+\gppoint{gp mark 7}{(3.023,3.188)}
+\gppoint{gp mark 7}{(3.079,3.302)}
+\gppoint{gp mark 7}{(3.135,3.412)}
+\gppoint{gp mark 7}{(3.191,3.531)}
+\gppoint{gp mark 7}{(3.247,3.663)}
+\gppoint{gp mark 7}{(3.302,3.797)}
+\gppoint{gp mark 7}{(3.358,3.942)}
+\gppoint{gp mark 7}{(3.414,4.091)}
+\gppoint{gp mark 7}{(3.470,4.252)}
+\gppoint{gp mark 7}{(3.525,4.425)}
+\gppoint{gp mark 7}{(3.581,4.605)}
+\gppoint{gp mark 7}{(3.637,4.784)}
+\gppoint{gp mark 7}{(3.693,4.971)}
+\gppoint{gp mark 7}{(3.748,5.158)}
+\gppoint{gp mark 7}{(3.804,5.346)}
+\gppoint{gp mark 7}{(3.860,5.540)}
+\gppoint{gp mark 7}{(3.916,5.731)}
+\gppoint{gp mark 7}{(3.972,5.919)}
+\gppoint{gp mark 7}{(4.027,6.092)}
+\gppoint{gp mark 7}{(4.083,6.262)}
+\gppoint{gp mark 7}{(4.139,6.428)}
+\gppoint{gp mark 7}{(4.195,6.584)}
+\gppoint{gp mark 7}{(4.250,6.729)}
+\gppoint{gp mark 7}{(4.306,6.864)}
+\gppoint{gp mark 7}{(4.362,6.989)}
+\gppoint{gp mark 7}{(4.418,7.113)}
+\gppoint{gp mark 7}{(4.474,7.225)}
+\gppoint{gp mark 7}{(4.529,7.463)}
+\gppoint{gp mark 7}{(4.585,7.621)}
+\gppoint{gp mark 7}{(4.641,7.685)}
+\gppoint{gp mark 7}{(4.697,7.760)}
+\gppoint{gp mark 7}{(4.752,7.825)}
+\gppoint{gp mark 7}{(4.808,7.894)}
+\gppoint{gp mark 7}{(4.864,7.954)}
+\gppoint{gp mark 7}{(4.920,8.009)}
+\gppoint{gp mark 7}{(4.975,8.061)}
+\gppoint{gp mark 7}{(5.031,8.103)}
+\gppoint{gp mark 7}{(5.087,8.144)}
+\gppoint{gp mark 7}{(5.143,8.182)}
+\gppoint{gp mark 7}{(5.199,8.221)}
+\gppoint{gp mark 7}{(5.254,8.245)}
+\gppoint{gp mark 7}{(5.310,8.275)}
+\gppoint{gp mark 7}{(5.366,8.286)}
+\gppoint{gp mark 7}{(5.422,8.289)}
+\gppoint{gp mark 7}{(5.477,8.280)}
+\gppoint{gp mark 7}{(5.533,8.280)}
+\gppoint{gp mark 7}{(5.589,8.273)}
+\gppoint{gp mark 7}{(5.645,8.259)}
+\gppoint{gp mark 7}{(5.701,8.217)}
+\gppoint{gp mark 7}{(5.756,8.210)}
+\gppoint{gp mark 7}{(5.812,8.177)}
+\gppoint{gp mark 7}{(5.868,8.127)}
+\gppoint{gp mark 7}{(5.924,8.091)}
+\gppoint{gp mark 7}{(5.979,8.026)}
+\gppoint{gp mark 7}{(6.035,7.978)}
+\gppoint{gp mark 7}{(6.091,7.899)}
+\gppoint{gp mark 7}{(6.147,7.848)}
+\gppoint{gp mark 7}{(6.202,7.818)}
+\gppoint{gp mark 7}{(6.258,7.758)}
+\gppoint{gp mark 7}{(6.314,7.688)}
+\gppoint{gp mark 7}{(6.370,7.611)}
+\gppoint{gp mark 7}{(6.426,7.524)}
+\gppoint{gp mark 7}{(6.481,7.435)}
+\gppoint{gp mark 7}{(6.537,7.341)}
+\gppoint{gp mark 7}{(6.593,7.250)}
+\gppoint{gp mark 7}{(6.649,7.160)}
+\gppoint{gp mark 7}{(6.704,7.063)}
+\gppoint{gp mark 7}{(6.760,6.968)}
+\gppoint{gp mark 7}{(6.816,6.873)}
+\gppoint{gp mark 7}{(6.872,6.794)}
+\gppoint{gp mark 7}{(6.928,6.700)}
+\gppoint{gp mark 7}{(6.983,6.601)}
+\gppoint{gp mark 7}{(7.039,6.526)}
+\gppoint{gp mark 7}{(7.095,6.489)}
+\gppoint{gp mark 7}{(7.151,6.391)}
+\gppoint{gp mark 7}{(7.206,6.319)}
+\gppoint{gp mark 7}{(7.262,6.270)}
+\gppoint{gp mark 7}{(7.318,6.230)}
+\gppoint{gp mark 7}{(7.374,6.189)}
+\gppoint{gp mark 7}{(7.429,6.162)}
+\gppoint{gp mark 7}{(7.485,6.123)}
+\gppoint{gp mark 7}{(7.541,6.098)}
+\gppoint{gp mark 7}{(7.597,6.081)}
+\gppoint{gp mark 7}{(7.653,6.055)}
+\gppoint{gp mark 7}{(7.708,6.034)}
+\gppoint{gp mark 7}{(7.764,6.015)}
+\gppoint{gp mark 7}{(7.820,5.997)}
+\gppoint{gp mark 7}{(7.876,5.962)}
+\gppoint{gp mark 7}{(7.931,5.951)}
+\gppoint{gp mark 7}{(7.987,5.939)}
+\gppoint{gp mark 7}{(8.043,5.924)}
+\gppoint{gp mark 7}{(8.099,5.902)}
+\gppoint{gp mark 7}{(8.154,5.889)}
+\gppoint{gp mark 7}{(8.210,5.873)}
+\gppoint{gp mark 7}{(8.266,5.869)}
+\gppoint{gp mark 7}{(8.322,5.851)}
+\gppoint{gp mark 7}{(8.378,5.836)}
+\gppoint{gp mark 7}{(8.433,5.832)}
+\gppoint{gp mark 7}{(8.489,5.823)}
+\gppoint{gp mark 7}{(8.545,5.816)}
+\gppoint{gp mark 7}{(8.601,5.809)}
+\gppoint{gp mark 7}{(8.656,5.802)}
+\gppoint{gp mark 7}{(8.712,5.788)}
+\gppoint{gp mark 7}{(8.768,5.782)}
+\gppoint{gp mark 7}{(8.824,5.773)}
+\gppoint{gp mark 7}{(8.880,5.765)}
+\gppoint{gp mark 7}{(8.935,5.757)}
+\gppoint{gp mark 7}{(8.991,5.751)}
+\gppoint{gp mark 7}{(9.047,5.738)}
+\gppoint{gp mark 7}{(9.103,5.733)}
+\gppoint{gp mark 7}{(9.158,5.735)}
+\gppoint{gp mark 7}{(9.214,5.727)}
+\gppoint{gp mark 7}{(9.270,5.721)}
+\gppoint{gp mark 7}{(9.326,5.720)}
+\gppoint{gp mark 7}{(9.381,5.713)}
+\gppoint{gp mark 7}{(9.437,5.709)}
+\gppoint{gp mark 7}{(9.493,5.700)}
+\gppoint{gp mark 7}{(9.549,5.697)}
+\gppoint{gp mark 7}{(9.605,5.696)}
+\gppoint{gp mark 7}{(9.660,5.689)}
+\gppoint{gp mark 7}{(9.716,5.669)}
+\gppoint{gp mark 7}{(9.772,5.654)}
+\gppoint{gp mark 7}{(9.828,5.653)}
+\gppoint{gp mark 7}{(9.883,5.654)}
+\gppoint{gp mark 7}{(9.939,5.654)}
+\gppoint{gp mark 7}{(9.995,5.651)}
+\gppoint{gp mark 7}{(10.051,5.642)}
+\gppoint{gp mark 7}{(10.107,5.645)}
+\gppoint{gp mark 7}{(10.162,5.646)}
+\gppoint{gp mark 7}{(10.218,5.640)}
+\gppoint{gp mark 7}{(10.274,5.638)}
+\gppoint{gp mark 7}{(10.330,5.629)}
+\gppoint{gp mark 7}{(10.385,5.625)}
+\gppoint{gp mark 7}{(10.441,5.622)}
+\gppoint{gp mark 7}{(10.497,5.619)}
+\gppoint{gp mark 7}{(10.553,5.606)}
+\gppoint{gp mark 7}{(10.608,5.613)}
+\gppoint{gp mark 7}{(10.664,5.603)}
+\gppoint{gp mark 7}{(10.720,5.599)}
+\gppoint{gp mark 7}{(10.776,5.597)}
+\gppoint{gp mark 7}{(10.832,5.594)}
+\gppoint{gp mark 7}{(10.887,5.582)}
+\gppoint{gp mark 7}{(10.943,5.582)}
+\gppoint{gp mark 7}{(10.999,5.579)}
+\gppoint{gp mark 7}{(11.055,5.574)}
+\gppoint{gp mark 7}{(11.110,5.570)}
+\gppoint{gp mark 7}{(11.166,5.565)}
+\gppoint{gp mark 7}{(11.222,5.560)}
+\gppoint{gp mark 7}{(11.278,5.563)}
+\gppoint{gp mark 7}{(11.334,5.558)}
+\gppoint{gp mark 7}{(11.389,5.551)}
+\gppoint{gp mark 7}{(11.445,5.549)}
+\gppoint{gp mark 7}{(11.501,5.552)}
+\gppoint{gp mark 7}{(11.557,5.544)}
+\gppoint{gp mark 7}{(11.612,5.544)}
+\gppoint{gp mark 7}{(11.668,5.536)}
+\gppoint{gp mark 7}{(11.724,5.538)}
+\gppoint{gp mark 7}{(11.780,5.539)}
+\gppoint{gp mark 7}{(11.835,5.537)}
+\gppoint{gp mark 7}{(11.891,5.528)}
 \gppoint{gp mark 7}{(11.947,5.532)}
 \gpcolor{rgb color={1.000,0.000,0.000}}
 \gpsetlinewidth{2.00}
-\draw[gp path] (1.745,5.368)--(1.802,5.368)--(1.859,5.368)--(1.916,5.368)--(1.973,5.368)%
-  --(2.030,5.368)--(2.087,5.368)--(2.144,5.368)--(2.201,5.368)--(2.258,5.368)--(2.315,5.368)%
-  --(2.372,5.368)--(2.429,5.368)--(2.486,5.368)--(2.543,5.368)--(2.600,5.368)--(2.657,5.368)%
-  --(2.714,5.368)--(2.771,5.368)--(2.828,5.368)--(2.885,5.368)--(2.942,5.368)--(2.999,5.368)%
-  --(3.056,5.368)--(3.113,5.368)--(3.170,5.368)--(3.227,5.368)--(3.284,5.368)--(3.341,5.368)%
-  --(3.398,5.368)--(3.455,5.368)--(3.512,5.368)--(3.569,5.368)--(3.626,5.368)--(3.683,5.368)%
-  --(3.740,5.368)--(3.797,5.368)--(3.854,5.368)--(3.911,5.368)--(3.968,5.368)--(4.025,5.368)%
-  --(4.082,5.368)--(4.139,5.368)--(4.196,5.368)--(4.253,5.368)--(4.310,5.368)--(4.367,5.368)%
-  --(4.424,5.368)--(4.481,5.368)--(4.538,5.368)--(4.595,5.368)--(4.652,5.368)--(4.709,5.368)%
-  --(4.766,5.368)--(4.823,5.368)--(4.880,5.368)--(4.937,5.368)--(4.994,5.368)--(5.051,5.368)%
-  --(5.108,5.368)--(5.165,5.368)--(5.222,5.368)--(5.279,5.368)--(5.336,5.368)--(5.393,5.368)%
-  --(5.450,5.368)--(5.507,5.368)--(5.564,5.368)--(5.621,5.368)--(5.678,5.368)--(5.735,5.368)%
-  --(5.792,5.368)--(5.849,5.368)--(5.906,5.368)--(5.963,5.368)--(6.020,5.368)--(6.077,5.368)%
-  --(6.134,5.368)--(6.191,5.368)--(6.248,5.368)--(6.305,5.368)--(6.362,5.368)--(6.419,5.368)%
-  --(6.476,5.368)--(6.533,5.368)--(6.590,5.368)--(6.647,5.368)--(6.704,5.368)--(6.761,5.368)%
-  --(6.818,5.368)--(6.874,5.368)--(6.931,5.368)--(6.988,5.368)--(7.045,5.368)--(7.102,5.368)%
-  --(7.159,5.368)--(7.216,5.368)--(7.273,5.368)--(7.330,5.368)--(7.387,5.368)--(7.444,5.368)%
-  --(7.501,5.368)--(7.558,5.368)--(7.615,5.368)--(7.672,5.368)--(7.729,5.368)--(7.786,5.368)%
-  --(7.843,5.368)--(7.900,5.368)--(7.957,5.368)--(8.014,5.368)--(8.071,5.368)--(8.128,5.368)%
-  --(8.185,5.368)--(8.242,5.368)--(8.299,5.368)--(8.356,5.368)--(8.413,5.368)--(8.470,5.368)%
-  --(8.527,5.368)--(8.584,5.368)--(8.641,5.368)--(8.698,5.368)--(8.755,5.368)--(8.812,5.368)%
-  --(8.869,5.368)--(8.926,5.368)--(8.983,5.368)--(9.040,5.368)--(9.097,5.368)--(9.154,5.368)%
-  --(9.211,5.368)--(9.268,5.368)--(9.325,5.368)--(9.382,5.368)--(9.439,5.368)--(9.496,5.368)%
-  --(9.553,5.368)--(9.610,5.368)--(9.667,5.368)--(9.724,5.368)--(9.781,5.368)--(9.838,5.368)%
-  --(9.895,5.368)--(9.952,5.368)--(10.009,5.368)--(10.066,5.368)--(10.123,5.368)--(10.180,5.368)%
-  --(10.237,5.368)--(10.294,5.368)--(10.351,5.368)--(10.408,5.368)--(10.465,5.368)--(10.522,5.368)%
-  --(10.579,5.368)--(10.636,5.368)--(10.693,5.368)--(10.750,5.368)--(10.807,5.368)--(10.864,5.368)%
-  --(10.921,5.368)--(10.978,5.368)--(11.035,5.368)--(11.092,5.368)--(11.149,5.368)--(11.206,5.368)%
-  --(11.263,5.368)--(11.320,5.368)--(11.377,5.368)--(11.434,5.368)--(11.491,5.368)--(11.548,5.368)%
-  --(11.605,5.368)--(11.662,5.368)--(11.719,5.368)--(11.776,5.368)--(11.833,5.368)--(11.890,5.368)%
+\draw[gp path] (1.964,5.368)--(2.020,5.368)--(2.075,5.368)--(2.131,5.368)--(2.187,5.368)%
+  --(2.243,5.368)--(2.298,5.368)--(2.354,5.368)--(2.410,5.368)--(2.466,5.368)--(2.521,5.368)%
+  --(2.577,5.368)--(2.633,5.368)--(2.689,5.368)--(2.745,5.368)--(2.800,5.368)--(2.856,5.368)%
+  --(2.912,5.368)--(2.968,5.368)--(3.023,5.368)--(3.079,5.368)--(3.135,5.368)--(3.191,5.368)%
+  --(3.247,5.368)--(3.302,5.368)--(3.358,5.368)--(3.414,5.368)--(3.470,5.368)--(3.525,5.368)%
+  --(3.581,5.368)--(3.637,5.368)--(3.693,5.368)--(3.748,5.368)--(3.804,5.368)--(3.860,5.368)%
+  --(3.916,5.368)--(3.972,5.368)--(4.027,5.368)--(4.083,5.368)--(4.139,5.368)--(4.195,5.368)%
+  --(4.250,5.368)--(4.306,5.368)--(4.362,5.368)--(4.418,5.368)--(4.474,5.368)--(4.529,5.368)%
+  --(4.585,5.368)--(4.641,5.368)--(4.697,5.368)--(4.752,5.368)--(4.808,5.368)--(4.864,5.368)%
+  --(4.920,5.368)--(4.975,5.368)--(5.031,5.368)--(5.087,5.368)--(5.143,5.368)--(5.199,5.368)%
+  --(5.254,5.368)--(5.310,5.368)--(5.366,5.368)--(5.422,5.368)--(5.477,5.368)--(5.533,5.368)%
+  --(5.589,5.368)--(5.645,5.368)--(5.701,5.368)--(5.756,5.368)--(5.812,5.368)--(5.868,5.368)%
+  --(5.924,5.368)--(5.979,5.368)--(6.035,5.368)--(6.091,5.368)--(6.147,5.368)--(6.202,5.368)%
+  --(6.258,5.368)--(6.314,5.368)--(6.370,5.368)--(6.426,5.368)--(6.481,5.368)--(6.537,5.368)%
+  --(6.593,5.368)--(6.649,5.368)--(6.704,5.368)--(6.760,5.368)--(6.816,5.368)--(6.872,5.368)%
+  --(6.928,5.368)--(6.983,5.368)--(7.039,5.368)--(7.095,5.368)--(7.151,5.368)--(7.206,5.368)%
+  --(7.262,5.368)--(7.318,5.368)--(7.374,5.368)--(7.429,5.368)--(7.485,5.368)--(7.541,5.368)%
+  --(7.597,5.368)--(7.653,5.368)--(7.708,5.368)--(7.764,5.368)--(7.820,5.368)--(7.876,5.368)%
+  --(7.931,5.368)--(7.987,5.368)--(8.043,5.368)--(8.099,5.368)--(8.154,5.368)--(8.210,5.368)%
+  --(8.266,5.368)--(8.322,5.368)--(8.378,5.368)--(8.433,5.368)--(8.489,5.368)--(8.545,5.368)%
+  --(8.601,5.368)--(8.656,5.368)--(8.712,5.368)--(8.768,5.368)--(8.824,5.368)--(8.880,5.368)%
+  --(8.935,5.368)--(8.991,5.368)--(9.047,5.368)--(9.103,5.368)--(9.158,5.368)--(9.214,5.368)%
+  --(9.270,5.368)--(9.326,5.368)--(9.381,5.368)--(9.437,5.368)--(9.493,5.368)--(9.549,5.368)%
+  --(9.605,5.368)--(9.660,5.368)--(9.716,5.368)--(9.772,5.368)--(9.828,5.368)--(9.883,5.368)%
+  --(9.939,5.368)--(9.995,5.368)--(10.051,5.368)--(10.107,5.368)--(10.162,5.368)--(10.218,5.368)%
+  --(10.274,5.368)--(10.330,5.368)--(10.385,5.368)--(10.441,5.368)--(10.497,5.368)--(10.553,5.368)%
+  --(10.608,5.368)--(10.664,5.368)--(10.720,5.368)--(10.776,5.368)--(10.832,5.368)--(10.887,5.368)%
+  --(10.943,5.368)--(10.999,5.368)--(11.055,5.368)--(11.110,5.368)--(11.166,5.368)--(11.222,5.368)%
+  --(11.278,5.368)--(11.334,5.368)--(11.389,5.368)--(11.445,5.368)--(11.501,5.368)--(11.557,5.368)%
+  --(11.612,5.368)--(11.668,5.368)--(11.724,5.368)--(11.780,5.368)--(11.835,5.368)--(11.891,5.368)%
   --(11.947,5.368);
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,1.601)--(11.947,1.601);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,1.601)--(11.947,1.601);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,1.601)--(1.868,1.601);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,1.601) {$0$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,1.601)--(2.088,1.601);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,1.601) {$0$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,2.354)--(11.947,2.354);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,2.354)--(11.947,2.354);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,2.354)--(1.868,2.354);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,2.354) {$0.2$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,2.354)--(2.088,2.354);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,2.354) {$0.2$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,3.108)--(11.947,3.108);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,3.108)--(11.947,3.108);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,3.108)--(1.868,3.108);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,3.108) {$0.4$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,3.108)--(2.088,3.108);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,3.108) {$0.4$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,3.861)--(11.947,3.861);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,3.861)--(11.947,3.861);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,3.861)--(1.868,3.861);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,3.861) {$0.6$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,3.861)--(2.088,3.861);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,3.861) {$0.6$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,4.614)--(11.947,4.614);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,4.614)--(11.947,4.614);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,4.614)--(1.868,4.614);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,4.614) {$0.8$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,4.614)--(2.088,4.614);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,4.614) {$0.8$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,5.368)--(11.947,5.368);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,5.368)--(11.947,5.368);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,5.368)--(1.868,5.368);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,5.368) {$1$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,5.368)--(2.088,5.368);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,5.368) {$1$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,6.121)--(11.947,6.121);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,6.121)--(11.947,6.121);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,6.121)--(1.868,6.121);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,6.121) {$1.2$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,6.121)--(2.088,6.121);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,6.121) {$1.2$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,6.874)--(11.947,6.874);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,6.874)--(11.947,6.874);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,6.874)--(1.868,6.874);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,6.874) {$1.4$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,6.874)--(2.088,6.874);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,6.874) {$1.4$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,7.628)--(11.947,7.628);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,7.628)--(11.947,7.628);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,7.628)--(1.868,7.628);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,7.628) {$1.6$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,7.628)--(2.088,7.628);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,7.628) {$1.6$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,8.381)--(11.947,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,8.381)--(11.947,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,8.381)--(1.868,8.381);
-\node[gp node right,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.504,8.381) {$1.8$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,8.381)--(2.088,8.381);
+\node[gp node right,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.724,8.381) {$1.8$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (1.688,1.601)--(1.688,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (1.908,1.601)--(1.908,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (1.688,1.601)--(1.688,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (1.688,1.201) {$0$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (1.908,1.601)--(1.908,1.781);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (1.908,1.201) {$0$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (2.828,1.601)--(2.828,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (3.023,1.601)--(3.023,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (2.828,1.601)--(2.828,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (2.828,1.201) {$20$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (3.023,1.601)--(3.023,1.781);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (3.023,1.201) {$20$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (3.968,1.601)--(3.968,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (4.139,1.601)--(4.139,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (3.968,1.601)--(3.968,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (3.968,1.201) {$40$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (4.139,1.601)--(4.139,1.781);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (4.139,1.201) {$40$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (5.108,1.601)--(5.108,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (5.254,1.601)--(5.254,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (5.108,1.601)--(5.108,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (5.108,1.201) {$60$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (5.254,1.601)--(5.254,1.781);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (5.254,1.201) {$60$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (6.248,1.601)--(6.248,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (6.370,1.601)--(6.370,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (6.248,1.601)--(6.248,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.248,1.201) {$80$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (6.370,1.601)--(6.370,1.781);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (6.370,1.201) {$80$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (7.387,1.601)--(7.387,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (7.485,1.601)--(7.485,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (7.387,1.601)--(7.387,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (7.387,1.201) {$100$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (7.485,1.601)--(7.485,1.781);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (7.485,1.201) {$100$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (8.527,1.601)--(8.527,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (8.601,1.601)--(8.601,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (8.527,1.601)--(8.527,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (8.527,1.201) {$120$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (8.601,1.601)--(8.601,1.781);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (8.601,1.201) {$120$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (9.667,1.601)--(9.667,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (9.716,1.601)--(9.716,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (9.667,1.601)--(9.667,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (9.667,1.201) {$140$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (9.716,1.601)--(9.716,1.781);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (9.716,1.201) {$140$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
-\draw[gp path] (10.807,1.601)--(10.807,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\draw[gp path] (10.832,1.601)--(10.832,8.381);
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
-\draw[gp path] (10.807,1.601)--(10.807,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (10.807,1.201) {$160$};
-\gpcolor{rgb color={0.702,0.702,0.702}}
+\draw[gp path] (10.832,1.601)--(10.832,1.781);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (10.832,1.201) {$160$};
+\gpcolor{rgb color={0.498,0.498,0.498}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \gpsetlinewidth{1.00}
 \draw[gp path] (11.947,1.601)--(11.947,8.381);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (11.947,1.601)--(11.947,1.781);
-\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (11.947,1.201) {$180$};
-\draw[gp path] (1.688,8.381)--(1.688,1.601)--(11.947,1.601);
+\node[gp node center,font={\fontsize{16pt}{19.2pt}\selectfont}] at (11.947,1.201) {$180$};
+\draw[gp path] (1.908,8.381)--(1.908,1.601)--(11.947,1.601);
 \gpcolor{rgb color={0.000,0.000,0.000}}
-\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (2.828,7.251) {I};
-\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (5.108,7.251) {II};
-\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (9.667,7.251) {III};
+\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (3.023,7.251) {I};
+\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (5.254,7.251) {II};
+\node[gp node left,font={\fontsize{14pt}{16.8pt}\selectfont}] at (9.716,7.251) {III};
 %% coordinates of the plot area
-\gpdefrectangularnode{gp plot 1}{\pgfpoint{1.688cm}{1.601cm}}{\pgfpoint{11.947cm}{8.381cm}}
+\gpdefrectangularnode{gp plot 1}{\pgfpoint{1.908cm}{1.601cm}}{\pgfpoint{11.947cm}{8.381cm}}
 \end{tikzpicture}
 %% gnuplot variables

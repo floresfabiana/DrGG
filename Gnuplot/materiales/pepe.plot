@@ -20,8 +20,8 @@ unset tics
 #set arrow from 0,0 to 85,0
 
 #Defino estilos para cada tipo de linea
-# set style line 1 lc rgb 'gray40' pt 7 ps 1 lw 1#Cuadrado
-# set style line 2 lc rgb 'gray40' pt 7 ps 1  #Circulo
+# set style line 1 lc rgb 'gray20' pt 7 ps 1 lw 1#Cuadrado
+# set style line 2 lc rgb 'gray20' pt 7 ps 1  #Circulo
 # set style line 3 lc rgb 'black' pt 7 ps 9 #Triangulo 
 # set style line 4 lc rgb 'red' lt -1 pt -1
 set style line 1 lc rgb '#800000' lt 1 lw 2 #Marron
@@ -33,13 +33,13 @@ set style line 6 lc rgb '#0000ff' lt 1 lw 2 #Azxul
 set style line 7 lc rgb 'white' lt 1 lw 2 #Violeta
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 back ls 10 lw 1.5 
 
 #set tics nomirror
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray20' lt 0 lw 1 
 set grid back ls 11
 
 
@@ -68,15 +68,15 @@ set mytics 2
 
 #stat "FIB_Au.txt" using 1:2 
 
-#set label 1 sprintf("y=%3.3f+%3.3f",a,b) at 2,57 font ",10" textcolor rgb "gray40"
-#set label 3 sprintf("R=%3.4f",STATS_correlation) at 2,53 font ",10" textcolor rgb "gray40"
+#set label 1 sprintf("y=%3.3f+%3.3f",a,b) at 2,57 font ",10" textcolor rgb "gray20"
+#set label 3 sprintf("R=%3.4f",STATS_correlation) at 2,53 font ",10" textcolor rgb "gray20"
 
 
 #Ploteo todas las funciones que les digamos
 
 #Coloca los nombre de los ejes
-set xlabel "tiempo" font ",14" textcolor rgb "gray40" offset  0,-2
-set ylabel "potencial" font ",14" textcolor rgb "gray40" offset  -2,0
+set xlabel "tiempo" font ",14" textcolor rgb "gray20" offset  0,-2
+set ylabel "potencial" font ",14" textcolor rgb "gray20" offset  -2,0
 
 #set style fill transparent solid 0.5 noborder
 plot "onda-triangular.txt" using 1:2 with lines ls 6

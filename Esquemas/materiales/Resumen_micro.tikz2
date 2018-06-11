@@ -34,7 +34,7 @@
 
 \begin{document}
 
-\begin{tikzpicture}[every node/.append style={color=darkgray!85,thick}]
+\begin{tikzpicture}[every node/.append style={color=darkgray,thick}]
 
 %Estilo de los bloques
 \tikzstyle{no-block} = [circle,minimum size=2.4cm,text width=2.4cm, minimum height=1.2cm, text centered]
@@ -51,8 +51,8 @@
 \tikzstyle{block7} = [rectangle, blur shadow, draw=darkgray, top color=orange!30, bottom color=white, text width=2.4cm, minimum height=1.2cm, text centered,rounded corners, node distance=4cm,font=\bfseries]
 
 %Estilo de las flechas
-\tikzstyle{line} = [draw,latex'-,color=gray,ultra thick]
-\tikzstyle{iline} = [draw,-latex',color=gray,ultra thick]
+\tikzstyle{line} = [draw,latex'-,color=darkgray,ultra thick]
+\tikzstyle{iline} = [draw,-latex',color=darkgray,ultra thick]
 
 %grilla
 %\draw[help lines,red] (-10,-10) grid[step=1cm] (10,10);

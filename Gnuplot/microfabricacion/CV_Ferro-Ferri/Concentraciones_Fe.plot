@@ -44,12 +44,12 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
 	set tics nomirror font ",14"
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray70' lt 0 lw 1 
+	set style line 11 lc rgb 'gray50' lt 0 lw 1 
 	set grid back ls 11
 
 
@@ -62,8 +62,8 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray20" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -86,9 +86,9 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 
 	#stat "FIB_Au.txt" using 1:2
 
-	#set label 1 sprintf("y=%3.3f",a) at 22,55 font "Times Italic,12" textcolor rgb "gray40"
-	#set label 2 sprintf("+%3.3f",b) at 27,55 font "Times Italic,12" textcolor rgb "gray40"
-	#set label 3 sprintf("R=%3.4f",STATS_correlation) at 22,52 font "Times Italic,12" textcolor rgb "gray40"
+	#set label 1 sprintf("y=%3.3f",a) at 22,55 font "Times Italic,12" textcolor rgb "gray20"
+	#set label 2 sprintf("+%3.3f",b) at 27,55 font "Times Italic,12" textcolor rgb "gray20"
+	#set label 3 sprintf("R=%3.4f",STATS_correlation) at 22,52 font "Times Italic,12" textcolor rgb "gray20"
  
  
 

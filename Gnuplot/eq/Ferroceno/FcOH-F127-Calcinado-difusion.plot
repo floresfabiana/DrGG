@@ -25,17 +25,19 @@ set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo
 set style line 4 lt 0 lc rgb 'black'  lw 3
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
-set tics nomirror
+	set tics nomirror  font ",16" textcolor rgb 'gray20'
+	set xtics offset 0,-0.5
+	set ytics 200
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray70' lt 0 lw 1 
+set style line 11 lc rgb 'gray50' lt 0 lw 1 
 set grid front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "$v^{1/2}$ / $\\text{mV.s}^{-1}$"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "j$_p$ / $\\mu \\text{A.cm}^{-2}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$v^{1/2}$ / $\\text{mV.s}^{-1}$"  font ",18" textcolor rgb "gray20" offset  0,-2
+	set ylabel "j$_p$ / $\\mu \\text{A.cm}^{-2}$"	font ",18" textcolor rgb "gray20" offset -3.2,0
 
 #FITEO
 	 f(x) = a*x + b
@@ -53,8 +55,8 @@ set grid front ls 11
 	 # h(x) = e*x + f
 	 # fit h(x) "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5)) every ::5::8 via e,f
 	 # stat "Barrido-Ru1mM-Max-Min-GAMRY.txt" using (log10($1)):(log10($5))
-	 # set label 3 sprintf("y=%3.3fX + %3.3f",e,f) at 4,1.57 font ",6" textcolor rgb "gray40"
-	 # set label 4 sprintf("R=%3.4f",STATS_correlation) at 4,1.5 font ",6" textcolor rgb "gray40"	
+	 # set label 3 sprintf("y=%3.3fX + %3.3f",e,f) at 4,1.57 font ",6" textcolor rgb "gray20"
+	 # set label 4 sprintf("R=%3.4f",STATS_correlation) at 4,1.5 font ",6" textcolor rgb "gray20"	
  
 
 

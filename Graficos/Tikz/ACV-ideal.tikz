@@ -1,22 +1,19 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Tue Jun  6 17:27:10 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% lun 11 jun 2018 09:41:15 -03
 \path (0.000,0.000) rectangle (12.500,8.750);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (0.922,8.381)--(0.922,1.139)--(11.947,1.139)--(11.947,8.381)--cycle;
 \gpcolor{rgb color={1.000,0.000,0.000}}
-\gpsetlinetype{gp lt axes}
-\gpsetdashtype{gp dt axes}
-\gpsetlinewidth{1.00}
+\gpsetdashtype{gp dt 2}
 \draw[gp path](6.214,1.139)--(6.214,8.209);
-\gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.760) {$\text{Intensidad de corriente}$};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.434,0.215) {$\text{Potencial vs referencia}$};
+\gpcolor{rgb color={0.200,0.200,0.200}}
+\node[gp node center,rotate=-270,font={\fontsize{18pt}{21.6pt}\selectfont}] at (0.246,4.760) {$\text{Intensidad de corriente}$};
+\node[gp node center,font={\fontsize{18pt}{21.6pt}\selectfont}] at (6.434,0.215) {$\text{Potencial vs referencia}$};
 \gpcolor{rgb color={0.000,0.000,0.000}}
-\gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{2.00}
 \draw[gp path] (0.922,1.139)--(1.033,1.139)--(1.145,1.139)--(1.256,1.139)--(1.367,1.139)%
@@ -36,7 +33,7 @@
   --(10.165,1.139)--(10.277,1.139)--(10.388,1.139)--(10.499,1.139)--(10.611,1.139)--(10.722,1.139)%
   --(10.833,1.139)--(10.945,1.139)--(11.056,1.139)--(11.167,1.139)--(11.279,1.139)--(11.390,1.139)%
   --(11.502,1.139)--(11.613,1.139)--(11.724,1.139)--(11.836,1.139)--(11.947,1.139);
-\node[gp node left,font={\fontsize{12.0pt}{14.4pt}\selectfont}] at (5.905,0.794) {E$^\circ$};
+\node[gp node left,font={\fontsize{16pt}{19.2pt}\selectfont}] at (5.905,0.760) {E$^\circ$};
 %% coordinates of the plot area
 \gpdefrectangularnode{gp plot 1}{\pgfpoint{0.922cm}{1.139cm}}{\pgfpoint{11.947cm}{8.381cm}}
 \end{tikzpicture}

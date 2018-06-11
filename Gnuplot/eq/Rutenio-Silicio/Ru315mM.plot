@@ -15,17 +15,19 @@ set output "Ru315mM.tikz"
 #Saco las marcas
   	unset tics
 
-set style line 1 lc rgb 'gray80' lt 1 lw 0.5 #Marron
+set style line 1 lc rgb 'gray50' lt 1 lw 0.5 #Marron
 set style line 2 lc rgb 'black' lt 1 dashtype 2 lw 2.5
 set style line 3 lc rgb 'black' lt 1 lw 2.5 #Azul
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
-	set tics nomirror font ",14"
+	set tics nomirror font ",18" textcolor rgb "black"
+
+
 
 #Estilo de la grilla
-	set style line 111 lc rgb 'gray70' lt 0 lw 1 
+	set style line 111 lc rgb 'gray50' lt 0 lw 1 
 	set grid back ls 111
 
 
@@ -38,13 +40,13 @@ set style line 3 lc rgb 'black' lt 1 lw 2.5 #Azul
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",18" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",18" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",18" textcolor rgb "black" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",18" textcolor rgb "black" offset -4.2,0
 
 #Fuerza a establecer un rango
 	 
 	set xrange [-600:100]
-	set xtics offset 0,-0.3
+	set xtics offset 0,-0.5
 	#set yrange [10:60]
 
 #Para graficar todas

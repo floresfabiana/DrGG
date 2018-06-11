@@ -22,12 +22,12 @@ set style line 5 lc rgb 'black' pt 13 lt 1 ps 1.2 lw 2 #Azul
 set style line 6 lc rgb 'black' lt 1 dashtype 2 lw 2.5
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 111 lc rgb 'gray70' lt 0 lw 1 
+	set style line 111 lc rgb 'gray50' lt 0 lw 1 
 	set grid back ls 111
 
 
@@ -42,8 +42,8 @@ set style line 6 lc rgb 'black' lt 1 dashtype 2 lw 2.5
 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\Delta E^{\\circ}$ /mV" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{log}(i_{lim}/i_s)$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\Delta E^{\\circ}$ /mV" font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{log}(i_{lim}/i_s)$"	   font ",14" textcolor rgb "gray20" offset -2,0
 	set label "$i_{lim}=i_{s}$" at 420,0.75 font ",12" textcolor rgb "black"
 
 f(x)=0

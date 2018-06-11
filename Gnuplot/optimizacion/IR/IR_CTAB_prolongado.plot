@@ -13,7 +13,7 @@ set datafile separator ","
 unset key
 
 #Pongo la leyenda
-#set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray40"
+#set key top left Left reverse samplen 3 font ",10" textcolor rgb "gray20"
 
 #Para hacer los inset
 set multiplot
@@ -29,7 +29,7 @@ set style line 1 lc rgb '#800000' lt 1 lw 1.2 pt 7 ps 1 #Marron
 set style line 3 lc rgb '#ff4500' lt 1 lw 1.2 pt 7 ps 1 #Naranja
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 back ls 10 lw 1.5 
 set tics nomirror
 
@@ -43,18 +43,18 @@ set yrang[-0.12:]
 set format y ""
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray70' lt 0 lw 1 
+set style line 11 lc rgb 'gray50' lt 0 lw 1 
 set grid back ls 11
 
 #Coloca los nombre de los ejes
-set xlabel "N\'umero de onda / cm$^{-1}$" font ",14" textcolor rgb "gray40" offset  0,-2
-set ylabel "Absorbancia / u. a." font ",14" textcolor rgb "gray40" offset  -2,0
+set xlabel "N\'umero de onda / cm$^{-1}$" font ",14" textcolor rgb "gray20" offset  0,-2
+set ylabel "Absorbancia / u. a." font ",14" textcolor rgb "gray20" offset  -2,0
 
 #hago que sea mas largo en el eje X
 set size ratio 0.6
 
 #Leyenda de los Picos
-#set label "$\\nu_{\\text{\\tiny{C-H}}}$" at 3000,0.05 font ",10" textcolor rgb "gray40"
+#set label "$\\nu_{\\text{\\tiny{C-H}}}$" at 3000,0.05 font ",10" textcolor rgb "gray20"
 set label "ProSC extraído" at 4000,0.18 font ",8" textcolor rgb "black"
 set label "ProSC s/extraer" at 4000,-0.02 font ",8" textcolor rgb "black"
 

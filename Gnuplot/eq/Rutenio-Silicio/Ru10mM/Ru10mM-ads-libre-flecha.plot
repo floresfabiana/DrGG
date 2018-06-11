@@ -60,22 +60,22 @@ set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Verde Claro a verde Oscuro
 set style line 3   lc rgb 'gray80' lt 1 lw 1 # --- Verde claro
-set style line 9   lc rgb 'gray70' lt 1 lw 1 #      .
+set style line 9   lc rgb 'gray50' lt 1 lw 1 #      .
 set style line 15   lc rgb 'gray60' lt 1 lw 1 #      .
 set style line 21  lc rgb 'gray50' lt 1 lw 1 #      .
-set style line 27  lc rgb 'gray40' lt 1 lw 1 #      .
+set style line 27  lc rgb 'gray20' lt 1 lw 1 #      .
 set style line 33  lc rgb 'gray30' lt 1 lw 1 #      .
 set style line 39  lc rgb 'gray20' lt 1 lw 1 #      .
 set style line 49  lc rgb '#black' lt 1 lw 2 # --- vede Oscuro
 
 
 #Estilos de los ejes 
-set style line 300 lc rgb 'gray40' lt 1 lw 5 
+set style line 300 lc rgb 'gray20' lt 1 lw 5 
 set border 3 back ls 300 lw 1.5 
 set tics nomirror  font ",14"
 
 #Estilo de la grilla
-set style line 400 lc rgb 'gray70' lt 0 lw 1 
+set style line 400 lc rgb 'gray50' lt 0 lw 1 
 set grid back ls 400
 
 
@@ -87,8 +87,8 @@ set grid back ls 400
 	#set title "Grafico 1"
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray20" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -113,12 +113,12 @@ set grid back ls 400
 #Curva 55 --> desubicada
 #Texto
 #set label 1 at  50, 250 '\hl{\small $t_\textrm{Nc}$}' center rotate by 45 front
-# set label at -310,755 "t" font ",8" rotate by 62 textcolor rgb "gray40" front
-# set label at -307,830 "i" font ",8" rotate by 50 textcolor rgb "gray40" front
-# set label at -304,870 "e" font ",8" rotate by 45 textcolor rgb "gray40" front
-# set label at -297,930 "m" font ",8" rotate by 41 textcolor rgb "gray40" front
-# set label at -284,1020 "p" font ",8" rotate by 34 textcolor rgb "gray40" front
-# set label at -275,1090 "o" font ",8" rotate by 16 textcolor rgb "gray40" front
+# set label at -310,755 "t" font ",8" rotate by 62 textcolor rgb "gray20" front
+# set label at -307,830 "i" font ",8" rotate by 50 textcolor rgb "gray20" front
+# set label at -304,870 "e" font ",8" rotate by 45 textcolor rgb "gray20" front
+# set label at -297,930 "m" font ",8" rotate by 41 textcolor rgb "gray20" front
+# set label at -284,1020 "p" font ",8" rotate by 34 textcolor rgb "gray20" front
+# set label at -275,1090 "o" font ",8" rotate by 16 textcolor rgb "gray20" front
 
 set label at -500,180 "adsorbido" font ",14" textcolor rgb "black" front
 set label at -300,980 "libre" font ",14"  textcolor rgb "black" front

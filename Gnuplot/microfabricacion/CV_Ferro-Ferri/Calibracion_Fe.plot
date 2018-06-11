@@ -22,12 +22,12 @@ set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo
 set style line 4 lt 0 lc rgb 'black'  lw 3
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
 	set tics nomirror font ",14"
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray70' lt 0 lw 1 
+	set style line 11 lc rgb 'gray50' lt 0 lw 1 
 	set grid back ls 11
 
 
@@ -39,8 +39,8 @@ set style line 4 lt 0 lc rgb 'black'  lw 3
 	#set title "Grafico 1"
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Concentración/mM}$"		 font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}_p/ \\mu \\text{A.cm}^{-2}$"	 font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Concentración/mM}$"		 font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{j}_p/ \\mu \\text{A.cm}^{-2}$"	 font ",14" textcolor rgb "gray20" offset -2,0
 
 #Fuerza a establecer un rango
 	 

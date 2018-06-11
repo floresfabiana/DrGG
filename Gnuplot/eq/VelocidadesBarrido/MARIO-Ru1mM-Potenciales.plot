@@ -7,7 +7,7 @@ set terminal tikz gparrows tikzarrows
 set output "MARIO-Ru1mM-Potenciales.tikz"
 
 #Leyenda
-set key top left Left reverse samplen -2 font ",10" textcolor rgb "gray40"
+set key top left Left reverse samplen -2 font ",10" textcolor rgb "gray20"
 
 #Separado por comas
 set datafile sep','
@@ -28,17 +28,17 @@ set style line 100  lc rgbcolor 'red' lw 4
 set style arrow 200 head filled size screen 0.02,10 ls 100
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
 set tics nomirror
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray70' lt 0 lw 1 
+set style line 11 lc rgb 'gray50' lt 0 lw 1 
 set grid xtics ytics mxtics mytics front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\nu$ / mV.s$^{-1}$"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "E$^{p}$-E$^{o}_{ads}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\nu$ / mV.s$^{-1}$"  font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "E$^{p}$-E$^{o}_{ads}$"	font ",14" textcolor rgb "gray20" offset -2,0
 
 #Fuerza el rango
 	set xrange [40:100000]

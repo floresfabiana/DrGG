@@ -7,7 +7,7 @@ set terminal x11
 #set output "Ru-1mM-Barrido-Max-Min-EQMARIO-ip-vel.tikz"
 
 #Leyenda
-	set key top right Left reverse samplen -2 font ",10" textcolor rgb "gray40"
+	set key top right Left reverse samplen -2 font ",10" textcolor rgb "gray20"
 
 #Saco el Borde
 	unset border
@@ -22,17 +22,17 @@ set style line 3 lc rgb 'green' pt 7 ps 1  #Circulo
 set style line 4 lc rgb 'blue' pt 7 ps 1  #Circulo
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
 set tics nomirror
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray20' lt 0 lw 1 
 set grid front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "v / mV.s$^{-1}$"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "(i$_{p}$/v)/(i$_{p}$/v)$_{\\text{v}\\rightarrow 0}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "v / mV.s$^{-1}$"  font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "(i$_{p}$/v)/(i$_{p}$/v)$_{\\text{v}\\rightarrow 0}$"	font ",14" textcolor rgb "gray20" offset -2,0
 
 
 #EL valor 4.01 corresponde al pico maximo en la oxidación.

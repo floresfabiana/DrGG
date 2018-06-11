@@ -9,7 +9,7 @@ set terminal tikz
 set output "Comparacion-CICLOS-Ru1mM-cal-vac-Zr.tikz" 
 
 #Saco la leyenda
-	#set key top right Left reverse sample -2 font ",10" textcolor rgb "gray40" 
+	#set key top right Left reverse sample -2 font ",10" textcolor rgb "gray20" 
 	unset key
 
 #Saco el Borde
@@ -29,26 +29,26 @@ set style line 3 lc rgb 'blue' lw 2 pt 7 ps 0.5 #Triangulo
 set style line 4 lc rgb 'red' pt 7 ps 1 lw 2 #Circulo
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
-set tics nomirror font ",14"
+set tics nomirror font ",16"
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray70' lt 0 lw 1 
+set style line 11 lc rgb 'gray50' lt 0 lw 1 
 set grid front ls 11
 
 set ytics 0.5
 
 #Coloca los nombre de los ejes
-	set xlabel "N\'umero de ciclos"  font ",16" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{i}_p/\\text{i}_p^{\\text{Au}}$"	font ",16" textcolor rgb "gray40" offset -2,0
+	set xlabel "N\'umero de ciclos"  font ",18" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{i}_p/\\text{i}_p^{\\text{Au}}$"	font ",18" textcolor rgb "gray20" offset -3,0
 
 
 #Fuerza a establecer un rango
 	 
 	#set xrange [0:400]
 	set yrange [0:2.5]
-	set xtics offset 0,-0.3
+	set xtics offset 0,-0.5
 
 #Para graficar todas
 	f(X)=1

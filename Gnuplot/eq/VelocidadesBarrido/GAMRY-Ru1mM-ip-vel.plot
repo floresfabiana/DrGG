@@ -7,7 +7,7 @@ set terminal tikz
 set output "GAMRY-Ru1mM-ip-vel.tikz"
 
 #Leyenda
-	set key top left Left reverse samplen -2 font ",10" textcolor rgb "gray40"
+	set key top left Left reverse samplen -2 font ",10" textcolor rgb "gray20"
 
 #Saco el Borde
 	unset border
@@ -22,17 +22,17 @@ set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo
 set style line 4 lc rgb 'red' lt -1 pt -1
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
 set tics nomirror
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray20' lt 0 lw 1 
 set grid front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "v / mV.s$^{-1}$"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "(i$_{p}$/v)/(i$_{p}$/v)$_{\\text{v}\\rightarrow 0}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "v / mV.s$^{-1}$"  font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "(i$_{p}$/v)/(i$_{p}$/v)$_{\\text{v}\\rightarrow 0}$"	font ",14" textcolor rgb "gray20" offset -2,0
 
 #EL valor 4.01 corresponde al pico maximo en la oxidación.
 #

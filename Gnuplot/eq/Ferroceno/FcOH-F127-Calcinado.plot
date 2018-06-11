@@ -10,7 +10,7 @@ set output "FcOH-F127-Calcinado.tikz"
 set multiplot
 
 #Saco la leyenda
-set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray40" at 370,-700
+set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray20" at 370,-700
 
 #Saco el Borde
 	unset border
@@ -28,12 +28,14 @@ set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray40" at
 	set style increment user
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
-	set tics nomirror
-
+   set tics nomirror  font ",16" textcolor rgb 'gray20'
+   set xtics offset 0,-0.5
+   set ytics 200
+   
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray70' lt 0 lw 1 
+	set style line 11 lc rgb 'gray50' lt 0 lw 1 
 	set grid back ls 11
 
 #Flecha
@@ -45,8 +47,8 @@ set style arrow 200 head filled size screen 0.02,10 ls 100
 	#set mytics 2 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",18" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",18" textcolor rgb "gray20" offset -3.2,0
 
 #Fuerza a establecer un rango
 	 
@@ -83,8 +85,8 @@ plot for [data in FILES] data u ($3*1000):($4/0.0314*1e6) every ::1::655 with li
    unset label
    unset arrow
    unset key
-   #set label "\\tiny{LO}$_3$" at 1280,0.55 font ",8" textcolor rgb "gray40"
-   #set label "\\tiny{LO}$_4$" at 1210,0.525 font ",8" textcolor rgb "gray40"
+   #set label "\\tiny{LO}$_3$" at 1280,0.55 font ",8" textcolor rgb "gray20"
+   #set label "\\tiny{LO}$_4$" at 1210,0.525 font ",8" textcolor rgb "gray20"
    plot "fc-1mM-F127-AuCNEA-Calcinado/1-FeOH-1mM-20.DTA.txt" using ($3*1000):($4/0.0314*1e6) every ::1::655 with lines ls 1,\
 
  unset multiplot

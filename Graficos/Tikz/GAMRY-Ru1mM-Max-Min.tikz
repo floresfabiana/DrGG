@@ -1,19 +1,19 @@
 \begin{tikzpicture}[gnuplot]
-%% generated with GNUPLOT 5.0p1 (Lua 5.3; terminal rev. 99, script rev. 100)
-%% Sat May 20 09:22:32 2017
+%% generated with GNUPLOT 5.0p3 (Lua 5.1; terminal rev. 99, script rev. 100)
+%% lun 11 jun 2018 09:41:30 -03
 \path (0.000,0.000) rectangle (12.500,8.750);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt border}
 \gpsetdashtype{gp dt solid}
 \gpsetlinewidth{1.50}
 \draw[gp path] (1.688,8.381)--(1.688,1.601)--(11.947,1.601);
-\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (9.895,7.364) {y=0.702X + -0.668};
-\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (9.895,7.063) {R=0.9983};
-\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (9.895,5.255) {y=0.407X + -0.053};
-\node[gp node left,font={\fontsize{6.0pt}{7.2pt}\selectfont}] at (9.895,4.991) {R=0.9856};
-\node[gp node center,rotate=-270,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (0.246,4.991) {log(j) $[\mu \text{A.cm}^{-2}]$};
-\node[gp node center,font={\fontsize{14.0pt}{16.8pt}\selectfont}] at (6.817,0.215) {log(v) [mV/s]};
-\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (2.240,8.047) {Corriente 'anodica};
+\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (9.895,7.364) {y=0.702X + -0.668};
+\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (9.895,7.063) {R=0.9983};
+\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (9.895,5.255) {y=0.407X + -0.053};
+\node[gp node left,font={\fontsize{6pt}{7.2pt}\selectfont}] at (9.895,4.991) {R=0.9856};
+\node[gp node center,rotate=-270,font={\fontsize{14pt}{16.8pt}\selectfont}] at (0.246,4.991) {log(j) $[\mu \text{A.cm}^{-2}]$};
+\node[gp node center,font={\fontsize{14pt}{16.8pt}\selectfont}] at (6.817,0.215) {log(v) [mV/s]};
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.240,8.047) {Corriente 'anodica};
 \gpcolor{rgb color={0.000,0.000,0.000}}
 \gpsetlinewidth{1.00}
 \gpsetpointsize{4.00}
@@ -43,8 +43,8 @@
   --(9.604,7.212)--(9.700,7.274)--(9.795,7.335)--(9.891,7.397)--(9.986,7.458)--(10.081,7.520)%
   --(10.177,7.581)--(10.272,7.643)--(10.367,7.704)--(10.463,7.765)--(10.558,7.827)--(10.654,7.888)%
   --(10.749,7.950)--(10.844,8.011)--(10.940,8.073)--(11.035,8.134)--(11.131,8.196);
-\gpcolor{rgb color={0.400,0.400,0.400}}
-\node[gp node left,font={\fontsize{10.0pt}{12.0pt}\selectfont}] at (2.240,7.739) {Corriente cat'odica};
+\gpcolor{rgb color={0.200,0.200,0.200}}
+\node[gp node left,font={\fontsize{10pt}{12pt}\selectfont}] at (2.240,7.739) {Corriente cat'odica};
 \gpcolor{rgb color={1.000,0.000,0.000}}
 \gppoint{gp mark 7}{(1.688,2.489)}
 \gppoint{gp mark 7}{(2.923,2.760)}
@@ -72,7 +72,7 @@
   --(9.604,5.158)--(9.700,5.194)--(9.795,5.230)--(9.891,5.265)--(9.986,5.301)--(10.081,5.336)%
   --(10.177,5.372)--(10.272,5.408)--(10.367,5.443)--(10.463,5.479)--(10.558,5.514)--(10.654,5.550)%
   --(10.749,5.586)--(10.844,5.621)--(10.940,5.657)--(11.035,5.692)--(11.131,5.728);
-\gpcolor{rgb color={0.400,0.400,0.400}}
+\gpcolor{rgb color={0.200,0.200,0.200}}
 \gpsetlinetype{gp lt axes}
 \gpsetdashtype{gp dt axes}
 \draw[gp path] (1.688,1.601)--(11.947,1.601);

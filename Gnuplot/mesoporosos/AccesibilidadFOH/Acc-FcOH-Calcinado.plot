@@ -7,7 +7,7 @@ set terminal tikz
 set output "Acc-FcOH-Calcinado.tikz" 
 
 #Saco la leyenda
-#set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray40" at 370,-700
+#set key bottom right Left reverse samplen 3 font ",10" textcolor rgb "gray20" at 370,-700
 set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -100,130
 
 
@@ -28,12 +28,13 @@ set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -10
 	set style increment user
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
-	set tics nomirror
+	set tics nomirror  font ",16" textcolor rgb 'gray20'
+	set xtics offset 0,-0.5
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray70' lt 0 lw 1 
+	set style line 11 lc rgb 'gray50' lt 0 lw 1 
 	set grid back ls 11
 
 
@@ -42,8 +43,8 @@ set key top left Left reverse samplen -1 font ",14" textcolor rgb "black" at -10
 	#set mytics 2 
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",16" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",16" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Potencial\\; vs\\; ECS/mV}$" font ",18" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",18" textcolor rgb "gray20" offset -3.2,0
 
 #Fuerza a establecer un rango
 	 

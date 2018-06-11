@@ -7,7 +7,7 @@ set terminal tikz
 set output "langmuir.tikz"
 
 #Saco la leyenda
-	set key bottom right Left reverse samplen -1 font ",14" textcolor rgb "gray40" 
+	set key bottom right Left reverse samplen -1 font ",14" textcolor rgb "gray20" at 9.8,0.1
 
 
 #Saco el Borde
@@ -34,12 +34,12 @@ set style line 3 lc rgb 'black' pt 7 ps 9 #Triangulo
 set style line 4 lc rgb 'red' lt -1 pt -1
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 back ls 10 lw 1.5 
 set tics nomirror
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray70' lt 0 lw 1 
+set style line 11 lc rgb 'gray50' lt 0 lw 1 
 set grid back ls 11
 
 
@@ -51,8 +51,8 @@ set grid back ls 11
 	#set title "Grafico 1"
 
 #Coloca los nombre de los ejes
-	set xlabel "$\\text{Concentraci\'on en la soluci\'on/mM}$"	font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "Concentraci\'on en la pel\'icula / M" font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "$\\text{Concentraci\'on en la soluci\'on/mM}$"	font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "Concentraci\'on en la pel\'icula / M" font ",14" textcolor rgb "gray20" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -82,15 +82,15 @@ set grid back ls 11
 	#fit g(x) "Ru Lagmuir.txt" using ($1):($3) via d,e,f
 	stat "langmuir.txt" using 1:3
 
-	# set label 1 sprintf("y=%3.3f+%3.3f",a,b) at 0.2,925 font ",10" textcolor rgb "gray40"
-	# set label 2 sprintf("R=%3.4f",STATS_correlation) at 0.2,800 font ",10" textcolor rgb "gray40"
+	# set label 1 sprintf("y=%3.3f+%3.3f",a,b) at 0.2,925 font ",10" textcolor rgb "gray20"
+	# set label 2 sprintf("R=%3.4f",STATS_correlation) at 0.2,800 font ",10" textcolor rgb "gray20"
 
 	# g(x) = c*x + d
 	# fit g(x) "Calibracion_Fc.txt" using ($1):($3) via c,d
 	# stat "Calibracion_Fc.txt" using 1:3
 
-	# set label 3 sprintf("y=%3.3f %3.3f",c,d) at 0.2,-825 font ",10" textcolor rgb "gray40"
-	# set label 4 sprintf("R=%3.4f",STATS_correlation) at 0.2,-950 font ",10" textcolor rgb "gray40"
+	# set label 3 sprintf("y=%3.3f %3.3f",c,d) at 0.2,-825 font ",10" textcolor rgb "gray20"
+	# set label 4 sprintf("R=%3.4f",STATS_correlation) at 0.2,-950 font ",10" textcolor rgb "gray20"
  	
 
 #Ploteo todas las funciones que les digamos

@@ -26,17 +26,17 @@ set style line 13 lc rgb '#1195b1' lt 1 lw 1 #      .
 set style line 15 lc rgb '#058cba' lt 1 lw 1 # --- Azul
 
 #Estilos de los ejes 
-set style line 300 lc rgb 'gray40' lt 1 lw 5 
+set style line 300 lc rgb 'gray20' lt 1 lw 5 
 set border 3 back ls 300 lw 1.5 
 set tics nomirror
 
 #Estilo de la grilla
-set style line 400 lc rgb 'gray40' lt 0 lw 1 
+set style line 400 lc rgb 'gray20' lt 0 lw 1 
 set grid back ls 400
 
 #Coloca los nombre de los ejes
-set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray40" offset  0,-2
-set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray40" offset -2,0
+set xlabel "$\\text{Potencial\\; vs\\; ESC/mV}$" font ",14" textcolor rgb "gray20" offset  0,-2
+set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	   font ",14" textcolor rgb "gray20" offset -2,0
 
 #Fuerza a establecer un rango
 set xrange [-600:100]

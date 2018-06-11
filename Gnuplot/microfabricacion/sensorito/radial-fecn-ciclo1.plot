@@ -15,7 +15,7 @@ unset key
 unset border
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray70' lt 0 lw 1 
+set style line 11 lc rgb 'gray50' lt 0 lw 1 
 set grid ls 11
 set grid polar 30 
 

@@ -8,7 +8,7 @@ set output "MARIO-desorsion-tiempo.tikz"
 
 #Leyenda
 	unset key
-	#set key top left Left reverse samplen -2 font ",10" textcolor rgb "gray40"
+	#set key top left Left reverse samplen -2 font ",10" textcolor rgb "gray20"
 
 #Saco el Borde
 	unset border
@@ -23,17 +23,17 @@ set style line 3 lc rgb 'red' lw 2 pt 7 ps 9 #Triangulo
 set style line 4 lc rgb 'red' lt -1 pt -1
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 3 front ls 10 lw 1.5
 set tics nomirror
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray40' lt 0 lw 1 
+set style line 11 lc rgb 'gray20' lt 0 lw 1 
 set grid front ls 11
 
 #Coloca los nombre de los ejes
-	set xlabel "tiempo / m\'n"  font ",14" textcolor rgb "gray40" offset  0,-2
-	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "tiempo / m\'n"  font ",14" textcolor rgb "gray20" offset  0,-2
+	set ylabel "$\\text{j}/ \\mu \\text{A.cm}^{-2}$"	font ",14" textcolor rgb "gray20" offset -2,0
 
 #Fuerza a establecer un rango
 	 
@@ -43,14 +43,14 @@ set grid front ls 11
 	 f(x) = a*x + b
 	 fit f(x) "MARIO-desorsion-tiempo.txt" using 1:($2/0.0314) via a,b
 	 stat "MARIO-desorsion-tiempo.txt" using 1:($2/0.0314)
-	 set label 1 sprintf("y=%3.3fX + %3.3f",a,b) at 5,2.8/0.0314 font ",6" textcolor rgb "gray40"
-	 set label 2 sprintf("R=%3.4f",STATS_correlation) at 5,2.1/0.0314 font ",6" textcolor rgb "gray40"
+	 set label 1 sprintf("y=%3.3fX + %3.3f",a,b) at 5,2.8/0.0314 font ",6" textcolor rgb "gray20"
+	 set label 2 sprintf("R=%3.4f",STATS_correlation) at 5,2.1/0.0314 font ",6" textcolor rgb "gray20"
 
 	 g(x) = c*x + d
 	 fit g(x) "MARIO-desorsion-tiempo.txt" using 1:($3/0.0314) via c,d
 	 stat "MARIO-desorsion-tiempo.txt" using 1:($3/0.0314)
-	 set label 3 sprintf("y=%3.3fX + %3.3f",c,d) at 5,-3.5/0.0314 font ",6" textcolor rgb "gray40"
-	 set label 4 sprintf("R=%3.4f",STATS_correlation) at 5,-4.2/0.0314 font ",6" textcolor rgb "gray40"
+	 set label 3 sprintf("y=%3.3fX + %3.3f",c,d) at 5,-3.5/0.0314 font ",6" textcolor rgb "gray20"
+	 set label 4 sprintf("R=%3.4f",STATS_correlation) at 5,-4.2/0.0314 font ",6" textcolor rgb "gray20"
 
 
 #EL valor 4.01 corresponde al pico maximo en la oxidación.

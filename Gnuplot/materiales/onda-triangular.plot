@@ -44,7 +44,7 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
 
 
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 3 back ls 10 lw 1.5 
 	set tics nomirror
 
@@ -57,8 +57,8 @@ set style line 7 lc rgb '#9400d3' lt 1 lw 2
     unset ytics
 
 #Coloca los nombre de los ejes
-set xlabel "tiempo" font ",18" textcolor rgb "gray40" offset  0,-2
-set ylabel "potencial" font ",18" textcolor rgb "gray40" offset  -2,0
+set xlabel "tiempo" font ",18" textcolor rgb "gray20" offset  0,-2
+set ylabel "potencial" font ",18" textcolor rgb "gray20" offset  -2,0
 
 set label 1001 at  -0.15,1 "E$_2$" font ",16" textcolor rgb 'black' front
 set label 1002 at  -0.15,-1 "E$_1$" font ",16" textcolor rgb 'black' front

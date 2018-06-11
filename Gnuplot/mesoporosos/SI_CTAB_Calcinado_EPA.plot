@@ -19,21 +19,22 @@ set style line 1 lt -1 lw 2 pi -3 pt 6 ps 1.5 lc  rgb '#800000'
 set style line 3 lt -1 lw 2 pi -5 pt 7 ps 1.5 lc  rgb '#ff4500'
 
 #Estilos de los ejes 
-set style line 10 lc rgb 'gray40' lt 1 lw 5 
+set style line 10 lc rgb 'gray20' lt 1 lw 5 
 set border 11 back ls 10 lw 1.5 
-set tics nomirror
+set tics nomirror font ",16" textcolor rgb 'gray20'
 set y2tics
 set y2range [0:45]
+set xtics 0.2  offset 0,-0.5
 
 #Estilo de la grilla
-set style line 11 lc rgb 'gray70' lt 0 lw 1 
+set style line 11 lc rgb 'gray50' lt 0 lw 1 
 set grid back ls 11
 
 
 #Coloca los nombre de los ejes
-set xlabel "$\\text{P/P}_s$" font ",14" textcolor rgb "gray40" offset  0,-2
-set ylabel "\'Indice de refracci\'on" font ",14" textcolor rgb "gray40" offset  -2,0
-set y2label "\\% Volumen Poroso" font ",14" textcolor rgb "gray40" offset  2,0
+set xlabel "$\\text{P/P}_s$" font ",18" textcolor rgb "gray20" offset  0,-2
+set ylabel "\'Indice de refracci\'on" font ",18" textcolor rgb "gray20" offset  -2.5,0
+set y2label "\\% Volumen Poroso" font ",18" textcolor rgb "gray20" offset  2.5,0
 
 
 #Ploteo todas las funciones que les digamos

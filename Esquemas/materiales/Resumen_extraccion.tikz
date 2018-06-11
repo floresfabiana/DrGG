@@ -3,16 +3,16 @@
 \tikzstyle{margen_derecha} = [node distance=1.3cm]
 
 %Gradiente de grises para cada bloque y entre los bloques
-\tikzstyle{block1} = [rectangle, blur shadow, draw=gray, top color=orange, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
-\tikzstyle{block2} = [rectangle, blur shadow, draw=gray, top color=orange!80, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
-\tikzstyle{block3} = [rectangle, blur shadow, draw=gray, top color=orange!70, bottom color=white, text width=3.1cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
-\tikzstyle{block4} = [rectangle, blur shadow, draw=gray, top color=orange!50, bottom color=white, text width=2.9cm, minimum height=1.4cm, text centered, rounded corners, node distance=4cm]
-\tikzstyle{block5} = [rectangle, blur shadow, draw=gray, top color=orange!25, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
+\tikzstyle{block1} = [rectangle, blur shadow, draw=darkgray, top color=orange, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
+\tikzstyle{block2} = [rectangle, blur shadow, draw=darkgray, top color=orange!80, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
+\tikzstyle{block3} = [rectangle, blur shadow, draw=darkgray, top color=orange!70, bottom color=white, text width=3.1cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
+\tikzstyle{block4} = [rectangle, blur shadow, draw=darkgray, top color=orange!50, bottom color=white, text width=2.9cm, minimum height=1.4cm, text centered, rounded corners, node distance=4cm]
+\tikzstyle{block5} = [rectangle, blur shadow, draw=darkgray, top color=orange!25, bottom color=white, text width=2.6cm, minimum height=1.4cm, text centered, rounded corners, node distance=3.5cm]
 
 %Estilo de las flechas
-\tikzstyle{line} = [draw,-latex',color=gray,ultra thick]
+\tikzstyle{line} = [draw,-latex',color=darkgray,ultra thick]
 
-\begin{tikzpicture}[every node/.append style={color=darkgray!85,thick}]
+\begin{tikzpicture}[every node/.append style={color=darkgray,thick}]
     % Ubico los nodos
     \node [block1] (bloque1)                   {\textbf{Estabilización} $50\%$HR, \SI{1}{\hour}};
     \node [block2, right of=bloque1] (bloque2) {\textbf{Calentamiento} \SI{60}{\celsius}, \SI{1}{\hour}};
@@ -35,7 +35,7 @@
     \path [line] (bloque3.center) -- (bloque8);     
     
     %Parentesis grande
-    \draw [decorate,decoration={brace,amplitude=8pt},line width=4pt,color=gray,ultra thick] ([xshift=2mm] bloque6.north east) -- ([xshift=2mm] bloque7.south east);
+    \draw [decorate,decoration={brace,amplitude=8pt},line width=4pt,color=darkgray,ultra thick] ([xshift=2mm] bloque6.north east) -- ([xshift=2mm] bloque7.south east);
 
     \node [block5, right of=bloque4,xshift=0.7mm,yshift=11mm] (bloque9) {\textbf{Reflujo IpOH}\hspace{1cm}\SI{15}{\min} Lavado H$_2$O \hspace{1cm} \hspace{1cm} pH=2,\SI{10}{\min}};
 

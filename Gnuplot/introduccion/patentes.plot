@@ -5,7 +5,7 @@
 #Para exportar como latex
 set terminal tikz tikzarrows
 set output "patentes.tikz" 
-set key left Left reverse  samplen 3 textcolor 'gray40' font ",12"
+set key left Left reverse  samplen 3 textcolor 'gray20' font ",12"
 set object 2 rect from 2002,7.5 to 2005.5,8.9 fc rgb "white" fs noborder
 
 #Relacion de aspecto
@@ -18,19 +18,19 @@ set size ratio 0.60
  # 	unset tics
  	set mxtics
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 15 back ls 10 lw 1.5 
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray70' lt 0 lw 1 
+	set style line 11 lc rgb 'gray50' lt 0 lw 1 
 	#unset grid
 	set grid noxtics front ls 11
     set grid ytics back ls 11
 #Coloca los nombre de los ejes
 	unset xlabel
-	set xlabel "Año"  font ",14" textcolor rgb "gray40" offset 0,-1
-    set ylabel "N\'umero de patentes" font ",14" textcolor rgb "gray40" offset -2,0
+	set xlabel "Año"  font ",14" textcolor rgb "gray20" offset 0,-1
+    set ylabel "N\'umero de patentes" font ",14" textcolor rgb "gray20" offset -2,0
     set ytics offset -2,0,0 center format "%'gK"
     set xtics 5 
     set xtics add (2001,2005,2010)

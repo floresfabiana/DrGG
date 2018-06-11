@@ -8,10 +8,10 @@ set output "productos2.tikz"
 
 #Leyenda
 set key at graph 0.95, 0.80 horizontal samplen 0.3 spacing 6 width -0.5
-#set label 2 'Nanociencia' at graph 0.85, 0.78 left rotate by 90  font ",14"   textcolor rgb "gray40"
-set label 3 'Paises' at graph 0.93,0.78 left rotate by 90  font ",14"  textcolor rgb "gray40"
-set label 4 'Compañías' at graph 0.86,0.78 left rotate by 90  font ",14"  textcolor rgb "gray40"
-set label 5 'Productos' at graph 0.79,0.78 left rotate by 90  font ",14"  textcolor rgb "gray40"
+#set label 2 'Nanociencia' at graph 0.85, 0.78 left rotate by 90  font ",14"   textcolor rgb "gray20"
+set label 3 'Paises' at graph 0.93,0.78 left rotate by 90  font ",14"  textcolor rgb "gray20"
+set label 4 'Compañías' at graph 0.86,0.78 left rotate by 90  font ",14"  textcolor rgb "gray20"
+set label 5 'Productos' at graph 0.79,0.78 left rotate by 90  font ",14"  textcolor rgb "gray20"
 
 set object 1 rect from 1.85,5.8 to 2.45,7.1 fc rgb "white" fs noborder
 set object 2 rect from -0.2,6.9 to 0,7.1 fc rgb "white" fs noborder
@@ -25,17 +25,17 @@ set object 3 rect from 1.8,1.9 to 2,2.1 fc rgb "white" fs noborder
  	unset mxtics
  	set xtics scale 0
 #Estilos de los ejes 
-	set style line 10 lc rgb 'gray40' lt 1 lw 5 
+	set style line 10 lc rgb 'gray20' lt 1 lw 5 
 	set border 15 back ls 10 lw 1.5 
 	set tics nomirror
 
 #Estilo de la grilla
-	set style line 11 lc rgb 'gray70' lt 0 lw 1 
+	set style line 11 lc rgb 'gray50' lt 0 lw 1 
 	#unset grid
 	set grid noxtics front ls 11
    set grid ytics back ls 11
 #Coloca los nombre de los ejes
-	set y2label "N\'umero de publicaciones"  font ",18" textcolor rgb "gray40" offset 2,0
+	set y2label "N\'umero de publicaciones"  font ",18" textcolor rgb "gray20" offset 2,0
 
 #Cambio de aspecto
 set size square 1,2.2
@@ -62,17 +62,17 @@ set y2tics rotate by 90 font ",14" offset 1,0,0 center format "%'gK"
 set format y ""
 set boxwidth 0.95 relative
 
-set label 101 at -0.1,6.9 "6879" font ",12"  textcolor rgb "gray40" rotate by 90
-set label 102 at 0.1,1.3 "1322" font ",12" textcolor rgb "gray40"  rotate by 90
-set label 103 at 0.3,0.05 "52" font ",12"  textcolor rgb "gray40" rotate by 90
+set label 101 at -0.1,6.9 "6879" font ",12"  textcolor rgb "gray20" rotate by 90
+set label 102 at 0.1,1.3 "1322" font ",12" textcolor rgb "gray20"  rotate by 90
+set label 103 at 0.3,0.05 "52" font ",12"  textcolor rgb "gray20" rotate by 90
 
-set label 201 at 0.9,3 "3038" font ",12"  textcolor rgb "gray40" rotate by 90
-set label 202 at 1.1,0.75 "750" font ",12" textcolor rgb "gray40"  rotate by 90
-set label 203 at 1.3,0.03 "35" font ",12"  textcolor rgb "gray40" rotate by 90
+set label 201 at 0.9,3.05 "3038" font ",12"  textcolor rgb "gray20" rotate by 90
+set label 202 at 1.1,0.75 "750" font ",12" textcolor rgb "gray20"  rotate by 90
+set label 203 at 1.3,0.03 "35" font ",12"  textcolor rgb "gray20" rotate by 90
 
-set label 301 at 1.9,1.8 "1814" font ",12"  textcolor rgb "gray40" rotate by 90
-set label 302 at 2.1,0.6 "622" font ",12" textcolor rgb "gray40"  rotate by 90
-set label 303 at 2.3,0.03 "32" font ",12"  textcolor rgb "gray40" rotate by 90
+set label 301 at 1.9,1.8 "1814" font ",12"  textcolor rgb "gray20" rotate by 90
+set label 302 at 2.1,0.6 "622" font ",12" textcolor rgb "gray20"  rotate by 90
+set label 303 at 2.3,0.03 "32" font ",12"  textcolor rgb "gray20" rotate by 90
 
 #Grafico
 plot 'productos.txt' using ($2/1000):xtic(1) lc 'gray20' title " ",\
